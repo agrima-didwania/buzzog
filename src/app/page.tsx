@@ -49,20 +49,20 @@ export default function Home() {
 
   const navLinks = [
     "Home",
-    "Bigg Boss",
-    "Splitsvilla",
-    "Khatron Ke Khiladi",
+    "Reality Shows",
     "Bollywood",
+    "Movie Reviews",
     "Web Series",
+    "News",
   ];
 
   const categories = [
     "🔥 All Buzz",
-    "Bigg Boss",
-    "Splitsvilla",
-    "Khatron Ke Khiladi",
-    "Bollywood Gossip",
+    "Reality Shows",
+    "Bollywood",
+    "Movie Reviews",
     "Web Series",
+    "News",
     "Videos",
   ];
 
@@ -503,18 +503,19 @@ export default function Home() {
             </div>
           </div>
           <div className="footer-col">
-            <h4>Shows</h4>
-            <a href="#">Bigg Boss</a>
-            <a href="#">Splitsvilla</a>
-            <a href="#">Khatron Ke Khiladi</a>
+            <h4>Categories</h4>
+            <a href="#">Reality Shows</a>
+            <a href="#">Bollywood</a>
+            <a href="#">Movie Reviews</a>
             <a href="#">Web Series</a>
+            <a href="#">News</a>
           </div>
           <div className="footer-col">
             <h4>More</h4>
-            <a href="#">Bollywood Gossip</a>
             <a href="#">Videos</a>
             <a href="#">Polls & Games</a>
             <a href="#">About Buzz Originals</a>
+            <a href="#">Contact Us</a>
           </div>
         </div>
         <div className="footer-bottom">
