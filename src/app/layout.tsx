@@ -20,6 +20,7 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://buzzog.com"),
   title: "Buzz Originals — The Buzz Never Sleeps",
   description:
     "Raw, unfiltered entertainment coverage of Indian reality TV and Bollywood — built for the group chat.",

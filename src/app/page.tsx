@@ -2,12 +2,12 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import Ticker from "@/components/Ticker";
 
 export default function Home() {
-  // Navigation & Mobile Menu State
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [activeNav, setActiveNav] = useState("Home");
-
   // Category Filter State
   const [activeCategory, setActiveCategory] = useState("🔥 All Buzz");
 
@@ -47,15 +47,6 @@ export default function Home() {
     setEmail("");
   };
 
-  const navLinks = [
-    "Home",
-    "Reality Shows",
-    "Bollywood",
-    "Movie Reviews",
-    "Web Series",
-    "News",
-  ];
-
   const categories = [
     "🔥 All Buzz",
     "Reality Shows",
@@ -67,133 +58,74 @@ export default function Home() {
   ];
 
   return (
-    <div className="min-h-screen bg-[var(--ink)] text-[var(--lavender)]">
+    <div className="min-h-screen bg-[var(--ink)] text-[var(--lavender)] flex flex-col justify-between">
       {/* ===== TICKER ===== */}
-      <div className="ticker-bar">
-        <div className="ticker-track">
-          <span>BIGG BOSS 19: WILDCARD ENTRY SENDS THE HOUSE INTO CHAOS WITHIN MINUTES</span>
-          <span>SPLITSVILLA: CONNECTION OF THE SEASON OR CHAOS OF THE SEASON? YOU DECIDE</span>
-          <span>KHATRON KE KHILADI: STUNT GONE WRONG, MEDICAL TEAM RUSHES IN LIVE ON SET</span>
-          <span>BOLLYWOOD: SECRET AIRPORT SIGHTING HAS FANS IN FULL DETECTIVE MODE</span>
-          <span>BIGG BOSS 19: WILDCARD ENTRY SENDS THE HOUSE INTO CHAOS WITHIN MINUTES</span>
-          <span>SPLITSVILLA: CONNECTION OF THE SEASON OR CHAOS OF THE SEASON? YOU DECIDE</span>
-          <span>KHATRON KE KHILADI: STUNT GONE WRONG, MEDICAL TEAM RUSHES IN LIVE ON SET</span>
-          <span>BOLLYWOOD: SECRET AIRPORT SIGHTING HAS FANS IN FULL DETECTIVE MODE</span>
-        </div>
-      </div>
+      <Ticker />
 
       {/* ===== NAV ===== */}
-      <header>
-        <nav>
-          <a href="#" className="logo">
-            <Image
-              src="/assets/buzzog-logo.png"
-              alt="Buzz OG"
-              width={142}
-              height={40}
-              priority
-              style={{ height: "38px", width: "auto", objectFit: "contain" }}
-            />
-          </a>
-
-          <div className="navlinks">
-            {navLinks.map((link) => (
-              <a
-                key={link}
-                href="#"
-                onClick={(e) => {
-                  e.preventDefault();
-                  setActiveNav(link);
-                }}
-                className={activeNav === link ? "active" : ""}
-              >
-                {link}
-              </a>
-            ))}
-          </div>
-
-          <div className="navcta">
-            <button
-              className="btn-follow"
-              onClick={() => window.open("https://instagram.com", "_blank")}
-            >
-              📸 Follow the Buzz
-            </button>
-            <button
-              className="burger"
-              aria-label="Toggle navigation menu"
-              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            >
-              {mobileMenuOpen ? "✕" : "☰"}
-            </button>
-          </div>
-        </nav>
-
-        {/* Mobile Navigation Drawer */}
-        {mobileMenuOpen && (
-          <div className="mobile-menu">
-            {navLinks.map((link) => (
-              <a
-                key={link}
-                href="#"
-                onClick={(e) => {
-                  e.preventDefault();
-                  setActiveNav(link);
-                  setMobileMenuOpen(false);
-                }}
-                className={activeNav === link ? "active" : ""}
-              >
-                {link}
-              </a>
-            ))}
-          </div>
-        )}
-      </header>
+      <Header activeNav="Home" />
 
       {/* ===== HERO ===== */}
       <section className="hero">
-        <div className="feature-card">
-          <div className="feature-media">
-            <div className="noise"></div>
-            <span className="badge pink feature-tag">🔥 Breaking</span>
+        <Link
+          href="/vijay-deverakonda-rashmika-mandanna-cyber-crime-complaint-hyderabad"
+          className="feature-card block transition-all hover:border-[var(--magenta)]"
+          style={{ textDecoration: "none", color: "inherit" }}
+        >
+          <div className="feature-media" style={{ overflow: "hidden", position: "relative" }}>
+            <Image
+              src="/images/celebrity-cybercrime-complaint-thumbnail.jpg"
+              alt="Vijay Deverakonda and Rashmika Mandanna File Cyber Crime Complaint"
+              fill
+              priority
+              style={{ objectFit: "cover", objectPosition: "center" }}
+            />
+            <div className="noise" style={{ pointerEvents: "none" }}></div>
+            <span className="badge pink feature-tag">🔥 Breaking News</span>
           </div>
           <div className="feature-body">
-            <h1 className="disp">Bigg Boss 19 house left SHOOK after 2am wildcard twist</h1>
+            <h1 className="disp" style={{ color: "#fff" }}>
+              Vijay Deverakonda & Rashmika Mandanna File Complaint
+            </h1>
             <p>
-              One knock on the door, one dramatic entry, and the whole house dynamic just flipped.
-              Here&apos;s every reaction, alliance shift and tear caught on cam.
+              Vijay Deverakonda and Rashmika Mandanna’s team has filed a cyber crime complaint in Hyderabad over fake claims and online trolling after KWK 9.
             </p>
             <div className="meta-row">
-              <span>BIGG BOSS</span>
+              <span>BOLLYWOOD</span>
               <span className="dot-sep">◆</span>
               <span>4 MIN READ</span>
               <span className="dot-sep">◆</span>
-              <span>2H AGO</span>
+              <span style={{ color: "var(--lime)" }}>JUST NOW</span>
             </div>
           </div>
-        </div>
+        </Link>
 
         <div className="trend-panel">
           <h2>⚡ Trending Right Now</h2>
           <div className="trend-item">
             <span className="trend-rank">01</span>
             <div className="trend-text">
-              <h3>Splitsvilla&apos;s most talked-about couple just called it quits on camera</h3>
-              <span>SPLITSVILLA · 38K REACTIONS</span>
+              <Link
+                href="/vijay-deverakonda-rashmika-mandanna-cyber-crime-complaint-hyderabad"
+                style={{ color: "inherit" }}
+              >
+                <h3>Vijay & Rashmika team takes legal action against fake posts & KWK 9 trolling</h3>
+                <span>BOLLYWOOD · 52K REACTIONS</span>
+              </Link>
             </div>
           </div>
           <div className="trend-item">
             <span className="trend-rank">02</span>
             <div className="trend-text">
-              <h3>KKK contestant&apos;s stunt fail has the internet holding its breath</h3>
-              <span>KHATRON KE KHILADI · 29K REACTIONS</span>
+              <h3>Splitsvilla&apos;s most talked-about couple just called it quits on camera</h3>
+              <span>SPLITSVILLA · 38K REACTIONS</span>
             </div>
           </div>
           <div className="trend-item">
             <span className="trend-rank">03</span>
             <div className="trend-text">
-              <h3>This Bollywood duo&apos;s &quot;just friends&quot; airport look says otherwise</h3>
-              <span>BOLLYWOOD · 24K REACTIONS</span>
+              <h3>KKK contestant&apos;s stunt fail has the internet holding its breath</h3>
+              <span>KHATRON KE KHILADI · 29K REACTIONS</span>
             </div>
           </div>
           <div className="trend-item">
@@ -214,7 +146,7 @@ export default function Home() {
       </section>
 
       {/* ===== CATEGORY STRIP ===== */}
-      <div className="cat-strip">
+      <div className="cat-strip" id="categories">
         {categories.map((cat) => (
           <button
             key={cat}
@@ -227,7 +159,7 @@ export default function Home() {
       </div>
 
       {/* ===== LATEST GRID ===== */}
-      <section className="section">
+      <section className="section" id="news">
         <div className="section-head">
           <h2>
             Fresh <span className="accent">Buzz</span>
@@ -235,6 +167,31 @@ export default function Home() {
           <a href="#">View all →</a>
         </div>
         <div className="grid">
+          {/* Card 1: Vijay & Rashmika Live Story */}
+          <Link
+            href="/vijay-deverakonda-rashmika-mandanna-cyber-crime-complaint-hyderabad"
+            className="card"
+            style={{ textDecoration: "none", color: "inherit" }}
+          >
+            <div className="card-media" style={{ position: "relative", overflow: "hidden" }}>
+              <Image
+                src="/images/celebrity-couple-amid-cybercrime-buzz.jpg"
+                alt="Vijay and Rashmika amid cybercrime buzz"
+                fill
+                style={{ objectFit: "cover" }}
+              />
+              <span className="badge pink">Exclusive</span>
+            </div>
+            <div className="card-body">
+              <h3>Vijay & Rashmika legal team: &ldquo;This is not about silencing criticism&rdquo;</h3>
+              <div className="meta-row">
+                <span>BOLLYWOOD</span>
+                <span className="dot-sep">◆</span>
+                <span>2H AGO</span>
+              </div>
+            </div>
+          </Link>
+
           <div className="card m1">
             <div className="card-media">
               <span className="badge">New</span>
@@ -263,22 +220,8 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="card m3">
-            <div className="card-media">
-              <span className="badge">Video</span>
-            </div>
-            <div className="card-body">
-              <h3>Watch: the 12-second clip everyone&apos;s replaying from last night&apos;s episode</h3>
-              <div className="meta-row">
-                <span>BIGG BOSS</span>
-                <span className="dot-sep">◆</span>
-                <span>4H AGO</span>
-              </div>
-            </div>
-          </div>
-
           {/* POLL CARD */}
-          <div className="poll-card">
+          <div className="poll-card" id="polls">
             <span className="badge pink">🗳️ Vote Now</span>
             <h3>Who&apos;s walking out this weekend?</h3>
 
@@ -350,25 +293,11 @@ export default function Home() {
               </div>
             </div>
           </div>
-
-          <div className="card m6">
-            <div className="card-media">
-              <span className="badge">New</span>
-            </div>
-            <div className="card-body">
-              <h3>Bollywood power couple spotted together after months of breakup rumours</h3>
-              <div className="meta-row">
-                <span>BOLLYWOOD</span>
-                <span className="dot-sep">◆</span>
-                <span>7H AGO</span>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
 
       {/* ===== BUZZ-O-METER ===== */}
-      <section className="meter-section">
+      <section className="meter-section" id="buzz-o-meter">
         <div className="meter-inner">
           <div className="meter-head">
             <h2 className="disp">The Buzz-O-Meter</h2>
@@ -380,28 +309,28 @@ export default function Home() {
           <div className="meter-list">
             <div className="meter-row">
               <div className="meter-name">
+                <span className="meter-avatar" style={{ background: "var(--magenta)" }}>
+                  V
+                </span>
+                Vijay & Rashmika
+              </div>
+              <div className="meter-track">
+                <div className="meter-fill" style={{ width: "98%" }}></div>
+              </div>
+              <div className="meter-score">98</div>
+            </div>
+
+            <div className="meter-row">
+              <div className="meter-name">
                 <span className="meter-avatar" style={{ background: "var(--lime)" }}>
                   A
                 </span>
                 Aariv
               </div>
               <div className="meter-track">
-                <div className="meter-fill" style={{ width: "92%" }}></div>
+                <div className="meter-fill" style={{ width: "86%" }}></div>
               </div>
-              <div className="meter-score">92</div>
-            </div>
-
-            <div className="meter-row">
-              <div className="meter-name">
-                <span className="meter-avatar" style={{ background: "var(--magenta)" }}>
-                  R
-                </span>
-                Ritika
-              </div>
-              <div className="meter-track">
-                <div className="meter-fill" style={{ width: "81%" }}></div>
-              </div>
-              <div className="meter-score">81</div>
+              <div className="meter-score">86</div>
             </div>
 
             <div className="meter-row">
@@ -474,55 +403,7 @@ export default function Home() {
       </section>
 
       {/* ===== FOOTER ===== */}
-      <footer>
-        <div className="footer-inner">
-          <div className="footer-col" style={{ maxWidth: "260px" }}>
-            <a href="#" className="logo" style={{ marginBottom: "14px" }}>
-              <Image
-                src="/assets/buzzog-logo.png"
-                alt="Buzz OG"
-                width={128}
-                height={36}
-                style={{ height: "34px", width: "auto", objectFit: "contain" }}
-              />
-            </a>
-            <p style={{ fontSize: "13px", color: "var(--muted)", lineHeight: 1.6 }}>
-              Raw, unfiltered entertainment coverage of Indian reality TV and Bollywood — built for
-              the group chat.
-            </p>
-            <div className="footer-social" style={{ marginTop: "16px" }}>
-              <a href="https://instagram.com" target="_blank" rel="noreferrer" aria-label="Instagram">
-                📸
-              </a>
-              <a href="https://youtube.com" target="_blank" rel="noreferrer" aria-label="YouTube">
-                ▶️
-              </a>
-              <a href="#" aria-label="Twitter/X">
-                ✕
-              </a>
-            </div>
-          </div>
-          <div className="footer-col">
-            <h4>Categories</h4>
-            <a href="#">Reality Shows</a>
-            <a href="#">Bollywood</a>
-            <a href="#">Movie Reviews</a>
-            <a href="#">Web Series</a>
-            <a href="#">News</a>
-          </div>
-          <div className="footer-col">
-            <h4>More</h4>
-            <a href="#">Videos</a>
-            <a href="#">Polls & Games</a>
-            <a href="#">About Buzz Originals</a>
-            <a href="#">Contact Us</a>
-          </div>
-        </div>
-        <div className="footer-bottom">
-          <span>© 2026 BUZZ ORIGINALS. ALL RIGHTS RESERVED.</span>
-          <span>PRIVACY · TERMS · CONTACT</span>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }
