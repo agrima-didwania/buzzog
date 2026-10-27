@@ -68,32 +68,32 @@ export default function Home() {
       {/* ===== HERO ===== */}
       <section className="hero">
         <Link
-          href="/vijay-deverakonda-rashmika-mandanna-cyber-crime-complaint-hyderabad"
+          href="/godzilla-minus-zero-india-release-delayed-ramayana"
           className="feature-card block transition-all hover:border-[var(--magenta)]"
           style={{ textDecoration: "none", color: "inherit" }}
         >
           <div className="feature-media" style={{ overflow: "hidden", position: "relative" }}>
             <Image
-              src="/images/celebrity-cybercrime-complaint-thumbnail.jpg"
-              alt="Vijay Deverakonda and Rashmika Mandanna File Cyber Crime Complaint"
+              src="/images/godzilla-minus-zero-india-release-delayed-ramayana.jpg"
+              alt="Godzilla Minus Zero India Release Delayed vs Ramayana IMAX Clash"
               fill
               priority
               style={{ objectFit: "cover", objectPosition: "center" }}
             />
             <div className="noise" style={{ pointerEvents: "none" }}></div>
-            <span className="badge pink feature-tag">🔥 Breaking News</span>
+            <span className="badge pink feature-tag">🔥 Breaking Exclusive</span>
           </div>
           <div className="feature-body">
             <h1 className="disp" style={{ color: "#fff" }}>
-              Vijay Deverakonda & Rashmika Mandanna File Complaint
+              Godzilla Minus Zero India Release Delayed: Skips Ramayana Clash
             </h1>
             <p>
-              Vijay Deverakonda and Rashmika Mandanna’s team has filed a cyber crime complaint in Hyderabad over fake claims and online trolling after KWK 9.
+              Godzilla Minus Zero’s India release is reportedly delayed by two weeks. Here is why IMAX screens are the reason and what it means for Ramayana.
             </p>
             <div className="meta-row">
-              <span>BOLLYWOOD</span>
+              <span>MOVIE REVIEWS</span>
               <span className="dot-sep">◆</span>
-              <span>4 MIN READ</span>
+              <span>3 MIN READ</span>
               <span className="dot-sep">◆</span>
               <span style={{ color: "var(--lime)" }}>JUST NOW</span>
             </div>
@@ -106,6 +106,18 @@ export default function Home() {
             <span className="trend-rank">01</span>
             <div className="trend-text">
               <Link
+                href="/godzilla-minus-zero-india-release-delayed-ramayana"
+                style={{ color: "inherit" }}
+              >
+                <h3>Godzilla Minus Zero reportedly delayed by 2 weeks over Ramayana IMAX clash</h3>
+                <span>MOVIES · 64K REACTIONS</span>
+              </Link>
+            </div>
+          </div>
+          <div className="trend-item">
+            <span className="trend-rank">02</span>
+            <div className="trend-text">
+              <Link
                 href="/vijay-deverakonda-rashmika-mandanna-cyber-crime-complaint-hyderabad"
                 style={{ color: "inherit" }}
               >
@@ -115,31 +127,24 @@ export default function Home() {
             </div>
           </div>
           <div className="trend-item">
-            <span className="trend-rank">02</span>
+            <span className="trend-rank">03</span>
             <div className="trend-text">
               <h3>Splitsvilla&apos;s most talked-about couple just called it quits on camera</h3>
               <span>SPLITSVILLA · 38K REACTIONS</span>
             </div>
           </div>
           <div className="trend-item">
-            <span className="trend-rank">03</span>
+            <span className="trend-rank">04</span>
             <div className="trend-text">
               <h3>KKK contestant&apos;s stunt fail has the internet holding its breath</h3>
               <span>KHATRON KE KHILADI · 29K REACTIONS</span>
             </div>
           </div>
           <div className="trend-item">
-            <span className="trend-rank">04</span>
+            <span className="trend-rank">05</span>
             <div className="trend-text">
               <h3>Bigg Boss task turns personal — captaincy war gets ugly fast</h3>
               <span>BIGG BOSS · 19K REACTIONS</span>
-            </div>
-          </div>
-          <div className="trend-item">
-            <span className="trend-rank">05</span>
-            <div className="trend-text">
-              <h3>New web series trailer drops and it&apos;s already breaking timelines</h3>
-              <span>WEB SERIES · 15K REACTIONS</span>
             </div>
           </div>
         </div>
@@ -167,7 +172,57 @@ export default function Home() {
           <a href="#">View all →</a>
         </div>
         <div className="grid">
-          {/* Card 1: Vijay & Rashmika Live Story */}
+          {/* Card 1: Godzilla Blog Post */}
+          <Link
+            href="/godzilla-minus-zero-india-release-delayed-ramayana"
+            className="card"
+            style={{ textDecoration: "none", color: "inherit" }}
+          >
+            <div className="card-media" style={{ position: "relative", overflow: "hidden" }}>
+              <Image
+                src="/images/godzilla-minus-zero-india-release-delayed-ramayana.jpg"
+                alt="Godzilla Minus Zero delayed"
+                fill
+                style={{ objectFit: "cover" }}
+              />
+              <span className="badge pink">Box Office</span>
+            </div>
+            <div className="card-body">
+              <h3>Godzilla Minus Zero skips Diwali clash: solo IMAX run for Ranbir&apos;s Ramayana</h3>
+              <div className="meta-row">
+                <span>MOVIE REVIEWS</span>
+                <span className="dot-sep">◆</span>
+                <span>JUST NOW</span>
+              </div>
+            </div>
+          </Link>
+
+          {/* Card 2: Vijay & Rashmika Live Story */}
+          <Link
+            href="/vijay-deverakonda-rashmika-mandanna-cyber-crime-complaint-hyderabad"
+            className="card"
+            style={{ textDecoration: "none", color: "inherit" }}
+          >
+            <div className="card-media" style={{ position: "relative", overflow: "hidden" }}>
+              <Image
+                src="/images/celebrity-cybercrime-complaint-thumbnail.jpg"
+                alt="Vijay and Rashmika cyber crime complaint"
+                fill
+                style={{ objectFit: "cover" }}
+              />
+              <span className="badge">Breaking</span>
+            </div>
+            <div className="card-body">
+              <h3>Vijay & Rashmika team files cyber crime complaint over KWK 9 online trolling</h3>
+              <div className="meta-row">
+                <span>BOLLYWOOD</span>
+                <span className="dot-sep">◆</span>
+                <span>2H AGO</span>
+              </div>
+            </div>
+          </Link>
+
+          {/* Card 3: Celebrity Couple Insider */}
           <Link
             href="/vijay-deverakonda-rashmika-mandanna-cyber-crime-complaint-hyderabad"
             className="card"
@@ -187,38 +242,10 @@ export default function Home() {
               <div className="meta-row">
                 <span>BOLLYWOOD</span>
                 <span className="dot-sep">◆</span>
-                <span>2H AGO</span>
-              </div>
-            </div>
-          </Link>
-
-          <div className="card m1">
-            <div className="card-media">
-              <span className="badge">New</span>
-            </div>
-            <div className="card-body">
-              <h3>Housemate&apos;s diary room confession leaks — and it&apos;s messier than expected</h3>
-              <div className="meta-row">
-                <span>BIGG BOSS</span>
-                <span className="dot-sep">◆</span>
-                <span>1H AGO</span>
-              </div>
-            </div>
-          </div>
-
-          <div className="card m2">
-            <div className="card-media">
-              <span className="badge pink">Exclusive</span>
-            </div>
-            <div className="card-body">
-              <h3>Splitsvilla insider spills who&apos;s actually calling the shots this season</h3>
-              <div className="meta-row">
-                <span>SPLITSVILLA</span>
-                <span className="dot-sep">◆</span>
                 <span>3H AGO</span>
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* POLL CARD */}
           <div className="poll-card" id="polls">
@@ -309,28 +336,28 @@ export default function Home() {
           <div className="meter-list">
             <div className="meter-row">
               <div className="meter-name">
+                <span className="meter-avatar" style={{ background: "var(--lime)" }}>
+                  G
+                </span>
+                Godzilla vs Ramayana
+              </div>
+              <div className="meter-track">
+                <div className="meter-fill" style={{ width: "99%" }}></div>
+              </div>
+              <div className="meter-score">99</div>
+            </div>
+
+            <div className="meter-row">
+              <div className="meter-name">
                 <span className="meter-avatar" style={{ background: "var(--magenta)" }}>
                   V
                 </span>
                 Vijay & Rashmika
               </div>
               <div className="meter-track">
-                <div className="meter-fill" style={{ width: "98%" }}></div>
+                <div className="meter-fill" style={{ width: "94%" }}></div>
               </div>
-              <div className="meter-score">98</div>
-            </div>
-
-            <div className="meter-row">
-              <div className="meter-name">
-                <span className="meter-avatar" style={{ background: "var(--lime)" }}>
-                  A
-                </span>
-                Aariv
-              </div>
-              <div className="meter-track">
-                <div className="meter-fill" style={{ width: "86%" }}></div>
-              </div>
-              <div className="meter-score">86</div>
+              <div className="meter-score">94</div>
             </div>
 
             <div className="meter-row">
