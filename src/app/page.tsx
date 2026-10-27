@@ -51,7 +51,7 @@ export default function Home() {
     "🔥 All Buzz",
     "Reality Shows",
     "Bollywood",
-    "Movie Reviews",
+    "Movies",
     "Web Series",
     "News",
     "Videos",
@@ -91,7 +91,7 @@ export default function Home() {
               Godzilla Minus Zero’s India release is reportedly delayed by two weeks. Here is why IMAX screens are the reason and what it means for Ramayana.
             </p>
             <div className="meta-row">
-              <span>MOVIE REVIEWS</span>
+              <span>MOVIES</span>
               <span className="dot-sep">◆</span>
               <span>3 MIN READ</span>
               <span className="dot-sep">◆</span>
@@ -190,7 +190,7 @@ export default function Home() {
             <div className="card-body">
               <h3>Godzilla Minus Zero skips Diwali clash: solo IMAX run for Ranbir&apos;s Ramayana</h3>
               <div className="meta-row">
-                <span>MOVIE REVIEWS</span>
+                <span>MOVIES</span>
                 <span className="dot-sep">◆</span>
                 <span>JUST NOW</span>
               </div>

@@ -15,7 +15,7 @@ export default function Header({ activeNav = "Home" }: HeaderProps) {
     { label: "Home", href: "/" },
     { label: "Reality Shows", href: "/#reality-shows" },
     { label: "Bollywood", href: "/#bollywood" },
-    { label: "Movie Reviews", href: "/#movie-reviews" },
+    { label: "Movies", href: "/#movies" },
     { label: "Web Series", href: "/#web-series" },
     { label: "News", href: "/#news" },
   ];
@@ -49,7 +49,12 @@ export default function Header({ activeNav = "Home" }: HeaderProps) {
         <div className="navcta">
           <button
             className="btn-follow"
-            onClick={() => window.open("https://instagram.com", "_blank")}
+            onClick={() =>
+              window.open(
+                "https://www.instagram.com/buzzoriginals?exln=MWdhNTk5dWdlYnF5cg==",
+                "_blank"
+              )
+            }
           >
             📸 Follow the Buzz
           </button>

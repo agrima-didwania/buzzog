@@ -20,7 +20,12 @@ export default function Footer() {
             the group chat.
           </p>
           <div className="footer-social" style={{ marginTop: "16px" }}>
-            <a href="https://instagram.com" target="_blank" rel="noreferrer" aria-label="Instagram">
+            <a
+              href="https://www.instagram.com/buzzoriginals?exln=MWdhNTk5dWdlYnF5cg=="
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Instagram"
+            >
               📸
             </a>
             <a href="https://youtube.com" target="_blank" rel="noreferrer" aria-label="YouTube">
@@ -35,7 +40,7 @@ export default function Footer() {
           <h4>Categories</h4>
           <Link href="/#reality-shows">Reality Shows</Link>
           <Link href="/#bollywood">Bollywood</Link>
-          <Link href="/#movie-reviews">Movie Reviews</Link>
+          <Link href="/#movies">Movies</Link>
           <Link href="/#web-series">Web Series</Link>
           <Link href="/#news">News</Link>
         </div>

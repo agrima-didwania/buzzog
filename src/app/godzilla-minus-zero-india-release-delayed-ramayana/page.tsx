@@ -95,7 +95,7 @@ export default function GodzillaArticlePage() {
       <Ticker />
 
       {/* Main Navigation */}
-      <Header activeNav="Movie Reviews" />
+      <Header activeNav="Movies" />
 
       {/* Article Container */}
       <main className="article-wrap">
@@ -103,7 +103,7 @@ export default function GodzillaArticlePage() {
         <nav className="article-breadcrumb" aria-label="Breadcrumb">
           <Link href="/">HOME</Link>
           <span>/</span>
-          <Link href="/#movie-reviews">MOVIE NEWS</Link>
+          <Link href="/#movies">MOVIES</Link>
           <span>/</span>
           <span style={{ color: "var(--lavender)" }}>BOX OFFICE</span>
         </nav>
