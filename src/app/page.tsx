@@ -89,10 +89,10 @@ export default function Home() {
             <Image
               src="/assets/buzzog-logo.png"
               alt="Buzz OG"
-              width={136}
-              height={34}
+              width={142}
+              height={40}
               priority
-              style={{ height: "34px", width: "auto" }}
+              style={{ height: "38px", width: "auto", objectFit: "contain" }}
             />
           </a>
 
@@ -481,9 +481,9 @@ export default function Home() {
               <Image
                 src="/assets/buzzog-logo.png"
                 alt="Buzz OG"
-                width={120}
-                height={30}
-                style={{ height: "30px", width: "auto" }}
+                width={128}
+                height={36}
+                style={{ height: "34px", width: "auto", objectFit: "contain" }}
               />
             </a>
             <p style={{ fontSize: "13px", color: "var(--muted)", lineHeight: 1.6 }}>
