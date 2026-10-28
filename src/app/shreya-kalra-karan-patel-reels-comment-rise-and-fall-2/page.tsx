@@ -257,48 +257,35 @@ export default function ShreyaArticlePage() {
           <p>
             Reality shows are full of drama, and this clash proves it. One line about reels has started a bigger talk about respect for creators and reality TV stars. Stay tuned to Buzz Originals for more updates on Rise and Fall 2 and other reality shows.
           </p>
+
+          {/* Tags & Keywords */}
+          <div className="tags-cluster">
+            <span className="tag-badge">#ShreyaKalra</span>
+            <span className="tag-badge">#KaranPatel</span>
+            <span className="tag-badge">#RishabhJaiswal</span>
+            <span className="tag-badge">#RiseAndFall2</span>
+            <span className="tag-badge">#RealityTV</span>
+            <span className="tag-badge">#KabTakReelsMeinRahoge</span>
+          </div>
+
+          {/* Accessible Social Share Component */}
+          <SocialShare title={pageTitle} url={pageUrl} />
+
+          {/* Back to Home */}
+          <div style={{ marginTop: "32px", paddingTop: "20px", borderTop: "1px solid var(--line)" }}>
+            <Link
+              href="/"
+              style={{
+                fontFamily: "var(--font-space-mono), monospace",
+                fontSize: "13px",
+                fontWeight: 700,
+                color: "var(--lime)",
+              }}
+            >
+              ← Back to All Buzz
+            </Link>
+          </div>
         </article>
-
-        {/* Social Share Component */}
-        <SocialShare url={pageUrl} title={pageTitle} />
-
-        {/* Author Bio Card */}
-        <div className="author-card">
-          <div className="author-avatar" aria-hidden="true">
-            BO
-          </div>
-          <div>
-            <div className="author-name">Buzz Originals Desk</div>
-            <div className="author-role">Reality TV & Pop Culture Desk</div>
-            <p className="author-desc">
-              Delivering verified scoops, inside house reports, and unfiltered breakdowns from India&apos;s biggest reality franchises and social media creator clashes.
-            </p>
-          </div>
-        </div>
-
-        {/* Back Link */}
-        <div style={{ marginTop: "32px", textAlign: "center" }}>
-          <Link
-            href="/"
-            style={{
-              display: "inline-flex",
-              alignItems: "center",
-              gap: "8px",
-              fontFamily: "var(--font-space-mono)",
-              fontSize: "13px",
-              fontWeight: 700,
-              color: "var(--lime)",
-              textDecoration: "none",
-              padding: "10px 20px",
-              border: "1px solid rgba(200, 255, 0, 0.3)",
-              borderRadius: "999px",
-              background: "rgba(200, 255, 0, 0.05)",
-            }}
-            className="hover:bg-[rgba(200,255,0,0.15)] transition-colors"
-          >
-            ← Back to All Buzz Originals News
-          </Link>
-        </div>
       </main>
 
       {/* Footer */}

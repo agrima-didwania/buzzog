@@ -17,7 +17,7 @@ export default function Header({ activeNav = "Home" }: HeaderProps) {
   const navLinks = [
     { label: "Home", href: "/" },
     { label: "Reality Shows", href: "/reality-shows" },
-    { label: "Bollywood", href: "/#bollywood" },
+    { label: "Bollywood", href: "/bollywood" },
     { label: "Movies", href: "/#movies" },
     { label: "Web Series", href: "/#web-series" },
     { label: "News", href: "/#news" },

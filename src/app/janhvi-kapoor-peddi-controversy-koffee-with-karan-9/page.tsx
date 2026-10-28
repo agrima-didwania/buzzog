@@ -316,48 +316,36 @@ export default function JanhviArticlePage() {
               Netflix
             </a>.
           </p>
+
+          {/* Tags & Keywords */}
+          <div className="tags-cluster">
+            <span className="tag-badge">#JanhviKapoor</span>
+            <span className="tag-badge">#Peddi</span>
+            <span className="tag-badge">#KoffeeWithKaran9</span>
+            <span className="tag-badge">#RashmikaMandanna</span>
+            <span className="tag-badge">#VijayDeverakonda</span>
+            <span className="tag-badge">#BuchiBabuSana</span>
+            <span className="tag-badge">#BollywoodNews</span>
+          </div>
+
+          {/* Accessible Social Share Component */}
+          <SocialShare title={pageTitle} url={pageUrl} />
+
+          {/* Back to Home */}
+          <div style={{ marginTop: "32px", paddingTop: "20px", borderTop: "1px solid var(--line)" }}>
+            <Link
+              href="/"
+              style={{
+                fontFamily: "var(--font-space-mono), monospace",
+                fontSize: "13px",
+                fontWeight: 700,
+                color: "var(--lime)",
+              }}
+            >
+              ← Back to All Buzz
+            </Link>
+          </div>
         </article>
-
-        {/* Social Share Component */}
-        <SocialShare url={pageUrl} title={pageTitle} />
-
-        {/* Author Bio Card */}
-        <div className="author-card">
-          <div className="author-avatar" aria-hidden="true">
-            BO
-          </div>
-          <div>
-            <div className="author-name">Buzz Originals Desk</div>
-            <div className="author-role">Bollywood & Pop Culture Bureau</div>
-            <p className="author-desc">
-              Unfiltered reporting, exclusive couch dispatches, and deep dives into India&apos;s biggest cinematic headlines and industry accountability conversations.
-            </p>
-          </div>
-        </div>
-
-        {/* Back Link */}
-        <div style={{ marginTop: "32px", textAlign: "center" }}>
-          <Link
-            href="/"
-            style={{
-              display: "inline-flex",
-              alignItems: "center",
-              gap: "8px",
-              fontFamily: "var(--font-space-mono)",
-              fontSize: "13px",
-              fontWeight: 700,
-              color: "var(--lime)",
-              textDecoration: "none",
-              padding: "10px 20px",
-              border: "1px solid rgba(200, 255, 0, 0.3)",
-              borderRadius: "999px",
-              background: "rgba(200, 255, 0, 0.05)",
-            }}
-            className="hover:bg-[rgba(200,255,0,0.15)] transition-colors"
-          >
-            ← Back to All Buzz Originals News
-          </Link>
-        </div>
       </main>
 
       {/* Footer */}

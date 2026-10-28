@@ -1540,4 +1540,74 @@ select {
   }
 }
 
+/* ===== BOLLYWOOD SUB-PAGE & RUMOUR RADAR ===== */
+.sub {
+  color: var(--muted);
+  font-size: 14.5px;
+  margin: -8px 0 20px;
+  max-width: 560px;
+}
+
+.radar {
+  background: var(--ink-2);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 6px 22px;
+}
+
+.rr {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--line);
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.rr:last-child {
+  border-bottom: none;
+}
+
+.st {
+  font-family: var(--font-space-mono), monospace;
+  font-size: 11px;
+  padding: 5px 11px;
+  border-radius: 6px;
+  white-space: nowrap;
+  border: 1.5px solid var(--muted);
+  color: var(--muted);
+  letter-spacing: 0.05em;
+}
+
+.st.ok {
+  background: var(--lime);
+  border-color: var(--lime);
+  color: var(--ink);
+}
+
+.st.no {
+  background: var(--magenta);
+  border-color: var(--magenta);
+  color: #fff;
+}
+
+.st.un {
+  border-color: var(--muted);
+  color: var(--muted);
+}
+
+.cat-chip.magenta-active:hover {
+  border-color: var(--magenta);
+  color: #ffffff;
+}
+
+.cat-chip.magenta-active.on {
+  background: var(--magenta);
+  border-color: var(--magenta);
+  color: #ffffff;
+}
+
+
 
