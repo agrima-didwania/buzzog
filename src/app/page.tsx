@@ -30,8 +30,8 @@ function getOrCreateVoterToken(): string {
 }
 
 export default function Home() {
-  // Category Filter State
-  const [activeCategory, setActiveCategory] = useState("🔥 All Buzz");
+  // Category Filter State (All + 5 categories: Latest, Exclusive, Reality TV Updates, Bollywood, News)
+  const [activeCategory, setActiveCategory] = useState("All");
 
   // Community Poll State (real persistence via /api/poll)
   const [poll, setPoll] = useState<PollData>({
@@ -145,17 +145,17 @@ export default function Home() {
     }
   };
 
+  // The 5 requested categories: Latest, Exclusive, Reality TV Updates, Bollywood, News (plus All filter option)
   const categories = [
-    "🔥 All Buzz",
-    "Reality Shows",
+    "All",
+    "Latest",
+    "Exclusive",
+    "Reality TV Updates",
     "Bollywood",
-    "Movies",
-    "Web Series",
     "News",
-    "Videos",
   ];
 
-  // Verified editorial stories for Latest News & Fresh Buzz (zero duplicates of the hero)
+  // 5 Verified editorial stories mapped directly to the 5 requested categories (with zero duplicates of the hero)
   const editorialArticles = [
     {
       id: "godzilla-imax-delay",
@@ -163,9 +163,9 @@ export default function Home() {
       href: "/godzilla-minus-zero-india-release-delayed-ramayana",
       title: "Godzilla Minus Zero skips Diwali clash: solo IMAX run for Ranbir's Ramayana",
       excerpt: "Legendary monster flick shifts India theatrical rollout to give Nitesh Tiwari's mythological epic a clean premium screen window.",
-      category: "Movies",
-      displayCategory: "CINEMA",
-      badge: "Box Office",
+      category: "Latest",
+      displayCategory: "LATEST",
+      badge: "Latest",
       badgeType: "lime",
       readTime: "3 MIN READ",
       image: "/images/godzilla-minus-zero-india-release-delayed-ramayana.jpg",
@@ -176,8 +176,8 @@ export default function Home() {
       href: "/vijay-deverakonda-rashmika-mandanna-cyber-crime-complaint-hyderabad",
       title: "Vijay & Rashmika team files cyber crime complaint over KWK 9 online trolling",
       excerpt: "Formal police complaint registered in Hyderabad against malicious fan accounts circulating defamatory morphed clips.",
-      category: "Bollywood",
-      displayCategory: "BOLLYWOOD",
+      category: "Exclusive",
+      displayCategory: "EXCLUSIVE",
       badge: "Exclusive",
       badgeType: "pink",
       readTime: "3 MIN READ",
@@ -188,54 +188,53 @@ export default function Home() {
       anchorId: "reality-shows",
       title: "Bigg Boss Weekend Ka Vaar: High-stakes nominations shake up the house",
       excerpt: "Double eviction threats and heated host confrontations reset alliances across the living room.",
-      category: "Reality Shows",
-      displayCategory: "BIGG BOSS",
-      badge: "Nominations",
+      category: "Reality TV Updates",
+      displayCategory: "REALITY TV UPDATES",
+      badge: "Reality TV Updates",
       badgeType: "pink",
       readTime: "EPISODE SCOOP",
       bgGradient: "radial-gradient(circle at 75% 30%, #301826, #0f0f13 75%)",
-      watermarkText: "BB",
+      watermarkText: "REALITY",
       watermarkColor: "text-purple-500",
     },
     {
-      id: "kkk-stunt-fail",
-      anchorId: "khatron-ke-khiladi",
-      title: "KKK's scariest stunt this season made two contestants tap out instantly",
-      excerpt: "A high-altitude fear task pushed physical endurance to the brink, leading to dramatic emergency halts.",
-      category: "Reality Shows",
-      displayCategory: "KHATRON KE KHILADI",
-      badge: "Stunt Recap",
+      id: "ramayana-la-buzz",
+      anchorId: "bollywood-gala",
+      href: "/ramayana-la-premiere-ranbir-kapoor-yash-sai-pallavi",
+      title: "Inside Ramayana's ₹4,000 Cr global rollout: Star power, LA buzz & Diwali surge",
+      excerpt: "Hollywood premiere reactions, record IMAX bookings, and how Ranbir Kapoor and Yash are positioning Indian cinema worldwide.",
+      category: "Bollywood",
+      displayCategory: "BOLLYWOOD",
+      badge: "Bollywood",
       badgeType: "lime",
-      readTime: "EPISODE RECAP",
-      bgGradient: "radial-gradient(circle at 75% 30%, #2f2111, #0f0f13 75%)",
-      watermarkText: "KKK",
+      readTime: "4 MIN READ",
+      bgGradient: "radial-gradient(circle at 75% 30%, #351a10, #0f0f13 75%)",
+      watermarkText: "BOLLY",
       watermarkColor: "text-amber-500",
     },
     {
-      id: "splitsvilla-dome-drama",
-      anchorId: "splitsvilla",
-      title: "Splitsvilla dome session breakdown: ideal match broken and power shifted",
-      excerpt: "An intense oracle vote split longtime allies down the middle, resetting villa voting blocks.",
-      category: "Reality Shows",
-      displayCategory: "SPLITSVILLA",
-      badge: "Dome Drama",
+      id: "imax-expansion-news",
+      anchorId: "industry-news",
+      title: "IMAX India confirms record 45-screen expansion ahead of festive movie slate",
+      excerpt: "Premium large-format screens prepare for unprecedented box office demand with specialized IMAX laser conversions nationwide.",
+      category: "News",
+      displayCategory: "NEWS",
+      badge: "News",
       badgeType: "pink",
-      readTime: "UNFILTERED",
-      bgGradient: "radial-gradient(circle at 75% 30%, #351226, #0f0f13 75%)",
-      watermarkText: "DOME",
-      watermarkColor: "text-rose-500",
+      readTime: "TRADE REPORT",
+      bgGradient: "radial-gradient(circle at 75% 30%, #102636, #0f0f13 75%)",
+      watermarkText: "NEWS",
+      watermarkColor: "text-cyan-400",
     },
   ];
 
   const visibleArticles =
-    activeCategory === "🔥 All Buzz" || activeCategory === "News"
+    activeCategory === "All"
       ? editorialArticles
       : editorialArticles.filter((art) => art.category === activeCategory);
 
-  const showPollCard =
-    activeCategory === "🔥 All Buzz" ||
-    activeCategory === "Movies" ||
-    activeCategory === "News";
+  // Instructed preservation: "and keep the live community poll as it is. dont chnage that"
+  const showPollCard = true;
 
   return (
     <div className="min-h-screen bg-[var(--ink)] text-[var(--lavender)] flex flex-col justify-between">
@@ -347,21 +346,6 @@ export default function Home() {
           </div>
         </section>
 
-        {/* ===== CATEGORY FILTER STRIP ===== */}
-        <div className="cat-strip" id="categories" role="tablist" aria-label="Filter Buzz by Category">
-          {categories.map((cat) => (
-            <button
-              key={cat}
-              role="tab"
-              aria-selected={activeCategory === cat}
-              onClick={() => setActiveCategory(cat)}
-              className={`cat-chip ${activeCategory === cat ? "on" : ""}`}
-            >
-              {cat}
-            </button>
-          ))}
-        </div>
-
         {/* ===== LATEST NEWS & FRESH BUZZ SECTION ===== */}
         <section className="section" id="news">
           <div className="section-head">
@@ -376,6 +360,21 @@ export default function Home() {
             <span className="text-xs font-mono text-[var(--lime)] font-bold hidden sm:inline-block">
               UPDATED HOURLY
             </span>
+          </div>
+
+          {/* Category Filter Strip: The 5 Requested Categories (Latest, Exclusive, Reality TV Updates, Bollywood, News) */}
+          <div className="cat-strip mb-6" id="categories" role="tablist" aria-label="Filter Buzz by Category">
+            {categories.map((cat) => (
+              <button
+                key={cat}
+                role="tab"
+                aria-selected={activeCategory === cat}
+                onClick={() => setActiveCategory(activeCategory === cat ? "All" : cat)}
+                className={`cat-chip ${activeCategory === cat ? "on" : ""}`}
+              >
+                {cat}
+              </button>
+            ))}
           </div>
 
           <div className="grid">
