@@ -730,18 +730,21 @@ nav {
 
 .cta-form input {
   background: var(--ink-2);
-  border: 1.5px solid var(--line);
-  color: var(--lavender);
-  padding: 14px 20px;
+  border: 1.5px solid rgba(255, 255, 255, 0.85);
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  padding: 14px 22px;
   border-radius: 999px;
   font-size: 14px;
-  width: 300px;
+  width: 320px;
   font-family: var(--font-plus-jakarta), sans-serif;
+  transition: all 0.2s ease;
 }
 
 .cta-form input:focus {
   outline: none;
-  border-color: var(--magenta);
+  border-color: #ffffff;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.35);
 }
 
 .cta-form button {
@@ -753,11 +756,16 @@ nav {
   padding: 14px 26px;
   border-radius: 999px;
   cursor: pointer;
-  transition: transform 0.15s ease;
+  transition: transform 0.15s ease, opacity 0.15s ease;
 }
 
-.cta-form button:hover {
+.cta-form button:hover:not(:disabled) {
   transform: translateY(-2px);
+}
+
+.cta-form button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
 }
 
 .cta-note {

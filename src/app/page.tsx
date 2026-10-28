@@ -23,6 +23,9 @@ export default function Home() {
   // Newsletter State
   const [email, setEmail] = useState("");
   const [newsletterSubmitted, setNewsletterSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [subscribeMessage, setSubscribeMessage] = useState("");
+  const [subscribeError, setSubscribeError] = useState("");
 
   // Handle Poll Vote
   const handleVote = (option: "A" | "B") => {
@@ -39,12 +42,35 @@ export default function Home() {
     });
   };
 
-  // Handle Newsletter Join
-  const handleNewsletterSubmit = (e: React.FormEvent) => {
+  // Handle Newsletter Join & Welcome Email
+  const handleNewsletterSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!email) return;
-    setNewsletterSubmitted(true);
-    setEmail("");
+    if (!email || submitting) return;
+
+    setSubmitting(true);
+    setSubscribeError("");
+
+    try {
+      const res = await fetch("/api/subscribe", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email }),
+      });
+
+      const data = await res.json();
+      if (!res.ok) {
+        throw new Error(data.error || "Subscription failed. Please check your email and try again.");
+      }
+
+      setNewsletterSubmitted(true);
+      setSubscribeMessage(data.message || "YOU'RE IN. WELCOME TO THE BUZZ SQUAD 🎉 Check your email!");
+      setEmail("");
+    } catch (err: unknown) {
+      const msg = err instanceof Error ? err.message : "Something went wrong. Please try again.";
+      setSubscribeError(msg);
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   const categories = [
@@ -412,19 +438,33 @@ export default function Home() {
           <input
             type="email"
             value={email}
-            onChange={(e) => setEmail(e.target.value)}
+            onChange={(e) => {
+              setEmail(e.target.value);
+              if (subscribeError) setSubscribeError("");
+            }}
             placeholder="you@email.com"
             required
+            disabled={submitting}
           />
-          <button type="submit">Join the Buzz Squad</button>
+          <button type="submit" disabled={submitting}>
+            {submitting ? "Joining..." : "Join the Buzz Squad"}
+          </button>
         </form>
         <div
           className="cta-note"
           id="ctaNote"
-          style={newsletterSubmitted ? { color: "var(--lime)", fontWeight: "bold" } : {}}
+          style={
+            subscribeError
+              ? { color: "var(--magenta)", fontWeight: "bold" }
+              : newsletterSubmitted
+              ? { color: "var(--lime)", fontWeight: "bold" }
+              : {}
+          }
         >
-          {newsletterSubmitted
-            ? "YOU'RE IN. WELCOME TO THE BUZZ SQUAD 🎉"
+          {subscribeError
+            ? `⚠️ ${subscribeError}`
+            : newsletterSubmitted
+            ? subscribeMessage
             : "NO SPAM. JUST DRAMA. UNSUBSCRIBE ANYTIME."}
         </div>
       </section>
