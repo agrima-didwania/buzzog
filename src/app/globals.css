@@ -134,8 +134,7 @@ nav {
   justify-content: space-between;
   padding: 16px 24px;
   gap: 24px;
-  max-width: 1240px;
-  margin: 0 auto;
+  width: 100%;
 }
 
 .logo {
@@ -420,16 +419,16 @@ nav {
 .cat-strip {
   display: flex;
   gap: 10px;
-  padding: 0 0 24px 0;
-  max-width: 1320px;
+  padding: 8px 4px 24px 4px;
+  width: 100%;
   margin: 0;
   overflow-x: auto;
   scrollbar-width: none;
 }
 
 .section .cat-strip {
-  padding: 0 0 24px 0;
-  max-width: 100%;
+  padding: 8px 4px 24px 4px;
+  width: 100%;
 }
 
 .cat-strip::-webkit-scrollbar {

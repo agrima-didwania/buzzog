@@ -25,7 +25,7 @@ export default function Header({ activeNav = "Home" }: HeaderProps) {
 
   return (
     <header className="sticky top-0 z-50 bg-[rgba(14,11,20,0.92)] backdrop-blur-md border-b border-[var(--line)]">
-      <nav className="max-w-[1320px] mx-auto px-4 sm:px-6 py-3.5 flex items-center justify-between gap-4 lg:gap-8">
+      <nav className="w-full px-4 sm:px-8 lg:px-12 py-3.5 flex items-center justify-between gap-4 lg:gap-8">
         {/* Brand Logo */}
         <Link href="/" className="logo flex-shrink-0" aria-label="Buzz Originals Home">
           <Image
