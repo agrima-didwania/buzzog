@@ -94,32 +94,32 @@ export default function Home() {
       {/* ===== HERO ===== */}
       <section className="hero">
         <Link
-          href="/godzilla-minus-zero-india-release-delayed-ramayana"
+          href="/ramayana-la-premiere-ranbir-kapoor-yash-sai-pallavi"
           className="feature-card block transition-all hover:border-[var(--magenta)]"
           style={{ textDecoration: "none", color: "inherit" }}
         >
           <div className="feature-media" style={{ overflow: "hidden", position: "relative" }}>
             <Image
-              src="/images/godzilla-minus-zero-india-release-delayed-ramayana.jpg"
-              alt="Godzilla Minus Zero India Release Delayed vs Ramayana IMAX Clash"
+              src="/images/ramayana-la-premiere-ranbir-kapoor-yash-sai-pallavi.jpg"
+              alt="Ramayana LA Premiere: Ranbir Kapoor, Yash and Sai Pallavi"
               fill
               priority
               style={{ objectFit: "cover", objectPosition: "center" }}
             />
             <div className="noise" style={{ pointerEvents: "none" }}></div>
-            <span className="badge pink feature-tag">🔥 Breaking Exclusive</span>
+            <span className="badge pink feature-tag">🔥 Global Premiere</span>
           </div>
           <div className="feature-body">
             <h1 className="disp" style={{ color: "#fff" }}>
-              Godzilla Minus Zero India Release Delayed: Skips Ramayana Clash
+              Ramayana LA Premiere: Actors Steal the Red Carpet
             </h1>
             <p>
-              Godzilla Minus Zero’s India release is reportedly delayed by two weeks. Here is why IMAX screens are the reason and what it means for Ramayana.
+              Ranbir Kapoor, Yash and Sai Pallavi walked the red carpet at the Ramayana LA premiere. See who attended, what they wore, and the release date.
             </p>
             <div className="meta-row">
               <span>MOVIES</span>
               <span className="dot-sep">◆</span>
-              <span>3 MIN READ</span>
+              <span>4 MIN READ</span>
               <span className="dot-sep">◆</span>
               <span style={{ color: "var(--lime)" }}>JUST NOW</span>
             </div>
@@ -132,6 +132,18 @@ export default function Home() {
             <span className="trend-rank">01</span>
             <div className="trend-text">
               <Link
+                href="/ramayana-la-premiere-ranbir-kapoor-yash-sai-pallavi"
+                style={{ color: "inherit" }}
+              >
+                <h3>Ramayana LA Premiere: Ranbir Kapoor, Yash & Sai Pallavi stun Hollywood</h3>
+                <span>MOVIES · 85K REACTIONS</span>
+              </Link>
+            </div>
+          </div>
+          <div className="trend-item">
+            <span className="trend-rank">02</span>
+            <div className="trend-text">
+              <Link
                 href="/godzilla-minus-zero-india-release-delayed-ramayana"
                 style={{ color: "inherit" }}
               >
@@ -141,7 +153,7 @@ export default function Home() {
             </div>
           </div>
           <div className="trend-item">
-            <span className="trend-rank">02</span>
+            <span className="trend-rank">03</span>
             <div className="trend-text">
               <Link
                 href="/vijay-deverakonda-rashmika-mandanna-cyber-crime-complaint-hyderabad"
@@ -153,24 +165,17 @@ export default function Home() {
             </div>
           </div>
           <div className="trend-item">
-            <span className="trend-rank">03</span>
+            <span className="trend-rank">04</span>
             <div className="trend-text">
               <h3>Splitsvilla&apos;s most talked-about couple just called it quits on camera</h3>
               <span>SPLITSVILLA · 38K REACTIONS</span>
             </div>
           </div>
           <div className="trend-item">
-            <span className="trend-rank">04</span>
+            <span className="trend-rank">05</span>
             <div className="trend-text">
               <h3>KKK contestant&apos;s stunt fail has the internet holding its breath</h3>
               <span>KHATRON KE KHILADI · 29K REACTIONS</span>
-            </div>
-          </div>
-          <div className="trend-item">
-            <span className="trend-rank">05</span>
-            <div className="trend-text">
-              <h3>Bigg Boss task turns personal — captaincy war gets ugly fast</h3>
-              <span>BIGG BOSS · 19K REACTIONS</span>
             </div>
           </div>
         </div>
@@ -198,7 +203,32 @@ export default function Home() {
           <a href="#">View all →</a>
         </div>
         <div className="grid">
-          {/* Card 1: Godzilla Blog Post */}
+          {/* Card 1: Ramayana LA Premiere */}
+          <Link
+            href="/ramayana-la-premiere-ranbir-kapoor-yash-sai-pallavi"
+            className="card"
+            style={{ textDecoration: "none", color: "inherit" }}
+          >
+            <div className="card-media" style={{ position: "relative", overflow: "hidden" }}>
+              <Image
+                src="/images/ramayana-la-premiere-ranbir-kapoor-yash-sai-pallavi.jpg"
+                alt="Ramayana LA Premiere Red Carpet"
+                fill
+                style={{ objectFit: "cover" }}
+              />
+              <span className="badge pink">Hollywood Gala</span>
+            </div>
+            <div className="card-body">
+              <h3>Inside Ramayana’s LA Premiere: Jada Pinkett Smith, Hollywood stars & ₹4,000 Cr buzz</h3>
+              <div className="meta-row">
+                <span>MOVIES</span>
+                <span className="dot-sep">◆</span>
+                <span>JUST NOW</span>
+              </div>
+            </div>
+          </Link>
+
+          {/* Card 2: Godzilla Blog Post */}
           <Link
             href="/godzilla-minus-zero-india-release-delayed-ramayana"
             className="card"
@@ -211,19 +241,19 @@ export default function Home() {
                 fill
                 style={{ objectFit: "cover" }}
               />
-              <span className="badge pink">Box Office</span>
+              <span className="badge">Box Office</span>
             </div>
             <div className="card-body">
               <h3>Godzilla Minus Zero skips Diwali clash: solo IMAX run for Ranbir&apos;s Ramayana</h3>
               <div className="meta-row">
                 <span>MOVIES</span>
                 <span className="dot-sep">◆</span>
-                <span>JUST NOW</span>
+                <span>2H AGO</span>
               </div>
             </div>
           </Link>
 
-          {/* Card 2: Vijay & Rashmika Live Story */}
+          {/* Card 3: Vijay & Rashmika Live Story */}
           <Link
             href="/vijay-deverakonda-rashmika-mandanna-cyber-crime-complaint-hyderabad"
             className="card"
@@ -236,39 +266,14 @@ export default function Home() {
                 fill
                 style={{ objectFit: "cover" }}
               />
-              <span className="badge">Breaking</span>
+              <span className="badge pink">Exclusive</span>
             </div>
             <div className="card-body">
               <h3>Vijay & Rashmika team files cyber crime complaint over KWK 9 online trolling</h3>
               <div className="meta-row">
                 <span>BOLLYWOOD</span>
                 <span className="dot-sep">◆</span>
-                <span>2H AGO</span>
-              </div>
-            </div>
-          </Link>
-
-          {/* Card 3: Celebrity Couple Insider */}
-          <Link
-            href="/vijay-deverakonda-rashmika-mandanna-cyber-crime-complaint-hyderabad"
-            className="card"
-            style={{ textDecoration: "none", color: "inherit" }}
-          >
-            <div className="card-media" style={{ position: "relative", overflow: "hidden" }}>
-              <Image
-                src="/images/celebrity-couple-amid-cybercrime-buzz.jpg"
-                alt="Vijay and Rashmika amid cybercrime buzz"
-                fill
-                style={{ objectFit: "cover" }}
-              />
-              <span className="badge pink">Exclusive</span>
-            </div>
-            <div className="card-body">
-              <h3>Vijay & Rashmika legal team: &ldquo;This is not about silencing criticism&rdquo;</h3>
-              <div className="meta-row">
-                <span>BOLLYWOOD</span>
-                <span className="dot-sep">◆</span>
-                <span>3H AGO</span>
+                <span>4H AGO</span>
               </div>
             </div>
           </Link>
@@ -328,7 +333,7 @@ export default function Home() {
               <div className="meta-row">
                 <span>KKK</span>
                 <span className="dot-sep">◆</span>
-                <span>5H AGO</span>
+                <span>6H AGO</span>
               </div>
             </div>
           </div>
@@ -342,7 +347,7 @@ export default function Home() {
               <div className="meta-row">
                 <span>OPINION</span>
                 <span className="dot-sep">◆</span>
-                <span>6H AGO</span>
+                <span>7H AGO</span>
               </div>
             </div>
           </div>
@@ -363,9 +368,9 @@ export default function Home() {
             <div className="meter-row">
               <div className="meter-name">
                 <span className="meter-avatar" style={{ background: "var(--lime)" }}>
-                  G
+                  R
                 </span>
-                Godzilla vs Ramayana
+                Ramayana in LA
               </div>
               <div className="meter-track">
                 <div className="meter-fill" style={{ width: "99%" }}></div>
@@ -376,40 +381,40 @@ export default function Home() {
             <div className="meter-row">
               <div className="meter-name">
                 <span className="meter-avatar" style={{ background: "var(--magenta)" }}>
-                  V
+                  G
                 </span>
-                Vijay & Rashmika
+                Godzilla vs Ramayana
               </div>
               <div className="meter-track">
-                <div className="meter-fill" style={{ width: "94%" }}></div>
+                <div className="meter-fill" style={{ width: "95%" }}></div>
               </div>
-              <div className="meter-score">94</div>
+              <div className="meter-score">95</div>
             </div>
 
             <div className="meter-row">
               <div className="meter-name">
                 <span className="meter-avatar" style={{ background: "#8b6fe0" }}>
-                  K
+                  V
                 </span>
-                Kabir
+                Vijay & Rashmika
               </div>
               <div className="meter-track">
-                <div className="meter-fill" style={{ width: "74%" }}></div>
+                <div className="meter-fill" style={{ width: "88%" }}></div>
               </div>
-              <div className="meter-score">74</div>
+              <div className="meter-score">88</div>
             </div>
 
             <div className="meter-row">
               <div className="meter-name">
                 <span className="meter-avatar" style={{ background: "#e08b6f" }}>
-                  M
+                  K
                 </span>
-                Meher
+                Kabir
               </div>
               <div className="meter-track">
-                <div className="meter-fill" style={{ width: "58%" }}></div>
+                <div className="meter-fill" style={{ width: "65%" }}></div>
               </div>
-              <div className="meter-score">58</div>
+              <div className="meter-score">65</div>
             </div>
 
             <div className="meter-row">
