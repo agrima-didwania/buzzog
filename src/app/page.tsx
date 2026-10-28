@@ -74,11 +74,11 @@ export default function Home() {
 
   const categories = [
     "🔥 All Buzz",
-    "Reality Shows",
+    "Bigg Boss",
+    "Splitsvilla",
+    "Khatron Ke Khiladi",
     "Bollywood",
-    "Movies",
     "Web Series",
-    "News",
     "Videos",
   ];
 

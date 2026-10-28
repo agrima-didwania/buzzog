@@ -9,9 +9,11 @@ export interface ShimmerButtonProps
   borderRadius?: string;
   shimmerDuration?: string;
   background?: string;
+  hoverBackground?: string;
   className?: string;
   children?: React.ReactNode;
   shimmerOnHover?: boolean;
+  shimmerAlways?: boolean;
   href?: string;
   target?: string;
   rel?: string;
@@ -30,9 +32,11 @@ export const ShimmerButton = React.forwardRef<
       shimmerDuration = "2.5s",
       borderRadius = "9999px",
       background = "#141414",
+      hoverBackground,
       className,
       children,
       shimmerOnHover = true,
+      shimmerAlways = false,
       href,
       target,
       rel,
@@ -44,6 +48,8 @@ export const ShimmerButton = React.forwardRef<
     },
     ref
   ) => {
+    const effectiveHoverBg = hoverBackground || background;
+
     const buttonStyle: CSSProperties = {
       "--spread": "90deg",
       "--shimmer-color": shimmerColor,
@@ -51,14 +57,15 @@ export const ShimmerButton = React.forwardRef<
       "--speed": shimmerDuration,
       "--cut": shimmerSize,
       "--bg": background,
+      "--hover-bg": effectiveHoverBg,
       borderRadius,
-      background,
       ...style,
     } as CSSProperties;
 
     const baseClassName = cn(
-      "group relative z-0 inline-flex items-center justify-center overflow-hidden border border-white/10 px-5 py-2.5 whitespace-nowrap text-white text-sm font-medium",
-      "transform-gpu transition-all duration-300 ease-in-out active:translate-y-px select-none",
+      "group relative z-0 inline-flex items-center justify-center overflow-hidden border px-5 py-2 whitespace-nowrap text-sm font-semibold select-none",
+      "transform-gpu transition-all duration-200 ease-in-out active:translate-y-px",
+      "[background:var(--bg)] hover:[background:var(--hover-bg)]",
       className
     );
 
@@ -68,7 +75,9 @@ export const ShimmerButton = React.forwardRef<
         <div
           className={cn(
             "pointer-events-none -z-30 blur-[2px] absolute inset-0 overflow-visible",
-            shimmerOnHover
+            shimmerAlways
+              ? "opacity-100"
+              : shimmerOnHover
               ? "opacity-0 group-hover:opacity-100 transition-opacity duration-300"
               : "opacity-100"
           )}
@@ -98,7 +107,7 @@ export const ShimmerButton = React.forwardRef<
           className={cn(
             "pointer-events-none absolute inset-0 size-full",
             "rounded-[inherit] shadow-[inset_0_-2px_4px_rgba(255,255,255,0.08)]",
-            "transform-gpu transition-all duration-300 ease-in-out",
+            "transform-gpu transition-all duration-200 ease-in-out",
             "group-hover:shadow-[inset_0_-3px_8px_rgba(111,207,74,0.3)]",
             "group-active:shadow-[inset_0_-5px_10px_rgba(111,207,74,0.4)]"
           )}
@@ -106,11 +115,10 @@ export const ShimmerButton = React.forwardRef<
 
         {/* Backdrop - protects text from inner glow bleed */}
         <div
-          className="absolute -z-20 pointer-events-none"
+          className="absolute -z-20 pointer-events-none transition-colors duration-200 [background:var(--bg)] group-hover:[background:var(--hover-bg)]"
           style={{
             inset: "var(--cut)",
             borderRadius: "calc(var(--radius) - var(--cut))",
-            background: "var(--bg)",
           }}
         />
       </>
