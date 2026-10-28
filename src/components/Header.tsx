@@ -13,27 +13,24 @@ interface HeaderProps {
 export default function Header({ activeNav = "Home" }: HeaderProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  // New navigation layout matching Buzz Originals reality TV & entertainment lineup
+  // Exact 6 pages requested: Home, Reality Shows, Bollywood, Movies, Web Series, News
   const navLinks = [
     { label: "Home", href: "/" },
-    { label: "Bigg Boss", href: "/#bigg-boss" },
-    { label: "Splitsvilla", href: "/#splitsvilla" },
-    { label: "Khatron Ke Khiladi", href: "/#khatron-ke-khiladi" },
+    { label: "Reality Shows", href: "/#reality-shows" },
     { label: "Bollywood", href: "/#bollywood" },
+    { label: "Movies", href: "/#movies" },
     { label: "Web Series", href: "/#web-series" },
+    { label: "News", href: "/#news" },
   ];
-
-  // Map legacy "Movies" active state to Bollywood if needed
-  const normalizedActive = activeNav === "Movies" ? "Bollywood" : activeNav;
 
   return (
     <header className="sticky top-0 z-50 bg-[rgba(14,11,20,0.92)] backdrop-blur-md border-b border-[var(--line)]">
       <nav className="max-w-[1320px] mx-auto px-4 sm:px-6 py-3.5 flex items-center justify-between gap-4 lg:gap-8">
         {/* Brand Logo */}
-        <Link href="/" className="logo flex-shrink-0">
+        <Link href="/" className="logo flex-shrink-0" aria-label="Buzz Originals Home">
           <Image
             src="/assets/buzzog-logo.png"
-            alt="Buzz OG"
+            alt="Buzz Originals"
             width={142}
             height={40}
             priority
@@ -41,27 +38,27 @@ export default function Header({ activeNav = "Home" }: HeaderProps) {
           />
         </Link>
 
-        {/* Desktop Nav: Spacious Layout with Outer Green Layer & Hover Shimmer */}
-        <div className="navlinks hidden md:flex items-center gap-2 lg:gap-3 xl:gap-[18px]">
+        {/* Desktop Nav: Individual Capsules with Outer Green Layer & Hover Shimmer */}
+        <div className="navlinks hidden md:flex items-center gap-2.5 lg:gap-3 xl:gap-3.5">
           {navLinks.map((item) => {
-            const isActive = normalizedActive === item.label;
+            const isActive = activeNav === item.label;
             return (
               <ShimmerButton
                 key={item.label}
                 href={item.href}
-                shimmerColor="#FFFFFF"
+                shimmerColor={isActive ? "#FFFFFF" : "#6FCF4A"}
                 shimmerSize="2px"
                 shimmerDuration="2.5s"
                 borderRadius="9999px"
                 shimmerAlways={isActive}
                 shimmerOnHover={!isActive}
-                background={isActive ? "#6FCF4A" : "transparent"}
-                hoverBackground="#6FCF4A"
+                background={isActive ? "#6FCF4A" : "#141417"}
+                hoverBackground={isActive ? "#6FCF4A" : "#1a1a1f"}
                 className={cn(
-                  "h-[42px] text-[14px] rounded-full border transition-all duration-200",
+                  "h-10 px-5 text-[13.5px] font-semibold tracking-wide rounded-full border transition-all duration-200",
                   isActive
-                    ? "px-6 text-[#050505] font-bold border-[#6FCF4A] shadow-[0_0_20px_rgba(111,207,74,0.45)]"
-                    : "px-5 text-neutral-300 font-semibold border-transparent hover:border-[#6FCF4A] hover:text-[#050505] hover:font-bold hover:shadow-[0_0_20px_rgba(111,207,74,0.45)]"
+                    ? "text-white font-bold border-[#6FCF4A] shadow-[0_0_20px_rgba(111,207,74,0.5)]"
+                    : "text-neutral-300 border-white/10 hover:border-[#6FCF4A]/80 hover:text-white hover:shadow-[0_0_16px_rgba(111,207,74,0.35)]"
                 )}
               >
                 {item.label}
@@ -100,29 +97,29 @@ export default function Header({ activeNav = "Home" }: HeaderProps) {
         </div>
       </nav>
 
-      {/* Mobile Drawer Menu: Lineup with Green Active Capsule */}
+      {/* Mobile Drawer Menu */}
       {mobileMenuOpen && (
         <div className="mobile-menu md:hidden px-6 py-4 bg-[rgba(20,20,20,0.98)] border-b border-[var(--line)] flex flex-col gap-2">
           {navLinks.map((item) => {
-            const isActive = normalizedActive === item.label;
+            const isActive = activeNav === item.label;
             return (
               <ShimmerButton
                 key={item.label}
                 href={item.href}
                 onClick={() => setMobileMenuOpen(false)}
-                shimmerColor="#FFFFFF"
+                shimmerColor={isActive ? "#FFFFFF" : "#6FCF4A"}
                 shimmerSize="2px"
                 shimmerDuration="2.5s"
                 borderRadius="12px"
                 shimmerAlways={isActive}
                 shimmerOnHover={!isActive}
-                background={isActive ? "#6FCF4A" : "transparent"}
-                hoverBackground="#6FCF4A"
+                background={isActive ? "#6FCF4A" : "#161616"}
+                hoverBackground={isActive ? "#6FCF4A" : "#1e1e1e"}
                 className={cn(
                   "w-full justify-start h-11 px-4 text-sm font-semibold rounded-xl border transition-all",
                   isActive
-                    ? "text-[#050505] font-bold border-[#6FCF4A] shadow-[0_0_16px_rgba(111,207,74,0.35)]"
-                    : "text-neutral-300 border-transparent hover:border-[#6FCF4A] hover:text-[#050505] hover:font-bold"
+                    ? "text-white font-bold border-[#6FCF4A] shadow-[0_0_16px_rgba(111,207,74,0.35)]"
+                    : "text-neutral-300 border-white/10 hover:border-[#6FCF4A]/80 hover:text-white"
                 )}
               >
                 {item.label}

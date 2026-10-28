@@ -37,6 +37,9 @@ yarn-error.log*
 # persistent local subscriber & poll data
 /.data/
 
+# temporary preview screenshots
+/public/preview-*.png
+
 # vercel
 .vercel
 
