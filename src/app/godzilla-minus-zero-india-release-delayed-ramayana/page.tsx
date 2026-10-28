@@ -130,7 +130,7 @@ export default function GodzillaArticlePage() {
         <nav className="article-breadcrumb" aria-label="Breadcrumb">
           <Link href="/">HOME</Link>
           <span>/</span>
-          <Link href="/#bollywood">CINEMA</Link>
+          <Link href="/bollywood">CINEMA</Link>
           <span>/</span>
           <span style={{ color: "var(--lavender)" }}>BOX OFFICE</span>
         </nav>

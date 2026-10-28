@@ -8,14 +8,13 @@ export const metadata: Metadata = {
   keywords: [
     "Bollywood Buzz Originals",
     "Bollywood news",
+    "Janhvi Kapoor Peddi controversy",
     "Ramayana LA Premiere",
     "Ranbir Kapoor",
     "Yash",
     "Sai Pallavi",
     "Vijay Deverakonda Rashmika Mandanna",
-    "Janhvi Kapoor Peddi controversy",
     "Bollywood gossip",
-    "Rumour Radar",
     "Bollywood red carpet",
   ],
   alternates: {
@@ -29,10 +28,10 @@ export const metadata: Metadata = {
     siteName: "Buzz Originals",
     images: [
       {
-        url: "/images/ramayana-la-premiere-ranbir-kapoor-yash-sai-pallavi.jpg",
-        width: 1200,
-        height: 675,
-        alt: "Buzz Originals Bollywood Coverage",
+        url: "/images/janhvi-kapoor-peddi-controversy-koffee-with-karan-9.jpg",
+        width: 819,
+        height: 1024,
+        alt: "Janhvi Kapoor Breaks Silence on Peddi Controversy — Buzz Originals Bollywood",
       },
     ],
     type: "website",
@@ -42,7 +41,7 @@ export const metadata: Metadata = {
     title: "Bollywood — Buzz Originals",
     description:
       "Raw, unfiltered Bollywood coverage of red carpets, gossip, airport sightings & exclusives.",
-    images: ["/images/ramayana-la-premiere-ranbir-kapoor-yash-sai-pallavi.jpg"],
+    images: ["/images/janhvi-kapoor-peddi-controversy-koffee-with-karan-9.jpg"],
   },
 };
 
@@ -69,8 +68,8 @@ export default function BollywoodPage() {
         {
           "@type": "ListItem",
           position: 1,
-          name: "Ramayana LA Premiere: Actors Steal the Red Carpet",
-          url: "https://www.buzzoriginals.com/ramayana-la-premiere-ranbir-kapoor-yash-sai-pallavi",
+          name: "Janhvi Kapoor Breaks Silence on Peddi Controversy",
+          url: "https://www.buzzoriginals.com/janhvi-kapoor-peddi-controversy-koffee-with-karan-9",
         },
         {
           "@type": "ListItem",
@@ -81,8 +80,14 @@ export default function BollywoodPage() {
         {
           "@type": "ListItem",
           position: 3,
-          name: "Janhvi Kapoor Breaks Silence on Peddi Controversy",
-          url: "https://www.buzzoriginals.com/janhvi-kapoor-peddi-controversy-koffee-with-karan-9",
+          name: "Ramayana LA Premiere: Actors Steal the Red Carpet",
+          url: "https://www.buzzoriginals.com/ramayana-la-premiere-ranbir-kapoor-yash-sai-pallavi",
+        },
+        {
+          "@type": "ListItem",
+          position: 4,
+          name: "Godzilla Minus Zero India Release Delayed Over Ramayana IMAX Battle",
+          url: "https://www.buzzoriginals.com/godzilla-minus-zero-india-release-delayed-ramayana",
         },
       ],
     },

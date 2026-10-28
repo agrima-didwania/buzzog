@@ -5,11 +5,10 @@ import Image from "next/image";
 import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { cn } from "@/lib/utils";
 
 interface BollywoodArticle {
   id: string;
-  category: "Red Carpet" | "Gossip" | "Exclusives";
+  category: string;
   title: string;
   badge: string;
   badgeType?: "pink" | "lime" | "default";
@@ -21,12 +20,21 @@ interface BollywoodArticle {
 
 const bollywoodArticles: BollywoodArticle[] = [
   {
+    id: "godzilla-ramayana-clash",
+    category: "Cinema & Box Office",
+    title: "Godzilla Minus Zero India Release Delayed Over Ramayana IMAX Battle",
+    badge: "Box Office Clash",
+    badgeType: "pink",
+    image: "/images/godzilla-minus-zero-india-release-delayed-ramayana.jpg",
+    href: "/godzilla-minus-zero-india-release-delayed-ramayana",
+    readOrTime: "3 MIN READ",
+  },
+  {
     id: "ramayana-la-premiere-buzz",
     category: "Red Carpet",
-    title: "Inside Ramayana’s LA Premiere: Jada Pinkett Smith, Hollywood stars & ₹4,000 Cr buzz",
-    badge: "Global Premiere",
+    title: "Inside Ramayana’s LA Premiere: Jada Pinkett Smith & ₹4,000 Cr Global Buzz",
+    badge: "Red Carpet",
     badgeType: "pink",
-    mediaClass: "m3",
     image: "/images/ramayana-la-premiere-ranbir-kapoor-yash-sai-pallavi.jpg",
     href: "/ramayana-la-premiere-ranbir-kapoor-yash-sai-pallavi",
     readOrTime: "4 MIN READ",
@@ -38,7 +46,6 @@ const bollywoodArticles: BollywoodArticle[] = [
     badge: "Trending",
     badgeType: "default",
     mediaClass: "m5",
-    image: "/images/janhvi-kapoor-peddi-controversy-koffee-with-karan-9.jpg",
     href: "/janhvi-kapoor-peddi-controversy-koffee-with-karan-9",
     readOrTime: "9H AGO",
   },
@@ -50,16 +57,6 @@ const bollywoodArticles: BollywoodArticle[] = [
     badgeType: "default",
     mediaClass: "m1",
     href: "/ramayana-la-premiere-ranbir-kapoor-yash-sai-pallavi",
-    readOrTime: "1D AGO",
-  },
-  {
-    id: "star-kid-debut-insider",
-    category: "Exclusives",
-    title: "Industry insider on which star-kid debut is quietly the most anticipated",
-    badge: "Exclusive",
-    badgeType: "pink",
-    mediaClass: "m4",
-    href: "/vijay-deverakonda-rashmika-mandanna-cyber-crime-complaint-hyderabad",
     readOrTime: "1D AGO",
   },
   {
@@ -84,15 +81,7 @@ const bollywoodArticles: BollywoodArticle[] = [
   },
 ];
 
-const categoryFilters = [
-  { filter: "all", label: "🔥 All" },
-  { filter: "Red Carpet", label: "Red Carpet" },
-  { filter: "Gossip", label: "Gossip" },
-  { filter: "Exclusives", label: "Exclusives" },
-] as const;
-
 export default function BollywoodView() {
-  const [activeFilter, setActiveFilter] = useState<string>("all");
   const [email, setEmail] = useState("");
   const [ctaStatus, setCtaStatus] = useState<string | null>(null);
   const [submitting, setSubmitting] = useState(false);
@@ -124,25 +113,8 @@ export default function BollywoodView() {
     }
   };
 
-  const filteredArticles =
-    activeFilter === "all"
-      ? bollywoodArticles
-      : bollywoodArticles.filter((art) => art.category === activeFilter);
-
   return (
     <>
-      {/* Live Breaking Ticker Bar */}
-      <div className="ticker-bar" role="region" aria-label="Bollywood Breaking Ticker">
-        <div className="ticker-track">
-          <span>RAMAYANA LA PREMIERE: RANBIR, YASH &amp; SAI PALLAVI STUN HOLLYWOOD</span>
-          <span>AIRPORT SIGHTING HAS FANS IN FULL DETECTIVE MODE</span>
-          <span>VIJAY &amp; RASHMIKA TEAM TAKES LEGAL ACTION OVER FAKE POSTS</span>
-          <span>RAMAYANA LA PREMIERE: RANBIR, YASH &amp; SAI PALLAVI STUN HOLLYWOOD</span>
-          <span>AIRPORT SIGHTING HAS FANS IN FULL DETECTIVE MODE</span>
-          <span>VIJAY &amp; RASHMIKA TEAM TAKES LEGAL ACTION OVER FAKE POSTS</span>
-        </div>
-      </div>
-
       {/* Main Navigation Header with Bollywood Marked Active */}
       <Header activeNav="Bollywood" />
 
@@ -162,63 +134,49 @@ export default function BollywoodView() {
           </div>
         </section>
 
-        {/* Category Filter Strip */}
-        <div className="cat-strip max-w-[1320px] mx-auto px-4 sm:px-6">
-          {categoryFilters.map((cat) => (
-            <button
-              key={cat.filter}
-              type="button"
-              className={cn(
-                "cat-chip magenta-active",
-                activeFilter === cat.filter && "on"
-              )}
-              onClick={() => setActiveFilter(cat.filter)}
-            >
-              {cat.label}
-            </button>
-          ))}
-        </div>
-
-        {/* Lead Section: Featured Bollywood Card + 2-Item Stack */}
+        {/* Lead Section: Latest Bollywood Published Article (Cover Story) + Exclusive & Global Premiere Stack */}
         <section className="lead">
-          {/* Featured Card (Linking directly to Ramayana LA Premiere) */}
+          {/* Cover Story: Latest Published Bollywood Story (Janhvi Kapoor) */}
           <Link
-            href="/ramayana-la-premiere-ranbir-kapoor-yash-sai-pallavi"
+            href="/janhvi-kapoor-peddi-controversy-koffee-with-karan-9"
             className="feature-card group block"
-            aria-label="Read full article on Ramayana LA Premiere"
+            aria-label="Read full cover story: Janhvi Kapoor Breaks Silence on Peddi Controversy"
           >
             <div className="feature-media relative overflow-hidden">
               <Image
-                src="/images/ramayana-la-premiere-ranbir-kapoor-yash-sai-pallavi.jpg"
-                alt="Ramayana LA Premiere: Actors Steal the Red Carpet"
+                src="/images/janhvi-kapoor-peddi-controversy-koffee-with-karan-9.jpg"
+                alt="Janhvi Kapoor Breaks Silence on Peddi Controversy on Koffee With Karan 9"
                 fill
                 priority
-                className="object-cover transition-transform duration-500 group-hover:scale-105"
+                className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
                 sizes="(max-width: 980px) 100vw, 65vw"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[var(--ink-2)] via-transparent to-black/40 pointer-events-none" />
               <div className="noise" />
               <span className="badge pink feature-tag z-10">
-                🔥 Global Premiere
+                🔥 Latest Cover Story
               </span>
             </div>
             <div className="feature-body">
               <h2 className="disp text-white group-hover:text-[var(--lime)] transition-colors">
-                Ramayana LA Premiere: Actors Steal the Red Carpet
+                Janhvi Kapoor Breaks Silence on Peddi Controversy
               </h2>
               <p>
-                Ranbir Kapoor, Yash and Sai Pallavi walked the red carpet at the Ramayana LA premiere. See who attended, what they wore, and the release date.
+                Janhvi Kapoor opens up on the Peddi objectification row on Koffee With Karan 9. Inside what she said, the director’s apology, and reactions from Rashmika, Vijay and the industry.
               </p>
               <div className="meta-row mt-3">
                 <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; CINEMA</span>
                 <span className="dot-sep">◆</span>
                 <span>4 MIN READ</span>
+                <span className="dot-sep">◆</span>
+                <span className="text-[var(--lime)] font-bold">JUST IN</span>
               </div>
             </div>
           </Link>
 
-          {/* Right Stack */}
+          {/* Right Stack: Exclusive & Global Premiere */}
           <div className="stack">
+            {/* Exclusive Card: Vijay & Rashmika Cyber Crime Complaint */}
             <Link
               href="/vijay-deverakonda-rashmika-mandanna-cyber-crime-complaint-hyderabad"
               className="card m2 group block"
@@ -246,29 +204,30 @@ export default function BollywoodView() {
               </div>
             </Link>
 
+            {/* Global Premiere Card: Ramayana LA Premiere */}
             <Link
-              href="/janhvi-kapoor-peddi-controversy-koffee-with-karan-9"
+              href="/ramayana-la-premiere-ranbir-kapoor-yash-sai-pallavi"
               className="card m6 group block"
             >
               <div className="card-media relative overflow-hidden">
                 <Image
-                  src="/images/janhvi-kapoor-peddi-controversy-koffee-with-karan-9.jpg"
-                  alt="Bollywood power couple spotted together"
+                  src="/images/ramayana-la-premiere-ranbir-kapoor-yash-sai-pallavi.jpg"
+                  alt="Ramayana LA Premiere: Actors Steal the Red Carpet"
                   fill
                   className="object-cover transition-transform duration-500 group-hover:scale-105"
                   sizes="(max-width: 980px) 100vw, 35vw"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[var(--ink-2)] via-transparent to-black/30 pointer-events-none" />
-                <span className="badge z-10 relative">New</span>
+                <span className="badge pink z-10 relative">Global Premiere</span>
               </div>
               <div className="card-body">
                 <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
-                  Bollywood power couple spotted together after months of breakup rumours
+                  Ramayana LA Premiere: Ranbir Kapoor, Yash &amp; Sai Pallavi Stun Hollywood
                 </h3>
                 <div className="meta-row mt-2">
-                  <span className="text-[var(--lime)] font-bold">GOSSIP</span>
+                  <span className="text-[var(--magenta)] font-bold">GLOBAL PREMIERE</span>
                   <span className="dot-sep">◆</span>
-                  <span>7H AGO</span>
+                  <span>4 MIN READ</span>
                 </div>
               </div>
             </Link>
@@ -289,7 +248,7 @@ export default function BollywoodView() {
           </div>
 
           <div className="grid">
-            {filteredArticles.map((art) => (
+            {bollywoodArticles.map((art) => (
               <Link
                 key={art.id}
                 href={art.href}
@@ -333,38 +292,6 @@ export default function BollywoodView() {
                 </div>
               </Link>
             ))}
-          </div>
-        </section>
-
-        {/* Rumour Radar Section */}
-        <section className="section" id="rumour-radar">
-          <div className="section-head">
-            <div>
-              <h2 className="text-white">
-                Rumour <span className="accent">Radar</span>
-              </h2>
-            </div>
-          </div>
-          <p className="sub">
-            We tag every whisper so you know what’s real, what’s unverified and what’s busted.
-          </p>
-          <div className="radar">
-            <div className="rr">
-              <span className="text-white">Two leads reuniting for a big-screen project</span>
-              <b className="st un">UNVERIFIED</b>
-            </div>
-            <div className="rr">
-              <span className="text-white">A reality-show winner in talks for a film debut</span>
-              <b className="st un">UNVERIFIED</b>
-            </div>
-            <div className="rr">
-              <span className="text-white">Viral “secret wedding” photos</span>
-              <b className="st no">BUSTED</b>
-            </div>
-            <div className="rr">
-              <span className="text-white">A franchise sequel getting an official release date</span>
-              <b className="st ok">CONFIRMED</b>
-            </div>
           </div>
         </section>
 

@@ -138,7 +138,7 @@ export default function RamayanaArticlePage() {
         <nav className="article-breadcrumb" aria-label="Breadcrumb">
           <Link href="/">HOME</Link>
           <span>/</span>
-          <Link href="/#bollywood">BOLLYWOOD & HOLLYWOOD</Link>
+          <Link href="/bollywood">BOLLYWOOD & HOLLYWOOD</Link>
           <span>/</span>
           <span style={{ color: "var(--lavender)" }}>RED CARPET</span>
         </nav>

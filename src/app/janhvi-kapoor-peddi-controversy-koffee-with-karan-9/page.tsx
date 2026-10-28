@@ -142,7 +142,7 @@ export default function JanhviArticlePage() {
         <nav className="article-breadcrumb" aria-label="Breadcrumb">
           <Link href="/">HOME</Link>
           <span>/</span>
-          <Link href="/#bollywood">BOLLYWOOD</Link>
+          <Link href="/bollywood">BOLLYWOOD</Link>
           <span>/</span>
           <span style={{ color: "var(--lavender)" }}>PEDDI CONTROVERSY</span>
         </nav>
