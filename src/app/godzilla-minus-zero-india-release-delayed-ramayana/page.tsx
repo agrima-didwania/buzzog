@@ -220,41 +220,14 @@ export default function GodzillaArticlePage() {
           </p>
 
           {/* Related Stories */}
-          <div
-            style={{
-              background: "var(--ink-2)",
-              border: "1px solid var(--line)",
-              borderRadius: "16px",
-              padding: "24px",
-              margin: "36px 0",
-            }}
-          >
-            <span
-              style={{
-                fontFamily: "var(--font-space-mono), monospace",
-                fontSize: "11px",
-                color: "var(--magenta)",
-                letterSpacing: "0.08em",
-                textTransform: "uppercase",
-                fontWeight: 700,
-              }}
-            >
-              Related Breaking Story
-            </span>
-            <div style={{ display: "flex", flexDirection: "column", gap: "12px", marginTop: "12px" }}>
-              <Link
-                href="/ramayana-la-premiere-ranbir-kapoor-yash-sai-pallavi"
-                style={{ fontSize: "16px", fontWeight: 700, color: "#fff" }}
-              >
-                Inside Ramayana’s LA Premiere: Ranbir Kapoor, Yash & Sai Pallavi Steal the Red Carpet →
-              </Link>
-              <Link
-                href="/vijay-deverakonda-rashmika-mandanna-cyber-crime-complaint-hyderabad"
-                style={{ fontSize: "16px", fontWeight: 700, color: "#fff" }}
-              >
-                Vijay Deverakonda and Rashmika Mandanna Take Legal Action Against Cyber Trolls →
-              </Link>
-            </div>
+          <div className="article-related-box">
+            <span className="kicker">Related Breaking Story</span>
+            <Link href="/ramayana-la-premiere-ranbir-kapoor-yash-sai-pallavi">
+              Inside Ramayana’s LA Premiere: Ranbir Kapoor, Yash & Sai Pallavi Steal the Red Carpet →
+            </Link>
+            <Link href="/vijay-deverakonda-rashmika-mandanna-cyber-crime-complaint-hyderabad">
+              Vijay Deverakonda and Rashmika Mandanna Take Legal Action Against Cyber Trolls →
+            </Link>
           </div>
 
           {/* Tags & Keywords */}

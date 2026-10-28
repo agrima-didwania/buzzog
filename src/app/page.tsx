@@ -295,6 +295,9 @@ export default function Home() {
               </div>
               <div className="card-body">
                 <h3>Inside Ramayana’s LA Premiere: Jada Pinkett Smith, Hollywood stars & ₹4,000 Cr buzz</h3>
+                <p className="card-excerpt">
+                  Ranbir Kapoor, Yash and Sai Pallavi walked the red carpet at the Academy Museum in Los Angeles for the global premiere.
+                </p>
                 <div className="meta-row">
                   <span>BOLLYWOOD</span>
                   <span className="dot-sep">◆</span>
@@ -321,6 +324,9 @@ export default function Home() {
               </div>
               <div className="card-body">
                 <h3>Godzilla Minus Zero skips Diwali clash: solo IMAX run for Ranbir&apos;s Ramayana</h3>
+                <p className="card-excerpt">
+                  Legendary monster flick shifts India theatrical rollout to give Nitesh Tiwari&apos;s mythological epic a clean premium screen window.
+                </p>
                 <div className="meta-row">
                   <span>CINEMA</span>
                   <span className="dot-sep">◆</span>
@@ -347,6 +353,9 @@ export default function Home() {
               </div>
               <div className="card-body">
                 <h3>Vijay & Rashmika team files cyber crime complaint over KWK 9 online trolling</h3>
+                <p className="card-excerpt">
+                  Formal police complaint registered in Hyderabad against malicious fan accounts circulating defamatory morphed clips.
+                </p>
                 <div className="meta-row">
                   <span>BOLLYWOOD</span>
                   <span className="dot-sep">◆</span>
@@ -397,14 +406,27 @@ export default function Home() {
                   ✓ Vote recorded — thanks for having your say!
                 </div>
               )}
+
+              <div className="meta-row mt-auto pt-3 border-t border-white/[0.06]">
+                <span>COMMUNITY FORUM</span>
+                <span className="dot-sep">◆</span>
+                <span>LIVE PERSISTED</span>
+              </div>
             </div>
 
             <div className="card m4 focus-visible:ring-2 focus-visible:ring-[var(--lime)]" id="khatron-ke-khiladi">
-              <div className="card-media" style={{ background: "linear-gradient(135deg, #1f2937, #111827)", position: "relative" }}>
+              <div className="card-media relative overflow-hidden" style={{ background: "radial-gradient(circle at 75% 30%, #2f2111, #0f0f13 75%)" }}>
+                <div className="absolute inset-0 opacity-15 pointer-events-none flex items-center justify-center font-anton text-7xl text-amber-500 font-extrabold select-none tracking-widest">
+                  KKK
+                </div>
+                <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-[#111115] to-transparent pointer-events-none" />
                 <span className="badge">Khatron Ke Khiladi</span>
               </div>
               <div className="card-body">
                 <h3>KKK&apos;s scariest stunt this season made two contestants tap out instantly</h3>
+                <p className="card-excerpt">
+                  A high-altitude fear task pushed physical endurance to the brink, leading to dramatic emergency halts.
+                </p>
                 <div className="meta-row">
                   <span>KHATRON KE KHILADI</span>
                   <span className="dot-sep">◆</span>
@@ -414,11 +436,18 @@ export default function Home() {
             </div>
 
             <div className="card m5 focus-visible:ring-2 focus-visible:ring-[var(--lime)]" id="splitsvilla">
-              <div className="card-media" style={{ background: "linear-gradient(135deg, #371f29, #1a0f14)", position: "relative" }}>
+              <div className="card-media relative overflow-hidden" style={{ background: "radial-gradient(circle at 75% 30%, #351226, #0f0f13 75%)" }}>
+                <div className="absolute inset-0 opacity-15 pointer-events-none flex items-center justify-center font-anton text-6xl text-rose-500 font-extrabold select-none tracking-wider">
+                  DOME
+                </div>
+                <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-[#111115] to-transparent pointer-events-none" />
                 <span className="badge pink">Dome Drama</span>
               </div>
               <div className="card-body">
                 <h3>Splitsvilla dome session breakdown: ideal match broken and power shifted</h3>
+                <p className="card-excerpt">
+                  An intense oracle vote split longtime allies down the middle, resetting villa voting blocks.
+                </p>
                 <div className="meta-row">
                   <span>SPLITSVILLA</span>
                   <span className="dot-sep">◆</span>
@@ -441,10 +470,11 @@ export default function Home() {
             <div className="meter-list">
               <div className="meter-row">
                 <div className="meter-name">
+                  <span className="font-anton text-base text-neutral-500 w-5">01</span>
                   <span className="meter-avatar" style={{ background: "var(--lime)" }}>
                     R
                   </span>
-                  Ramayana in LA World Premiere
+                  <span>Ramayana in LA World Premiere</span>
                 </div>
                 <div className="meter-track">
                   <div className="meter-fill" style={{ width: "98%" }}></div>
@@ -454,10 +484,11 @@ export default function Home() {
 
               <div className="meter-row">
                 <div className="meter-name">
+                  <span className="font-anton text-base text-neutral-500 w-5">02</span>
                   <span className="meter-avatar" style={{ background: "var(--magenta)" }}>
                     G
                   </span>
-                  Godzilla Minus Zero IMAX Release
+                  <span>Godzilla Minus Zero IMAX Release</span>
                 </div>
                 <div className="meter-track">
                   <div className="meter-fill" style={{ width: "92%" }}></div>
@@ -467,10 +498,11 @@ export default function Home() {
 
               <div className="meter-row">
                 <div className="meter-name">
+                  <span className="font-anton text-base text-neutral-500 w-5">03</span>
                   <span className="meter-avatar" style={{ background: "#8b6fe0" }}>
                     V
                   </span>
-                  Vijay & Rashmika Legal Complaint
+                  <span>Vijay & Rashmika Legal Complaint</span>
                 </div>
                 <div className="meter-track">
                   <div className="meter-fill" style={{ width: "87%" }}></div>
@@ -480,10 +512,11 @@ export default function Home() {
 
               <div className="meter-row" id="bigg-boss">
                 <div className="meter-name">
+                  <span className="font-anton text-base text-neutral-500 w-5">04</span>
                   <span className="meter-avatar" style={{ background: "#e08b6f" }}>
                     B
                   </span>
-                  Bigg Boss Weekend Nominations
+                  <span>Bigg Boss Weekend Nominations</span>
                 </div>
                 <div className="meter-track">
                   <div className="meter-fill" style={{ width: "81%" }}></div>
@@ -493,10 +526,11 @@ export default function Home() {
 
               <div className="meter-row">
                 <div className="meter-name">
+                  <span className="font-anton text-base text-neutral-500 w-5">05</span>
                   <span className="meter-avatar" style={{ background: "#6fd0e0" }}>
                     S
                   </span>
-                  Splitsvilla Elimination Heat
+                  <span>Splitsvilla Elimination Heat</span>
                 </div>
                 <div className="meter-track">
                   <div className="meter-fill" style={{ width: "74%" }}></div>
@@ -525,7 +559,7 @@ export default function Home() {
                 setEmail(e.target.value);
                 if (subscribeError) setSubscribeError("");
               }}
-              placeholder="you@email.com"
+              placeholder="Enter your email address..."
               required
               disabled={submitting}
               className="focus-visible:ring-2 focus-visible:ring-[var(--lime)]"

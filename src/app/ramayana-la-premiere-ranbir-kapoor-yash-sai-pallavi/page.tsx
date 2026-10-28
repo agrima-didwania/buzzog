@@ -258,41 +258,14 @@ export default function RamayanaArticlePage() {
           </p>
 
           {/* Related Stories */}
-          <div
-            style={{
-              background: "var(--ink-2)",
-              border: "1px solid var(--line)",
-              borderRadius: "16px",
-              padding: "24px",
-              margin: "36px 0",
-            }}
-          >
-            <span
-              style={{
-                fontFamily: "var(--font-space-mono), monospace",
-                fontSize: "11px",
-                color: "var(--lime)",
-                letterSpacing: "0.08em",
-                textTransform: "uppercase",
-                fontWeight: 700,
-              }}
-            >
-              Related Coverage
-            </span>
-            <div style={{ display: "flex", flexDirection: "column", gap: "12px", marginTop: "12px" }}>
-              <Link
-                href="/godzilla-minus-zero-india-release-delayed-ramayana"
-                style={{ fontSize: "16px", fontWeight: 700, color: "#fff" }}
-              >
-                Godzilla Minus Zero skips Diwali clash: solo IMAX run for Ranbir&apos;s Ramayana →
-              </Link>
-              <Link
-                href="/vijay-deverakonda-rashmika-mandanna-cyber-crime-complaint-hyderabad"
-                style={{ fontSize: "16px", fontWeight: 700, color: "#fff" }}
-              >
-                Vijay & Rashmika team takes legal action against fake posts & KWK 9 trolling →
-              </Link>
-            </div>
+          <div className="article-related-box">
+            <span className="kicker">Related Coverage</span>
+            <Link href="/godzilla-minus-zero-india-release-delayed-ramayana">
+              Godzilla Minus Zero skips Diwali clash: solo IMAX run for Ranbir&apos;s Ramayana →
+            </Link>
+            <Link href="/vijay-deverakonda-rashmika-mandanna-cyber-crime-complaint-hyderabad">
+              Vijay & Rashmika team takes legal action against fake posts & KWK 9 trolling →
+            </Link>
           </div>
 
           {/* Tags & Keywords */}
