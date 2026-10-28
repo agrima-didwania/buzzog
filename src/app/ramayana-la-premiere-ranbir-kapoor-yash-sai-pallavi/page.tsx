@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     title: "Ramayana LA Premiere: Actors Steal the Red Carpet",
     description:
       "Ranbir Kapoor, Yash and Sai Pallavi walked the red carpet at the Ramayana LA premiere. See who attended, what they wore, and the release date.",
-    url: "https://buzzog.com/ramayana-la-premiere-ranbir-kapoor-yash-sai-pallavi",
+    url: "https://www.buzzoriginals.com/ramayana-la-premiere-ranbir-kapoor-yash-sai-pallavi",
     siteName: "Buzz Originals",
     images: [
       {
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
 };
 
 export default function RamayanaArticlePage() {
-  const pageUrl = "https://buzzog.com/ramayana-la-premiere-ranbir-kapoor-yash-sai-pallavi";
+  const pageUrl = "https://www.buzzoriginals.com/ramayana-la-premiere-ranbir-kapoor-yash-sai-pallavi";
   const pageTitle = "Ramayana LA Premiere: Ranbir Kapoor, Yash and Sai Pallavi Steal the Red Carpet";
 
   const jsonLd = {
@@ -65,7 +65,7 @@ export default function RamayanaArticlePage() {
     "@type": "NewsArticle",
     headline: pageTitle,
     image: [
-      "https://buzzog.com/images/ramayana-la-premiere-ranbir-kapoor-yash-sai-pallavi.jpg",
+      "https://www.buzzoriginals.com/images/ramayana-la-premiere-ranbir-kapoor-yash-sai-pallavi.jpg",
     ],
     datePublished: "2026-10-28T06:30:00+05:30",
     dateModified: "2026-10-28T12:00:00+05:30",
@@ -73,7 +73,7 @@ export default function RamayanaArticlePage() {
       {
         "@type": "NewsMediaOrganization",
         name: "Buzz Originals Desk",
-        url: "https://buzzog.com/about",
+        url: "https://www.buzzoriginals.com/about",
       },
     ],
     publisher: {
@@ -81,7 +81,7 @@ export default function RamayanaArticlePage() {
       name: "Buzz Originals",
       logo: {
         "@type": "ImageObject",
-        url: "https://buzzog.com/assets/buzzog-logo.png",
+        url: "https://www.buzzoriginals.com/assets/buzzog-logo.png",
       },
     },
     description:
@@ -100,13 +100,13 @@ export default function RamayanaArticlePage() {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://buzzog.com",
+        item: "https://www.buzzoriginals.com",
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Bollywood & Hollywood",
-        item: "https://buzzog.com/#bollywood",
+        item: "https://www.buzzoriginals.com/#bollywood",
       },
       {
         "@type": "ListItem",

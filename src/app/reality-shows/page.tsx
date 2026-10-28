@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     title: "Reality Shows — Buzz Originals | Raw, Unfiltered Coverage",
     description:
       "Eliminations, fights, fan wars and dome drama — every Bigg Boss, Splitsvilla, Khatron Ke Khiladi and Rise and Fall moment, minus the filler.",
-    url: "https://buzzog.com/reality-shows",
+    url: "https://www.buzzoriginals.com/reality-shows",
     siteName: "Buzz Originals",
     images: [
       {
@@ -52,14 +52,14 @@ export default function RealityShowsPage() {
     name: "Reality Shows Coverage — Buzz Originals",
     description:
       "Eliminations, fights, fan wars and dome drama — every Bigg Boss, Splitsvilla, Khatron Ke Khiladi and Rise and Fall moment.",
-    url: "https://buzzog.com/reality-shows",
+    url: "https://www.buzzoriginals.com/reality-shows",
     publisher: {
       "@type": "NewsMediaOrganization",
       name: "Buzz Originals",
-      url: "https://buzzog.com",
+      url: "https://www.buzzoriginals.com",
       logo: {
         "@type": "ImageObject",
-        url: "https://buzzog.com/assets/buzzog-logo.png",
+        url: "https://www.buzzoriginals.com/assets/buzzog-logo.png",
       },
     },
     mainEntity: {
@@ -69,7 +69,7 @@ export default function RealityShowsPage() {
           "@type": "ListItem",
           position: 1,
           name: "Shreya Kalra Hits Back at Karan Patel Over His Reels Comment",
-          url: "https://buzzog.com/shreya-kalra-karan-patel-reels-comment-rise-and-fall-2",
+          url: "https://www.buzzoriginals.com/shreya-kalra-karan-patel-reels-comment-rise-and-fall-2",
         },
       ],
     },

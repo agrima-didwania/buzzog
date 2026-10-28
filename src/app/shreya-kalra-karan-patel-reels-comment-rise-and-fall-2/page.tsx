@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     title: "Shreya Kalra Hits Back at Karan Patel | Rise and Fall 2",
     description:
       "Karan Patel asked Shreya Kalra and Rishabh Jaiswal how long they will stay in reels. Shreya has replied. Read what happened on Rise and Fall 2.",
-    url: "https://buzzog.com/shreya-kalra-karan-patel-reels-comment-rise-and-fall-2",
+    url: "https://www.buzzoriginals.com/shreya-kalra-karan-patel-reels-comment-rise-and-fall-2",
     siteName: "Buzz Originals",
     images: [
       {
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
 };
 
 export default function ShreyaArticlePage() {
-  const pageUrl = "https://buzzog.com/shreya-kalra-karan-patel-reels-comment-rise-and-fall-2";
+  const pageUrl = "https://www.buzzoriginals.com/shreya-kalra-karan-patel-reels-comment-rise-and-fall-2";
   const pageTitle = "Shreya Kalra Hits Back at Karan Patel Over His Reels Comment";
 
   const jsonLd = {
@@ -61,7 +61,7 @@ export default function ShreyaArticlePage() {
     "@type": "NewsArticle",
     headline: pageTitle,
     image: [
-      "https://buzzog.com/images/shreya-kalra-karan-patel-reels-comment-rise-and-fall-2.jpg",
+      "https://www.buzzoriginals.com/images/shreya-kalra-karan-patel-reels-comment-rise-and-fall-2.jpg",
     ],
     datePublished: "2026-10-28T11:15:00+05:30",
     dateModified: "2026-10-28T16:45:00+05:30",
@@ -69,7 +69,7 @@ export default function ShreyaArticlePage() {
       {
         "@type": "NewsMediaOrganization",
         name: "Buzz Originals Desk",
-        url: "https://buzzog.com/about",
+        url: "https://www.buzzoriginals.com/about",
       },
     ],
     publisher: {
@@ -77,7 +77,7 @@ export default function ShreyaArticlePage() {
       name: "Buzz Originals",
       logo: {
         "@type": "ImageObject",
-        url: "https://buzzog.com/assets/buzzog-logo.png",
+        url: "https://www.buzzoriginals.com/assets/buzzog-logo.png",
       },
     },
     description:
@@ -96,13 +96,13 @@ export default function ShreyaArticlePage() {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://buzzog.com",
+        item: "https://www.buzzoriginals.com",
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Reality TV Updates",
-        item: "https://buzzog.com/#reality-shows",
+        item: "https://www.buzzoriginals.com/#reality-shows",
       },
       {
         "@type": "ListItem",

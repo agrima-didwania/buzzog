@@ -21,7 +21,7 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://buzzog.com"),
+  metadataBase: new URL("https://www.buzzoriginals.com"),
   title: {
     default: "Buzz Originals — The Buzz Never Sleeps",
     template: "%s | Buzz Originals",
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_IN",
-    url: "https://buzzog.com",
+    url: "https://www.buzzoriginals.com",
     siteName: "Buzz Originals",
     title: "Buzz Originals — The Buzz Never Sleeps",
     description:
@@ -98,8 +98,8 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "NewsMediaOrganization",
     name: "Buzz Originals",
-    url: "https://buzzog.com",
-    logo: "https://buzzog.com/assets/buzzog-logo.png",
+    url: "https://www.buzzoriginals.com",
+    logo: "https://www.buzzoriginals.com/assets/buzzog-logo.png",
     email: "hello@buzzoriginals.com",
     sameAs: [
       "https://www.instagram.com/buzzoriginals?exln=MWdhNTk5dWdlYnF5cg==",
@@ -113,7 +113,7 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "WebSite",
     name: "Buzz Originals",
-    url: "https://buzzog.com",
+    url: "https://www.buzzoriginals.com",
     description:
       "Raw, unfiltered entertainment coverage of Indian reality TV, Bollywood and Web Series.",
     publisher: {

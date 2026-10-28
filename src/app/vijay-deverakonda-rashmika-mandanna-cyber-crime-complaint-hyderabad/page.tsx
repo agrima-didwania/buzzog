@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     title: "Vijay Deverakonda & Rashmika Mandanna File Complaint",
     description:
       "Vijay Deverakonda and Rashmika Mandanna’s team has filed a cyber crime complaint in Hyderabad over fake claims and online trolling after KWK 9.",
-    url: "https://buzzog.com/vijay-deverakonda-rashmika-mandanna-cyber-crime-complaint-hyderabad",
+    url: "https://www.buzzoriginals.com/vijay-deverakonda-rashmika-mandanna-cyber-crime-complaint-hyderabad",
     siteName: "Buzz Originals",
     images: [
       {
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
 };
 
 export default function ArticlePage() {
-  const pageUrl = "https://buzzog.com/vijay-deverakonda-rashmika-mandanna-cyber-crime-complaint-hyderabad";
+  const pageUrl = "https://www.buzzoriginals.com/vijay-deverakonda-rashmika-mandanna-cyber-crime-complaint-hyderabad";
   const pageTitle = "Vijay Deverakonda and Rashmika Mandanna Take Legal Action Against Fake News and Trolling";
 
   const jsonLd = {
@@ -58,8 +58,8 @@ export default function ArticlePage() {
     "@type": "NewsArticle",
     headline: pageTitle,
     image: [
-      "https://buzzog.com/images/celebrity-cybercrime-complaint-thumbnail.jpg",
-      "https://buzzog.com/images/celebrity-couple-amid-cybercrime-buzz.jpg",
+      "https://www.buzzoriginals.com/images/celebrity-cybercrime-complaint-thumbnail.jpg",
+      "https://www.buzzoriginals.com/images/celebrity-couple-amid-cybercrime-buzz.jpg",
     ],
     datePublished: "2026-10-27T18:00:00+05:30",
     dateModified: "2026-10-28T01:00:00+05:30",
@@ -67,7 +67,7 @@ export default function ArticlePage() {
       {
         "@type": "NewsMediaOrganization",
         name: "Buzz Originals Desk",
-        url: "https://buzzog.com/about",
+        url: "https://www.buzzoriginals.com/about",
       },
     ],
     publisher: {
@@ -75,7 +75,7 @@ export default function ArticlePage() {
       name: "Buzz Originals",
       logo: {
         "@type": "ImageObject",
-        url: "https://buzzog.com/assets/buzzog-logo.png",
+        url: "https://www.buzzoriginals.com/assets/buzzog-logo.png",
       },
     },
     description:
@@ -94,13 +94,13 @@ export default function ArticlePage() {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://buzzog.com",
+        item: "https://www.buzzoriginals.com",
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Bollywood",
-        item: "https://buzzog.com/#bollywood",
+        item: "https://www.buzzoriginals.com/#bollywood",
       },
       {
         "@type": "ListItem",

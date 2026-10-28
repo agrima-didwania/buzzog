@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     title: "Godzilla Minus Zero India Release Delayed",
     description:
       "Godzilla Minus Zero’s India release is reportedly delayed by two weeks. Here is why IMAX screens are the reason and what it means for Ramayana.",
-    url: "https://buzzog.com/godzilla-minus-zero-india-release-delayed-ramayana",
+    url: "https://www.buzzoriginals.com/godzilla-minus-zero-india-release-delayed-ramayana",
     siteName: "Buzz Originals",
     images: [
       {
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
 };
 
 export default function GodzillaArticlePage() {
-  const pageUrl = "https://buzzog.com/godzilla-minus-zero-india-release-delayed-ramayana";
+  const pageUrl = "https://www.buzzoriginals.com/godzilla-minus-zero-india-release-delayed-ramayana";
   const pageTitle = "Godzilla Minus Zero Skips the Ramayana Clash: India Release Delayed";
 
   const jsonLd = {
@@ -57,7 +57,7 @@ export default function GodzillaArticlePage() {
     "@type": "NewsArticle",
     headline: pageTitle,
     image: [
-      "https://buzzog.com/images/godzilla-minus-zero-india-release-delayed-ramayana.jpg",
+      "https://www.buzzoriginals.com/images/godzilla-minus-zero-india-release-delayed-ramayana.jpg",
     ],
     datePublished: "2026-10-27T21:00:00+05:30",
     dateModified: "2026-10-28T02:00:00+05:30",
@@ -65,7 +65,7 @@ export default function GodzillaArticlePage() {
       {
         "@type": "NewsMediaOrganization",
         name: "Buzz Originals Desk",
-        url: "https://buzzog.com/about",
+        url: "https://www.buzzoriginals.com/about",
       },
     ],
     publisher: {
@@ -73,7 +73,7 @@ export default function GodzillaArticlePage() {
       name: "Buzz Originals",
       logo: {
         "@type": "ImageObject",
-        url: "https://buzzog.com/assets/buzzog-logo.png",
+        url: "https://www.buzzoriginals.com/assets/buzzog-logo.png",
       },
     },
     description:
@@ -92,13 +92,13 @@ export default function GodzillaArticlePage() {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://buzzog.com",
+        item: "https://www.buzzoriginals.com",
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Cinema",
-        item: "https://buzzog.com/#bollywood",
+        item: "https://www.buzzoriginals.com/#bollywood",
       },
       {
         "@type": "ListItem",
