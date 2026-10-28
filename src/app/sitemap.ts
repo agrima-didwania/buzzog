@@ -6,9 +6,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
       url: `${baseUrl}`,
-      lastModified: new Date("2026-10-28T12:00:00Z"),
+      lastModified: new Date("2026-10-28T16:45:00Z"),
       changeFrequency: "daily",
       priority: 1.0,
+    },
+    {
+      url: `${baseUrl}/shreya-kalra-karan-patel-reels-comment-rise-and-fall-2`,
+      lastModified: new Date("2026-10-28T16:45:00Z"),
+      changeFrequency: "daily",
+      priority: 0.9,
     },
     {
       url: `${baseUrl}/ramayana-la-premiere-ranbir-kapoor-yash-sai-pallavi`,

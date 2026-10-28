@@ -158,17 +158,18 @@ export default function Home() {
   // 5 Verified editorial stories mapped directly to the 5 requested categories (Latest published article in Latest)
   const editorialArticles = [
     {
-      id: "ramayana-la-premiere-latest",
+      id: "shreya-kalra-karan-patel-latest",
       anchorId: "latest-story",
-      href: "/ramayana-la-premiere-ranbir-kapoor-yash-sai-pallavi",
-      title: "Ramayana LA Premiere: Actors Steal the Red Carpet",
-      excerpt: "Ranbir Kapoor, Yash and Sai Pallavi walked the red carpet at the Academy Museum in Los Angeles for the ₹4,000 Cr global premiere.",
+      href: "/shreya-kalra-karan-patel-reels-comment-rise-and-fall-2",
+      title: "Shreya Kalra Hits Back at Karan Patel Over His Reels Comment",
+      excerpt: "Karan Patel asked Shreya Kalra and Rishabh Jaiswal how long they will stay in reels. Shreya fires back: 'stop demeaning people from reality TV.'",
       category: "Latest",
+      secondaryCategory: "Reality TV Updates",
       displayCategory: "LATEST",
       badge: "Latest",
       badgeType: "lime",
-      readTime: "4 MIN READ",
-      image: "/images/ramayana-la-premiere-ranbir-kapoor-yash-sai-pallavi.jpg",
+      readTime: "3 MIN READ",
+      image: "/images/shreya-kalra-karan-patel-reels-comment-rise-and-fall-2.jpg",
     },
     {
       id: "vijay-rashmika-cybercrime",
@@ -198,31 +199,30 @@ export default function Home() {
       watermarkColor: "text-purple-500",
     },
     {
-      id: "godzilla-imax-delay",
+      id: "ramayana-la-premiere-buzz",
       anchorId: "bollywood",
-      href: "/godzilla-minus-zero-india-release-delayed-ramayana",
-      title: "Godzilla Minus Zero skips Diwali clash: solo IMAX run for Ranbir's Ramayana",
-      excerpt: "Legendary monster flick shifts India theatrical rollout to give Nitesh Tiwari's mythological epic a clean premium screen window.",
+      href: "/ramayana-la-premiere-ranbir-kapoor-yash-sai-pallavi",
+      title: "Ramayana LA Premiere: Actors Steal the Red Carpet",
+      excerpt: "Ranbir Kapoor, Yash and Sai Pallavi walked the red carpet at the Academy Museum in Los Angeles for the ₹4,000 Cr global premiere.",
       category: "Bollywood & Hollywood",
       displayCategory: "BOLLYWOOD & HOLLYWOOD",
       badge: "🔥 Bollywood & Hollywood",
       badgeType: "pink",
-      readTime: "3 MIN READ",
-      image: "/images/godzilla-minus-zero-india-release-delayed-ramayana.jpg",
+      readTime: "4 MIN READ",
+      image: "/images/ramayana-la-premiere-ranbir-kapoor-yash-sai-pallavi.jpg",
     },
     {
-      id: "imax-expansion-news",
+      id: "godzilla-imax-delay",
       anchorId: "industry-news",
-      title: "IMAX India confirms record 45-screen expansion ahead of festive movie slate",
-      excerpt: "Premium large-format screens prepare for unprecedented box office demand with specialized IMAX laser conversions nationwide.",
+      href: "/godzilla-minus-zero-india-release-delayed-ramayana",
+      title: "Godzilla Minus Zero skips Diwali clash: solo IMAX run for Ranbir's Ramayana",
+      excerpt: "Legendary monster flick shifts India theatrical rollout to give Nitesh Tiwari's mythological epic a clean premium screen window.",
       category: "News",
       displayCategory: "NEWS",
       badge: "News",
       badgeType: "lime",
-      readTime: "TRADE REPORT",
-      bgGradient: "radial-gradient(circle at 75% 30%, #102636, #0f0f13 75%)",
-      watermarkText: "NEWS",
-      watermarkColor: "text-cyan-400",
+      readTime: "3 MIN READ",
+      image: "/images/godzilla-minus-zero-india-release-delayed-ramayana.jpg",
     },
   ];
 
@@ -232,6 +232,7 @@ export default function Home() {
       : editorialArticles.filter(
           (art) =>
             art.category === activeCategory ||
+            ("secondaryCategory" in art && art.secondaryCategory === activeCategory) ||
             (activeCategory === "Bollywood & Hollywood" &&
               (art.category === "Bollywood" || art.category === "Bollywood & Hollywood")) ||
             (activeCategory === "Bollywood" &&
@@ -307,6 +308,18 @@ export default function Home() {
               <span className="trend-rank">01</span>
               <div className="trend-text">
                 <Link
+                  href="/shreya-kalra-karan-patel-reels-comment-rise-and-fall-2"
+                  style={{ color: "inherit" }}
+                >
+                  <h3>Shreya Kalra hits back at Karan Patel over Rise and Fall 2 reels comment</h3>
+                  <span>REALITY TV · 58K REACTIONS</span>
+                </Link>
+              </div>
+            </div>
+            <div className="trend-item">
+              <span className="trend-rank">02</span>
+              <div className="trend-text">
+                <Link
                   href="/godzilla-minus-zero-india-release-delayed-ramayana"
                   style={{ color: "inherit" }}
                 >
@@ -316,29 +329,22 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">02</span>
+              <span className="trend-rank">03</span>
               <div className="trend-text">
                 <Link
                   href="/vijay-deverakonda-rashmika-mandanna-cyber-crime-complaint-hyderabad"
                   style={{ color: "inherit" }}
                 >
                   <h3>Vijay & Rashmika team takes legal action against fake posts & KWK 9 trolling</h3>
-                  <span>BOLLYWOOD · 52K REACTIONS</span>
+                  <span>EXCLUSIVE · 52K REACTIONS</span>
                 </Link>
-              </div>
-            </div>
-            <div className="trend-item">
-              <span className="trend-rank">03</span>
-              <div className="trend-text">
-                <h3>Splitsvilla&apos;s most talked-about couple just called it quits on camera</h3>
-                <span>SPLITSVILLA · 38K REACTIONS</span>
               </div>
             </div>
             <div className="trend-item">
               <span className="trend-rank">04</span>
               <div className="trend-text">
-                <h3>KKK contestant&apos;s stunt fail has the internet holding its breath</h3>
-                <span>KHATRON KE KHILADI · 29K REACTIONS</span>
+                <h3>Splitsvilla&apos;s most talked-about couple just called it quits on camera</h3>
+                <span>SPLITSVILLA · 38K REACTIONS</span>
               </div>
             </div>
             <div className="trend-item">
