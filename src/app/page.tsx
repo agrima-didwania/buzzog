@@ -155,17 +155,100 @@ export default function Home() {
     "Videos",
   ];
 
+  // Verified editorial stories for Latest News & Fresh Buzz (zero duplicates of the hero)
+  const editorialArticles = [
+    {
+      id: "godzilla-imax-delay",
+      anchorId: "movies",
+      href: "/godzilla-minus-zero-india-release-delayed-ramayana",
+      title: "Godzilla Minus Zero skips Diwali clash: solo IMAX run for Ranbir's Ramayana",
+      excerpt: "Legendary monster flick shifts India theatrical rollout to give Nitesh Tiwari's mythological epic a clean premium screen window.",
+      category: "Movies",
+      displayCategory: "CINEMA",
+      badge: "Box Office",
+      badgeType: "lime",
+      readTime: "3 MIN READ",
+      image: "/images/godzilla-minus-zero-india-release-delayed-ramayana.jpg",
+    },
+    {
+      id: "vijay-rashmika-cybercrime",
+      anchorId: "bollywood",
+      href: "/vijay-deverakonda-rashmika-mandanna-cyber-crime-complaint-hyderabad",
+      title: "Vijay & Rashmika team files cyber crime complaint over KWK 9 online trolling",
+      excerpt: "Formal police complaint registered in Hyderabad against malicious fan accounts circulating defamatory morphed clips.",
+      category: "Bollywood",
+      displayCategory: "BOLLYWOOD",
+      badge: "Exclusive",
+      badgeType: "pink",
+      readTime: "3 MIN READ",
+      image: "/images/celebrity-cybercrime-complaint-thumbnail.jpg",
+    },
+    {
+      id: "bigg-boss-nominations",
+      anchorId: "reality-shows",
+      title: "Bigg Boss Weekend Ka Vaar: High-stakes nominations shake up the house",
+      excerpt: "Double eviction threats and heated host confrontations reset alliances across the living room.",
+      category: "Reality Shows",
+      displayCategory: "BIGG BOSS",
+      badge: "Nominations",
+      badgeType: "pink",
+      readTime: "EPISODE SCOOP",
+      bgGradient: "radial-gradient(circle at 75% 30%, #301826, #0f0f13 75%)",
+      watermarkText: "BB",
+      watermarkColor: "text-purple-500",
+    },
+    {
+      id: "kkk-stunt-fail",
+      anchorId: "khatron-ke-khiladi",
+      title: "KKK's scariest stunt this season made two contestants tap out instantly",
+      excerpt: "A high-altitude fear task pushed physical endurance to the brink, leading to dramatic emergency halts.",
+      category: "Reality Shows",
+      displayCategory: "KHATRON KE KHILADI",
+      badge: "Stunt Recap",
+      badgeType: "lime",
+      readTime: "EPISODE RECAP",
+      bgGradient: "radial-gradient(circle at 75% 30%, #2f2111, #0f0f13 75%)",
+      watermarkText: "KKK",
+      watermarkColor: "text-amber-500",
+    },
+    {
+      id: "splitsvilla-dome-drama",
+      anchorId: "splitsvilla",
+      title: "Splitsvilla dome session breakdown: ideal match broken and power shifted",
+      excerpt: "An intense oracle vote split longtime allies down the middle, resetting villa voting blocks.",
+      category: "Reality Shows",
+      displayCategory: "SPLITSVILLA",
+      badge: "Dome Drama",
+      badgeType: "pink",
+      readTime: "UNFILTERED",
+      bgGradient: "radial-gradient(circle at 75% 30%, #351226, #0f0f13 75%)",
+      watermarkText: "DOME",
+      watermarkColor: "text-rose-500",
+    },
+  ];
+
+  const visibleArticles =
+    activeCategory === "🔥 All Buzz" || activeCategory === "News"
+      ? editorialArticles
+      : editorialArticles.filter((art) => art.category === activeCategory);
+
+  const showPollCard =
+    activeCategory === "🔥 All Buzz" ||
+    activeCategory === "Movies" ||
+    activeCategory === "News";
+
   return (
     <div className="min-h-screen bg-[var(--ink)] text-[var(--lavender)] flex flex-col justify-between">
       {/* ===== NAV ===== */}
       <Header activeNav="Home" />
 
-      {/* ===== HERO ===== */}
+      {/* ===== HERO: MAIN FEATURED STORY & TRENDING ===== */}
       <main>
-        <section className="hero">
+        <section className="hero" id="featured">
+          {/* 1. Main Featured Story (Commanding Top Story Presentation) */}
           <Link
             href="/ramayana-la-premiere-ranbir-kapoor-yash-sai-pallavi"
-            className="feature-card block transition-all hover:border-[var(--magenta)] focus-visible:ring-2 focus-visible:ring-[var(--lime)]"
+            className="feature-card block transition-all hover:border-[var(--lime)] focus-visible:ring-2 focus-visible:ring-[var(--lime)] group"
             style={{ textDecoration: "none", color: "inherit" }}
             aria-label="Read full article: Ramayana LA Premiere: Actors Steal the Red Carpet"
           >
@@ -177,43 +260,47 @@ export default function Home() {
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 750px"
                 style={{ objectFit: "cover", objectPosition: "center" }}
+                className="group-hover:scale-[1.03] transition-transform duration-500"
               />
               <div className="noise" style={{ pointerEvents: "none" }}></div>
-              <span className="badge pink feature-tag">🔥 Global Premiere</span>
+              <div className="feature-tag flex items-center gap-2">
+                <span className="badge pink">🔥 Cover Story</span>
+                <span className="badge">Global Premiere</span>
+              </div>
             </div>
             <div className="feature-body">
+              <div className="flex items-center gap-2 mb-2 font-mono text-xs text-[var(--lime)] font-bold tracking-wider uppercase">
+                <span>★ TOP STORY · RED CARPET DISPATCH</span>
+              </div>
               <h1 className="disp" style={{ color: "#fff" }}>
                 Ramayana LA Premiere: Actors Steal the Red Carpet
               </h1>
               <p>
-                Ranbir Kapoor, Yash and Sai Pallavi walked the red carpet at the Ramayana LA premiere. See who attended, what they wore, and the release date.
+                Ranbir Kapoor, Yash and Sai Pallavi walked the red carpet at the Academy Museum in Los Angeles. Inside the ₹4,000 Cr premiere, Hollywood attendees, and the worldwide Diwali release date.
               </p>
-              <div className="meta-row">
-                <span>BOLLYWOOD & CINEMA</span>
-                <span className="dot-sep">◆</span>
-                <span>4 MIN READ</span>
-                <span className="dot-sep">◆</span>
-                <span style={{ color: "var(--lime)" }}>EDITORIAL DESK</span>
+              <div className="meta-row mt-auto pt-3 border-t border-white/[0.06] flex items-center justify-between">
+                <div className="flex items-center gap-3">
+                  <span>BOLLYWOOD & CINEMA</span>
+                  <span className="dot-sep">◆</span>
+                  <span>4 MIN READ</span>
+                  <span className="dot-sep">◆</span>
+                  <span style={{ color: "var(--lime)" }}>EDITORIAL DESK</span>
+                </div>
+                <span className="text-xs font-mono font-bold text-[var(--lime)] hidden sm:inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+                  Read Full Story →
+                </span>
               </div>
             </div>
           </Link>
 
+          {/* 2. Trending Stories Panel (Genuine, Non-Repeating Stories) */}
           <div className="trend-panel" aria-label="Trending Stories Panel">
-            <h2>⚡ Trending Right Now</h2>
+            <h2>
+              <span className="w-2.5 h-2.5 rounded-full bg-[var(--lime)] animate-pulse inline-block"></span>
+              ⚡ Trending Stories
+            </h2>
             <div className="trend-item">
               <span className="trend-rank">01</span>
-              <div className="trend-text">
-                <Link
-                  href="/ramayana-la-premiere-ranbir-kapoor-yash-sai-pallavi"
-                  style={{ color: "inherit" }}
-                >
-                  <h3>Ramayana LA Premiere: Ranbir Kapoor, Yash & Sai Pallavi stun Hollywood</h3>
-                  <span>BOLLYWOOD · 85K REACTIONS</span>
-                </Link>
-              </div>
-            </div>
-            <div className="trend-item">
-              <span className="trend-rank">02</span>
               <div className="trend-text">
                 <Link
                   href="/godzilla-minus-zero-india-release-delayed-ramayana"
@@ -225,7 +312,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">03</span>
+              <span className="trend-rank">02</span>
               <div className="trend-text">
                 <Link
                   href="/vijay-deverakonda-rashmika-mandanna-cyber-crime-complaint-hyderabad"
@@ -237,23 +324,30 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">04</span>
+              <span className="trend-rank">03</span>
               <div className="trend-text">
                 <h3>Splitsvilla&apos;s most talked-about couple just called it quits on camera</h3>
                 <span>SPLITSVILLA · 38K REACTIONS</span>
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">05</span>
+              <span className="trend-rank">04</span>
               <div className="trend-text">
                 <h3>KKK contestant&apos;s stunt fail has the internet holding its breath</h3>
                 <span>KHATRON KE KHILADI · 29K REACTIONS</span>
               </div>
             </div>
+            <div className="trend-item">
+              <span className="trend-rank">05</span>
+              <div className="trend-text">
+                <h3>Bigg Boss Weekend Ka Vaar: Nominations ignite fiery house confrontations</h3>
+                <span>BIGG BOSS · 45K REACTIONS</span>
+              </div>
+            </div>
           </div>
         </section>
 
-        {/* ===== CATEGORY STRIP ===== */}
+        {/* ===== CATEGORY FILTER STRIP ===== */}
         <div className="cat-strip" id="categories" role="tablist" aria-label="Filter Buzz by Category">
           {categories.map((cat) => (
             <button
@@ -268,193 +362,148 @@ export default function Home() {
           ))}
         </div>
 
-        {/* ===== LATEST GRID ===== */}
+        {/* ===== LATEST NEWS & FRESH BUZZ SECTION ===== */}
         <section className="section" id="news">
           <div className="section-head">
-            <h2>
-              Fresh <span className="accent">Buzz</span>
-            </h2>
-            <span className="text-xs font-mono text-[var(--muted)]">UPDATED HOURLY</span>
+            <div>
+              <h2>
+                Fresh <span className="accent">Buzz</span> & Latest News
+              </h2>
+              <p className="text-xs font-mono text-[var(--muted)] mt-1 tracking-wider uppercase">
+                Verified reporting across Bollywood, Cinema & Reality TV
+              </p>
+            </div>
+            <span className="text-xs font-mono text-[var(--lime)] font-bold hidden sm:inline-block">
+              UPDATED HOURLY
+            </span>
           </div>
+
           <div className="grid">
-            {/* Card 1: Ramayana LA Premiere */}
-            <Link
-              href="/ramayana-la-premiere-ranbir-kapoor-yash-sai-pallavi"
-              className="card focus-visible:ring-2 focus-visible:ring-[var(--lime)]"
-              style={{ textDecoration: "none", color: "inherit" }}
-            >
-              <div className="card-media" style={{ position: "relative", overflow: "hidden" }}>
-                <Image
-                  src="/images/ramayana-la-premiere-ranbir-kapoor-yash-sai-pallavi.jpg"
-                  alt="Ramayana LA Premiere Red Carpet"
-                  fill
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 380px"
-                  style={{ objectFit: "cover" }}
-                />
-                <span className="badge pink">Hollywood Gala</span>
-              </div>
-              <div className="card-body">
-                <h3>Inside Ramayana’s LA Premiere: Jada Pinkett Smith, Hollywood stars & ₹4,000 Cr buzz</h3>
-                <p className="card-excerpt">
-                  Ranbir Kapoor, Yash and Sai Pallavi walked the red carpet at the Academy Museum in Los Angeles for the global premiere.
-                </p>
-                <div className="meta-row">
-                  <span>BOLLYWOOD</span>
-                  <span className="dot-sep">◆</span>
-                  <span>4 MIN READ</span>
-                </div>
-              </div>
-            </Link>
+            {/* Editorial Article Cards */}
+            {visibleArticles.map((article) => {
+              const cardContent = (
+                <>
+                  <div
+                    className="card-media relative overflow-hidden"
+                    style={{
+                      background: article.bgGradient || undefined,
+                      position: "relative",
+                    }}
+                  >
+                    {article.image && (
+                      <Image
+                        src={article.image}
+                        alt={article.title}
+                        fill
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 380px"
+                        style={{ objectFit: "cover" }}
+                      />
+                    )}
+                    {article.watermarkText && (
+                      <>
+                        <div
+                          className={`absolute inset-0 opacity-15 pointer-events-none flex items-center justify-center font-anton text-7xl ${article.watermarkColor} font-extrabold select-none tracking-widest`}
+                        >
+                          {article.watermarkText}
+                        </div>
+                        <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-[#111115] to-transparent pointer-events-none" />
+                      </>
+                    )}
+                    <span className={`badge ${article.badgeType === "pink" ? "pink" : ""}`}>
+                      {article.badge}
+                    </span>
+                  </div>
+                  <div className="card-body">
+                    <h3>{article.title}</h3>
+                    <p className="card-excerpt">{article.excerpt}</p>
+                    <div className="meta-row">
+                      <span>{article.displayCategory}</span>
+                      <span className="dot-sep">◆</span>
+                      <span>{article.readTime}</span>
+                    </div>
+                  </div>
+                </>
+              );
 
-            {/* Card 2: Godzilla Blog Post */}
-            <Link
-              href="/godzilla-minus-zero-india-release-delayed-ramayana"
-              className="card focus-visible:ring-2 focus-visible:ring-[var(--lime)]"
-              style={{ textDecoration: "none", color: "inherit" }}
-            >
-              <div className="card-media" style={{ position: "relative", overflow: "hidden" }}>
-                <Image
-                  src="/images/godzilla-minus-zero-india-release-delayed-ramayana.jpg"
-                  alt="Godzilla Minus Zero delayed"
-                  fill
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 380px"
-                  style={{ objectFit: "cover" }}
-                />
-                <span className="badge">Box Office</span>
-              </div>
-              <div className="card-body">
-                <h3>Godzilla Minus Zero skips Diwali clash: solo IMAX run for Ranbir&apos;s Ramayana</h3>
-                <p className="card-excerpt">
-                  Legendary monster flick shifts India theatrical rollout to give Nitesh Tiwari&apos;s mythological epic a clean premium screen window.
-                </p>
-                <div className="meta-row">
-                  <span>CINEMA</span>
-                  <span className="dot-sep">◆</span>
-                  <span>3 MIN READ</span>
-                </div>
-              </div>
-            </Link>
+              if (article.href) {
+                return (
+                  <Link
+                    key={article.id}
+                    id={article.anchorId}
+                    href={article.href}
+                    className="card focus-visible:ring-2 focus-visible:ring-[var(--lime)]"
+                    style={{ textDecoration: "none", color: "inherit" }}
+                  >
+                    {cardContent}
+                  </Link>
+                );
+              }
 
-            {/* Card 3: Vijay & Rashmika Live Story */}
-            <Link
-              href="/vijay-deverakonda-rashmika-mandanna-cyber-crime-complaint-hyderabad"
-              className="card focus-visible:ring-2 focus-visible:ring-[var(--lime)]"
-              style={{ textDecoration: "none", color: "inherit" }}
-            >
-              <div className="card-media" style={{ position: "relative", overflow: "hidden" }}>
-                <Image
-                  src="/images/celebrity-cybercrime-complaint-thumbnail.jpg"
-                  alt="Vijay and Rashmika cyber crime complaint"
-                  fill
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 380px"
-                  style={{ objectFit: "cover" }}
-                />
-                <span className="badge pink">Exclusive</span>
-              </div>
-              <div className="card-body">
-                <h3>Vijay & Rashmika team files cyber crime complaint over KWK 9 online trolling</h3>
-                <p className="card-excerpt">
-                  Formal police complaint registered in Hyderabad against malicious fan accounts circulating defamatory morphed clips.
-                </p>
-                <div className="meta-row">
-                  <span>BOLLYWOOD</span>
-                  <span className="dot-sep">◆</span>
-                  <span>3 MIN READ</span>
+              return (
+                <div
+                  key={article.id}
+                  id={article.anchorId}
+                  className="card focus-visible:ring-2 focus-visible:ring-[var(--lime)]"
+                >
+                  {cardContent}
                 </div>
-              </div>
-            </Link>
+              );
+            })}
 
             {/* REAL COMMUNITY POLL CARD (Persisted via /api/poll) */}
-            <div className="poll-card" id="polls">
-              <span className="badge pink">🗳️ Live Community Poll</span>
-              <h3>{poll.question}</h3>
+            {showPollCard && (
+              <div className="poll-card" id="polls">
+                <span className="badge pink">🗳️ Live Community Poll</span>
+                <h3>{poll.question}</h3>
 
-              {poll.options.map((opt) => {
-                const isSelected = selectedOption === opt.id;
-                return (
-                  <button
-                    key={opt.id}
-                    type="button"
-                    className={`poll-opt ${isSelected ? "selected" : ""}`}
-                    onClick={() => handleVote(opt.id)}
-                    disabled={pollVoted || votingLoading}
-                    aria-label={`Vote for ${opt.label}. Currently at ${opt.percentage}%`}
+                {poll.options.map((opt) => {
+                  const isSelected = selectedOption === opt.id;
+                  return (
+                    <button
+                      key={opt.id}
+                      type="button"
+                      className={`poll-opt ${isSelected ? "selected" : ""}`}
+                      onClick={() => handleVote(opt.id)}
+                      disabled={pollVoted || votingLoading}
+                      aria-label={`Vote for ${opt.label}. Currently at ${opt.percentage}%`}
+                    >
+                      <div className="poll-opt-label">
+                        <span>{opt.label}</span>
+                        <span className="pct font-mono font-bold">{opt.percentage}%</span>
+                      </div>
+                      <div className="poll-bar-track">
+                        <div
+                          className="poll-bar-fill"
+                          style={{
+                            width: `${opt.percentage}%`,
+                            background: isSelected ? "var(--lime)" : undefined,
+                          }}
+                        ></div>
+                      </div>
+                    </button>
+                  );
+                })}
+
+                <div className="poll-votes font-mono text-xs text-[var(--muted)] mt-2">
+                  {poll.totalVotes.toLocaleString()} verified community votes recorded
+                </div>
+
+                {pollVoted && (
+                  <div
+                    className="poll-locked-msg text-xs text-[var(--lime)] font-mono font-bold mt-2"
+                    role="status"
                   >
-                    <div className="poll-opt-label">
-                      <span>{opt.label}</span>
-                      <span className="pct font-mono font-bold">{opt.percentage}%</span>
-                    </div>
-                    <div className="poll-bar-track">
-                      <div
-                        className="poll-bar-fill"
-                        style={{
-                          width: `${opt.percentage}%`,
-                          background: isSelected ? "var(--lime)" : undefined,
-                        }}
-                      ></div>
-                    </div>
-                  </button>
-                );
-              })}
+                    ✓ Vote recorded — thanks for having your say!
+                  </div>
+                )}
 
-              <div className="poll-votes font-mono text-xs text-[var(--muted)] mt-2">
-                {poll.totalVotes.toLocaleString()} verified community votes recorded
-              </div>
-
-              {pollVoted && (
-                <div className="poll-locked-msg text-xs text-[var(--lime)] font-mono font-bold mt-2" role="status">
-                  ✓ Vote recorded — thanks for having your say!
-                </div>
-              )}
-
-              <div className="meta-row mt-auto pt-3 border-t border-white/[0.06]">
-                <span>COMMUNITY FORUM</span>
-                <span className="dot-sep">◆</span>
-                <span>LIVE PERSISTED</span>
-              </div>
-            </div>
-
-            <div className="card m4 focus-visible:ring-2 focus-visible:ring-[var(--lime)]" id="khatron-ke-khiladi">
-              <div className="card-media relative overflow-hidden" style={{ background: "radial-gradient(circle at 75% 30%, #2f2111, #0f0f13 75%)" }}>
-                <div className="absolute inset-0 opacity-15 pointer-events-none flex items-center justify-center font-anton text-7xl text-amber-500 font-extrabold select-none tracking-widest">
-                  KKK
-                </div>
-                <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-[#111115] to-transparent pointer-events-none" />
-                <span className="badge">Khatron Ke Khiladi</span>
-              </div>
-              <div className="card-body">
-                <h3>KKK&apos;s scariest stunt this season made two contestants tap out instantly</h3>
-                <p className="card-excerpt">
-                  A high-altitude fear task pushed physical endurance to the brink, leading to dramatic emergency halts.
-                </p>
-                <div className="meta-row">
-                  <span>KHATRON KE KHILADI</span>
+                <div className="meta-row mt-auto pt-3 border-t border-white/[0.06]">
+                  <span>COMMUNITY FORUM</span>
                   <span className="dot-sep">◆</span>
-                  <span>EPISODE RECAP</span>
+                  <span>LIVE PERSISTED</span>
                 </div>
               </div>
-            </div>
-
-            <div className="card m5 focus-visible:ring-2 focus-visible:ring-[var(--lime)]" id="splitsvilla">
-              <div className="card-media relative overflow-hidden" style={{ background: "radial-gradient(circle at 75% 30%, #351226, #0f0f13 75%)" }}>
-                <div className="absolute inset-0 opacity-15 pointer-events-none flex items-center justify-center font-anton text-6xl text-rose-500 font-extrabold select-none tracking-wider">
-                  DOME
-                </div>
-                <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-[#111115] to-transparent pointer-events-none" />
-                <span className="badge pink">Dome Drama</span>
-              </div>
-              <div className="card-body">
-                <h3>Splitsvilla dome session breakdown: ideal match broken and power shifted</h3>
-                <p className="card-excerpt">
-                  An intense oracle vote split longtime allies down the middle, resetting villa voting blocks.
-                </p>
-                <div className="meta-row">
-                  <span>SPLITSVILLA</span>
-                  <span className="dot-sep">◆</span>
-                  <span>UNFILTERED</span>
-                </div>
-              </div>
-            </div>
+            )}
           </div>
         </section>
 
