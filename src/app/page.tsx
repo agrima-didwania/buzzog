@@ -176,17 +176,17 @@ export default function Home() {
 
   const editorialArticles: EditorialArticle[] = [
     {
-      id: "shreya-kalra-karan-patel-latest",
+      id: "janhvi-kapoor-peddi-latest",
       anchorId: "latest-story",
-      href: "/shreya-kalra-karan-patel-reels-comment-rise-and-fall-2",
-      title: "Shreya Kalra Hits Back at Karan Patel Over His Reels Comment",
-      excerpt: "Karan Patel asked Shreya Kalra and Rishabh Jaiswal how long they will stay in reels. Shreya fires back: 'stop demeaning people from reality TV.'",
+      href: "/janhvi-kapoor-peddi-controversy-koffee-with-karan-9",
+      title: "Janhvi Kapoor Breaks Silence on Peddi Controversy: 'A Violating Experience'",
+      excerpt: "Janhvi Kapoor opens up on the Peddi objectification row on KWK 9. Read what she said, the director's apology and reactions.",
       category: "Latest",
       displayCategory: "LATEST",
       badge: "Latest",
       badgeType: "lime",
-      readTime: "3 MIN READ",
-      image: "/images/shreya-kalra-karan-patel-reels-comment-rise-and-fall-2.jpg",
+      readTime: "4 MIN READ",
+      image: "/images/janhvi-kapoor-peddi-controversy-koffee-with-karan-9.jpg",
     },
     {
       id: "vijay-rashmika-cybercrime",
@@ -267,42 +267,42 @@ export default function Home() {
         <section className="hero" id="featured">
           {/* 1. Main Featured Story (Commanding Top Story Presentation) */}
           <Link
-            href="/shreya-kalra-karan-patel-reels-comment-rise-and-fall-2"
+            href="/janhvi-kapoor-peddi-controversy-koffee-with-karan-9"
             className="feature-card block transition-all hover:border-[var(--lime)] focus-visible:ring-2 focus-visible:ring-[var(--lime)] group"
             style={{ textDecoration: "none", color: "inherit" }}
-            aria-label="Read full article: Shreya Kalra Hits Back at Karan Patel Over His Reels Comment"
+            aria-label="Read full article: Janhvi Kapoor Breaks Silence on Peddi Controversy"
           >
             <div className="feature-media" style={{ overflow: "hidden", position: "relative" }}>
               <Image
-                src="/images/shreya-kalra-karan-patel-reels-comment-rise-and-fall-2.jpg"
-                alt="Shreya Kalra Hits Back at Karan Patel Over His Reels Comment on Rise and Fall 2"
+                src="/images/janhvi-kapoor-peddi-controversy-koffee-with-karan-9.jpg"
+                alt="Janhvi Kapoor Breaks Silence on Peddi Controversy on Koffee With Karan 9"
                 fill
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 750px"
-                style={{ objectFit: "cover", objectPosition: "center" }}
+                style={{ objectFit: "cover", objectPosition: "center 20%" }}
                 className="group-hover:scale-[1.03] transition-transform duration-500"
               />
               <div className="noise" style={{ pointerEvents: "none" }}></div>
               <div className="feature-tag flex items-center gap-2">
                 <span className="badge pink">🔥 Cover Story</span>
-                <span className="badge">Rise and Fall 2</span>
+                <span className="badge">Koffee With Karan 9</span>
               </div>
             </div>
             <div className="feature-body">
               <div className="flex items-center gap-2 mb-2 font-mono text-xs text-[var(--lime)] font-bold tracking-wider uppercase">
-                <span>★ TOP STORY · REALITY TV SCOOP</span>
+                <span>★ TOP STORY · BOLLYWOOD EXCLUSIVE</span>
               </div>
               <h1 className="disp" style={{ color: "#fff" }}>
-                Shreya Kalra Hits Back at Karan Patel Over His Reels Comment
+                Janhvi Kapoor Breaks Silence on Peddi Controversy: &ldquo;A Violating Experience&rdquo;
               </h1>
               <p>
-                Karan Patel asked Shreya Kalra and Rishabh Jaiswal how long they will stay in reels. Shreya hits back in viral response: &ldquo;Stop demeaning people just because they come from reality TV.&rdquo; Inside the Rise and Fall 2 clash.
+                Janhvi Kapoor ends her silence on Koffee With Karan Season 9, addressing the Peddi objectification row, admitting personal regrets, and opening up on on-set agency.
               </p>
               <div className="meta-row mt-auto pt-3 border-t border-white/[0.06] flex items-center justify-between">
                 <div className="flex items-center gap-3">
-                  <span>REALITY TV UPDATES</span>
+                  <span>BOLLYWOOD</span>
                   <span className="dot-sep">◆</span>
-                  <span>3 MIN READ</span>
+                  <span>4 MIN READ</span>
                   <span className="dot-sep">◆</span>
                   <span style={{ color: "var(--lime)" }}>EDITORIAL DESK</span>
                 </div>
@@ -321,6 +321,18 @@ export default function Home() {
             </h2>
             <div className="trend-item">
               <span className="trend-rank">01</span>
+              <div className="trend-text">
+                <Link
+                  href="/shreya-kalra-karan-patel-reels-comment-rise-and-fall-2"
+                  style={{ color: "inherit" }}
+                >
+                  <h3>Shreya Kalra hits back at Karan Patel over Rise and Fall 2 reels comment</h3>
+                  <span>REALITY TV · 58K REACTIONS</span>
+                </Link>
+              </div>
+            </div>
+            <div className="trend-item">
+              <span className="trend-rank">02</span>
               <div className="trend-text">
                 <Link
                   href="/ramayana-la-premiere-ranbir-kapoor-yash-sai-pallavi"
