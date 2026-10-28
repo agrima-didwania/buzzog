@@ -252,15 +252,15 @@ export default function Home() {
         <section className="hero" id="featured">
           {/* 1. Main Featured Story (Commanding Top Story Presentation) */}
           <Link
-            href="/ramayana-la-premiere-ranbir-kapoor-yash-sai-pallavi"
+            href="/shreya-kalra-karan-patel-reels-comment-rise-and-fall-2"
             className="feature-card block transition-all hover:border-[var(--lime)] focus-visible:ring-2 focus-visible:ring-[var(--lime)] group"
             style={{ textDecoration: "none", color: "inherit" }}
-            aria-label="Read full article: Ramayana LA Premiere: Actors Steal the Red Carpet"
+            aria-label="Read full article: Shreya Kalra Hits Back at Karan Patel Over His Reels Comment"
           >
             <div className="feature-media" style={{ overflow: "hidden", position: "relative" }}>
               <Image
-                src="/images/ramayana-la-premiere-ranbir-kapoor-yash-sai-pallavi.jpg"
-                alt="Ramayana LA Premiere: Ranbir Kapoor, Yash and Sai Pallavi on the red carpet"
+                src="/images/shreya-kalra-karan-patel-reels-comment-rise-and-fall-2.jpg"
+                alt="Shreya Kalra Hits Back at Karan Patel Over His Reels Comment on Rise and Fall 2"
                 fill
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 750px"
@@ -270,24 +270,24 @@ export default function Home() {
               <div className="noise" style={{ pointerEvents: "none" }}></div>
               <div className="feature-tag flex items-center gap-2">
                 <span className="badge pink">🔥 Cover Story</span>
-                <span className="badge">Global Premiere</span>
+                <span className="badge">Rise and Fall 2</span>
               </div>
             </div>
             <div className="feature-body">
               <div className="flex items-center gap-2 mb-2 font-mono text-xs text-[var(--lime)] font-bold tracking-wider uppercase">
-                <span>★ TOP STORY · BOLLYWOOD & HOLLYWOOD DISPATCH</span>
+                <span>★ TOP STORY · REALITY TV SCOOP</span>
               </div>
               <h1 className="disp" style={{ color: "#fff" }}>
-                Ramayana LA Premiere: Actors Steal the Red Carpet
+                Shreya Kalra Hits Back at Karan Patel Over His Reels Comment
               </h1>
               <p>
-                Ranbir Kapoor, Yash and Sai Pallavi walked the red carpet at the Academy Museum in Los Angeles. Inside the ₹4,000 Cr premiere, Hollywood attendees, and the worldwide Diwali release date.
+                Karan Patel asked Shreya Kalra and Rishabh Jaiswal how long they will stay in reels. Shreya hits back in viral response: &ldquo;Stop demeaning people just because they come from reality TV.&rdquo; Inside the Rise and Fall 2 clash.
               </p>
               <div className="meta-row mt-auto pt-3 border-t border-white/[0.06] flex items-center justify-between">
                 <div className="flex items-center gap-3">
-                  <span>BOLLYWOOD & HOLLYWOOD</span>
+                  <span>REALITY TV UPDATES</span>
                   <span className="dot-sep">◆</span>
-                  <span>4 MIN READ</span>
+                  <span>3 MIN READ</span>
                   <span className="dot-sep">◆</span>
                   <span style={{ color: "var(--lime)" }}>EDITORIAL DESK</span>
                 </div>
@@ -308,11 +308,11 @@ export default function Home() {
               <span className="trend-rank">01</span>
               <div className="trend-text">
                 <Link
-                  href="/shreya-kalra-karan-patel-reels-comment-rise-and-fall-2"
+                  href="/ramayana-la-premiere-ranbir-kapoor-yash-sai-pallavi"
                   style={{ color: "inherit" }}
                 >
-                  <h3>Shreya Kalra hits back at Karan Patel over Rise and Fall 2 reels comment</h3>
-                  <span>REALITY TV · 58K REACTIONS</span>
+                  <h3>Ramayana LA Premiere: Ranbir Kapoor, Yash and Sai Pallavi stun Hollywood</h3>
+                  <span>BOLLYWOOD · 68K REACTIONS</span>
                 </Link>
               </div>
             </div>
