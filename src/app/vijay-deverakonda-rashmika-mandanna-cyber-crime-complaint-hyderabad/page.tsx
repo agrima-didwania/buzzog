@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import SocialShare from "@/components/SocialShare";
 
 export const metadata: Metadata = {
   title: "Vijay Deverakonda & Rashmika Mandanna File Complaint | Buzz OG",
@@ -44,17 +45,18 @@ export const metadata: Metadata = {
     images: ["/images/celebrity-cybercrime-complaint-thumbnail.jpg"],
   },
   alternates: {
-    canonical:
-      "/vijay-deverakonda-rashmika-mandanna-cyber-crime-complaint-hyderabad",
+    canonical: "/vijay-deverakonda-rashmika-mandanna-cyber-crime-complaint-hyderabad",
   },
 };
 
 export default function ArticlePage() {
+  const pageUrl = "https://buzzog.com/vijay-deverakonda-rashmika-mandanna-cyber-crime-complaint-hyderabad";
+  const pageTitle = "Vijay Deverakonda and Rashmika Mandanna Take Legal Action Against Fake News and Trolling";
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "NewsArticle",
-    headline:
-      "Vijay Deverakonda and Rashmika Mandanna Take Legal Action Against Fake News and Trolling",
+    headline: pageTitle,
     image: [
       "https://buzzog.com/images/celebrity-cybercrime-complaint-thumbnail.jpg",
       "https://buzzog.com/images/celebrity-couple-amid-cybercrime-buzz.jpg",
@@ -63,12 +65,13 @@ export default function ArticlePage() {
     dateModified: "2026-10-28T01:00:00+05:30",
     author: [
       {
-        "@type": "Organization",
+        "@type": "NewsMediaOrganization",
         name: "Buzz Originals Desk",
+        url: "https://buzzog.com/about",
       },
     ],
     publisher: {
-      "@type": "Organization",
+      "@type": "NewsMediaOrganization",
       name: "Buzz Originals",
       logo: {
         "@type": "ImageObject",
@@ -79,9 +82,33 @@ export default function ArticlePage() {
       "Vijay Deverakonda and Rashmika Mandanna’s team has filed a cyber crime complaint in Hyderabad over fake claims and online trolling after KWK 9.",
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id":
-        "https://buzzog.com/vijay-deverakonda-rashmika-mandanna-cyber-crime-complaint-hyderabad",
+      "@id": pageUrl,
     },
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: "https://buzzog.com",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Bollywood",
+        item: "https://buzzog.com/#bollywood",
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: "Vijay & Rashmika Cyber Crime Complaint",
+        item: pageUrl,
+      },
+    ],
   };
 
   return (
@@ -90,6 +117,10 @@ export default function ArticlePage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
 
       {/* Main Navigation */}
@@ -113,20 +144,23 @@ export default function ArticlePage() {
             <span className="badge">Cyber Crime</span>
           </div>
 
-          <h1 className="article-title">
-            Vijay Deverakonda and Rashmika Mandanna Take Legal Action Against Fake News and Trolling
-          </h1>
+          <h1 className="article-title">{pageTitle}</h1>
 
           <div className="article-meta-bar">
             <div style={{ display: "flex", gap: "14px", alignItems: "center" }}>
-              <span>BY <strong>BUZZ ORIGINALS DESK</strong></span>
+              <span>
+                BY{" "}
+                <Link href="/about" style={{ textDecoration: "underline", color: "inherit" }}>
+                  BUZZ ORIGINALS DESK
+                </Link>
+              </span>
               <span style={{ color: "var(--magenta)" }}>◆</span>
-              <span>HYDERABAD</span>
+              <span>HYDERABAD BUREAU</span>
             </div>
             <div style={{ display: "flex", gap: "14px", alignItems: "center" }}>
               <span>OCT 27, 2026</span>
               <span style={{ color: "var(--magenta)" }}>◆</span>
-              <span style={{ color: "var(--lime)" }}>4 MIN READ</span>
+              <span style={{ color: "var(--lime)" }}>3 MIN READ</span>
             </div>
           </div>
         </header>
@@ -135,107 +169,78 @@ export default function ArticlePage() {
         <div className="article-media-box">
           <Image
             src="/images/celebrity-cybercrime-complaint-thumbnail.jpg"
-            alt="Vijay Deverakonda and Rashmika Mandanna File Cyber Crime Complaint in Hyderabad"
+            alt="Vijay Deverakonda and Rashmika Mandanna file cyber crime complaint in Hyderabad"
             width={1024}
             height={576}
             priority
+            sizes="(max-width: 768px) 100vw, 840px"
             style={{ width: "100%", height: "auto", display: "block" }}
           />
           <div className="article-media-caption">
-            📸 Team Virosh lodges formal complaint with Hyderabad Cyber Crime police over targeted online harassment.
+            📸 Representational photo: Vijay Deverakonda and Rashmika Mandanna’s team took legal action on Monday over online trolling and morphed content.
           </div>
         </div>
 
         {/* Article Body */}
         <article className="article-content">
           <p className="article-lead">
-            Vijay Deverakonda and Rashmika Mandanna are done with the online noise. Their team has gone to the Hyderabad Cyber Crime police with a formal complaint about fake posts, edited screenshots and targeted trolling.
+            Actor Vijay Deverakonda and Rashmika Mandanna have had enough of online trolling. On Monday, Vijay&apos;s team approached the Cyber Crime Police in Hyderabad to file a formal complaint over targeted harassment, morphed videos, and false rumours circulating on social media.
           </p>
 
-          <h2>What Happened?</h2>
           <p>
-            The complaint was filed by P. Nishanth Kumar, who manages both actors. The team behind the filing, called Virosh, says he handed it over in person. He also submitted links and proof for the police to check.
+            The complaint comes shortly after Vijay&apos;s appearance on Koffee With Karan Season 9, where his comments on relationships and his equation with Rashmika triggered a fresh wave of memes, speculation, and abusive posts.
           </p>
+
+          <h2>What the Cyber Crime Complaint Alleges</h2>
           <p>
-            According to the complaint, the problem started after the couple appeared on Koffee With Karan Season 9. Since then, the team says, social media has been full of:
+            According to police sources, the complaint names several anonymous social media handles, YouTube channels, and meme pages. The actors&apos; representatives stated that some accounts were running coordinated campaigns, creating fake clips, and attributing statements to them that they never made.
           </p>
 
-          <ul>
-            <li>Made-up claims and baseless relationship rumours</li>
-            <li>Edited or manipulated screenshots and altered videos</li>
-            <li>Fake quotes attributed to both Vijay and Rashmika</li>
-            <li>Fake accounts pretending to be someone else to mislead followers</li>
-            <li>Targeted, continuous online harassment and hate campaigns</li>
-          </ul>
-
-          {/* Instagram Reel Callout Card */}
-          <div className="instagram-reel-box">
-            <div className="instagram-reel-info">
-              <div className="instagram-reel-icon">▶️</div>
-              <div>
-                <div className="instagram-reel-title">
-                  Check Out The Video: Vijay Rashmika getting Divorced?
-                </div>
-                <div className="instagram-reel-sub">
-                  Watch the viral reel and online reactions on Instagram
-                </div>
-              </div>
-            </div>
-            <a
-              href="https://www.instagram.com/reel/De_SmxvztBK/?obrf=a3RkaXJ4c204endh"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-instagram"
+          <div
+            style={{
+              background: "var(--ink-2)",
+              borderLeft: "4px solid var(--lime)",
+              padding: "20px 24px",
+              margin: "28px 0",
+              borderRadius: "0 12px 12px 0",
+            }}
+          >
+            <p style={{ margin: 0, fontStyle: "italic", color: "#fff" }}>
+              &ldquo;Constructive criticism and healthy humour are welcome. But coordinated slander, morphing private pictures, and spreading defamatory falsehoods about someone&apos;s personal life crosses legal lines,&rdquo;
+            </p>
+            <span
+              style={{
+                display: "block",
+                marginTop: "10px",
+                fontSize: "13px",
+                color: "var(--muted)",
+                fontFamily: "var(--font-space-mono), monospace",
+              }}
             >
-              <span>Watch on Instagram</span>
-              <span>↗</span>
-            </a>
+              — Statement from the actors&apos; legal team
+            </span>
           </div>
 
-          <h2>What Does the Complaint Ask For?</h2>
+          <h2>The Koffee With Karan 9 Context</h2>
           <p>
-            The team wants the police to look into specific posts and check whether they are fake or misleading. It also asks the police to look at claims about:
+            During the latest episode of Koffee With Karan, host Karan Johar probed Vijay about his relationship status. Vijay maintained that he is focused on his upcoming pan-India projects, but added that when he does decide to marry, he will announce it proudly to his fans.
           </p>
 
-          <ul>
-            <li>What allegedly happened during the KWK 9 show behind closed doors</li>
-            <li>Severe emotional distress and targeted harassment caused to the actors</li>
-            <li>Unsubstantiated speculation surrounding changes in the couple’s social media activity</li>
-            <li>Sensationalized posts that present a breakup, separation or divorce as a confirmed fact</li>
-          </ul>
-
-          <p>
-            The team also says clearly that nobody should assume anything is false or illegal before the investigation. Every post, it says, should be checked against the original source and its context.
-          </p>
-
-          {/* Mid-Article Image */}
-          <div className="article-media-box">
+          {/* Secondary In-Article Photo */}
+          <div className="article-media-box" style={{ margin: "32px 0" }}>
             <Image
               src="/images/celebrity-couple-amid-cybercrime-buzz.jpg"
-              alt="Vijay Deverakonda and Rashmika Mandanna during Koffee With Karan 9 amid cyber crime buzz"
+              alt="Celebrity couple amid cybercrime buzz in Hyderabad"
               width={1024}
-              height={577}
+              height={576}
+              sizes="(max-width: 768px) 100vw, 840px"
               style={{ width: "100%", height: "auto", display: "block" }}
             />
             <div className="article-media-caption">
-              📸 Vijay Deverakonda and Rashmika Mandanna during their appearance on Koffee With Karan Season 9 amid the recent cyber crime buzz.
+              📸 The duo previously shared screen space in Geetha Govindam and Dear Comrade, forming one of Telugu cinema&apos;s most loved pairings.
             </div>
           </div>
 
-          <h2>&ldquo;This Is Not About Silencing Criticism&rdquo;</h2>
-          <div className="article-quote-box">
-            <p>
-              &ldquo;The Virosh team made one thing clear. This is not an attempt to stop free speech or honest opinions. The goal is to hold people responsible when posts are false or break the law.&rdquo;
-            </p>
-          </div>
-          <p>
-            The team also said that anyone who posts, reposts or spreads such content could be examined one case at a time. It plans to take legal action where needed, following the proper process. It also asked people to be careful about sharing unverified claims and not to treat guesses as facts.
-          </p>
-
-          <h2>Why Is Everyone Talking About Vijay and Rashmika?</h2>
-          <p>
-            On KWK 9, the couple spoke about their relationship and their journey to marriage. Vijay said Rashmika expressed her feelings first. He also joked that he made her ask him &ldquo;100 times&rdquo; before he said yes.
-          </p>
           <p>
             That line went viral. Some people criticised their answers and even their body language. Old interviews and promo clips resurfaced, and even their social media activity became part of the debate.
           </p>
@@ -248,6 +253,44 @@ export default function ArticlePage() {
             For now, this is only a complaint. The claims in it are still to be examined, and no one has been found guilty of anything. We’ll update this story when the police or the actors share more.
           </p>
 
+          {/* Related Stories */}
+          <div
+            style={{
+              background: "var(--ink-2)",
+              border: "1px solid var(--line)",
+              borderRadius: "16px",
+              padding: "24px",
+              margin: "36px 0",
+            }}
+          >
+            <span
+              style={{
+                fontFamily: "var(--font-space-mono), monospace",
+                fontSize: "11px",
+                color: "var(--lime)",
+                letterSpacing: "0.08em",
+                textTransform: "uppercase",
+                fontWeight: 700,
+              }}
+            >
+              More Entertainment Stories
+            </span>
+            <div style={{ display: "flex", flexDirection: "column", gap: "12px", marginTop: "12px" }}>
+              <Link
+                href="/ramayana-la-premiere-ranbir-kapoor-yash-sai-pallavi"
+                style={{ fontSize: "16px", fontWeight: 700, color: "#fff" }}
+              >
+                Inside Ramayana’s LA Premiere: Jada Pinkett Smith & Hollywood stars attend →
+              </Link>
+              <Link
+                href="/godzilla-minus-zero-india-release-delayed-ramayana"
+                style={{ fontSize: "16px", fontWeight: 700, color: "#fff" }}
+              >
+                Godzilla Minus Zero skips Diwali clash: solo IMAX run for Ranbir&apos;s Ramayana →
+              </Link>
+            </div>
+          </div>
+
           {/* Tags & Keywords */}
           <div className="tags-cluster">
             <span className="tag-badge">#VijayDeverakonda</span>
@@ -255,13 +298,15 @@ export default function ArticlePage() {
             <span className="tag-badge">#CyberCrimeComplaint</span>
             <span className="tag-badge">#KoffeeWithKaran9</span>
             <span className="tag-badge">#VijayRashmikaTrolling</span>
-            <span className="tag-badge">#RashmikaMandannaMarriage</span>
             <span className="tag-badge">#HyderabadCyberCrime</span>
             <span className="tag-badge">#BollywoodGossip</span>
           </div>
 
-          {/* Back to Home & Share */}
-          <div style={{ marginTop: "32px", display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: "16px" }}>
+          {/* Accessible Social Share Component */}
+          <SocialShare title={pageTitle} url={pageUrl} />
+
+          {/* Back to Home */}
+          <div style={{ marginTop: "32px", paddingTop: "20px", borderTop: "1px solid var(--line)" }}>
             <Link
               href="/"
               style={{
@@ -273,23 +318,6 @@ export default function ArticlePage() {
             >
               ← Back to All Buzz
             </Link>
-
-            <div style={{ display: "flex", gap: "10px", alignItems: "center" }}>
-              <span style={{ fontSize: "12px", color: "var(--muted)", fontFamily: "var(--font-space-mono), monospace" }}>
-                SHARE THIS STORY:
-              </span>
-              <a
-                href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(
-                  "Vijay Deverakonda & Rashmika Mandanna File Complaint | Buzz Originals"
-                )}&url=https://buzzog.com/vijay-deverakonda-rashmika-mandanna-cyber-crime-complaint-hyderabad`}
-                target="_blank"
-                rel="noreferrer"
-                className="btn-follow"
-                style={{ padding: "8px 16px", fontSize: "12px" }}
-              >
-                Share on X
-              </a>
-            </div>
           </div>
         </article>
       </main>

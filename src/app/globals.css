@@ -909,6 +909,35 @@ footer {
   animation: spin-around calc(var(--speed, 3s) * 2) infinite linear;
 }
 
+/* ===== ACCESSIBILITY & FOCUS INDICATORS (WCAG 2.2 AA) ===== */
+:focus-visible {
+  outline: 2px solid var(--lime);
+  outline-offset: 3px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
 /* ===== MAGIC UI SMOOTH CURSOR (Completely removes native browser finger pointer) ===== */
 html,
 body,

@@ -1,25 +1,57 @@
 import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
+import { addSubscriber, checkRateLimit } from "@/lib/newsletter-store";
 
 export async function POST(req: Request) {
   try {
-    const { email } = await req.json();
+    // 1. IP extraction & Rate limiting
+    const forwardedFor = req.headers.get("x-forwarded-for");
+    const ip = forwardedFor ? forwardedFor.split(",")[0].trim() : "127.0.0.1";
 
-    if (!email || typeof email !== "string") {
+    const allowed = checkRateLimit(ip, 5, 10 * 60 * 1000);
+    if (!allowed) {
       return NextResponse.json(
-        { error: "Email address is required." },
+        { error: "Too many subscription attempts. Please wait a few minutes before trying again." },
+        { status: 429 }
+      );
+    }
+
+    // 2. Input validation
+    const body = await req.json().catch(() => null);
+    if (!body || typeof body.email !== "string") {
+      return NextResponse.json(
+        { error: "A valid email address is required." },
         { status: 400 }
       );
     }
 
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const email = body.email.trim().toLowerCase();
+
+    if (email.length > 254) {
+      return NextResponse.json(
+        { error: "Email address is too long." },
+        { status: 400 }
+      );
+    }
+
+    const emailRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)+$/;
     if (!emailRegex.test(email)) {
       return NextResponse.json(
-        { error: "Please provide a valid email address." },
+        { error: "Please enter a valid email address (e.g. name@example.com)." },
         { status: 400 }
       );
     }
 
+    // 3. Persistent Storage
+    const storageResult = await addSubscriber(email, ip, "homepage_newsletter");
+    if (!storageResult.success) {
+      return NextResponse.json(
+        { error: storageResult.error || "Failed to save subscription record." },
+        { status: 500 }
+      );
+    }
+
+    // 4. Welcome Email Dispatch (Nodemailer)
     const subject = "Welcome to the Buzz Squad! Buzz Originals";
     const textContent = `Hey Buzz Squad Member! 🐝
 
@@ -145,40 +177,50 @@ Where Every Story Sparks a Buzz!`;
     const smtpPass = process.env.SMTP_PASS;
     const fromEmail = process.env.SMTP_FROM || '"Team Buzz Originals" <hello@buzzoriginals.com>';
 
+    let emailDelivered = false;
+
     if (smtpHost && smtpUser && smtpPass) {
-      const transporter = nodemailer.createTransport({
-        host: smtpHost,
-        port: smtpPort,
-        secure: smtpPort === 465,
-        auth: {
-          user: smtpUser,
-          pass: smtpPass,
-        },
-      });
+      try {
+        const transporter = nodemailer.createTransport({
+          host: smtpHost,
+          port: smtpPort,
+          secure: smtpPort === 465,
+          auth: {
+            user: smtpUser,
+            pass: smtpPass,
+          },
+        });
 
-      await transporter.sendMail({
-        from: fromEmail,
-        to: email,
-        subject,
-        text: textContent,
-        html: htmlContent,
-      });
+        await transporter.sendMail({
+          from: fromEmail,
+          to: email,
+          subject,
+          text: textContent,
+          html: htmlContent,
+        });
 
-      console.log(`[Subscribe API] Welcome email successfully dispatched to ${email}`);
-    } else {
-      console.log(
-        `[Subscribe API] Welcome email queued for ${email} from hello@buzzoriginals.com (Configure SMTP_HOST, SMTP_USER, SMTP_PASS in .env.local for live dispatch)`
-      );
+        emailDelivered = true;
+      } catch (mailErr) {
+        console.error("[Subscribe API] SMTP dispatch error:", mailErr);
+      }
     }
+
+    const message = storageResult.isNew
+      ? emailDelivered
+        ? "YOU'RE IN. WELCOME TO THE BUZZ SQUAD 🎉 Check your inbox!"
+        : "YOU'RE IN. WELCOME TO THE BUZZ SQUAD 🎉 You are now subscribed to Buzz Originals."
+      : "You're already subscribed to the Buzz Squad! Welcome back 🐝";
 
     return NextResponse.json({
       success: true,
-      message: "YOU'RE IN. WELCOME TO THE BUZZ SQUAD 🎉 Check your email!",
+      isNew: storageResult.isNew,
+      emailDelivered,
+      message,
     });
   } catch (error) {
     console.error("[Subscribe API Error]:", error);
     return NextResponse.json(
-      { error: "Failed to subscribe. Please try again shortly." },
+      { error: "Failed to process subscription. Please try again shortly." },
       { status: 500 }
     );
   }
