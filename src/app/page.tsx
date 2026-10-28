@@ -156,7 +156,25 @@ export default function Home() {
   ];
 
   // 5 Verified editorial stories mapped directly to the 5 requested categories (Latest published article in Latest)
-  const editorialArticles = [
+  interface EditorialArticle {
+    id: string;
+    anchorId: string;
+    href?: string;
+    title: string;
+    excerpt: string;
+    category: string;
+    secondaryCategory?: string;
+    displayCategory: string;
+    badge: string;
+    badgeType: string;
+    readTime: string;
+    image?: string;
+    bgGradient?: string;
+    watermarkText?: string;
+    watermarkColor?: string;
+  }
+
+  const editorialArticles: EditorialArticle[] = [
     {
       id: "shreya-kalra-karan-patel-latest",
       anchorId: "latest-story",
@@ -164,7 +182,6 @@ export default function Home() {
       title: "Shreya Kalra Hits Back at Karan Patel Over His Reels Comment",
       excerpt: "Karan Patel asked Shreya Kalra and Rishabh Jaiswal how long they will stay in reels. Shreya fires back: 'stop demeaning people from reality TV.'",
       category: "Latest",
-      secondaryCategory: "Reality TV Updates",
       displayCategory: "LATEST",
       badge: "Latest",
       badgeType: "lime",
@@ -185,18 +202,17 @@ export default function Home() {
       image: "/images/celebrity-cybercrime-complaint-thumbnail.jpg",
     },
     {
-      id: "bigg-boss-nominations",
+      id: "shreya-kalra-karan-patel-reality",
       anchorId: "reality-shows",
-      title: "Bigg Boss Weekend Ka Vaar: High-stakes nominations shake up the house",
-      excerpt: "Double eviction threats and heated host confrontations reset alliances across the living room.",
+      href: "/shreya-kalra-karan-patel-reels-comment-rise-and-fall-2",
+      title: "Shreya Kalra Hits Back at Karan Patel Over His Reels Comment",
+      excerpt: "Karan Patel asked Shreya Kalra and Rishabh Jaiswal how long they will stay in reels. Shreya fires back: 'stop demeaning people from reality TV.'",
       category: "Reality TV Updates",
       displayCategory: "REALITY TV UPDATES",
       badge: "Reality TV Updates",
       badgeType: "pink",
-      readTime: "EPISODE SCOOP",
-      bgGradient: "radial-gradient(circle at 75% 30%, #301826, #0f0f13 75%)",
-      watermarkText: "REALITY",
-      watermarkColor: "text-purple-500",
+      readTime: "3 MIN READ",
+      image: "/images/shreya-kalra-karan-patel-reels-comment-rise-and-fall-2.jpg",
     },
     {
       id: "ramayana-la-premiere-buzz",
@@ -232,7 +248,6 @@ export default function Home() {
       : editorialArticles.filter(
           (art) =>
             art.category === activeCategory ||
-            ("secondaryCategory" in art && art.secondaryCategory === activeCategory) ||
             (activeCategory === "Bollywood & Hollywood" &&
               (art.category === "Bollywood" || art.category === "Bollywood & Hollywood")) ||
             (activeCategory === "Bollywood" &&
