@@ -929,11 +929,6 @@ footer {
   animation: spin-around calc(var(--speed, 3s) * 2) infinite linear;
 }
 
-/* Smooth Cursor text input override */
-input, textarea, select {
-  cursor: text !important;
-}
-
 /* ===== ARTICLE / BLOG STYLES ===== */
 .article-wrap {
   max-width: 880px;

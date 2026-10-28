@@ -1,6 +1,5 @@
 import type { Metadata, Viewport } from "next";
 import { Anton, Space_Mono, Plus_Jakarta_Sans } from "next/font/google";
-import { SmoothCursor } from "@/components/ui/smooth-cursor";
 import "./globals.css";
 
 const anton = Anton({
@@ -59,10 +58,7 @@ export default function RootLayout({
       lang="en"
       className={`${anton.variable} ${spaceMono.variable} ${plusJakartaSans.variable}`}
     >
-      <body className="antialiased">
-        <SmoothCursor />
-        {children}
-      </body>
+      <body className="antialiased">{children}</body>
     </html>
   );
 }
