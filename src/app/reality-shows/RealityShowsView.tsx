@@ -166,16 +166,6 @@ const realityArticles: RealityArticle[] = [
   },
 ];
 
-const heatIndex = [
-  { name: "Aariv", show: "Bigg Boss", score: 92, bg: "var(--lime)", textColor: "var(--ink)" },
-  { name: "Shreya Kalra", show: "Rise and Fall 2", score: 88, bg: "var(--magenta)", textColor: "#fff" },
-  { name: "Ritika", show: "Splitsvilla", score: 81, bg: "var(--magenta)", textColor: "#fff" },
-  { name: "Karan Patel", show: "Rise and Fall 2", score: 79, bg: "#e08b6f", textColor: "var(--ink)" },
-  { name: "Kabir", show: "KKK", score: 74, bg: "#d9d9d9", textColor: "var(--ink)" },
-  { name: "Meher", show: "Bigg Boss", score: 58, bg: "#e08b6f", textColor: "var(--ink)" },
-  { name: "Zeeshan", show: "Splitsvilla", score: 41, bg: "#6fd0e0", textColor: "var(--ink)" },
-];
-
 export default function RealityShowsView() {
   const [email, setEmail] = useState("");
   const [ctaStatus, setCtaStatus] = useState<string | null>(null);
@@ -365,51 +355,6 @@ export default function RealityShowsView() {
                 </div>
               </Link>
             ))}
-          </div>
-        </section>
-
-        {/* Housemate Heat Index (Buzz-O-Meter) */}
-        <section className="meter-section" id="heat-index">
-          <div className="meter-inner">
-            <div className="meter-head">
-              <h2 className="disp text-white">Housemate Heat Index</h2>
-              <p>
-                Who’s serving drama, who’s playing it safe — ranked by internet mentions,
-                screen time, and fan sentiment across social networks.
-              </p>
-            </div>
-            <div className="meter-list">
-              {heatIndex.map((contestant) => (
-                <div key={contestant.name} className="meter-row">
-                  <div className="meter-name">
-                    <span
-                      className="meter-avatar"
-                      style={{
-                        background: contestant.bg,
-                        color: contestant.textColor,
-                      }}
-                    >
-                      {contestant.name.charAt(0)}
-                    </span>
-                    <div>
-                      <span className="block font-bold text-white">
-                        {contestant.name}
-                      </span>
-                      <span className="block text-[11px] font-mono text-[var(--muted)]">
-                        {contestant.show}
-                      </span>
-                    </div>
-                  </div>
-                  <div className="meter-track">
-                    <div
-                      className="meter-fill"
-                      style={{ width: `${contestant.score}%` }}
-                    />
-                  </div>
-                  <div className="meter-score">{contestant.score}</div>
-                </div>
-              ))}
-            </div>
           </div>
         </section>
 
