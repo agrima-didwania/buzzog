@@ -1400,3 +1400,144 @@ select {
   }
 }
 
+/* ===== REALITY SHOWS & SUB-PAGE STYLES ===== */
+.ph-wrap {
+  background: radial-gradient(ellipse at 12% 0, rgba(228, 34, 46, 0.22), transparent 55%),
+              radial-gradient(ellipse at 92% 40%, rgba(31, 107, 44, 0.3), transparent 55%),
+              var(--ink);
+  border-bottom: 1px solid var(--line);
+}
+
+.ph {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 54px 24px 40px;
+}
+
+.crumb {
+  font-family: var(--font-space-mono), monospace;
+  font-size: 12px;
+  color: var(--muted);
+  letter-spacing: 0.08em;
+  margin-bottom: 14px;
+}
+
+.crumb a {
+  color: var(--lime);
+  transition: color 0.15s ease;
+}
+
+.crumb a:hover {
+  color: #fff;
+}
+
+.ph h1 {
+  font-family: var(--font-anton), Impact, sans-serif;
+  font-size: clamp(46px, 8vw, 84px);
+  text-transform: uppercase;
+  line-height: 0.95;
+  margin-bottom: 14px;
+  color: #ffffff;
+}
+
+.ph h1 em {
+  font-style: normal;
+  color: var(--magenta);
+}
+
+.ph p {
+  color: #a1a1aa;
+  font-size: 16px;
+  line-height: 1.6;
+  max-width: 680px;
+}
+
+.lead {
+  display: grid;
+  grid-template-columns: 1.55fr 1fr;
+  gap: 24px;
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 32px 24px 0;
+}
+
+.lead .feature-media {
+  height: 320px;
+}
+
+.lead .feature-body h2 {
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+.stack {
+  display: grid;
+  gap: 20px;
+}
+
+.stack .card-media {
+  height: 130px;
+}
+
+.hub {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.tile {
+  background: var(--ink-2);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 22px;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  display: block;
+}
+
+.tile:hover {
+  border-color: var(--magenta);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(228, 34, 46, 0.2);
+}
+
+.tile b {
+  font-family: var(--font-anton), Impact, sans-serif;
+  font-size: 24px;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 8px;
+  color: #ffffff;
+  letter-spacing: 0.02em;
+}
+
+.tile span {
+  font-family: var(--font-space-mono), monospace;
+  font-size: 11.5px;
+  color: var(--lime);
+}
+
+@media (max-width: 1024px) {
+  .lead {
+    grid-template-columns: 1fr;
+  }
+  .hub {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .hub {
+    grid-template-columns: 1fr;
+  }
+  .ph {
+    padding-top: 36px;
+  }
+  .ph h1 {
+    font-size: 40px;
+  }
+  .lead .feature-media {
+    height: 240px;
+  }
+}
+
+

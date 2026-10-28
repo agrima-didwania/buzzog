@@ -16,7 +16,7 @@ export default function Header({ activeNav = "Home" }: HeaderProps) {
   // Exact 6 pages requested: Home, Reality Shows, Bollywood, Movies, Web Series, News
   const navLinks = [
     { label: "Home", href: "/" },
-    { label: "Reality Shows", href: "/#reality-shows" },
+    { label: "Reality Shows", href: "/reality-shows" },
     { label: "Bollywood", href: "/#bollywood" },
     { label: "Movies", href: "/#movies" },
     { label: "Web Series", href: "/#web-series" },

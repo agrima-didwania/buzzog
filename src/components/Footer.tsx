@@ -83,7 +83,7 @@ export default function Footer() {
         <div className="footer-col space-y-2.5">
           <h4 className="text-sm font-bold text-white tracking-wider uppercase font-mono">Entertainment</h4>
           <ul className="space-y-2 text-sm text-[var(--muted)]">
-            <li><Link href="/#reality-shows" className="hover:text-[var(--lime)] transition-colors">Reality Shows</Link></li>
+            <li><Link href="/reality-shows" className="hover:text-[var(--lime)] transition-colors">Reality Shows</Link></li>
             <li><Link href="/#bollywood" className="hover:text-[var(--lime)] transition-colors">Bollywood</Link></li>
             <li><Link href="/#movies" className="hover:text-[var(--lime)] transition-colors">Movies</Link></li>
             <li><Link href="/#web-series" className="hover:text-[var(--lime)] transition-colors">Web Series</Link></li>

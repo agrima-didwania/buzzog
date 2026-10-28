@@ -11,6 +11,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1.0,
     },
     {
+      url: `${baseUrl}/reality-shows`,
+      lastModified: new Date("2026-10-28T17:00:00Z"),
+      changeFrequency: "daily",
+      priority: 0.95,
+    },
+    {
       url: `${baseUrl}/shreya-kalra-karan-patel-reels-comment-rise-and-fall-2`,
       lastModified: new Date("2026-10-28T16:45:00Z"),
       changeFrequency: "daily",
