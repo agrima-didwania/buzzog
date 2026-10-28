@@ -105,7 +105,7 @@ export default function RamayanaArticlePage() {
       {
         "@type": "ListItem",
         position: 2,
-        name: "Cinema",
+        name: "Bollywood & Hollywood",
         item: "https://buzzog.com/#bollywood",
       },
       {
@@ -138,15 +138,15 @@ export default function RamayanaArticlePage() {
         <nav className="article-breadcrumb" aria-label="Breadcrumb">
           <Link href="/">HOME</Link>
           <span>/</span>
-          <Link href="/#bollywood">CINEMA</Link>
+          <Link href="/#bollywood">BOLLYWOOD & HOLLYWOOD</Link>
           <span>/</span>
           <span style={{ color: "var(--lavender)" }}>RED CARPET</span>
         </nav>
 
         {/* Article Header */}
         <header className="article-header">
-          <div style={{ display: "flex", gap: "8px", alignItems: "center" }}>
-            <span className="badge pink">🔥 Hollywood Gala</span>
+          <div style={{ display: "flex", gap: "8px", alignItems: "center", flexWrap: "wrap" }}>
+            <span className="badge pink">🔥 Bollywood & Hollywood Gala</span>
             <span className="badge">World Premiere</span>
           </div>
 
@@ -161,7 +161,7 @@ export default function RamayanaArticlePage() {
                 </Link>
               </span>
               <span style={{ color: "var(--magenta)" }}>◆</span>
-              <span>HOLLYWOOD BUREAU</span>
+              <span>BOLLYWOOD & HOLLYWOOD BUREAU</span>
             </div>
             <div style={{ display: "flex", gap: "14px", alignItems: "center" }}>
               <span>OCT 28, 2026</span>

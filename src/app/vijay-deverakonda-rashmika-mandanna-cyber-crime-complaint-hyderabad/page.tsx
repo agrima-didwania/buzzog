@@ -257,7 +257,7 @@ export default function ArticlePage() {
           <div className="article-related-box">
             <span className="kicker">More Entertainment Stories</span>
             <Link href="/ramayana-la-premiere-ranbir-kapoor-yash-sai-pallavi">
-              Inside Ramayana’s LA Premiere: Jada Pinkett Smith & Hollywood stars attend →
+              Inside Ramayana’s LA Premiere: Bollywood & Hollywood stars celebrate global launch →
             </Link>
             <Link href="/godzilla-minus-zero-india-release-delayed-ramayana">
               Godzilla Minus Zero skips Diwali clash: solo IMAX run for Ranbir&apos;s Ramayana →

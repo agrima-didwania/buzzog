@@ -269,7 +269,7 @@ export default function Home() {
             </div>
             <div className="feature-body">
               <div className="flex items-center gap-2 mb-2 font-mono text-xs text-[var(--lime)] font-bold tracking-wider uppercase">
-                <span>★ TOP STORY · RED CARPET DISPATCH</span>
+                <span>★ TOP STORY · BOLLYWOOD & HOLLYWOOD DISPATCH</span>
               </div>
               <h1 className="disp" style={{ color: "#fff" }}>
                 Ramayana LA Premiere: Actors Steal the Red Carpet
@@ -279,7 +279,7 @@ export default function Home() {
               </p>
               <div className="meta-row mt-auto pt-3 border-t border-white/[0.06] flex items-center justify-between">
                 <div className="flex items-center gap-3">
-                  <span>BOLLYWOOD & CINEMA</span>
+                  <span>BOLLYWOOD & HOLLYWOOD</span>
                   <span className="dot-sep">◆</span>
                   <span>4 MIN READ</span>
                   <span className="dot-sep">◆</span>
