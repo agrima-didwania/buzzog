@@ -177,31 +177,9 @@ const heatIndex = [
 ];
 
 export default function RealityShowsView() {
-  const [activeFilter, setActiveFilter] = useState<string>("all");
   const [email, setEmail] = useState("");
   const [ctaStatus, setCtaStatus] = useState<string | null>(null);
   const [submitting, setSubmitting] = useState(false);
-
-  const filterOptions = [
-    { label: "🔥 All", value: "all" },
-    { label: "Bigg Boss", value: "Bigg Boss" },
-    { label: "Splitsvilla", value: "Splitsvilla" },
-    { label: "Khatron Ke Khiladi", value: "Khatron Ke Khiladi" },
-    { label: "Rise and Fall", value: "Rise and Fall" },
-  ];
-
-  const filteredArticles =
-    activeFilter === "all"
-      ? realityArticles
-      : realityArticles.filter((art) => art.show === activeFilter);
-
-  const handleTileClick = (showName: string) => {
-    setActiveFilter(showName);
-    const gridElem = document.getElementById("reality-grid");
-    if (gridElem) {
-      gridElem.scrollIntoView({ behavior: "smooth" });
-    }
-  };
 
   const handleSubscribe = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -232,20 +210,6 @@ export default function RealityShowsView() {
 
   return (
     <>
-      {/* Top Reality TV Ticker */}
-      <div className="ticker-bar" role="region" aria-label="Reality TV Live Wire">
-        <div className="ticker-track">
-          <span>BIGG BOSS: WEEKEND NOMINATIONS SPLIT THE HOUSE</span>
-          <span>SPLITSVILLA: DOME DRAMA SHIFTS THE POWER</span>
-          <span>KHATRON KE KHILADI: THE STUNT THAT MADE TWO CONTESTANTS TAP OUT</span>
-          <span>RISE AND FALL 2: SHREYA KALRA FIRES BACK AT KARAN PATEL</span>
-          <span>BIGG BOSS: WEEKEND NOMINATIONS SPLIT THE HOUSE</span>
-          <span>SPLITSVILLA: DOME DRAMA SHIFTS THE POWER</span>
-          <span>KHATRON KE KHILADI: THE STUNT THAT MADE TWO CONTESTANTS TAP OUT</span>
-          <span>RISE AND FALL 2: SHREYA KALRA FIRES BACK AT KARAN PATEL</span>
-        </div>
-      </div>
-
       {/* Main Navigation Header with Reality Shows Marked Active */}
       <Header activeNav="Reality Shows" />
 
@@ -265,32 +229,6 @@ export default function RealityShowsView() {
             </p>
           </div>
         </section>
-
-        {/* Filter Chips Bar */}
-        <div
-          className="cat-strip"
-          id="reality-categories"
-          role="tablist"
-          aria-label="Filter Reality Shows"
-        >
-          {filterOptions.map((opt) => {
-            const isSelected = activeFilter === opt.value;
-            return (
-              <button
-                key={opt.value}
-                type="button"
-                role="tab"
-                aria-selected={isSelected}
-                onClick={() => setActiveFilter(opt.value)}
-                className={`cat-chip transition-all duration-200 cursor-pointer ${
-                  isSelected ? "on" : ""
-                }`}
-              >
-                {opt.label}
-              </button>
-            );
-          })}
-        </div>
 
         {/* Lead Section: Featured Reality Card + 2-Item Stack */}
         <section className="lead">
@@ -375,55 +313,6 @@ export default function RealityShowsView() {
           </div>
         </section>
 
-        {/* Pick Your Show Hub Section */}
-        <section className="section" id="pick-your-show">
-          <div className="section-head">
-            <h2 className="text-white">
-              Pick Your <span className="accent">Show</span>
-            </h2>
-            <span className="text-xs font-mono text-[var(--muted)]">
-              CLICK TO FILTER
-            </span>
-          </div>
-          <div className="hub">
-            <button
-              type="button"
-              className="tile text-left cursor-pointer group"
-              onClick={() => handleTileClick("Bigg Boss")}
-            >
-              <b className="group-hover:text-[var(--lime)] transition-colors">Bigg Boss</b>
-              <span>RECAPS · EVICTIONS · FAN WARS</span>
-            </button>
-
-            <button
-              type="button"
-              className="tile text-left cursor-pointer group"
-              onClick={() => handleTileClick("Splitsvilla")}
-            >
-              <b className="group-hover:text-[var(--magenta)] transition-colors">Splitsvilla</b>
-              <span>DOME DRAMA · COUPLES · EXITS</span>
-            </button>
-
-            <button
-              type="button"
-              className="tile text-left cursor-pointer group"
-              onClick={() => handleTileClick("Khatron Ke Khiladi")}
-            >
-              <b className="group-hover:text-[var(--lime)] transition-colors">Khatron Ke Khiladi</b>
-              <span>STUNTS · TAP-OUTS · RECAPS</span>
-            </button>
-
-            <button
-              type="button"
-              className="tile text-left cursor-pointer group"
-              onClick={() => handleTileClick("Rise and Fall")}
-            >
-              <b className="group-hover:text-[var(--magenta)] transition-colors">Rise and Fall</b>
-              <span>CLASHES · CALL-OUTS · EXCLUSIVES</span>
-            </button>
-          </div>
-        </section>
-
         {/* Latest Reality Buzz Grid */}
         <section className="section" id="reality-grid">
           <div className="section-head">
@@ -431,18 +320,6 @@ export default function RealityShowsView() {
               <h2 className="text-white">
                 Latest <span className="accent">Reality Buzz</span>
               </h2>
-              {activeFilter !== "all" && (
-                <p className="text-xs font-mono text-[var(--lime)] mt-1">
-                  FILTERED BY: {activeFilter.toUpperCase()} (
-                  <button
-                    onClick={() => setActiveFilter("all")}
-                    className="underline hover:text-white"
-                  >
-                    SHOW ALL
-                  </button>
-                  )
-                </p>
-              )}
             </div>
             <span className="text-xs font-mono text-[var(--lime)] font-bold">
               UPDATED HOURLY
@@ -450,7 +327,7 @@ export default function RealityShowsView() {
           </div>
 
           <div className="grid">
-            {filteredArticles.map((art) => (
+            {realityArticles.map((art) => (
               <Link
                 key={art.id}
                 href={art.href}
