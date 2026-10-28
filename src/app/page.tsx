@@ -145,13 +145,13 @@ export default function Home() {
     }
   };
 
-  // The 5 requested categories: Latest, Exclusive, Reality TV Updates, Bollywood, News (plus All filter option)
+  // The 5 requested categories: Latest, Exclusive, Reality TV Updates, Bollywood & Hollywood, News (plus All filter option)
   const categories = [
     "All",
     "Latest",
     "Exclusive",
     "Reality TV Updates",
-    "Bollywood",
+    "Bollywood & Hollywood",
     "News",
   ];
 
@@ -172,7 +172,7 @@ export default function Home() {
     },
     {
       id: "vijay-rashmika-cybercrime",
-      anchorId: "bollywood",
+      anchorId: "exclusive",
       href: "/vijay-deverakonda-rashmika-mandanna-cyber-crime-complaint-hyderabad",
       title: "Vijay & Rashmika team files cyber crime complaint over KWK 9 online trolling",
       excerpt: "Formal police complaint registered in Hyderabad against malicious fan accounts circulating defamatory morphed clips.",
@@ -199,18 +199,16 @@ export default function Home() {
     },
     {
       id: "ramayana-la-buzz",
-      anchorId: "bollywood-gala",
+      anchorId: "bollywood",
       href: "/ramayana-la-premiere-ranbir-kapoor-yash-sai-pallavi",
-      title: "Inside Ramayana's ₹4,000 Cr global rollout: Star power, LA buzz & Diwali surge",
-      excerpt: "Hollywood premiere reactions, record IMAX bookings, and how Ranbir Kapoor and Yash are positioning Indian cinema worldwide.",
-      category: "Bollywood",
-      displayCategory: "BOLLYWOOD",
-      badge: "Bollywood",
-      badgeType: "lime",
+      title: "Inside Ramayana's LA Premiere: Bollywood & Hollywood Stars Celebrate ₹4,000 Cr Gala",
+      excerpt: "Ranbir Kapoor, Yash and Sai Pallavi walked the Academy Museum red carpet alongside Hollywood attendees for the worldwide premiere.",
+      category: "Bollywood & Hollywood",
+      displayCategory: "BOLLYWOOD & HOLLYWOOD",
+      badge: "🔥 Bollywood & Hollywood",
+      badgeType: "pink",
       readTime: "4 MIN READ",
-      bgGradient: "radial-gradient(circle at 75% 30%, #351a10, #0f0f13 75%)",
-      watermarkText: "BOLLY",
-      watermarkColor: "text-amber-500",
+      image: "/images/ramayana-la-premiere-ranbir-kapoor-yash-sai-pallavi.jpg",
     },
     {
       id: "imax-expansion-news",
@@ -220,7 +218,7 @@ export default function Home() {
       category: "News",
       displayCategory: "NEWS",
       badge: "News",
-      badgeType: "pink",
+      badgeType: "lime",
       readTime: "TRADE REPORT",
       bgGradient: "radial-gradient(circle at 75% 30%, #102636, #0f0f13 75%)",
       watermarkText: "NEWS",
@@ -231,7 +229,14 @@ export default function Home() {
   const visibleArticles =
     activeCategory === "All"
       ? editorialArticles
-      : editorialArticles.filter((art) => art.category === activeCategory);
+      : editorialArticles.filter(
+          (art) =>
+            art.category === activeCategory ||
+            (activeCategory === "Bollywood & Hollywood" &&
+              (art.category === "Bollywood" || art.category === "Bollywood & Hollywood")) ||
+            (activeCategory === "Bollywood" &&
+              (art.category === "Bollywood" || art.category === "Bollywood & Hollywood"))
+        );
 
   // Instructed preservation: "and keep the live community poll as it is. dont chnage that"
   const showPollCard = true;
