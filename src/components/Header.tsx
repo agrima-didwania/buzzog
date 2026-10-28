@@ -3,6 +3,8 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { ShimmerButton } from "@/components/ui/shimmer-button";
+import { cn } from "@/lib/utils";
 
 interface HeaderProps {
   activeNav?: string;
@@ -34,16 +36,34 @@ export default function Header({ activeNav = "Home" }: HeaderProps) {
           />
         </Link>
 
-        <div className="navlinks">
-          {navLinks.map((item) => (
-            <Link
-              key={item.label}
-              href={item.href}
-              className={activeNav === item.label ? "active" : ""}
-            >
-              {item.label}
-            </Link>
-          ))}
+        {/* Shimmer Buttons for Desktop Nav Menu */}
+        <div className="navlinks" style={{ display: "flex", gap: "8px", alignItems: "center" }}>
+          {navLinks.map((item) => {
+            const isActive = activeNav === item.label;
+            return (
+              <Link key={item.label} href={item.href} style={{ textDecoration: "none" }}>
+                <ShimmerButton
+                  shimmerColor="#6FCF4A"
+                  shimmerSize="0.12em"
+                  shimmerDuration="3s"
+                  borderRadius="999px"
+                  background={
+                    isActive
+                      ? "linear-gradient(135deg, #6FCF4A, #1F6B2C)"
+                      : "linear-gradient(135deg, #181818 0%, #0d2313 100%)"
+                  }
+                  className={cn(
+                    "px-4 py-2 text-xs font-semibold tracking-wide border transition-all",
+                    isActive
+                      ? "text-black font-extrabold shadow-[0_0_18px_rgba(111,207,74,0.45)] border-[#6FCF4A]/60"
+                      : "text-[#d6d6d6] border-white/10 hover:text-white hover:border-[#6FCF4A]/40"
+                  )}
+                >
+                  {item.label}
+                </ShimmerButton>
+              </Link>
+            );
+          })}
         </div>
 
         <div className="navcta">
@@ -68,19 +88,38 @@ export default function Header({ activeNav = "Home" }: HeaderProps) {
         </div>
       </nav>
 
-      {/* Mobile Navigation Drawer */}
+      {/* Shimmer Buttons for Mobile Menu Drawer */}
       {mobileMenuOpen && (
-        <div className="mobile-menu">
-          {navLinks.map((item) => (
-            <Link
-              key={item.label}
-              href={item.href}
-              onClick={() => setMobileMenuOpen(false)}
-              className={activeNav === item.label ? "active" : ""}
-            >
-              {item.label}
-            </Link>
-          ))}
+        <div className="mobile-menu" style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
+          {navLinks.map((item) => {
+            const isActive = activeNav === item.label;
+            return (
+              <Link
+                key={item.label}
+                href={item.href}
+                onClick={() => setMobileMenuOpen(false)}
+                style={{ textDecoration: "none" }}
+              >
+                <ShimmerButton
+                  shimmerColor="#6FCF4A"
+                  shimmerSize="0.1em"
+                  shimmerDuration="3s"
+                  borderRadius="12px"
+                  background={
+                    isActive
+                      ? "linear-gradient(135deg, #6FCF4A, #1F6B2C)"
+                      : "linear-gradient(135deg, #181818, #0d2313)"
+                  }
+                  className={cn(
+                    "w-full justify-start px-4 py-2.5 text-sm font-semibold",
+                    isActive ? "text-black font-extrabold" : "text-[#d6d6d6]"
+                  )}
+                >
+                  {item.label}
+                </ShimmerButton>
+              </Link>
+            );
+          })}
         </div>
       )}
     </header>

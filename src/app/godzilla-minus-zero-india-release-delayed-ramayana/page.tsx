@@ -3,7 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import Ticker from "@/components/Ticker";
 
 export const metadata: Metadata = {
   title: "Godzilla Minus Zero India Release Delayed | Buzz OG",
@@ -90,9 +89,6 @@ export default function GodzillaArticlePage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-
-      {/* Top Ticker */}
-      <Ticker />
 
       {/* Main Navigation */}
       <Header activeNav="Movies" />

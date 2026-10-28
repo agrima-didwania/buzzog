@@ -3,7 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import Ticker from "@/components/Ticker";
 
 export const metadata: Metadata = {
   title: "Ramayana LA Premiere: Actors Steal the Red Carpet | Buzz OG",
@@ -97,9 +96,6 @@ export default function RamayanaArticlePage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-
-      {/* Top Ticker */}
-      <Ticker />
 
       {/* Main Navigation */}
       <Header activeNav="Movies" />

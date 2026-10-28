@@ -3,7 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import Ticker from "@/components/Ticker";
 
 export const metadata: Metadata = {
   title: "Vijay Deverakonda & Rashmika Mandanna File Complaint | Buzz OG",
@@ -92,9 +91,6 @@ export default function ArticlePage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-
-      {/* Top Ticker */}
-      <Ticker />
 
       {/* Main Navigation */}
       <Header activeNav="Bollywood" />

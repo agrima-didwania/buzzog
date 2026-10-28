@@ -5,7 +5,6 @@ import Image from "next/image";
 import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import Ticker from "@/components/Ticker";
 
 export default function Home() {
   // Category Filter State
@@ -85,9 +84,6 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-[var(--ink)] text-[var(--lavender)] flex flex-col justify-between">
-      {/* ===== TICKER ===== */}
-      <Ticker />
-
       {/* ===== NAV ===== */}
       <Header activeNav="Home" />
 
