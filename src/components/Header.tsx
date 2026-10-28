@@ -55,7 +55,7 @@ export default function Header({ activeNav = "Home" }: HeaderProps) {
                 background={isActive ? "#6FCF4A" : "#141417"}
                 hoverBackground={isActive ? "#6FCF4A" : "#1a1a1f"}
                 className={cn(
-                  "h-10 px-5 text-[13.5px] font-semibold tracking-wide rounded-full border transition-all duration-200",
+                  "h-10 px-8 min-w-[96px] text-[13.5px] font-semibold tracking-wide rounded-full border transition-all duration-200",
                   isActive
                     ? "text-white font-bold border-[#6FCF4A] shadow-[0_0_20px_rgba(111,207,74,0.5)]"
                     : "text-neutral-300 border-white/10 hover:border-[#6FCF4A]/80 hover:text-white hover:shadow-[0_0_16px_rgba(111,207,74,0.35)]"
@@ -76,7 +76,7 @@ export default function Header({ activeNav = "Home" }: HeaderProps) {
             shimmerOnHover={true}
             borderRadius="9999px"
             background="linear-gradient(135deg, var(--magenta), var(--magenta-dim))"
-            className="hidden sm:inline-flex h-10 px-5 text-xs font-bold text-white shadow-[0_4px_20px_rgba(228,34,46,0.35)] hover:shadow-[0_4px_24px_rgba(111,207,74,0.4)] transition-all"
+            className="hidden sm:inline-flex h-10 px-7 text-xs font-bold text-white shadow-[0_4px_20px_rgba(228,34,46,0.35)] hover:shadow-[0_4px_24px_rgba(111,207,74,0.4)] transition-all"
             onClick={() =>
               window.open(
                 "https://www.instagram.com/buzzoriginals?exln=MWdhNTk5dWdlYnF5cg==",

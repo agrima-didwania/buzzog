@@ -63,7 +63,7 @@ export const ShimmerButton = React.forwardRef<
     } as CSSProperties;
 
     const baseClassName = cn(
-      "group relative z-0 inline-flex items-center justify-center overflow-hidden border px-5 py-2 whitespace-nowrap text-sm font-semibold select-none",
+      "group relative z-0 inline-flex items-center justify-center overflow-hidden border px-7 py-2.5 whitespace-nowrap text-sm font-semibold select-none",
       "transform-gpu transition-all duration-200 ease-in-out active:translate-y-px",
       "[background:var(--bg)] hover:[background:var(--hover-bg)]",
       className
