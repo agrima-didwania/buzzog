@@ -155,20 +155,20 @@ export default function Home() {
     "News",
   ];
 
-  // 5 Verified editorial stories mapped directly to the 5 requested categories (with zero duplicates of the hero)
+  // 5 Verified editorial stories mapped directly to the 5 requested categories (Latest published article in Latest)
   const editorialArticles = [
     {
-      id: "godzilla-imax-delay",
-      anchorId: "movies",
-      href: "/godzilla-minus-zero-india-release-delayed-ramayana",
-      title: "Godzilla Minus Zero skips Diwali clash: solo IMAX run for Ranbir's Ramayana",
-      excerpt: "Legendary monster flick shifts India theatrical rollout to give Nitesh Tiwari's mythological epic a clean premium screen window.",
+      id: "ramayana-la-premiere-latest",
+      anchorId: "latest-story",
+      href: "/ramayana-la-premiere-ranbir-kapoor-yash-sai-pallavi",
+      title: "Ramayana LA Premiere: Actors Steal the Red Carpet",
+      excerpt: "Ranbir Kapoor, Yash and Sai Pallavi walked the red carpet at the Academy Museum in Los Angeles for the ₹4,000 Cr global premiere.",
       category: "Latest",
       displayCategory: "LATEST",
       badge: "Latest",
       badgeType: "lime",
-      readTime: "3 MIN READ",
-      image: "/images/godzilla-minus-zero-india-release-delayed-ramayana.jpg",
+      readTime: "4 MIN READ",
+      image: "/images/ramayana-la-premiere-ranbir-kapoor-yash-sai-pallavi.jpg",
     },
     {
       id: "vijay-rashmika-cybercrime",
@@ -198,17 +198,17 @@ export default function Home() {
       watermarkColor: "text-purple-500",
     },
     {
-      id: "ramayana-la-buzz",
+      id: "godzilla-imax-delay",
       anchorId: "bollywood",
-      href: "/ramayana-la-premiere-ranbir-kapoor-yash-sai-pallavi",
-      title: "Inside Ramayana's LA Premiere: Bollywood & Hollywood Stars Celebrate ₹4,000 Cr Gala",
-      excerpt: "Ranbir Kapoor, Yash and Sai Pallavi walked the Academy Museum red carpet alongside Hollywood attendees for the worldwide premiere.",
+      href: "/godzilla-minus-zero-india-release-delayed-ramayana",
+      title: "Godzilla Minus Zero skips Diwali clash: solo IMAX run for Ranbir's Ramayana",
+      excerpt: "Legendary monster flick shifts India theatrical rollout to give Nitesh Tiwari's mythological epic a clean premium screen window.",
       category: "Bollywood & Hollywood",
       displayCategory: "BOLLYWOOD & HOLLYWOOD",
       badge: "🔥 Bollywood & Hollywood",
       badgeType: "pink",
-      readTime: "4 MIN READ",
-      image: "/images/ramayana-la-premiere-ranbir-kapoor-yash-sai-pallavi.jpg",
+      readTime: "3 MIN READ",
+      image: "/images/godzilla-minus-zero-india-release-delayed-ramayana.jpg",
     },
     {
       id: "imax-expansion-news",
