@@ -37,33 +37,33 @@ export default function Header({ activeNav = "Home" }: HeaderProps) {
           />
         </Link>
 
-        {/* Desktop Nav: Individual Separated Shimmer Buttons */}
-        <div className="navlinks flex items-center gap-2">
+        {/* Desktop Nav: Standalone Outer Shimmer Button Capsules */}
+        <div className="navlinks flex items-center gap-2.5">
           {navLinks.map((item) => {
             const isActive = activeNav === item.label;
             return (
-              <Link key={item.label} href={item.href} className="no-underline">
-                <ShimmerButton
-                  shimmerColor="#6FCF4A"
-                  shimmerSize="0.1em"
-                  shimmerDuration="2.5s"
-                  shimmerOnHover={!isActive}
-                  borderRadius="999px"
-                  background={
-                    isActive
-                      ? "linear-gradient(135deg, #6FCF4A, #1F6B2C)"
-                      : "#141414"
-                  }
-                  className={cn(
-                    "px-4 py-2 text-xs font-semibold rounded-full border transition-all duration-300",
-                    isActive
-                      ? "text-black font-extrabold border-[#6FCF4A] shadow-[0_0_16px_rgba(111,207,74,0.45)]"
-                      : "text-neutral-300 border-white/10 hover:text-white hover:border-[#6FCF4A]/70 hover:shadow-[0_0_14px_rgba(111,207,74,0.35)]"
-                  )}
-                >
-                  {item.label}
-                </ShimmerButton>
-              </Link>
+              <ShimmerButton
+                key={item.label}
+                href={item.href}
+                shimmerColor="#6FCF4A"
+                shimmerSize="2px"
+                shimmerDuration="2.5s"
+                shimmerOnHover={!isActive}
+                borderRadius="9999px"
+                background={
+                  isActive
+                    ? "linear-gradient(135deg, #6FCF4A, #1F6B2C)"
+                    : "#141414"
+                }
+                className={cn(
+                  "h-10 px-5 text-[13px] font-semibold tracking-wide rounded-full border transition-all duration-300",
+                  isActive
+                    ? "text-black font-extrabold border-[#6FCF4A] shadow-[0_0_16px_rgba(111,207,74,0.45)]"
+                    : "text-neutral-300 border-white/10 hover:text-white hover:border-[#6FCF4A]/80 hover:shadow-[0_0_16px_rgba(111,207,74,0.35)]"
+                )}
+              >
+                {item.label}
+              </ShimmerButton>
             );
           })}
         </div>
@@ -72,12 +72,12 @@ export default function Header({ activeNav = "Home" }: HeaderProps) {
         <div className="navcta flex items-center gap-3">
           <ShimmerButton
             shimmerColor="#6FCF4A"
-            shimmerSize="0.1em"
+            shimmerSize="2px"
             shimmerDuration="2.5s"
             shimmerOnHover={true}
-            borderRadius="999px"
+            borderRadius="9999px"
             background="linear-gradient(135deg, var(--magenta), var(--magenta-dim))"
-            className="hidden sm:inline-flex px-5 py-2.5 text-xs font-bold text-white shadow-[0_4px_20px_rgba(228,34,46,0.35)] hover:shadow-[0_4px_24px_rgba(111,207,74,0.4)] transition-all"
+            className="hidden sm:inline-flex h-10 px-5 text-xs font-bold text-white shadow-[0_4px_20px_rgba(228,34,46,0.35)] hover:shadow-[0_4px_24px_rgba(111,207,74,0.4)] transition-all"
             onClick={() =>
               window.open(
                 "https://www.instagram.com/buzzoriginals?exln=MWdhNTk5dWdlYnF5cg==",
@@ -98,39 +98,35 @@ export default function Header({ activeNav = "Home" }: HeaderProps) {
         </div>
       </nav>
 
-      {/* Mobile Drawer Menu: Individual Separated Shimmer Items */}
+      {/* Mobile Drawer Menu: Standalone Outer Shimmer Items */}
       {mobileMenuOpen && (
         <div className="mobile-menu sm:hidden px-6 py-4 bg-[rgba(20,20,20,0.98)] border-b border-[var(--line)] flex flex-col gap-2">
           {navLinks.map((item) => {
             const isActive = activeNav === item.label;
             return (
-              <Link
+              <ShimmerButton
                 key={item.label}
                 href={item.href}
                 onClick={() => setMobileMenuOpen(false)}
-                className="no-underline"
+                shimmerColor="#6FCF4A"
+                shimmerSize="2px"
+                shimmerDuration="2.5s"
+                shimmerOnHover={!isActive}
+                borderRadius="12px"
+                background={
+                  isActive
+                    ? "linear-gradient(135deg, #6FCF4A, #1F6B2C)"
+                    : "#161616"
+                }
+                className={cn(
+                  "w-full justify-start h-11 px-4 text-sm font-semibold rounded-xl border transition-all",
+                  isActive
+                    ? "text-black font-extrabold border-[#6FCF4A]"
+                    : "text-neutral-300 border-white/10 hover:text-white hover:border-[#6FCF4A]/60"
+                )}
               >
-                <ShimmerButton
-                  shimmerColor="#6FCF4A"
-                  shimmerSize="0.1em"
-                  shimmerDuration="2.5s"
-                  shimmerOnHover={!isActive}
-                  borderRadius="14px"
-                  background={
-                    isActive
-                      ? "linear-gradient(135deg, #6FCF4A, #1F6B2C)"
-                      : "#161616"
-                  }
-                  className={cn(
-                    "w-full justify-start px-4 py-2.5 text-sm font-semibold rounded-xl border transition-all",
-                    isActive
-                      ? "text-black font-extrabold border-[#6FCF4A]"
-                      : "text-neutral-300 border-white/10 hover:text-white hover:border-[#6FCF4A]/60"
-                  )}
-                >
-                  {item.label}
-                </ShimmerButton>
-              </Link>
+                {item.label}
+              </ShimmerButton>
             );
           })}
 

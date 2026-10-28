@@ -148,28 +148,8 @@ nav {
 
 .navlinks {
   display: flex;
-  gap: 6px;
-  flex-wrap: wrap;
-}
-
-.navlinks a {
-  font-size: 13.5px;
-  font-weight: 600;
-  padding: 9px 16px;
-  border-radius: 999px;
-  color: var(--muted);
-  transition: all 0.18s ease;
-  white-space: nowrap;
-}
-
-.navlinks a:hover {
-  color: var(--lavender);
-  background: var(--ink-3);
-}
-
-.navlinks a.active {
-  color: var(--ink);
-  background: var(--lime);
+  gap: 8px;
+  align-items: center;
 }
 
 .navcta {
@@ -927,6 +907,21 @@ footer {
 
 .animate-spin-around {
   animation: spin-around calc(var(--speed, 3s) * 2) infinite linear;
+}
+
+/* ===== MAGIC UI SMOOTH CURSOR (Completely removes native browser finger pointer) ===== */
+html,
+body,
+*,
+*::before,
+*::after {
+  cursor: none !important;
+}
+
+input,
+textarea,
+select {
+  cursor: text !important;
 }
 
 /* ===== ARTICLE / BLOG STYLES ===== */
