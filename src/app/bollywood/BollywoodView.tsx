@@ -20,64 +20,54 @@ interface BollywoodArticle {
 
 const bollywoodArticles: BollywoodArticle[] = [
   {
-    id: "godzilla-ramayana-clash",
-    category: "Cinema & Box Office",
-    title: "Godzilla Minus Zero India Release Delayed Over Ramayana IMAX Battle",
-    badge: "Box Office Clash",
+    id: "priyanka-chopra-karwa-chauth",
+    category: "Festivals & Culture",
+    title: "Priyanka Chopra Does Her Own Karwa Chauth Mehendi for Nick Jonas, and Malti Is Part of It Too",
+    badge: "Trending Scoop",
     badgeType: "pink",
-    image: "/images/godzilla-minus-zero-india-release-delayed-ramayana.jpg",
-    href: "/godzilla-minus-zero-india-release-delayed-ramayana",
+    image: "/images/priyanka-chopra-karwa-chauth-mehendi-nick-jonas-malti.jpg",
+    href: "/priyanka-chopra-karwa-chauth-mehendi-nick-jonas-malti",
     readOrTime: "3 MIN READ",
+  },
+  {
+    id: "janhvi-kapoor-peddi-controversy",
+    category: "Exclusive Interview",
+    title: "Janhvi Kapoor Breaks Silence on Peddi Controversy: “A Violating Experience”",
+    badge: "KWK 9 Scoop",
+    badgeType: "pink",
+    image: "/images/janhvi-kapoor-peddi-controversy-koffee-with-karan-9.jpg",
+    href: "/janhvi-kapoor-peddi-controversy-koffee-with-karan-9",
+    readOrTime: "4 MIN READ",
   },
   {
     id: "ramayana-la-premiere-buzz",
     category: "Red Carpet",
     title: "Inside Ramayana’s LA Premiere: Jada Pinkett Smith & ₹4,000 Cr Global Buzz",
-    badge: "Red Carpet",
+    badge: "Global Premiere",
     badgeType: "pink",
     image: "/images/ramayana-la-premiere-ranbir-kapoor-yash-sai-pallavi.jpg",
     href: "/ramayana-la-premiere-ranbir-kapoor-yash-sai-pallavi",
     readOrTime: "4 MIN READ",
   },
   {
-    id: "airport-look-just-friends",
-    category: "Gossip",
-    title: "This Bollywood duo’s “just friends” airport look says otherwise",
-    badge: "Trending",
-    badgeType: "default",
-    mediaClass: "m5",
-    href: "/janhvi-kapoor-peddi-controversy-koffee-with-karan-9",
-    readOrTime: "9H AGO",
+    id: "godzilla-ramayana-clash",
+    category: "Cinema & Box Office",
+    title: "Godzilla Minus Zero India Release Delayed Over Ramayana IMAX Battle",
+    badge: "Box Office Clash",
+    badgeType: "lime",
+    image: "/images/godzilla-minus-zero-india-release-delayed-ramayana.jpg",
+    href: "/godzilla-minus-zero-india-release-delayed-ramayana",
+    readOrTime: "3 MIN READ",
   },
   {
-    id: "best-worst-dressed",
-    category: "Red Carpet",
-    title: "Best and worst dressed from this week’s red carpets, ranked by the group chat",
-    badge: "Fashion",
-    badgeType: "default",
-    mediaClass: "m1",
-    href: "/ramayana-la-premiere-ranbir-kapoor-yash-sai-pallavi",
-    readOrTime: "1D AGO",
-  },
-  {
-    id: "looks-broke-timeline",
-    category: "Red Carpet",
-    title: "Saree, suit or statement jacket: the looks that broke the timeline",
-    badge: "Photos",
-    badgeType: "default",
-    mediaClass: "m2",
-    href: "/ramayana-la-premiere-ranbir-kapoor-yash-sai-pallavi",
-    readOrTime: "2D AGO",
-  },
-  {
-    id: "just-friends-denials",
-    category: "Gossip",
-    title: "Why every “just friends” denial reads like a press release now",
-    badge: "Hot Take",
+    id: "vijay-rashmika-cybercrime-action",
+    category: "Legal & Exclusives",
+    title: "Vijay & Rashmika Team Files Cyber Crime Complaint Over KWK 9 Online Trolling",
+    badge: "Exclusive",
     badgeType: "pink",
-    mediaClass: "m3",
-    href: "/janhvi-kapoor-peddi-controversy-koffee-with-karan-9",
-    readOrTime: "2D AGO",
+    image: "/images/celebrity-cybercrime-complaint-thumbnail.jpg",
+    href: "/vijay-deverakonda-rashmika-mandanna-cyber-crime-complaint-hyderabad",
+    readOrTime: "3 MIN READ",
   },
 ];
 
@@ -204,46 +194,46 @@ export default function BollywoodView() {
               </div>
             </Link>
 
-            {/* Card 2: Vijay & Rashmika Cyber Crime Complaint */}
+            {/* Card 2: Ramayana LA Premiere */}
             <Link
-              href="/vijay-deverakonda-rashmika-mandanna-cyber-crime-complaint-hyderabad"
+              href="/ramayana-la-premiere-ranbir-kapoor-yash-sai-pallavi"
               className="card m2 group block"
             >
               <div className="card-media relative overflow-hidden">
                 <Image
-                  src="/images/celebrity-cybercrime-complaint-thumbnail.jpg"
-                  alt="Vijay & Rashmika team files cyber crime complaint"
+                  src="/images/ramayana-la-premiere-ranbir-kapoor-yash-sai-pallavi.jpg"
+                  alt="Ramayana LA Premiere: Ranbir Kapoor, Yash & Sai Pallavi Stun Hollywood"
                   fill
                   className="object-cover transition-transform duration-500 group-hover:scale-105"
                   sizes="(max-width: 980px) 100vw, 35vw"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[var(--ink-2)] via-transparent to-black/30 pointer-events-none" />
-                <span className="badge pink z-10 relative">Exclusive</span>
+                <span className="badge pink z-10 relative">Global Premiere</span>
               </div>
               <div className="card-body">
                 <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
-                  Vijay &amp; Rashmika team files cyber crime complaint over KWK 9 online trolling
+                  Ramayana LA Premiere: Ranbir Kapoor, Yash &amp; Sai Pallavi Stun Hollywood
                 </h3>
                 <div className="meta-row mt-2">
-                  <span className="text-[var(--magenta)] font-bold">EXCLUSIVES</span>
+                  <span className="text-[var(--magenta)] font-bold">RED CARPET</span>
                   <span className="dot-sep">◆</span>
-                  <span>3 MIN READ</span>
+                  <span>4 MIN READ</span>
                 </div>
               </div>
             </Link>
           </div>
         </section>
 
-        {/* Latest Bollywood Buzz Grid */}
+        {/* All Bollywood Buzz Grid */}
         <section className="section" id="bollywood-grid">
           <div className="section-head">
             <div>
               <h2 className="text-white">
-                Latest <span className="accent">Bollywood Buzz</span>
+                All <span className="accent">Bollywood Buzz</span>
               </h2>
             </div>
             <span className="text-xs font-mono text-[var(--lime)] font-bold">
-              UPDATED HOURLY
+              5 STORIES PUBLISHED
             </span>
           </div>
 

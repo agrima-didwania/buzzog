@@ -303,12 +303,12 @@ export default function RealityShowsView() {
           </div>
         </section>
 
-        {/* Latest Reality Buzz Grid */}
+        {/* All Reality Buzz Grid */}
         <section className="section" id="reality-grid">
           <div className="section-head">
             <div>
               <h2 className="text-white">
-                Latest <span className="accent">Reality Buzz</span>
+                All <span className="accent">Reality Buzz</span>
               </h2>
             </div>
             <span className="text-xs font-mono text-[var(--lime)] font-bold">

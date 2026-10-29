@@ -8,7 +8,7 @@ import Footer from "@/components/Footer";
 
 interface MovieArticle {
   id: string;
-  category: "Box Office" | "Releases" | "Reviews";
+  category: string;
   title: string;
   badge: string;
   badgeType?: "pink" | "lime" | "default";
@@ -20,62 +20,31 @@ interface MovieArticle {
 
 const movieArticles: MovieArticle[] = [
   {
-    id: "opening-weekend-numbers",
-    category: "Box Office",
-    title: "Opening weekend numbers: what’s working and what’s not",
-    badge: "Trending",
-    badgeType: "default",
-    mediaClass: "m5",
-    href: "/godzilla-minus-zero-india-release-delayed-ramayana",
-    readOrTime: "10H AGO",
-  },
-  {
-    id: "trailer-breakdown-90-sec",
-    category: "Releases",
-    title: "Trailer breakdown: every detail you missed in the first 90 seconds",
-    badge: "New",
+    id: "janhvi-peddi-controversy-movie",
+    category: "Cinema & Censorship",
+    title: "Janhvi Kapoor Breaks Silence on Peddi Controversy: “A Violating Experience”",
+    badge: "Exclusive",
     badgeType: "pink",
-    mediaClass: "m2",
+    image: "/images/janhvi-kapoor-peddi-controversy-koffee-with-karan-9.jpg",
+    href: "/janhvi-kapoor-peddi-controversy-koffee-with-karan-9",
+    readOrTime: "4 MIN READ",
+  },
+  {
+    id: "ramayana-la-premiere-movie",
+    category: "Releases & Premiere",
+    title: "Inside Ramayana’s LA Premiere: Jada Pinkett Smith & ₹4,000 Cr Global Buzz",
+    badge: "Global Premiere",
+    badgeType: "pink",
+    image: "/images/ramayana-la-premiere-ranbir-kapoor-yash-sai-pallavi.jpg",
     href: "/ramayana-la-premiere-ranbir-kapoor-yash-sai-pallavi",
-    readOrTime: "1D AGO",
-  },
-  {
-    id: "unpopular-opinion-sequel",
-    category: "Reviews",
-    title: "Unpopular opinion: the sequel is better than the original",
-    badge: "Hot Take",
-    badgeType: "default",
-    mediaClass: "m6",
-    href: "/godzilla-minus-zero-india-release-delayed-ramayana",
-    readOrTime: "1D AGO",
-  },
-  {
-    id: "big-releases-month-calendar",
-    category: "Releases",
-    title: "Every big release landing this month, in one scroll",
-    badge: "Calendar",
-    badgeType: "default",
-    mediaClass: "m3",
-    href: "/ramayana-la-premiere-ranbir-kapoor-yash-sai-pallavi",
-    readOrTime: "2D AGO",
-  },
-  {
-    id: "why-clashes-are-back",
-    category: "Box Office",
-    title: "Why clashes are back — and who wins when two epics share screens",
-    badge: "Explained",
-    badgeType: "default",
-    mediaClass: "m1",
-    href: "/godzilla-minus-zero-india-release-delayed-ramayana",
-    readOrTime: "2D AGO",
+    readOrTime: "4 MIN READ",
   },
   {
     id: "godzilla-minus-zero-skips-diwali",
-    category: "Box Office",
-    title: "Godzilla Minus Zero skips Diwali clash: solo IMAX run for Ranbir’s Ramayana",
+    category: "Box Office Clash",
+    title: "Godzilla Minus Zero India Release Delayed Over Ramayana IMAX Battle",
     badge: "Box Office",
-    badgeType: "default",
-    mediaClass: "m4",
+    badgeType: "lime",
     image: "/images/godzilla-minus-zero-india-release-delayed-ramayana.jpg",
     href: "/godzilla-minus-zero-india-release-delayed-ramayana",
     readOrTime: "3 MIN READ",
@@ -203,38 +172,46 @@ export default function MoviesView() {
               </div>
             </Link>
 
-            {/* Spoiler-free verdict Card */}
+            {/* Janhvi Kapoor Peddi Row Card */}
             <Link
-              href="/godzilla-minus-zero-india-release-delayed-ramayana"
+              href="/janhvi-kapoor-peddi-controversy-koffee-with-karan-9"
               className="card m1 group block"
             >
               <div className="card-media relative overflow-hidden">
-                <span className="badge z-10 relative">Review</span>
+                <Image
+                  src="/images/janhvi-kapoor-peddi-controversy-koffee-with-karan-9.jpg"
+                  alt="Janhvi Kapoor Breaks Silence on Peddi Controversy"
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 980px) 100vw, 35vw"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[var(--ink-2)] via-transparent to-black/30 pointer-events-none" />
+                <span className="badge pink z-10 relative">Film Row</span>
               </div>
               <div className="card-body">
                 <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
-                  Our spoiler-free verdict: is this weekend’s big release worth the ticket?
+                  Janhvi Kapoor Breaks Silence on Peddi Controversy: &ldquo;A Violating Experience&rdquo;
                 </h3>
                 <div className="meta-row mt-2">
-                  <span className="text-[var(--lime)] font-bold">REVIEWS</span>
+                  <span className="text-[var(--lime)] font-bold">CINEMA</span>
                   <span className="dot-sep">◆</span>
-                  <span>8H AGO</span>
+                  <span>4 MIN READ</span>
                 </div>
               </div>
             </Link>
           </div>
         </section>
 
-        {/* Latest Movie Buzz Grid */}
+        {/* All Movie Buzz Grid */}
         <section className="section" id="movie-grid">
           <div className="section-head">
             <div>
               <h2 className="text-white">
-                Latest <span className="accent">Movie Buzz</span>
+                All <span className="accent">Movie Buzz</span>
               </h2>
             </div>
             <span className="text-xs font-mono text-[var(--lime)] font-bold">
-              UPDATED HOURLY
+              3 STORIES PUBLISHED
             </span>
           </div>
 
