@@ -176,15 +176,29 @@ export default function Home() {
 
   const editorialArticles: EditorialArticle[] = [
     {
-      id: "bhumi-akshay-priyadarshan-latest",
+      id: "kbc-18-ranbir-proposal-latest",
       anchorId: "latest-story",
-      href: "/bhumi-pednekar-akshay-kumar-priyadarshan-next-film",
-      title: "Bhumi Pednekar Joins Akshay Kumar in Priyadarshan’s Next Film",
-      excerpt: "Bhumi Pednekar is set to star opposite Akshay Kumar in Priyadarshan’s next comedy thriller produced by Tips Films.",
+      href: "/kbc-18-diwali-special-ranbir-kapoor-alia-bhatt-proposal-story",
+      title: "KBC 18 Diwali Special: Ramayana Cast Joins Big B, Ranbir Shares Alia Bhatt Proposal Story",
+      excerpt: "Ranbir Kapoor, Sai Pallavi and Ravie Dubey join Amitabh Bachchan on KBC 18 Diwali special, where Ranbir reveals his Masai Mara proposal.",
       category: "Latest",
+      secondaryCategory: "Reality TV Updates",
       displayCategory: "LATEST",
       badge: "Latest",
       badgeType: "lime",
+      readTime: "3 MIN READ",
+      image: "/images/kbc-18-diwali-special-ranbir-kapoor-alia-bhatt-proposal-story.jpg",
+    },
+    {
+      id: "bhumi-akshay-priyadarshan-story",
+      anchorId: "bollywood-casting",
+      href: "/bhumi-pednekar-akshay-kumar-priyadarshan-next-film",
+      title: "Bhumi Pednekar Joins Akshay Kumar in Priyadarshan’s Next Film",
+      excerpt: "Bhumi Pednekar is set to star opposite Akshay Kumar in Priyadarshan’s next comedy thriller produced by Tips Films.",
+      category: "Bollywood & Hollywood",
+      displayCategory: "BOLLYWOOD & HOLLYWOOD",
+      badge: "Casting Exclusive",
+      badgeType: "pink",
       readTime: "3 MIN READ",
       image: "/images/bhumi-pednekar-akshay-kumar-priyadarshan-next-film.jpg",
     },
@@ -274,8 +288,9 @@ export default function Home() {
       : editorialArticles.filter(
           (art) =>
             art.category === activeCategory ||
+            art.secondaryCategory === activeCategory ||
             (activeCategory === "Bollywood & Hollywood" &&
-              (art.category === "Bollywood" || art.category === "Bollywood & Hollywood")) ||
+              (art.category === "Bollywood" || art.category === "Bollywood & Hollywood" || art.secondaryCategory === "Bollywood & Hollywood")) ||
             (activeCategory === "Bollywood" &&
               (art.category === "Bollywood" || art.category === "Bollywood & Hollywood"))
         );
@@ -293,15 +308,15 @@ export default function Home() {
         <section className="hero" id="featured">
           {/* 1. Main Featured Story (Commanding Top Story Presentation) */}
           <Link
-            href="/bhumi-pednekar-akshay-kumar-priyadarshan-next-film"
+            href="/kbc-18-diwali-special-ranbir-kapoor-alia-bhatt-proposal-story"
             className="feature-card block transition-all hover:border-[var(--lime)] focus-visible:ring-2 focus-visible:ring-[var(--lime)] group"
             style={{ textDecoration: "none", color: "inherit" }}
-            aria-label="Read full article: Bhumi Pednekar Joins Akshay Kumar in Priyadarshan’s Next Film"
+            aria-label="Read full article: KBC 18 Diwali Special: Ramayana Cast Joins Big B, Ranbir Shares Alia Bhatt Proposal Story"
           >
             <div className="feature-media" style={{ overflow: "hidden", position: "relative" }}>
               <Image
-                src="/images/bhumi-pednekar-akshay-kumar-priyadarshan-next-film.jpg"
-                alt="Bhumi Pednekar Joins Akshay Kumar in Priyadarshan’s Next Film"
+                src="/images/kbc-18-diwali-special-ranbir-kapoor-alia-bhatt-proposal-story.jpg"
+                alt="KBC 18 Diwali Special: Ramayana Cast Joins Big B, Ranbir Shares Alia Bhatt Proposal Story"
                 fill
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 750px"
@@ -311,22 +326,23 @@ export default function Home() {
               <div className="noise" style={{ pointerEvents: "none" }}></div>
               <div className="feature-tag flex items-center gap-2">
                 <span className="badge pink">🔥 Cover Story</span>
-                <span className="badge">Casting Exclusive</span>
+                <span className="badge">KBC 18 Diwali Special</span>
+                <span className="badge lime">Ramayana Cast</span>
               </div>
             </div>
             <div className="feature-body">
               <div className="flex items-center gap-2 mb-2 font-mono text-xs text-[var(--lime)] font-bold tracking-wider uppercase">
-                <span>★ TOP STORY · BOLLYWOOD EXCLUSIVE</span>
+                <span>★ TOP STORY · REALITY SHOW &amp; BOLLYWOOD</span>
               </div>
               <h1 className="disp" style={{ color: "#fff" }}>
-                Bhumi Pednekar Joins Akshay Kumar in Priyadarshan’s Next Film
+                KBC 18 Diwali Special: Ramayana Cast Joins Big B, Ranbir Shares Alia Bhatt Proposal Story
               </h1>
               <p>
-                Bhumi Pednekar is set to star opposite Akshay Kumar in Priyadarshan’s next comedy thriller produced by Tips Films, marking the beloved pair’s third on-screen collaboration.
+                Ranbir Kapoor, Sai Pallavi and Ravie Dubey take the hot seat on KBC 18 Diwali special as Ranbir reveals the wild story of proposing to Alia Bhatt in Masai Mara with lions barely 100 meters away.
               </p>
               <div className="meta-row mt-auto pt-3 border-t border-white/[0.06] flex items-center justify-between">
                 <div className="flex items-center gap-3">
-                  <span>BOLLYWOOD &amp; CINEMA</span>
+                  <span>REALITY TV &amp; BOLLYWOOD</span>
                   <span className="dot-sep">◆</span>
                   <span>3 MIN READ</span>
                   <span className="dot-sep">◆</span>
@@ -349,6 +365,30 @@ export default function Home() {
               <span className="trend-rank">01</span>
               <div className="trend-text">
                 <Link
+                  href="/kbc-18-diwali-special-ranbir-kapoor-alia-bhatt-proposal-story"
+                  style={{ color: "inherit" }}
+                >
+                  <h3>KBC 18 Diwali special: Ranbir Kapoor reveals Masai Mara proposal to Alia Bhatt</h3>
+                  <span>REALITY TV &amp; BOLLYWOOD · 112K REACTIONS</span>
+                </Link>
+              </div>
+            </div>
+            <div className="trend-item">
+              <span className="trend-rank">02</span>
+              <div className="trend-text">
+                <Link
+                  href="/bhumi-pednekar-akshay-kumar-priyadarshan-next-film"
+                  style={{ color: "inherit" }}
+                >
+                  <h3>Bhumi Pednekar joins Akshay Kumar in Priyadarshan’s next comedy thriller</h3>
+                  <span>BOLLYWOOD · 98K REACTIONS</span>
+                </Link>
+              </div>
+            </div>
+            <div className="trend-item">
+              <span className="trend-rank">03</span>
+              <div className="trend-text">
+                <Link
                   href="/priyanka-chopra-karwa-chauth-mehendi-nick-jonas-malti"
                   style={{ color: "inherit" }}
                 >
@@ -358,7 +398,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">02</span>
+              <span className="trend-rank">04</span>
               <div className="trend-text">
                 <Link
                   href="/janhvi-kapoor-peddi-controversy-koffee-with-karan-9"
@@ -370,7 +410,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">03</span>
+              <span className="trend-rank">05</span>
               <div className="trend-text">
                 <Link
                   href="/shreya-kalra-karan-patel-reels-comment-rise-and-fall-2"
@@ -378,30 +418,6 @@ export default function Home() {
                 >
                   <h3>Shreya Kalra hits back at Karan Patel over Rise and Fall 2 reels comment</h3>
                   <span>REALITY TV · 58K REACTIONS</span>
-                </Link>
-              </div>
-            </div>
-            <div className="trend-item">
-              <span className="trend-rank">04</span>
-              <div className="trend-text">
-                <Link
-                  href="/ramayana-la-premiere-ranbir-kapoor-yash-sai-pallavi"
-                  style={{ color: "inherit" }}
-                >
-                  <h3>Ramayana LA Premiere: Ranbir Kapoor, Yash and Sai Pallavi stun Hollywood</h3>
-                  <span>BOLLYWOOD · 68K REACTIONS</span>
-                </Link>
-              </div>
-            </div>
-            <div className="trend-item">
-              <span className="trend-rank">05</span>
-              <div className="trend-text">
-                <Link
-                  href="/godzilla-minus-zero-india-release-delayed-ramayana"
-                  style={{ color: "inherit" }}
-                >
-                  <h3>Godzilla Minus Zero reportedly delayed by 2 weeks over Ramayana IMAX clash</h3>
-                  <span>CINEMA · 64K REACTIONS</span>
                 </Link>
               </div>
             </div>

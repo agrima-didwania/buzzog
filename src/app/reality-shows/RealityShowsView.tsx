@@ -8,7 +8,7 @@ import Footer from "@/components/Footer";
 
 interface RealityArticle {
   id: string;
-  show: "Bigg Boss" | "Splitsvilla" | "Khatron Ke Khiladi" | "Rise and Fall";
+  show: "Bigg Boss" | "Splitsvilla" | "Khatron Ke Khiladi" | "Rise and Fall" | "KBC 18" | string;
   title: string;
   excerpt: string;
   badge: string;
@@ -21,6 +21,19 @@ interface RealityArticle {
 }
 
 const realityArticles: RealityArticle[] = [
+  {
+    id: "kbc-18-ranbir-kapoor-proposal",
+    show: "KBC 18",
+    title: "KBC 18 Diwali Special: Ramayana Cast Joins Big B, Ranbir Shares Alia Bhatt Proposal Story",
+    excerpt:
+      "The cast of Ramayana joins Amitabh Bachchan on KBC 18 Diwali special. Ranbir Kapoor reveals the thrilling Masai Mara proposal story.",
+    badge: "Diwali Special",
+    badgeType: "pink",
+    image: "/images/kbc-18-diwali-special-ranbir-kapoor-alia-bhatt-proposal-story.jpg",
+    href: "/kbc-18-diwali-special-ranbir-kapoor-alia-bhatt-proposal-story",
+    readTime: "4 MIN READ",
+    timeAgo: "JUST IN",
+  },
   {
     id: "shreya-karan-rise-and-fall",
     show: "Rise and Fall",
@@ -222,16 +235,16 @@ export default function RealityShowsView() {
 
         {/* Lead Section: Featured Reality Card + 2-Item Stack */}
         <section className="lead">
-          {/* Featured Card (Linking directly to the Shreya Kalra article) */}
+          {/* Featured Cover Story: KBC 18 Diwali Special */}
           <Link
-            href="/shreya-kalra-karan-patel-reels-comment-rise-and-fall-2"
-            className="feature-card group"
-            aria-label="Read full article on Shreya Kalra vs Karan Patel"
+            href="/kbc-18-diwali-special-ranbir-kapoor-alia-bhatt-proposal-story"
+            className="feature-card group block"
+            aria-label="Read full cover story: KBC 18 Diwali Special: Ramayana Cast Joins Big B, Ranbir Shares Alia Bhatt Proposal Story"
           >
             <div className="feature-media relative overflow-hidden">
               <Image
-                src="/images/shreya-kalra-karan-patel-reels-comment-rise-and-fall-2.jpg"
-                alt="Shreya Kalra hits back at Karan Patel on Rise and Fall 2"
+                src="/images/kbc-18-diwali-special-ranbir-kapoor-alia-bhatt-proposal-story.jpg"
+                alt="KBC 18 Diwali Special: Ramayana Cast Joins Big B, Ranbir Shares Alia Bhatt Proposal Story"
                 fill
                 priority
                 className="object-cover transition-transform duration-500 group-hover:scale-105"
@@ -240,63 +253,72 @@ export default function RealityShowsView() {
               <div className="absolute inset-0 bg-gradient-to-t from-[var(--ink-2)] via-transparent to-black/30 pointer-events-none" />
               <div className="noise" />
               <span className="badge pink feature-tag z-10">
-                🔥 Rise and Fall 2
+                🔥 KBC 18 Diwali Special
               </span>
             </div>
             <div className="feature-body">
               <h2 className="disp text-white group-hover:text-[var(--lime)] transition-colors">
-                Shreya Kalra Hits Back at Karan Patel Over His Reels Comment
+                KBC 18 Diwali Special: Ramayana Cast Joins Big B, Ranbir Shares Alia Bhatt Proposal Story
               </h2>
               <p>
-                Karan Patel asked Shreya Kalra and Rishabh Jaiswal how long they will stay in reels.
-                Shreya fires back: &ldquo;Stop demeaning people from reality TV.&rdquo; Every reaction caught on cam.
+                The cast of Ramayana joins Amitabh Bachchan on KBC 18 Diwali special. Ranbir Kapoor opens up on proposing to Alia Bhatt in Masai Mara with wild lions 100 meters away.
               </p>
               <div className="meta-row mt-3">
-                <span className="text-[var(--lime)] font-bold">RISE AND FALL 2</span>
+                <span className="text-[var(--lime)] font-bold">KBC 18</span>
                 <span className="dot-sep">◆</span>
-                <span>3 MIN READ</span>
+                <span>4 MIN READ</span>
                 <span className="dot-sep">◆</span>
-                <span>1H AGO</span>
+                <span className="text-[var(--magenta)] font-bold">JUST IN</span>
               </div>
             </div>
           </Link>
 
-          {/* Right Stack */}
+          {/* Right Stack: The last 2 blogs before the latest one */}
           <div className="stack">
+            {/* Card 1: Shreya Kalra vs Karan Patel */}
             <Link
               href="/shreya-kalra-karan-patel-reels-comment-rise-and-fall-2"
-              className="card m1 group"
+              className="card m1 group block"
+            >
+              <div className="card-media relative overflow-hidden">
+                <Image
+                  src="/images/shreya-kalra-karan-patel-reels-comment-rise-and-fall-2.jpg"
+                  alt="Shreya Kalra Hits Back at Karan Patel"
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 980px) 100vw, 35vw"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[var(--ink-2)] via-transparent to-black/30 pointer-events-none" />
+                <span className="badge pink z-10 relative">Exclusive</span>
+              </div>
+              <div className="card-body">
+                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
+                  Shreya Kalra Hits Back at Karan Patel Over His Reels Comment
+                </h3>
+                <div className="meta-row mt-2">
+                  <span className="text-[var(--lime)] font-bold">RISE AND FALL 2</span>
+                  <span className="dot-sep">◆</span>
+                  <span>3 MIN READ</span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Card 2: Bigg Boss Diary Room Leak */}
+            <Link
+              href="/shreya-kalra-karan-patel-reels-comment-rise-and-fall-2"
+              className="card m2 group block"
             >
               <div className="card-media">
                 <span className="badge">New</span>
               </div>
               <div className="card-body">
-                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white">
+                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
                   Housemate’s diary room confession leaks — and it’s messier than expected
                 </h3>
                 <div className="meta-row mt-2">
                   <span className="text-[var(--lime)] font-bold">BIGG BOSS</span>
                   <span className="dot-sep">◆</span>
                   <span>1H AGO</span>
-                </div>
-              </div>
-            </Link>
-
-            <Link
-              href="/shreya-kalra-karan-patel-reels-comment-rise-and-fall-2"
-              className="card m2 group"
-            >
-              <div className="card-media">
-                <span className="badge pink">Exclusive</span>
-              </div>
-              <div className="card-body">
-                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white">
-                  Splitsvilla insider spills who’s actually calling the shots this season
-                </h3>
-                <div className="meta-row mt-2">
-                  <span className="text-[var(--magenta)] font-bold">SPLITSVILLA</span>
-                  <span className="dot-sep">◆</span>
-                  <span>3H AGO</span>
                 </div>
               </div>
             </Link>

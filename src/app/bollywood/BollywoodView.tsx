@@ -20,6 +20,16 @@ interface BollywoodArticle {
 
 const bollywoodArticles: BollywoodArticle[] = [
   {
+    id: "kbc-18-diwali-ranbir-kapoor-proposal",
+    category: "Diwali Special",
+    title: "KBC 18 Diwali Special: Ramayana Cast Joins Big B, Ranbir Shares Alia Bhatt Proposal Story",
+    badge: "Diwali Exclusive",
+    badgeType: "pink",
+    image: "/images/kbc-18-diwali-special-ranbir-kapoor-alia-bhatt-proposal-story.jpg",
+    href: "/kbc-18-diwali-special-ranbir-kapoor-alia-bhatt-proposal-story",
+    readOrTime: "3 MIN READ",
+  },
+  {
     id: "bhumi-pednekar-akshay-kumar-next-film",
     category: "Casting Exclusive",
     title: "Bhumi Pednekar Joins Akshay Kumar in Priyadarshan’s Next Film",
@@ -136,16 +146,16 @@ export default function BollywoodView() {
 
         {/* Lead Section: Latest Bollywood Published Article (Cover Story) + Exclusive & Global Premiere Stack */}
         <section className="lead">
-          {/* Cover Story: Latest Published Bollywood Story (Bhumi Pednekar & Akshay Kumar) */}
+          {/* Cover Story: Latest Published Bollywood Story (Ranbir Kapoor on KBC 18 Diwali Special) */}
           <Link
-            href="/bhumi-pednekar-akshay-kumar-priyadarshan-next-film"
+            href="/kbc-18-diwali-special-ranbir-kapoor-alia-bhatt-proposal-story"
             className="feature-card group block"
-            aria-label="Read full cover story: Bhumi Pednekar Joins Akshay Kumar in Priyadarshan’s Next Film"
+            aria-label="Read full cover story: KBC 18 Diwali Special: Ramayana Cast Joins Big B, Ranbir Shares Alia Bhatt Proposal Story"
           >
             <div className="feature-media relative overflow-hidden">
               <Image
-                src="/images/bhumi-pednekar-akshay-kumar-priyadarshan-next-film.jpg"
-                alt="Bhumi Pednekar Joins Akshay Kumar in Priyadarshan’s Next Film"
+                src="/images/kbc-18-diwali-special-ranbir-kapoor-alia-bhatt-proposal-story.jpg"
+                alt="KBC 18 Diwali Special: Ramayana Cast Joins Big B, Ranbir Shares Alia Bhatt Proposal Story"
                 fill
                 priority
                 className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
@@ -159,13 +169,13 @@ export default function BollywoodView() {
             </div>
             <div className="feature-body">
               <h2 className="disp text-white group-hover:text-[var(--lime)] transition-colors">
-                Bhumi Pednekar Joins Akshay Kumar in Priyadarshan’s Next Film
+                KBC 18 Diwali Special: Ramayana Cast Joins Big B, Ranbir Shares Alia Bhatt Proposal Story
               </h2>
               <p>
-                Bhumi Pednekar signs on as the female lead opposite Akshay Kumar in Priyadarshan’s upcoming comedy thriller, marking their third on-screen collaboration after Toilet and Raksha Bandhan.
+                Ranbir Kapoor, Sai Pallavi and Ravie Dubey join Amitabh Bachchan on KBC 18 Diwali special, where Ranbir reveals his romantic Masai Mara proposal to Alia Bhatt with lions nearby.
               </p>
               <div className="meta-row mt-3">
-                <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; CASTING</span>
+                <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; TV</span>
                 <span className="dot-sep">◆</span>
                 <span>3 MIN READ</span>
                 <span className="dot-sep">◆</span>
@@ -176,7 +186,35 @@ export default function BollywoodView() {
 
           {/* Right Stack: The last 2 blogs uploaded before the latest one */}
           <div className="stack">
-            {/* Card 1: Priyanka Chopra DIY Karwa Chauth */}
+            {/* Card 1: Bhumi Pednekar Joins Akshay Kumar */}
+            <Link
+              href="/bhumi-pednekar-akshay-kumar-priyadarshan-next-film"
+              className="card m1 group block"
+            >
+              <div className="card-media relative overflow-hidden">
+                <Image
+                  src="/images/bhumi-pednekar-akshay-kumar-priyadarshan-next-film.jpg"
+                  alt="Bhumi Pednekar Joins Akshay Kumar in Priyadarshan’s Next Film"
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 980px) 100vw, 35vw"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[var(--ink-2)] via-transparent to-black/30 pointer-events-none" />
+                <span className="badge pink z-10 relative">Exclusive Scoop</span>
+              </div>
+              <div className="card-body">
+                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
+                  Bhumi Pednekar Joins Akshay Kumar in Priyadarshan’s Next Film
+                </h3>
+                <div className="meta-row mt-2">
+                  <span className="text-[var(--magenta)] font-bold">CASTING SCOOP</span>
+                  <span className="dot-sep">◆</span>
+                  <span>3 MIN READ</span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Card 2: Priyanka Chopra DIY Karwa Chauth */}
             <Link
               href="/priyanka-chopra-karwa-chauth-mehendi-nick-jonas-malti"
               className="card m6 group block"
@@ -203,34 +241,6 @@ export default function BollywoodView() {
                 </div>
               </div>
             </Link>
-
-            {/* Card 2: Janhvi Kapoor Peddi Controversy */}
-            <Link
-              href="/janhvi-kapoor-peddi-controversy-koffee-with-karan-9"
-              className="card m2 group block"
-            >
-              <div className="card-media relative overflow-hidden">
-                <Image
-                  src="/images/janhvi-kapoor-peddi-controversy-koffee-with-karan-9.jpg"
-                  alt="Janhvi Kapoor Breaks Silence on Peddi Controversy"
-                  fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
-                  sizes="(max-width: 980px) 100vw, 35vw"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-[var(--ink-2)] via-transparent to-black/30 pointer-events-none" />
-                <span className="badge pink z-10 relative">Exclusive Interview</span>
-              </div>
-              <div className="card-body">
-                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
-                  Janhvi Kapoor Breaks Silence on Peddi Controversy: &ldquo;A Violating Experience&rdquo;
-                </h3>
-                <div className="meta-row mt-2">
-                  <span className="text-[var(--magenta)] font-bold">KWK 9 SCOOP</span>
-                  <span className="dot-sep">◆</span>
-                  <span>4 MIN READ</span>
-                </div>
-              </div>
-            </Link>
           </div>
         </section>
 
@@ -243,7 +253,7 @@ export default function BollywoodView() {
               </h2>
             </div>
             <span className="text-xs font-mono text-[var(--lime)] font-bold">
-              6 STORIES PUBLISHED
+              7 STORIES PUBLISHED
             </span>
           </div>
 
