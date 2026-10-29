@@ -20,6 +20,16 @@ interface BollywoodArticle {
 
 const bollywoodArticles: BollywoodArticle[] = [
   {
+    id: "janhvi-veer-concert-advice",
+    category: "KWK 9 Scoop",
+    title: "Janhvi Kapoor's \"Concert\" Advice for Veer Pahariya on Koffee With Karan Is Going Viral",
+    badge: "Viral Scoop",
+    badgeType: "pink",
+    image: "/images/janhvi-kapoor-veer-pahariya-concert-advice-koffee-with-karan.jpg",
+    href: "/janhvi-kapoor-veer-pahariya-concert-advice-koffee-with-karan",
+    readOrTime: "3 MIN READ",
+  },
+  {
     id: "kbc-18-diwali-ranbir-kapoor-proposal",
     category: "Diwali Special",
     title: "KBC 18 Diwali Special: Ramayana Cast Joins Big B, Ranbir Shares Alia Bhatt Proposal Story",
@@ -146,16 +156,16 @@ export default function BollywoodView() {
 
         {/* Lead Section: Latest Bollywood Published Article (Cover Story) + Exclusive & Global Premiere Stack */}
         <section className="lead">
-          {/* Cover Story: Latest Published Bollywood Story (Ranbir Kapoor on KBC 18 Diwali Special) */}
+          {/* Cover Story: Latest Published Bollywood Story (Janhvi Kapoor Veer Pahariya Concert Advice) */}
           <Link
-            href="/kbc-18-diwali-special-ranbir-kapoor-alia-bhatt-proposal-story"
+            href="/janhvi-kapoor-veer-pahariya-concert-advice-koffee-with-karan"
             className="feature-card group block"
-            aria-label="Read full cover story: KBC 18 Diwali Special: Ramayana Cast Joins Big B, Ranbir Shares Alia Bhatt Proposal Story"
+            aria-label="Read full cover story: Janhvi Kapoor's Concert Advice for Veer Pahariya on Koffee With Karan Is Going Viral"
           >
             <div className="feature-media relative overflow-hidden">
               <Image
-                src="/images/kbc-18-diwali-special-ranbir-kapoor-alia-bhatt-proposal-story.jpg"
-                alt="KBC 18 Diwali Special: Ramayana Cast Joins Big B, Ranbir Shares Alia Bhatt Proposal Story"
+                src="/images/janhvi-kapoor-veer-pahariya-concert-advice-koffee-with-karan.jpg"
+                alt="Janhvi Kapoor's Concert Advice for Veer Pahariya on Koffee With Karan Is Going Viral"
                 fill
                 priority
                 className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
@@ -169,13 +179,13 @@ export default function BollywoodView() {
             </div>
             <div className="feature-body">
               <h2 className="disp text-white group-hover:text-[var(--lime)] transition-colors">
-                KBC 18 Diwali Special: Ramayana Cast Joins Big B, Ranbir Shares Alia Bhatt Proposal Story
+                Janhvi Kapoor&apos;s &ldquo;Concert&rdquo; Advice for Veer Pahariya on Koffee With Karan Is Going Viral
               </h2>
               <p>
-                Ranbir Kapoor, Sai Pallavi and Ravie Dubey join Amitabh Bachchan on KBC 18 Diwali special, where Ranbir reveals his romantic Masai Mara proposal to Alia Bhatt with lions nearby.
+                Janhvi Kapoor drops witty dating advice for Veer Pahariya on Koffee With Karan Season 9: &ldquo;उसे कभी किसी कॉन्सर्ट में मत ले जाना!&rdquo; Fans connect the viral dots to Tara Sutaria.
               </p>
               <div className="meta-row mt-3">
-                <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; TV</span>
+                <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; KWK 9</span>
                 <span className="dot-sep">◆</span>
                 <span>3 MIN READ</span>
                 <span className="dot-sep">◆</span>
@@ -186,10 +196,38 @@ export default function BollywoodView() {
 
           {/* Right Stack: The last 2 blogs uploaded before the latest one */}
           <div className="stack">
-            {/* Card 1: Bhumi Pednekar Joins Akshay Kumar */}
+            {/* Card 1: KBC 18 Diwali Special (Ranbir Kapoor's Proposal Story) */}
+            <Link
+              href="/kbc-18-diwali-special-ranbir-kapoor-alia-bhatt-proposal-story"
+              className="card m1 group block"
+            >
+              <div className="card-media relative overflow-hidden">
+                <Image
+                  src="/images/kbc-18-diwali-special-ranbir-kapoor-alia-bhatt-proposal-story.jpg"
+                  alt="KBC 18 Diwali Special: Ramayana Cast Joins Big B, Ranbir Shares Alia Bhatt Proposal Story"
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 980px) 100vw, 35vw"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[var(--ink-2)] via-transparent to-black/30 pointer-events-none" />
+                <span className="badge pink z-10 relative">Diwali Exclusive</span>
+              </div>
+              <div className="card-body">
+                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
+                  KBC 18 Diwali Special: Ramayana Cast Joins Big B, Ranbir Shares Alia Bhatt Proposal Story
+                </h3>
+                <div className="meta-row mt-2">
+                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; TV</span>
+                  <span className="dot-sep">◆</span>
+                  <span>3 MIN READ</span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Card 2: Bhumi Pednekar Joins Akshay Kumar */}
             <Link
               href="/bhumi-pednekar-akshay-kumar-priyadarshan-next-film"
-              className="card m1 group block"
+              className="card m6 group block"
             >
               <div className="card-media relative overflow-hidden">
                 <Image
@@ -213,34 +251,6 @@ export default function BollywoodView() {
                 </div>
               </div>
             </Link>
-
-            {/* Card 2: Priyanka Chopra DIY Karwa Chauth */}
-            <Link
-              href="/priyanka-chopra-karwa-chauth-mehendi-nick-jonas-malti"
-              className="card m6 group block"
-            >
-              <div className="card-media relative overflow-hidden">
-                <Image
-                  src="/images/priyanka-chopra-karwa-chauth-mehendi-nick-jonas-malti.jpg"
-                  alt="Priyanka Chopra Does Her Own Karwa Chauth Mehendi for Nick Jonas"
-                  fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
-                  sizes="(max-width: 980px) 100vw, 35vw"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-[var(--ink-2)] via-transparent to-black/30 pointer-events-none" />
-                <span className="badge pink z-10 relative">Trending Scoop</span>
-              </div>
-              <div className="card-body">
-                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
-                  Priyanka Chopra Does Her Own Karwa Chauth Mehendi for Nick Jonas
-                </h3>
-                <div className="meta-row mt-2">
-                  <span className="text-[var(--magenta)] font-bold">FESTIVALS</span>
-                  <span className="dot-sep">◆</span>
-                  <span>3 MIN READ</span>
-                </div>
-              </div>
-            </Link>
           </div>
         </section>
 
@@ -253,7 +263,7 @@ export default function BollywoodView() {
               </h2>
             </div>
             <span className="text-xs font-mono text-[var(--lime)] font-bold">
-              7 STORIES PUBLISHED
+              8 STORIES PUBLISHED
             </span>
           </div>
 

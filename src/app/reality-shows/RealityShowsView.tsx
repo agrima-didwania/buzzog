@@ -22,6 +22,19 @@ interface RealityArticle {
 
 const realityArticles: RealityArticle[] = [
   {
+    id: "janhvi-veer-pahariya-kwk",
+    show: "Koffee With Karan",
+    title: "Janhvi Kapoor's \"Concert\" Advice for Veer Pahariya on Koffee With Karan Is Going Viral",
+    excerpt:
+      "Janhvi Kapoor drops witty dating advice for Veer Pahariya on Koffee With Karan Season 9: “उसे कभी किसी कॉन्सर्ट में मत ले जाना!” Fans connect the viral dots to Tara Sutaria.",
+    badge: "Viral Scoop",
+    badgeType: "pink",
+    image: "/images/janhvi-kapoor-veer-pahariya-concert-advice-koffee-with-karan.jpg",
+    href: "/janhvi-kapoor-veer-pahariya-concert-advice-koffee-with-karan",
+    readTime: "3 MIN READ",
+    timeAgo: "JUST IN",
+  },
+  {
     id: "bigg-boss-20-uditi-singh-breakup",
     show: "Bigg Boss",
     title: "Bigg Boss 20: Scout-Love Talk Brings Back Uditi Singh’s Painful Breakup Memory",
@@ -248,16 +261,16 @@ export default function RealityShowsView() {
 
         {/* Lead Section: Featured Reality Card + 2-Item Stack */}
         <section className="lead">
-          {/* Featured Cover Story: Bigg Boss 20 Uditi Singh */}
+          {/* Featured Cover Story: Janhvi Kapoor on KWK 9 */}
           <Link
-            href="/bigg-boss-20-uditi-singh-painful-breakup-scout-love"
+            href="/janhvi-kapoor-veer-pahariya-concert-advice-koffee-with-karan"
             className="feature-card group block"
-            aria-label="Read full cover story: Bigg Boss 20: Scout-Love Talk Brings Back Uditi Singh’s Painful Breakup Memory"
+            aria-label="Read full cover story: Janhvi Kapoor's Concert Advice for Veer Pahariya on Koffee With Karan Is Going Viral"
           >
             <div className="feature-media relative overflow-hidden">
               <Image
-                src="/images/bigg-boss-20-uditi-singh-painful-breakup-scout-love.jpg"
-                alt="Bigg Boss 20: Scout-Love Talk Brings Back Uditi Singh’s Painful Breakup Memory"
+                src="/images/janhvi-kapoor-veer-pahariya-concert-advice-koffee-with-karan.jpg"
+                alt="Janhvi Kapoor's Concert Advice for Veer Pahariya on Koffee With Karan Is Going Viral"
                 fill
                 priority
                 className="object-cover transition-transform duration-500 group-hover:scale-105"
@@ -266,18 +279,18 @@ export default function RealityShowsView() {
               <div className="absolute inset-0 bg-gradient-to-t from-[var(--ink-2)] via-transparent to-black/40 pointer-events-none" />
               <div className="noise" />
               <span className="badge pink feature-tag z-10">
-                🔥 Bigg Boss 20 Scoop
+                🔥 KWK 9 Viral Scoop
               </span>
             </div>
             <div className="feature-body">
               <h2 className="disp text-white group-hover:text-[var(--lime)] transition-colors">
-                Bigg Boss 20: Scout-Love Talk Brings Back Uditi Singh’s Painful Breakup Memory
+                Janhvi Kapoor&apos;s &ldquo;Concert&rdquo; Advice for Veer Pahariya on Koffee With Karan Is Going Viral
               </h2>
               <p>
-                Scout OP’s talk with Love Gill stirs up the house as Uditi Singh opens up to Arishfa Khan about her own past heartbreak and feeling uncomfortable watching a partner move on.
+                Janhvi Kapoor drops witty dating advice for Veer Pahariya on Koffee With Karan Season 9: &ldquo;उसे कभी किसी कॉन्सर्ट में मत ले जाना!&rdquo; Fans connect the viral dots to Tara Sutaria.
               </p>
               <div className="meta-row mt-3">
-                <span className="text-[var(--lime)] font-bold">BIGG BOSS 20</span>
+                <span className="text-[var(--lime)] font-bold">KWK 9</span>
                 <span className="dot-sep">◆</span>
                 <span>3 MIN READ</span>
                 <span className="dot-sep">◆</span>
@@ -288,10 +301,38 @@ export default function RealityShowsView() {
 
           {/* Right Stack: The last 2 blogs before the latest one */}
           <div className="stack">
-            {/* Card 1: KBC 18 Diwali Special */}
+            {/* Card 1: Bigg Boss 20 Uditi Singh Breakup */}
+            <Link
+              href="/bigg-boss-20-uditi-singh-painful-breakup-scout-love"
+              className="card m1 group block"
+            >
+              <div className="card-media relative overflow-hidden">
+                <Image
+                  src="/images/bigg-boss-20-uditi-singh-painful-breakup-scout-love.jpg"
+                  alt="Bigg Boss 20: Scout-Love Talk Brings Back Uditi Singh’s Painful Breakup Memory"
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 980px) 100vw, 35vw"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[var(--ink-2)] via-transparent to-black/30 pointer-events-none" />
+                <span className="badge pink z-10 relative">Trending</span>
+              </div>
+              <div className="card-body">
+                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
+                  Bigg Boss 20: Scout-Love Talk Brings Back Uditi Singh’s Painful Breakup Memory
+                </h3>
+                <div className="meta-row mt-2">
+                  <span className="text-[var(--lime)] font-bold">BIGG BOSS 20</span>
+                  <span className="dot-sep">◆</span>
+                  <span>3 MIN READ</span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Card 2: KBC 18 Diwali Special */}
             <Link
               href="/kbc-18-diwali-special-ranbir-kapoor-alia-bhatt-proposal-story"
-              className="card m1 group block"
+              className="card m2 group block"
             >
               <div className="card-media relative overflow-hidden">
                 <Image
@@ -315,34 +356,6 @@ export default function RealityShowsView() {
                 </div>
               </div>
             </Link>
-
-            {/* Card 2: Shreya Kalra vs Karan Patel */}
-            <Link
-              href="/shreya-kalra-karan-patel-reels-comment-rise-and-fall-2"
-              className="card m2 group block"
-            >
-              <div className="card-media relative overflow-hidden">
-                <Image
-                  src="/images/shreya-kalra-karan-patel-reels-comment-rise-and-fall-2.jpg"
-                  alt="Shreya Kalra Hits Back at Karan Patel"
-                  fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
-                  sizes="(max-width: 980px) 100vw, 35vw"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-[var(--ink-2)] via-transparent to-black/30 pointer-events-none" />
-                <span className="badge pink z-10 relative">Exclusive</span>
-              </div>
-              <div className="card-body">
-                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
-                  Shreya Kalra Hits Back at Karan Patel Over His Reels Comment
-                </h3>
-                <div className="meta-row mt-2">
-                  <span className="text-[var(--lime)] font-bold">RISE AND FALL 2</span>
-                  <span className="dot-sep">◆</span>
-                  <span>3 MIN READ</span>
-                </div>
-              </div>
-            </Link>
           </div>
         </section>
 
@@ -355,7 +368,7 @@ export default function RealityShowsView() {
               </h2>
             </div>
             <span className="text-xs font-mono text-[var(--lime)] font-bold">
-              12 STORIES PUBLISHED
+              13 STORIES PUBLISHED
             </span>
           </div>
 
