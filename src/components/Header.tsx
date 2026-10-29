@@ -84,7 +84,7 @@ export default function Header({ activeNav = "Home" }: HeaderProps) {
               )
             }
           >
-            <span className="flex items-center gap-2 px-1">
+            <span className="flex items-center gap-2">
               <svg
                 width="17"
                 height="17"
