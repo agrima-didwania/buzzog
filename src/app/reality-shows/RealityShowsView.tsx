@@ -22,6 +22,19 @@ interface RealityArticle {
 
 const realityArticles: RealityArticle[] = [
   {
+    id: "bigg-boss-20-100-percent-ration",
+    show: "Bigg Boss",
+    title: "Bigg Boss 20: Housemates Get 100% Ration for the First Time, and the House Is Celebrating",
+    excerpt:
+      "Good news has finally come to the Bigg Boss 20 house as the contestants secure a full 100% ration after weeks of low supplies and high drama.",
+    badge: "Milestone Task",
+    badgeType: "lime",
+    image: "/images/bigg-boss-20-100-per-cent-ration-housemates.jpg",
+    href: "/bigg-boss-20-100-per-cent-ration-housemates",
+    readTime: "3 MIN READ",
+    timeAgo: "JUST IN",
+  },
+  {
     id: "janhvi-veer-pahariya-kwk",
     show: "Koffee With Karan",
     title: "Janhvi Kapoor's \"Concert\" Advice for Veer Pahariya on Koffee With Karan Is Going Viral",
@@ -261,16 +274,16 @@ export default function RealityShowsView() {
 
         {/* Lead Section: Featured Reality Card + 2-Item Stack */}
         <section className="lead">
-          {/* Featured Cover Story: Janhvi Kapoor on KWK 9 */}
+          {/* Featured Cover Story: Bigg Boss 20 100% Ration */}
           <Link
-            href="/janhvi-kapoor-veer-pahariya-concert-advice-koffee-with-karan"
+            href="/bigg-boss-20-100-per-cent-ration-housemates"
             className="feature-card group block"
-            aria-label="Read full cover story: Janhvi Kapoor's Concert Advice for Veer Pahariya on Koffee With Karan Is Going Viral"
+            aria-label="Read full cover story: Bigg Boss 20: Housemates Get 100% Ration for the First Time"
           >
             <div className="feature-media relative overflow-hidden">
               <Image
-                src="/images/janhvi-kapoor-veer-pahariya-concert-advice-koffee-with-karan.jpg"
-                alt="Janhvi Kapoor's Concert Advice for Veer Pahariya on Koffee With Karan Is Going Viral"
+                src="/images/bigg-boss-20-100-per-cent-ration-housemates.jpg"
+                alt="Bigg Boss 20: Housemates Get 100% Ration for the First Time"
                 fill
                 priority
                 className="object-cover transition-transform duration-500 group-hover:scale-105"
@@ -278,19 +291,19 @@ export default function RealityShowsView() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[var(--ink-2)] via-transparent to-black/40 pointer-events-none" />
               <div className="noise" />
-              <span className="badge pink feature-tag z-10">
-                🔥 KWK 9 Viral Scoop
+              <span className="badge lime feature-tag z-10">
+                🔥 100% Ration Milestone
               </span>
             </div>
             <div className="feature-body">
               <h2 className="disp text-white group-hover:text-[var(--lime)] transition-colors">
-                Janhvi Kapoor&apos;s &ldquo;Concert&rdquo; Advice for Veer Pahariya on Koffee With Karan Is Going Viral
+                Bigg Boss 20: Housemates Get 100% Ration for the First Time, and the House Is Celebrating
               </h2>
               <p>
-                Janhvi Kapoor drops witty dating advice for Veer Pahariya on Koffee With Karan Season 9: &ldquo;उसे कभी किसी कॉन्सर्ट में मत ले जाना!&rdquo; Fans connect the viral dots to Tara Sutaria.
+                Good news has finally come to the Bigg Boss 20 house. After weeks of low supplies and captaincy clashes, the contestants have secured a rare 100% full ration.
               </p>
               <div className="meta-row mt-3">
-                <span className="text-[var(--lime)] font-bold">KWK 9</span>
+                <span className="text-[var(--lime)] font-bold">BIGG BOSS 20</span>
                 <span className="dot-sep">◆</span>
                 <span>3 MIN READ</span>
                 <span className="dot-sep">◆</span>
@@ -301,10 +314,38 @@ export default function RealityShowsView() {
 
           {/* Right Stack: The last 2 blogs before the latest one */}
           <div className="stack">
-            {/* Card 1: Bigg Boss 20 Uditi Singh Breakup */}
+            {/* Card 1: Janhvi Kapoor on KWK 9 */}
+            <Link
+              href="/janhvi-kapoor-veer-pahariya-concert-advice-koffee-with-karan"
+              className="card m1 group block"
+            >
+              <div className="card-media relative overflow-hidden">
+                <Image
+                  src="/images/janhvi-kapoor-veer-pahariya-concert-advice-koffee-with-karan.jpg"
+                  alt="Janhvi Kapoor's Concert Advice for Veer Pahariya on Koffee With Karan"
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 980px) 100vw, 35vw"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[var(--ink-2)] via-transparent to-black/30 pointer-events-none" />
+                <span className="badge pink z-10 relative">KWK 9 Scoop</span>
+              </div>
+              <div className="card-body">
+                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
+                  Janhvi Kapoor&apos;s &ldquo;Concert&rdquo; Advice for Veer Pahariya on Koffee With Karan Is Going Viral
+                </h3>
+                <div className="meta-row mt-2">
+                  <span className="text-[var(--lime)] font-bold">KWK 9</span>
+                  <span className="dot-sep">◆</span>
+                  <span>3 MIN READ</span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Card 2: Bigg Boss 20 Uditi Singh Breakup */}
             <Link
               href="/bigg-boss-20-uditi-singh-painful-breakup-scout-love"
-              className="card m1 group block"
+              className="card m2 group block"
             >
               <div className="card-media relative overflow-hidden">
                 <Image
@@ -328,34 +369,6 @@ export default function RealityShowsView() {
                 </div>
               </div>
             </Link>
-
-            {/* Card 2: KBC 18 Diwali Special */}
-            <Link
-              href="/kbc-18-diwali-special-ranbir-kapoor-alia-bhatt-proposal-story"
-              className="card m2 group block"
-            >
-              <div className="card-media relative overflow-hidden">
-                <Image
-                  src="/images/kbc-18-diwali-special-ranbir-kapoor-alia-bhatt-proposal-story.jpg"
-                  alt="KBC 18 Diwali Special: Ramayana Cast Joins Big B"
-                  fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
-                  sizes="(max-width: 980px) 100vw, 35vw"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-[var(--ink-2)] via-transparent to-black/30 pointer-events-none" />
-                <span className="badge pink z-10 relative">Diwali Scoop</span>
-              </div>
-              <div className="card-body">
-                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
-                  KBC 18 Diwali Special: Ramayana Cast Joins Big B, Ranbir Shares Alia Bhatt Proposal Story
-                </h3>
-                <div className="meta-row mt-2">
-                  <span className="text-[var(--lime)] font-bold">KBC 18</span>
-                  <span className="dot-sep">◆</span>
-                  <span>4 MIN READ</span>
-                </div>
-              </div>
-            </Link>
           </div>
         </section>
 
@@ -368,7 +381,7 @@ export default function RealityShowsView() {
               </h2>
             </div>
             <span className="text-xs font-mono text-[var(--lime)] font-bold">
-              13 STORIES PUBLISHED
+              14 STORIES PUBLISHED
             </span>
           </div>
 

@@ -176,16 +176,30 @@ export default function Home() {
 
   const editorialArticles: EditorialArticle[] = [
     {
-      id: "janhvi-veer-concert-latest",
+      id: "bigg-boss-20-100-percent-ration",
       anchorId: "latest-story",
-      href: "/janhvi-kapoor-veer-pahariya-concert-advice-koffee-with-karan",
-      title: "Janhvi Kapoor's \"Concert\" Advice for Veer Pahariya on Koffee With Karan Is Going Viral",
-      excerpt: "Janhvi Kapoor drops witty dating advice for Veer Pahariya on Koffee With Karan Season 9: “उसे कभी किसी कॉन्सर्ट में मत ले जाना!” Fans connect the viral dots to Tara Sutaria.",
+      href: "/bigg-boss-20-100-per-cent-ration-housemates",
+      title: "Bigg Boss 20: Housemates Get 100% Ration for the First Time, and the House Is Celebrating",
+      excerpt: "Good news has finally come to the Bigg Boss 20 house as the contestants secure a full 100% ration after weeks of low supplies and high drama.",
       category: "Latest",
-      secondaryCategory: "Bollywood & Hollywood",
+      secondaryCategory: "Reality TV Updates",
       displayCategory: "LATEST",
       badge: "Latest",
       badgeType: "lime",
+      readTime: "3 MIN READ",
+      image: "/images/bigg-boss-20-100-per-cent-ration-housemates.jpg",
+    },
+    {
+      id: "janhvi-veer-concert-latest",
+      anchorId: "kwk-story",
+      href: "/janhvi-kapoor-veer-pahariya-concert-advice-koffee-with-karan",
+      title: "Janhvi Kapoor's \"Concert\" Advice for Veer Pahariya on Koffee With Karan Is Going Viral",
+      excerpt: "Janhvi Kapoor drops witty dating advice for Veer Pahariya on Koffee With Karan Season 9: “उसे कभी किसी कॉन्सर्ट में मत ले जाना!” Fans connect the viral dots to Tara Sutaria.",
+      category: "Reality TV Updates",
+      secondaryCategory: "Bollywood & Hollywood",
+      displayCategory: "BOLLYWOOD & REALITY",
+      badge: "Viral Scoop",
+      badgeType: "pink",
       readTime: "3 MIN READ",
       image: "/images/janhvi-kapoor-veer-pahariya-concert-advice-koffee-with-karan.jpg",
     },
@@ -335,15 +349,15 @@ export default function Home() {
         <section className="hero" id="featured">
           {/* 1. Main Featured Story (Commanding Top Story Presentation) */}
           <Link
-            href="/janhvi-kapoor-veer-pahariya-concert-advice-koffee-with-karan"
+            href="/bigg-boss-20-100-per-cent-ration-housemates"
             className="feature-card block transition-all hover:border-[var(--lime)] focus-visible:ring-2 focus-visible:ring-[var(--lime)] group"
             style={{ textDecoration: "none", color: "inherit" }}
-            aria-label="Read full article: Janhvi Kapoor's Concert Advice for Veer Pahariya on Koffee With Karan Is Going Viral"
+            aria-label="Read full article: Bigg Boss 20: Housemates Get 100% Ration for the First Time"
           >
             <div className="feature-media" style={{ overflow: "hidden", position: "relative" }}>
               <Image
-                src="/images/janhvi-kapoor-veer-pahariya-concert-advice-koffee-with-karan.jpg"
-                alt="Janhvi Kapoor's Concert Advice for Veer Pahariya on Koffee With Karan Is Going Viral"
+                src="/images/bigg-boss-20-100-per-cent-ration-housemates.jpg"
+                alt="Bigg Boss 20: Housemates Get 100% Ration for the First Time, and the House Is Celebrating"
                 fill
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 750px"
@@ -353,23 +367,23 @@ export default function Home() {
               <div className="noise" style={{ pointerEvents: "none" }}></div>
               <div className="feature-tag flex items-center gap-2">
                 <span className="badge pink">🔥 Cover Story</span>
-                <span className="badge">KWK 9 Scoop</span>
-                <span className="badge lime">Janhvi Kapoor</span>
+                <span className="badge">Bigg Boss 20</span>
+                <span className="badge lime">100% Ration</span>
               </div>
             </div>
             <div className="feature-body">
               <div className="flex items-center gap-2 mb-2 font-mono text-xs text-[var(--lime)] font-bold tracking-wider uppercase">
-                <span>★ TOP STORY · BOLLYWOOD &amp; REALITY TV</span>
+                <span>★ TOP STORY · REALITY SHOW MILESTONE</span>
               </div>
               <h1 className="disp" style={{ color: "#fff" }}>
-                Janhvi Kapoor&apos;s &ldquo;Concert&rdquo; Advice for Veer Pahariya on Koffee With Karan Is Going Viral
+                Bigg Boss 20: Housemates Get 100% Ration for the First Time, and the House Is Celebrating
               </h1>
               <p>
-                Janhvi Kapoor drops witty dating advice for Veer Pahariya on Koffee With Karan Season 9: &ldquo;उसे कभी किसी कॉन्सर्ट में मत ले जाना!&rdquo; Fans connect the viral dots to Tara Sutaria.
+                Good news has finally come to the Bigg Boss 20 house. After weeks of low supplies, harsh penalties and captaincy clashes, the contestants have secured a rare 100% full weekly ration.
               </p>
               <div className="meta-row mt-auto pt-3 border-t border-white/[0.06] flex items-center justify-between">
                 <div className="flex items-center gap-3">
-                  <span>BOLLYWOOD &amp; REALITY TV</span>
+                  <span>REALITY TV</span>
                   <span className="dot-sep">◆</span>
                   <span>3 MIN READ</span>
                   <span className="dot-sep">◆</span>
@@ -392,6 +406,18 @@ export default function Home() {
               <span className="trend-rank">01</span>
               <div className="trend-text">
                 <Link
+                  href="/bigg-boss-20-100-per-cent-ration-housemates"
+                  style={{ color: "inherit" }}
+                >
+                  <h3>Bigg Boss 20: Housemates get 100% full weekly ration for first time this season</h3>
+                  <span>REALITY TV · 142K REACTIONS</span>
+                </Link>
+              </div>
+            </div>
+            <div className="trend-item">
+              <span className="trend-rank">02</span>
+              <div className="trend-text">
+                <Link
                   href="/janhvi-kapoor-veer-pahariya-concert-advice-koffee-with-karan"
                   style={{ color: "inherit" }}
                 >
@@ -401,7 +427,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">02</span>
+              <span className="trend-rank">03</span>
               <div className="trend-text">
                 <Link
                   href="/bigg-boss-20-uditi-singh-painful-breakup-scout-love"
@@ -413,7 +439,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">03</span>
+              <span className="trend-rank">04</span>
               <div className="trend-text">
                 <Link
                   href="/kbc-18-diwali-special-ranbir-kapoor-alia-bhatt-proposal-story"
@@ -425,7 +451,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">04</span>
+              <span className="trend-rank">05</span>
               <div className="trend-text">
                 <Link
                   href="/bhumi-pednekar-akshay-kumar-priyadarshan-next-film"
@@ -433,18 +459,6 @@ export default function Home() {
                 >
                   <h3>Bhumi Pednekar joins Akshay Kumar in Priyadarshan’s next comedy thriller</h3>
                   <span>BOLLYWOOD · 98K REACTIONS</span>
-                </Link>
-              </div>
-            </div>
-            <div className="trend-item">
-              <span className="trend-rank">05</span>
-              <div className="trend-text">
-                <Link
-                  href="/priyanka-chopra-karwa-chauth-mehendi-nick-jonas-malti"
-                  style={{ color: "inherit" }}
-                >
-                  <h3>Priyanka Chopra does her own Karwa Chauth mehendi for Nick Jonas</h3>
-                  <span>BOLLYWOOD · 94K REACTIONS</span>
                 </Link>
               </div>
             </div>

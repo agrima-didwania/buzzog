@@ -76,7 +76,7 @@ export default function Header({ activeNav = "Home" }: HeaderProps) {
             shimmerOnHover={true}
             borderRadius="9999px"
             background="linear-gradient(135deg, var(--magenta), var(--magenta-dim))"
-            className="hidden sm:inline-flex h-10 px-7 text-xs font-bold text-white shadow-[0_4px_20px_rgba(228,34,46,0.35)] hover:shadow-[0_4px_24px_rgba(111,207,74,0.4)] transition-all"
+            className="hidden sm:inline-flex h-10 px-8 text-xs font-bold text-white shadow-[0_4px_20px_rgba(228,34,46,0.35)] hover:shadow-[0_4px_24px_rgba(111,207,74,0.4)] transition-all shrink-0"
             onClick={() =>
               window.open(
                 "https://www.instagram.com/buzzoriginals?exln=MWdhNTk5dWdlYnF5cg==",
@@ -84,7 +84,25 @@ export default function Header({ activeNav = "Home" }: HeaderProps) {
               )
             }
           >
-            📸 Follow the Buzz
+            <span className="flex items-center gap-2.5 pl-2 pr-3.5">
+              <svg
+                width="15"
+                height="15"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2.2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="w-4 h-4 shrink-0 text-white"
+                aria-hidden="true"
+              >
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+              </svg>
+              <span className="tracking-wide">Follow the Buzz</span>
+            </span>
           </ShimmerButton>
 
           <button
@@ -129,7 +147,7 @@ export default function Header({ activeNav = "Home" }: HeaderProps) {
 
           <div className="mt-2 pt-2 border-t border-[var(--line)]">
             <button
-              className="w-full btn-follow justify-center py-3 text-xs"
+              className="w-full btn-follow justify-center py-3 text-xs flex items-center gap-2.5"
               onClick={() => {
                 setMobileMenuOpen(false);
                 window.open(
@@ -138,7 +156,23 @@ export default function Header({ activeNav = "Home" }: HeaderProps) {
                 );
               }}
             >
-              📸 Follow the Buzz
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2.2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="w-4 h-4 shrink-0 text-white"
+                aria-hidden="true"
+              >
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+              </svg>
+              <span>Follow the Buzz</span>
             </button>
           </div>
         </div>
