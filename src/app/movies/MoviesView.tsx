@@ -20,6 +20,16 @@ interface MovieArticle {
 
 const movieArticles: MovieArticle[] = [
   {
+    id: "bhumi-akshay-priyadarshan-movie",
+    category: "Comedy Thriller",
+    title: "Bhumi Pednekar Joins Akshay Kumar in Priyadarshan’s Next Film",
+    badge: "Exclusive Scoop",
+    badgeType: "pink",
+    image: "/images/bhumi-pednekar-akshay-kumar-priyadarshan-next-film.jpg",
+    href: "/bhumi-pednekar-akshay-kumar-priyadarshan-next-film",
+    readOrTime: "3 MIN READ",
+  },
+  {
     id: "janhvi-peddi-controversy-movie",
     category: "Cinema & Censorship",
     title: "Janhvi Kapoor Breaks Silence on Peddi Controversy: “A Violating Experience”",
@@ -106,73 +116,47 @@ export default function MoviesView() {
 
         {/* Lead Section: Featured Movie Card + 2-Item Stack */}
         <section className="lead">
-          {/* Featured Card (Godzilla Minus Zero Delay over Ramayana IMAX) */}
+          {/* Featured Card (Bhumi Pednekar & Akshay Kumar in Priyadarshan's Film) */}
           <Link
-            href="/godzilla-minus-zero-india-release-delayed-ramayana"
+            href="/bhumi-pednekar-akshay-kumar-priyadarshan-next-film"
             className="feature-card group block"
-            aria-label="Read full article: Godzilla Minus Zero skips Diwali clash: solo IMAX run for Ramayana"
+            aria-label="Read full article: Bhumi Pednekar Joins Akshay Kumar in Priyadarshan’s Next Film"
           >
             <div className="feature-media relative overflow-hidden">
               <Image
-                src="/images/godzilla-minus-zero-india-release-delayed-ramayana.jpg"
-                alt="Godzilla Minus Zero and Ramayana IMAX Clash"
+                src="/images/bhumi-pednekar-akshay-kumar-priyadarshan-next-film.jpg"
+                alt="Bhumi Pednekar Joins Akshay Kumar in Priyadarshan’s Next Film"
                 fill
                 priority
-                className="object-cover transition-transform duration-500 group-hover:scale-105"
+                className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
                 sizes="(max-width: 980px) 100vw, 65vw"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[var(--ink-2)] via-transparent to-black/30 pointer-events-none" />
               <div className="noise" />
               <span className="badge pink feature-tag z-10">
-                🎬 Box Office
+                🎬 Casting Scoop
               </span>
             </div>
             <div className="feature-body">
               <h2 className="disp text-white group-hover:text-[var(--lime)] transition-colors">
-                Godzilla Minus Zero skips Diwali clash: solo IMAX run for Ramayana
+                Bhumi Pednekar Joins Akshay Kumar in Priyadarshan’s Next Film
               </h2>
               <p>
-                Reports say the Monsterverse film is delayed by two weeks, handing Ranbir’s Ramayana the IMAX screens to itself.
+                Director Priyadarshan confirms Bhumi Pednekar as the leading lady opposite Akshay Kumar in their upcoming comedy thriller produced by Tips Films.
               </p>
               <div className="meta-row mt-3">
                 <span className="text-[var(--lime)] font-bold">CINEMA</span>
                 <span className="dot-sep">·</span>
                 <span>3 MIN READ</span>
+                <span className="dot-sep">·</span>
+                <span className="text-[var(--magenta)] font-bold">JUST IN</span>
               </div>
             </div>
           </Link>
 
-          {/* Right Stack: Global Premiere + Review */}
+          {/* Right Stack: The last 2 movie blogs uploaded before this one */}
           <div className="stack">
-            {/* Ramayana LA Premiere Card */}
-            <Link
-              href="/ramayana-la-premiere-ranbir-kapoor-yash-sai-pallavi"
-              className="card m3 group block"
-            >
-              <div className="card-media relative overflow-hidden">
-                <Image
-                  src="/images/ramayana-la-premiere-ranbir-kapoor-yash-sai-pallavi.jpg"
-                  alt="Ramayana LA Premiere: Jada Pinkett Smith and ₹4,000 Cr buzz"
-                  fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
-                  sizes="(max-width: 980px) 100vw, 35vw"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-[var(--ink-2)] via-transparent to-black/30 pointer-events-none" />
-                <span className="badge pink z-10 relative">Global Premiere</span>
-              </div>
-              <div className="card-body">
-                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
-                  Inside Ramayana’s LA Premiere: Jada Pinkett Smith, Hollywood stars &amp; ₹4,000 Cr buzz
-                </h3>
-                <div className="meta-row mt-2">
-                  <span className="text-[var(--magenta)] font-bold">RELEASES</span>
-                  <span className="dot-sep">◆</span>
-                  <span>4 MIN READ</span>
-                </div>
-              </div>
-            </Link>
-
-            {/* Janhvi Kapoor Peddi Row Card */}
+            {/* Card 1: Janhvi Kapoor Peddi Row */}
             <Link
               href="/janhvi-kapoor-peddi-controversy-koffee-with-karan-9"
               className="card m1 group block"
@@ -199,6 +183,34 @@ export default function MoviesView() {
                 </div>
               </div>
             </Link>
+
+            {/* Card 2: Ramayana LA Premiere Card */}
+            <Link
+              href="/ramayana-la-premiere-ranbir-kapoor-yash-sai-pallavi"
+              className="card m3 group block"
+            >
+              <div className="card-media relative overflow-hidden">
+                <Image
+                  src="/images/ramayana-la-premiere-ranbir-kapoor-yash-sai-pallavi.jpg"
+                  alt="Ramayana LA Premiere: Jada Pinkett Smith and ₹4,000 Cr buzz"
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 980px) 100vw, 35vw"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[var(--ink-2)] via-transparent to-black/30 pointer-events-none" />
+                <span className="badge pink z-10 relative">Global Premiere</span>
+              </div>
+              <div className="card-body">
+                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
+                  Inside Ramayana’s LA Premiere: Jada Pinkett Smith, Hollywood stars &amp; ₹4,000 Cr buzz
+                </h3>
+                <div className="meta-row mt-2">
+                  <span className="text-[var(--magenta)] font-bold">RELEASES</span>
+                  <span className="dot-sep">◆</span>
+                  <span>4 MIN READ</span>
+                </div>
+              </div>
+            </Link>
           </div>
         </section>
 
@@ -211,7 +223,7 @@ export default function MoviesView() {
               </h2>
             </div>
             <span className="text-xs font-mono text-[var(--lime)] font-bold">
-              3 STORIES PUBLISHED
+              4 STORIES PUBLISHED
             </span>
           </div>
 

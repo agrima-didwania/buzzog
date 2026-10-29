@@ -7,6 +7,10 @@ export const metadata: Metadata = {
     "Movies coverage from Buzz Originals — raw, unfiltered, built for the group chat. Box office numbers, trailer breakdowns, clashes and spoiler-free verdicts.",
   keywords: [
     "Movies Buzz Originals",
+    "Bhumi Pednekar Akshay Kumar Priyadarshan film",
+    "Bhumi Pednekar",
+    "Akshay Kumar",
+    "Priyadarshan",
     "Godzilla Minus Zero India release delayed",
     "Ramayana IMAX clash",
     "Ramayana LA Premiere",
@@ -28,10 +32,10 @@ export const metadata: Metadata = {
     siteName: "Buzz Originals",
     images: [
       {
-        url: "/images/godzilla-minus-zero-india-release-delayed-ramayana.jpg",
-        width: 1200,
-        height: 675,
-        alt: "Godzilla Minus Zero and Ramayana IMAX Clash — Buzz Originals Movies",
+        url: "/images/bhumi-pednekar-akshay-kumar-priyadarshan-next-film.jpg",
+        width: 1024,
+        height: 576,
+        alt: "Bhumi Pednekar Joins Akshay Kumar in Priyadarshan’s Next Film — Buzz Originals Movies",
       },
     ],
     type: "website",
@@ -41,7 +45,7 @@ export const metadata: Metadata = {
     title: "Movies — Buzz Originals",
     description:
       "Raw, unfiltered movie coverage: box office clashes, trailer breakdowns & spoiler-free verdicts.",
-    images: ["/images/godzilla-minus-zero-india-release-delayed-ramayana.jpg"],
+    images: ["/images/bhumi-pednekar-akshay-kumar-priyadarshan-next-film.jpg"],
   },
 };
 
@@ -68,14 +72,26 @@ export default function MoviesPage() {
         {
           "@type": "ListItem",
           position: 1,
-          name: "Godzilla Minus Zero India Release Delayed Over Ramayana IMAX Battle",
-          url: "https://www.buzzoriginals.com/godzilla-minus-zero-india-release-delayed-ramayana",
+          name: "Bhumi Pednekar Joins Akshay Kumar in Priyadarshan’s Next Film",
+          url: "https://www.buzzoriginals.com/bhumi-pednekar-akshay-kumar-priyadarshan-next-film",
         },
         {
           "@type": "ListItem",
           position: 2,
+          name: "Janhvi Kapoor Breaks Silence on Peddi Controversy",
+          url: "https://www.buzzoriginals.com/janhvi-kapoor-peddi-controversy-koffee-with-karan-9",
+        },
+        {
+          "@type": "ListItem",
+          position: 3,
           name: "Ramayana LA Premiere: Actors Steal the Red Carpet",
           url: "https://www.buzzoriginals.com/ramayana-la-premiere-ranbir-kapoor-yash-sai-pallavi",
+        },
+        {
+          "@type": "ListItem",
+          position: 4,
+          name: "Godzilla Minus Zero India Release Delayed Over Ramayana IMAX Battle",
+          url: "https://www.buzzoriginals.com/godzilla-minus-zero-india-release-delayed-ramayana",
         },
       ],
     },

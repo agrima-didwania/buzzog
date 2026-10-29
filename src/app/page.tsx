@@ -176,15 +176,28 @@ export default function Home() {
 
   const editorialArticles: EditorialArticle[] = [
     {
-      id: "priyanka-chopra-karwa-chauth-latest",
+      id: "bhumi-akshay-priyadarshan-latest",
       anchorId: "latest-story",
-      href: "/priyanka-chopra-karwa-chauth-mehendi-nick-jonas-malti",
-      title: "Priyanka Chopra Does Her Own Karwa Chauth Mehendi for Nick Jonas, and Malti Is Part of It Too",
-      excerpt: "Priyanka Chopra made her own Karwa Chauth mehendi for Nick Jonas with a sweet touch for daughter Malti Marie. See what she wrote.",
+      href: "/bhumi-pednekar-akshay-kumar-priyadarshan-next-film",
+      title: "Bhumi Pednekar Joins Akshay Kumar in Priyadarshan’s Next Film",
+      excerpt: "Bhumi Pednekar is set to star opposite Akshay Kumar in Priyadarshan’s next comedy thriller produced by Tips Films.",
       category: "Latest",
       displayCategory: "LATEST",
       badge: "Latest",
       badgeType: "lime",
+      readTime: "3 MIN READ",
+      image: "/images/bhumi-pednekar-akshay-kumar-priyadarshan-next-film.jpg",
+    },
+    {
+      id: "priyanka-chopra-karwa-chauth-story",
+      anchorId: "bollywood-lifestyle",
+      href: "/priyanka-chopra-karwa-chauth-mehendi-nick-jonas-malti",
+      title: "Priyanka Chopra Does Her Own Karwa Chauth Mehendi for Nick Jonas, and Malti Is Part of It Too",
+      excerpt: "Priyanka Chopra made her own Karwa Chauth mehendi for Nick Jonas with a sweet touch for daughter Malti Marie. See what she wrote.",
+      category: "Bollywood & Hollywood",
+      displayCategory: "BOLLYWOOD & HOLLYWOOD",
+      badge: "Trending",
+      badgeType: "pink",
       readTime: "3 MIN READ",
       image: "/images/priyanka-chopra-karwa-chauth-mehendi-nick-jonas-malti.jpg",
     },
@@ -280,25 +293,25 @@ export default function Home() {
         <section className="hero" id="featured">
           {/* 1. Main Featured Story (Commanding Top Story Presentation) */}
           <Link
-            href="/priyanka-chopra-karwa-chauth-mehendi-nick-jonas-malti"
+            href="/bhumi-pednekar-akshay-kumar-priyadarshan-next-film"
             className="feature-card block transition-all hover:border-[var(--lime)] focus-visible:ring-2 focus-visible:ring-[var(--lime)] group"
             style={{ textDecoration: "none", color: "inherit" }}
-            aria-label="Read full article: Priyanka Chopra Does Her Own Karwa Chauth Mehendi for Nick Jonas, and Malti Is Part of It Too"
+            aria-label="Read full article: Bhumi Pednekar Joins Akshay Kumar in Priyadarshan’s Next Film"
           >
             <div className="feature-media" style={{ overflow: "hidden", position: "relative" }}>
               <Image
-                src="/images/priyanka-chopra-karwa-chauth-mehendi-nick-jonas-malti.jpg"
-                alt="Priyanka Chopra Does Her Own Karwa Chauth Mehendi for Nick Jonas, and Malti Is Part of It Too"
+                src="/images/bhumi-pednekar-akshay-kumar-priyadarshan-next-film.jpg"
+                alt="Bhumi Pednekar Joins Akshay Kumar in Priyadarshan’s Next Film"
                 fill
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 750px"
-                style={{ objectFit: "cover", objectPosition: "center 25%" }}
+                style={{ objectFit: "cover", objectPosition: "center 20%" }}
                 className="group-hover:scale-[1.03] transition-transform duration-500"
               />
               <div className="noise" style={{ pointerEvents: "none" }}></div>
               <div className="feature-tag flex items-center gap-2">
                 <span className="badge pink">🔥 Cover Story</span>
-                <span className="badge">Karwa Chauth 2026</span>
+                <span className="badge">Casting Exclusive</span>
               </div>
             </div>
             <div className="feature-body">
@@ -306,14 +319,14 @@ export default function Home() {
                 <span>★ TOP STORY · BOLLYWOOD EXCLUSIVE</span>
               </div>
               <h1 className="disp" style={{ color: "#fff" }}>
-                Priyanka Chopra Does Her Own Karwa Chauth Mehendi for Nick Jonas, and Malti Is Part of It Too
+                Bhumi Pednekar Joins Akshay Kumar in Priyadarshan’s Next Film
               </h1>
               <p>
-                Priyanka Chopra Jonas keeps Karwa Chauth personal with a heartfelt DIY mehendi dedicated to Nick Jonas and featuring a special touch for daughter Malti Marie.
+                Bhumi Pednekar is set to star opposite Akshay Kumar in Priyadarshan’s next comedy thriller produced by Tips Films, marking the beloved pair’s third on-screen collaboration.
               </p>
               <div className="meta-row mt-auto pt-3 border-t border-white/[0.06] flex items-center justify-between">
                 <div className="flex items-center gap-3">
-                  <span>BOLLYWOOD</span>
+                  <span>BOLLYWOOD &amp; CINEMA</span>
                   <span className="dot-sep">◆</span>
                   <span>3 MIN READ</span>
                   <span className="dot-sep">◆</span>
@@ -336,6 +349,18 @@ export default function Home() {
               <span className="trend-rank">01</span>
               <div className="trend-text">
                 <Link
+                  href="/priyanka-chopra-karwa-chauth-mehendi-nick-jonas-malti"
+                  style={{ color: "inherit" }}
+                >
+                  <h3>Priyanka Chopra does her own Karwa Chauth mehendi for Nick Jonas</h3>
+                  <span>BOLLYWOOD · 94K REACTIONS</span>
+                </Link>
+              </div>
+            </div>
+            <div className="trend-item">
+              <span className="trend-rank">02</span>
+              <div className="trend-text">
+                <Link
                   href="/janhvi-kapoor-peddi-controversy-koffee-with-karan-9"
                   style={{ color: "inherit" }}
                 >
@@ -345,7 +370,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">02</span>
+              <span className="trend-rank">03</span>
               <div className="trend-text">
                 <Link
                   href="/shreya-kalra-karan-patel-reels-comment-rise-and-fall-2"
@@ -357,7 +382,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">03</span>
+              <span className="trend-rank">04</span>
               <div className="trend-text">
                 <Link
                   href="/ramayana-la-premiere-ranbir-kapoor-yash-sai-pallavi"
@@ -369,7 +394,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">04</span>
+              <span className="trend-rank">05</span>
               <div className="trend-text">
                 <Link
                   href="/godzilla-minus-zero-india-release-delayed-ramayana"
@@ -377,18 +402,6 @@ export default function Home() {
                 >
                   <h3>Godzilla Minus Zero reportedly delayed by 2 weeks over Ramayana IMAX clash</h3>
                   <span>CINEMA · 64K REACTIONS</span>
-                </Link>
-              </div>
-            </div>
-            <div className="trend-item">
-              <span className="trend-rank">05</span>
-              <div className="trend-text">
-                <Link
-                  href="/vijay-deverakonda-rashmika-mandanna-cyber-crime-complaint-hyderabad"
-                  style={{ color: "inherit" }}
-                >
-                  <h3>Vijay &amp; Rashmika team takes legal action against fake posts &amp; online trolling</h3>
-                  <span>EXCLUSIVE · 52K REACTIONS</span>
                 </Link>
               </div>
             </div>

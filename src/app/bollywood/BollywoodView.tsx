@@ -20,6 +20,16 @@ interface BollywoodArticle {
 
 const bollywoodArticles: BollywoodArticle[] = [
   {
+    id: "bhumi-pednekar-akshay-kumar-next-film",
+    category: "Casting Exclusive",
+    title: "Bhumi Pednekar Joins Akshay Kumar in Priyadarshan’s Next Film",
+    badge: "Exclusive Scoop",
+    badgeType: "pink",
+    image: "/images/bhumi-pednekar-akshay-kumar-priyadarshan-next-film.jpg",
+    href: "/bhumi-pednekar-akshay-kumar-priyadarshan-next-film",
+    readOrTime: "3 MIN READ",
+  },
+  {
     id: "priyanka-chopra-karwa-chauth",
     category: "Festivals & Culture",
     title: "Priyanka Chopra Does Her Own Karwa Chauth Mehendi for Nick Jonas, and Malti Is Part of It Too",
@@ -126,19 +136,19 @@ export default function BollywoodView() {
 
         {/* Lead Section: Latest Bollywood Published Article (Cover Story) + Exclusive & Global Premiere Stack */}
         <section className="lead">
-          {/* Cover Story: Latest Published Bollywood Story (Priyanka Chopra) */}
+          {/* Cover Story: Latest Published Bollywood Story (Bhumi Pednekar & Akshay Kumar) */}
           <Link
-            href="/priyanka-chopra-karwa-chauth-mehendi-nick-jonas-malti"
+            href="/bhumi-pednekar-akshay-kumar-priyadarshan-next-film"
             className="feature-card group block"
-            aria-label="Read full cover story: Priyanka Chopra Does Her Own Karwa Chauth Mehendi for Nick Jonas, and Malti Is Part of It Too"
+            aria-label="Read full cover story: Bhumi Pednekar Joins Akshay Kumar in Priyadarshan’s Next Film"
           >
             <div className="feature-media relative overflow-hidden">
               <Image
-                src="/images/priyanka-chopra-karwa-chauth-mehendi-nick-jonas-malti.jpg"
-                alt="Priyanka Chopra Does Her Own Karwa Chauth Mehendi for Nick Jonas, and Malti Is Part of It Too"
+                src="/images/bhumi-pednekar-akshay-kumar-priyadarshan-next-film.jpg"
+                alt="Bhumi Pednekar Joins Akshay Kumar in Priyadarshan’s Next Film"
                 fill
                 priority
-                className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
                 sizes="(max-width: 980px) 100vw, 65vw"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[var(--ink-2)] via-transparent to-black/40 pointer-events-none" />
@@ -149,13 +159,13 @@ export default function BollywoodView() {
             </div>
             <div className="feature-body">
               <h2 className="disp text-white group-hover:text-[var(--lime)] transition-colors">
-                Priyanka Chopra Does Her Own Karwa Chauth Mehendi for Nick Jonas, and Malti Is Part of It Too
+                Bhumi Pednekar Joins Akshay Kumar in Priyadarshan’s Next Film
               </h2>
               <p>
-                Priyanka Chopra Jonas keeps Karwa Chauth personal with a heartfelt DIY mehendi dedicated to Nick Jonas and featuring a special touch for daughter Malti Marie.
+                Bhumi Pednekar signs on as the female lead opposite Akshay Kumar in Priyadarshan’s upcoming comedy thriller, marking their third on-screen collaboration after Toilet and Raksha Bandhan.
               </p>
               <div className="meta-row mt-3">
-                <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; FESTIVALS</span>
+                <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; CASTING</span>
                 <span className="dot-sep">◆</span>
                 <span>3 MIN READ</span>
                 <span className="dot-sep">◆</span>
@@ -164,12 +174,40 @@ export default function BollywoodView() {
             </div>
           </Link>
 
-          {/* Right Stack: KWK Exclusive & Legal Action */}
+          {/* Right Stack: The last 2 blogs uploaded before the latest one */}
           <div className="stack">
-            {/* Card 1: Janhvi Kapoor Peddi Controversy */}
+            {/* Card 1: Priyanka Chopra DIY Karwa Chauth */}
+            <Link
+              href="/priyanka-chopra-karwa-chauth-mehendi-nick-jonas-malti"
+              className="card m6 group block"
+            >
+              <div className="card-media relative overflow-hidden">
+                <Image
+                  src="/images/priyanka-chopra-karwa-chauth-mehendi-nick-jonas-malti.jpg"
+                  alt="Priyanka Chopra Does Her Own Karwa Chauth Mehendi for Nick Jonas"
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 980px) 100vw, 35vw"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[var(--ink-2)] via-transparent to-black/30 pointer-events-none" />
+                <span className="badge pink z-10 relative">Trending Scoop</span>
+              </div>
+              <div className="card-body">
+                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
+                  Priyanka Chopra Does Her Own Karwa Chauth Mehendi for Nick Jonas
+                </h3>
+                <div className="meta-row mt-2">
+                  <span className="text-[var(--magenta)] font-bold">FESTIVALS</span>
+                  <span className="dot-sep">◆</span>
+                  <span>3 MIN READ</span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Card 2: Janhvi Kapoor Peddi Controversy */}
             <Link
               href="/janhvi-kapoor-peddi-controversy-koffee-with-karan-9"
-              className="card m6 group block"
+              className="card m2 group block"
             >
               <div className="card-media relative overflow-hidden">
                 <Image
@@ -193,34 +231,6 @@ export default function BollywoodView() {
                 </div>
               </div>
             </Link>
-
-            {/* Card 2: Ramayana LA Premiere */}
-            <Link
-              href="/ramayana-la-premiere-ranbir-kapoor-yash-sai-pallavi"
-              className="card m2 group block"
-            >
-              <div className="card-media relative overflow-hidden">
-                <Image
-                  src="/images/ramayana-la-premiere-ranbir-kapoor-yash-sai-pallavi.jpg"
-                  alt="Ramayana LA Premiere: Ranbir Kapoor, Yash & Sai Pallavi Stun Hollywood"
-                  fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
-                  sizes="(max-width: 980px) 100vw, 35vw"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-[var(--ink-2)] via-transparent to-black/30 pointer-events-none" />
-                <span className="badge pink z-10 relative">Global Premiere</span>
-              </div>
-              <div className="card-body">
-                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
-                  Ramayana LA Premiere: Ranbir Kapoor, Yash &amp; Sai Pallavi Stun Hollywood
-                </h3>
-                <div className="meta-row mt-2">
-                  <span className="text-[var(--magenta)] font-bold">RED CARPET</span>
-                  <span className="dot-sep">◆</span>
-                  <span>4 MIN READ</span>
-                </div>
-              </div>
-            </Link>
           </div>
         </section>
 
@@ -233,7 +243,7 @@ export default function BollywoodView() {
               </h2>
             </div>
             <span className="text-xs font-mono text-[var(--lime)] font-bold">
-              5 STORIES PUBLISHED
+              6 STORIES PUBLISHED
             </span>
           </div>
 
