@@ -176,17 +176,17 @@ export default function Home() {
 
   const editorialArticles: EditorialArticle[] = [
     {
-      id: "janhvi-kapoor-peddi-latest",
+      id: "priyanka-chopra-karwa-chauth-latest",
       anchorId: "latest-story",
-      href: "/janhvi-kapoor-peddi-controversy-koffee-with-karan-9",
-      title: "Janhvi Kapoor Breaks Silence on Peddi Controversy: 'A Violating Experience'",
-      excerpt: "Janhvi Kapoor opens up on the Peddi objectification row on KWK 9. Read what she said, the director's apology and reactions.",
+      href: "/priyanka-chopra-karwa-chauth-mehendi-nick-jonas-malti",
+      title: "Priyanka Chopra Does Her Own Karwa Chauth Mehendi for Nick Jonas, and Malti Is Part of It Too",
+      excerpt: "Priyanka Chopra made her own Karwa Chauth mehendi for Nick Jonas with a sweet touch for daughter Malti Marie. See what she wrote.",
       category: "Latest",
       displayCategory: "LATEST",
       badge: "Latest",
       badgeType: "lime",
-      readTime: "4 MIN READ",
-      image: "/images/janhvi-kapoor-peddi-controversy-koffee-with-karan-9.jpg",
+      readTime: "3 MIN READ",
+      image: "/images/priyanka-chopra-karwa-chauth-mehendi-nick-jonas-malti.jpg",
     },
     {
       id: "vijay-rashmika-cybercrime",
@@ -215,17 +215,17 @@ export default function Home() {
       image: "/images/shreya-kalra-karan-patel-reels-comment-rise-and-fall-2.jpg",
     },
     {
-      id: "ramayana-la-premiere-buzz",
+      id: "janhvi-kapoor-peddi-bollywood",
       anchorId: "bollywood",
-      href: "/ramayana-la-premiere-ranbir-kapoor-yash-sai-pallavi",
-      title: "Ramayana LA Premiere: Actors Steal the Red Carpet",
-      excerpt: "Ranbir Kapoor, Yash and Sai Pallavi walked the red carpet at the Academy Museum in Los Angeles for the ₹4,000 Cr global premiere.",
+      href: "/janhvi-kapoor-peddi-controversy-koffee-with-karan-9",
+      title: "Janhvi Kapoor Breaks Silence on Peddi Controversy: 'A Violating Experience'",
+      excerpt: "Janhvi Kapoor opens up on the Peddi objectification row on KWK 9. Read what she said, the director's apology and reactions.",
       category: "Bollywood & Hollywood",
       displayCategory: "BOLLYWOOD & HOLLYWOOD",
       badge: "🔥 Bollywood & Hollywood",
       badgeType: "pink",
       readTime: "4 MIN READ",
-      image: "/images/ramayana-la-premiere-ranbir-kapoor-yash-sai-pallavi.jpg",
+      image: "/images/janhvi-kapoor-peddi-controversy-koffee-with-karan-9.jpg",
     },
     {
       id: "godzilla-imax-delay",
@@ -267,25 +267,25 @@ export default function Home() {
         <section className="hero" id="featured">
           {/* 1. Main Featured Story (Commanding Top Story Presentation) */}
           <Link
-            href="/janhvi-kapoor-peddi-controversy-koffee-with-karan-9"
+            href="/priyanka-chopra-karwa-chauth-mehendi-nick-jonas-malti"
             className="feature-card block transition-all hover:border-[var(--lime)] focus-visible:ring-2 focus-visible:ring-[var(--lime)] group"
             style={{ textDecoration: "none", color: "inherit" }}
-            aria-label="Read full article: Janhvi Kapoor Breaks Silence on Peddi Controversy"
+            aria-label="Read full article: Priyanka Chopra Does Her Own Karwa Chauth Mehendi for Nick Jonas, and Malti Is Part of It Too"
           >
             <div className="feature-media" style={{ overflow: "hidden", position: "relative" }}>
               <Image
-                src="/images/janhvi-kapoor-peddi-controversy-koffee-with-karan-9.jpg"
-                alt="Janhvi Kapoor Breaks Silence on Peddi Controversy on Koffee With Karan 9"
+                src="/images/priyanka-chopra-karwa-chauth-mehendi-nick-jonas-malti.jpg"
+                alt="Priyanka Chopra Does Her Own Karwa Chauth Mehendi for Nick Jonas, and Malti Is Part of It Too"
                 fill
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 750px"
-                style={{ objectFit: "cover", objectPosition: "center 20%" }}
+                style={{ objectFit: "cover", objectPosition: "center 25%" }}
                 className="group-hover:scale-[1.03] transition-transform duration-500"
               />
               <div className="noise" style={{ pointerEvents: "none" }}></div>
               <div className="feature-tag flex items-center gap-2">
                 <span className="badge pink">🔥 Cover Story</span>
-                <span className="badge">Koffee With Karan 9</span>
+                <span className="badge">Karwa Chauth 2026</span>
               </div>
             </div>
             <div className="feature-body">
@@ -293,16 +293,16 @@ export default function Home() {
                 <span>★ TOP STORY · BOLLYWOOD EXCLUSIVE</span>
               </div>
               <h1 className="disp" style={{ color: "#fff" }}>
-                Janhvi Kapoor Breaks Silence on Peddi Controversy: &ldquo;A Violating Experience&rdquo;
+                Priyanka Chopra Does Her Own Karwa Chauth Mehendi for Nick Jonas, and Malti Is Part of It Too
               </h1>
               <p>
-                Janhvi Kapoor ends her silence on Koffee With Karan Season 9, addressing the Peddi objectification row, admitting personal regrets, and opening up on on-set agency.
+                Priyanka Chopra Jonas keeps Karwa Chauth personal with a heartfelt DIY mehendi dedicated to Nick Jonas and featuring a special touch for daughter Malti Marie.
               </p>
               <div className="meta-row mt-auto pt-3 border-t border-white/[0.06] flex items-center justify-between">
                 <div className="flex items-center gap-3">
                   <span>BOLLYWOOD</span>
                   <span className="dot-sep">◆</span>
-                  <span>4 MIN READ</span>
+                  <span>3 MIN READ</span>
                   <span className="dot-sep">◆</span>
                   <span style={{ color: "var(--lime)" }}>EDITORIAL DESK</span>
                 </div>
@@ -323,6 +323,18 @@ export default function Home() {
               <span className="trend-rank">01</span>
               <div className="trend-text">
                 <Link
+                  href="/janhvi-kapoor-peddi-controversy-koffee-with-karan-9"
+                  style={{ color: "inherit" }}
+                >
+                  <h3>Janhvi Kapoor breaks silence on Peddi controversy on Koffee With Karan 9</h3>
+                  <span>BOLLYWOOD · 82K REACTIONS</span>
+                </Link>
+              </div>
+            </div>
+            <div className="trend-item">
+              <span className="trend-rank">02</span>
+              <div className="trend-text">
+                <Link
                   href="/shreya-kalra-karan-patel-reels-comment-rise-and-fall-2"
                   style={{ color: "inherit" }}
                 >
@@ -332,7 +344,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">02</span>
+              <span className="trend-rank">03</span>
               <div className="trend-text">
                 <Link
                   href="/ramayana-la-premiere-ranbir-kapoor-yash-sai-pallavi"
@@ -344,7 +356,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">02</span>
+              <span className="trend-rank">04</span>
               <div className="trend-text">
                 <Link
                   href="/godzilla-minus-zero-india-release-delayed-ramayana"
@@ -356,29 +368,15 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">03</span>
+              <span className="trend-rank">05</span>
               <div className="trend-text">
                 <Link
                   href="/vijay-deverakonda-rashmika-mandanna-cyber-crime-complaint-hyderabad"
                   style={{ color: "inherit" }}
                 >
-                  <h3>Vijay & Rashmika team takes legal action against fake posts & KWK 9 trolling</h3>
+                  <h3>Vijay &amp; Rashmika team takes legal action against fake posts &amp; online trolling</h3>
                   <span>EXCLUSIVE · 52K REACTIONS</span>
                 </Link>
-              </div>
-            </div>
-            <div className="trend-item">
-              <span className="trend-rank">04</span>
-              <div className="trend-text">
-                <h3>Splitsvilla&apos;s most talked-about couple just called it quits on camera</h3>
-                <span>SPLITSVILLA · 38K REACTIONS</span>
-              </div>
-            </div>
-            <div className="trend-item">
-              <span className="trend-rank">05</span>
-              <div className="trend-text">
-                <h3>Bigg Boss Weekend Ka Vaar: Nominations ignite fiery house confrontations</h3>
-                <span>BIGG BOSS · 45K REACTIONS</span>
               </div>
             </div>
           </div>

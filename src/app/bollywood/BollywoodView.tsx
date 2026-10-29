@@ -136,16 +136,16 @@ export default function BollywoodView() {
 
         {/* Lead Section: Latest Bollywood Published Article (Cover Story) + Exclusive & Global Premiere Stack */}
         <section className="lead">
-          {/* Cover Story: Latest Published Bollywood Story (Janhvi Kapoor) */}
+          {/* Cover Story: Latest Published Bollywood Story (Priyanka Chopra) */}
           <Link
-            href="/janhvi-kapoor-peddi-controversy-koffee-with-karan-9"
+            href="/priyanka-chopra-karwa-chauth-mehendi-nick-jonas-malti"
             className="feature-card group block"
-            aria-label="Read full cover story: Janhvi Kapoor Breaks Silence on Peddi Controversy"
+            aria-label="Read full cover story: Priyanka Chopra Does Her Own Karwa Chauth Mehendi for Nick Jonas, and Malti Is Part of It Too"
           >
             <div className="feature-media relative overflow-hidden">
               <Image
-                src="/images/janhvi-kapoor-peddi-controversy-koffee-with-karan-9.jpg"
-                alt="Janhvi Kapoor Breaks Silence on Peddi Controversy on Koffee With Karan 9"
+                src="/images/priyanka-chopra-karwa-chauth-mehendi-nick-jonas-malti.jpg"
+                alt="Priyanka Chopra Does Her Own Karwa Chauth Mehendi for Nick Jonas, and Malti Is Part of It Too"
                 fill
                 priority
                 className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
@@ -159,24 +159,52 @@ export default function BollywoodView() {
             </div>
             <div className="feature-body">
               <h2 className="disp text-white group-hover:text-[var(--lime)] transition-colors">
-                Janhvi Kapoor Breaks Silence on Peddi Controversy
+                Priyanka Chopra Does Her Own Karwa Chauth Mehendi for Nick Jonas, and Malti Is Part of It Too
               </h2>
               <p>
-                Janhvi Kapoor opens up on the Peddi objectification row on Koffee With Karan 9. Inside what she said, the director’s apology, and reactions from Rashmika, Vijay and the industry.
+                Priyanka Chopra Jonas keeps Karwa Chauth personal with a heartfelt DIY mehendi dedicated to Nick Jonas and featuring a special touch for daughter Malti Marie.
               </p>
               <div className="meta-row mt-3">
-                <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; CINEMA</span>
+                <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; FESTIVALS</span>
                 <span className="dot-sep">◆</span>
-                <span>4 MIN READ</span>
+                <span>3 MIN READ</span>
                 <span className="dot-sep">◆</span>
                 <span className="text-[var(--lime)] font-bold">JUST IN</span>
               </div>
             </div>
           </Link>
 
-          {/* Right Stack: Exclusive & Global Premiere */}
+          {/* Right Stack: KWK Exclusive & Legal Action */}
           <div className="stack">
-            {/* Exclusive Card: Vijay & Rashmika Cyber Crime Complaint */}
+            {/* Card 1: Janhvi Kapoor Peddi Controversy */}
+            <Link
+              href="/janhvi-kapoor-peddi-controversy-koffee-with-karan-9"
+              className="card m6 group block"
+            >
+              <div className="card-media relative overflow-hidden">
+                <Image
+                  src="/images/janhvi-kapoor-peddi-controversy-koffee-with-karan-9.jpg"
+                  alt="Janhvi Kapoor Breaks Silence on Peddi Controversy"
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 980px) 100vw, 35vw"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[var(--ink-2)] via-transparent to-black/30 pointer-events-none" />
+                <span className="badge pink z-10 relative">Exclusive Interview</span>
+              </div>
+              <div className="card-body">
+                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
+                  Janhvi Kapoor Breaks Silence on Peddi Controversy: &ldquo;A Violating Experience&rdquo;
+                </h3>
+                <div className="meta-row mt-2">
+                  <span className="text-[var(--magenta)] font-bold">KWK 9 SCOOP</span>
+                  <span className="dot-sep">◆</span>
+                  <span>4 MIN READ</span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Card 2: Vijay & Rashmika Cyber Crime Complaint */}
             <Link
               href="/vijay-deverakonda-rashmika-mandanna-cyber-crime-complaint-hyderabad"
               className="card m2 group block"
@@ -200,34 +228,6 @@ export default function BollywoodView() {
                   <span className="text-[var(--magenta)] font-bold">EXCLUSIVES</span>
                   <span className="dot-sep">◆</span>
                   <span>3 MIN READ</span>
-                </div>
-              </div>
-            </Link>
-
-            {/* Global Premiere Card: Ramayana LA Premiere */}
-            <Link
-              href="/ramayana-la-premiere-ranbir-kapoor-yash-sai-pallavi"
-              className="card m6 group block"
-            >
-              <div className="card-media relative overflow-hidden">
-                <Image
-                  src="/images/ramayana-la-premiere-ranbir-kapoor-yash-sai-pallavi.jpg"
-                  alt="Ramayana LA Premiere: Actors Steal the Red Carpet"
-                  fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
-                  sizes="(max-width: 980px) 100vw, 35vw"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-[var(--ink-2)] via-transparent to-black/30 pointer-events-none" />
-                <span className="badge pink z-10 relative">Global Premiere</span>
-              </div>
-              <div className="card-body">
-                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
-                  Ramayana LA Premiere: Ranbir Kapoor, Yash &amp; Sai Pallavi Stun Hollywood
-                </h3>
-                <div className="meta-row mt-2">
-                  <span className="text-[var(--magenta)] font-bold">GLOBAL PREMIERE</span>
-                  <span className="dot-sep">◆</span>
-                  <span>4 MIN READ</span>
                 </div>
               </div>
             </Link>

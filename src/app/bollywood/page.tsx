@@ -8,6 +8,10 @@ export const metadata: Metadata = {
   keywords: [
     "Bollywood Buzz Originals",
     "Bollywood news",
+    "Priyanka Chopra Karwa Chauth mehendi",
+    "Priyanka Chopra",
+    "Nick Jonas",
+    "Karwa Chauth 2026",
     "Janhvi Kapoor Peddi controversy",
     "Ramayana LA Premiere",
     "Ranbir Kapoor",
@@ -28,10 +32,10 @@ export const metadata: Metadata = {
     siteName: "Buzz Originals",
     images: [
       {
-        url: "/images/janhvi-kapoor-peddi-controversy-koffee-with-karan-9.jpg",
-        width: 819,
-        height: 1024,
-        alt: "Janhvi Kapoor Breaks Silence on Peddi Controversy — Buzz Originals Bollywood",
+        url: "/images/priyanka-chopra-karwa-chauth-mehendi-nick-jonas-malti.jpg",
+        width: 1024,
+        height: 682,
+        alt: "Priyanka Chopra DIY Karwa Chauth Mehendi — Buzz Originals Bollywood",
       },
     ],
     type: "website",
@@ -41,7 +45,7 @@ export const metadata: Metadata = {
     title: "Bollywood — Buzz Originals",
     description:
       "Raw, unfiltered Bollywood coverage of red carpets, gossip, airport sightings & exclusives.",
-    images: ["/images/janhvi-kapoor-peddi-controversy-koffee-with-karan-9.jpg"],
+    images: ["/images/priyanka-chopra-karwa-chauth-mehendi-nick-jonas-malti.jpg"],
   },
 };
 
@@ -68,24 +72,30 @@ export default function BollywoodPage() {
         {
           "@type": "ListItem",
           position: 1,
+          name: "Priyanka Chopra Does Her Own Karwa Chauth Mehendi for Nick Jonas, and Malti Is Part of It Too",
+          url: "https://www.buzzoriginals.com/priyanka-chopra-karwa-chauth-mehendi-nick-jonas-malti",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
           name: "Janhvi Kapoor Breaks Silence on Peddi Controversy",
           url: "https://www.buzzoriginals.com/janhvi-kapoor-peddi-controversy-koffee-with-karan-9",
         },
         {
           "@type": "ListItem",
-          position: 2,
+          position: 3,
           name: "Vijay & Rashmika team files cyber crime complaint over KWK 9 online trolling",
           url: "https://www.buzzoriginals.com/vijay-deverakonda-rashmika-mandanna-cyber-crime-complaint-hyderabad",
         },
         {
           "@type": "ListItem",
-          position: 3,
+          position: 4,
           name: "Ramayana LA Premiere: Actors Steal the Red Carpet",
           url: "https://www.buzzoriginals.com/ramayana-la-premiere-ranbir-kapoor-yash-sai-pallavi",
         },
         {
           "@type": "ListItem",
-          position: 4,
+          position: 5,
           name: "Godzilla Minus Zero India Release Delayed Over Ramayana IMAX Battle",
           url: "https://www.buzzoriginals.com/godzilla-minus-zero-india-release-delayed-ramayana",
         },
