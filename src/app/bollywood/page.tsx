@@ -8,6 +8,10 @@ export const metadata: Metadata = {
   keywords: [
     "Bollywood Buzz Originals",
     "Bollywood news",
+    "Junglywood trailer",
+    "Junglywood",
+    "Shaan R Grover",
+    "Chand Mohammad",
     "Disha Patani clothing brand DZ",
     "Disha Patani DZ",
     "Disha Patani new look",
@@ -40,10 +44,10 @@ export const metadata: Metadata = {
     siteName: "Buzz Originals",
     images: [
       {
-        url: "/images/disha-patani-launches-clothing-brand-dz.jpg",
+        url: "/images/junglywood-trailer-shaan-r-grover.jpg",
         width: 1024,
         height: 576,
-        alt: "Disha Patani Launches Her Own Clothing Brand DZ — Buzz Originals Bollywood",
+        alt: "Junglywood Trailer Out: Shaan R Grover's Bollywood Thriller — Buzz Originals Bollywood",
       },
     ],
     type: "website",
@@ -53,7 +57,7 @@ export const metadata: Metadata = {
     title: "Bollywood — Buzz Originals",
     description:
       "Raw, unfiltered Bollywood coverage of red carpets, gossip, airport sightings & exclusives.",
-    images: ["/images/disha-patani-launches-clothing-brand-dz.jpg"],
+    images: ["/images/junglywood-trailer-shaan-r-grover.jpg"],
   },
 };
 
@@ -80,54 +84,60 @@ export default function BollywoodPage() {
         {
           "@type": "ListItem",
           position: 1,
+          name: "Junglywood Trailer Out: Shaan R Grover Takes On Bollywood's Insider vs Outsider Debate",
+          url: "https://www.buzzoriginals.com/junglywood-trailer-shaan-r-grover",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
           name: "Disha Patani Launches Her Own Clothing Brand DZ",
           url: "https://www.buzzoriginals.com/disha-patani-launches-clothing-brand-dz",
         },
         {
           "@type": "ListItem",
-          position: 2,
+          position: 3,
           name: "Janhvi Kapoor's \"Concert\" Advice for Veer Pahariya on Koffee With Karan Is Going Viral",
           url: "https://www.buzzoriginals.com/janhvi-kapoor-veer-pahariya-concert-advice-koffee-with-karan",
         },
         {
           "@type": "ListItem",
-          position: 3,
+          position: 4,
           name: "KBC 18 Diwali Special: Ramayana Cast Joins Big B, Ranbir Shares Alia Bhatt Proposal Story",
           url: "https://www.buzzoriginals.com/kbc-18-diwali-special-ranbir-kapoor-alia-bhatt-proposal-story",
         },
         {
           "@type": "ListItem",
-          position: 4,
+          position: 5,
           name: "Bhumi Pednekar Joins Akshay Kumar in Priyadarshan’s Next Film",
           url: "https://www.buzzoriginals.com/bhumi-pednekar-akshay-kumar-priyadarshan-next-film",
         },
         {
           "@type": "ListItem",
-          position: 5,
+          position: 6,
           name: "Priyanka Chopra Does Her Own Karwa Chauth Mehendi for Nick Jonas, and Malti Is Part of It Too",
           url: "https://www.buzzoriginals.com/priyanka-chopra-karwa-chauth-mehendi-nick-jonas-malti",
         },
         {
           "@type": "ListItem",
-          position: 6,
+          position: 7,
           name: "Janhvi Kapoor Breaks Silence on Peddi Controversy",
           url: "https://www.buzzoriginals.com/janhvi-kapoor-peddi-controversy-koffee-with-karan-9",
         },
         {
           "@type": "ListItem",
-          position: 7,
+          position: 8,
           name: "Ramayana LA Premiere: Actors Steal the Red Carpet",
           url: "https://www.buzzoriginals.com/ramayana-la-premiere-ranbir-kapoor-yash-sai-pallavi",
         },
         {
           "@type": "ListItem",
-          position: 8,
+          position: 9,
           name: "Godzilla Minus Zero India Release Delayed Over Ramayana IMAX Battle",
           url: "https://www.buzzoriginals.com/godzilla-minus-zero-india-release-delayed-ramayana",
         },
         {
           "@type": "ListItem",
-          position: 9,
+          position: 10,
           name: "Vijay & Rashmika team files cyber crime complaint over KWK 9 online trolling",
           url: "https://www.buzzoriginals.com/vijay-deverakonda-rashmika-mandanna-cyber-crime-complaint-hyderabad",
         },

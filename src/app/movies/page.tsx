@@ -7,6 +7,10 @@ export const metadata: Metadata = {
     "Movies coverage from Buzz Originals — raw, unfiltered, built for the group chat. Box office numbers, trailer breakdowns, clashes and spoiler-free verdicts.",
   keywords: [
     "Movies Buzz Originals",
+    "Junglywood trailer",
+    "Junglywood",
+    "Shaan R Grover",
+    "Chand Mohammad",
     "Bhumi Pednekar Akshay Kumar Priyadarshan film",
     "Bhumi Pednekar",
     "Akshay Kumar",
@@ -32,10 +36,10 @@ export const metadata: Metadata = {
     siteName: "Buzz Originals",
     images: [
       {
-        url: "/images/bhumi-pednekar-akshay-kumar-priyadarshan-next-film.jpg",
+        url: "/images/junglywood-trailer-shaan-r-grover.jpg",
         width: 1024,
         height: 576,
-        alt: "Bhumi Pednekar Joins Akshay Kumar in Priyadarshan’s Next Film — Buzz Originals Movies",
+        alt: "Junglywood Trailer Out: Shaan R Grover's Bollywood Thriller — Buzz Originals Movies",
       },
     ],
     type: "website",
@@ -45,7 +49,7 @@ export const metadata: Metadata = {
     title: "Movies — Buzz Originals",
     description:
       "Raw, unfiltered movie coverage: box office clashes, trailer breakdowns & spoiler-free verdicts.",
-    images: ["/images/bhumi-pednekar-akshay-kumar-priyadarshan-next-film.jpg"],
+    images: ["/images/junglywood-trailer-shaan-r-grover.jpg"],
   },
 };
 
@@ -72,24 +76,30 @@ export default function MoviesPage() {
         {
           "@type": "ListItem",
           position: 1,
+          name: "Junglywood Trailer Out: Shaan R Grover Takes On Bollywood's Insider vs Outsider Debate",
+          url: "https://www.buzzoriginals.com/junglywood-trailer-shaan-r-grover",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
           name: "Bhumi Pednekar Joins Akshay Kumar in Priyadarshan’s Next Film",
           url: "https://www.buzzoriginals.com/bhumi-pednekar-akshay-kumar-priyadarshan-next-film",
         },
         {
           "@type": "ListItem",
-          position: 2,
+          position: 3,
           name: "Janhvi Kapoor Breaks Silence on Peddi Controversy",
           url: "https://www.buzzoriginals.com/janhvi-kapoor-peddi-controversy-koffee-with-karan-9",
         },
         {
           "@type": "ListItem",
-          position: 3,
+          position: 4,
           name: "Ramayana LA Premiere: Actors Steal the Red Carpet",
           url: "https://www.buzzoriginals.com/ramayana-la-premiere-ranbir-kapoor-yash-sai-pallavi",
         },
         {
           "@type": "ListItem",
-          position: 4,
+          position: 5,
           name: "Godzilla Minus Zero India Release Delayed Over Ramayana IMAX Battle",
           url: "https://www.buzzoriginals.com/godzilla-minus-zero-india-release-delayed-ramayana",
         },

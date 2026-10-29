@@ -20,6 +20,16 @@ interface MovieArticle {
 
 const movieArticles: MovieArticle[] = [
   {
+    id: "junglywood-trailer-shaan-grover",
+    category: "Trailer & Thriller",
+    title: "Junglywood Trailer Out: Shaan R Grover Takes On Bollywood's Insider vs Outsider Debate",
+    badge: "Trailer Out",
+    badgeType: "pink",
+    image: "/images/junglywood-trailer-shaan-r-grover.jpg",
+    href: "/junglywood-trailer-shaan-r-grover",
+    readOrTime: "3 MIN READ",
+  },
+  {
     id: "bhumi-akshay-priyadarshan-movie",
     category: "Comedy Thriller",
     title: "Bhumi Pednekar Joins Akshay Kumar in Priyadarshan’s Next Film",
@@ -114,18 +124,18 @@ export default function MoviesView() {
           </div>
         </section>
 
-        {/* Lead Section: Featured Movie Card + 2-Item Stack */}
+        {/* Lead Section: Latest Movie Published Article (Cover Story) + The Last 2 Blogs Uploaded Before It */}
         <section className="lead">
-          {/* Featured Card (Bhumi Pednekar & Akshay Kumar in Priyadarshan's Film) */}
+          {/* Featured Card: Junglywood Trailer */}
           <Link
-            href="/bhumi-pednekar-akshay-kumar-priyadarshan-next-film"
+            href="/junglywood-trailer-shaan-r-grover"
             className="feature-card group block"
-            aria-label="Read full article: Bhumi Pednekar Joins Akshay Kumar in Priyadarshan’s Next Film"
+            aria-label="Read full article: Junglywood Trailer Out: Shaan R Grover Takes On Bollywood's Insider vs Outsider Debate"
           >
             <div className="feature-media relative overflow-hidden">
               <Image
-                src="/images/bhumi-pednekar-akshay-kumar-priyadarshan-next-film.jpg"
-                alt="Bhumi Pednekar Joins Akshay Kumar in Priyadarshan’s Next Film"
+                src="/images/junglywood-trailer-shaan-r-grover.jpg"
+                alt="Junglywood Trailer Out: Shaan R Grover Takes On Bollywood's Insider vs Outsider Debate"
                 fill
                 priority
                 className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
@@ -134,15 +144,15 @@ export default function MoviesView() {
               <div className="absolute inset-0 bg-gradient-to-t from-[var(--ink-2)] via-transparent to-black/30 pointer-events-none" />
               <div className="noise" />
               <span className="badge pink feature-tag z-10">
-                🎬 Casting Scoop
+                🎬 Trailer Out
               </span>
             </div>
             <div className="feature-body">
               <h2 className="disp text-white group-hover:text-[var(--lime)] transition-colors">
-                Bhumi Pednekar Joins Akshay Kumar in Priyadarshan’s Next Film
+                Junglywood Trailer Out: Shaan R Grover Takes On Bollywood&apos;s Insider vs Outsider Debate
               </h2>
               <p>
-                Director Priyadarshan confirms Bhumi Pednekar as the leading lady opposite Akshay Kumar in their upcoming comedy thriller produced by Tips Films.
+                The Junglywood trailer is out. Shaan R Grover stars in Chand Mohammad’s zero-VFX dark comedy thriller exploring Bollywood&apos;s fierce insider vs outsider debate.
               </p>
               <div className="meta-row mt-3">
                 <span className="text-[var(--lime)] font-bold">CINEMA</span>
@@ -156,7 +166,35 @@ export default function MoviesView() {
 
           {/* Right Stack: The last 2 movie blogs uploaded before this one */}
           <div className="stack">
-            {/* Card 1: Janhvi Kapoor Peddi Row */}
+            {/* Card 1: Bhumi Pednekar Joins Akshay Kumar */}
+            <Link
+              href="/bhumi-pednekar-akshay-kumar-priyadarshan-next-film"
+              className="card m6 group block"
+            >
+              <div className="card-media relative overflow-hidden">
+                <Image
+                  src="/images/bhumi-pednekar-akshay-kumar-priyadarshan-next-film.jpg"
+                  alt="Bhumi Pednekar Joins Akshay Kumar in Priyadarshan’s Next Film"
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 980px) 100vw, 35vw"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[var(--ink-2)] via-transparent to-black/30 pointer-events-none" />
+                <span className="badge pink z-10 relative">Casting Scoop</span>
+              </div>
+              <div className="card-body">
+                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
+                  Bhumi Pednekar Joins Akshay Kumar in Priyadarshan’s Next Film
+                </h3>
+                <div className="meta-row mt-2">
+                  <span className="text-[var(--lime)] font-bold">CINEMA</span>
+                  <span className="dot-sep">◆</span>
+                  <span>3 MIN READ</span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Card 2: Janhvi Kapoor Peddi Row */}
             <Link
               href="/janhvi-kapoor-peddi-controversy-koffee-with-karan-9"
               className="card m1 group block"
@@ -183,34 +221,6 @@ export default function MoviesView() {
                 </div>
               </div>
             </Link>
-
-            {/* Card 2: Ramayana LA Premiere Card */}
-            <Link
-              href="/ramayana-la-premiere-ranbir-kapoor-yash-sai-pallavi"
-              className="card m3 group block"
-            >
-              <div className="card-media relative overflow-hidden">
-                <Image
-                  src="/images/ramayana-la-premiere-ranbir-kapoor-yash-sai-pallavi.jpg"
-                  alt="Ramayana LA Premiere: Jada Pinkett Smith and ₹4,000 Cr buzz"
-                  fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
-                  sizes="(max-width: 980px) 100vw, 35vw"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-[var(--ink-2)] via-transparent to-black/30 pointer-events-none" />
-                <span className="badge pink z-10 relative">Global Premiere</span>
-              </div>
-              <div className="card-body">
-                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
-                  Inside Ramayana’s LA Premiere: Jada Pinkett Smith, Hollywood stars &amp; ₹4,000 Cr buzz
-                </h3>
-                <div className="meta-row mt-2">
-                  <span className="text-[var(--magenta)] font-bold">RELEASES</span>
-                  <span className="dot-sep">◆</span>
-                  <span>4 MIN READ</span>
-                </div>
-              </div>
-            </Link>
           </div>
         </section>
 
@@ -223,7 +233,7 @@ export default function MoviesView() {
               </h2>
             </div>
             <span className="text-xs font-mono text-[var(--lime)] font-bold">
-              4 STORIES PUBLISHED
+              5 STORIES PUBLISHED
             </span>
           </div>
 

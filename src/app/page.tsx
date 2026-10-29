@@ -177,15 +177,28 @@ export default function Home() {
 
   const editorialArticles: EditorialArticle[] = [
     {
-      id: "bigg-boss-20-gullu-eviction",
+      id: "junglywood-trailer-shaan-grover",
       anchorId: "latest-story",
+      href: "/junglywood-trailer-shaan-r-grover",
+      title: "Junglywood Trailer Out: Shaan R Grover Takes On Bollywood's Insider vs Outsider Debate",
+      excerpt: "The Junglywood trailer is out. Shaan R Grover stars in Chand Mohammad’s zero-VFX dark comedy thriller exploring Bollywood's insider vs outsider debate.",
+      category: "Latest",
+      secondaryCategory: "Bollywood & Hollywood",
+      displayCategory: "BOLLYWOOD & MOVIES",
+      badge: "Trailer Out",
+      badgeType: "pink",
+      readTime: "3 MIN READ",
+      image: "/images/junglywood-trailer-shaan-r-grover.jpg",
+    },
+    {
+      id: "bigg-boss-20-gullu-eviction",
+      anchorId: "reality-gullu-story",
       href: "/bigg-boss-20-gullu-evicted-yung-dsa-fight",
       title: "Bigg Boss 20: Will Gullu Be Evicted After Yung DSA Fight?",
       excerpt: "Gullu and Yung DSA’s captaincy task fight has fans demanding eviction, drawing parallels with Nakul Dhull’s exit. Here’s what we know about Bigg Boss 20 so far.",
-      category: "Latest",
-      secondaryCategory: "Reality TV Updates",
+      category: "Reality TV Updates",
       displayCategory: "REALITY TV & BIGG BOSS 20",
-      badge: "Latest",
+      badge: "Eviction Row",
       badgeType: "lime",
       readTime: "3 MIN READ",
       image: "/images/bigg-boss-20-gullu-evicted-yung-dsa-fight.jpg",
@@ -407,15 +420,15 @@ export default function Home() {
         <section className="hero" id="featured">
           {/* 1. Main Featured Story (Commanding Top Story Presentation) */}
           <Link
-            href="/bigg-boss-20-gullu-evicted-yung-dsa-fight"
+            href="/junglywood-trailer-shaan-r-grover"
             className="feature-card block transition-all hover:border-[var(--lime)] focus-visible:ring-2 focus-visible:ring-[var(--lime)] group"
             style={{ textDecoration: "none", color: "inherit" }}
-            aria-label="Read full article: Bigg Boss 20: Will Gullu Be Evicted After Yung DSA Fight?"
+            aria-label="Read full article: Junglywood Trailer Out: Shaan R Grover Takes On Bollywood's Insider vs Outsider Debate"
           >
             <div className="feature-media" style={{ overflow: "hidden", position: "relative" }}>
               <Image
-                src="/images/bigg-boss-20-gullu-evicted-yung-dsa-fight.jpg"
-                alt="Bigg Boss 20: Will Gullu Be Evicted After Yung DSA Fight?"
+                src="/images/junglywood-trailer-shaan-r-grover.jpg"
+                alt="Junglywood Trailer Out: Shaan R Grover Takes On Bollywood's Insider vs Outsider Debate"
                 fill
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 750px"
@@ -425,23 +438,23 @@ export default function Home() {
               <div className="noise" style={{ pointerEvents: "none" }}></div>
               <div className="feature-tag flex items-center gap-2">
                 <span className="badge pink">🔥 Cover Story</span>
-                <span className="badge">Bigg Boss 20</span>
-                <span className="badge lime">Eviction Row</span>
+                <span className="badge">Bollywood</span>
+                <span className="badge lime">Trailer Out</span>
               </div>
             </div>
             <div className="feature-body">
               <div className="flex items-center gap-2 mb-2 font-mono text-xs text-[var(--lime)] font-bold tracking-wider uppercase">
-                <span>★ TOP STORY · BIGG BOSS 20 HIGH DRAMA</span>
+                <span>★ TOP STORY · BOLLYWOOD THRILLER</span>
               </div>
               <h1 className="disp" style={{ color: "#fff" }}>
-                Bigg Boss 20: Will Gullu Be Evicted After Yung DSA Fight?
+                Junglywood Trailer Out: Shaan R Grover Takes On Bollywood&apos;s Insider vs Outsider Debate
               </h1>
               <p>
-                Another day, another fight in the Bigg Boss 20 house. As Gullu and Yung DSA get physical during the captaincy task, fans are demanding the same strict eviction rule that sent Nakul Dhull packing.
+                The Junglywood trailer is finally here. Shaan R Grover headlines Chand Mohammad’s zero-VFX dark comedy thriller, taking viewers into a dangerous party that tackles the film industry&apos;s real power games.
               </p>
               <div className="meta-row mt-auto pt-3 border-t border-white/[0.06] flex items-center justify-between">
                 <div className="flex items-center gap-3">
-                  <span>REALITY TV</span>
+                  <span>MOVIES</span>
                   <span className="dot-sep">◆</span>
                   <span>3 MIN READ</span>
                   <span className="dot-sep">◆</span>
@@ -464,6 +477,18 @@ export default function Home() {
               <span className="trend-rank">01</span>
               <div className="trend-text">
                 <Link
+                  href="/junglywood-trailer-shaan-r-grover"
+                  style={{ color: "inherit" }}
+                >
+                  <h3>Junglywood trailer out: Shaan R Grover tackles Bollywood&apos;s insider vs outsider debate with zero VFX</h3>
+                  <span>BOLLYWOOD &amp; MOVIES · 172K REACTIONS</span>
+                </Link>
+              </div>
+            </div>
+            <div className="trend-item">
+              <span className="trend-rank">02</span>
+              <div className="trend-text">
+                <Link
                   href="/bigg-boss-20-gullu-evicted-yung-dsa-fight"
                   style={{ color: "inherit" }}
                 >
@@ -473,7 +498,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">02</span>
+              <span className="trend-rank">03</span>
               <div className="trend-text">
                 <Link
                   href="/disha-patani-launches-clothing-brand-dz"
@@ -485,7 +510,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">03</span>
+              <span className="trend-rank">04</span>
               <div className="trend-text">
                 <Link
                   href="/bigg-boss-20-100-per-cent-ration-housemates"
@@ -497,7 +522,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">04</span>
+              <span className="trend-rank">05</span>
               <div className="trend-text">
                 <Link
                   href="/janhvi-kapoor-veer-pahariya-concert-advice-koffee-with-karan"
@@ -505,18 +530,6 @@ export default function Home() {
                 >
                   <h3>Janhvi Kapoor&apos;s concert advice for Veer Pahariya on Koffee With Karan 9</h3>
                   <span>BOLLYWOOD &amp; REALITY · 134K REACTIONS</span>
-                </Link>
-              </div>
-            </div>
-            <div className="trend-item">
-              <span className="trend-rank">05</span>
-              <div className="trend-text">
-                <Link
-                  href="/bigg-boss-20-uditi-singh-painful-breakup-scout-love"
-                  style={{ color: "inherit" }}
-                >
-                  <h3>Bigg Boss 20: Uditi Singh opens up on painful breakup after Scout-Love conversation</h3>
-                  <span>REALITY TV · 128K REACTIONS</span>
                 </Link>
               </div>
             </div>

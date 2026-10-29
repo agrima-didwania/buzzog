@@ -20,6 +20,16 @@ interface BollywoodArticle {
 
 const bollywoodArticles: BollywoodArticle[] = [
   {
+    id: "junglywood-trailer-shaan-grover",
+    category: "Trailer & Thriller",
+    title: "Junglywood Trailer Out: Shaan R Grover Takes On Bollywood's Insider vs Outsider Debate",
+    badge: "Trailer Out",
+    badgeType: "pink",
+    image: "/images/junglywood-trailer-shaan-r-grover.jpg",
+    href: "/junglywood-trailer-shaan-r-grover",
+    readOrTime: "3 MIN READ",
+  },
+  {
     id: "disha-patani-clothing-brand-dz",
     category: "Fashion Entrepreneur",
     title: "Disha Patani Launches Her Own Clothing Brand DZ",
@@ -166,16 +176,16 @@ export default function BollywoodView() {
 
         {/* Lead Section: Latest Bollywood Published Article (Cover Story) + The Last 2 Blogs Uploaded Before It */}
         <section className="lead">
-          {/* Cover Story: Latest Published Bollywood Story (Disha Patani Launches Her Own Clothing Brand DZ) */}
+          {/* Cover Story: Latest Published Bollywood Story (Junglywood Trailer) */}
           <Link
-            href="/disha-patani-launches-clothing-brand-dz"
+            href="/junglywood-trailer-shaan-r-grover"
             className="feature-card group block"
-            aria-label="Read full cover story: Disha Patani Launches Her Own Clothing Brand DZ"
+            aria-label="Read full cover story: Junglywood Trailer Out: Shaan R Grover Takes On Bollywood's Insider vs Outsider Debate"
           >
             <div className="feature-media relative overflow-hidden">
               <Image
-                src="/images/disha-patani-launches-clothing-brand-dz.jpg"
-                alt="Disha Patani Launches Her Own Clothing Brand DZ"
+                src="/images/junglywood-trailer-shaan-r-grover.jpg"
+                alt="Junglywood Trailer Out: Shaan R Grover Takes On Bollywood's Insider vs Outsider Debate"
                 fill
                 priority
                 className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
@@ -184,18 +194,18 @@ export default function BollywoodView() {
               <div className="absolute inset-0 bg-gradient-to-t from-[var(--ink-2)] via-transparent to-black/40 pointer-events-none" />
               <div className="noise" />
               <span className="badge pink feature-tag z-10">
-                🔥 Latest Cover Story
+                🎬 Trailer Out
               </span>
             </div>
             <div className="feature-body">
               <h2 className="disp text-white group-hover:text-[var(--lime)] transition-colors">
-                Disha Patani Launches Her Own Clothing Brand DZ
+                Junglywood Trailer Out: Shaan R Grover Takes On Bollywood&apos;s Insider vs Outsider Debate
               </h2>
               <p>
-                Disha Patani turns fashion entrepreneur with DZ, her new clothing brand built around oversized fits, alien-themed designs and a bold promotional music track featuring bleached eyebrows.
+                The Junglywood trailer is out. Shaan R Grover stars in Chand Mohammad’s zero-VFX dark comedy thriller exploring Bollywood&apos;s fierce insider vs outsider debate.
               </p>
               <div className="meta-row mt-3">
-                <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; FASHION</span>
+                <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; CINEMA</span>
                 <span className="dot-sep">◆</span>
                 <span>3 MIN READ</span>
                 <span className="dot-sep">◆</span>
@@ -206,7 +216,35 @@ export default function BollywoodView() {
 
           {/* Right Stack: The last 2 blogs uploaded before the latest one */}
           <div className="stack">
-            {/* Card 1: Janhvi Kapoor Concert Advice */}
+            {/* Card 1: Disha Patani DZ Brand */}
+            <Link
+              href="/disha-patani-launches-clothing-brand-dz"
+              className="card m6 group block"
+            >
+              <div className="card-media relative overflow-hidden">
+                <Image
+                  src="/images/disha-patani-launches-clothing-brand-dz.jpg"
+                  alt="Disha Patani Launches Her Own Clothing Brand DZ"
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 980px) 100vw, 35vw"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[var(--ink-2)] via-transparent to-black/30 pointer-events-none" />
+                <span className="badge pink z-10 relative">Fashion Label</span>
+              </div>
+              <div className="card-body">
+                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
+                  Disha Patani Launches Her Own Clothing Brand DZ
+                </h3>
+                <div className="meta-row mt-2">
+                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; FASHION</span>
+                  <span className="dot-sep">◆</span>
+                  <span>3 MIN READ</span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Card 2: Janhvi Kapoor Concert Advice */}
             <Link
               href="/janhvi-kapoor-veer-pahariya-concert-advice-koffee-with-karan"
               className="card m1 group block"
@@ -233,34 +271,6 @@ export default function BollywoodView() {
                 </div>
               </div>
             </Link>
-
-            {/* Card 2: KBC 18 Diwali Special (Ranbir Kapoor's Proposal Story) */}
-            <Link
-              href="/kbc-18-diwali-special-ranbir-kapoor-alia-bhatt-proposal-story"
-              className="card m6 group block"
-            >
-              <div className="card-media relative overflow-hidden">
-                <Image
-                  src="/images/kbc-18-diwali-special-ranbir-kapoor-alia-bhatt-proposal-story.jpg"
-                  alt="KBC 18 Diwali Special: Ramayana Cast Joins Big B, Ranbir Shares Alia Bhatt Proposal Story"
-                  fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
-                  sizes="(max-width: 980px) 100vw, 35vw"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-[var(--ink-2)] via-transparent to-black/30 pointer-events-none" />
-                <span className="badge pink z-10 relative">Diwali Exclusive</span>
-              </div>
-              <div className="card-body">
-                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
-                  KBC 18 Diwali Special: Ramayana Cast Joins Big B, Ranbir Shares Alia Bhatt Proposal Story
-                </h3>
-                <div className="meta-row mt-2">
-                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; TV</span>
-                  <span className="dot-sep">◆</span>
-                  <span>3 MIN READ</span>
-                </div>
-              </div>
-            </Link>
           </div>
         </section>
 
@@ -273,7 +283,7 @@ export default function BollywoodView() {
               </h2>
             </div>
             <span className="text-xs font-mono text-[var(--lime)] font-bold">
-              9 STORIES PUBLISHED
+              10 STORIES PUBLISHED
             </span>
           </div>
 
