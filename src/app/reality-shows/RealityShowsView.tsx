@@ -22,6 +22,19 @@ interface RealityArticle {
 
 const realityArticles: RealityArticle[] = [
   {
+    id: "bigg-boss-20-uditi-singh-breakup",
+    show: "Bigg Boss",
+    title: "Bigg Boss 20: Scout-Love Talk Brings Back Uditi Singh’s Painful Breakup Memory",
+    excerpt:
+      "Scout OP’s talk with Love Gill stirs up the house as Uditi Singh opens up to Arishfa Khan about her own past heartbreak and Karan Wahi memories.",
+    badge: "Trending",
+    badgeType: "pink",
+    image: "/images/bigg-boss-20-uditi-singh-painful-breakup-scout-love.jpg",
+    href: "/bigg-boss-20-uditi-singh-painful-breakup-scout-love",
+    readTime: "3 MIN READ",
+    timeAgo: "JUST IN",
+  },
+  {
     id: "kbc-18-ranbir-kapoor-proposal",
     show: "KBC 18",
     title: "KBC 18 Diwali Special: Ramayana Cast Joins Big B, Ranbir Shares Alia Bhatt Proposal Story",
@@ -235,38 +248,38 @@ export default function RealityShowsView() {
 
         {/* Lead Section: Featured Reality Card + 2-Item Stack */}
         <section className="lead">
-          {/* Featured Cover Story: KBC 18 Diwali Special */}
+          {/* Featured Cover Story: Bigg Boss 20 Uditi Singh */}
           <Link
-            href="/kbc-18-diwali-special-ranbir-kapoor-alia-bhatt-proposal-story"
+            href="/bigg-boss-20-uditi-singh-painful-breakup-scout-love"
             className="feature-card group block"
-            aria-label="Read full cover story: KBC 18 Diwali Special: Ramayana Cast Joins Big B, Ranbir Shares Alia Bhatt Proposal Story"
+            aria-label="Read full cover story: Bigg Boss 20: Scout-Love Talk Brings Back Uditi Singh’s Painful Breakup Memory"
           >
             <div className="feature-media relative overflow-hidden">
               <Image
-                src="/images/kbc-18-diwali-special-ranbir-kapoor-alia-bhatt-proposal-story.jpg"
-                alt="KBC 18 Diwali Special: Ramayana Cast Joins Big B, Ranbir Shares Alia Bhatt Proposal Story"
+                src="/images/bigg-boss-20-uditi-singh-painful-breakup-scout-love.jpg"
+                alt="Bigg Boss 20: Scout-Love Talk Brings Back Uditi Singh’s Painful Breakup Memory"
                 fill
                 priority
                 className="object-cover transition-transform duration-500 group-hover:scale-105"
                 sizes="(max-width: 980px) 100vw, 65vw"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[var(--ink-2)] via-transparent to-black/30 pointer-events-none" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[var(--ink-2)] via-transparent to-black/40 pointer-events-none" />
               <div className="noise" />
               <span className="badge pink feature-tag z-10">
-                🔥 KBC 18 Diwali Special
+                🔥 Bigg Boss 20 Scoop
               </span>
             </div>
             <div className="feature-body">
               <h2 className="disp text-white group-hover:text-[var(--lime)] transition-colors">
-                KBC 18 Diwali Special: Ramayana Cast Joins Big B, Ranbir Shares Alia Bhatt Proposal Story
+                Bigg Boss 20: Scout-Love Talk Brings Back Uditi Singh’s Painful Breakup Memory
               </h2>
               <p>
-                The cast of Ramayana joins Amitabh Bachchan on KBC 18 Diwali special. Ranbir Kapoor opens up on proposing to Alia Bhatt in Masai Mara with wild lions 100 meters away.
+                Scout OP’s talk with Love Gill stirs up the house as Uditi Singh opens up to Arishfa Khan about her own past heartbreak and feeling uncomfortable watching a partner move on.
               </p>
               <div className="meta-row mt-3">
-                <span className="text-[var(--lime)] font-bold">KBC 18</span>
+                <span className="text-[var(--lime)] font-bold">BIGG BOSS 20</span>
                 <span className="dot-sep">◆</span>
-                <span>4 MIN READ</span>
+                <span>3 MIN READ</span>
                 <span className="dot-sep">◆</span>
                 <span className="text-[var(--magenta)] font-bold">JUST IN</span>
               </div>
@@ -275,10 +288,38 @@ export default function RealityShowsView() {
 
           {/* Right Stack: The last 2 blogs before the latest one */}
           <div className="stack">
-            {/* Card 1: Shreya Kalra vs Karan Patel */}
+            {/* Card 1: KBC 18 Diwali Special */}
+            <Link
+              href="/kbc-18-diwali-special-ranbir-kapoor-alia-bhatt-proposal-story"
+              className="card m1 group block"
+            >
+              <div className="card-media relative overflow-hidden">
+                <Image
+                  src="/images/kbc-18-diwali-special-ranbir-kapoor-alia-bhatt-proposal-story.jpg"
+                  alt="KBC 18 Diwali Special: Ramayana Cast Joins Big B"
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 980px) 100vw, 35vw"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[var(--ink-2)] via-transparent to-black/30 pointer-events-none" />
+                <span className="badge pink z-10 relative">Diwali Scoop</span>
+              </div>
+              <div className="card-body">
+                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
+                  KBC 18 Diwali Special: Ramayana Cast Joins Big B, Ranbir Shares Alia Bhatt Proposal Story
+                </h3>
+                <div className="meta-row mt-2">
+                  <span className="text-[var(--lime)] font-bold">KBC 18</span>
+                  <span className="dot-sep">◆</span>
+                  <span>4 MIN READ</span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Card 2: Shreya Kalra vs Karan Patel */}
             <Link
               href="/shreya-kalra-karan-patel-reels-comment-rise-and-fall-2"
-              className="card m1 group block"
+              className="card m2 group block"
             >
               <div className="card-media relative overflow-hidden">
                 <Image
@@ -302,26 +343,6 @@ export default function RealityShowsView() {
                 </div>
               </div>
             </Link>
-
-            {/* Card 2: Bigg Boss Diary Room Leak */}
-            <Link
-              href="/shreya-kalra-karan-patel-reels-comment-rise-and-fall-2"
-              className="card m2 group block"
-            >
-              <div className="card-media">
-                <span className="badge">New</span>
-              </div>
-              <div className="card-body">
-                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
-                  Housemate’s diary room confession leaks — and it’s messier than expected
-                </h3>
-                <div className="meta-row mt-2">
-                  <span className="text-[var(--lime)] font-bold">BIGG BOSS</span>
-                  <span className="dot-sep">◆</span>
-                  <span>1H AGO</span>
-                </div>
-              </div>
-            </Link>
           </div>
         </section>
 
@@ -334,7 +355,7 @@ export default function RealityShowsView() {
               </h2>
             </div>
             <span className="text-xs font-mono text-[var(--lime)] font-bold">
-              UPDATED HOURLY
+              12 STORIES PUBLISHED
             </span>
           </div>
 

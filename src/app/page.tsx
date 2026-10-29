@@ -176,17 +176,31 @@ export default function Home() {
 
   const editorialArticles: EditorialArticle[] = [
     {
-      id: "kbc-18-ranbir-proposal-latest",
+      id: "bigg-boss-20-uditi-singh-latest",
       anchorId: "latest-story",
-      href: "/kbc-18-diwali-special-ranbir-kapoor-alia-bhatt-proposal-story",
-      title: "KBC 18 Diwali Special: Ramayana Cast Joins Big B, Ranbir Shares Alia Bhatt Proposal Story",
-      excerpt: "Ranbir Kapoor, Sai Pallavi and Ravie Dubey join Amitabh Bachchan on KBC 18 Diwali special, where Ranbir reveals his Masai Mara proposal.",
+      href: "/bigg-boss-20-uditi-singh-painful-breakup-scout-love",
+      title: "Bigg Boss 20: Scout-Love Talk Brings Back Uditi Singh’s Painful Breakup Memory",
+      excerpt: "Scout OP’s talk with Love Gill stirs up the house as Uditi Singh opens up to Arishfa Khan about her own past heartbreak and Karan Wahi memories.",
       category: "Latest",
       secondaryCategory: "Reality TV Updates",
       displayCategory: "LATEST",
       badge: "Latest",
       badgeType: "lime",
       readTime: "3 MIN READ",
+      image: "/images/bigg-boss-20-uditi-singh-painful-breakup-scout-love.jpg",
+    },
+    {
+      id: "kbc-18-ranbir-proposal-latest",
+      anchorId: "reality-kbc",
+      href: "/kbc-18-diwali-special-ranbir-kapoor-alia-bhatt-proposal-story",
+      title: "KBC 18 Diwali Special: Ramayana Cast Joins Big B, Ranbir Shares Alia Bhatt Proposal Story",
+      excerpt: "Ranbir Kapoor, Sai Pallavi and Ravie Dubey join Amitabh Bachchan on KBC 18 Diwali special, where Ranbir reveals his Masai Mara proposal.",
+      category: "Reality TV Updates",
+      secondaryCategory: "Bollywood & Hollywood",
+      displayCategory: "REALITY TV & BOLLYWOOD",
+      badge: "Diwali Special",
+      badgeType: "pink",
+      readTime: "4 MIN READ",
       image: "/images/kbc-18-diwali-special-ranbir-kapoor-alia-bhatt-proposal-story.jpg",
     },
     {
@@ -308,15 +322,15 @@ export default function Home() {
         <section className="hero" id="featured">
           {/* 1. Main Featured Story (Commanding Top Story Presentation) */}
           <Link
-            href="/kbc-18-diwali-special-ranbir-kapoor-alia-bhatt-proposal-story"
+            href="/bigg-boss-20-uditi-singh-painful-breakup-scout-love"
             className="feature-card block transition-all hover:border-[var(--lime)] focus-visible:ring-2 focus-visible:ring-[var(--lime)] group"
             style={{ textDecoration: "none", color: "inherit" }}
-            aria-label="Read full article: KBC 18 Diwali Special: Ramayana Cast Joins Big B, Ranbir Shares Alia Bhatt Proposal Story"
+            aria-label="Read full article: Bigg Boss 20: Scout-Love Talk Brings Back Uditi Singh’s Painful Breakup Memory"
           >
             <div className="feature-media" style={{ overflow: "hidden", position: "relative" }}>
               <Image
-                src="/images/kbc-18-diwali-special-ranbir-kapoor-alia-bhatt-proposal-story.jpg"
-                alt="KBC 18 Diwali Special: Ramayana Cast Joins Big B, Ranbir Shares Alia Bhatt Proposal Story"
+                src="/images/bigg-boss-20-uditi-singh-painful-breakup-scout-love.jpg"
+                alt="Bigg Boss 20: Scout-Love Talk Brings Back Uditi Singh’s Painful Breakup Memory"
                 fill
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 750px"
@@ -326,23 +340,23 @@ export default function Home() {
               <div className="noise" style={{ pointerEvents: "none" }}></div>
               <div className="feature-tag flex items-center gap-2">
                 <span className="badge pink">🔥 Cover Story</span>
-                <span className="badge">KBC 18 Diwali Special</span>
-                <span className="badge lime">Ramayana Cast</span>
+                <span className="badge">Bigg Boss 20</span>
+                <span className="badge lime">Heartbreak Confession</span>
               </div>
             </div>
             <div className="feature-body">
               <div className="flex items-center gap-2 mb-2 font-mono text-xs text-[var(--lime)] font-bold tracking-wider uppercase">
-                <span>★ TOP STORY · REALITY SHOW &amp; BOLLYWOOD</span>
+                <span>★ TOP STORY · REALITY SHOW EXCLUSIVE</span>
               </div>
               <h1 className="disp" style={{ color: "#fff" }}>
-                KBC 18 Diwali Special: Ramayana Cast Joins Big B, Ranbir Shares Alia Bhatt Proposal Story
+                Bigg Boss 20: Scout-Love Talk Brings Back Uditi Singh’s Painful Breakup Memory
               </h1>
               <p>
-                Ranbir Kapoor, Sai Pallavi and Ravie Dubey take the hot seat on KBC 18 Diwali special as Ranbir reveals the wild story of proposing to Alia Bhatt in Masai Mara with lions barely 100 meters away.
+                The Scout OP, Love Gill and Kashvi Hiranandani drama triggers an emotional confession inside Bigg Boss 20 as Uditi Singh opens up to Arishfa Khan about her own past heartbreak and watching an ex move on.
               </p>
               <div className="meta-row mt-auto pt-3 border-t border-white/[0.06] flex items-center justify-between">
                 <div className="flex items-center gap-3">
-                  <span>REALITY TV &amp; BOLLYWOOD</span>
+                  <span>REALITY TV</span>
                   <span className="dot-sep">◆</span>
                   <span>3 MIN READ</span>
                   <span className="dot-sep">◆</span>
@@ -365,6 +379,18 @@ export default function Home() {
               <span className="trend-rank">01</span>
               <div className="trend-text">
                 <Link
+                  href="/bigg-boss-20-uditi-singh-painful-breakup-scout-love"
+                  style={{ color: "inherit" }}
+                >
+                  <h3>Bigg Boss 20: Uditi Singh opens up on painful breakup after Scout-Love conversation</h3>
+                  <span>REALITY TV · 128K REACTIONS</span>
+                </Link>
+              </div>
+            </div>
+            <div className="trend-item">
+              <span className="trend-rank">02</span>
+              <div className="trend-text">
+                <Link
                   href="/kbc-18-diwali-special-ranbir-kapoor-alia-bhatt-proposal-story"
                   style={{ color: "inherit" }}
                 >
@@ -374,7 +400,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">02</span>
+              <span className="trend-rank">03</span>
               <div className="trend-text">
                 <Link
                   href="/bhumi-pednekar-akshay-kumar-priyadarshan-next-film"
@@ -386,7 +412,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">03</span>
+              <span className="trend-rank">04</span>
               <div className="trend-text">
                 <Link
                   href="/priyanka-chopra-karwa-chauth-mehendi-nick-jonas-malti"
@@ -398,7 +424,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">04</span>
+              <span className="trend-rank">05</span>
               <div className="trend-text">
                 <Link
                   href="/janhvi-kapoor-peddi-controversy-koffee-with-karan-9"
@@ -406,18 +432,6 @@ export default function Home() {
                 >
                   <h3>Janhvi Kapoor breaks silence on Peddi controversy on Koffee With Karan 9</h3>
                   <span>BOLLYWOOD · 82K REACTIONS</span>
-                </Link>
-              </div>
-            </div>
-            <div className="trend-item">
-              <span className="trend-rank">05</span>
-              <div className="trend-text">
-                <Link
-                  href="/shreya-kalra-karan-patel-reels-comment-rise-and-fall-2"
-                  style={{ color: "inherit" }}
-                >
-                  <h3>Shreya Kalra hits back at Karan Patel over Rise and Fall 2 reels comment</h3>
-                  <span>REALITY TV · 58K REACTIONS</span>
                 </Link>
               </div>
             </div>
