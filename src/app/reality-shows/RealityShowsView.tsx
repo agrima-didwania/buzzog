@@ -8,7 +8,7 @@ import Footer from "@/components/Footer";
 
 interface RealityArticle {
   id: string;
-  show: "Bigg Boss" | "Splitsvilla" | "Khatron Ke Khiladi" | "Rise and Fall" | "KBC 18" | string;
+  show: "Bigg Boss" | "Splitsvilla" | "Khatron Ke Khiladi" | "Rise and Fall" | "KBC 18" | "Koffee With Karan" | string;
   title: string;
   excerpt: string;
   badge: string;
@@ -20,49 +20,12 @@ interface RealityArticle {
   timeAgo: string;
 }
 
+// Only real, verified reality show articles with authentic news & images
+// Non-repeating: Lead cover & stack stories do not duplicate in this grid
 const realityArticles: RealityArticle[] = [
   {
-    id: "bigg-boss-20-100-percent-ration",
-    show: "Bigg Boss",
-    title: "Bigg Boss 20: Housemates Get 100% Ration for the First Time, and the House Is Celebrating",
-    excerpt:
-      "Good news has finally come to the Bigg Boss 20 house as the contestants secure a full 100% ration after weeks of low supplies and high drama.",
-    badge: "Milestone Task",
-    badgeType: "lime",
-    image: "/images/bigg-boss-20-100-per-cent-ration-housemates.jpg",
-    href: "/bigg-boss-20-100-per-cent-ration-housemates",
-    readTime: "3 MIN READ",
-    timeAgo: "JUST IN",
-  },
-  {
-    id: "janhvi-veer-pahariya-kwk",
-    show: "Koffee With Karan",
-    title: "Janhvi Kapoor's \"Concert\" Advice for Veer Pahariya on Koffee With Karan Is Going Viral",
-    excerpt:
-      "Janhvi Kapoor drops witty dating advice for Veer Pahariya on Koffee With Karan Season 9: “उसे कभी किसी कॉन्सर्ट में मत ले जाना!” Fans connect the viral dots to Tara Sutaria.",
-    badge: "Viral Scoop",
-    badgeType: "pink",
-    image: "/images/janhvi-kapoor-veer-pahariya-concert-advice-koffee-with-karan.jpg",
-    href: "/janhvi-kapoor-veer-pahariya-concert-advice-koffee-with-karan",
-    readTime: "3 MIN READ",
-    timeAgo: "JUST IN",
-  },
-  {
-    id: "bigg-boss-20-uditi-singh-breakup",
-    show: "Bigg Boss",
-    title: "Bigg Boss 20: Scout-Love Talk Brings Back Uditi Singh’s Painful Breakup Memory",
-    excerpt:
-      "Scout OP’s talk with Love Gill stirs up the house as Uditi Singh opens up to Arishfa Khan about her own past heartbreak and Karan Wahi memories.",
-    badge: "Trending",
-    badgeType: "pink",
-    image: "/images/bigg-boss-20-uditi-singh-painful-breakup-scout-love.jpg",
-    href: "/bigg-boss-20-uditi-singh-painful-breakup-scout-love",
-    readTime: "3 MIN READ",
-    timeAgo: "JUST IN",
-  },
-  {
     id: "kbc-18-ranbir-kapoor-proposal",
-    show: "KBC 18",
+    show: "Kaun Banega Crorepati 18",
     title: "KBC 18 Diwali Special: Ramayana Cast Joins Big B, Ranbir Shares Alia Bhatt Proposal Story",
     excerpt:
       "The cast of Ramayana joins Amitabh Bachchan on KBC 18 Diwali special. Ranbir Kapoor reveals the thrilling Masai Mara proposal story.",
@@ -75,7 +38,7 @@ const realityArticles: RealityArticle[] = [
   },
   {
     id: "shreya-karan-rise-and-fall",
-    show: "Rise and Fall",
+    show: "Rise and Fall 2",
     title: "Shreya Kalra Hits Back at Karan Patel Over His Reels Comment",
     excerpt:
       "Karan Patel questioned how long digital creators will stay in reels. Shreya fires back: 'Stop demeaning people from reality TV.' The clash that shook the set.",
@@ -85,136 +48,6 @@ const realityArticles: RealityArticle[] = [
     href: "/shreya-kalra-karan-patel-reels-comment-rise-and-fall-2",
     readTime: "3 MIN READ",
     timeAgo: "1H AGO",
-  },
-  {
-    id: "bb-diary-room-leak",
-    show: "Bigg Boss",
-    title: "Housemate’s diary room confession leaks — and it’s messier than expected",
-    excerpt:
-      "An unedited clip from the Bigg Boss confession room surfaced online, revealing secret pacts and broken alliances.",
-    badge: "New",
-    badgeType: "lime",
-    mediaClass: "m1",
-    href: "/shreya-kalra-karan-patel-reels-comment-rise-and-fall-2",
-    readTime: "4 MIN READ",
-    timeAgo: "2H AGO",
-  },
-  {
-    id: "splitsvilla-insider-spill",
-    show: "Splitsvilla",
-    title: "Splitsvilla insider spills who’s actually calling the shots this season",
-    excerpt:
-      "Behind the tasks and connection dates, villa insiders reveal the masterminds orchestrating power shifts at the dome.",
-    badge: "Exclusive",
-    badgeType: "pink",
-    mediaClass: "m2",
-    href: "/shreya-kalra-karan-patel-reels-comment-rise-and-fall-2",
-    readTime: "5 MIN READ",
-    timeAgo: "3H AGO",
-  },
-  {
-    id: "bb-12-sec-clip",
-    show: "Bigg Boss",
-    title: "Watch: the 12-second clip everyone’s replaying from last night’s episode",
-    excerpt:
-      "A heated morning confrontation over duties turned personal when an unspoken past rival was brought up on camera.",
-    badge: "Video",
-    badgeType: "lime",
-    mediaClass: "m3",
-    href: "/shreya-kalra-karan-patel-reels-comment-rise-and-fall-2",
-    readTime: "2 MIN READ",
-    timeAgo: "4H AGO",
-  },
-  {
-    id: "kkk-scariest-stunt",
-    show: "Khatron Ke Khiladi",
-    title: "KKK’s scariest stunt this season made two contestants tap out instantly",
-    excerpt:
-      "Suspended 150 feet in the air, sudden wind gusts led to pure panic on set before the safety crew stepped in.",
-    badge: "Trending",
-    badgeType: "default",
-    mediaClass: "m4",
-    href: "/shreya-kalra-karan-patel-reels-comment-rise-and-fall-2",
-    readTime: "4 MIN READ",
-    timeAgo: "5H AGO",
-  },
-  {
-    id: "splitsvilla-dome-session",
-    show: "Splitsvilla",
-    title: "Splitsvilla dome session breakdown: ideal match broken and power shifted",
-    excerpt:
-      "The Oracle delivered a shock verdict that shattered the villa's top alliance and triggered a 40-minute shouting match.",
-    badge: "Unfiltered",
-    badgeType: "lime",
-    mediaClass: "m5",
-    href: "/shreya-kalra-karan-patel-reels-comment-rise-and-fall-2",
-    readTime: "3 MIN READ",
-    timeAgo: "6H AGO",
-  },
-  {
-    id: "bb-villain-edit",
-    show: "Bigg Boss",
-    title: "Unpopular opinion: this “villain” edit might be the most unfair one yet",
-    excerpt:
-      "Netizens react as 24/7 live-feed clips suggest crucial context was trimmed out before the prime-time telecast.",
-    badge: "Hot Take",
-    badgeType: "pink",
-    mediaClass: "m6",
-    href: "/shreya-kalra-karan-patel-reels-comment-rise-and-fall-2",
-    readTime: "4 MIN READ",
-    timeAgo: "7H AGO",
-  },
-  {
-    id: "kkk-episode-recap",
-    show: "Khatron Ke Khiladi",
-    title: "KKK episode recap: the stunt that split the cast down the middle",
-    excerpt:
-      "A captain's controversial decision to sacrifice immunity put an underdog straight into the elimination round.",
-    badge: "Recap",
-    badgeType: "lime",
-    mediaClass: "m1",
-    href: "/shreya-kalra-karan-patel-reels-comment-rise-and-fall-2",
-    readTime: "5 MIN READ",
-    timeAgo: "9H AGO",
-  },
-  {
-    id: "bb-weekend-ka-vaar",
-    show: "Bigg Boss",
-    title: "Weekend ka Vaar recap: who got called out and who got off easy",
-    excerpt:
-      "The host addressed the hallway bullying head-on, but fans claim a favored housemate escaped without scrutiny.",
-    badge: "Recap",
-    badgeType: "lime",
-    mediaClass: "m2",
-    href: "/shreya-kalra-karan-patel-reels-comment-rise-and-fall-2",
-    readTime: "6 MIN READ",
-    timeAgo: "12H AGO",
-  },
-  {
-    id: "splitsvilla-finale-ticket",
-    show: "Splitsvilla",
-    title: "Fans pick: the couple that deserves the finale ticket",
-    excerpt:
-      "Over 50,000 votes poured in across our reader poll. Here is which wildcard connection is currently leading.",
-    badge: "Poll",
-    badgeType: "pink",
-    mediaClass: "m3",
-    href: "/shreya-kalra-karan-patel-reels-comment-rise-and-fall-2",
-    readTime: "3 MIN READ",
-    timeAgo: "1D AGO",
-  },
-  {
-    id: "rise-fall-divide",
-    show: "Rise and Fall",
-    title: "Rise and Fall 2: Behind-the-scenes tensions between TV veterans & digital stars",
-    excerpt:
-      "Following Shreya Kalra’s clapback, insider reports confirm the divide between TV actors and content creators is deepening.",
-    badge: "Exclusive",
-    badgeType: "pink",
-    image: "/images/shreya-kalra-karan-patel-reels-comment-rise-and-fall-2.jpg",
-    href: "/shreya-kalra-karan-patel-reels-comment-rise-and-fall-2",
-    readTime: "4 MIN READ",
-    timeAgo: "1D AGO",
   },
 ];
 
@@ -266,15 +99,15 @@ export default function RealityShowsView() {
               Reality <em>Shows</em>
             </h1>
             <p>
-              Eliminations, fights, fan wars and dome drama — every Bigg Boss, Splitsvilla,
-              Khatron Ke Khiladi and Rise and Fall moment, minus the filler.
+              Eliminations, fights, fan wars and dome drama — every Bigg Boss, Koffee With Karan,
+              KBC, and Rise and Fall moment, minus the filler.
             </p>
           </div>
         </section>
 
         {/* Lead Section: Featured Reality Card + 2-Item Stack */}
         <section className="lead">
-          {/* Featured Cover Story: Bigg Boss 20 100% Ration */}
+          {/* Featured Cover Story: Bigg Boss 20 100% Ration Milestone */}
           <Link
             href="/bigg-boss-20-100-per-cent-ration-housemates"
             className="feature-card group block"
@@ -312,7 +145,7 @@ export default function RealityShowsView() {
             </div>
           </Link>
 
-          {/* Right Stack: The last 2 blogs before the latest one */}
+          {/* Right Stack: 2 Real Reality Stories */}
           <div className="stack">
             {/* Card 1: Janhvi Kapoor on KWK 9 */}
             <Link
@@ -372,16 +205,16 @@ export default function RealityShowsView() {
           </div>
         </section>
 
-        {/* All Reality Buzz Grid */}
+        {/* Latest Reality Buzz Grid - Only authentic published stories */}
         <section className="section" id="reality-grid">
           <div className="section-head">
             <div>
               <h2 className="text-white">
-                All <span className="accent">Reality Buzz</span>
+                Latest <span className="accent">Reality Buzz</span>
               </h2>
             </div>
             <span className="text-xs font-mono text-[var(--lime)] font-bold">
-              14 STORIES PUBLISHED
+              UPDATED HOURLY
             </span>
           </div>
 
@@ -393,7 +226,7 @@ export default function RealityShowsView() {
                 className={`card ${art.mediaClass || "m1"} group flex flex-col justify-between`}
               >
                 <div className="card-media relative overflow-hidden">
-                  {art.image ? (
+                  {art.image && (
                     <Image
                       src={art.image}
                       alt={art.title}
@@ -401,7 +234,7 @@ export default function RealityShowsView() {
                       className="object-cover group-hover:scale-105 transition-transform duration-300"
                       sizes="(max-width: 640px) 100vw, (max-width: 980px) 50vw, 33vw"
                     />
-                  ) : null}
+                  )}
                   <span
                     className={`badge ${
                       art.badgeType === "pink" ? "pink" : ""
@@ -419,7 +252,7 @@ export default function RealityShowsView() {
                       {art.show}
                     </span>
                     <span className="dot-sep">◆</span>
-                    <span>{art.timeAgo}</span>
+                    <span>{art.readTime}</span>
                   </div>
                 </div>
               </Link>

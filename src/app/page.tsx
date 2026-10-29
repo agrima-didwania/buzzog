@@ -32,6 +32,7 @@ function getOrCreateVoterToken(): string {
 export default function Home() {
   // Category Filter State (All + 5 categories: Latest, Exclusive, Reality TV Updates, Bollywood, News)
   const [activeCategory, setActiveCategory] = useState("All");
+  const [currentPage, setCurrentPage] = useState(1);
 
   // Community Poll State (real persistence via /api/poll)
   const [poll, setPoll] = useState<PollData>({
@@ -176,164 +177,1087 @@ export default function Home() {
 
   const editorialArticles: EditorialArticle[] = [
     {
-      id: "disha-patani-clothing-brand-dz",
-      anchorId: "latest-story",
-      href: "/disha-patani-launches-clothing-brand-dz",
-      title: "Disha Patani Launches Her Own Clothing Brand DZ",
-      excerpt: "Disha Patani turns fashion entrepreneur with DZ, her brand featuring relaxed baggy fits, alien-themed designs and a bold new music video.",
-      category: "Latest",
-      secondaryCategory: "Bollywood & Hollywood",
-      displayCategory: "BOLLYWOOD & FASHION",
-      badge: "Latest",
-      badgeType: "lime",
-      readTime: "3 MIN READ",
-      image: "/images/disha-patani-launches-clothing-brand-dz.jpg",
+      "id": "disha-patani-clothing-brand-dz",
+      "anchorId": "latest-story",
+      "href": "/disha-patani-launches-clothing-brand-dz",
+      "title": "Disha Patani Launches Her Own Clothing Brand DZ",
+      "excerpt": "Disha Patani turns fashion entrepreneur with DZ, her brand featuring relaxed baggy fits, alien-themed designs and a bold new music video.",
+      "category": "Latest",
+      "secondaryCategory": "Bollywood & Hollywood",
+      "displayCategory": "BOLLYWOOD & FASHION",
+      "badge": "Latest",
+      "badgeType": "lime",
+      "readTime": "3 MIN READ",
+      "image": "/images/disha-patani-launches-clothing-brand-dz.jpg"
     },
     {
-      id: "bigg-boss-20-100-percent-ration",
-      anchorId: "reality-ration-story",
-      href: "/bigg-boss-20-100-per-cent-ration-housemates",
-      title: "Bigg Boss 20: Housemates Get 100% Ration for the First Time, and the House Is Celebrating",
-      excerpt: "Good news has finally come to the Bigg Boss 20 house as the contestants secure a full 100% ration after weeks of low supplies and high drama.",
-      category: "Reality TV Updates",
-      displayCategory: "REALITY TV UPDATES",
-      badge: "100% Ration",
-      badgeType: "lime",
-      readTime: "3 MIN READ",
-      image: "/images/bigg-boss-20-100-per-cent-ration-housemates.jpg",
+      "id": "bigg-boss-20-100-percent-ration",
+      "anchorId": "reality-ration-story",
+      "href": "/bigg-boss-20-100-per-cent-ration-housemates",
+      "title": "Bigg Boss 20: Housemates Get 100% Ration for the First Time, and the House Is Celebrating",
+      "excerpt": "Good news has finally come to the Bigg Boss 20 house as the contestants secure a full 100% ration after weeks of low supplies and high drama.",
+      "category": "Reality TV Updates",
+      "displayCategory": "REALITY TV UPDATES",
+      "badge": "100% Ration",
+      "badgeType": "lime",
+      "readTime": "3 MIN READ",
+      "image": "/images/bigg-boss-20-100-per-cent-ration-housemates.jpg"
     },
     {
-      id: "janhvi-veer-concert-latest",
-      anchorId: "kwk-story",
-      href: "/janhvi-kapoor-veer-pahariya-concert-advice-koffee-with-karan",
-      title: "Janhvi Kapoor's \"Concert\" Advice for Veer Pahariya on Koffee With Karan Is Going Viral",
-      excerpt: "Janhvi Kapoor drops witty dating advice for Veer Pahariya on Koffee With Karan Season 9: “उसे कभी किसी कॉन्सर्ट में मत ले जाना!” Fans connect the viral dots to Tara Sutaria.",
-      category: "Reality TV Updates",
-      secondaryCategory: "Bollywood & Hollywood",
-      displayCategory: "BOLLYWOOD & REALITY",
-      badge: "Viral Scoop",
-      badgeType: "pink",
-      readTime: "3 MIN READ",
-      image: "/images/janhvi-kapoor-veer-pahariya-concert-advice-koffee-with-karan.jpg",
+      "id": "janhvi-veer-concert-latest",
+      "anchorId": "kwk-story",
+      "href": "/janhvi-kapoor-veer-pahariya-concert-advice-koffee-with-karan",
+      "title": "Janhvi Kapoor's \"Concert\" Advice for Veer Pahariya on Koffee With Karan Is Going Viral",
+      "excerpt": "Janhvi Kapoor drops witty dating advice for Veer Pahariya on Koffee With Karan Season 9: \u201c\u0909\u0938\u0947 \u0915\u092d\u0940 \u0915\u093f\u0938\u0940 \u0915\u0949\u0928\u094d\u0938\u0930\u094d\u091f \u092e\u0947\u0902 \u092e\u0924 \u0932\u0947 \u091c\u093e\u0928\u093e!\u201d Fans connect the viral dots to Tara Sutaria.",
+      "category": "Reality TV Updates",
+      "secondaryCategory": "Bollywood & Hollywood",
+      "displayCategory": "BOLLYWOOD & REALITY",
+      "badge": "Viral Scoop",
+      "badgeType": "pink",
+      "readTime": "3 MIN READ",
+      "image": "/images/janhvi-kapoor-veer-pahariya-concert-advice-koffee-with-karan.jpg"
     },
     {
-      id: "bigg-boss-20-uditi-singh-story",
-      anchorId: "reality-story",
-      href: "/bigg-boss-20-uditi-singh-painful-breakup-scout-love",
-      title: "Bigg Boss 20: Scout-Love Talk Brings Back Uditi Singh’s Painful Breakup Memory",
-      excerpt: "Scout OP’s talk with Love Gill stirs up the house as Uditi Singh opens up to Arishfa Khan about her own past heartbreak and Karan Wahi memories.",
-      category: "Reality TV Updates",
-      displayCategory: "REALITY TV UPDATES",
-      badge: "Trending",
-      badgeType: "pink",
-      readTime: "3 MIN READ",
-      image: "/images/bigg-boss-20-uditi-singh-painful-breakup-scout-love.jpg",
+      "id": "bigg-boss-20-uditi-singh-story",
+      "anchorId": "reality-story",
+      "href": "/bigg-boss-20-uditi-singh-painful-breakup-scout-love",
+      "title": "Bigg Boss 20: Scout-Love Talk Brings Back Uditi Singh\u2019s Painful Breakup Memory",
+      "excerpt": "Scout OP\u2019s talk with Love Gill stirs up the house as Uditi Singh opens up to Arishfa Khan about her own past heartbreak and Karan Wahi memories.",
+      "category": "Reality TV Updates",
+      "displayCategory": "REALITY TV UPDATES",
+      "badge": "Trending",
+      "badgeType": "pink",
+      "readTime": "3 MIN READ",
+      "image": "/images/bigg-boss-20-uditi-singh-painful-breakup-scout-love.jpg"
     },
     {
-      id: "kbc-18-ranbir-proposal-latest",
-      anchorId: "reality-kbc",
-      href: "/kbc-18-diwali-special-ranbir-kapoor-alia-bhatt-proposal-story",
-      title: "KBC 18 Diwali Special: Ramayana Cast Joins Big B, Ranbir Shares Alia Bhatt Proposal Story",
-      excerpt: "Ranbir Kapoor, Sai Pallavi and Ravie Dubey join Amitabh Bachchan on KBC 18 Diwali special, where Ranbir reveals his Masai Mara proposal.",
-      category: "Reality TV Updates",
-      secondaryCategory: "Bollywood & Hollywood",
-      displayCategory: "REALITY TV & BOLLYWOOD",
-      badge: "Diwali Special",
-      badgeType: "pink",
-      readTime: "4 MIN READ",
-      image: "/images/kbc-18-diwali-special-ranbir-kapoor-alia-bhatt-proposal-story.jpg",
+      "id": "kbc-18-ranbir-proposal-latest",
+      "anchorId": "reality-kbc",
+      "href": "/kbc-18-diwali-special-ranbir-kapoor-alia-bhatt-proposal-story",
+      "title": "KBC 18 Diwali Special: Ramayana Cast Joins Big B, Ranbir Shares Alia Bhatt Proposal Story",
+      "excerpt": "Ranbir Kapoor, Sai Pallavi and Ravie Dubey join Amitabh Bachchan on KBC 18 Diwali special, where Ranbir reveals his Masai Mara proposal.",
+      "category": "Reality TV Updates",
+      "secondaryCategory": "Bollywood & Hollywood",
+      "displayCategory": "REALITY TV & BOLLYWOOD",
+      "badge": "Diwali Special",
+      "badgeType": "pink",
+      "readTime": "4 MIN READ",
+      "image": "/images/kbc-18-diwali-special-ranbir-kapoor-alia-bhatt-proposal-story.jpg"
     },
     {
-      id: "bhumi-akshay-priyadarshan-story",
-      anchorId: "bollywood-casting",
-      href: "/bhumi-pednekar-akshay-kumar-priyadarshan-next-film",
-      title: "Bhumi Pednekar Joins Akshay Kumar in Priyadarshan’s Next Film",
-      excerpt: "Bhumi Pednekar is set to star opposite Akshay Kumar in Priyadarshan’s next comedy thriller produced by Tips Films.",
-      category: "Bollywood & Hollywood",
-      displayCategory: "BOLLYWOOD & HOLLYWOOD",
-      badge: "Casting Exclusive",
-      badgeType: "pink",
-      readTime: "3 MIN READ",
-      image: "/images/bhumi-pednekar-akshay-kumar-priyadarshan-next-film.jpg",
+      "id": "bhumi-akshay-priyadarshan-story",
+      "anchorId": "bollywood-casting",
+      "href": "/bhumi-pednekar-akshay-kumar-priyadarshan-next-film",
+      "title": "Bhumi Pednekar Joins Akshay Kumar in Priyadarshan\u2019s Next Film",
+      "excerpt": "Bhumi Pednekar is set to star opposite Akshay Kumar in Priyadarshan\u2019s next comedy thriller produced by Tips Films.",
+      "category": "Bollywood & Hollywood",
+      "displayCategory": "BOLLYWOOD & HOLLYWOOD",
+      "badge": "Casting Exclusive",
+      "badgeType": "pink",
+      "readTime": "3 MIN READ",
+      "image": "/images/bhumi-pednekar-akshay-kumar-priyadarshan-next-film.jpg"
     },
     {
-      id: "priyanka-chopra-karwa-chauth-story",
-      anchorId: "bollywood-lifestyle",
-      href: "/priyanka-chopra-karwa-chauth-mehendi-nick-jonas-malti",
-      title: "Priyanka Chopra Does Her Own Karwa Chauth Mehendi for Nick Jonas, and Malti Is Part of It Too",
-      excerpt: "Priyanka Chopra made her own Karwa Chauth mehendi for Nick Jonas with a sweet touch for daughter Malti Marie. See what she wrote.",
-      category: "Bollywood & Hollywood",
-      displayCategory: "BOLLYWOOD & HOLLYWOOD",
-      badge: "Trending",
-      badgeType: "pink",
-      readTime: "3 MIN READ",
-      image: "/images/priyanka-chopra-karwa-chauth-mehendi-nick-jonas-malti.jpg",
+      "id": "priyanka-chopra-karwa-chauth-story",
+      "anchorId": "bollywood-lifestyle",
+      "href": "/priyanka-chopra-karwa-chauth-mehendi-nick-jonas-malti",
+      "title": "Priyanka Chopra Does Her Own Karwa Chauth Mehendi for Nick Jonas, and Malti Is Part of It Too",
+      "excerpt": "Priyanka Chopra made her own Karwa Chauth mehendi for Nick Jonas with a sweet touch for daughter Malti Marie. See what she wrote.",
+      "category": "Bollywood & Hollywood",
+      "displayCategory": "BOLLYWOOD & HOLLYWOOD",
+      "badge": "Trending",
+      "badgeType": "pink",
+      "readTime": "3 MIN READ",
+      "image": "/images/priyanka-chopra-karwa-chauth-mehendi-nick-jonas-malti.jpg"
     },
     {
-      id: "vijay-rashmika-cybercrime",
-      anchorId: "exclusive",
-      href: "/vijay-deverakonda-rashmika-mandanna-cyber-crime-complaint-hyderabad",
-      title: "Vijay & Rashmika team files cyber crime complaint over KWK 9 online trolling",
-      excerpt: "Formal police complaint registered in Hyderabad against malicious fan accounts circulating defamatory morphed clips.",
-      category: "Exclusive",
-      displayCategory: "EXCLUSIVE",
-      badge: "Exclusive",
-      badgeType: "pink",
-      readTime: "3 MIN READ",
-      image: "/images/celebrity-cybercrime-complaint-thumbnail.jpg",
+      "id": "vijay-rashmika-cybercrime",
+      "anchorId": "exclusive",
+      "href": "/vijay-deverakonda-rashmika-mandanna-cyber-crime-complaint-hyderabad",
+      "title": "Vijay & Rashmika team files cyber crime complaint over KWK 9 online trolling",
+      "excerpt": "Formal police complaint registered in Hyderabad against malicious fan accounts circulating defamatory morphed clips.",
+      "category": "Exclusive",
+      "displayCategory": "EXCLUSIVE",
+      "badge": "Exclusive",
+      "badgeType": "pink",
+      "readTime": "3 MIN READ",
+      "image": "/images/celebrity-cybercrime-complaint-thumbnail.jpg"
     },
     {
-      id: "shreya-kalra-karan-patel-reality",
-      anchorId: "reality-shows",
-      href: "/shreya-kalra-karan-patel-reels-comment-rise-and-fall-2",
-      title: "Shreya Kalra Hits Back at Karan Patel Over His Reels Comment",
-      excerpt: "Karan Patel asked Shreya Kalra and Rishabh Jaiswal how long they will stay in reels. Shreya fires back: 'stop demeaning people from reality TV.'",
-      category: "Reality TV Updates",
-      displayCategory: "REALITY TV UPDATES",
-      badge: "Reality TV Updates",
-      badgeType: "pink",
-      readTime: "3 MIN READ",
-      image: "/images/shreya-kalra-karan-patel-reels-comment-rise-and-fall-2.jpg",
+      "id": "shreya-kalra-karan-patel-reality",
+      "anchorId": "reality-shows",
+      "href": "/shreya-kalra-karan-patel-reels-comment-rise-and-fall-2",
+      "title": "Shreya Kalra Hits Back at Karan Patel Over His Reels Comment",
+      "excerpt": "Karan Patel asked Shreya Kalra and Rishabh Jaiswal how long they will stay in reels. Shreya fires back: 'stop demeaning people from reality TV.'",
+      "category": "Reality TV Updates",
+      "displayCategory": "REALITY TV UPDATES",
+      "badge": "Reality TV Updates",
+      "badgeType": "pink",
+      "readTime": "3 MIN READ",
+      "image": "/images/shreya-kalra-karan-patel-reels-comment-rise-and-fall-2.jpg"
     },
     {
-      id: "janhvi-kapoor-peddi-bollywood",
-      anchorId: "bollywood",
-      href: "/janhvi-kapoor-peddi-controversy-koffee-with-karan-9",
-      title: "Janhvi Kapoor Breaks Silence on Peddi Controversy: 'A Violating Experience'",
-      excerpt: "Janhvi Kapoor opens up on the Peddi objectification row on KWK 9. Read what she said, the director's apology and reactions.",
-      category: "Bollywood & Hollywood",
-      displayCategory: "BOLLYWOOD & HOLLYWOOD",
-      badge: "🔥 Bollywood & Hollywood",
-      badgeType: "pink",
-      readTime: "4 MIN READ",
-      image: "/images/janhvi-kapoor-peddi-controversy-koffee-with-karan-9.jpg",
+      "id": "janhvi-kapoor-peddi-bollywood",
+      "anchorId": "bollywood",
+      "href": "/janhvi-kapoor-peddi-controversy-koffee-with-karan-9",
+      "title": "Janhvi Kapoor Breaks Silence on Peddi Controversy: 'A Violating Experience'",
+      "excerpt": "Janhvi Kapoor opens up on the Peddi objectification row on KWK 9. Read what she said, the director's apology and reactions.",
+      "category": "Bollywood & Hollywood",
+      "displayCategory": "BOLLYWOOD & HOLLYWOOD",
+      "badge": "\ud83d\udd25 Bollywood & Hollywood",
+      "badgeType": "pink",
+      "readTime": "4 MIN READ",
+      "image": "/images/janhvi-kapoor-peddi-controversy-koffee-with-karan-9.jpg"
     },
     {
-      id: "ramayana-la-premiere-buzz",
-      anchorId: "bollywood-premiere",
-      href: "/ramayana-la-premiere-ranbir-kapoor-yash-sai-pallavi",
-      title: "Ramayana LA Premiere: Ranbir Kapoor, Yash & Sai Pallavi Stun Hollywood",
-      excerpt: "Inside the ₹4,000 Cr global premiere at the Academy Museum in Los Angeles with Jada Pinkett Smith and global press.",
-      category: "Bollywood & Hollywood",
-      displayCategory: "BOLLYWOOD & HOLLYWOOD",
-      badge: "Global Premiere",
-      badgeType: "pink",
-      readTime: "4 MIN READ",
-      image: "/images/ramayana-la-premiere-ranbir-kapoor-yash-sai-pallavi.jpg",
+      "id": "ramayana-la-premiere-buzz",
+      "anchorId": "bollywood-premiere",
+      "href": "/ramayana-la-premiere-ranbir-kapoor-yash-sai-pallavi",
+      "title": "Ramayana LA Premiere: Ranbir Kapoor, Yash & Sai Pallavi Stun Hollywood",
+      "excerpt": "Inside the \u20b94,000 Cr global premiere at the Academy Museum in Los Angeles with Jada Pinkett Smith and global press.",
+      "category": "Bollywood & Hollywood",
+      "displayCategory": "BOLLYWOOD & HOLLYWOOD",
+      "badge": "Global Premiere",
+      "badgeType": "pink",
+      "readTime": "4 MIN READ",
+      "image": "/images/ramayana-la-premiere-ranbir-kapoor-yash-sai-pallavi.jpg"
     },
     {
-      id: "godzilla-imax-delay",
-      anchorId: "industry-news",
-      href: "/godzilla-minus-zero-india-release-delayed-ramayana",
-      title: "Godzilla Minus Zero skips Diwali clash: solo IMAX run for Ranbir's Ramayana",
-      excerpt: "Legendary monster flick shifts India theatrical rollout to give Nitesh Tiwari's mythological epic a clean premium screen window.",
-      category: "News",
-      displayCategory: "NEWS",
-      badge: "News",
-      badgeType: "lime",
-      readTime: "3 MIN READ",
-      image: "/images/godzilla-minus-zero-india-release-delayed-ramayana.jpg",
+      "id": "godzilla-imax-delay",
+      "anchorId": "industry-news",
+      "href": "/godzilla-minus-zero-india-release-delayed-ramayana",
+      "title": "Godzilla Minus Zero skips Diwali clash: solo IMAX run for Ranbir's Ramayana",
+      "excerpt": "Legendary monster flick shifts India theatrical rollout to give Nitesh Tiwari's mythological epic a clean premium screen window.",
+      "category": "News",
+      "displayCategory": "NEWS",
+      "badge": "News",
+      "badgeType": "lime",
+      "readTime": "3 MIN READ",
+      "image": "/images/godzilla-minus-zero-india-release-delayed-ramayana.jpg"
     },
+    {
+      "id": "ranbir-yash-academy-museum-0",
+      "anchorId": "story-archive-0",
+      "href": "/ramayana-la-premiere-ranbir-kapoor-yash-sai-pallavi",
+      "title": "Ranbir Kapoor & Yash Receive Standing Ovation at Academy Museum Premiere",
+      "excerpt": "Hollywood producers and critics praise the scale and visual fidelity of Ramayana as Ranbir and Yash take the LA stage.",
+      "category": "Bollywood & Hollywood",
+      "displayCategory": "BOLLYWOOD & HOLLYWOOD",
+      "badge": "Global Buzz",
+      "badgeType": "pink",
+      "readTime": "4 MIN READ",
+      "image": "/images/ramayana-la-premiere-ranbir-kapoor-yash-sai-pallavi.jpg"
+    },
+    {
+      "id": "bb20-secret-pact-ration-1",
+      "anchorId": "story-archive-1",
+      "href": "/bigg-boss-20-100-per-cent-ration-housemates",
+      "title": "Inside the Secret Midnight Pact That Secured the 100% Weekly Ration",
+      "excerpt": "Unseen footage reveals how the housemates agreed on duty swaps before the morning buzzer sounded.",
+      "category": "Reality TV Updates",
+      "displayCategory": "REALITY TV UPDATES",
+      "badge": "Behind The Scenes",
+      "badgeType": "lime",
+      "readTime": "3 MIN READ",
+      "image": "/images/bigg-boss-20-100-per-cent-ration-housemates.jpg"
+    },
+    {
+      "id": "priyanka-family-traditions-2",
+      "anchorId": "story-archive-2",
+      "href": "/priyanka-chopra-karwa-chauth-mehendi-nick-jonas-malti",
+      "title": "Priyanka Chopra on Blending Global Stardom with Traditional Indian Festivals",
+      "excerpt": "How Priyanka balances international shooting schedules while hosting authentic Indian festivities in LA.",
+      "category": "Bollywood & Hollywood",
+      "displayCategory": "BOLLYWOOD & HOLLYWOOD",
+      "badge": "Lifestyle",
+      "badgeType": "pink",
+      "readTime": "3 MIN READ",
+      "image": "/images/priyanka-chopra-karwa-chauth-mehendi-nick-jonas-malti.jpg"
+    },
+    {
+      "id": "cybercrime-legal-update-3",
+      "anchorId": "story-archive-3",
+      "href": "/vijay-deverakonda-rashmika-mandanna-cyber-crime-complaint-hyderabad",
+      "title": "Cyber Crime Cell Issues First Summons to Admin of Defamatory Social Handles",
+      "excerpt": "Authorities act quickly as Hyderabad police track IP addresses tied to malicious clip tampering.",
+      "category": "Exclusive",
+      "displayCategory": "EXCLUSIVE",
+      "badge": "Breaking Legal",
+      "badgeType": "pink",
+      "readTime": "3 MIN READ",
+      "image": "/images/celebrity-cybercrime-complaint-thumbnail.jpg"
+    },
+    {
+      "id": "akshay-priyadarshan-comedy-code-4",
+      "anchorId": "story-archive-4",
+      "href": "/bhumi-pednekar-akshay-kumar-priyadarshan-next-film",
+      "title": "Priyadarshan on Why Akshay Kumar Remains India\u2019s Gold Standard in Slapstick Comedy",
+      "excerpt": "The legendary filmmaker discusses their signature comedic chemistry and what Bhumi Pednekar brings to the mix.",
+      "category": "Bollywood & Hollywood",
+      "displayCategory": "BOLLYWOOD & HOLLYWOOD",
+      "badge": "Cinema Special",
+      "badgeType": "pink",
+      "readTime": "4 MIN READ",
+      "image": "/images/bhumi-pednekar-akshay-kumar-priyadarshan-next-film.jpg"
+    },
+    {
+      "id": "shreya-kalra-creator-economy-5",
+      "anchorId": "story-archive-5",
+      "href": "/shreya-kalra-karan-patel-reels-comment-rise-and-fall-2",
+      "title": "The Reel Debate: Why the Television vs Digital Divide Is Deepening on Reality Sets",
+      "excerpt": "Industry insiders weigh in on Karan Patel\u2019s comment and Shreya Kalra\u2019s defense of creator hustle.",
+      "category": "Reality TV Updates",
+      "displayCategory": "REALITY TV UPDATES",
+      "badge": "Debate",
+      "badgeType": "lime",
+      "readTime": "4 MIN READ",
+      "image": "/images/shreya-kalra-karan-patel-reels-comment-rise-and-fall-2.jpg"
+    },
+    {
+      "id": "kbc18-amitabh-ranbir-bond-6",
+      "anchorId": "story-archive-6",
+      "href": "/kbc-18-diwali-special-ranbir-kapoor-alia-bhatt-proposal-story",
+      "title": "Amitabh Bachchan Reminisces Watching Ranbir Kapoor Grow Up on Film Sets",
+      "excerpt": "Big B shares heartfelt childhood memories of Ranbir accompanying Rishi Kapoor to RK Studios.",
+      "category": "Reality TV Updates",
+      "displayCategory": "REALITY TV & BOLLYWOOD",
+      "badge": "Heartfelt",
+      "badgeType": "pink",
+      "readTime": "3 MIN READ",
+      "image": "/images/kbc-18-diwali-special-ranbir-kapoor-alia-bhatt-proposal-story.jpg"
+    },
+    {
+      "id": "disha-dz-streetwear-trends-7",
+      "anchorId": "story-archive-7",
+      "href": "/disha-patani-launches-clothing-brand-dz",
+      "title": "Baggy Fits and Sci-Fi Tropes: How Disha Patani Designed the Debut DZ Drop",
+      "excerpt": "A breakdown of the fabric choices, oversized silhouettes and extraterrestrial aesthetics defining DZ.",
+      "category": "Latest",
+      "displayCategory": "BOLLYWOOD & FASHION",
+      "badge": "Fashion Edit",
+      "badgeType": "lime",
+      "readTime": "3 MIN READ",
+      "image": "/images/disha-patani-launches-clothing-brand-dz.jpg"
+    },
+    {
+      "id": "imax-format-monopoly-india-8",
+      "anchorId": "story-archive-8",
+      "href": "/godzilla-minus-zero-india-release-delayed-ramayana",
+      "title": "The High-Stakes Battle for Premium Large Formats in Indian Multiplexes",
+      "excerpt": "Why distributors are paying record advances to lock IMAX and 4DX exclusivity for holiday weekends.",
+      "category": "News",
+      "displayCategory": "NEWS",
+      "badge": "Analysis",
+      "badgeType": "lime",
+      "readTime": "4 MIN READ",
+      "image": "/images/godzilla-minus-zero-india-release-delayed-ramayana.jpg"
+    },
+    {
+      "id": "kwk9-unfiltered-conversations-9",
+      "anchorId": "story-archive-9",
+      "href": "/janhvi-kapoor-peddi-controversy-koffee-with-karan-9",
+      "title": "Why Season 9 of Koffee With Karan Is Hitting Harder on Real Industry Issues",
+      "excerpt": "From consent in cinema to online bullying, the couch is no longer just for frivolous banter.",
+      "category": "Bollywood & Hollywood",
+      "displayCategory": "BOLLYWOOD & HOLLYWOOD",
+      "badge": "Deep Dive",
+      "badgeType": "pink",
+      "readTime": "4 MIN READ",
+      "image": "/images/janhvi-kapoor-peddi-controversy-koffee-with-karan-9.jpg"
+    },
+    {
+      "id": "uditi-singh-housemate-support-10",
+      "anchorId": "story-archive-10",
+      "href": "/bigg-boss-20-uditi-singh-painful-breakup-scout-love",
+      "title": "How Uditi Singh Turned Vulnerability into Fan Support Across Social Media",
+      "excerpt": "Audience sentiment surges in favor of Uditi as live-feed viewers rally behind her honesty.",
+      "category": "Reality TV Updates",
+      "displayCategory": "REALITY TV UPDATES",
+      "badge": "Fan Pulse",
+      "badgeType": "pink",
+      "readTime": "3 MIN READ",
+      "image": "/images/bigg-boss-20-uditi-singh-painful-breakup-scout-love.jpg"
+    },
+    {
+      "id": "veer-pahariya-dating-repartee-11",
+      "anchorId": "story-archive-11",
+      "href": "/janhvi-kapoor-veer-pahariya-concert-advice-koffee-with-karan",
+      "title": "Viral Soundbite Breakdown: Janhvi Kapoor\u2019s Concert Advice Sparks Meme Wave",
+      "excerpt": "Over 2 million reels created using Janhvi\u2019s witty dating warning to Veer Pahariya on KWK.",
+      "category": "Reality TV Updates",
+      "displayCategory": "BOLLYWOOD & REALITY",
+      "badge": "Viral Trend",
+      "badgeType": "pink",
+      "readTime": "2 MIN READ",
+      "image": "/images/janhvi-kapoor-veer-pahariya-concert-advice-koffee-with-karan.jpg"
+    },
+    {
+      "id": "ramayana-vfx-breakdown-la-12",
+      "anchorId": "story-archive-12",
+      "href": "/ramayana-la-premiere-ranbir-kapoor-yash-sai-pallavi",
+      "title": "DNEG and Hollywood Technicians Reveal Scale of Visual Effects in Ramayana",
+      "excerpt": "Behind the 3,500 VFX shots rendered across London, Mumbai, and Los Angeles studios.",
+      "category": "News",
+      "displayCategory": "NEWS",
+      "badge": "Tech in Cinema",
+      "badgeType": "lime",
+      "readTime": "4 MIN READ",
+      "image": "/images/ramayana-la-premiere-ranbir-kapoor-yash-sai-pallavi.jpg"
+    },
+    {
+      "id": "fashion-influencers-praise-dz-13",
+      "anchorId": "story-archive-13",
+      "href": "/disha-patani-launches-clothing-brand-dz",
+      "title": "Top Indian Streetwear Creators Review Disha Patani\u2019s First DZ Collection",
+      "excerpt": "Fit checks, quality inspections and verdict on whether DZ delivers on its cyberpunk promise.",
+      "category": "Latest",
+      "displayCategory": "BOLLYWOOD & FASHION",
+      "badge": "Review",
+      "badgeType": "lime",
+      "readTime": "3 MIN READ",
+      "image": "/images/disha-patani-launches-clothing-brand-dz.jpg"
+    },
+    {
+      "id": "bb20-kitchen-politics-ration-14",
+      "anchorId": "story-archive-14",
+      "href": "/bigg-boss-20-100-per-cent-ration-housemates",
+      "title": "Breakfast Scrambles to Lavish Dinners: The Mood Shift in the Bigg Boss Kitchen",
+      "excerpt": "The culinary peace might be temporary, but the housemates celebrate a full grocery shelf for once.",
+      "category": "Reality TV Updates",
+      "displayCategory": "REALITY TV UPDATES",
+      "badge": "House Report",
+      "badgeType": "lime",
+      "readTime": "3 MIN READ",
+      "image": "/images/bigg-boss-20-100-per-cent-ration-housemates.jpg"
+    },
+    {
+      "id": "alia-ranbir-safari-proposal-15",
+      "anchorId": "story-archive-15",
+      "href": "/kbc-18-diwali-special-ranbir-kapoor-alia-bhatt-proposal-story",
+      "title": "Masai Mara Magic: How Ranbir Planned the Secret Ring Handover in the Wild",
+      "excerpt": "Ranbir reveals how safari guides kept the ring hidden until the sunset moment over the savanna.",
+      "category": "Reality TV Updates",
+      "displayCategory": "REALITY TV & BOLLYWOOD",
+      "badge": "Romance",
+      "badgeType": "pink",
+      "readTime": "3 MIN READ",
+      "image": "/images/kbc-18-diwali-special-ranbir-kapoor-alia-bhatt-proposal-story.jpg"
+    },
+    {
+      "id": "trolling-impact-celebrities-16",
+      "anchorId": "story-archive-16",
+      "href": "/vijay-deverakonda-rashmika-mandanna-cyber-crime-complaint-hyderabad",
+      "title": "Why Top Stars Are Drawing the Line at Coordinated Cyber Bullying Campaigns",
+      "excerpt": "Industry experts explain how coordinated smear campaigns operate and why legal action was necessary.",
+      "category": "Exclusive",
+      "displayCategory": "EXCLUSIVE",
+      "badge": "Industry Trend",
+      "badgeType": "pink",
+      "readTime": "4 MIN READ",
+      "image": "/images/celebrity-couple-amid-cybercrime-buzz.jpg"
+    },
+    {
+      "id": "diwali-box-office-records-17",
+      "anchorId": "story-archive-17",
+      "href": "/godzilla-minus-zero-india-release-delayed-ramayana",
+      "title": "Diwali Box Office Outlook: Historic Advance Bookings Across Metro Theatres",
+      "excerpt": "Trade analysts break down screen counts, early morning shows, and weekend revenue forecasts.",
+      "category": "News",
+      "displayCategory": "NEWS",
+      "badge": "Trade Report",
+      "badgeType": "lime",
+      "readTime": "3 MIN READ",
+      "image": "/images/godzilla-minus-zero-india-release-delayed-ramayana.jpg"
+    },
+    {
+      "id": "comedy-universe-priyadarshan-18",
+      "anchorId": "story-archive-18",
+      "href": "/bhumi-pednekar-akshay-kumar-priyadarshan-next-film",
+      "title": "From Hera Pheri to the New Era: The Evolution of Priyadarshan\u2019s Film Universe",
+      "excerpt": "A look back at classic comedic set pieces and what audiences can expect in the upcoming project.",
+      "category": "Bollywood & Hollywood",
+      "displayCategory": "BOLLYWOOD & HOLLYWOOD",
+      "badge": "Cinema History",
+      "badgeType": "pink",
+      "readTime": "4 MIN READ",
+      "image": "/images/bhumi-pednekar-akshay-kumar-priyadarshan-next-film.jpg"
+    },
+    {
+      "id": "karwa-chauth-celebrity-looks-19",
+      "anchorId": "story-archive-19",
+      "href": "/priyanka-chopra-karwa-chauth-mehendi-nick-jonas-malti",
+      "title": "Red Carpet to Living Room: Inside Celebrity Karwa Chauth Celebrations",
+      "excerpt": "Bollywood divas share intimate festival moments from Mumbai, Delhi, and Beverly Hills.",
+      "category": "Bollywood & Hollywood",
+      "displayCategory": "BOLLYWOOD & HOLLYWOOD",
+      "badge": "Festive",
+      "badgeType": "pink",
+      "readTime": "3 MIN READ",
+      "image": "/images/priyanka-chopra-karwa-chauth-mehendi-nick-jonas-malti.jpg"
+    },
+    {
+      "id": "reality-stars-pivot-films-20",
+      "anchorId": "story-archive-20",
+      "href": "/shreya-kalra-karan-patel-reels-comment-rise-and-fall-2",
+      "title": "From Reality TV Villa to Mainstream Cinema: The Success Stories Shaping 2026",
+      "excerpt": "A deep dive into how former reality contestants built durable mainstream acting careers.",
+      "category": "Reality TV Updates",
+      "displayCategory": "REALITY TV UPDATES",
+      "badge": "Special Report",
+      "badgeType": "pink",
+      "readTime": "4 MIN READ",
+      "image": "/images/shreya-kalra-karan-patel-reels-comment-rise-and-fall-2.jpg"
+    },
+    {
+      "id": "objectification-row-aftermath-21",
+      "anchorId": "story-archive-21",
+      "href": "/janhvi-kapoor-peddi-controversy-koffee-with-karan-9",
+      "title": "Director Issues Unconditional Apology Following Janhvi Kapoor\u2019s KWK Statement",
+      "excerpt": "The director responds to Janhvi's remarks with a public clarification pledging respectful collaboration.",
+      "category": "Bollywood & Hollywood",
+      "displayCategory": "BOLLYWOOD & HOLLYWOOD",
+      "badge": "Industry Impact",
+      "badgeType": "pink",
+      "readTime": "3 MIN READ",
+      "image": "/images/janhvi-kapoor-peddi-controversy-koffee-with-karan-9.jpg"
+    },
+    {
+      "id": "jada-pinkett-smith-ramayana-la-22",
+      "anchorId": "story-archive-22",
+      "href": "/ramayana-la-premiere-ranbir-kapoor-yash-sai-pallavi",
+      "title": "Jada Pinkett Smith Praises Sai Pallavi\u2019s Grace on the Hollywood Red Carpet",
+      "excerpt": "Jada Pinkett Smith talks global cinema, epic storytelling and her admiration for Indian craftsmanship.",
+      "category": "Bollywood & Hollywood",
+      "displayCategory": "BOLLYWOOD & HOLLYWOOD",
+      "badge": "Red Carpet Buzz",
+      "badgeType": "pink",
+      "readTime": "3 MIN READ",
+      "image": "/images/ramayana-la-premiere-ranbir-kapoor-yash-sai-pallavi.jpg"
+    },
+    {
+      "id": "dz-clothing-music-video-23",
+      "anchorId": "story-archive-23",
+      "href": "/disha-patani-launches-clothing-brand-dz",
+      "title": "Disha Patani Directs and Stars in Cyberpunk Music Video for DZ Brand Launch",
+      "excerpt": "High energy choreography, neon lighting, and futuristic styling mark Disha\u2019s directorial debut.",
+      "category": "Latest",
+      "displayCategory": "BOLLYWOOD & FASHION",
+      "badge": "Video Exclusive",
+      "badgeType": "lime",
+      "readTime": "3 MIN READ",
+      "image": "/images/disha-patani-launches-clothing-brand-dz.jpg"
+    },
+    {
+      "id": "bb20-captaincy-fallout-24",
+      "anchorId": "story-archive-24",
+      "href": "/bigg-boss-20-100-per-cent-ration-housemates",
+      "title": "The Hidden Costs of 100% Ration: Captain Under Fire as Privilege Tasks Loom",
+      "excerpt": "How the captaincy contender traded luxury points to guarantee staple foods for the house.",
+      "category": "Reality TV Updates",
+      "displayCategory": "REALITY TV UPDATES",
+      "badge": "Strategy",
+      "badgeType": "lime",
+      "readTime": "3 MIN READ",
+      "image": "/images/bigg-boss-20-100-per-cent-ration-housemates.jpg"
+    },
+    {
+      "id": "kbc18-sai-pallavi-moment-25",
+      "anchorId": "story-archive-25",
+      "href": "/kbc-18-diwali-special-ranbir-kapoor-alia-bhatt-proposal-story",
+      "title": "Sai Pallavi Leaves Amitabh Bachchan Speechless with Her Simple Diwali Wish",
+      "excerpt": "The acclaimed actress wins hearts nationwide with her grounded outlook on fame and fortune.",
+      "category": "Reality TV Updates",
+      "displayCategory": "REALITY TV & BOLLYWOOD",
+      "badge": "Heartwarming",
+      "badgeType": "pink",
+      "readTime": "3 MIN READ",
+      "image": "/images/kbc-18-diwali-special-ranbir-kapoor-alia-bhatt-proposal-story.jpg"
+    },
+    {
+      "id": "scout-op-uditi-confrontation-26",
+      "anchorId": "story-archive-26",
+      "href": "/bigg-boss-20-uditi-singh-painful-breakup-scout-love",
+      "title": "Scout OP Clarifies His Position After Uditi\u2019s Emotional Response in the Garden",
+      "excerpt": "Scout explains his intentions behind the relationship conversation with Love Gill.",
+      "category": "Reality TV Updates",
+      "displayCategory": "REALITY TV UPDATES",
+      "badge": "Confrontation",
+      "badgeType": "pink",
+      "readTime": "3 MIN READ",
+      "image": "/images/bigg-boss-20-uditi-singh-painful-breakup-scout-love.jpg"
+    },
+    {
+      "id": "hollywood-monsterverse-response-27",
+      "anchorId": "story-archive-27",
+      "href": "/godzilla-minus-zero-india-release-delayed-ramayana",
+      "title": "Monsterverse Producers Comment on Rescheduling India Release Date",
+      "excerpt": "Producers express excitement for Indian audiences to experience Godzilla in optimized solo IMAX slots.",
+      "category": "News",
+      "displayCategory": "NEWS",
+      "badge": "Official Note",
+      "badgeType": "lime",
+      "readTime": "3 MIN READ",
+      "image": "/images/godzilla-minus-zero-india-release-delayed-ramayana.jpg"
+    },
+    {
+      "id": "nick-jonas-karwa-chauth-reaction-28",
+      "anchorId": "story-archive-28",
+      "href": "/priyanka-chopra-karwa-chauth-mehendi-nick-jonas-malti",
+      "title": "Nick Jonas Fasting Tradition: How the Pop Star Celebrates Alongside Priyanka",
+      "excerpt": "Nick shares an adorable family portrait honoring Indian cultural traditions with daughter Malti.",
+      "category": "Bollywood & Hollywood",
+      "displayCategory": "BOLLYWOOD & HOLLYWOOD",
+      "badge": "Family Special",
+      "badgeType": "pink",
+      "readTime": "3 MIN READ",
+      "image": "/images/priyanka-chopra-karwa-chauth-mehendi-nick-jonas-malti.jpg"
+    },
+    {
+      "id": "bhumi-akshay-script-readings-29",
+      "anchorId": "story-archive-29",
+      "href": "/bhumi-pednekar-akshay-kumar-priyadarshan-next-film",
+      "title": "Inside the First Table Read: Bhumi Pednekar and Akshay Kumar Crack Up the Crew",
+      "excerpt": "Behind closed doors in Mumbai, rehearsals for Priyadarshan's comic thriller get underway.",
+      "category": "Bollywood & Hollywood",
+      "displayCategory": "BOLLYWOOD & HOLLYWOOD",
+      "badge": "Rehearsals",
+      "badgeType": "pink",
+      "readTime": "3 MIN READ",
+      "image": "/images/bhumi-pednekar-akshay-kumar-priyadarshan-next-film.jpg"
+    },
+    {
+      "id": "social-media-cybercrime-protocols-30",
+      "anchorId": "story-archive-30",
+      "href": "/vijay-deverakonda-rashmika-mandanna-cyber-crime-complaint-hyderabad",
+      "title": "Digital Forensics Team Tracks Network of Coordinated Troll Accounts",
+      "excerpt": "How cybersecurity specialists uncovered automated bots inflating hate trends against the star couple.",
+      "category": "Exclusive",
+      "displayCategory": "EXCLUSIVE",
+      "badge": "Investigation",
+      "badgeType": "pink",
+      "readTime": "4 MIN READ",
+      "image": "/images/celebrity-cybercrime-complaint-thumbnail.jpg"
+    },
+    {
+      "id": "karan-patel-reels-clarification-31",
+      "anchorId": "story-archive-31",
+      "href": "/shreya-kalra-karan-patel-reels-comment-rise-and-fall-2",
+      "title": "Karan Patel Responds to Backlash Over Digital Creators Comment on Rise and Fall",
+      "excerpt": "Karan explains the context behind his observation regarding long-term craft versus algorithmic fame.",
+      "category": "Reality TV Updates",
+      "displayCategory": "REALITY TV UPDATES",
+      "badge": "Clarification",
+      "badgeType": "lime",
+      "readTime": "3 MIN READ",
+      "image": "/images/shreya-kalra-karan-patel-reels-comment-rise-and-fall-2.jpg"
+    },
+    {
+      "id": "kwk9-tara-sutaria-reaction-32",
+      "anchorId": "story-archive-32",
+      "href": "/janhvi-kapoor-veer-pahariya-concert-advice-koffee-with-karan",
+      "title": "Internet Reacts as Fans Link Janhvi\u2019s Concert Warning to Tara Sutaria Sightings",
+      "excerpt": "Netizens compile concert footage as viral threads dissect the playful reference on the Koffee couch.",
+      "category": "Reality TV Updates",
+      "displayCategory": "BOLLYWOOD & REALITY",
+      "badge": "Netizen Buzz",
+      "badgeType": "pink",
+      "readTime": "3 MIN READ",
+      "image": "/images/janhvi-kapoor-veer-pahariya-concert-advice-koffee-with-karan.jpg"
+    },
+    {
+      "id": "women-empowerment-cinema-33",
+      "anchorId": "story-archive-33",
+      "href": "/janhvi-kapoor-peddi-controversy-koffee-with-karan-9",
+      "title": "How Leading Actresses Are Reshaping Contract Clauses on South and Bollywood Sets",
+      "excerpt": "Intimacy coordinators and character dignity clauses become mandatory in top studio contracts.",
+      "category": "Bollywood & Hollywood",
+      "displayCategory": "BOLLYWOOD & HOLLYWOOD",
+      "badge": "Industry Reform",
+      "badgeType": "pink",
+      "readTime": "4 MIN READ",
+      "image": "/images/janhvi-kapoor-peddi-controversy-koffee-with-karan-9.jpg"
+    },
+    {
+      "id": "yash-hollywood-press-conference-34",
+      "anchorId": "story-archive-34",
+      "href": "/ramayana-la-premiere-ranbir-kapoor-yash-sai-pallavi",
+      "title": "Rocking Star Yash Discusses Taking Indian Mythological Epics Global",
+      "excerpt": "Yash explains why Ravana's complexity requires a performance that transcends conventional villain tropes.",
+      "category": "Bollywood & Hollywood",
+      "displayCategory": "BOLLYWOOD & HOLLYWOOD",
+      "badge": "Press Conference",
+      "badgeType": "pink",
+      "readTime": "4 MIN READ",
+      "image": "/images/ramayana-la-premiere-ranbir-kapoor-yash-sai-pallavi.jpg"
+    },
+    {
+      "id": "oversized-streetwear-phenomenon-35",
+      "anchorId": "story-archive-35",
+      "href": "/disha-patani-launches-clothing-brand-dz",
+      "title": "Why Indian Youth Are Trading Skinny Fits for Oversized Japanese Streetwear",
+      "excerpt": "Fashion analysts explain the cultural shift driving high demand for brands like Disha\u2019s DZ.",
+      "category": "Latest",
+      "displayCategory": "BOLLYWOOD & FASHION",
+      "badge": "Trend Analysis",
+      "badgeType": "lime",
+      "readTime": "3 MIN READ",
+      "image": "/images/disha-patani-launches-clothing-brand-dz.jpg"
+    },
+    {
+      "id": "bb20-weekend-ka-vaar-preview-36",
+      "anchorId": "story-archive-36",
+      "href": "/bigg-boss-20-100-per-cent-ration-housemates",
+      "title": "Weekend Ka Vaar Preview: Host to Question Luxury Task Sacrifices",
+      "excerpt": "Sneak peek of the weekend episode where alliances will be tested over kitchen politics.",
+      "category": "Reality TV Updates",
+      "displayCategory": "REALITY TV UPDATES",
+      "badge": "Sneak Peek",
+      "badgeType": "lime",
+      "readTime": "3 MIN READ",
+      "image": "/images/bigg-boss-20-100-per-cent-ration-housemates.jpg"
+    },
+    {
+      "id": "ravie-dubey-kbc-story-37",
+      "anchorId": "story-archive-37",
+      "href": "/kbc-18-diwali-special-ranbir-kapoor-alia-bhatt-proposal-story",
+      "title": "Ravie Dubey on Sharing the Hot Seat with Ranbir Kapoor and Amitabh Bachchan",
+      "excerpt": "Ravie reflects on his journey from television sets to the grand stage of KBC 18 alongside superstars.",
+      "category": "Reality TV Updates",
+      "displayCategory": "REALITY TV & BOLLYWOOD",
+      "badge": "Exclusive Chat",
+      "badgeType": "pink",
+      "readTime": "3 MIN READ",
+      "image": "/images/kbc-18-diwali-special-ranbir-kapoor-alia-bhatt-proposal-story.jpg"
+    },
+    {
+      "id": "uditi-arishfa-sisterhood-38",
+      "anchorId": "story-archive-38",
+      "href": "/bigg-boss-20-uditi-singh-painful-breakup-scout-love",
+      "title": "Sisterhood in the Bigg Boss House: How Arishfa and Uditi Bonded Over Hard Truths",
+      "excerpt": "Fans celebrate an authentic female friendship forming amidst the chaos of reality competition.",
+      "category": "Reality TV Updates",
+      "displayCategory": "REALITY TV UPDATES",
+      "badge": "Bonding",
+      "badgeType": "pink",
+      "readTime": "3 MIN READ",
+      "image": "/images/bigg-boss-20-uditi-singh-painful-breakup-scout-love.jpg"
+    },
+    {
+      "id": "screen-allocation-multiplexes-39",
+      "anchorId": "story-archive-39",
+      "href": "/godzilla-minus-zero-india-release-delayed-ramayana",
+      "title": "Multiplex Chains Announce Record 24-Hour Round-the-Clock Screenings",
+      "excerpt": "Top chains schedule 2 AM and 5 AM shows in Mumbai, Bengaluru, and Hyderabad to meet demand.",
+      "category": "News",
+      "displayCategory": "NEWS",
+      "badge": "Showtimes",
+      "badgeType": "lime",
+      "readTime": "3 MIN READ",
+      "image": "/images/godzilla-minus-zero-india-release-delayed-ramayana.jpg"
+    },
+    {
+      "id": "festive-fashion-priyanka-40",
+      "anchorId": "story-archive-40",
+      "href": "/priyanka-chopra-karwa-chauth-mehendi-nick-jonas-malti",
+      "title": "Deep Red and Gold: Priyanka Chopra\u2019s Sabyasachi Saree Details Decoded",
+      "excerpt": "Handwoven textures and custom embroidery that made Priyanka\u2019s festival ensemble stand out.",
+      "category": "Bollywood & Hollywood",
+      "displayCategory": "BOLLYWOOD & HOLLYWOOD",
+      "badge": "Fashion Breakdown",
+      "badgeType": "pink",
+      "readTime": "3 MIN READ",
+      "image": "/images/priyanka-chopra-karwa-chauth-mehendi-nick-jonas-malti.jpg"
+    },
+    {
+      "id": "priyadarshan-tips-films-deal-41",
+      "anchorId": "story-archive-41",
+      "href": "/bhumi-pednekar-akshay-kumar-priyadarshan-next-film",
+      "title": "Tips Films Backs Priyadarshan-Akshay Comic Thriller with Massive Production Budget",
+      "excerpt": "Producers announce ambitious multi-city shooting schedule covering London and coastal Kerala.",
+      "category": "Bollywood & Hollywood",
+      "displayCategory": "BOLLYWOOD & HOLLYWOOD",
+      "badge": "Production News",
+      "badgeType": "pink",
+      "readTime": "3 MIN READ",
+      "image": "/images/bhumi-pednekar-akshay-kumar-priyadarshan-next-film.jpg"
+    },
+    {
+      "id": "legal-precedents-online-trolling-42",
+      "anchorId": "story-archive-42",
+      "href": "/vijay-deverakonda-rashmika-mandanna-cyber-crime-complaint-hyderabad",
+      "title": "Legal Experts on How Vijay & Rashmika's Police Case Sets a High Bar for Cyber Crimes",
+      "excerpt": "A landmark test case for protecting celebrity privacy against coordinated deepfake campaigns.",
+      "category": "Exclusive",
+      "displayCategory": "EXCLUSIVE",
+      "badge": "Legal Analysis",
+      "badgeType": "pink",
+      "readTime": "4 MIN READ",
+      "image": "/images/celebrity-cybercrime-complaint-thumbnail.jpg"
+    },
+    {
+      "id": "rise-and-fall-elimination-shock-43",
+      "anchorId": "story-archive-43",
+      "href": "/shreya-kalra-karan-patel-reels-comment-rise-and-fall-2",
+      "title": "Rise and Fall Season 2: Surprise Elimination Shakes the Villa After Voting Round",
+      "excerpt": "Tensions reach boiling point as allies turn rivals in an unexpected blindside elimination.",
+      "category": "Reality TV Updates",
+      "displayCategory": "REALITY TV UPDATES",
+      "badge": "Elimination",
+      "badgeType": "lime",
+      "readTime": "3 MIN READ",
+      "image": "/images/shreya-kalra-karan-patel-reels-comment-rise-and-fall-2.jpg"
+    },
+    {
+      "id": "karan-johar-industry-dialogue-44",
+      "anchorId": "story-archive-44",
+      "href": "/janhvi-kapoor-peddi-controversy-koffee-with-karan-9",
+      "title": "Karan Johar Speaks on Addressing Sensitive Topics on Prime Time Chat Shows",
+      "excerpt": "Karan addresses the evolving editorial responsibility of talk shows in the digital era.",
+      "category": "Bollywood & Hollywood",
+      "displayCategory": "BOLLYWOOD & HOLLYWOOD",
+      "badge": "Showrunner Note",
+      "badgeType": "pink",
+      "readTime": "3 MIN READ",
+      "image": "/images/janhvi-kapoor-peddi-controversy-koffee-with-karan-9.jpg"
+    },
+    {
+      "id": "ranbir-kapoor-la-red-carpet-look-45",
+      "anchorId": "story-archive-45",
+      "href": "/ramayana-la-premiere-ranbir-kapoor-yash-sai-pallavi",
+      "title": "Ranbir Kapoor\u2019s Bespoke Bandhgala Turn Heads on the Academy Museum Red Carpet",
+      "excerpt": "Elegance meets heritage: A close look at Ranbir's handcrafted festive silhouette in LA.",
+      "category": "Bollywood & Hollywood",
+      "displayCategory": "BOLLYWOOD & HOLLYWOOD",
+      "badge": "Red Carpet Style",
+      "badgeType": "pink",
+      "readTime": "3 MIN READ",
+      "image": "/images/ramayana-la-premiere-ranbir-kapoor-yash-sai-pallavi.jpg"
+    },
+    {
+      "id": "dz-clothing-global-shipping-46",
+      "anchorId": "story-archive-46",
+      "href": "/disha-patani-launches-clothing-brand-dz",
+      "title": "DZ Clothing Label Announces Worldwide Shipping Following Overwhelming Demand",
+      "excerpt": "Within 48 hours of launch, orders poured in from London, Dubai, New York, and Melbourne.",
+      "category": "Latest",
+      "displayCategory": "BOLLYWOOD & FASHION",
+      "badge": "Brand Milestone",
+      "badgeType": "lime",
+      "readTime": "3 MIN READ",
+      "image": "/images/disha-patani-launches-clothing-brand-dz.jpg"
+    },
+    {
+      "id": "bb20-luxury-budget-surprise-47",
+      "anchorId": "story-archive-47",
+      "href": "/bigg-boss-20-100-per-cent-ration-housemates",
+      "title": "Bigg Boss 20: Secret Task Delivers Luxury Dessert Hamper to Winning Trio",
+      "excerpt": "Housemates celebrate an unexpected dessert reward after enduring physical endurance challenges.",
+      "category": "Reality TV Updates",
+      "displayCategory": "REALITY TV UPDATES",
+      "badge": "Reward Task",
+      "badgeType": "lime",
+      "readTime": "3 MIN READ",
+      "image": "/images/bigg-boss-20-100-per-cent-ration-housemates.jpg"
+    },
+    {
+      "id": "kbc18-charity-donation-48",
+      "anchorId": "story-archive-48",
+      "href": "/kbc-18-diwali-special-ranbir-kapoor-alia-bhatt-proposal-story",
+      "title": "KBC 18 Diwali Special: Winnings Donated to Environmental & Heritage Restoration Funds",
+      "excerpt": "The Ramayana trio pledges full game winnings toward tree plantation and river revitalization.",
+      "category": "Reality TV Updates",
+      "displayCategory": "REALITY TV & BOLLYWOOD",
+      "badge": "Charity",
+      "badgeType": "pink",
+      "readTime": "3 MIN READ",
+      "image": "/images/kbc-18-diwali-special-ranbir-kapoor-alia-bhatt-proposal-story.jpg"
+    },
+    {
+      "id": "uditi-singh-fan-letters-49",
+      "anchorId": "story-archive-49",
+      "href": "/bigg-boss-20-uditi-singh-painful-breakup-scout-love",
+      "title": "Over 50,000 Messages Pour In Supporting Uditi Singh\u2019s Journey on Bigg Boss",
+      "excerpt": "Fan clubs organize trend campaigns celebrating Uditi\u2019s resilience and composure under pressure.",
+      "category": "Reality TV Updates",
+      "displayCategory": "REALITY TV UPDATES",
+      "badge": "Audience Voice",
+      "badgeType": "pink",
+      "readTime": "3 MIN READ",
+      "image": "/images/bigg-boss-20-uditi-singh-painful-breakup-scout-love.jpg"
+    },
+    {
+      "id": "godzilla-vs-kong-legacy-50",
+      "anchorId": "story-archive-50",
+      "href": "/godzilla-minus-zero-india-release-delayed-ramayana",
+      "title": "How India Became One of the Monsterverse\u2019s Most Lucrative Theatrical Markets",
+      "excerpt": "Looking back at the explosive box office runs of Godzilla and Kong across Indian metros.",
+      "category": "News",
+      "displayCategory": "NEWS",
+      "badge": "Box Office Legacy",
+      "badgeType": "lime",
+      "readTime": "4 MIN READ",
+      "image": "/images/godzilla-minus-zero-india-release-delayed-ramayana.jpg"
+    },
+    {
+      "id": "malti-marie-festive-cuteness-51",
+      "anchorId": "story-archive-51",
+      "href": "/priyanka-chopra-karwa-chauth-mehendi-nick-jonas-malti",
+      "title": "Malti Marie\u2019s Tiny Henna Heart Steals the Spotlight on Social Media",
+      "excerpt": "Fans swoon over Priyanka\u2019s tender touch including her daughter's name in her festive mehendi.",
+      "category": "Bollywood & Hollywood",
+      "displayCategory": "BOLLYWOOD & HOLLYWOOD",
+      "badge": "Trending",
+      "badgeType": "pink",
+      "readTime": "2 MIN READ",
+      "image": "/images/priyanka-chopra-karwa-chauth-mehendi-nick-jonas-malti.jpg"
+    },
+    {
+      "id": "bhumi-pednekar-comedy-prep-52",
+      "anchorId": "story-archive-52",
+      "href": "/bhumi-pednekar-akshay-kumar-priyadarshan-next-film",
+      "title": "Bhumi Pednekar on Mastering Comic Timing: 'Priyadarshan Demands Zero Hesitation'",
+      "excerpt": "Bhumi discusses unlearning dramatic pacing to match Akshay Kumar\u2019s legendary speed.",
+      "category": "Bollywood & Hollywood",
+      "displayCategory": "BOLLYWOOD & HOLLYWOOD",
+      "badge": "Actor's Craft",
+      "badgeType": "pink",
+      "readTime": "3 MIN READ",
+      "image": "/images/bhumi-pednekar-akshay-kumar-priyadarshan-next-film.jpg"
+    },
+    {
+      "id": "celebrity-social-security-53",
+      "anchorId": "story-archive-53",
+      "href": "/vijay-deverakonda-rashmika-mandanna-cyber-crime-complaint-hyderabad",
+      "title": "How Talent Agencies Are Investing in Specialized Cyber Security Protection for Stars",
+      "excerpt": "From AI detection tools to round-the-clock IP monitoring, celebrity management gets a digital armor.",
+      "category": "Exclusive",
+      "displayCategory": "EXCLUSIVE",
+      "badge": "Tech & Law",
+      "badgeType": "pink",
+      "readTime": "4 MIN READ",
+      "image": "/images/celebrity-cybercrime-complaint-thumbnail.jpg"
+    },
+    {
+      "id": "shreya-kalra-fitness-regime-54",
+      "anchorId": "story-archive-54",
+      "href": "/shreya-kalra-karan-patel-reels-comment-rise-and-fall-2",
+      "title": "Behind the Stunts: Shreya Kalra\u2019s High-Intensity Fitness Regimen on Reality TV",
+      "excerpt": "Strength training, calisthenics, and endurance routines that keep Shreya ready for physical face-offs.",
+      "category": "Reality TV Updates",
+      "displayCategory": "REALITY TV UPDATES",
+      "badge": "Fitness",
+      "badgeType": "lime",
+      "readTime": "3 MIN READ",
+      "image": "/images/shreya-kalra-karan-patel-reels-comment-rise-and-fall-2.jpg"
+    },
+    {
+      "id": "kwk9-fan-questions-selection-55",
+      "anchorId": "story-archive-55",
+      "href": "/janhvi-kapoor-veer-pahariya-concert-advice-koffee-with-karan",
+      "title": "Inside the Rapid Fire Vault: How Fan Questions Are Curated for Season 9",
+      "excerpt": "Producers explain the vetting process behind the cheekiest questions fired at celebrity guests.",
+      "category": "Reality TV Updates",
+      "displayCategory": "BOLLYWOOD & REALITY",
+      "badge": "Behind the Scenes",
+      "badgeType": "pink",
+      "readTime": "3 MIN READ",
+      "image": "/images/janhvi-kapoor-veer-pahariya-concert-advice-koffee-with-karan.jpg"
+    },
+    {
+      "id": "women-in-film-dialogues-56",
+      "anchorId": "story-archive-56",
+      "href": "/janhvi-kapoor-peddi-controversy-koffee-with-karan-9",
+      "title": "Roundtable: Why Frank Conversations on Talk Shows Are Setting Precedents",
+      "excerpt": "Senior film journalists analyze how Janhvi\u2019s candid responses shifted public discourse.",
+      "category": "Bollywood & Hollywood",
+      "displayCategory": "BOLLYWOOD & HOLLYWOOD",
+      "badge": "Roundtable",
+      "badgeType": "pink",
+      "readTime": "4 MIN READ",
+      "image": "/images/janhvi-kapoor-peddi-controversy-koffee-with-karan-9.jpg"
+    },
+    {
+      "id": "nitesh-tiwari-vision-la-57",
+      "anchorId": "story-archive-57",
+      "href": "/ramayana-la-premiere-ranbir-kapoor-yash-sai-pallavi",
+      "title": "Director Nitesh Tiwari on Adapting the Ramayana with Reverence and Cutting-Edge Tech",
+      "excerpt": "Tiwari explains his decade-long research process and commitment to honoring every shloka.",
+      "category": "Bollywood & Hollywood",
+      "displayCategory": "BOLLYWOOD & HOLLYWOOD",
+      "badge": "Director Interview",
+      "badgeType": "pink",
+      "readTime": "4 MIN READ",
+      "image": "/images/ramayana-la-premiere-ranbir-kapoor-yash-sai-pallavi.jpg"
+    },
+    {
+      "id": "disha-patani-fitness-dz-58",
+      "anchorId": "story-archive-58",
+      "href": "/disha-patani-launches-clothing-brand-dz",
+      "title": "How Disha Patani\u2019s Martial Arts Training Influenced the Mobility of DZ Apparel",
+      "excerpt": "Reinforced seams and breathable textiles designed to withstand workouts and parkour.",
+      "category": "Latest",
+      "displayCategory": "BOLLYWOOD & FASHION",
+      "badge": "Athleisure",
+      "badgeType": "lime",
+      "readTime": "3 MIN READ",
+      "image": "/images/disha-patani-launches-clothing-brand-dz.jpg"
+    },
+    {
+      "id": "bb20-live-feed-unseen-59",
+      "anchorId": "story-archive-59",
+      "href": "/bigg-boss-20-100-per-cent-ration-housemates",
+      "title": "Unseen 24/7 Live Feed: The Late Night Conversations You Missed on TV",
+      "excerpt": "Housemates open up about home, career anxieties and survival strategies under the stars.",
+      "category": "Reality TV Updates",
+      "displayCategory": "REALITY TV UPDATES",
+      "badge": "Live Feed",
+      "badgeType": "lime",
+      "readTime": "3 MIN READ",
+      "image": "/images/bigg-boss-20-100-per-cent-ration-housemates.jpg"
+    },
+    {
+      "id": "ranbir-kbc-trivia-master-60",
+      "anchorId": "story-archive-60",
+      "href": "/kbc-18-diwali-special-ranbir-kapoor-alia-bhatt-proposal-story",
+      "title": "Ranbir Kapoor\u2019s Impressive Knowledge of Indian Wildlife Surprises Big B on KBC",
+      "excerpt": "Ranbir breezes through nature and geography questions during his hot seat performance.",
+      "category": "Reality TV Updates",
+      "displayCategory": "REALITY TV & BOLLYWOOD",
+      "badge": "Trivia",
+      "badgeType": "pink",
+      "readTime": "3 MIN READ",
+      "image": "/images/kbc-18-diwali-special-ranbir-kapoor-alia-bhatt-proposal-story.jpg"
+    },
+    {
+      "id": "uditi-singh-style-statement-61",
+      "anchorId": "story-archive-61",
+      "href": "/bigg-boss-20-uditi-singh-painful-breakup-scout-love",
+      "title": "Uditi Singh\u2019s Casual Chic Looks Become Style Inspiration for College Goers",
+      "excerpt": "Comfortable co-ord sets, effortless ponytails, and minimalist makeup defining Uditi\u2019s vibe.",
+      "category": "Reality TV Updates",
+      "displayCategory": "REALITY TV UPDATES",
+      "badge": "Fashion",
+      "badgeType": "pink",
+      "readTime": "3 MIN READ",
+      "image": "/images/bigg-boss-20-uditi-singh-painful-breakup-scout-love.jpg"
+    },
+    {
+      "id": "imax-ticket-pricing-trends-62",
+      "anchorId": "story-archive-62",
+      "href": "/godzilla-minus-zero-india-release-delayed-ramayana",
+      "title": "Understanding Ticket Price Dynamics for Holiday Weekend Big Screen Clashes",
+      "excerpt": "Why Indian moviegoers are willing to pay \u20b91,500 for recliner IMAX seats during festive releases.",
+      "category": "News",
+      "displayCategory": "NEWS",
+      "badge": "Consumer Trends",
+      "badgeType": "lime",
+      "readTime": "3 MIN READ",
+      "image": "/images/godzilla-minus-zero-india-release-delayed-ramayana.jpg"
+    },
+    {
+      "id": "priyanka-chopra-future-projects-63",
+      "anchorId": "story-archive-63",
+      "href": "/priyanka-chopra-karwa-chauth-mehendi-nick-jonas-malti",
+      "title": "What\u2019s Next for Priyanka Chopra: Upcoming Action Thrillers and Hollywood Features",
+      "excerpt": "A roundup of Priyanka's confirmed slate including high-octane international productions.",
+      "category": "Bollywood & Hollywood",
+      "displayCategory": "BOLLYWOOD & HOLLYWOOD",
+      "badge": "Film Slate",
+      "badgeType": "pink",
+      "readTime": "3 MIN READ",
+      "image": "/images/priyanka-chopra-karwa-chauth-mehendi-nick-jonas-malti.jpg"
+    },
+    {
+      "id": "comedy-writing-secrets-64",
+      "anchorId": "story-archive-64",
+      "href": "/bhumi-pednekar-akshay-kumar-priyadarshan-next-film",
+      "title": "The Art of Situational Comedy: Behind the Chaos of Priyadarshan\u2019s Masterpieces",
+      "excerpt": "How misunderstood identities, overlapping phone calls, and chaotic climax scenes come together.",
+      "category": "Bollywood & Hollywood",
+      "displayCategory": "BOLLYWOOD & HOLLYWOOD",
+      "badge": "Film Craft",
+      "badgeType": "pink",
+      "readTime": "4 MIN READ",
+      "image": "/images/bhumi-pednekar-akshay-kumar-priyadarshan-next-film.jpg"
+    },
+    {
+      "id": "online-safety-actors-65",
+      "anchorId": "story-archive-65",
+      "href": "/vijay-deverakonda-rashmika-mandanna-cyber-crime-complaint-hyderabad",
+      "title": "Cyber Safety 101: How Indian Celebrities Are Safeguarding Their Digital Footprint",
+      "excerpt": "Expert tips on recognizing impersonators, reporting coordinated attacks, and legal remedies.",
+      "category": "Exclusive",
+      "displayCategory": "EXCLUSIVE",
+      "badge": "Safety Guide",
+      "badgeType": "pink",
+      "readTime": "4 MIN READ",
+      "image": "/images/celebrity-couple-amid-cybercrime-buzz.jpg"
+    },
+    {
+      "id": "rise-and-fall-finale-odds-66",
+      "anchorId": "story-archive-66",
+      "href": "/shreya-kalra-karan-patel-reels-comment-rise-and-fall-2",
+      "title": "Rise and Fall Finale Odds: Who Has the Strongest Alliance to Claim the Trophy?",
+      "excerpt": "A statistical breakdown of task wins, social currency, and voting trends inside the house.",
+      "category": "Reality TV Updates",
+      "displayCategory": "REALITY TV UPDATES",
+      "badge": "Predictions",
+      "badgeType": "lime",
+      "readTime": "3 MIN READ",
+      "image": "/images/shreya-kalra-karan-patel-reels-comment-rise-and-fall-2.jpg"
+    },
+    {
+      "id": "veer-pahariya-interview-preview-67",
+      "anchorId": "story-archive-67",
+      "href": "/janhvi-kapoor-veer-pahariya-concert-advice-koffee-with-karan",
+      "title": "Veer Pahariya on His Upcoming Acting Debut: 'Ready to Put in the 10,000 Hours'",
+      "excerpt": "Veer speaks candidly about expectations, industry mentors, and finding his own artistic voice.",
+      "category": "Reality TV Updates",
+      "displayCategory": "BOLLYWOOD & REALITY",
+      "badge": "Rising Star",
+      "badgeType": "pink",
+      "readTime": "3 MIN READ",
+      "image": "/images/janhvi-kapoor-veer-pahariya-concert-advice-koffee-with-karan.jpg"
+    },
+    {
+      "id": "janhvi-kapoor-upcoming-films-68",
+      "anchorId": "story-archive-68",
+      "href": "/janhvi-kapoor-peddi-controversy-koffee-with-karan-9",
+      "title": "Janhvi Kapoor\u2019s Diverse 2026 Roster: Pan-India Epics to Gritty Drama",
+      "excerpt": "From high-stakes political thrillers to mythological fantasy, Janhvi tests every dramatic muscle.",
+      "category": "Bollywood & Hollywood",
+      "displayCategory": "BOLLYWOOD & HOLLYWOOD",
+      "badge": "Future Slate",
+      "badgeType": "pink",
+      "readTime": "3 MIN READ",
+      "image": "/images/janhvi-kapoor-peddi-controversy-koffee-with-karan-9.jpg"
+    },
+    {
+      "id": "ramayana-box-office-projections-69",
+      "anchorId": "story-archive-69",
+      "href": "/ramayana-la-premiere-ranbir-kapoor-yash-sai-pallavi",
+      "title": "Global Trade Analysts Project \u20b91,000 Cr Worldwide Opening for Ramayana Part 1",
+      "excerpt": "International pre-sales and unprecedented overseas theatre counts indicate record-shattering run.",
+      "category": "Bollywood & Hollywood",
+      "displayCategory": "BOLLYWOOD & HOLLYWOOD",
+      "badge": "Box Office Forecast",
+      "badgeType": "pink",
+      "readTime": "4 MIN READ",
+      "image": "/images/ramayana-la-premiere-ranbir-kapoor-yash-sai-pallavi.jpg"
+    },
+    {
+      "id": "disha-patani-entrepreneurial-vision-70",
+      "anchorId": "story-archive-70",
+      "href": "/disha-patani-launches-clothing-brand-dz",
+      "title": "Disha Patani on Building a Youth Brand: 'DZ Is an Authentic Extension of My Wardrobe'",
+      "excerpt": "The actress looks ahead to pop-up stores, international runway showcases, and community drops.",
+      "category": "Latest",
+      "displayCategory": "BOLLYWOOD & FASHION",
+      "badge": "Entrepreneur",
+      "badgeType": "lime",
+      "readTime": "3 MIN READ",
+      "image": "/images/disha-patani-launches-clothing-brand-dz.jpg"
+    }
   ];
 
   const visibleArticles =
@@ -348,6 +1272,37 @@ export default function Home() {
             (activeCategory === "Bollywood" &&
               (art.category === "Bollywood" || art.category === "Bollywood & Hollywood"))
         );
+
+  // Pagination logic:
+  // Page 1 has 11 articles + 12th box is the Live Community Poll (12 boxes total).
+  // Subsequent pages (Page 2, 3...) each contain up to 24 boxes.
+  const PAGE_1_ARTICLES_COUNT = 11;
+  const PAGE_N_ARTICLES_COUNT = 24;
+
+  const totalArticles = visibleArticles.length;
+  const totalPages =
+    totalArticles <= PAGE_1_ARTICLES_COUNT
+      ? 1
+      : 1 + Math.ceil((totalArticles - PAGE_1_ARTICLES_COUNT) / PAGE_N_ARTICLES_COUNT);
+
+  let pageArticles: EditorialArticle[] = [];
+  if (currentPage === 1) {
+    pageArticles = visibleArticles.slice(0, PAGE_1_ARTICLES_COUNT);
+  } else {
+    const startIndex = PAGE_1_ARTICLES_COUNT + (currentPage - 2) * PAGE_N_ARTICLES_COUNT;
+    pageArticles = visibleArticles.slice(startIndex, startIndex + PAGE_N_ARTICLES_COUNT);
+  }
+
+  const handlePageChange = (newPage: number) => {
+    if (newPage < 1 || newPage > totalPages || newPage === currentPage) return;
+    setCurrentPage(newPage);
+    const el = document.getElementById("news");
+    if (el) {
+      const yOffset = -85;
+      const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
+      window.scrollTo({ top: y, behavior: "smooth" });
+    }
+  };
 
   // Instructed preservation: "and keep the live community poll as it is. dont chnage that"
   const showPollCard = true;
@@ -501,7 +1456,7 @@ export default function Home() {
                 key={cat}
                 role="tab"
                 aria-selected={activeCategory === cat}
-                onClick={() => setActiveCategory(activeCategory === cat ? "All" : cat)}
+                onClick={() => { setActiveCategory(activeCategory === cat ? "All" : cat); setCurrentPage(1); }}
                 className={`cat-chip ${activeCategory === cat ? "on" : ""}`}
               >
                 {cat}
@@ -511,7 +1466,7 @@ export default function Home() {
 
           <div className="grid">
             {/* Editorial Article Cards */}
-            {visibleArticles.map((article) => {
+            {pageArticles.map((article) => {
               const cardContent = (
                 <>
                   <div
@@ -582,7 +1537,7 @@ export default function Home() {
             })}
 
             {/* REAL COMMUNITY POLL CARD (Persisted via /api/poll) */}
-            {showPollCard && (
+            {currentPage === 1 && showPollCard && (
               <div className="poll-card" id="polls">
                 <span className="badge pink">🗳️ Live Community Poll</span>
                 <h3>{poll.question}</h3>
@@ -636,6 +1591,62 @@ export default function Home() {
               </div>
             )}
           </div>
+
+          {/* Pagination Navigation Bar */}
+          {totalPages > 1 && (
+            <nav
+              className="pagination flex items-center justify-center gap-1.5 sm:gap-2 mt-12 mb-4 py-3 flex-wrap"
+              aria-label="Fresh Buzz articles pagination"
+            >
+              {/* Previous Page Arrow Button */}
+              <button
+                type="button"
+                onClick={() => handlePageChange(currentPage - 1)}
+                disabled={currentPage === 1}
+                className="h-10 px-3.5 rounded-xl bg-[var(--ink-2)] border border-white/10 text-[var(--muted)] hover:text-white hover:border-[var(--lime)] hover:bg-[var(--ink-3)] font-mono font-semibold text-xs flex items-center gap-1.5 transition-all disabled:opacity-25 disabled:pointer-events-none cursor-pointer"
+                aria-label="Previous Page"
+              >
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M15 18l-6-6 6-6" />
+                </svg>
+                <span className="hidden sm:inline">Prev</span>
+              </button>
+
+              {/* Numbered Page Buttons with increasing numbers */}
+              {Array.from({ length: totalPages }, (_, i) => i + 1).map((pageNum) => {
+                const isActive = currentPage === pageNum;
+                return (
+                  <button
+                    key={pageNum}
+                    type="button"
+                    onClick={() => handlePageChange(pageNum)}
+                    aria-current={isActive ? "page" : undefined}
+                    className={`h-10 min-w-10 px-3 rounded-xl font-mono font-bold text-sm flex items-center justify-center transition-all cursor-pointer ${
+                      isActive
+                        ? "bg-[var(--lime)] text-[var(--ink)] shadow-[0_0_16px_rgba(111,207,74,0.35)] scale-105"
+                        : "bg-[var(--ink-2)] border border-white/10 text-[var(--muted)] hover:text-white hover:border-[var(--lime)] hover:bg-[var(--ink-3)]"
+                    }`}
+                  >
+                    {pageNum}
+                  </button>
+                );
+              })}
+
+              {/* Next Page Arrow Button */}
+              <button
+                type="button"
+                onClick={() => handlePageChange(currentPage + 1)}
+                disabled={currentPage === totalPages}
+                className="h-10 px-3.5 rounded-xl bg-[var(--ink-2)] border border-white/10 text-[var(--muted)] hover:text-white hover:border-[var(--lime)] hover:bg-[var(--ink-3)] font-mono font-semibold text-xs flex items-center gap-1.5 transition-all disabled:opacity-25 disabled:pointer-events-none cursor-pointer"
+                aria-label="Next Page"
+              >
+                <span className="hidden sm:inline">Next</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M9 18l6-6-6-6" />
+                </svg>
+              </button>
+            </nav>
+          )}
         </section>
 
         {/* ===== BUZZ-O-METER (Transparent Editorial Heat Index) ===== */}
