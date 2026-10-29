@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 export const metadata: Metadata = {
   title: "About Us | Buzz Originals",
   description:
-    "Learn about Buzz Originals — our mission, editorial team, and unfiltered coverage of Indian reality TV, Bigg Boss, Splitsvilla, Bollywood, and Web Series.",
+    "Learn about Buzz Originals — our mission, editorial team, and unfiltered coverage of Reality Shows, Bollywood, Movies, Web Series, and News.",
   alternates: {
     canonical: "/about",
   },
@@ -42,11 +42,66 @@ export default function AboutPage() {
 
           <h2>What We Cover</h2>
           <ul>
-            <li><strong>Bigg Boss & Reality TV:</strong> Weekend ka Vaar recaps, nomination breakdowns, live feed scoops, and eviction analysis.</li>
-            <li><strong>Splitsvilla & Dating Shows:</strong> Unfiltered commentary on dome sessions, connection drama, and contestant dynamics.</li>
-            <li><strong>Khatron Ke Khiladi:</strong> High-octane stunt tracking, contestant journeys, and elimination updates.</li>
-            <li><strong>Bollywood & Indian Cinema:</strong> Box office analysis, red carpet moments, release date trackers, and industry developments.</li>
-            <li><strong>Web Series & Streaming:</strong> OTT premiere calendars, binge recommendations, and candid reviews.</li>
+            <li>
+              <div className="flex flex-col sm:flex-row sm:items-start gap-1 sm:gap-3 flex-1">
+                <strong className="text-white font-bold sm:min-w-[150px] flex-shrink-0">
+                  <Link href="/reality-shows" className="hover:text-[var(--lime)] transition-colors">
+                    Reality Shows:
+                  </Link>
+                </strong>
+                <span className="text-[#d4d4d8]">
+                  Eliminations, fights, fan wars, dome drama, and 24/7 live feed scoops across Bigg Boss, Splitsvilla, Khatron Ke Khiladi, and Rise and Fall — minus the filler.
+                </span>
+              </div>
+            </li>
+            <li>
+              <div className="flex flex-col sm:flex-row sm:items-start gap-1 sm:gap-3 flex-1">
+                <strong className="text-white font-bold sm:min-w-[150px] flex-shrink-0">
+                  <Link href="/bollywood" className="hover:text-[var(--lime)] transition-colors">
+                    Bollywood:
+                  </Link>
+                </strong>
+                <span className="text-[#d4d4d8]">
+                  Red carpets, celebrity scoops, airport looks, festival premieres, and the unfiltered gossip your group chat is already talking about.
+                </span>
+              </div>
+            </li>
+            <li>
+              <div className="flex flex-col sm:flex-row sm:items-start gap-1 sm:gap-3 flex-1">
+                <strong className="text-white font-bold sm:min-w-[150px] flex-shrink-0">
+                  <Link href="/movies" className="hover:text-[var(--lime)] transition-colors">
+                    Movies:
+                  </Link>
+                </strong>
+                <span className="text-[#d4d4d8]">
+                  Theatrical release trackers, IMAX &amp; box office clash analysis, trailer breakdowns, and fan-first movie reviews spanning Bollywood and Hollywood.
+                </span>
+              </div>
+            </li>
+            <li>
+              <div className="flex flex-col sm:flex-row sm:items-start gap-1 sm:gap-3 flex-1">
+                <strong className="text-white font-bold sm:min-w-[150px] flex-shrink-0">
+                  <Link href="/#web-series" className="hover:text-[var(--lime)] transition-colors">
+                    Web Series:
+                  </Link>
+                </strong>
+                <span className="text-[#d4d4d8]">
+                  OTT premiere calendars, digital release scoops, binge recommendations, and candid reviews across Netflix, Prime Video, JioCinema, and Hotstar.
+                </span>
+              </div>
+            </li>
+            <li>
+              <div className="flex flex-col sm:flex-row sm:items-start gap-1 sm:gap-3 flex-1">
+                <strong className="text-white font-bold sm:min-w-[150px] flex-shrink-0">
+                  <Link href="/#news" className="hover:text-[var(--lime)] transition-colors">
+                    News:
+                  </Link>
+                </strong>
+                <span className="text-[#d4d4d8]">
+                  Breaking entertainment scoops, verified cyber crime filings, legal notices, and industry developments without the PR spin.
+                </span>
+              </div>
+            </li>
           </ul>
 
           <h2>Editorial Integrity</h2>
