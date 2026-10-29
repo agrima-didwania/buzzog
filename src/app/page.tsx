@@ -177,18 +177,31 @@ export default function Home() {
 
   const editorialArticles: EditorialArticle[] = [
     {
-      "id": "disha-patani-clothing-brand-dz",
-      "anchorId": "latest-story",
-      "href": "/disha-patani-launches-clothing-brand-dz",
-      "title": "Disha Patani Launches Her Own Clothing Brand DZ",
-      "excerpt": "Disha Patani turns fashion entrepreneur with DZ, her brand featuring relaxed baggy fits, alien-themed designs and a bold new music video.",
-      "category": "Latest",
-      "secondaryCategory": "Bollywood & Hollywood",
-      "displayCategory": "BOLLYWOOD & FASHION",
-      "badge": "Latest",
-      "badgeType": "lime",
-      "readTime": "3 MIN READ",
-      "image": "/images/disha-patani-launches-clothing-brand-dz.jpg"
+      id: "bigg-boss-20-gullu-eviction",
+      anchorId: "latest-story",
+      href: "/bigg-boss-20-gullu-evicted-yung-dsa-fight",
+      title: "Bigg Boss 20: Will Gullu Be Evicted After Yung DSA Fight?",
+      excerpt: "Gullu and Yung DSA’s captaincy task fight has fans demanding eviction, drawing parallels with Nakul Dhull’s exit. Here’s what we know about Bigg Boss 20 so far.",
+      category: "Latest",
+      secondaryCategory: "Reality TV Updates",
+      displayCategory: "REALITY TV & BIGG BOSS 20",
+      badge: "Latest",
+      badgeType: "lime",
+      readTime: "3 MIN READ",
+      image: "/images/bigg-boss-20-gullu-evicted-yung-dsa-fight.jpg",
+    },
+    {
+      id: "disha-patani-clothing-brand-dz",
+      anchorId: "disha-dz-story",
+      href: "/disha-patani-launches-clothing-brand-dz",
+      title: "Disha Patani Launches Her Own Clothing Brand DZ",
+      excerpt: "Disha Patani turns fashion entrepreneur with DZ, her brand featuring relaxed baggy fits, alien-themed designs and a bold new music video.",
+      category: "Bollywood & Hollywood",
+      displayCategory: "BOLLYWOOD & FASHION",
+      badge: "Fashion Label",
+      badgeType: "pink",
+      readTime: "3 MIN READ",
+      image: "/images/disha-patani-launches-clothing-brand-dz.jpg",
     },
     {
       "id": "bigg-boss-20-100-percent-ration",
@@ -394,15 +407,15 @@ export default function Home() {
         <section className="hero" id="featured">
           {/* 1. Main Featured Story (Commanding Top Story Presentation) */}
           <Link
-            href="/disha-patani-launches-clothing-brand-dz"
+            href="/bigg-boss-20-gullu-evicted-yung-dsa-fight"
             className="feature-card block transition-all hover:border-[var(--lime)] focus-visible:ring-2 focus-visible:ring-[var(--lime)] group"
             style={{ textDecoration: "none", color: "inherit" }}
-            aria-label="Read full article: Disha Patani Launches Her Own Clothing Brand DZ"
+            aria-label="Read full article: Bigg Boss 20: Will Gullu Be Evicted After Yung DSA Fight?"
           >
             <div className="feature-media" style={{ overflow: "hidden", position: "relative" }}>
               <Image
-                src="/images/disha-patani-launches-clothing-brand-dz.jpg"
-                alt="Disha Patani Launches Her Own Clothing Brand DZ"
+                src="/images/bigg-boss-20-gullu-evicted-yung-dsa-fight.jpg"
+                alt="Bigg Boss 20: Will Gullu Be Evicted After Yung DSA Fight?"
                 fill
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 750px"
@@ -412,23 +425,23 @@ export default function Home() {
               <div className="noise" style={{ pointerEvents: "none" }}></div>
               <div className="feature-tag flex items-center gap-2">
                 <span className="badge pink">🔥 Cover Story</span>
-                <span className="badge">Bollywood</span>
-                <span className="badge lime">DZ Brand</span>
+                <span className="badge">Bigg Boss 20</span>
+                <span className="badge lime">Eviction Row</span>
               </div>
             </div>
             <div className="feature-body">
               <div className="flex items-center gap-2 mb-2 font-mono text-xs text-[var(--lime)] font-bold tracking-wider uppercase">
-                <span>★ TOP STORY · FASHION ENTREPRENEUR</span>
+                <span>★ TOP STORY · BIGG BOSS 20 HIGH DRAMA</span>
               </div>
               <h1 className="disp" style={{ color: "#fff" }}>
-                Disha Patani Launches Her Own Clothing Brand DZ
+                Bigg Boss 20: Will Gullu Be Evicted After Yung DSA Fight?
               </h1>
               <p>
-                Disha Patani is no longer just an actress. After more than 10 years in Bollywood, she has launched her own fashion label called DZ, built around oversized fits, alien-themed designs and a bold new music video.
+                Another day, another fight in the Bigg Boss 20 house. As Gullu and Yung DSA get physical during the captaincy task, fans are demanding the same strict eviction rule that sent Nakul Dhull packing.
               </p>
               <div className="meta-row mt-auto pt-3 border-t border-white/[0.06] flex items-center justify-between">
                 <div className="flex items-center gap-3">
-                  <span>BOLLYWOOD</span>
+                  <span>REALITY TV</span>
                   <span className="dot-sep">◆</span>
                   <span>3 MIN READ</span>
                   <span className="dot-sep">◆</span>
@@ -451,6 +464,18 @@ export default function Home() {
               <span className="trend-rank">01</span>
               <div className="trend-text">
                 <Link
+                  href="/bigg-boss-20-gullu-evicted-yung-dsa-fight"
+                  style={{ color: "inherit" }}
+                >
+                  <h3>Bigg Boss 20: Will Gullu be evicted after violent Yung DSA fight? Fans demand Nakul Dhull rule</h3>
+                  <span>REALITY TV · 165K REACTIONS</span>
+                </Link>
+              </div>
+            </div>
+            <div className="trend-item">
+              <span className="trend-rank">02</span>
+              <div className="trend-text">
+                <Link
                   href="/disha-patani-launches-clothing-brand-dz"
                   style={{ color: "inherit" }}
                 >
@@ -460,7 +485,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">02</span>
+              <span className="trend-rank">03</span>
               <div className="trend-text">
                 <Link
                   href="/bigg-boss-20-100-per-cent-ration-housemates"
@@ -472,7 +497,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">03</span>
+              <span className="trend-rank">04</span>
               <div className="trend-text">
                 <Link
                   href="/janhvi-kapoor-veer-pahariya-concert-advice-koffee-with-karan"
@@ -484,7 +509,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">04</span>
+              <span className="trend-rank">05</span>
               <div className="trend-text">
                 <Link
                   href="/bigg-boss-20-uditi-singh-painful-breakup-scout-love"
@@ -492,18 +517,6 @@ export default function Home() {
                 >
                   <h3>Bigg Boss 20: Uditi Singh opens up on painful breakup after Scout-Love conversation</h3>
                   <span>REALITY TV · 128K REACTIONS</span>
-                </Link>
-              </div>
-            </div>
-            <div className="trend-item">
-              <span className="trend-rank">05</span>
-              <div className="trend-text">
-                <Link
-                  href="/kbc-18-diwali-special-ranbir-kapoor-alia-bhatt-proposal-story"
-                  style={{ color: "inherit" }}
-                >
-                  <h3>KBC 18 Diwali special: Ranbir Kapoor reveals Masai Mara proposal to Alia Bhatt</h3>
-                  <span>REALITY TV &amp; BOLLYWOOD · 112K REACTIONS</span>
                 </Link>
               </div>
             </div>

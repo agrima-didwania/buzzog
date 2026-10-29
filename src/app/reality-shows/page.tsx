@@ -8,6 +8,14 @@ export const metadata: Metadata = {
   keywords: [
     "Reality Shows Buzz Originals",
     "Bigg Boss 20",
+    "Bigg Boss 20 Gullu eviction",
+    "Gullu Yung DSA fight",
+    "Gullu Kushal Tanwar",
+    "Nakul Dhull eviction",
+    "Bigg Boss 20 Weekend Ka Vaar",
+    "Bigg Boss 20 promo",
+    "Bigg Boss 20 captaincy task",
+    "Salman Khan Weekend Ka Vaar",
     "Bigg Boss 20 ration",
     "Bigg Boss 20 100% ration",
     "Janhvi Kapoor Veer Pahariya",
@@ -23,12 +31,10 @@ export const metadata: Metadata = {
     "Bigg Boss latest news",
     "Bigg Boss eviction",
     "Splitsvilla dome drama",
-    "Splitsvilla ideal match",
     "Khatron Ke Khiladi stunts",
     "Rise and Fall 2",
     "Shreya Kalra Karan Patel",
     "Indian Reality TV",
-    "Housemate Heat Index",
   ],
   alternates: {
     canonical: "/reality-shows",
@@ -41,10 +47,10 @@ export const metadata: Metadata = {
     siteName: "Buzz Originals",
     images: [
       {
-        url: "/images/bigg-boss-20-100-per-cent-ration-housemates.jpg",
+        url: "/images/bigg-boss-20-gullu-evicted-yung-dsa-fight.jpg",
         width: 1024,
         height: 576,
-        alt: "Bigg Boss 20: Housemates Get 100% Ration for the First Time — Buzz Originals Reality Shows",
+        alt: "Bigg Boss 20: Will Gullu Be Evicted After Yung DSA Fight? — Buzz Originals Reality Shows",
       },
     ],
     type: "website",
@@ -54,7 +60,7 @@ export const metadata: Metadata = {
     title: "Reality Shows — Buzz Originals",
     description:
       "Raw, unfiltered entertainment coverage of Bigg Boss 20, Koffee With Karan, KBC 18, Splitsvilla & Rise and Fall.",
-    images: ["/images/bigg-boss-20-100-per-cent-ration-housemates.jpg"],
+    images: ["/images/bigg-boss-20-gullu-evicted-yung-dsa-fight.jpg"],
   },
 };
 
@@ -81,30 +87,42 @@ export default function RealityShowsPage() {
         {
           "@type": "ListItem",
           position: 1,
+          name: "Bigg Boss 20: Will Gullu Be Evicted After Yung DSA Fight?",
+          url: "https://www.buzzoriginals.com/bigg-boss-20-gullu-evicted-yung-dsa-fight",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
           name: "Bigg Boss 20: Housemates Get 100% Ration for the First Time, and the House Is Celebrating",
           url: "https://www.buzzoriginals.com/bigg-boss-20-100-per-cent-ration-housemates",
         },
         {
           "@type": "ListItem",
-          position: 2,
+          position: 3,
           name: "Janhvi Kapoor's \"Concert\" Advice for Veer Pahariya on Koffee With Karan Is Going Viral",
           url: "https://www.buzzoriginals.com/janhvi-kapoor-veer-pahariya-concert-advice-koffee-with-karan",
         },
         {
           "@type": "ListItem",
-          position: 3,
+          position: 4,
           name: "Bigg Boss 20: Scout-Love Talk Brings Back Uditi Singh’s Painful Breakup Memory",
           url: "https://www.buzzoriginals.com/bigg-boss-20-uditi-singh-painful-breakup-scout-love",
         },
         {
           "@type": "ListItem",
-          position: 4,
+          position: 5,
           name: "KBC 18 Diwali Special: Ramayana Cast Joins Big B, Ranbir Shares Alia Bhatt Proposal Story",
           url: "https://www.buzzoriginals.com/kbc-18-diwali-special-ranbir-kapoor-alia-bhatt-proposal-story",
         },
         {
           "@type": "ListItem",
-          position: 5,
+          position: 6,
+          name: "Janhvi Kapoor Breaks Silence on Peddi Controversy: “A Violating Experience”",
+          url: "https://www.buzzoriginals.com/janhvi-kapoor-peddi-controversy-koffee-with-karan-9",
+        },
+        {
+          "@type": "ListItem",
+          position: 7,
           name: "Shreya Kalra Hits Back at Karan Patel Over His Reels Comment",
           url: "https://www.buzzoriginals.com/shreya-kalra-karan-patel-reels-comment-rise-and-fall-2",
         },

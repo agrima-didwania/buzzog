@@ -20,9 +20,60 @@ interface RealityArticle {
   timeAgo: string;
 }
 
-// Only real, verified reality show articles with authentic news & images
-// Non-repeating: Lead cover & stack stories do not duplicate in this grid
+// All verified reality show articles in reverse chronological order
 const realityArticles: RealityArticle[] = [
+  {
+    id: "bigg-boss-20-gullu-eviction",
+    show: "Bigg Boss 20",
+    title: "Bigg Boss 20: Will Gullu Be Evicted After Yung DSA Fight?",
+    excerpt:
+      "Gullu and Yung DSA’s captaincy task fight has fans demanding eviction, just like Nakul Dhull’s exit. Here’s what we know about Bigg Boss 20 so far.",
+    badge: "Eviction Row",
+    badgeType: "pink",
+    image: "/images/bigg-boss-20-gullu-evicted-yung-dsa-fight.jpg",
+    href: "/bigg-boss-20-gullu-evicted-yung-dsa-fight",
+    readTime: "3 MIN READ",
+    timeAgo: "JUST IN",
+  },
+  {
+    id: "bigg-boss-20-100-percent-ration",
+    show: "Bigg Boss 20",
+    title: "Bigg Boss 20: Housemates Get 100% Ration for the First Time, and the House Is Celebrating",
+    excerpt:
+      "Good news has finally come to the Bigg Boss 20 house as the contestants secure a full 100% ration after weeks of low supplies and high drama.",
+    badge: "100% Ration",
+    badgeType: "lime",
+    image: "/images/bigg-boss-20-100-per-cent-ration-housemates.jpg",
+    href: "/bigg-boss-20-100-per-cent-ration-housemates",
+    readTime: "3 MIN READ",
+    timeAgo: "3H AGO",
+  },
+  {
+    id: "janhvi-veer-concert-advice",
+    show: "Koffee With Karan 9",
+    title: "Janhvi Kapoor's \"Concert\" Advice for Veer Pahariya on Koffee With Karan Is Going Viral",
+    excerpt:
+      "Janhvi Kapoor drops witty dating advice for Veer Pahariya on Koffee With Karan Season 9: “उसे कभी किसी कॉन्सर्ट में मत ले जाना!” Fans connect the viral dots to Tara Sutaria.",
+    badge: "Viral Scoop",
+    badgeType: "pink",
+    image: "/images/janhvi-kapoor-veer-pahariya-concert-advice-koffee-with-karan.jpg",
+    href: "/janhvi-kapoor-veer-pahariya-concert-advice-koffee-with-karan",
+    readTime: "3 MIN READ",
+    timeAgo: "5H AGO",
+  },
+  {
+    id: "bigg-boss-20-uditi-singh-breakup",
+    show: "Bigg Boss 20",
+    title: "Bigg Boss 20: Scout-Love Talk Brings Back Uditi Singh’s Painful Breakup Memory",
+    excerpt:
+      "Scout OP’s talk with Love Gill stirs up the house as Uditi Singh opens up to Arishfa Khan about her own past heartbreak and Karan Wahi memories.",
+    badge: "Trending",
+    badgeType: "pink",
+    image: "/images/bigg-boss-20-uditi-singh-painful-breakup-scout-love.jpg",
+    href: "/bigg-boss-20-uditi-singh-painful-breakup-scout-love",
+    readTime: "3 MIN READ",
+    timeAgo: "7H AGO",
+  },
   {
     id: "kbc-18-ranbir-kapoor-proposal",
     show: "Kaun Banega Crorepati 18",
@@ -34,7 +85,20 @@ const realityArticles: RealityArticle[] = [
     image: "/images/kbc-18-diwali-special-ranbir-kapoor-alia-bhatt-proposal-story.jpg",
     href: "/kbc-18-diwali-special-ranbir-kapoor-alia-bhatt-proposal-story",
     readTime: "4 MIN READ",
-    timeAgo: "JUST IN",
+    timeAgo: "9H AGO",
+  },
+  {
+    id: "janhvi-kapoor-peddi-controversy",
+    show: "Koffee With Karan 9",
+    title: "Janhvi Kapoor Breaks Silence on Peddi Controversy: “A Violating Experience”",
+    excerpt:
+      "Janhvi Kapoor opens up on the Peddi objectification row on KWK 9. Read what she said, the director’s apology and reactions.",
+    badge: "KWK 9 Scoop",
+    badgeType: "pink",
+    image: "/images/janhvi-kapoor-peddi-controversy-koffee-with-karan-9.jpg",
+    href: "/janhvi-kapoor-peddi-controversy-koffee-with-karan-9",
+    readTime: "4 MIN READ",
+    timeAgo: "1D AGO",
   },
   {
     id: "shreya-karan-rise-and-fall",
@@ -47,7 +111,7 @@ const realityArticles: RealityArticle[] = [
     image: "/images/shreya-kalra-karan-patel-reels-comment-rise-and-fall-2.jpg",
     href: "/shreya-kalra-karan-patel-reels-comment-rise-and-fall-2",
     readTime: "3 MIN READ",
-    timeAgo: "1H AGO",
+    timeAgo: "1D AGO",
   },
 ];
 
@@ -105,18 +169,18 @@ export default function RealityShowsView() {
           </div>
         </section>
 
-        {/* Lead Section: Featured Reality Card + 2-Item Stack */}
+        {/* Lead Section: Latest Reality Published Article (Cover Story) + The Last 2 Blogs Uploaded Before It */}
         <section className="lead">
-          {/* Featured Cover Story: Bigg Boss 20 100% Ration Milestone */}
+          {/* Featured Cover Story: Bigg Boss 20 Gullu Eviction Row */}
           <Link
-            href="/bigg-boss-20-100-per-cent-ration-housemates"
+            href="/bigg-boss-20-gullu-evicted-yung-dsa-fight"
             className="feature-card group block"
-            aria-label="Read full cover story: Bigg Boss 20: Housemates Get 100% Ration for the First Time"
+            aria-label="Read full cover story: Bigg Boss 20: Will Gullu Be Evicted After Yung DSA Fight?"
           >
             <div className="feature-media relative overflow-hidden">
               <Image
-                src="/images/bigg-boss-20-100-per-cent-ration-housemates.jpg"
-                alt="Bigg Boss 20: Housemates Get 100% Ration for the First Time"
+                src="/images/bigg-boss-20-gullu-evicted-yung-dsa-fight.jpg"
+                alt="Bigg Boss 20: Will Gullu Be Evicted After Yung DSA Fight?"
                 fill
                 priority
                 className="object-cover transition-transform duration-500 group-hover:scale-105"
@@ -124,16 +188,16 @@ export default function RealityShowsView() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[var(--ink-2)] via-transparent to-black/40 pointer-events-none" />
               <div className="noise" />
-              <span className="badge lime feature-tag z-10">
-                🔥 100% Ration Milestone
+              <span className="badge pink feature-tag z-10">
+                🔥 Eviction Row
               </span>
             </div>
             <div className="feature-body">
               <h2 className="disp text-white group-hover:text-[var(--lime)] transition-colors">
-                Bigg Boss 20: Housemates Get 100% Ration for the First Time, and the House Is Celebrating
+                Bigg Boss 20: Will Gullu Be Evicted After Yung DSA Fight?
               </h2>
               <p>
-                Good news has finally come to the Bigg Boss 20 house. After weeks of low supplies and captaincy clashes, the contestants have secured a rare 100% full ration.
+                Gullu and Yung DSA’s heated captaincy clash has fans demanding eviction, drawing fierce parallels with Nakul Dhull’s dramatic exit. Here is everything we know so far.
               </p>
               <div className="meta-row mt-3">
                 <span className="text-[var(--lime)] font-bold">BIGG BOSS 20</span>
@@ -145,12 +209,40 @@ export default function RealityShowsView() {
             </div>
           </Link>
 
-          {/* Right Stack: 2 Real Reality Stories */}
+          {/* Right Stack: The last 2 blogs uploaded before the latest one */}
           <div className="stack">
-            {/* Card 1: Janhvi Kapoor on KWK 9 */}
+            {/* Card 1: Bigg Boss 20 100% Ration */}
+            <Link
+              href="/bigg-boss-20-100-per-cent-ration-housemates"
+              className="card m1 group block"
+            >
+              <div className="card-media relative overflow-hidden">
+                <Image
+                  src="/images/bigg-boss-20-100-per-cent-ration-housemates.jpg"
+                  alt="Bigg Boss 20: Housemates Get 100% Ration for the First Time"
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 980px) 100vw, 35vw"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[var(--ink-2)] via-transparent to-black/30 pointer-events-none" />
+                <span className="badge lime z-10 relative">100% Ration</span>
+              </div>
+              <div className="card-body">
+                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
+                  Bigg Boss 20: Housemates Get 100% Ration for the First Time, and the House Is Celebrating
+                </h3>
+                <div className="meta-row mt-2">
+                  <span className="text-[var(--lime)] font-bold">BIGG BOSS 20</span>
+                  <span className="dot-sep">◆</span>
+                  <span>3 MIN READ</span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Card 2: Janhvi Kapoor on KWK 9 */}
             <Link
               href="/janhvi-kapoor-veer-pahariya-concert-advice-koffee-with-karan"
-              className="card m1 group block"
+              className="card m2 group block"
             >
               <div className="card-media relative overflow-hidden">
                 <Image
@@ -174,47 +266,19 @@ export default function RealityShowsView() {
                 </div>
               </div>
             </Link>
-
-            {/* Card 2: Bigg Boss 20 Uditi Singh Breakup */}
-            <Link
-              href="/bigg-boss-20-uditi-singh-painful-breakup-scout-love"
-              className="card m2 group block"
-            >
-              <div className="card-media relative overflow-hidden">
-                <Image
-                  src="/images/bigg-boss-20-uditi-singh-painful-breakup-scout-love.jpg"
-                  alt="Bigg Boss 20: Scout-Love Talk Brings Back Uditi Singh’s Painful Breakup Memory"
-                  fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
-                  sizes="(max-width: 980px) 100vw, 35vw"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-[var(--ink-2)] via-transparent to-black/30 pointer-events-none" />
-                <span className="badge pink z-10 relative">Trending</span>
-              </div>
-              <div className="card-body">
-                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
-                  Bigg Boss 20: Scout-Love Talk Brings Back Uditi Singh’s Painful Breakup Memory
-                </h3>
-                <div className="meta-row mt-2">
-                  <span className="text-[var(--lime)] font-bold">BIGG BOSS 20</span>
-                  <span className="dot-sep">◆</span>
-                  <span>3 MIN READ</span>
-                </div>
-              </div>
-            </Link>
           </div>
         </section>
 
-        {/* Latest Reality Buzz Grid - Only authentic published stories */}
+        {/* All Reality Buzz Grid - All authentic published stories in order */}
         <section className="section" id="reality-grid">
           <div className="section-head">
             <div>
               <h2 className="text-white">
-                Latest <span className="accent">Reality Buzz</span>
+                All <span className="accent">Reality Buzz</span>
               </h2>
             </div>
             <span className="text-xs font-mono text-[var(--lime)] font-bold">
-              UPDATED HOURLY
+              7 STORIES PUBLISHED
             </span>
           </div>
 
