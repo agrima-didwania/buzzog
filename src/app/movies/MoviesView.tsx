@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Header from "@/components/Header";
@@ -83,43 +83,9 @@ const movieArticles: MovieArticle[] = [
 ];
 
 export default function MoviesView() {
-  const [selectedFilter, setSelectedFilter] = useState<string>("all");
   const [email, setEmail] = useState("");
   const [ctaStatus, setCtaStatus] = useState<string | null>(null);
   const [submitting, setSubmitting] = useState(false);
-
-  // Poll state
-  const [pollVotedIndex, setPollVotedIndex] = useState<number | null>(null);
-  const [pollVotes, setPollVotes] = useState({
-    ramayana: 142,
-    godzilla: 67,
-  });
-
-  useEffect(() => {
-    try {
-      const saved = localStorage.getItem("buzzog_movies_poll_vote");
-      if (saved !== null) {
-        setPollVotedIndex(parseInt(saved, 10));
-      }
-    } catch {}
-  }, []);
-
-  const totalVotes = pollVotes.ramayana + pollVotes.godzilla;
-  const ramayanaPct = Math.round((pollVotes.ramayana / totalVotes) * 100);
-  const godzillaPct = 100 - ramayanaPct;
-
-  const handleVote = (index: number) => {
-    if (pollVotedIndex !== null) return;
-    setPollVotedIndex(index);
-    if (index === 0) {
-      setPollVotes((prev) => ({ ...prev, ramayana: prev.ramayana + 1 }));
-    } else {
-      setPollVotes((prev) => ({ ...prev, godzilla: prev.godzilla + 1 }));
-    }
-    try {
-      localStorage.setItem("buzzog_movies_poll_vote", index.toString());
-    } catch {}
-  };
 
   const handleSubscribe = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -148,18 +114,13 @@ export default function MoviesView() {
     }
   };
 
-  const filteredArticles =
-    selectedFilter === "all"
-      ? movieArticles
-      : movieArticles.filter((art) => art.category === selectedFilter);
-
   return (
     <>
       {/* Main Navigation Header with Movies Marked Active */}
       <Header activeNav="Movies" />
 
       <main className="min-h-screen bg-[var(--ink)]">
-        {/* Page Hero Header Banner with Category Filter Chips */}
+        {/* Page Hero Header Banner */}
         <section className="ph-wrap">
           <div className="ph">
             <div className="crumb">
@@ -171,44 +132,6 @@ export default function MoviesView() {
             <p>
               Trailers, box office, clashes and spoiler-free verdicts — what to watch and what to skip.
             </p>
-            <div className="cat-strip" role="tablist" aria-label="Filter movies by category">
-              <button
-                type="button"
-                role="tab"
-                aria-selected={selectedFilter === "all"}
-                className={`cat-chip ${selectedFilter === "all" ? "on" : ""}`}
-                onClick={() => setSelectedFilter("all")}
-              >
-                🔥 All
-              </button>
-              <button
-                type="button"
-                role="tab"
-                aria-selected={selectedFilter === "Releases"}
-                className={`cat-chip ${selectedFilter === "Releases" ? "on" : ""}`}
-                onClick={() => setSelectedFilter("Releases")}
-              >
-                Releases
-              </button>
-              <button
-                type="button"
-                role="tab"
-                aria-selected={selectedFilter === "Box Office"}
-                className={`cat-chip ${selectedFilter === "Box Office" ? "on" : ""}`}
-                onClick={() => setSelectedFilter("Box Office")}
-              >
-                Box Office
-              </button>
-              <button
-                type="button"
-                role="tab"
-                aria-selected={selectedFilter === "Reviews"}
-                className={`cat-chip ${selectedFilter === "Reviews" ? "on" : ""}`}
-                onClick={() => setSelectedFilter("Reviews")}
-              >
-                Reviews
-              </button>
-            </div>
           </div>
         </section>
 
@@ -316,7 +239,7 @@ export default function MoviesView() {
           </div>
 
           <div className="grid">
-            {filteredArticles.map((art) => (
+            {movieArticles.map((art) => (
               <Link
                 key={art.id}
                 href={art.href}
@@ -360,101 +283,6 @@ export default function MoviesView() {
                 </div>
               </Link>
             ))}
-          </div>
-        </section>
-
-        {/* Release Radar & Live Community Poll Section */}
-        <section className="section" id="release-radar">
-          <div className="two">
-            {/* Left: Release Radar */}
-            <div>
-              <div className="section-head">
-                <h2 className="text-white">
-                  Release <span className="accent">Radar</span>
-                </h2>
-              </div>
-              <p className="sub">The big-screen face-offs on our watchlist.</p>
-              <div className="radar">
-                <div className="rr">
-                  <span>Ramayana: Part 1 — solo IMAX run</span>
-                  <b className="st ok">IMAX</b>
-                </div>
-                <div className="rr">
-                  <span>Godzilla Minus Zero — reportedly pushed by 2 weeks</span>
-                  <b className="st un">IMAX · DELAYED</b>
-                </div>
-              </div>
-            </div>
-
-            {/* Right: Live Community Poll */}
-            <div className="poll-card" data-voted={pollVotedIndex !== null ? "1" : undefined}>
-              <span className="badge pink">🗳️ Live Community Poll</span>
-              <h3>Big Screen Clash: Which epic are you watching first on IMAX?</h3>
-
-              {/* Option 1: Ramayana */}
-              <div
-                className={`poll-opt transition-all ${
-                  pollVotedIndex === 0
-                    ? "ring-2 ring-[var(--lime)] rounded-[12px] bg-[rgba(111,207,74,0.12)]"
-                    : ""
-                }`}
-                onClick={() => handleVote(0)}
-                role="button"
-                tabIndex={0}
-                onKeyDown={(e) => {
-                  if (e.key === "Enter" || e.key === " ") handleVote(0);
-                }}
-                aria-label="Vote for Ramayana: Part 1"
-              >
-                <div className="poll-opt-label">
-                  <span className="font-semibold text-white">Ramayana: Part 1 (Ranbir &amp; Yash)</span>
-                  <span className="pct font-mono text-[var(--lime)] font-bold">{ramayanaPct}%</span>
-                </div>
-                <div className="poll-bar-track">
-                  <div
-                    className="poll-bar-fill"
-                    style={{ width: `${ramayanaPct}%` }}
-                  />
-                </div>
-              </div>
-
-              {/* Option 2: Godzilla */}
-              <div
-                className={`poll-opt transition-all ${
-                  pollVotedIndex === 1
-                    ? "ring-2 ring-[var(--lime)] rounded-[12px] bg-[rgba(111,207,74,0.12)]"
-                    : ""
-                }`}
-                onClick={() => handleVote(1)}
-                role="button"
-                tabIndex={0}
-                onKeyDown={(e) => {
-                  if (e.key === "Enter" || e.key === " ") handleVote(1);
-                }}
-                aria-label="Vote for Godzilla Minus Zero"
-              >
-                <div className="poll-opt-label">
-                  <span className="font-semibold text-white">Godzilla Minus Zero (Monsterverse)</span>
-                  <span className="pct font-mono text-[var(--lime)] font-bold">{godzillaPct}%</span>
-                </div>
-                <div className="poll-bar-track">
-                  <div
-                    className="poll-bar-fill"
-                    style={{ width: `${godzillaPct}%` }}
-                  />
-                </div>
-              </div>
-
-              <div className="poll-votes">
-                {totalVotes} verified community votes
-              </div>
-
-              {pollVotedIndex !== null && (
-                <div className="poll-locked-msg text-[var(--lime)] block mt-2 text-xs font-mono font-bold">
-                  ✓ Vote counted — thanks for playing!
-                </div>
-              )}
-            </div>
           </div>
         </section>
 
