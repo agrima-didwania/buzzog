@@ -252,7 +252,7 @@ export default function JanhviVeerConcertAdviceArticlePage() {
             In January 2026, <em>Filmfare</em> reported that the two had parted ways. Other news sites picked up the story.
           </p>
           <p>But here is what is still true today:</p>
-          <ul style={{ listStyleType: "disc", paddingLeft: "24px", margin: "16px 0", lineHeight: "1.8" }}>
+          <ul>
             <li>Neither Tara nor Veer has made an official statement about a breakup.</li>
             <li>No reason for the split has ever been shared.</li>
             <li>The concert link is a fan theory. It is not a confirmed fact.</li>
@@ -262,7 +262,7 @@ export default function JanhviVeerConcertAdviceArticlePage() {
           </p>
 
           <h2>Tara Sutaria and Veer Pahariya: Quick Timeline</h2>
-          <ul style={{ listStyleType: "disc", paddingLeft: "24px", margin: "16px 0", lineHeight: "1.8" }}>
+          <ul>
             <li><strong>Early 2025:</strong> The two reportedly started dating.</li>
             <li><strong>Mid-2025:</strong> Their relationship became public.</li>
             <li><strong>December 2025:</strong> The AP Dhillon concert video goes viral.</li>
@@ -276,7 +276,7 @@ export default function JanhviVeerConcertAdviceArticlePage() {
 
           <h2>What Else Did Janhvi Share on the Episode?</h2>
           <p>The rapid-fire joke was not the only talking point. Janhvi also spoke about:</p>
-          <ul style={{ listStyleType: "disc", paddingLeft: "24px", margin: "16px 0", lineHeight: "1.8" }}>
+          <ul>
             <li><strong>Marriage plans:</strong> She said she does not plan to get married to Shikhar Pahariya in the next two to three years.</li>
             <li><strong>Support after Sridevi&apos;s death:</strong> She remembered how Shikhar took a break from his studies in London and came to Mumbai to stay close to her.</li>
             <li><strong>Her film Peddi:</strong> She admitted she should have raised her objections more strongly during the controversy around the film.</li>

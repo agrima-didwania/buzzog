@@ -213,7 +213,7 @@ export default function BiggBoss100PercentRationPage() {
           <p>
             This season, the ration story has been full of ups and downs:
           </p>
-          <ul style={{ listStyleType: "disc", paddingLeft: "24px", margin: "16px 0", lineHeight: "1.8" }}>
+          <ul>
             <li>
               In an earlier week, captain <strong>Gullu</strong> chose 80% ration for the house and got back the lifelines of <strong>Uditi Singh</strong> and <strong>Kanika Mann</strong>.
             </li>

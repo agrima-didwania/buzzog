@@ -76,7 +76,7 @@ export default function Header({ activeNav = "Home" }: HeaderProps) {
             shimmerOnHover={true}
             borderRadius="9999px"
             background="linear-gradient(135deg, var(--magenta), var(--magenta-dim))"
-            className="hidden sm:inline-flex h-10 px-8 text-xs font-bold text-white shadow-[0_4px_20px_rgba(228,34,46,0.35)] hover:shadow-[0_4px_24px_rgba(111,207,74,0.4)] transition-all shrink-0"
+            className="hidden sm:inline-flex h-11 px-7 text-[13.5px] font-bold text-white shadow-[0_4px_20px_rgba(228,34,46,0.35)] hover:shadow-[0_4px_24px_rgba(111,207,74,0.4)] transition-all shrink-0"
             onClick={() =>
               window.open(
                 "https://www.instagram.com/buzzoriginals?exln=MWdhNTk5dWdlYnF5cg==",
@@ -84,17 +84,17 @@ export default function Header({ activeNav = "Home" }: HeaderProps) {
               )
             }
           >
-            <span className="flex items-center gap-2.5 pl-2 pr-3.5">
+            <span className="flex items-center gap-2 px-1">
               <svg
-                width="15"
-                height="15"
+                width="17"
+                height="17"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
-                strokeWidth="2.2"
+                strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                className="w-4 h-4 shrink-0 text-white"
+                className="w-[17px] h-[17px] shrink-0 text-white"
                 aria-hidden="true"
               >
                 <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
@@ -147,7 +147,7 @@ export default function Header({ activeNav = "Home" }: HeaderProps) {
 
           <div className="mt-2 pt-2 border-t border-[var(--line)]">
             <button
-              className="w-full btn-follow justify-center py-3 text-xs flex items-center gap-2.5"
+              className="w-full btn-follow justify-center py-3 text-sm flex items-center gap-2"
               onClick={() => {
                 setMobileMenuOpen(false);
                 window.open(
@@ -157,15 +157,15 @@ export default function Header({ activeNav = "Home" }: HeaderProps) {
               }}
             >
               <svg
-                width="16"
-                height="16"
+                width="17"
+                height="17"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
-                strokeWidth="2.2"
+                strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                className="w-4 h-4 shrink-0 text-white"
+                className="w-[17px] h-[17px] shrink-0 text-white"
                 aria-hidden="true"
               >
                 <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />

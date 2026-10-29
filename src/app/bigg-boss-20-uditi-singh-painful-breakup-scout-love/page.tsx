@@ -245,7 +245,7 @@ export default function BiggBossUditiBreakupArticlePage() {
             This is the question everyone is asking. As per the episode reports, Uditi did not clearly take Karan Wahi’s name in this talk. Fans are connecting the dots because of her known past with him.
           </p>
           <p>Here is what is already public:</p>
-          <ul style={{ listStyleType: "disc", paddingLeft: "24px", margin: "16px 0", lineHeight: "1.8" }}>
+          <ul>
             <li>Uditi and Karan reportedly started dating in 2019.</li>
             <li>Their relationship became public in January 2020.</li>
             <li>They reportedly broke up in 2022.</li>
