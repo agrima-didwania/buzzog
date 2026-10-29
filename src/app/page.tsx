@@ -176,15 +176,28 @@ export default function Home() {
 
   const editorialArticles: EditorialArticle[] = [
     {
-      id: "bigg-boss-20-100-percent-ration",
+      id: "disha-patani-clothing-brand-dz",
       anchorId: "latest-story",
+      href: "/disha-patani-launches-clothing-brand-dz",
+      title: "Disha Patani Launches Her Own Clothing Brand DZ",
+      excerpt: "Disha Patani turns fashion entrepreneur with DZ, her brand featuring relaxed baggy fits, alien-themed designs and a bold new music video.",
+      category: "Latest",
+      secondaryCategory: "Bollywood & Hollywood",
+      displayCategory: "BOLLYWOOD & FASHION",
+      badge: "Latest",
+      badgeType: "lime",
+      readTime: "3 MIN READ",
+      image: "/images/disha-patani-launches-clothing-brand-dz.jpg",
+    },
+    {
+      id: "bigg-boss-20-100-percent-ration",
+      anchorId: "reality-ration-story",
       href: "/bigg-boss-20-100-per-cent-ration-housemates",
       title: "Bigg Boss 20: Housemates Get 100% Ration for the First Time, and the House Is Celebrating",
       excerpt: "Good news has finally come to the Bigg Boss 20 house as the contestants secure a full 100% ration after weeks of low supplies and high drama.",
-      category: "Latest",
-      secondaryCategory: "Reality TV Updates",
-      displayCategory: "LATEST",
-      badge: "Latest",
+      category: "Reality TV Updates",
+      displayCategory: "REALITY TV UPDATES",
+      badge: "100% Ration",
       badgeType: "lime",
       readTime: "3 MIN READ",
       image: "/images/bigg-boss-20-100-per-cent-ration-housemates.jpg",
@@ -349,15 +362,15 @@ export default function Home() {
         <section className="hero" id="featured">
           {/* 1. Main Featured Story (Commanding Top Story Presentation) */}
           <Link
-            href="/bigg-boss-20-100-per-cent-ration-housemates"
+            href="/disha-patani-launches-clothing-brand-dz"
             className="feature-card block transition-all hover:border-[var(--lime)] focus-visible:ring-2 focus-visible:ring-[var(--lime)] group"
             style={{ textDecoration: "none", color: "inherit" }}
-            aria-label="Read full article: Bigg Boss 20: Housemates Get 100% Ration for the First Time"
+            aria-label="Read full article: Disha Patani Launches Her Own Clothing Brand DZ"
           >
             <div className="feature-media" style={{ overflow: "hidden", position: "relative" }}>
               <Image
-                src="/images/bigg-boss-20-100-per-cent-ration-housemates.jpg"
-                alt="Bigg Boss 20: Housemates Get 100% Ration for the First Time, and the House Is Celebrating"
+                src="/images/disha-patani-launches-clothing-brand-dz.jpg"
+                alt="Disha Patani Launches Her Own Clothing Brand DZ"
                 fill
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 750px"
@@ -367,23 +380,23 @@ export default function Home() {
               <div className="noise" style={{ pointerEvents: "none" }}></div>
               <div className="feature-tag flex items-center gap-2">
                 <span className="badge pink">🔥 Cover Story</span>
-                <span className="badge">Bigg Boss 20</span>
-                <span className="badge lime">100% Ration</span>
+                <span className="badge">Bollywood</span>
+                <span className="badge lime">DZ Brand</span>
               </div>
             </div>
             <div className="feature-body">
               <div className="flex items-center gap-2 mb-2 font-mono text-xs text-[var(--lime)] font-bold tracking-wider uppercase">
-                <span>★ TOP STORY · REALITY SHOW MILESTONE</span>
+                <span>★ TOP STORY · FASHION ENTREPRENEUR</span>
               </div>
               <h1 className="disp" style={{ color: "#fff" }}>
-                Bigg Boss 20: Housemates Get 100% Ration for the First Time, and the House Is Celebrating
+                Disha Patani Launches Her Own Clothing Brand DZ
               </h1>
               <p>
-                Good news has finally come to the Bigg Boss 20 house. After weeks of low supplies, harsh penalties and captaincy clashes, the contestants have secured a rare 100% full weekly ration.
+                Disha Patani is no longer just an actress. After more than 10 years in Bollywood, she has launched her own fashion label called DZ, built around oversized fits, alien-themed designs and a bold new music video.
               </p>
               <div className="meta-row mt-auto pt-3 border-t border-white/[0.06] flex items-center justify-between">
                 <div className="flex items-center gap-3">
-                  <span>REALITY TV</span>
+                  <span>BOLLYWOOD</span>
                   <span className="dot-sep">◆</span>
                   <span>3 MIN READ</span>
                   <span className="dot-sep">◆</span>
@@ -406,6 +419,18 @@ export default function Home() {
               <span className="trend-rank">01</span>
               <div className="trend-text">
                 <Link
+                  href="/disha-patani-launches-clothing-brand-dz"
+                  style={{ color: "inherit" }}
+                >
+                  <h3>Disha Patani launches her own clothing brand DZ with baggy fits and alien themes</h3>
+                  <span>BOLLYWOOD &amp; FASHION · 158K REACTIONS</span>
+                </Link>
+              </div>
+            </div>
+            <div className="trend-item">
+              <span className="trend-rank">02</span>
+              <div className="trend-text">
+                <Link
                   href="/bigg-boss-20-100-per-cent-ration-housemates"
                   style={{ color: "inherit" }}
                 >
@@ -415,7 +440,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">02</span>
+              <span className="trend-rank">03</span>
               <div className="trend-text">
                 <Link
                   href="/janhvi-kapoor-veer-pahariya-concert-advice-koffee-with-karan"
@@ -427,7 +452,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">03</span>
+              <span className="trend-rank">04</span>
               <div className="trend-text">
                 <Link
                   href="/bigg-boss-20-uditi-singh-painful-breakup-scout-love"
@@ -439,7 +464,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">04</span>
+              <span className="trend-rank">05</span>
               <div className="trend-text">
                 <Link
                   href="/kbc-18-diwali-special-ranbir-kapoor-alia-bhatt-proposal-story"
@@ -447,18 +472,6 @@ export default function Home() {
                 >
                   <h3>KBC 18 Diwali special: Ranbir Kapoor reveals Masai Mara proposal to Alia Bhatt</h3>
                   <span>REALITY TV &amp; BOLLYWOOD · 112K REACTIONS</span>
-                </Link>
-              </div>
-            </div>
-            <div className="trend-item">
-              <span className="trend-rank">05</span>
-              <div className="trend-text">
-                <Link
-                  href="/bhumi-pednekar-akshay-kumar-priyadarshan-next-film"
-                  style={{ color: "inherit" }}
-                >
-                  <h3>Bhumi Pednekar joins Akshay Kumar in Priyadarshan’s next comedy thriller</h3>
-                  <span>BOLLYWOOD · 98K REACTIONS</span>
                 </Link>
               </div>
             </div>

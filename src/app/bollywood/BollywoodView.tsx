@@ -20,6 +20,16 @@ interface BollywoodArticle {
 
 const bollywoodArticles: BollywoodArticle[] = [
   {
+    id: "disha-patani-clothing-brand-dz",
+    category: "Fashion Entrepreneur",
+    title: "Disha Patani Launches Her Own Clothing Brand DZ",
+    badge: "Latest Scoop",
+    badgeType: "pink",
+    image: "/images/disha-patani-launches-clothing-brand-dz.jpg",
+    href: "/disha-patani-launches-clothing-brand-dz",
+    readOrTime: "3 MIN READ",
+  },
+  {
     id: "janhvi-veer-concert-advice",
     category: "KWK 9 Scoop",
     title: "Janhvi Kapoor's \"Concert\" Advice for Veer Pahariya on Koffee With Karan Is Going Viral",
@@ -154,18 +164,18 @@ export default function BollywoodView() {
           </div>
         </section>
 
-        {/* Lead Section: Latest Bollywood Published Article (Cover Story) + Exclusive & Global Premiere Stack */}
+        {/* Lead Section: Latest Bollywood Published Article (Cover Story) + The Last 2 Blogs Uploaded Before It */}
         <section className="lead">
-          {/* Cover Story: Latest Published Bollywood Story (Janhvi Kapoor Veer Pahariya Concert Advice) */}
+          {/* Cover Story: Latest Published Bollywood Story (Disha Patani Launches Her Own Clothing Brand DZ) */}
           <Link
-            href="/janhvi-kapoor-veer-pahariya-concert-advice-koffee-with-karan"
+            href="/disha-patani-launches-clothing-brand-dz"
             className="feature-card group block"
-            aria-label="Read full cover story: Janhvi Kapoor's Concert Advice for Veer Pahariya on Koffee With Karan Is Going Viral"
+            aria-label="Read full cover story: Disha Patani Launches Her Own Clothing Brand DZ"
           >
             <div className="feature-media relative overflow-hidden">
               <Image
-                src="/images/janhvi-kapoor-veer-pahariya-concert-advice-koffee-with-karan.jpg"
-                alt="Janhvi Kapoor's Concert Advice for Veer Pahariya on Koffee With Karan Is Going Viral"
+                src="/images/disha-patani-launches-clothing-brand-dz.jpg"
+                alt="Disha Patani Launches Her Own Clothing Brand DZ"
                 fill
                 priority
                 className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
@@ -179,13 +189,13 @@ export default function BollywoodView() {
             </div>
             <div className="feature-body">
               <h2 className="disp text-white group-hover:text-[var(--lime)] transition-colors">
-                Janhvi Kapoor&apos;s &ldquo;Concert&rdquo; Advice for Veer Pahariya on Koffee With Karan Is Going Viral
+                Disha Patani Launches Her Own Clothing Brand DZ
               </h2>
               <p>
-                Janhvi Kapoor drops witty dating advice for Veer Pahariya on Koffee With Karan Season 9: &ldquo;उसे कभी किसी कॉन्सर्ट में मत ले जाना!&rdquo; Fans connect the viral dots to Tara Sutaria.
+                Disha Patani turns fashion entrepreneur with DZ, her new clothing brand built around oversized fits, alien-themed designs and a bold promotional music track featuring bleached eyebrows.
               </p>
               <div className="meta-row mt-3">
-                <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; KWK 9</span>
+                <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; FASHION</span>
                 <span className="dot-sep">◆</span>
                 <span>3 MIN READ</span>
                 <span className="dot-sep">◆</span>
@@ -196,10 +206,38 @@ export default function BollywoodView() {
 
           {/* Right Stack: The last 2 blogs uploaded before the latest one */}
           <div className="stack">
-            {/* Card 1: KBC 18 Diwali Special (Ranbir Kapoor's Proposal Story) */}
+            {/* Card 1: Janhvi Kapoor Concert Advice */}
+            <Link
+              href="/janhvi-kapoor-veer-pahariya-concert-advice-koffee-with-karan"
+              className="card m1 group block"
+            >
+              <div className="card-media relative overflow-hidden">
+                <Image
+                  src="/images/janhvi-kapoor-veer-pahariya-concert-advice-koffee-with-karan.jpg"
+                  alt="Janhvi Kapoor's Concert Advice for Veer Pahariya on Koffee With Karan Is Going Viral"
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 980px) 100vw, 35vw"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[var(--ink-2)] via-transparent to-black/30 pointer-events-none" />
+                <span className="badge pink z-10 relative">Viral Scoop</span>
+              </div>
+              <div className="card-body">
+                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
+                  Janhvi Kapoor&apos;s &ldquo;Concert&rdquo; Advice for Veer Pahariya on Koffee With Karan Is Going Viral
+                </h3>
+                <div className="meta-row mt-2">
+                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; KWK 9</span>
+                  <span className="dot-sep">◆</span>
+                  <span>3 MIN READ</span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Card 2: KBC 18 Diwali Special (Ranbir Kapoor's Proposal Story) */}
             <Link
               href="/kbc-18-diwali-special-ranbir-kapoor-alia-bhatt-proposal-story"
-              className="card m1 group block"
+              className="card m6 group block"
             >
               <div className="card-media relative overflow-hidden">
                 <Image
@@ -223,34 +261,6 @@ export default function BollywoodView() {
                 </div>
               </div>
             </Link>
-
-            {/* Card 2: Bhumi Pednekar Joins Akshay Kumar */}
-            <Link
-              href="/bhumi-pednekar-akshay-kumar-priyadarshan-next-film"
-              className="card m6 group block"
-            >
-              <div className="card-media relative overflow-hidden">
-                <Image
-                  src="/images/bhumi-pednekar-akshay-kumar-priyadarshan-next-film.jpg"
-                  alt="Bhumi Pednekar Joins Akshay Kumar in Priyadarshan’s Next Film"
-                  fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
-                  sizes="(max-width: 980px) 100vw, 35vw"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-[var(--ink-2)] via-transparent to-black/30 pointer-events-none" />
-                <span className="badge pink z-10 relative">Exclusive Scoop</span>
-              </div>
-              <div className="card-body">
-                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
-                  Bhumi Pednekar Joins Akshay Kumar in Priyadarshan’s Next Film
-                </h3>
-                <div className="meta-row mt-2">
-                  <span className="text-[var(--magenta)] font-bold">CASTING SCOOP</span>
-                  <span className="dot-sep">◆</span>
-                  <span>3 MIN READ</span>
-                </div>
-              </div>
-            </Link>
           </div>
         </section>
 
@@ -263,7 +273,7 @@ export default function BollywoodView() {
               </h2>
             </div>
             <span className="text-xs font-mono text-[var(--lime)] font-bold">
-              8 STORIES PUBLISHED
+              9 STORIES PUBLISHED
             </span>
           </div>
 
