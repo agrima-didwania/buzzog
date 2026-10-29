@@ -110,7 +110,6 @@ export default function Footer() {
             <li><Link href="/privacy" className="hover:text-[var(--lime)] transition-colors">Privacy Policy</Link></li>
             <li><Link href="/terms" className="hover:text-[var(--lime)] transition-colors">Terms of Service</Link></li>
             <li><a href="mailto:hello@buzzoriginals.com" className="hover:text-[var(--lime)] transition-colors">Legal & Takedown Desk</a></li>
-            <li><Link href="/sitemap.xml" className="hover:text-[var(--lime)] transition-colors">XML Sitemap</Link></li>
           </ul>
         </div>
       </div>
