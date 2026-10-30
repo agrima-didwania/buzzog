@@ -8,6 +8,11 @@ export const metadata: Metadata = {
   keywords: [
     "Bollywood Buzz Originals",
     "Bollywood news",
+    "Mirzapur The Movie OTT release",
+    "Mirzapur The Movie extended cut",
+    "Mirzapur The Movie Prime Video",
+    "Pankaj Tripathi",
+    "Ali Fazal",
     "King Shah Rukh Khan",
     "Siddharth Anand cryptic post",
     "SRK birthday surprise",
@@ -48,10 +53,10 @@ export const metadata: Metadata = {
     siteName: "Buzz Originals",
     images: [
       {
-        url: "/images/siddharth-anand-time-for-the-world-king-srk-birthday.jpg",
+        url: "/images/mirzapur-the-movie-prime-video-extended-cut.jpg",
         width: 1024,
         height: 682,
-        alt: "SRK’s King Update? Siddharth Anand’s Cryptic Post Explained — Buzz Originals Bollywood",
+        alt: "Mirzapur: The Movie Now Streaming on Prime With Extended Cut — Buzz Originals Bollywood",
       },
     ],
     type: "website",
@@ -61,7 +66,7 @@ export const metadata: Metadata = {
     title: "Bollywood — Buzz Originals",
     description:
       "Raw, unfiltered Bollywood coverage of red carpets, gossip, airport sightings & exclusives.",
-    images: ["/images/siddharth-anand-time-for-the-world-king-srk-birthday.jpg"],
+    images: ["/images/mirzapur-the-movie-prime-video-extended-cut.jpg"],
   },
 };
 
@@ -88,12 +93,18 @@ export default function BollywoodPage() {
         {
           "@type": "ListItem",
           position: 1,
+          name: "Mirzapur: The Movie Is Now Streaming on Prime Video With an Extended Cut",
+          url: "https://www.buzzoriginals.com/mirzapur-the-movie-prime-video-extended-cut",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
           name: "Siddharth Anand’s “Time For The World” Post Has SRK Fans Guessing: Is a King Update Coming?",
           url: "https://www.buzzoriginals.com/siddharth-anand-time-for-the-world-king-srk-birthday",
         },
         {
           "@type": "ListItem",
-          position: 2,
+          position: 3,
           name: "Junglywood Trailer Out: Shaan R Grover Takes On Bollywood's Insider vs Outsider Debate",
           url: "https://www.buzzoriginals.com/junglywood-trailer-shaan-r-grover",
         },

@@ -20,6 +20,16 @@ interface BollywoodArticle {
 
 const bollywoodArticles: BollywoodArticle[] = [
   {
+    id: "mirzapur-the-movie-ott",
+    category: "OTT Premiere",
+    title: "Mirzapur: The Movie Is Now Streaming on Prime Video With an Extended Cut",
+    badge: "Extended Cut",
+    badgeType: "pink",
+    image: "/images/mirzapur-the-movie-prime-video-extended-cut.jpg",
+    href: "/mirzapur-the-movie-prime-video-extended-cut",
+    readOrTime: "3 MIN READ",
+  },
+  {
     id: "siddharth-anand-king-srk",
     category: "Action Thriller",
     title: "Siddharth Anand’s “Time For The World” Post Has SRK Fans Guessing: Is a King Update Coming?",
@@ -186,16 +196,16 @@ export default function BollywoodView() {
 
         {/* Lead Section: Latest Bollywood Published Article (Cover Story) + The Last 2 Blogs Uploaded Before It */}
         <section className="lead">
-          {/* Cover Story: Latest Published Bollywood Story (King SRK Birthday Update) */}
+          {/* Cover Story: Latest Published Bollywood Story (Mirzapur: The Movie) */}
           <Link
-            href="/siddharth-anand-time-for-the-world-king-srk-birthday"
+            href="/mirzapur-the-movie-prime-video-extended-cut"
             className="feature-card group block"
-            aria-label="Read full cover story: Siddharth Anand’s “Time For The World” Post Has SRK Fans Guessing: Is a King Update Coming?"
+            aria-label="Read full cover story: Mirzapur: The Movie Is Now Streaming on Prime Video With an Extended Cut"
           >
             <div className="feature-media relative overflow-hidden">
               <Image
-                src="/images/siddharth-anand-time-for-the-world-king-srk-birthday.jpg"
-                alt="Siddharth Anand’s “Time For The World” Post Has SRK Fans Guessing: Is a King Update Coming?"
+                src="/images/mirzapur-the-movie-prime-video-extended-cut.jpg"
+                alt="Mirzapur: The Movie Is Now Streaming on Prime Video With an Extended Cut"
                 fill
                 priority
                 className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
@@ -203,32 +213,59 @@ export default function BollywoodView() {
               />
               <div className="noise" />
               <span className="badge pink feature-tag z-10">
-                👑 King Update
+                💥 Extended Cut
               </span>
             </div>
             <div className="feature-body">
               <h2 className="disp text-white group-hover:text-[var(--lime)] transition-colors">
-                Siddharth Anand’s “Time For The World” Post Has SRK Fans Guessing: Is a King Update Coming?
+                Mirzapur: The Movie Is Now Streaming on Prime Video With an Extended Cut
               </h2>
               <p>
-                Siddharth Anand posted “It’s” and then “Time For The World” about King. Is a surprise coming on Shah Rukh Khan’s 61st birthday? Here’s what we know.
+                Mirzapur: The Movie is now on Prime Video with an extended cut and unseen scenes. Check the runtime, cast, language and how to watch.
               </p>
               <div className="meta-row mt-3">
-                <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; CINEMA</span>
+                <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; OTT</span>
                 <span className="dot-sep">◆</span>
                 <span>3 MIN READ</span>
                 <span className="dot-sep">◆</span>
-                <span className="text-[var(--lime)] font-bold">JUST IN</span>
+                <span className="text-[var(--lime)] font-bold">STREAMING NOW</span>
               </div>
             </div>
           </Link>
 
           {/* Right Stack: The last 2 blogs uploaded before the latest one */}
           <div className="stack">
-            {/* Card 1: Junglywood Trailer */}
+            {/* Card 1: Siddharth Anand King Update */}
+            <Link
+              href="/siddharth-anand-time-for-the-world-king-srk-birthday"
+              className="card m1 group block"
+            >
+              <div className="card-media relative overflow-hidden">
+                <Image
+                  src="/images/siddharth-anand-time-for-the-world-king-srk-birthday.jpg"
+                  alt="Siddharth Anand’s “Time For The World” Post Has SRK Fans Guessing: Is a King Update Coming?"
+                  fill
+                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 980px) 100vw, 35vw"
+                />
+                <span className="badge pink z-10 relative">King Update</span>
+              </div>
+              <div className="card-body">
+                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
+                  Siddharth Anand’s “Time For The World” Post Has SRK Fans Guessing
+                </h3>
+                <div className="meta-row mt-2">
+                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; CINEMA</span>
+                  <span className="dot-sep">◆</span>
+                  <span>3 MIN READ</span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Card 2: Junglywood Trailer */}
             <Link
               href="/junglywood-trailer-shaan-r-grover"
-              className="card m1 group block"
+              className="card m6 group block"
             >
               <div className="card-media relative overflow-hidden">
                 <Image
@@ -251,33 +288,6 @@ export default function BollywoodView() {
                 </div>
               </div>
             </Link>
-
-            {/* Card 2: Disha Patani DZ Brand */}
-            <Link
-              href="/disha-patani-launches-clothing-brand-dz"
-              className="card m6 group block"
-            >
-              <div className="card-media relative overflow-hidden">
-                <Image
-                  src="/images/disha-patani-launches-clothing-brand-dz.jpg"
-                  alt="Disha Patani Launches Her Own Clothing Brand DZ"
-                  fill
-                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
-                  sizes="(max-width: 980px) 100vw, 35vw"
-                />
-                <span className="badge pink z-10 relative">Fashion Label</span>
-              </div>
-              <div className="card-body">
-                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
-                  Disha Patani Launches Her Own Clothing Brand DZ
-                </h3>
-                <div className="meta-row mt-2">
-                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; FASHION</span>
-                  <span className="dot-sep">◆</span>
-                  <span>3 MIN READ</span>
-                </div>
-              </div>
-            </Link>
           </div>
         </section>
 
@@ -290,7 +300,7 @@ export default function BollywoodView() {
               </h2>
             </div>
             <span className="text-xs font-mono text-[var(--lime)] font-bold">
-              11 STORIES PUBLISHED
+              12 STORIES PUBLISHED
             </span>
           </div>
 

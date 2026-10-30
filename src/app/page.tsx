@@ -177,8 +177,22 @@ export default function Home() {
 
   const editorialArticles: EditorialArticle[] = [
     {
-      id: "siddharth-anand-king-srk",
+      id: "mirzapur-the-movie-ott",
       anchorId: "latest-story",
+      href: "/mirzapur-the-movie-prime-video-extended-cut",
+      title: "Mirzapur: The Movie Is Now Streaming on Prime Video With an Extended Cut",
+      excerpt: "Mirzapur: The Movie is streaming on Prime Video with an extended cut packing 14 extra minutes of unseen scenes.",
+      category: "Latest",
+      secondaryCategory: "Bollywood & Hollywood",
+      displayCategory: "BOLLYWOOD & WEB SERIES",
+      badge: "Extended Cut",
+      badgeType: "pink",
+      readTime: "3 MIN READ",
+      image: "/images/mirzapur-the-movie-prime-video-extended-cut.jpg",
+    },
+    {
+      id: "siddharth-anand-king-srk",
+      anchorId: "king-story",
       href: "/siddharth-anand-time-for-the-world-king-srk-birthday",
       title: "Siddharth Anand’s “Time For The World” Post Has SRK Fans Guessing: Is a King Update Coming?",
       excerpt: "Siddharth Anand posted “It’s” and then “Time For The World” on X. With SRK’s 61st birthday days away, fans are anticipating a massive King reveal.",
@@ -434,15 +448,15 @@ export default function Home() {
         <section className="hero" id="featured">
           {/* 1. Main Featured Story (Commanding Top Story Presentation) */}
           <Link
-            href="/siddharth-anand-time-for-the-world-king-srk-birthday"
+            href="/mirzapur-the-movie-prime-video-extended-cut"
             className="feature-card block transition-all hover:border-[var(--lime)] focus-visible:ring-2 focus-visible:ring-[var(--lime)] group"
             style={{ textDecoration: "none", color: "inherit" }}
-            aria-label="Read full article: Siddharth Anand’s “Time For The World” Post Has SRK Fans Guessing: Is a King Update Coming?"
+            aria-label="Read full article: Mirzapur: The Movie Is Now Streaming on Prime Video With an Extended Cut"
           >
             <div className="feature-media" style={{ overflow: "hidden", position: "relative" }}>
               <Image
-                src="/images/siddharth-anand-time-for-the-world-king-srk-birthday.jpg"
-                alt="Siddharth Anand’s “Time For The World” Post Has SRK Fans Guessing: Is a King Update Coming?"
+                src="/images/mirzapur-the-movie-prime-video-extended-cut.jpg"
+                alt="Mirzapur: The Movie Is Now Streaming on Prime Video With an Extended Cut"
                 fill
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 750px"
@@ -452,23 +466,23 @@ export default function Home() {
               <div className="noise" style={{ pointerEvents: "none" }}></div>
               <div className="feature-tag flex items-center gap-2">
                 <span className="badge pink">🔥 Cover Story</span>
-                <span className="badge">Bollywood</span>
-                <span className="badge lime">King</span>
+                <span className="badge">Prime Video</span>
+                <span className="badge lime">Extended Cut</span>
               </div>
             </div>
             <div className="feature-body">
               <div className="flex items-center gap-2 mb-2 font-mono text-xs text-[var(--lime)] font-bold tracking-wider uppercase">
-                <span>★ TOP STORY · SRK&apos;S KING UPDATE</span>
+                <span>★ TOP STORY · PRIME VIDEO OTT PREMIERE</span>
               </div>
               <h1 className="disp" style={{ color: "#fff" }}>
-                Siddharth Anand’s “Time For The World” Post Has SRK Fans Guessing: Is a King Update Coming?
+                Mirzapur: The Movie Is Now Streaming on Prime Video With an Extended Cut
               </h1>
               <p>
-                Siddharth Anand posted “It’s” and then “Time For The World” on X. With Shah Rukh Khan&apos;s 61st birthday around the corner, fans are connecting the dots to a massive King surprise.
+                Mirzapur: The Movie has officially dropped on Prime Video featuring an extended cut with 14 minutes of unseen footage. Kaleen Bhaiya, Guddu Pandit and Munna Tripathi return in full force.
               </p>
               <div className="meta-row mt-auto pt-3 border-t border-white/[0.06] flex items-center justify-between">
                 <div className="flex items-center gap-3">
-                  <span>MOVIES</span>
+                  <span>BOLLYWOOD &amp; WEB SERIES</span>
                   <span className="dot-sep">◆</span>
                   <span>3 MIN READ</span>
                   <span className="dot-sep">◆</span>
@@ -491,6 +505,18 @@ export default function Home() {
               <span className="trend-rank">01</span>
               <div className="trend-text">
                 <Link
+                  href="/mirzapur-the-movie-prime-video-extended-cut"
+                  style={{ color: "inherit" }}
+                >
+                  <h3>Mirzapur: The Movie now streaming on Prime Video with an extended cut and unseen scenes</h3>
+                  <span>BOLLYWOOD &amp; WEB SERIES · 195K REACTIONS</span>
+                </Link>
+              </div>
+            </div>
+            <div className="trend-item">
+              <span className="trend-rank">02</span>
+              <div className="trend-text">
+                <Link
                   href="/siddharth-anand-time-for-the-world-king-srk-birthday"
                   style={{ color: "inherit" }}
                 >
@@ -500,7 +526,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">02</span>
+              <span className="trend-rank">03</span>
               <div className="trend-text">
                 <Link
                   href="/junglywood-trailer-shaan-r-grover"
@@ -512,7 +538,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">03</span>
+              <span className="trend-rank">04</span>
               <div className="trend-text">
                 <Link
                   href="/bigg-boss-20-gullu-evicted-yung-dsa-fight"
@@ -524,7 +550,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">04</span>
+              <span className="trend-rank">05</span>
               <div className="trend-text">
                 <Link
                   href="/disha-patani-launches-clothing-brand-dz"
@@ -532,18 +558,6 @@ export default function Home() {
                 >
                   <h3>Disha Patani launches her own clothing brand DZ with baggy fits and alien themes</h3>
                   <span>BOLLYWOOD &amp; FASHION · 158K REACTIONS</span>
-                </Link>
-              </div>
-            </div>
-            <div className="trend-item">
-              <span className="trend-rank">05</span>
-              <div className="trend-text">
-                <Link
-                  href="/bigg-boss-20-100-per-cent-ration-housemates"
-                  style={{ color: "inherit" }}
-                >
-                  <h3>Bigg Boss 20: Housemates get 100% full weekly ration for first time this season</h3>
-                  <span>REALITY TV · 142K REACTIONS</span>
                 </Link>
               </div>
             </div>
