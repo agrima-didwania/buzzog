@@ -20,6 +20,16 @@ interface BollywoodArticle {
 
 const bollywoodArticles: BollywoodArticle[] = [
   {
+    id: "iifa-2026-winners",
+    category: "IIFA Awards 2026",
+    title: "IIFA 2026 Winners List: Dhurandhar Wins 12 Awards, Ranveer Singh & Aneet Padda Win Big",
+    badge: "IIFA Winners",
+    badgeType: "lime",
+    image: "/images/iifa-2026-winners-list.jpg",
+    href: "/iifa-2026-winners-list",
+    readOrTime: "4 MIN READ",
+  },
+  {
     id: "ibrahim-ali-khan-palak-tiwari-breakup",
     category: "Relationship & Breakup",
     title: "Ibrahim Ali Khan and Palak Tiwari Reportedly Break Up After 3 Years",
@@ -256,37 +266,37 @@ export default function BollywoodView() {
 
         {/* Lead Section: Latest Bollywood Published Article (Cover Story) + The Last 2 Blogs Uploaded Before It */}
         <section className="lead">
-          {/* Cover Story: Latest Published Bollywood Story (Ibrahim & Palak Breakup) */}
+          {/* Cover Story: Latest Published Bollywood Story (IIFA 2026 Winners) */}
           <Link
-            href="/ibrahim-ali-khan-palak-tiwari-breakup"
+            href="/iifa-2026-winners-list"
             className="feature-card group block"
-            aria-label="Read full cover story: Ibrahim Ali Khan and Palak Tiwari Reportedly Break Up After 3 Years"
+            aria-label="Read full cover story: IIFA 2026 Winners List: Dhurandhar Wins 12 Awards"
           >
             <div className="feature-media relative overflow-hidden">
               <Image
-                src="/images/ibrahim-ali-khan-palak-tiwari-breakup.jpg"
-                alt="Ibrahim Ali Khan and Palak Tiwari Reportedly Break Up After 3 Years"
+                src="/images/iifa-2026-winners-list.jpg"
+                alt="IIFA 2026 Winners List: Dhurandhar Wins 12 Awards"
                 fill
                 priority
                 className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
                 sizes="(max-width: 980px) 100vw, 65vw"
               />
               <div className="noise" />
-              <span className="badge pink feature-tag z-10">
-                💔 Breakup Scoop
+              <span className="badge lime feature-tag z-10">
+                🏆 IIFA 2026 Winners
               </span>
             </div>
             <div className="feature-body">
               <h2 className="disp text-white group-hover:text-[var(--lime)] transition-colors">
-                Ibrahim Ali Khan and Palak Tiwari Reportedly Break Up After 3 Years
+                IIFA 2026 Winners List: Dhurandhar Wins 12 Awards
               </h2>
               <p>
-                Ibrahim Ali Khan and Palak Tiwari have reportedly parted ways after 3 years. Know who ended it, the shoot cancellations, and what we know so far.
+                See the full IIFA 2026 winners list. Dhurandhar won 12 awards, Ranveer Singh and Aneet Padda won top acting prizes, and The Ba*ds of Bollywood won Best Series.
               </p>
               <div className="meta-row mt-3">
-                <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; NEWS</span>
+                <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; WEB SERIES</span>
                 <span className="dot-sep">◆</span>
-                <span>3 MIN READ</span>
+                <span>4 MIN READ</span>
                 <span className="dot-sep">◆</span>
                 <span className="text-[var(--lime)] font-bold">OCT 31</span>
               </div>
@@ -295,7 +305,34 @@ export default function BollywoodView() {
 
           {/* Right Stack: The last 2 blogs uploaded before the latest one */}
           <div className="stack">
-            {/* Card 1: Jiya Shankar */}
+            {/* Card 1: Ibrahim Ali Khan & Palak Tiwari */}
+            <Link
+              href="/ibrahim-ali-khan-palak-tiwari-breakup"
+              className="card m1 group block"
+            >
+              <div className="card-media relative overflow-hidden">
+                <Image
+                  src="/images/ibrahim-ali-khan-palak-tiwari-breakup.jpg"
+                  alt="Ibrahim Ali Khan and Palak Tiwari Reportedly Break Up After 3 Years"
+                  fill
+                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 980px) 100vw, 35vw"
+                />
+                <span className="badge pink z-10 relative">Breakup Scoop</span>
+              </div>
+              <div className="card-body">
+                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
+                  Ibrahim Ali Khan and Palak Tiwari Reportedly Break Up After 3 Years
+                </h3>
+                <div className="meta-row mt-2">
+                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; NEWS</span>
+                  <span className="dot-sep">◆</span>
+                  <span>3 MIN READ</span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Card 2: Jiya Shankar */}
             <Link
               href="/jiya-shankar-unfollows-fiance-kd-instagram"
               className="card m1 group block"
@@ -321,33 +358,6 @@ export default function BollywoodView() {
                 </div>
               </div>
             </Link>
-
-            {/* Card 2: Parivarik ManuRanjan */}
-            <Link
-              href="/parivarik-manuranjan-ott-release-date-sony-liv"
-              className="card m1 group block"
-            >
-              <div className="card-media relative overflow-hidden">
-                <Image
-                  src="/images/parivarik-manuranjan-ott-release-date-sony-liv.jpg"
-                  alt="Parivarik ManuRanjan OTT Release Date: Sony LIV"
-                  fill
-                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
-                  sizes="(max-width: 980px) 100vw, 35vw"
-                />
-                <span className="badge lime z-10 relative">OTT Premiere</span>
-              </div>
-              <div className="card-body">
-                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
-                  Parivarik ManuRanjan: Pankaj Tripathi &amp; Aditi Rao Hydari Film on Sony LIV
-                </h3>
-                <div className="meta-row mt-2">
-                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; OTT</span>
-                  <span className="dot-sep">◆</span>
-                  <span>3 MIN READ</span>
-                </div>
-              </div>
-            </Link>
           </div>
         </section>
 
@@ -360,7 +370,7 @@ export default function BollywoodView() {
               </h2>
             </div>
             <span className="text-xs font-mono text-[var(--lime)] font-bold">
-              18 STORIES PUBLISHED
+              19 STORIES PUBLISHED
             </span>
           </div>
 

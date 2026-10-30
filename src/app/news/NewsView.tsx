@@ -22,6 +22,18 @@ interface NewsArticle {
 // Only verified breaking entertainment news stories (fatwas, obituaries, police complaints, eviction rows, box-office shifts)
 const newsArticles: NewsArticle[] = [
   {
+    id: "iifa-2026-winners",
+    category: "Bollywood",
+    title: "IIFA 2026 Winners List: Dhurandhar Wins 12 Awards, Ranveer & Aneet Top Acting Prizes",
+    badge: "IIFA 2026",
+    badgeType: "lime",
+    image: "/images/iifa-2026-winners-list.jpg",
+    href: "/iifa-2026-winners-list",
+    readOrTime: "4 MIN READ",
+    excerpt:
+      "The 26th IIFA Awards announce full winners: Dhurandhar wins 12 trophies including Best Film, Director and Actor, while The Ba***ds of Bollywood takes Best Series.",
+  },
+  {
     id: "ibrahim-ali-khan-palak-tiwari-breakup",
     category: "Bollywood",
     title: "Ibrahim Ali Khan and Palak Tiwari Reportedly Break Up After 3 Years",

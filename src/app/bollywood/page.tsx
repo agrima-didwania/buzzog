@@ -8,6 +8,14 @@ export const metadata: Metadata = {
   keywords: [
     "Bollywood Buzz Originals",
     "Bollywood news",
+    "IIFA 2026 winners",
+    "IIFA Awards 2026 full list",
+    "Dhurandhar IIFA awards",
+    "Ranveer Singh Best Actor",
+    "Aneet Padda Best Actress",
+    "The Ba***ds of Bollywood IIFA",
+    "Ranveer Singh",
+    "Aryan Khan",
     "Ibrahim Ali Khan Palak Tiwari breakup",
     "Palak Tiwari Ibrahim Ali Khan",
     "Bollywood breakup news",
@@ -90,10 +98,10 @@ export const metadata: Metadata = {
     siteName: "Buzz Originals",
     images: [
       {
-        url: "/images/ibrahim-ali-khan-palak-tiwari-breakup.jpg",
+        url: "/images/iifa-2026-winners-list.jpg",
         width: 1024,
         height: 576,
-        alt: "Ibrahim Ali Khan and Palak Tiwari Reportedly Break Up After 3 Years — Buzz Originals Bollywood",
+        alt: "IIFA 2026 Winners List: Dhurandhar Wins 12 Awards — Buzz Originals Bollywood",
       },
     ],
     type: "website",
@@ -103,7 +111,7 @@ export const metadata: Metadata = {
     title: "Bollywood — Buzz Originals",
     description:
       "Raw, unfiltered Bollywood coverage of red carpets, gossip, airport sightings & exclusives.",
-    images: ["/images/ibrahim-ali-khan-palak-tiwari-breakup.jpg"],
+    images: ["/images/iifa-2026-winners-list.jpg"],
   },
 };
 
@@ -130,12 +138,18 @@ export default function BollywoodPage() {
         {
           "@type": "ListItem",
           position: 1,
+          name: "IIFA 2026 Winners List: Dhurandhar Wins 12 Awards",
+          url: "https://www.buzzoriginals.com/iifa-2026-winners-list",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
           name: "Ibrahim Ali Khan and Palak Tiwari Reportedly Break Up After 3 Years",
           url: "https://www.buzzoriginals.com/ibrahim-ali-khan-palak-tiwari-breakup",
         },
         {
           "@type": "ListItem",
-          position: 2,
+          position: 3,
           name: "Jiya Shankar Unfollows Fiancé KD on Instagram: What We Know So Far",
           url: "https://www.buzzoriginals.com/jiya-shankar-unfollows-fiance-kd-instagram",
         },

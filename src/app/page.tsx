@@ -177,6 +177,20 @@ export default function Home() {
 
   const editorialArticles: EditorialArticle[] = [
     {
+      id: "iifa-2026-winners",
+      anchorId: "iifa-story",
+      href: "/iifa-2026-winners-list",
+      title: "IIFA 2026 Winners List: Dhurandhar Wins 12 Awards, Ranveer & Aneet Top Acting Prizes",
+      excerpt: "Aditya Dhar's Dhurandhar dominates the 26th IIFA Awards with 12 trophies while Aryan Khan's The Ba***ds of Bollywood takes Best Series.",
+      category: "Bollywood",
+      secondaryCategory: "News",
+      displayCategory: "BOLLYWOOD & WEB SERIES",
+      badge: "IIFA 2026",
+      badgeType: "lime",
+      readTime: "4 MIN READ",
+      image: "/images/iifa-2026-winners-list.jpg",
+    },
+    {
       id: "ibrahim-palak-breakup",
       anchorId: "ibrahim-palak-story",
       href: "/ibrahim-ali-khan-palak-tiwari-breakup",
@@ -560,15 +574,15 @@ export default function Home() {
         <section className="hero" id="featured">
           {/* 1. Main Featured Story (Commanding Top Story Presentation) */}
           <Link
-            href="/ibrahim-ali-khan-palak-tiwari-breakup"
+            href="/iifa-2026-winners-list"
             className="feature-card block transition-all hover:border-[var(--lime)] focus-visible:ring-2 focus-visible:ring-[var(--lime)] group"
             style={{ textDecoration: "none", color: "inherit" }}
-            aria-label="Read full article: Ibrahim Ali Khan and Palak Tiwari Reportedly Break Up After 3 Years"
+            aria-label="Read full article: IIFA 2026 Winners List: Dhurandhar Wins 12 Awards"
           >
             <div className="feature-media" style={{ overflow: "hidden", position: "relative" }}>
               <Image
-                src="/images/ibrahim-ali-khan-palak-tiwari-breakup.jpg"
-                alt="Ibrahim Ali Khan and Palak Tiwari Reportedly Break Up After 3 Years"
+                src="/images/iifa-2026-winners-list.jpg"
+                alt="IIFA 2026 Winners List: Dhurandhar Wins 12 Awards"
                 fill
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 750px"
@@ -577,26 +591,26 @@ export default function Home() {
               />
               <div className="noise" style={{ pointerEvents: "none" }}></div>
               <div className="feature-tag flex items-center gap-2">
-                <span className="badge pink">💔 Breakup Scoop</span>
-                <span className="badge">Bollywood &amp; News</span>
-                <span className="badge lime">Saif’s Son &amp; Palak</span>
+                <span className="badge lime">🏆 26th IIFA Awards</span>
+                <span className="badge">Dhurandhar Sweeps 12</span>
+                <span className="badge pink">Aryan Khan OTT Win</span>
               </div>
             </div>
             <div className="feature-body">
               <div className="flex items-center gap-2 mb-2 font-mono text-xs text-[var(--lime)] font-bold tracking-wider uppercase">
-                <span>★ TOP STORY · BREAKUP REPORT</span>
+                <span>★ TOP STORY · IIFA 2026 WINNERS</span>
               </div>
               <h1 className="disp" style={{ color: "#fff" }}>
-                Ibrahim Ali Khan &amp; Palak Tiwari Reportedly Part Ways After 3 Years
+                IIFA 2026 Winners List: Dhurandhar Dominates With 12 Awards; Aryan Khan Wins Big
               </h1>
               <p>
-                Bollywood’s much-talked-about young pair have reportedly ended their three-year relationship calmly, with planned joint shoots placed on hold ahead of Ibrahim&apos;s upcoming talk show appearance.
+                Aditya Dhar’s Dhurandhar swept the 26th IIFA Awards with 12 wins including Best Film, Director and Actor for Ranveer Singh, while Aryan Khan’s The Ba***ds of Bollywood clinched Best Series.
               </p>
               <div className="meta-row mt-auto pt-3 border-t border-white/[0.06] flex items-center justify-between">
                 <div className="flex items-center gap-3">
-                  <span>BOLLYWOOD &amp; NEWS</span>
+                  <span>BOLLYWOOD &amp; WEB SERIES</span>
                   <span className="dot-sep">◆</span>
-                  <span>3 MIN READ</span>
+                  <span>4 MIN READ</span>
                   <span className="dot-sep">◆</span>
                   <span style={{ color: "var(--lime)" }}>EDITORIAL DESK</span>
                 </div>
@@ -617,6 +631,18 @@ export default function Home() {
               <span className="trend-rank">01</span>
               <div className="trend-text">
                 <Link
+                  href="/iifa-2026-winners-list"
+                  style={{ color: "inherit" }}
+                >
+                  <h3>IIFA 2026 winners: Dhurandhar wins 12 awards; Ranveer Singh &amp; Aneet Padda bag top honors</h3>
+                  <span>BOLLYWOOD &amp; WEB SERIES · 350K REACTIONS</span>
+                </Link>
+              </div>
+            </div>
+            <div className="trend-item">
+              <span className="trend-rank">02</span>
+              <div className="trend-text">
+                <Link
                   href="/ibrahim-ali-khan-palak-tiwari-breakup"
                   style={{ color: "inherit" }}
                 >
@@ -626,7 +652,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">02</span>
+              <span className="trend-rank">03</span>
               <div className="trend-text">
                 <Link
                   href="/jiya-shankar-unfollows-fiance-kd-instagram"
@@ -638,7 +664,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">03</span>
+              <span className="trend-rank">04</span>
               <div className="trend-text">
                 <Link
                   href="/parivarik-manuranjan-ott-release-date-sony-liv"

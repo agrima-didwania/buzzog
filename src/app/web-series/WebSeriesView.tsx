@@ -22,6 +22,18 @@ interface WebSeriesArticle {
 // All verified web series and OTT articles in reverse chronological order
 const webSeriesArticles: WebSeriesArticle[] = [
   {
+    id: "iifa-2026-winners",
+    category: "IIFA Digital Awards",
+    title: "IIFA 2026 Winners List: Dhurandhar Wins 12 Awards, The Ba***ds of Bollywood Best Series",
+    badge: "IIFA Winners",
+    badgeType: "lime",
+    image: "/images/iifa-2026-winners-list.jpg",
+    href: "/iifa-2026-winners-list",
+    readOrTime: "4 MIN READ",
+    excerpt:
+      "Aryan Khan's The Ba***ds of Bollywood wins Best Series and Best Direction, while Paatal Lok 2 and Baramulla take top digital honors at the 26th IIFA Awards.",
+  },
+  {
     id: "parivarik-manuranjan-ott-release",
     category: "Sony LIV Original",
     title: "Parivarik ManuRanjan: Pankaj Tripathi & Aditi Rao Hydari's Rom-Com Sets Sony LIV Date",

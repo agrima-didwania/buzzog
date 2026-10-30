@@ -8,6 +8,14 @@ export const metadata: Metadata = {
   keywords: [
     "Entertainment News Buzz Originals",
     "Bollywood breaking news",
+    "IIFA 2026 winners",
+    "IIFA Awards 2026 full list",
+    "Dhurandhar IIFA awards",
+    "Ranveer Singh Best Actor",
+    "Aneet Padda Best Actress",
+    "The Ba***ds of Bollywood IIFA",
+    "Ranveer Singh",
+    "Aryan Khan",
     "Ibrahim Ali Khan Palak Tiwari breakup",
     "Palak Tiwari Ibrahim Ali Khan",
     "Palak Tiwari",
@@ -38,10 +46,10 @@ export const metadata: Metadata = {
     siteName: "Buzz Originals",
     images: [
       {
-        url: "/images/ibrahim-ali-khan-palak-tiwari-breakup.jpg",
+        url: "/images/iifa-2026-winners-list.jpg",
         width: 1024,
         height: 576,
-        alt: "Ibrahim Ali Khan and Palak Tiwari Reportedly Break Up After 3 Years — Buzz Originals News",
+        alt: "IIFA 2026 Winners List: Dhurandhar Wins 12 Awards — Buzz Originals News Desk",
       },
     ],
     type: "website",
@@ -51,7 +59,7 @@ export const metadata: Metadata = {
     title: "News — Buzz Originals",
     description:
       "Raw, unfiltered entertainment news across reality TV, Bollywood, movies and OTT.",
-    images: ["/images/ibrahim-ali-khan-palak-tiwari-breakup.jpg"],
+    images: ["/images/iifa-2026-winners-list.jpg"],
   },
 };
 
