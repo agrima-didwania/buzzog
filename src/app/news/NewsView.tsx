@@ -23,18 +23,6 @@ interface NewsArticle {
 // All verified entertainment news articles in reverse chronological order
 const newsArticles: NewsArticle[] = [
   {
-    id: "sara-ali-khan-fatwa",
-    category: "Bollywood",
-    title: "Sara Ali Khan Faces Fatwa After Kedarnath Temple Visit",
-    badge: "Fatwa Row",
-    badgeType: "pink",
-    image: "/images/sara-ali-khan-fatwa-kedarnath-temple-visit.jpg",
-    href: "/sara-ali-khan-fatwa-kedarnath-temple-visit",
-    readOrTime: "3 MIN READ",
-    excerpt:
-      "A UP cleric has issued a fatwa against Sara Ali Khan after her Kedarnath visit. Here is what he said, what happened at the temple, and the affidavit rule.",
-  },
-  {
     id: "priyanka-chopra-we-were-here",
     category: "Movies",
     title: "Priyanka Chopra Joins Oscar-Qualified Short Film We Were Here",
@@ -45,6 +33,18 @@ const newsArticles: NewsArticle[] = [
     readOrTime: "3 MIN READ",
     excerpt:
       "Priyanka Chopra Jonas is now an executive producer on ‘We Were Here,’ an Indian short film that has qualified for the Oscars.",
+  },
+  {
+    id: "sara-ali-khan-fatwa",
+    category: "Bollywood",
+    title: "Sara Ali Khan Faces Fatwa After Kedarnath Temple Visit",
+    badge: "Fatwa Row",
+    badgeType: "pink",
+    image: "/images/sara-ali-khan-fatwa-kedarnath-temple-visit.jpg",
+    href: "/sara-ali-khan-fatwa-kedarnath-temple-visit",
+    readOrTime: "3 MIN READ",
+    excerpt:
+      "A UP cleric has issued a fatwa against Sara Ali Khan after her Kedarnath visit. Here is what he said, what happened at the temple, and the affidavit rule.",
   },
   {
     id: "eetha-trailer-shraddha",
@@ -350,8 +350,14 @@ export default function NewsView() {
                 sizes="(max-width: 980px) 100vw, 65vw"
               />
               <div className="noise" />
-              <span className="badge pink feature-tag z-10">
-                🔥 {coverStory.badge}
+              <span
+                className={cn(
+                  "badge feature-tag z-10",
+                  coverStory.badgeType === "lime" ? "lime" : "pink"
+                )}
+              >
+                {coverStory.badgeType === "lime" ? "🏆 " : "🔥 "}
+                {coverStory.badge}
               </span>
             </div>
             <div className="feature-body">

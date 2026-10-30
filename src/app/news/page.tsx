@@ -15,6 +15,9 @@ export const metadata: Metadata = {
     "Celebrity scoops India",
     "Ramayana movie premiere",
     "Patrick Stewart final role",
+    "Priyanka Chopra We Were Here",
+    "We Were Here short film",
+    "Oscar-qualified Indian short film",
     "Sara Ali Khan news",
   ],
   alternates: {
@@ -28,9 +31,9 @@ export const metadata: Metadata = {
     siteName: "Buzz Originals",
     images: [
       {
-        url: "/images/sara-ali-khan-fatwa-kedarnath-temple-visit.jpg",
-        width: 1200,
-        height: 675,
+        url: "/images/priyanka-chopra-we-were-here-executive-producer.jpg",
+        width: 1024,
+        height: 682,
         alt: "The News Desk — Buzz Originals Breaking Entertainment News",
       },
     ],
@@ -41,7 +44,7 @@ export const metadata: Metadata = {
     title: "News — Buzz Originals",
     description:
       "Raw, unfiltered entertainment news across reality TV, Bollywood, movies and OTT.",
-    images: ["/images/sara-ali-khan-fatwa-kedarnath-temple-visit.jpg"],
+    images: ["/images/priyanka-chopra-we-were-here-executive-producer.jpg"],
   },
 };
 
