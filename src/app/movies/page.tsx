@@ -7,6 +7,11 @@ export const metadata: Metadata = {
     "Movies coverage from Buzz Originals — raw, unfiltered, built for the group chat. Box office numbers, trailer breakdowns, clashes and spoiler-free verdicts.",
   keywords: [
     "Movies Buzz Originals",
+    "Ramayana advance booking",
+    "Ramayana Part One",
+    "Ranbir Kapoor Ramayana",
+    "Ramayana box office",
+    "Ramayana US premiere",
     "Priyanka Chopra We Were Here",
     "We Were Here short film",
     "Oscar-qualified Indian short film",
@@ -60,10 +65,10 @@ export const metadata: Metadata = {
     siteName: "Buzz Originals",
     images: [
       {
-        url: "/images/priyanka-chopra-we-were-here-executive-producer.jpg",
+        url: "/images/ramayana-advance-booking-us-jump-la-premiere.jpg",
         width: 1024,
-        height: 682,
-        alt: "Priyanka Chopra Joins Oscar-Qualified Short Film We Were Here — Buzz Originals Movies",
+        height: 576,
+        alt: "Ramayana Advance Booking: US Sales Jump 27% After LA Premiere — Buzz Originals Movies",
       },
     ],
     type: "website",
@@ -73,7 +78,7 @@ export const metadata: Metadata = {
     title: "Movies — Buzz Originals",
     description:
       "Raw, unfiltered movie coverage: box office clashes, trailer breakdowns & spoiler-free verdicts.",
-    images: ["/images/priyanka-chopra-we-were-here-executive-producer.jpg"],
+    images: ["/images/ramayana-advance-booking-us-jump-la-premiere.jpg"],
   },
 };
 
@@ -100,54 +105,60 @@ export default function MoviesPage() {
         {
           "@type": "ListItem",
           position: 1,
+          name: "Ramayana Advance Booking: US Sales Jump 27% After LA Premiere",
+          url: "https://www.buzzoriginals.com/ramayana-advance-booking-us-jump-la-premiere",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
           name: "Priyanka Chopra Joins Oscar-Qualified Short Film We Were Here",
           url: "https://www.buzzoriginals.com/priyanka-chopra-we-were-here-executive-producer",
         },
         {
           "@type": "ListItem",
-          position: 2,
+          position: 3,
           name: "Eetha Trailer Out: Shraddha Kapoor Becomes Tamasha Queen Vithabai Narayangaonkar",
           url: "https://www.buzzoriginals.com/eetha-trailer-shraddha-kapoor-vithabai-narayangaonkar",
         },
         {
           "@type": "ListItem",
-          position: 3,
+          position: 4,
           name: "Patrick Stewart Dies at 86: Avengers: Doomsday Will Be His Final Screen Role",
           url: "https://www.buzzoriginals.com/patrick-stewart-dies-at-86-avengers-doomsday-final-role",
         },
         {
           "@type": "ListItem",
-          position: 4,
+          position: 5,
           name: "Siddharth Anand’s “Time For The World” Post Has SRK Fans Guessing: Is a King Update Coming?",
           url: "https://www.buzzoriginals.com/siddharth-anand-time-for-the-world-king-srk-birthday",
         },
         {
           "@type": "ListItem",
-          position: 5,
+          position: 6,
           name: "Junglywood Trailer Out: Shaan R Grover Takes On Bollywood's Insider vs Outsider Debate",
           url: "https://www.buzzoriginals.com/junglywood-trailer-shaan-r-grover",
         },
         {
           "@type": "ListItem",
-          position: 6,
+          position: 7,
           name: "Bhumi Pednekar Joins Akshay Kumar in Priyadarshan’s Next Film",
           url: "https://www.buzzoriginals.com/bhumi-pednekar-akshay-kumar-priyadarshan-next-film",
         },
         {
           "@type": "ListItem",
-          position: 7,
+          position: 8,
           name: "Janhvi Kapoor Breaks Silence on Peddi Controversy",
           url: "https://www.buzzoriginals.com/janhvi-kapoor-peddi-controversy-koffee-with-karan-9",
         },
         {
           "@type": "ListItem",
-          position: 8,
+          position: 9,
           name: "Ramayana LA Premiere: Actors Steal the Red Carpet",
           url: "https://www.buzzoriginals.com/ramayana-la-premiere-ranbir-kapoor-yash-sai-pallavi",
         },
         {
           "@type": "ListItem",
-          position: 9,
+          position: 10,
           name: "Godzilla Minus Zero India Release Delayed Over Ramayana IMAX Battle",
           url: "https://www.buzzoriginals.com/godzilla-minus-zero-india-release-delayed-ramayana",
         },

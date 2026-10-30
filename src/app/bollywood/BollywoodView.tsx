@@ -20,6 +20,16 @@ interface BollywoodArticle {
 
 const bollywoodArticles: BollywoodArticle[] = [
   {
+    id: "ramayana-advance-booking-us",
+    category: "Box Office",
+    title: "Ramayana Advance Booking: US Sales Jump 27% After LA Premiere",
+    badge: "Box Office Jump",
+    badgeType: "lime",
+    image: "/images/ramayana-advance-booking-us-jump-la-premiere.jpg",
+    href: "/ramayana-advance-booking-us-jump-la-premiere",
+    readOrTime: "3 MIN READ",
+  },
+  {
     id: "sara-ali-khan-fatwa-kedarnath",
     category: "Controversy",
     title: "Sara Ali Khan Faces Fatwa After Kedarnath Temple Visit",
@@ -216,46 +226,73 @@ export default function BollywoodView() {
 
         {/* Lead Section: Latest Bollywood Published Article (Cover Story) + The Last 2 Blogs Uploaded Before It */}
         <section className="lead">
-          {/* Cover Story: Latest Published Bollywood Story (Sara Ali Khan Fatwa) */}
+          {/* Cover Story: Latest Published Bollywood Story (Ramayana Advance Booking) */}
           <Link
-            href="/sara-ali-khan-fatwa-kedarnath-temple-visit"
+            href="/ramayana-advance-booking-us-jump-la-premiere"
             className="feature-card group block"
-            aria-label="Read full cover story: Sara Ali Khan Faces Fatwa After Kedarnath Temple Visit"
+            aria-label="Read full cover story: Ramayana Advance Booking: US Sales Jump 27% After LA Premiere"
           >
             <div className="feature-media relative overflow-hidden">
               <Image
-                src="/images/sara-ali-khan-fatwa-kedarnath-temple-visit.jpg"
-                alt="Sara Ali Khan Faces Fatwa After Kedarnath Temple Visit"
+                src="/images/ramayana-advance-booking-us-jump-la-premiere.jpg"
+                alt="Ramayana Advance Booking: US Sales Jump 27% After LA Premiere"
                 fill
                 priority
                 className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
                 sizes="(max-width: 980px) 100vw, 65vw"
               />
               <div className="noise" />
-              <span className="badge pink feature-tag z-10">
-                🔥 Fatwa Row
+              <span className="badge lime feature-tag z-10">
+                📈 Box Office Jump
               </span>
             </div>
             <div className="feature-body">
               <h2 className="disp text-white group-hover:text-[var(--lime)] transition-colors">
-                Sara Ali Khan Faces Fatwa After Kedarnath Temple Visit
+                Ramayana Advance Booking: US Sales Jump 27% After LA Premiere
               </h2>
               <p>
-                A UP cleric has issued a fatwa against Sara Ali Khan after her Kedarnath visit. Here is what he said, what happened at the temple, and the affidavit rule.
+                Ramayana Part One is getting stronger bookings in the US after its LA premiere. Here are the booking numbers, the early reactions and the release date.
               </p>
               <div className="meta-row mt-3">
-                <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; NEWS</span>
+                <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; CINEMA</span>
                 <span className="dot-sep">◆</span>
                 <span>3 MIN READ</span>
                 <span className="dot-sep">◆</span>
-                <span className="text-[var(--lime)] font-bold">KEDARNATH VISIT</span>
+                <span className="text-[var(--lime)] font-bold">RELEASE NOV 5</span>
               </div>
             </div>
           </Link>
 
           {/* Right Stack: The last 2 blogs uploaded before the latest one */}
           <div className="stack">
-            {/* Card 1: Eetha Trailer */}
+            {/* Card 1: Sara Ali Khan Fatwa */}
+            <Link
+              href="/sara-ali-khan-fatwa-kedarnath-temple-visit"
+              className="card m1 group block"
+            >
+              <div className="card-media relative overflow-hidden">
+                <Image
+                  src="/images/sara-ali-khan-fatwa-kedarnath-temple-visit.jpg"
+                  alt="Sara Ali Khan Faces Fatwa After Kedarnath Temple Visit"
+                  fill
+                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 980px) 100vw, 35vw"
+                />
+                <span className="badge pink z-10 relative">Fatwa Row</span>
+              </div>
+              <div className="card-body">
+                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
+                  Sara Ali Khan Faces Fatwa After Kedarnath Temple Visit
+                </h3>
+                <div className="meta-row mt-2">
+                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD</span>
+                  <span className="dot-sep">◆</span>
+                  <span>3 MIN READ</span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Card 2: Eetha Trailer */}
             <Link
               href="/eetha-trailer-shraddha-kapoor-vithabai-narayangaonkar"
               className="card m1 group block"
@@ -281,33 +318,6 @@ export default function BollywoodView() {
                 </div>
               </div>
             </Link>
-
-            {/* Card 2: Mirzapur The Movie */}
-            <Link
-              href="/mirzapur-the-movie-prime-video-extended-cut"
-              className="card m1 group block"
-            >
-              <div className="card-media relative overflow-hidden">
-                <Image
-                  src="/images/mirzapur-the-movie-prime-video-extended-cut.jpg"
-                  alt="Mirzapur: The Movie Is Now Streaming on Prime Video With an Extended Cut"
-                  fill
-                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
-                  sizes="(max-width: 980px) 100vw, 35vw"
-                />
-                <span className="badge pink z-10 relative">Extended Cut</span>
-              </div>
-              <div className="card-body">
-                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
-                  Mirzapur: The Movie Is Now Streaming on Prime Video With an Extended Cut
-                </h3>
-                <div className="meta-row mt-2">
-                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; OTT</span>
-                  <span className="dot-sep">◆</span>
-                  <span>3 MIN READ</span>
-                </div>
-              </div>
-            </Link>
           </div>
         </section>
 
@@ -320,7 +330,7 @@ export default function BollywoodView() {
               </h2>
             </div>
             <span className="text-xs font-mono text-[var(--lime)] font-bold">
-              14 STORIES PUBLISHED
+              15 STORIES PUBLISHED
             </span>
           </div>
 

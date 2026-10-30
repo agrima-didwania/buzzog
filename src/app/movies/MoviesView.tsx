@@ -20,6 +20,16 @@ interface MovieArticle {
 
 const movieArticles: MovieArticle[] = [
   {
+    id: "ramayana-advance-booking-us",
+    category: "Box Office",
+    title: "Ramayana Advance Booking: US Sales Jump 27% After LA Premiere",
+    badge: "Box Office Jump",
+    badgeType: "lime",
+    image: "/images/ramayana-advance-booking-us-jump-la-premiere.jpg",
+    href: "/ramayana-advance-booking-us-jump-la-premiere",
+    readOrTime: "3 MIN READ",
+  },
+  {
     id: "priyanka-chopra-we-were-here",
     category: "Oscar Contender",
     title: "Priyanka Chopra Joins Oscar-Qualified Short Film We Were Here",
@@ -166,16 +176,16 @@ export default function MoviesView() {
 
         {/* Lead Section: Latest Movie Published Article (Cover Story) + The Last 2 Blogs Uploaded Before It */}
         <section className="lead">
-          {/* Featured Card: Priyanka Chopra - We Were Here */}
+          {/* Featured Card: Ramayana Advance Booking */}
           <Link
-            href="/priyanka-chopra-we-were-here-executive-producer"
+            href="/ramayana-advance-booking-us-jump-la-premiere"
             className="feature-card group block"
-            aria-label="Read full article: Priyanka Chopra Joins Oscar-Qualified Short Film We Were Here"
+            aria-label="Read full article: Ramayana Advance Booking: US Sales Jump 27% After LA Premiere"
           >
             <div className="feature-media relative overflow-hidden">
               <Image
-                src="/images/priyanka-chopra-we-were-here-executive-producer.jpg"
-                alt="Priyanka Chopra Joins Oscar-Qualified Short Film We Were Here"
+                src="/images/ramayana-advance-booking-us-jump-la-premiere.jpg"
+                alt="Ramayana Advance Booking: US Sales Jump 27% After LA Premiere"
                 fill
                 priority
                 className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
@@ -183,29 +193,56 @@ export default function MoviesView() {
               />
               <div className="noise" />
               <span className="badge lime feature-tag z-10">
-                🏆 Oscar Qualified
+                📈 Box Office Jump
               </span>
             </div>
             <div className="feature-body">
               <h2 className="disp text-white group-hover:text-[var(--lime)] transition-colors">
-                Priyanka Chopra Joins Oscar-Qualified Short Film We Were Here
+                Ramayana Advance Booking: US Sales Jump 27% After LA Premiere
               </h2>
               <p>
-                Priyanka Chopra Jonas is now an executive producer on “We Were Here,” an Indian short film that has qualified for the Oscars.
+                Ramayana Part One is getting stronger bookings in the US after its LA premiere. Here are the booking numbers, the early reactions and the release date.
               </p>
               <div className="meta-row mt-3">
-                <span className="text-[var(--lime)] font-bold">MOVIES &amp; CINEMA</span>
+                <span className="text-[var(--lime)] font-bold">MOVIES &amp; BOX OFFICE</span>
                 <span className="dot-sep">·</span>
                 <span>3 MIN READ</span>
                 <span className="dot-sep">·</span>
-                <span className="text-[var(--magenta)] font-bold">OSCAR CONTENDER</span>
+                <span className="text-[var(--magenta)] font-bold">NOV 5 RELEASE</span>
               </div>
             </div>
           </Link>
 
           {/* Right Stack: The last 2 movie blogs uploaded before this one */}
           <div className="stack">
-            {/* Card 1: Eetha Trailer */}
+            {/* Card 1: Priyanka Chopra - We Were Here */}
+            <Link
+              href="/priyanka-chopra-we-were-here-executive-producer"
+              className="card m1 group block"
+            >
+              <div className="card-media relative overflow-hidden">
+                <Image
+                  src="/images/priyanka-chopra-we-were-here-executive-producer.jpg"
+                  alt="Priyanka Chopra Joins Oscar-Qualified Short Film We Were Here"
+                  fill
+                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 980px) 100vw, 35vw"
+                />
+                <span className="badge lime z-10 relative">Oscar Qualified</span>
+              </div>
+              <div className="card-body">
+                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
+                  Priyanka Chopra Joins Oscar-Qualified Film We Were Here
+                </h3>
+                <div className="meta-row mt-2">
+                  <span className="text-[var(--lime)] font-bold">CINEMA</span>
+                  <span className="dot-sep">◆</span>
+                  <span>3 MIN READ</span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Card 2: Eetha Trailer */}
             <Link
               href="/eetha-trailer-shraddha-kapoor-vithabai-narayangaonkar"
               className="card m1 group block"
@@ -231,33 +268,6 @@ export default function MoviesView() {
                 </div>
               </div>
             </Link>
-
-            {/* Card 2: Patrick Stewart In Memoriam */}
-            <Link
-              href="/patrick-stewart-dies-at-86-avengers-doomsday-final-role"
-              className="card m1 group block"
-            >
-              <div className="card-media relative overflow-hidden">
-                <Image
-                  src="/images/patrick-stewart-dies-at-86-avengers-doomsday-final-role.jpg"
-                  alt="Patrick Stewart Dies at 86: Avengers: Doomsday Will Be His Final Screen Role"
-                  fill
-                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
-                  sizes="(max-width: 980px) 100vw, 35vw"
-                />
-                <span className="badge pink z-10 relative">In Memoriam</span>
-              </div>
-              <div className="card-body">
-                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
-                  Patrick Stewart Dies at 86: Avengers: Doomsday Will Be His Final Role
-                </h3>
-                <div className="meta-row mt-2">
-                  <span className="text-[var(--lime)] font-bold">HOLLYWOOD</span>
-                  <span className="dot-sep">◆</span>
-                  <span>4 MIN READ</span>
-                </div>
-              </div>
-            </Link>
           </div>
         </section>
 
@@ -270,7 +280,7 @@ export default function MoviesView() {
               </h2>
             </div>
             <span className="text-xs font-mono text-[var(--lime)] font-bold">
-              9 STORIES PUBLISHED
+              10 STORIES PUBLISHED
             </span>
           </div>
 

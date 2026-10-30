@@ -177,6 +177,20 @@ export default function Home() {
 
   const editorialArticles: EditorialArticle[] = [
     {
+      id: "ramayana-advance-booking-us",
+      anchorId: "ramayana-booking-story",
+      href: "/ramayana-advance-booking-us-jump-la-premiere",
+      title: "Ramayana Advance Booking: US Sales Jump 27% After LA Premiere",
+      excerpt: "Ramayana: Part One US premiere ticket sales surged 27% in 24 hours following its starry LA screening, while Indian advance bookings crossed ₹15 crore.",
+      category: "Bollywood",
+      secondaryCategory: "Movies",
+      displayCategory: "BOLLYWOOD, MOVIES & NEWS",
+      badge: "Box Office Jump",
+      badgeType: "lime",
+      readTime: "3 MIN READ",
+      image: "/images/ramayana-advance-booking-us-jump-la-premiere.jpg",
+    },
+    {
       id: "priyanka-chopra-we-were-here",
       anchorId: "priyanka-story",
       href: "/priyanka-chopra-we-were-here-executive-producer",
@@ -504,15 +518,15 @@ export default function Home() {
         <section className="hero" id="featured">
           {/* 1. Main Featured Story (Commanding Top Story Presentation) */}
           <Link
-            href="/priyanka-chopra-we-were-here-executive-producer"
+            href="/ramayana-advance-booking-us-jump-la-premiere"
             className="feature-card block transition-all hover:border-[var(--lime)] focus-visible:ring-2 focus-visible:ring-[var(--lime)] group"
             style={{ textDecoration: "none", color: "inherit" }}
-            aria-label="Read full article: Priyanka Chopra Joins Oscar-Qualified Short Film We Were Here"
+            aria-label="Read full article: Ramayana Advance Booking: US Sales Jump 27% After LA Premiere"
           >
             <div className="feature-media" style={{ overflow: "hidden", position: "relative" }}>
               <Image
-                src="/images/priyanka-chopra-we-were-here-executive-producer.jpg"
-                alt="Priyanka Chopra Joins Oscar-Qualified Short Film We Were Here"
+                src="/images/ramayana-advance-booking-us-jump-la-premiere.jpg"
+                alt="Ramayana Advance Booking: US Sales Jump 27% After LA Premiere"
                 fill
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 750px"
@@ -521,24 +535,24 @@ export default function Home() {
               />
               <div className="noise" style={{ pointerEvents: "none" }}></div>
               <div className="feature-tag flex items-center gap-2">
-                <span className="badge lime">🏆 Oscar Qualified</span>
-                <span className="badge">Movies &amp; News</span>
-                <span className="badge pink">Priyanka Chopra</span>
+                <span className="badge lime">📈 Box Office 27% Jump</span>
+                <span className="badge">Bollywood &amp; Movies</span>
+                <span className="badge pink">Ranbir &amp; Yash</span>
               </div>
             </div>
             <div className="feature-body">
               <div className="flex items-center gap-2 mb-2 font-mono text-xs text-[var(--lime)] font-bold tracking-wider uppercase">
-                <span>★ TOP STORY · OSCAR CONTENDER</span>
+                <span>★ TOP STORY · BOX OFFICE EXPLOSION</span>
               </div>
               <h1 className="disp" style={{ color: "#fff" }}>
-                Priyanka Chopra Joins Oscar-Qualified Short Film We Were Here
+                Ramayana Advance Booking: US Sales Jump 27% After LA Premiere
               </h1>
               <p>
-                Priyanka Chopra Jonas has joined the Oscar-qualified Indian short film &ldquo;We Were Here&rdquo; as an executive producer alongside Andrew Scott and playwright V. Directed by Pranav Bhasin, the acclaimed mockumentary has swept over 80 festivals and won 20+ awards.
+                Ramayana: Part One ticket sales in the US surged 27% in 24 hours following its starry Los Angeles premiere at the Academy Museum, crossing $800,000 for premiere shows while domestic pre-sales in India eclipse ₹15 crore.
               </p>
               <div className="meta-row mt-auto pt-3 border-t border-white/[0.06] flex items-center justify-between">
                 <div className="flex items-center gap-3">
-                  <span>MOVIES &amp; NEWS</span>
+                  <span>BOLLYWOOD &amp; MOVIES</span>
                   <span className="dot-sep">◆</span>
                   <span>3 MIN READ</span>
                   <span className="dot-sep">◆</span>
@@ -561,6 +575,18 @@ export default function Home() {
               <span className="trend-rank">01</span>
               <div className="trend-text">
                 <Link
+                  href="/ramayana-advance-booking-us-jump-la-premiere"
+                  style={{ color: "inherit" }}
+                >
+                  <h3>Ramayana advance booking: US sales jump 27% after starry LA premiere</h3>
+                  <span>BOLLYWOOD &amp; MOVIES · 295K REACTIONS</span>
+                </Link>
+              </div>
+            </div>
+            <div className="trend-item">
+              <span className="trend-rank">02</span>
+              <div className="trend-text">
+                <Link
                   href="/priyanka-chopra-we-were-here-executive-producer"
                   style={{ color: "inherit" }}
                 >
@@ -570,7 +596,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">02</span>
+              <span className="trend-rank">03</span>
               <div className="trend-text">
                 <Link
                   href="/sara-ali-khan-fatwa-kedarnath-temple-visit"
@@ -582,7 +608,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">03</span>
+              <span className="trend-rank">04</span>
               <div className="trend-text">
                 <Link
                   href="/eetha-trailer-shraddha-kapoor-vithabai-narayangaonkar"
@@ -594,7 +620,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">04</span>
+              <span className="trend-rank">05</span>
               <div className="trend-text">
                 <Link
                   href="/patrick-stewart-dies-at-86-avengers-doomsday-final-role"
@@ -602,18 +628,6 @@ export default function Home() {
                 >
                   <h3>Patrick Stewart dies at 86: Marvel confirms Avengers: Doomsday will be his final screen role</h3>
                   <span>NEWS &amp; MOVIES · 210K REACTIONS</span>
-                </Link>
-              </div>
-            </div>
-            <div className="trend-item">
-              <span className="trend-rank">05</span>
-              <div className="trend-text">
-                <Link
-                  href="/mirzapur-the-movie-prime-video-extended-cut"
-                  style={{ color: "inherit" }}
-                >
-                  <h3>Mirzapur: The Movie now streaming on Prime Video with an extended cut and unseen scenes</h3>
-                  <span>BOLLYWOOD &amp; WEB SERIES · 195K REACTIONS</span>
                 </Link>
               </div>
             </div>

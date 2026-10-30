@@ -12,6 +12,8 @@ export const metadata: Metadata = {
     "Bigg Boss 20 latest news",
     "Koffee With Karan updates",
     "OTT release news",
+    "Ramayana advance booking",
+    "Ramayana Part One box office",
     "Celebrity scoops India",
     "Ramayana movie premiere",
     "Patrick Stewart final role",
@@ -31,9 +33,9 @@ export const metadata: Metadata = {
     siteName: "Buzz Originals",
     images: [
       {
-        url: "/images/priyanka-chopra-we-were-here-executive-producer.jpg",
+        url: "/images/ramayana-advance-booking-us-jump-la-premiere.jpg",
         width: 1024,
-        height: 682,
+        height: 576,
         alt: "The News Desk — Buzz Originals Breaking Entertainment News",
       },
     ],
@@ -44,7 +46,7 @@ export const metadata: Metadata = {
     title: "News — Buzz Originals",
     description:
       "Raw, unfiltered entertainment news across reality TV, Bollywood, movies and OTT.",
-    images: ["/images/priyanka-chopra-we-were-here-executive-producer.jpg"],
+    images: ["/images/ramayana-advance-booking-us-jump-la-premiere.jpg"],
   },
 };
 

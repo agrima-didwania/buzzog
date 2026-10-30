@@ -22,6 +22,18 @@ interface NewsArticle {
 // Only verified breaking entertainment news stories (fatwas, obituaries, police complaints, eviction rows, box-office shifts)
 const newsArticles: NewsArticle[] = [
   {
+    id: "ramayana-advance-booking-us",
+    category: "Movies",
+    title: "Ramayana Advance Booking: US Sales Jump 27% After LA Premiere",
+    badge: "Box Office Spike",
+    badgeType: "lime",
+    image: "/images/ramayana-advance-booking-us-jump-la-premiere.jpg",
+    href: "/ramayana-advance-booking-us-jump-la-premiere",
+    readOrTime: "3 MIN READ",
+    excerpt:
+      "Ramayana: Part One is getting stronger bookings in the US after its LA premiere. Here are the booking numbers, the early reactions and the release date.",
+  },
+  {
     id: "sara-ali-khan-fatwa",
     category: "Bollywood",
     title: "Sara Ali Khan Faces Fatwa After Kedarnath Temple Visit",
