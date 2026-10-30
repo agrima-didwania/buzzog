@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 import SocialShare from "@/components/SocialShare";
 
 export const metadata: Metadata = {
-  title: "Bigg Boss 20: Will Gullu Be Evicted After Yung DSA Fight? | Buzz Originals",
+  title: "Bigg Boss 20: Will Gullu Be Evicted After Yung DSA Fight?",
   description:
     "Gullu and Yung DSA’s captaincy task fight has fans demanding eviction, just like Nakul Dhull’s exit. Here’s what we know about Bigg Boss 20 so far.",
   keywords: [
@@ -70,7 +70,7 @@ export default function GulluEvictionArticlePage() {
       "https://www.buzzoriginals.com/images/bigg-boss-20-gullu-evicted-yung-dsa-fight.jpg",
     ],
     datePublished: "2026-10-30T00:45:00+05:30",
-    dateModified: "2026-10-30T00:45:00+05:30",
+    dateModified: "2026-10-31T00:06:00+05:30",
     author: [
       {
         "@type": "NewsMediaOrganization",
@@ -204,6 +204,17 @@ export default function GulluEvictionArticlePage() {
           <h2>Why Is Everyone Talking About Nakul Dhull?</h2>
           <p>
             This is not Gullu’s first fight on the show. Earlier, wildcard contestant <strong>Nakul Dhull</strong> got into a physical fight with him. Bigg Boss called it a serious rule violation and sent Nakul out of the house. Now fans are asking for the same rule for everyone.
+          </p>
+          <p>
+            Check the video:{" "}
+            <a
+              href="https://www.instagram.com/reel/DfHBch9z2ec/?xtok=MXBpb2l0M2h4Z2MyZg=="
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: "var(--lime)", textDecoration: "underline", fontWeight: 700 }}
+            >
+              Gullu Vs Yung DSA
+            </a>
           </p>
 
           <h2>What Are Fans Saying?</h2>
