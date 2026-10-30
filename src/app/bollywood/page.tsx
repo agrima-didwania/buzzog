@@ -8,6 +8,11 @@ export const metadata: Metadata = {
   keywords: [
     "Bollywood Buzz Originals",
     "Bollywood news",
+    "Jiya Shankar",
+    "Jiya Shankar KD",
+    "Kaaran Dhanak",
+    "Jiya Shankar engagement",
+    "Bigg Boss OTT 2",
     "Parivarik ManuRanjan OTT release date",
     "Parivarik ManuRanjan Sony LIV",
     "Parivarik ManuRanjan cast",
@@ -80,10 +85,10 @@ export const metadata: Metadata = {
     siteName: "Buzz Originals",
     images: [
       {
-        url: "/images/parivarik-manuranjan-ott-release-date-sony-liv.jpg",
+        url: "/images/jiya-shankar-unfollows-fiance-kd-instagram.jpg",
         width: 1024,
-        height: 682,
-        alt: "Parivarik ManuRanjan OTT Release Date: Sony LIV — Buzz Originals Bollywood",
+        height: 576,
+        alt: "Jiya Shankar Unfollows Fiancé KD on Instagram: What We Know So Far — Buzz Originals Bollywood",
       },
     ],
     type: "website",
@@ -93,7 +98,7 @@ export const metadata: Metadata = {
     title: "Bollywood — Buzz Originals",
     description:
       "Raw, unfiltered Bollywood coverage of red carpets, gossip, airport sightings & exclusives.",
-    images: ["/images/parivarik-manuranjan-ott-release-date-sony-liv.jpg"],
+    images: ["/images/jiya-shankar-unfollows-fiance-kd-instagram.jpg"],
   },
 };
 
@@ -120,24 +125,30 @@ export default function BollywoodPage() {
         {
           "@type": "ListItem",
           position: 1,
+          name: "Jiya Shankar Unfollows Fiancé KD on Instagram: What We Know So Far",
+          url: "https://www.buzzoriginals.com/jiya-shankar-unfollows-fiance-kd-instagram",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
           name: "Parivarik ManuRanjan Release Date: Pankaj Tripathi and Aditi Rao Hydari’s Film Is Coming to Sony LIV",
           url: "https://www.buzzoriginals.com/parivarik-manuranjan-ott-release-date-sony-liv",
         },
         {
           "@type": "ListItem",
-          position: 2,
+          position: 3,
           name: "Ramayana Advance Booking: US Sales Jump 27% After LA Premiere",
           url: "https://www.buzzoriginals.com/ramayana-advance-booking-us-jump-la-premiere",
         },
         {
           "@type": "ListItem",
-          position: 3,
+          position: 4,
           name: "Sara Ali Khan Faces Fatwa After Kedarnath Temple Visit",
           url: "https://www.buzzoriginals.com/sara-ali-khan-fatwa-kedarnath-temple-visit",
         },
         {
           "@type": "ListItem",
-          position: 4,
+          position: 5,
           name: "Eetha Trailer Out: Shraddha Kapoor Becomes Tamasha Queen Vithabai Narayangaonkar",
           url: "https://www.buzzoriginals.com/eetha-trailer-shraddha-kapoor-vithabai-narayangaonkar",
         },

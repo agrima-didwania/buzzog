@@ -20,6 +20,16 @@ interface BollywoodArticle {
 
 const bollywoodArticles: BollywoodArticle[] = [
   {
+    id: "jiya-shankar-unfollows-kd",
+    category: "Relationship & Breakup",
+    title: "Jiya Shankar Unfollows Fiancé KD on Instagram: What We Know So Far",
+    badge: "Breakup Rumours",
+    badgeType: "pink",
+    image: "/images/jiya-shankar-unfollows-fiance-kd-instagram.jpg",
+    href: "/jiya-shankar-unfollows-fiance-kd-instagram",
+    readOrTime: "3 MIN READ",
+  },
+  {
     id: "parivarik-manuranjan-ott-release",
     category: "OTT Premiere",
     title: "Parivarik ManuRanjan: Pankaj Tripathi & Aditi Rao Hydari's Rom-Com Sets Sony LIV Date",
@@ -236,46 +246,73 @@ export default function BollywoodView() {
 
         {/* Lead Section: Latest Bollywood Published Article (Cover Story) + The Last 2 Blogs Uploaded Before It */}
         <section className="lead">
-          {/* Cover Story: Latest Published Bollywood Story (Parivarik ManuRanjan) */}
+          {/* Cover Story: Latest Published Bollywood Story (Jiya Shankar) */}
           <Link
-            href="/parivarik-manuranjan-ott-release-date-sony-liv"
+            href="/jiya-shankar-unfollows-fiance-kd-instagram"
             className="feature-card group block"
-            aria-label="Read full cover story: Parivarik ManuRanjan Release Date: Pankaj Tripathi and Aditi Rao Hydari’s Film Is Coming to Sony LIV"
+            aria-label="Read full cover story: Jiya Shankar Unfollows Fiancé KD on Instagram: What We Know So Far"
           >
             <div className="feature-media relative overflow-hidden">
               <Image
-                src="/images/parivarik-manuranjan-ott-release-date-sony-liv.jpg"
-                alt="Parivarik ManuRanjan OTT Release Date: Sony LIV"
+                src="/images/jiya-shankar-unfollows-fiance-kd-instagram.jpg"
+                alt="Jiya Shankar Unfollows Fiancé KD on Instagram"
                 fill
                 priority
                 className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
                 sizes="(max-width: 980px) 100vw, 65vw"
               />
               <div className="noise" />
-              <span className="badge lime feature-tag z-10">
-                📺 OTT Premiere
+              <span className="badge pink feature-tag z-10">
+                💔 Breakup Rumours
               </span>
             </div>
             <div className="feature-body">
               <h2 className="disp text-white group-hover:text-[var(--lime)] transition-colors">
-                Parivarik ManuRanjan Release Date: Pankaj Tripathi and Aditi Rao Hydari’s Film Is Coming to Sony LIV
+                Jiya Shankar Unfollows Fiancé KD on Instagram: What We Know So Far
               </h2>
               <p>
-                Parivarik ManuRanjan starring Pankaj Tripathi and Aditi Rao Hydari premieres on Sony LIV on November 13. Know the story, cast, director and more.
+                Jiya Shankar has unfollowed fiancé Kaaran Dhanak (KD) and shared emotional reposts. Here is what fans noticed and what she said in her statement.
               </p>
               <div className="meta-row mt-3">
-                <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; OTT</span>
+                <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; REALITY</span>
                 <span className="dot-sep">◆</span>
                 <span>3 MIN READ</span>
                 <span className="dot-sep">◆</span>
-                <span className="text-[var(--lime)] font-bold">PREMIERE NOV 13</span>
+                <span className="text-[var(--lime)] font-bold">OCT 31</span>
               </div>
             </div>
           </Link>
 
           {/* Right Stack: The last 2 blogs uploaded before the latest one */}
           <div className="stack">
-            {/* Card 1: Ramayana Advance Booking */}
+            {/* Card 1: Parivarik ManuRanjan */}
+            <Link
+              href="/parivarik-manuranjan-ott-release-date-sony-liv"
+              className="card m1 group block"
+            >
+              <div className="card-media relative overflow-hidden">
+                <Image
+                  src="/images/parivarik-manuranjan-ott-release-date-sony-liv.jpg"
+                  alt="Parivarik ManuRanjan OTT Release Date: Sony LIV"
+                  fill
+                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 980px) 100vw, 35vw"
+                />
+                <span className="badge lime z-10 relative">OTT Premiere</span>
+              </div>
+              <div className="card-body">
+                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
+                  Parivarik ManuRanjan: Pankaj Tripathi &amp; Aditi Rao Hydari Film on Sony LIV
+                </h3>
+                <div className="meta-row mt-2">
+                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; OTT</span>
+                  <span className="dot-sep">◆</span>
+                  <span>3 MIN READ</span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Card 2: Ramayana Advance Booking */}
             <Link
               href="/ramayana-advance-booking-us-jump-la-premiere"
               className="card m1 group block"
@@ -301,33 +338,6 @@ export default function BollywoodView() {
                 </div>
               </div>
             </Link>
-
-            {/* Card 2: Sara Ali Khan Fatwa */}
-            <Link
-              href="/sara-ali-khan-fatwa-kedarnath-temple-visit"
-              className="card m1 group block"
-            >
-              <div className="card-media relative overflow-hidden">
-                <Image
-                  src="/images/sara-ali-khan-fatwa-kedarnath-temple-visit.jpg"
-                  alt="Sara Ali Khan Faces Fatwa After Kedarnath Temple Visit"
-                  fill
-                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
-                  sizes="(max-width: 980px) 100vw, 35vw"
-                />
-                <span className="badge pink z-10 relative">Fatwa Row</span>
-              </div>
-              <div className="card-body">
-                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
-                  Sara Ali Khan Faces Fatwa After Kedarnath Temple Visit
-                </h3>
-                <div className="meta-row mt-2">
-                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD</span>
-                  <span className="dot-sep">◆</span>
-                  <span>3 MIN READ</span>
-                </div>
-              </div>
-            </Link>
           </div>
         </section>
 
@@ -340,7 +350,7 @@ export default function BollywoodView() {
               </h2>
             </div>
             <span className="text-xs font-mono text-[var(--lime)] font-bold">
-              16 STORIES PUBLISHED
+              17 STORIES PUBLISHED
             </span>
           </div>
 

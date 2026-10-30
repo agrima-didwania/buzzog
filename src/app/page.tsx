@@ -177,6 +177,20 @@ export default function Home() {
 
   const editorialArticles: EditorialArticle[] = [
     {
+      id: "jiya-shankar-unfollows-kd",
+      anchorId: "jiya-kd-story",
+      href: "/jiya-shankar-unfollows-fiance-kd-instagram",
+      title: "Jiya Shankar Unfollows Fiancé KD on Instagram: What We Know So Far",
+      excerpt: "Bigg Boss OTT 2 star Jiya Shankar sparks breakup rumours after unfollowing fiancé Kaaran Dhanak (KD) and sharing emotional notes before issuing a statement.",
+      category: "Bollywood",
+      secondaryCategory: "Reality TV Updates",
+      displayCategory: "BOLLYWOOD & REALITY",
+      badge: "Breakup Rumours",
+      badgeType: "pink",
+      readTime: "3 MIN READ",
+      image: "/images/jiya-shankar-unfollows-fiance-kd-instagram.jpg",
+    },
+    {
       id: "parivarik-manuranjan-ott-release",
       anchorId: "manuranjan-story",
       href: "/parivarik-manuranjan-ott-release-date-sony-liv",
@@ -532,15 +546,15 @@ export default function Home() {
         <section className="hero" id="featured">
           {/* 1. Main Featured Story (Commanding Top Story Presentation) */}
           <Link
-            href="/parivarik-manuranjan-ott-release-date-sony-liv"
+            href="/jiya-shankar-unfollows-fiance-kd-instagram"
             className="feature-card block transition-all hover:border-[var(--lime)] focus-visible:ring-2 focus-visible:ring-[var(--lime)] group"
             style={{ textDecoration: "none", color: "inherit" }}
-            aria-label="Read full article: Parivarik ManuRanjan OTT Release Date: Sony LIV"
+            aria-label="Read full article: Jiya Shankar Unfollows Fiancé KD on Instagram: What We Know So Far"
           >
             <div className="feature-media" style={{ overflow: "hidden", position: "relative" }}>
               <Image
-                src="/images/parivarik-manuranjan-ott-release-date-sony-liv.jpg"
-                alt="Parivarik ManuRanjan OTT Release Date: Sony LIV starring Pankaj Tripathi and Aditi Rao Hydari"
+                src="/images/jiya-shankar-unfollows-fiance-kd-instagram.jpg"
+                alt="Jiya Shankar Unfollows Fiancé KD on Instagram: What We Know So Far"
                 fill
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 750px"
@@ -549,24 +563,24 @@ export default function Home() {
               />
               <div className="noise" style={{ pointerEvents: "none" }}></div>
               <div className="feature-tag flex items-center gap-2">
-                <span className="badge lime">📺 OTT Premiere</span>
-                <span className="badge">Movies &amp; Bollywood</span>
-                <span className="badge pink">Pankaj &amp; Aditi</span>
+                <span className="badge pink">💔 Breakup Rumours</span>
+                <span className="badge">Bollywood &amp; Reality</span>
+                <span className="badge lime">Bigg Boss OTT 2</span>
               </div>
             </div>
             <div className="feature-body">
               <div className="flex items-center gap-2 mb-2 font-mono text-xs text-[var(--lime)] font-bold tracking-wider uppercase">
-                <span>★ TOP STORY · OTT PREMIERE</span>
+                <span>★ TOP STORY · BREAKUP SPECULATION</span>
               </div>
               <h1 className="disp" style={{ color: "#fff" }}>
-                Parivarik ManuRanjan: Pankaj Tripathi &amp; Aditi Rao Hydari’s Rom-Com Sets Sony LIV Date
+                Jiya Shankar Unfollows Fiancé KD on Instagram: What We Know So Far
               </h1>
               <p>
-                Pankaj Tripathi and Aditi Rao Hydari team up for the first time in the warm family romantic comedy &apos;Parivarik ManuRanjan&apos;, premiering directly on Sony LIV on November 13.
+                Fans of Bigg Boss OTT 2 star Jiya Shankar are concerned after she unfollowed fiancé Kaaran Dhanak (KD) and shared cryptic heartbreak notes, before issuing a statement addressing the speculation.
               </p>
               <div className="meta-row mt-auto pt-3 border-t border-white/[0.06] flex items-center justify-between">
                 <div className="flex items-center gap-3">
-                  <span>MOVIES &amp; BOLLYWOOD</span>
+                  <span>BOLLYWOOD &amp; REALITY SHOWS</span>
                   <span className="dot-sep">◆</span>
                   <span>3 MIN READ</span>
                   <span className="dot-sep">◆</span>
@@ -589,6 +603,18 @@ export default function Home() {
               <span className="trend-rank">01</span>
               <div className="trend-text">
                 <Link
+                  href="/jiya-shankar-unfollows-fiance-kd-instagram"
+                  style={{ color: "inherit" }}
+                >
+                  <h3>Jiya Shankar unfollows fiancé KD on Instagram: Cryptic posts spark breakup speculation</h3>
+                  <span>BOLLYWOOD &amp; REALITY · 325K REACTIONS</span>
+                </Link>
+              </div>
+            </div>
+            <div className="trend-item">
+              <span className="trend-rank">02</span>
+              <div className="trend-text">
+                <Link
                   href="/parivarik-manuranjan-ott-release-date-sony-liv"
                   style={{ color: "inherit" }}
                 >
@@ -598,7 +624,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">02</span>
+              <span className="trend-rank">03</span>
               <div className="trend-text">
                 <Link
                   href="/ramayana-advance-booking-us-jump-la-premiere"
@@ -610,7 +636,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">03</span>
+              <span className="trend-rank">04</span>
               <div className="trend-text">
                 <Link
                   href="/priyanka-chopra-we-were-here-executive-producer"
@@ -622,7 +648,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">04</span>
+              <span className="trend-rank">05</span>
               <div className="trend-text">
                 <Link
                   href="/sara-ali-khan-fatwa-kedarnath-temple-visit"
@@ -630,18 +656,6 @@ export default function Home() {
                 >
                   <h3>Sara Ali Khan faces fatwa after Kedarnath temple visit: Cleric calls it impermissible</h3>
                   <span>BOLLYWOOD &amp; NEWS · 260K REACTIONS</span>
-                </Link>
-              </div>
-            </div>
-            <div className="trend-item">
-              <span className="trend-rank">05</span>
-              <div className="trend-text">
-                <Link
-                  href="/eetha-trailer-shraddha-kapoor-vithabai-narayangaonkar"
-                  style={{ color: "inherit" }}
-                >
-                  <h3>Eetha trailer out: Shraddha Kapoor becomes Tamasha queen Vithabai Narayangaonkar</h3>
-                  <span>BOLLYWOOD &amp; MOVIES · 240K REACTIONS</span>
                 </Link>
               </div>
             </div>

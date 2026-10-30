@@ -7,6 +7,11 @@ export const metadata: Metadata = {
     "Eliminations, fights, weekly ration milestones, hot seat stories and dome drama — every Bigg Boss 20, Koffee With Karan, KBC 18 and Splitsvilla moment.",
   keywords: [
     "Reality Shows Buzz Originals",
+    "Jiya Shankar",
+    "Jiya Shankar KD",
+    "Kaaran Dhanak",
+    "Jiya Shankar engagement",
+    "Bigg Boss OTT 2",
     "Bigg Boss 20",
     "Bigg Boss 20 Gullu eviction",
     "Gullu Yung DSA fight",
@@ -47,10 +52,10 @@ export const metadata: Metadata = {
     siteName: "Buzz Originals",
     images: [
       {
-        url: "/images/bigg-boss-20-gullu-evicted-yung-dsa-fight.jpg",
+        url: "/images/jiya-shankar-unfollows-fiance-kd-instagram.jpg",
         width: 1024,
         height: 576,
-        alt: "Bigg Boss 20: Will Gullu Be Evicted After Yung DSA Fight? — Buzz Originals Reality Shows",
+        alt: "Jiya Shankar Unfollows Fiancé KD on Instagram: What We Know So Far — Buzz Originals Reality Shows",
       },
     ],
     type: "website",
@@ -60,7 +65,7 @@ export const metadata: Metadata = {
     title: "Reality Shows — Buzz Originals",
     description:
       "Raw, unfiltered entertainment coverage of Bigg Boss 20, Koffee With Karan, KBC 18, Splitsvilla & Rise and Fall.",
-    images: ["/images/bigg-boss-20-gullu-evicted-yung-dsa-fight.jpg"],
+    images: ["/images/jiya-shankar-unfollows-fiance-kd-instagram.jpg"],
   },
 };
 
@@ -87,18 +92,24 @@ export default function RealityShowsPage() {
         {
           "@type": "ListItem",
           position: 1,
+          name: "Jiya Shankar Unfollows Fiancé KD on Instagram: What We Know So Far",
+          url: "https://www.buzzoriginals.com/jiya-shankar-unfollows-fiance-kd-instagram",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
           name: "Bigg Boss 20: Will Gullu Be Evicted After Yung DSA Fight?",
           url: "https://www.buzzoriginals.com/bigg-boss-20-gullu-evicted-yung-dsa-fight",
         },
         {
           "@type": "ListItem",
-          position: 2,
+          position: 3,
           name: "Bigg Boss 20: Housemates Get 100% Ration for the First Time, and the House Is Celebrating",
           url: "https://www.buzzoriginals.com/bigg-boss-20-100-per-cent-ration-housemates",
         },
         {
           "@type": "ListItem",
-          position: 3,
+          position: 4,
           name: "Janhvi Kapoor's \"Concert\" Advice for Veer Pahariya on Koffee With Karan Is Going Viral",
           url: "https://www.buzzoriginals.com/janhvi-kapoor-veer-pahariya-concert-advice-koffee-with-karan",
         },

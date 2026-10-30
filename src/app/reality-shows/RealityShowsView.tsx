@@ -23,6 +23,19 @@ interface RealityArticle {
 // All verified reality show articles in reverse chronological order
 const realityArticles: RealityArticle[] = [
   {
+    id: "jiya-shankar-unfollows-kd",
+    show: "Bigg Boss OTT 2",
+    title: "Jiya Shankar Unfollows Fiancé KD on Instagram: What We Know So Far",
+    excerpt:
+      "Jiya Shankar has unfollowed fiancé Kaaran Dhanak (KD) and shared emotional reposts. Here is what fans noticed and what she said in her statement.",
+    badge: "Breakup Rumours",
+    badgeType: "pink",
+    image: "/images/jiya-shankar-unfollows-fiance-kd-instagram.jpg",
+    href: "/jiya-shankar-unfollows-fiance-kd-instagram",
+    readTime: "3 MIN READ",
+    timeAgo: "JUST IN",
+  },
+  {
     id: "bigg-boss-20-gullu-eviction",
     show: "Bigg Boss 20",
     title: "Bigg Boss 20: Will Gullu Be Evicted After Yung DSA Fight?",
@@ -171,16 +184,16 @@ export default function RealityShowsView() {
 
         {/* Lead Section: Latest Reality Published Article (Cover Story) + The Last 2 Blogs Uploaded Before It */}
         <section className="lead">
-          {/* Featured Cover Story: Bigg Boss 20 Gullu Eviction Row */}
+          {/* Featured Cover Story: Jiya Shankar Unfollows KD */}
           <Link
-            href="/bigg-boss-20-gullu-evicted-yung-dsa-fight"
+            href="/jiya-shankar-unfollows-fiance-kd-instagram"
             className="feature-card group block"
-            aria-label="Read full cover story: Bigg Boss 20: Will Gullu Be Evicted After Yung DSA Fight?"
+            aria-label="Read full cover story: Jiya Shankar Unfollows Fiancé KD on Instagram: What We Know So Far"
           >
             <div className="feature-media relative overflow-hidden">
               <Image
-                src="/images/bigg-boss-20-gullu-evicted-yung-dsa-fight.jpg"
-                alt="Bigg Boss 20: Will Gullu Be Evicted After Yung DSA Fight?"
+                src="/images/jiya-shankar-unfollows-fiance-kd-instagram.jpg"
+                alt="Jiya Shankar Unfollows Fiancé KD on Instagram: What We Know So Far"
                 fill
                 priority
                 className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
@@ -188,18 +201,18 @@ export default function RealityShowsView() {
               />
               <div className="noise" />
               <span className="badge pink feature-tag z-10">
-                🔥 Eviction Row
+                💔 Breakup Rumours
               </span>
             </div>
             <div className="feature-body">
               <h2 className="disp text-white group-hover:text-[var(--lime)] transition-colors">
-                Bigg Boss 20: Will Gullu Be Evicted After Yung DSA Fight?
+                Jiya Shankar Unfollows Fiancé KD on Instagram: What We Know So Far
               </h2>
               <p>
-                Gullu and Yung DSA’s heated captaincy clash has fans demanding eviction, drawing fierce parallels with Nakul Dhull’s dramatic exit. Here is everything we know so far.
+                Jiya Shankar has unfollowed fiancé Kaaran Dhanak (KD) and shared emotional reposts. Here is what fans noticed and what she said in her statement.
               </p>
               <div className="meta-row mt-3">
-                <span className="text-[var(--lime)] font-bold">BIGG BOSS 20</span>
+                <span className="text-[var(--lime)] font-bold">BIGG BOSS OTT 2</span>
                 <span className="dot-sep">◆</span>
                 <span>3 MIN READ</span>
                 <span className="dot-sep">◆</span>
@@ -210,10 +223,37 @@ export default function RealityShowsView() {
 
           {/* Right Stack: The last 2 blogs uploaded before the latest one */}
           <div className="stack">
-            {/* Card 1: Bigg Boss 20 100% Ration */}
+            {/* Card 1: Bigg Boss 20 Gullu Eviction Row */}
+            <Link
+              href="/bigg-boss-20-gullu-evicted-yung-dsa-fight"
+              className="card m1 group block"
+            >
+              <div className="card-media relative overflow-hidden">
+                <Image
+                  src="/images/bigg-boss-20-gullu-evicted-yung-dsa-fight.jpg"
+                  alt="Bigg Boss 20: Will Gullu Be Evicted After Yung DSA Fight?"
+                  fill
+                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 980px) 100vw, 35vw"
+                />
+                <span className="badge pink z-10 relative">Eviction Row</span>
+              </div>
+              <div className="card-body">
+                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
+                  Bigg Boss 20: Will Gullu Be Evicted After Yung DSA Fight?
+                </h3>
+                <div className="meta-row mt-2">
+                  <span className="text-[var(--lime)] font-bold">BIGG BOSS 20</span>
+                  <span className="dot-sep">◆</span>
+                  <span>3 MIN READ</span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Card 2: Bigg Boss 20 100% Ration */}
             <Link
               href="/bigg-boss-20-100-per-cent-ration-housemates"
-              className="card m1 group block"
+              className="card m2 group block"
             >
               <div className="card-media relative overflow-hidden">
                 <Image
@@ -227,37 +267,10 @@ export default function RealityShowsView() {
               </div>
               <div className="card-body">
                 <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
-                  Bigg Boss 20: Housemates Get 100% Ration for the First Time, and the House Is Celebrating
+                  Bigg Boss 20: Housemates Get 100% Ration for the First Time
                 </h3>
                 <div className="meta-row mt-2">
                   <span className="text-[var(--lime)] font-bold">BIGG BOSS 20</span>
-                  <span className="dot-sep">◆</span>
-                  <span>3 MIN READ</span>
-                </div>
-              </div>
-            </Link>
-
-            {/* Card 2: Janhvi Kapoor on KWK 9 */}
-            <Link
-              href="/janhvi-kapoor-veer-pahariya-concert-advice-koffee-with-karan"
-              className="card m2 group block"
-            >
-              <div className="card-media relative overflow-hidden">
-                <Image
-                  src="/images/janhvi-kapoor-veer-pahariya-concert-advice-koffee-with-karan.jpg"
-                  alt="Janhvi Kapoor's Concert Advice for Veer Pahariya on Koffee With Karan"
-                  fill
-                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
-                  sizes="(max-width: 980px) 100vw, 35vw"
-                />
-                <span className="badge pink z-10 relative">KWK 9 Scoop</span>
-              </div>
-              <div className="card-body">
-                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
-                  Janhvi Kapoor&apos;s &ldquo;Concert&rdquo; Advice for Veer Pahariya on Koffee With Karan Is Going Viral
-                </h3>
-                <div className="meta-row mt-2">
-                  <span className="text-[var(--lime)] font-bold">KWK 9</span>
                   <span className="dot-sep">◆</span>
                   <span>3 MIN READ</span>
                 </div>
@@ -275,7 +288,7 @@ export default function RealityShowsView() {
               </h2>
             </div>
             <span className="text-xs font-mono text-[var(--lime)] font-bold">
-              7 STORIES PUBLISHED
+              8 STORIES PUBLISHED
             </span>
           </div>
 
