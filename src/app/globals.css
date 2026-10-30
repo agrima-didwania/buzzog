@@ -1209,6 +1209,15 @@ select {
   flex-shrink: 0;
 }
 
+.article-content h3 {
+  font-family: var(--font-space-grotesk), sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  font-style: italic;
+  color: #ffffff;
+  margin: 30px 0 14px;
+}
+
 .article-content p {
   font-size: 16.5px;
   line-height: 1.8;

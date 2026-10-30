@@ -479,7 +479,9 @@ export default function IIFA2026WinnersPage() {
 
           <h2>IIFA Digital Awards 2026 Winners</h2>
 
-          <h3>Series</h3>
+          <h3 style={{ fontSize: "20px", fontWeight: 700, fontStyle: "italic", color: "#ffffff", margin: "28px 0 12px" }}>
+            <strong><em>Series</em></strong>
+          </h3>
           <p>
             The Ba***ds of Bollywood was the star of the OTT side.
           </p>
@@ -501,6 +503,9 @@ export default function IIFA2026WinnersPage() {
             </li>
           </ul>
 
+          <h3 style={{ fontSize: "20px", fontWeight: 700, fontStyle: "italic", color: "#ffffff", margin: "28px 0 12px" }}>
+            <strong><em>Paatal Lok Season 2</em></strong>
+          </h3>
           <p>
             Paatal Lok Season 2 also won big:
           </p>
@@ -516,7 +521,9 @@ export default function IIFA2026WinnersPage() {
             </li>
           </ul>
 
-          <h3>Digital Films</h3>
+          <h3 style={{ fontSize: "20px", fontWeight: 700, fontStyle: "italic", color: "#ffffff", margin: "28px 0 12px" }}>
+            <strong><em>Digital Films</em></strong>
+          </h3>
           <ul>
             <li>
               <strong>Best Picture:</strong> Baramulla
@@ -541,7 +548,9 @@ export default function IIFA2026WinnersPage() {
             </li>
           </ul>
 
-          <h3>Docuseries and Reality</h3>
+          <h3 style={{ fontSize: "20px", fontWeight: 700, fontStyle: "italic", color: "#ffffff", margin: "28px 0 12px" }}>
+            <strong><em>Docuseries and Reality</em></strong>
+          </h3>
           <ul>
             <li>
               <strong>Best Docuseries/Docufilm:</strong> The Roshans
