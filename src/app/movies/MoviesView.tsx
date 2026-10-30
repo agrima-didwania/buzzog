@@ -20,6 +20,16 @@ interface MovieArticle {
 
 const movieArticles: MovieArticle[] = [
   {
+    id: "eetha-trailer-shraddha-kapoor",
+    category: "Trailer & Folk Drama",
+    title: "Eetha Trailer Out: Shraddha Kapoor Becomes Tamasha Queen Vithabai Narayangaonkar",
+    badge: "Trailer Out",
+    badgeType: "pink",
+    image: "/images/eetha-trailer-shraddha-kapoor-vithabai-narayangaonkar.jpg",
+    href: "/eetha-trailer-shraddha-kapoor-vithabai-narayangaonkar",
+    readOrTime: "3 MIN READ",
+  },
+  {
     id: "patrick-stewart-dies-at-86",
     category: "Hollywood & Marvel",
     title: "Patrick Stewart Dies at 86: Avengers: Doomsday Will Be His Final Screen Role",
@@ -146,16 +156,16 @@ export default function MoviesView() {
 
         {/* Lead Section: Latest Movie Published Article (Cover Story) + The Last 2 Blogs Uploaded Before It */}
         <section className="lead">
-          {/* Featured Card: Patrick Stewart In Memoriam */}
+          {/* Featured Card: Eetha Trailer Out */}
           <Link
-            href="/patrick-stewart-dies-at-86-avengers-doomsday-final-role"
+            href="/eetha-trailer-shraddha-kapoor-vithabai-narayangaonkar"
             className="feature-card group block"
-            aria-label="Read full article: Patrick Stewart Dies at 86: Avengers: Doomsday Will Be His Final Screen Role"
+            aria-label="Read full article: Eetha Trailer Out: Shraddha Kapoor Becomes Tamasha Queen Vithabai Narayangaonkar"
           >
             <div className="feature-media relative overflow-hidden">
               <Image
-                src="/images/patrick-stewart-dies-at-86-avengers-doomsday-final-role.jpg"
-                alt="Patrick Stewart Dies at 86: Avengers: Doomsday Will Be His Final Screen Role"
+                src="/images/eetha-trailer-shraddha-kapoor-vithabai-narayangaonkar.jpg"
+                alt="Eetha Trailer Out: Shraddha Kapoor Becomes Tamasha Queen Vithabai Narayangaonkar"
                 fill
                 priority
                 className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
@@ -163,29 +173,56 @@ export default function MoviesView() {
               />
               <div className="noise" />
               <span className="badge pink feature-tag z-10">
-                🕊️ In Memoriam
+                🔥 Trailer Out
               </span>
             </div>
             <div className="feature-body">
               <h2 className="disp text-white group-hover:text-[var(--lime)] transition-colors">
-                Patrick Stewart Dies at 86: Avengers: Doomsday Will Be His Final Screen Role
+                Eetha Trailer Out: Shraddha Kapoor Becomes Tamasha Queen Vithabai Narayangaonkar
               </h2>
               <p>
-                Patrick Stewart, Star Trek&apos;s Picard and X-Men&apos;s Professor X, died at 86. Marvel confirms Avengers: Doomsday is his final on-screen role.
+                The Eetha trailer is out! See Shraddha Kapoor as Lavani legend Vithabai Narayangaonkar, plus cast, director, new release date and what to expect.
               </p>
               <div className="meta-row mt-3">
-                <span className="text-[var(--lime)] font-bold">HOLLYWOOD</span>
+                <span className="text-[var(--lime)] font-bold">BOLLYWOOD &amp; CINEMA</span>
                 <span className="dot-sep">·</span>
-                <span>4 MIN READ</span>
+                <span>3 MIN READ</span>
                 <span className="dot-sep">·</span>
-                <span className="text-[var(--magenta)] font-bold">OBITUARY</span>
+                <span className="text-[var(--magenta)] font-bold">DECEMBER 4, 2026</span>
               </div>
             </div>
           </Link>
 
           {/* Right Stack: The last 2 movie blogs uploaded before this one */}
           <div className="stack">
-            {/* Card 1: Siddharth Anand King SRK Update */}
+            {/* Card 1: Patrick Stewart In Memoriam */}
+            <Link
+              href="/patrick-stewart-dies-at-86-avengers-doomsday-final-role"
+              className="card m1 group block"
+            >
+              <div className="card-media relative overflow-hidden">
+                <Image
+                  src="/images/patrick-stewart-dies-at-86-avengers-doomsday-final-role.jpg"
+                  alt="Patrick Stewart Dies at 86: Avengers: Doomsday Will Be His Final Screen Role"
+                  fill
+                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 980px) 100vw, 35vw"
+                />
+                <span className="badge pink z-10 relative">In Memoriam</span>
+              </div>
+              <div className="card-body">
+                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
+                  Patrick Stewart Dies at 86: Avengers: Doomsday Will Be His Final Role
+                </h3>
+                <div className="meta-row mt-2">
+                  <span className="text-[var(--lime)] font-bold">HOLLYWOOD</span>
+                  <span className="dot-sep">◆</span>
+                  <span>4 MIN READ</span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Card 2: Siddharth Anand King SRK Update */}
             <Link
               href="/siddharth-anand-time-for-the-world-king-srk-birthday"
               className="card m1 group block"
@@ -211,33 +248,6 @@ export default function MoviesView() {
                 </div>
               </div>
             </Link>
-
-            {/* Card 2: Junglywood Trailer */}
-            <Link
-              href="/junglywood-trailer-shaan-r-grover"
-              className="card m6 group block"
-            >
-              <div className="card-media relative overflow-hidden">
-                <Image
-                  src="/images/junglywood-trailer-shaan-r-grover.jpg"
-                  alt="Junglywood Trailer Out: Shaan R Grover Takes On Bollywood's Insider vs Outsider Debate"
-                  fill
-                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
-                  sizes="(max-width: 980px) 100vw, 35vw"
-                />
-                <span className="badge pink z-10 relative">Trailer Out</span>
-              </div>
-              <div className="card-body">
-                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
-                  Junglywood Trailer Out: Shaan R Grover Takes On Bollywood&apos;s Insider vs Outsider Debate
-                </h3>
-                <div className="meta-row mt-2">
-                  <span className="text-[var(--lime)] font-bold">CINEMA</span>
-                  <span className="dot-sep">◆</span>
-                  <span>3 MIN READ</span>
-                </div>
-              </div>
-            </Link>
           </div>
         </section>
 
@@ -250,7 +260,7 @@ export default function MoviesView() {
               </h2>
             </div>
             <span className="text-xs font-mono text-[var(--lime)] font-bold">
-              7 STORIES PUBLISHED
+              8 STORIES PUBLISHED
             </span>
           </div>
 

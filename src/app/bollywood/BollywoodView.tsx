@@ -20,6 +20,16 @@ interface BollywoodArticle {
 
 const bollywoodArticles: BollywoodArticle[] = [
   {
+    id: "eetha-trailer-shraddha-kapoor",
+    category: "Trailer Out",
+    title: "Eetha Trailer Out: Shraddha Kapoor Becomes Tamasha Queen Vithabai Narayangaonkar",
+    badge: "Trailer Out",
+    badgeType: "pink",
+    image: "/images/eetha-trailer-shraddha-kapoor-vithabai-narayangaonkar.jpg",
+    href: "/eetha-trailer-shraddha-kapoor-vithabai-narayangaonkar",
+    readOrTime: "3 MIN READ",
+  },
+  {
     id: "mirzapur-the-movie-ott",
     category: "OTT Premiere",
     title: "Mirzapur: The Movie Is Now Streaming on Prime Video With an Extended Cut",
@@ -196,16 +206,16 @@ export default function BollywoodView() {
 
         {/* Lead Section: Latest Bollywood Published Article (Cover Story) + The Last 2 Blogs Uploaded Before It */}
         <section className="lead">
-          {/* Cover Story: Latest Published Bollywood Story (Mirzapur: The Movie) */}
+          {/* Cover Story: Latest Published Bollywood Story (Eetha Trailer) */}
           <Link
-            href="/mirzapur-the-movie-prime-video-extended-cut"
+            href="/eetha-trailer-shraddha-kapoor-vithabai-narayangaonkar"
             className="feature-card group block"
-            aria-label="Read full cover story: Mirzapur: The Movie Is Now Streaming on Prime Video With an Extended Cut"
+            aria-label="Read full cover story: Eetha Trailer Out: Shraddha Kapoor Becomes Tamasha Queen Vithabai Narayangaonkar"
           >
             <div className="feature-media relative overflow-hidden">
               <Image
-                src="/images/mirzapur-the-movie-prime-video-extended-cut.jpg"
-                alt="Mirzapur: The Movie Is Now Streaming on Prime Video With an Extended Cut"
+                src="/images/eetha-trailer-shraddha-kapoor-vithabai-narayangaonkar.jpg"
+                alt="Eetha Trailer Out: Shraddha Kapoor Becomes Tamasha Queen Vithabai Narayangaonkar"
                 fill
                 priority
                 className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
@@ -213,29 +223,56 @@ export default function BollywoodView() {
               />
               <div className="noise" />
               <span className="badge pink feature-tag z-10">
-                💥 Extended Cut
+                🔥 Trailer Out
               </span>
             </div>
             <div className="feature-body">
               <h2 className="disp text-white group-hover:text-[var(--lime)] transition-colors">
-                Mirzapur: The Movie Is Now Streaming on Prime Video With an Extended Cut
+                Eetha Trailer Out: Shraddha Kapoor Becomes Tamasha Queen Vithabai Narayangaonkar
               </h2>
               <p>
-                Mirzapur: The Movie is now on Prime Video with an extended cut and unseen scenes. Check the runtime, cast, language and how to watch.
+                The Eetha trailer is out! See Shraddha Kapoor as Lavani legend Vithabai Narayangaonkar, plus cast, director, new release date and what to expect.
               </p>
               <div className="meta-row mt-3">
-                <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; OTT</span>
+                <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; MOVIES</span>
                 <span className="dot-sep">◆</span>
                 <span>3 MIN READ</span>
                 <span className="dot-sep">◆</span>
-                <span className="text-[var(--lime)] font-bold">STREAMING NOW</span>
+                <span className="text-[var(--lime)] font-bold">DECEMBER 4, 2026</span>
               </div>
             </div>
           </Link>
 
           {/* Right Stack: The last 2 blogs uploaded before the latest one */}
           <div className="stack">
-            {/* Card 1: Siddharth Anand King Update */}
+            {/* Card 1: Mirzapur The Movie */}
+            <Link
+              href="/mirzapur-the-movie-prime-video-extended-cut"
+              className="card m1 group block"
+            >
+              <div className="card-media relative overflow-hidden">
+                <Image
+                  src="/images/mirzapur-the-movie-prime-video-extended-cut.jpg"
+                  alt="Mirzapur: The Movie Is Now Streaming on Prime Video With an Extended Cut"
+                  fill
+                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 980px) 100vw, 35vw"
+                />
+                <span className="badge pink z-10 relative">Extended Cut</span>
+              </div>
+              <div className="card-body">
+                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
+                  Mirzapur: The Movie Is Now Streaming on Prime Video With an Extended Cut
+                </h3>
+                <div className="meta-row mt-2">
+                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; OTT</span>
+                  <span className="dot-sep">◆</span>
+                  <span>3 MIN READ</span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Card 2: Siddharth Anand King Update */}
             <Link
               href="/siddharth-anand-time-for-the-world-king-srk-birthday"
               className="card m1 group block"
@@ -261,33 +298,6 @@ export default function BollywoodView() {
                 </div>
               </div>
             </Link>
-
-            {/* Card 2: Junglywood Trailer */}
-            <Link
-              href="/junglywood-trailer-shaan-r-grover"
-              className="card m6 group block"
-            >
-              <div className="card-media relative overflow-hidden">
-                <Image
-                  src="/images/junglywood-trailer-shaan-r-grover.jpg"
-                  alt="Junglywood Trailer Out: Shaan R Grover Takes On Bollywood's Insider vs Outsider Debate"
-                  fill
-                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
-                  sizes="(max-width: 980px) 100vw, 35vw"
-                />
-                <span className="badge pink z-10 relative">Trailer Out</span>
-              </div>
-              <div className="card-body">
-                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
-                  Junglywood Trailer Out: Shaan R Grover Takes On Bollywood&apos;s Insider vs Outsider Debate
-                </h3>
-                <div className="meta-row mt-2">
-                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; CINEMA</span>
-                  <span className="dot-sep">◆</span>
-                  <span>3 MIN READ</span>
-                </div>
-              </div>
-            </Link>
           </div>
         </section>
 
@@ -300,7 +310,7 @@ export default function BollywoodView() {
               </h2>
             </div>
             <span className="text-xs font-mono text-[var(--lime)] font-bold">
-              12 STORIES PUBLISHED
+              13 STORIES PUBLISHED
             </span>
           </div>
 

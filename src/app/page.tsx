@@ -177,6 +177,20 @@ export default function Home() {
 
   const editorialArticles: EditorialArticle[] = [
     {
+      id: "eetha-trailer-shraddha-kapoor",
+      anchorId: "eetha-story",
+      href: "/eetha-trailer-shraddha-kapoor-vithabai-narayangaonkar",
+      title: "Eetha Trailer Out: Shraddha Kapoor Becomes Tamasha Queen Vithabai Narayangaonkar",
+      excerpt: "The Eetha trailer dropped on 30 October 2026, offering a powerful look at Shraddha Kapoor as Maharashtra’s folk legend Vithabai Narayangaonkar.",
+      category: "Bollywood",
+      secondaryCategory: "Bollywood & Hollywood",
+      displayCategory: "BOLLYWOOD & MOVIES",
+      badge: "Trailer Out",
+      badgeType: "pink",
+      readTime: "3 MIN READ",
+      image: "/images/eetha-trailer-shraddha-kapoor-vithabai-narayangaonkar.jpg",
+    },
+    {
       id: "patrick-stewart-dies-at-86",
       anchorId: "latest-story",
       href: "/patrick-stewart-dies-at-86-avengers-doomsday-final-role",
@@ -462,15 +476,15 @@ export default function Home() {
         <section className="hero" id="featured">
           {/* 1. Main Featured Story (Commanding Top Story Presentation) */}
           <Link
-            href="/patrick-stewart-dies-at-86-avengers-doomsday-final-role"
+            href="/eetha-trailer-shraddha-kapoor-vithabai-narayangaonkar"
             className="feature-card block transition-all hover:border-[var(--lime)] focus-visible:ring-2 focus-visible:ring-[var(--lime)] group"
             style={{ textDecoration: "none", color: "inherit" }}
-            aria-label="Read full article: Patrick Stewart Dies at 86: Avengers: Doomsday Will Be His Final Screen Role"
+            aria-label="Read full article: Eetha Trailer Out: Shraddha Kapoor Becomes Tamasha Queen Vithabai Narayangaonkar"
           >
             <div className="feature-media" style={{ overflow: "hidden", position: "relative" }}>
               <Image
-                src="/images/patrick-stewart-dies-at-86-avengers-doomsday-final-role.jpg"
-                alt="Patrick Stewart Dies at 86: Avengers: Doomsday Will Be His Final Screen Role"
+                src="/images/eetha-trailer-shraddha-kapoor-vithabai-narayangaonkar.jpg"
+                alt="Eetha Trailer Out: Shraddha Kapoor Becomes Tamasha Queen Vithabai Narayangaonkar"
                 fill
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 750px"
@@ -479,26 +493,26 @@ export default function Home() {
               />
               <div className="noise" style={{ pointerEvents: "none" }}></div>
               <div className="feature-tag flex items-center gap-2">
-                <span className="badge pink">🕊️ In Memoriam</span>
-                <span className="badge">Hollywood News</span>
-                <span className="badge lime">Avengers: Doomsday</span>
+                <span className="badge pink">🔥 Trailer Out</span>
+                <span className="badge">Bollywood &amp; Movies</span>
+                <span className="badge lime">Shraddha Kapoor</span>
               </div>
             </div>
             <div className="feature-body">
               <div className="flex items-center gap-2 mb-2 font-mono text-xs text-[var(--lime)] font-bold tracking-wider uppercase">
-                <span>★ TOP STORY · HOLLYWOOD OBITUARY</span>
+                <span>★ TOP STORY · TRAILER DROP</span>
               </div>
               <h1 className="disp" style={{ color: "#fff" }}>
-                Patrick Stewart Dies at 86: Avengers: Doomsday Will Be His Final Screen Role
+                Eetha Trailer Out: Shraddha Kapoor Becomes Tamasha Queen Vithabai Narayangaonkar
               </h1>
               <p>
-                Sir Patrick Stewart, beloved as Captain Jean-Luc Picard in Star Trek and Professor X in X-Men, has passed away at 86. Marvel confirms Avengers: Doomsday will serve as his final on-screen appearance.
+                Shraddha Kapoor is back on the big screen in a powerful new avatar as Lavani legend Vithabai Narayangaonkar. Directed by Laxman Utekar, the teaser and trailer reveal drama, dance, and a new December 4 release date.
               </p>
               <div className="meta-row mt-auto pt-3 border-t border-white/[0.06] flex items-center justify-between">
                 <div className="flex items-center gap-3">
-                  <span>NEWS &amp; MOVIES</span>
+                  <span>BOLLYWOOD &amp; MOVIES</span>
                   <span className="dot-sep">◆</span>
-                  <span>4 MIN READ</span>
+                  <span>3 MIN READ</span>
                   <span className="dot-sep">◆</span>
                   <span style={{ color: "var(--lime)" }}>EDITORIAL DESK</span>
                 </div>
@@ -519,6 +533,18 @@ export default function Home() {
               <span className="trend-rank">01</span>
               <div className="trend-text">
                 <Link
+                  href="/eetha-trailer-shraddha-kapoor-vithabai-narayangaonkar"
+                  style={{ color: "inherit" }}
+                >
+                  <h3>Eetha trailer out: Shraddha Kapoor becomes Tamasha queen Vithabai Narayangaonkar</h3>
+                  <span>BOLLYWOOD &amp; MOVIES · 240K REACTIONS</span>
+                </Link>
+              </div>
+            </div>
+            <div className="trend-item">
+              <span className="trend-rank">02</span>
+              <div className="trend-text">
+                <Link
                   href="/patrick-stewart-dies-at-86-avengers-doomsday-final-role"
                   style={{ color: "inherit" }}
                 >
@@ -528,7 +554,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">02</span>
+              <span className="trend-rank">03</span>
               <div className="trend-text">
                 <Link
                   href="/mirzapur-the-movie-prime-video-extended-cut"
@@ -540,7 +566,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">03</span>
+              <span className="trend-rank">04</span>
               <div className="trend-text">
                 <Link
                   href="/siddharth-anand-time-for-the-world-king-srk-birthday"
@@ -552,7 +578,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">04</span>
+              <span className="trend-rank">05</span>
               <div className="trend-text">
                 <Link
                   href="/junglywood-trailer-shaan-r-grover"
