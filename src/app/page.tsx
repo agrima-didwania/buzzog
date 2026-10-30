@@ -432,7 +432,7 @@ export default function Home() {
                 fill
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 750px"
-                style={{ objectFit: "cover", objectPosition: "center 20%" }}
+                style={{ objectFit: "cover", objectPosition: "center" }}
                 className="group-hover:scale-[1.03] transition-transform duration-500"
               />
               <div className="noise" style={{ pointerEvents: "none" }}></div>

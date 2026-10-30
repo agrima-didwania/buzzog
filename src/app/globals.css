@@ -246,7 +246,9 @@ nav {
 }
 
 .feature-media {
-  height: 380px;
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  height: auto;
   background:
     radial-gradient(circle at 25% 20%, rgba(228, 34, 46, 0.4), transparent 55%),
     radial-gradient(circle at 80% 75%, rgba(31, 107, 44, 0.5), transparent 55%),
@@ -527,7 +529,9 @@ nav {
 }
 
 .card-media {
-  height: 205px;
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  height: auto;
   position: relative;
   overflow: hidden;
   display: flex;
@@ -1501,7 +1505,9 @@ select {
 }
 
 .lead .feature-media {
-  height: 320px;
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  height: auto;
 }
 
 .lead .feature-body h2 {
@@ -1515,7 +1521,9 @@ select {
 }
 
 .stack .card-media {
-  height: 130px;
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  height: auto;
 }
 
 .hub {
@@ -1573,9 +1581,6 @@ select {
   }
   .ph h1 {
     font-size: 40px;
-  }
-  .lead .feature-media {
-    height: 240px;
   }
 }
 

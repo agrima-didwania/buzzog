@@ -191,7 +191,6 @@ export default function BollywoodView() {
                 className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
                 sizes="(max-width: 980px) 100vw, 65vw"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[var(--ink-2)] via-transparent to-black/40 pointer-events-none" />
               <div className="noise" />
               <span className="badge pink feature-tag z-10">
                 🎬 Trailer Out
@@ -226,10 +225,9 @@ export default function BollywoodView() {
                   src="/images/disha-patani-launches-clothing-brand-dz.jpg"
                   alt="Disha Patani Launches Her Own Clothing Brand DZ"
                   fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
                   sizes="(max-width: 980px) 100vw, 35vw"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[var(--ink-2)] via-transparent to-black/30 pointer-events-none" />
                 <span className="badge pink z-10 relative">Fashion Label</span>
               </div>
               <div className="card-body">
@@ -254,10 +252,9 @@ export default function BollywoodView() {
                   src="/images/janhvi-kapoor-veer-pahariya-concert-advice-koffee-with-karan.jpg"
                   alt="Janhvi Kapoor's Concert Advice for Veer Pahariya on Koffee With Karan Is Going Viral"
                   fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
                   sizes="(max-width: 980px) 100vw, 35vw"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[var(--ink-2)] via-transparent to-black/30 pointer-events-none" />
                 <span className="badge pink z-10 relative">Viral Scoop</span>
               </div>
               <div className="card-body">

@@ -141,7 +141,6 @@ export default function MoviesView() {
                 className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
                 sizes="(max-width: 980px) 100vw, 65vw"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[var(--ink-2)] via-transparent to-black/30 pointer-events-none" />
               <div className="noise" />
               <span className="badge pink feature-tag z-10">
                 🎬 Trailer Out
@@ -176,10 +175,9 @@ export default function MoviesView() {
                   src="/images/bhumi-pednekar-akshay-kumar-priyadarshan-next-film.jpg"
                   alt="Bhumi Pednekar Joins Akshay Kumar in Priyadarshan’s Next Film"
                   fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
                   sizes="(max-width: 980px) 100vw, 35vw"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[var(--ink-2)] via-transparent to-black/30 pointer-events-none" />
                 <span className="badge pink z-10 relative">Casting Scoop</span>
               </div>
               <div className="card-body">
@@ -204,10 +202,9 @@ export default function MoviesView() {
                   src="/images/janhvi-kapoor-peddi-controversy-koffee-with-karan-9.jpg"
                   alt="Janhvi Kapoor Breaks Silence on Peddi Controversy"
                   fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
                   sizes="(max-width: 980px) 100vw, 35vw"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[var(--ink-2)] via-transparent to-black/30 pointer-events-none" />
                 <span className="badge pink z-10 relative">Film Row</span>
               </div>
               <div className="card-body">

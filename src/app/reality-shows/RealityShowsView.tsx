@@ -183,10 +183,9 @@ export default function RealityShowsView() {
                 alt="Bigg Boss 20: Will Gullu Be Evicted After Yung DSA Fight?"
                 fill
                 priority
-                className="object-cover transition-transform duration-500 group-hover:scale-105"
+                className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
                 sizes="(max-width: 980px) 100vw, 65vw"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[var(--ink-2)] via-transparent to-black/40 pointer-events-none" />
               <div className="noise" />
               <span className="badge pink feature-tag z-10">
                 🔥 Eviction Row
@@ -221,10 +220,9 @@ export default function RealityShowsView() {
                   src="/images/bigg-boss-20-100-per-cent-ration-housemates.jpg"
                   alt="Bigg Boss 20: Housemates Get 100% Ration for the First Time"
                   fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
                   sizes="(max-width: 980px) 100vw, 35vw"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[var(--ink-2)] via-transparent to-black/30 pointer-events-none" />
                 <span className="badge lime z-10 relative">100% Ration</span>
               </div>
               <div className="card-body">
@@ -249,10 +247,9 @@ export default function RealityShowsView() {
                   src="/images/janhvi-kapoor-veer-pahariya-concert-advice-koffee-with-karan.jpg"
                   alt="Janhvi Kapoor's Concert Advice for Veer Pahariya on Koffee With Karan"
                   fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
                   sizes="(max-width: 980px) 100vw, 35vw"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[var(--ink-2)] via-transparent to-black/30 pointer-events-none" />
                 <span className="badge pink z-10 relative">KWK 9 Scoop</span>
               </div>
               <div className="card-body">
