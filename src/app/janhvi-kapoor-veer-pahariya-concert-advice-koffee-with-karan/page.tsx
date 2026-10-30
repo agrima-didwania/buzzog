@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 import SocialShare from "@/components/SocialShare";
 
 export const metadata: Metadata = {
-  title: "Janhvi Kapoor’s Concert Advice for Veer Pahariya | Buzz Originals",
+  title: "Janhvi Kapoor’s Concert Advice for Veer Pahariya",
   description:
     "Janhvi Kapoor told Veer Pahariya never to take his date to a concert on Koffee With Karan. Here is why fans are linking it to Tara Sutaria.",
   keywords: [
@@ -77,7 +77,7 @@ export default function JanhviVeerConcertAdviceArticlePage() {
       "https://www.buzzoriginals.com/images/janhvi-kapoor-veer-pahariya-concert-advice-koffee-with-karan.jpg",
     ],
     datePublished: "2026-10-29T16:00:00+05:30",
-    dateModified: "2026-10-29T16:00:00+05:30",
+    dateModified: "2026-10-31T00:01:00+05:30",
     author: [
       {
         "@type": "NewsMediaOrganization",
@@ -220,6 +220,17 @@ export default function JanhviVeerConcertAdviceArticlePage() {
           </blockquote>
           <p>
             That was all. She gave no name and no long explanation. But the short clip spread fast on social media.
+          </p>
+          <p>
+            Check the video:{" "}
+            <a
+              href="https://www.instagram.com/reel/DfHcpkKzotD/?xtok=aGdyajBlNDloZTRl"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: "var(--lime)", textDecoration: "underline", fontWeight: 700 }}
+            >
+              Janhvi Kapoor implies Tara Sutaria cheated on Veer Pahariya!!
+            </a>
           </p>
 
           <h2>Why Are Fans Linking This to Tara Sutaria?</h2>
