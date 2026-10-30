@@ -177,6 +177,20 @@ export default function Home() {
 
   const editorialArticles: EditorialArticle[] = [
     {
+      id: "sara-ali-khan-fatwa-kedarnath",
+      anchorId: "sara-fatwa-story",
+      href: "/sara-ali-khan-fatwa-kedarnath-temple-visit",
+      title: "Sara Ali Khan Faces Fatwa After Kedarnath Temple Visit",
+      excerpt: "A UP cleric has issued a fatwa against Sara Ali Khan after her Kedarnath visit. Here is what he said, what happened at the temple, and the affidavit rule.",
+      category: "Bollywood",
+      secondaryCategory: "News",
+      displayCategory: "BOLLYWOOD & NEWS",
+      badge: "Fatwa Row",
+      badgeType: "pink",
+      readTime: "3 MIN READ",
+      image: "/images/sara-ali-khan-fatwa-kedarnath-temple-visit.jpg",
+    },
+    {
       id: "eetha-trailer-shraddha-kapoor",
       anchorId: "eetha-story",
       href: "/eetha-trailer-shraddha-kapoor-vithabai-narayangaonkar",
@@ -476,15 +490,15 @@ export default function Home() {
         <section className="hero" id="featured">
           {/* 1. Main Featured Story (Commanding Top Story Presentation) */}
           <Link
-            href="/eetha-trailer-shraddha-kapoor-vithabai-narayangaonkar"
+            href="/sara-ali-khan-fatwa-kedarnath-temple-visit"
             className="feature-card block transition-all hover:border-[var(--lime)] focus-visible:ring-2 focus-visible:ring-[var(--lime)] group"
             style={{ textDecoration: "none", color: "inherit" }}
-            aria-label="Read full article: Eetha Trailer Out: Shraddha Kapoor Becomes Tamasha Queen Vithabai Narayangaonkar"
+            aria-label="Read full article: Sara Ali Khan Faces Fatwa After Kedarnath Temple Visit"
           >
             <div className="feature-media" style={{ overflow: "hidden", position: "relative" }}>
               <Image
-                src="/images/eetha-trailer-shraddha-kapoor-vithabai-narayangaonkar.jpg"
-                alt="Eetha Trailer Out: Shraddha Kapoor Becomes Tamasha Queen Vithabai Narayangaonkar"
+                src="/images/sara-ali-khan-fatwa-kedarnath-temple-visit.jpg"
+                alt="Sara Ali Khan Faces Fatwa After Kedarnath Temple Visit"
                 fill
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 750px"
@@ -493,24 +507,24 @@ export default function Home() {
               />
               <div className="noise" style={{ pointerEvents: "none" }}></div>
               <div className="feature-tag flex items-center gap-2">
-                <span className="badge pink">🔥 Trailer Out</span>
-                <span className="badge">Bollywood &amp; Movies</span>
-                <span className="badge lime">Shraddha Kapoor</span>
+                <span className="badge pink">🔥 Fatwa Row</span>
+                <span className="badge">Bollywood News</span>
+                <span className="badge lime">Kedarnath Visit</span>
               </div>
             </div>
             <div className="feature-body">
               <div className="flex items-center gap-2 mb-2 font-mono text-xs text-[var(--lime)] font-bold tracking-wider uppercase">
-                <span>★ TOP STORY · TRAILER DROP</span>
+                <span>★ TOP STORY · CONTROVERSY</span>
               </div>
               <h1 className="disp" style={{ color: "#fff" }}>
-                Eetha Trailer Out: Shraddha Kapoor Becomes Tamasha Queen Vithabai Narayangaonkar
+                Sara Ali Khan Faces Fatwa After Kedarnath Temple Visit
               </h1>
               <p>
-                Shraddha Kapoor is back on the big screen in a powerful new avatar as Lavani legend Vithabai Narayangaonkar. Directed by Laxman Utekar, the teaser and trailer reveal drama, dance, and a new December 4 release date.
+                Bareilly cleric Maulana Mufti Shahabuddin Razvi Barelvi has issued a fatwa against Sara Ali Khan following her recent trip to Kedarnath Temple, terming the prayers &lsquo;impermissible&rsquo; and &lsquo;haram&rsquo;. Here is what happened, the affidavit rule, and her viral statements.
               </p>
               <div className="meta-row mt-auto pt-3 border-t border-white/[0.06] flex items-center justify-between">
                 <div className="flex items-center gap-3">
-                  <span>BOLLYWOOD &amp; MOVIES</span>
+                  <span>BOLLYWOOD &amp; NEWS</span>
                   <span className="dot-sep">◆</span>
                   <span>3 MIN READ</span>
                   <span className="dot-sep">◆</span>
@@ -533,6 +547,18 @@ export default function Home() {
               <span className="trend-rank">01</span>
               <div className="trend-text">
                 <Link
+                  href="/sara-ali-khan-fatwa-kedarnath-temple-visit"
+                  style={{ color: "inherit" }}
+                >
+                  <h3>Sara Ali Khan faces fatwa after Kedarnath temple visit: Cleric calls it impermissible</h3>
+                  <span>BOLLYWOOD &amp; NEWS · 260K REACTIONS</span>
+                </Link>
+              </div>
+            </div>
+            <div className="trend-item">
+              <span className="trend-rank">02</span>
+              <div className="trend-text">
+                <Link
                   href="/eetha-trailer-shraddha-kapoor-vithabai-narayangaonkar"
                   style={{ color: "inherit" }}
                 >
@@ -542,7 +568,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">02</span>
+              <span className="trend-rank">03</span>
               <div className="trend-text">
                 <Link
                   href="/patrick-stewart-dies-at-86-avengers-doomsday-final-role"
@@ -554,7 +580,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">03</span>
+              <span className="trend-rank">04</span>
               <div className="trend-text">
                 <Link
                   href="/mirzapur-the-movie-prime-video-extended-cut"
@@ -566,7 +592,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">04</span>
+              <span className="trend-rank">05</span>
               <div className="trend-text">
                 <Link
                   href="/siddharth-anand-time-for-the-world-king-srk-birthday"
@@ -574,18 +600,6 @@ export default function Home() {
                 >
                   <h3>Siddharth Anand’s “Time For The World” post has SRK fans guessing: Is a King update coming?</h3>
                   <span>BOLLYWOOD &amp; MOVIES · 185K REACTIONS</span>
-                </Link>
-              </div>
-            </div>
-            <div className="trend-item">
-              <span className="trend-rank">05</span>
-              <div className="trend-text">
-                <Link
-                  href="/junglywood-trailer-shaan-r-grover"
-                  style={{ color: "inherit" }}
-                >
-                  <h3>Junglywood trailer out: Shaan R Grover tackles Bollywood&apos;s insider vs outsider debate with zero VFX</h3>
-                  <span>BOLLYWOOD &amp; MOVIES · 172K REACTIONS</span>
                 </Link>
               </div>
             </div>

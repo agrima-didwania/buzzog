@@ -20,6 +20,16 @@ interface BollywoodArticle {
 
 const bollywoodArticles: BollywoodArticle[] = [
   {
+    id: "sara-ali-khan-fatwa-kedarnath",
+    category: "Controversy",
+    title: "Sara Ali Khan Faces Fatwa After Kedarnath Temple Visit",
+    badge: "Fatwa Row",
+    badgeType: "pink",
+    image: "/images/sara-ali-khan-fatwa-kedarnath-temple-visit.jpg",
+    href: "/sara-ali-khan-fatwa-kedarnath-temple-visit",
+    readOrTime: "3 MIN READ",
+  },
+  {
     id: "eetha-trailer-shraddha-kapoor",
     category: "Trailer Out",
     title: "Eetha Trailer Out: Shraddha Kapoor Becomes Tamasha Queen Vithabai Narayangaonkar",
@@ -206,16 +216,16 @@ export default function BollywoodView() {
 
         {/* Lead Section: Latest Bollywood Published Article (Cover Story) + The Last 2 Blogs Uploaded Before It */}
         <section className="lead">
-          {/* Cover Story: Latest Published Bollywood Story (Eetha Trailer) */}
+          {/* Cover Story: Latest Published Bollywood Story (Sara Ali Khan Fatwa) */}
           <Link
-            href="/eetha-trailer-shraddha-kapoor-vithabai-narayangaonkar"
+            href="/sara-ali-khan-fatwa-kedarnath-temple-visit"
             className="feature-card group block"
-            aria-label="Read full cover story: Eetha Trailer Out: Shraddha Kapoor Becomes Tamasha Queen Vithabai Narayangaonkar"
+            aria-label="Read full cover story: Sara Ali Khan Faces Fatwa After Kedarnath Temple Visit"
           >
             <div className="feature-media relative overflow-hidden">
               <Image
-                src="/images/eetha-trailer-shraddha-kapoor-vithabai-narayangaonkar.jpg"
-                alt="Eetha Trailer Out: Shraddha Kapoor Becomes Tamasha Queen Vithabai Narayangaonkar"
+                src="/images/sara-ali-khan-fatwa-kedarnath-temple-visit.jpg"
+                alt="Sara Ali Khan Faces Fatwa After Kedarnath Temple Visit"
                 fill
                 priority
                 className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
@@ -223,29 +233,56 @@ export default function BollywoodView() {
               />
               <div className="noise" />
               <span className="badge pink feature-tag z-10">
-                🔥 Trailer Out
+                🔥 Fatwa Row
               </span>
             </div>
             <div className="feature-body">
               <h2 className="disp text-white group-hover:text-[var(--lime)] transition-colors">
-                Eetha Trailer Out: Shraddha Kapoor Becomes Tamasha Queen Vithabai Narayangaonkar
+                Sara Ali Khan Faces Fatwa After Kedarnath Temple Visit
               </h2>
               <p>
-                The Eetha trailer is out! See Shraddha Kapoor as Lavani legend Vithabai Narayangaonkar, plus cast, director, new release date and what to expect.
+                A UP cleric has issued a fatwa against Sara Ali Khan after her Kedarnath visit. Here is what he said, what happened at the temple, and the affidavit rule.
               </p>
               <div className="meta-row mt-3">
-                <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; MOVIES</span>
+                <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; NEWS</span>
                 <span className="dot-sep">◆</span>
                 <span>3 MIN READ</span>
                 <span className="dot-sep">◆</span>
-                <span className="text-[var(--lime)] font-bold">DECEMBER 4, 2026</span>
+                <span className="text-[var(--lime)] font-bold">KEDARNATH VISIT</span>
               </div>
             </div>
           </Link>
 
           {/* Right Stack: The last 2 blogs uploaded before the latest one */}
           <div className="stack">
-            {/* Card 1: Mirzapur The Movie */}
+            {/* Card 1: Eetha Trailer */}
+            <Link
+              href="/eetha-trailer-shraddha-kapoor-vithabai-narayangaonkar"
+              className="card m1 group block"
+            >
+              <div className="card-media relative overflow-hidden">
+                <Image
+                  src="/images/eetha-trailer-shraddha-kapoor-vithabai-narayangaonkar.jpg"
+                  alt="Eetha Trailer Out: Shraddha Kapoor Becomes Tamasha Queen Vithabai Narayangaonkar"
+                  fill
+                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 980px) 100vw, 35vw"
+                />
+                <span className="badge pink z-10 relative">Trailer Out</span>
+              </div>
+              <div className="card-body">
+                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
+                  Eetha Trailer Out: Shraddha Kapoor Becomes Tamasha Queen Vithabai
+                </h3>
+                <div className="meta-row mt-2">
+                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; MOVIES</span>
+                  <span className="dot-sep">◆</span>
+                  <span>3 MIN READ</span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Card 2: Mirzapur The Movie */}
             <Link
               href="/mirzapur-the-movie-prime-video-extended-cut"
               className="card m1 group block"
@@ -271,33 +308,6 @@ export default function BollywoodView() {
                 </div>
               </div>
             </Link>
-
-            {/* Card 2: Siddharth Anand King Update */}
-            <Link
-              href="/siddharth-anand-time-for-the-world-king-srk-birthday"
-              className="card m1 group block"
-            >
-              <div className="card-media relative overflow-hidden">
-                <Image
-                  src="/images/siddharth-anand-time-for-the-world-king-srk-birthday.jpg"
-                  alt="Siddharth Anand’s “Time For The World” Post Has SRK Fans Guessing: Is a King Update Coming?"
-                  fill
-                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
-                  sizes="(max-width: 980px) 100vw, 35vw"
-                />
-                <span className="badge pink z-10 relative">King Update</span>
-              </div>
-              <div className="card-body">
-                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
-                  Siddharth Anand’s “Time For The World” Post Has SRK Fans Guessing
-                </h3>
-                <div className="meta-row mt-2">
-                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; CINEMA</span>
-                  <span className="dot-sep">◆</span>
-                  <span>3 MIN READ</span>
-                </div>
-              </div>
-            </Link>
           </div>
         </section>
 
@@ -310,7 +320,7 @@ export default function BollywoodView() {
               </h2>
             </div>
             <span className="text-xs font-mono text-[var(--lime)] font-bold">
-              13 STORIES PUBLISHED
+              14 STORIES PUBLISHED
             </span>
           </div>
 
