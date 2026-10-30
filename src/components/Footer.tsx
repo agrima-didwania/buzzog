@@ -87,7 +87,7 @@ export default function Footer() {
             <li><Link href="/bollywood" className="hover:text-[var(--lime)] transition-colors">Bollywood</Link></li>
             <li><Link href="/movies" className="hover:text-[var(--lime)] transition-colors">Movies</Link></li>
             <li><Link href="/web-series" className="hover:text-[var(--lime)] transition-colors">Web Series</Link></li>
-            <li><Link href="/#news" className="hover:text-[var(--lime)] transition-colors">News</Link></li>
+            <li><Link href="/news" className="hover:text-[var(--lime)] transition-colors">News</Link></li>
           </ul>
         </div>
 
