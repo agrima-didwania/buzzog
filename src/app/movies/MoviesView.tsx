@@ -20,6 +20,16 @@ interface MovieArticle {
 
 const movieArticles: MovieArticle[] = [
   {
+    id: "patrick-stewart-dies-at-86",
+    category: "Hollywood & Marvel",
+    title: "Patrick Stewart Dies at 86: Avengers: Doomsday Will Be His Final Screen Role",
+    badge: "In Memoriam",
+    badgeType: "pink",
+    image: "/images/patrick-stewart-dies-at-86-avengers-doomsday-final-role.jpg",
+    href: "/patrick-stewart-dies-at-86-avengers-doomsday-final-role",
+    readOrTime: "4 MIN READ",
+  },
+  {
     id: "siddharth-anand-king-srk",
     category: "Action Thriller",
     title: "Siddharth Anand’s “Time For The World” Post Has SRK Fans Guessing: Is a King Update Coming?",
@@ -136,16 +146,16 @@ export default function MoviesView() {
 
         {/* Lead Section: Latest Movie Published Article (Cover Story) + The Last 2 Blogs Uploaded Before It */}
         <section className="lead">
-          {/* Featured Card: King SRK Birthday Update */}
+          {/* Featured Card: Patrick Stewart In Memoriam */}
           <Link
-            href="/siddharth-anand-time-for-the-world-king-srk-birthday"
+            href="/patrick-stewart-dies-at-86-avengers-doomsday-final-role"
             className="feature-card group block"
-            aria-label="Read full article: Siddharth Anand’s “Time For The World” Post Has SRK Fans Guessing: Is a King Update Coming?"
+            aria-label="Read full article: Patrick Stewart Dies at 86: Avengers: Doomsday Will Be His Final Screen Role"
           >
             <div className="feature-media relative overflow-hidden">
               <Image
-                src="/images/siddharth-anand-time-for-the-world-king-srk-birthday.jpg"
-                alt="Siddharth Anand’s “Time For The World” Post Has SRK Fans Guessing: Is a King Update Coming?"
+                src="/images/patrick-stewart-dies-at-86-avengers-doomsday-final-role.jpg"
+                alt="Patrick Stewart Dies at 86: Avengers: Doomsday Will Be His Final Screen Role"
                 fill
                 priority
                 className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
@@ -153,32 +163,59 @@ export default function MoviesView() {
               />
               <div className="noise" />
               <span className="badge pink feature-tag z-10">
-                👑 King Update
+                🕊️ In Memoriam
               </span>
             </div>
             <div className="feature-body">
               <h2 className="disp text-white group-hover:text-[var(--lime)] transition-colors">
-                Siddharth Anand’s “Time For The World” Post Has SRK Fans Guessing: Is a King Update Coming?
+                Patrick Stewart Dies at 86: Avengers: Doomsday Will Be His Final Screen Role
               </h2>
               <p>
-                Siddharth Anand posted “It’s” and then “Time For The World” about King. Is a surprise coming on Shah Rukh Khan’s 61st birthday? Here’s what we know.
+                Patrick Stewart, Star Trek&apos;s Picard and X-Men&apos;s Professor X, died at 86. Marvel confirms Avengers: Doomsday is his final on-screen role.
               </p>
               <div className="meta-row mt-3">
-                <span className="text-[var(--lime)] font-bold">CINEMA</span>
+                <span className="text-[var(--lime)] font-bold">HOLLYWOOD</span>
                 <span className="dot-sep">·</span>
-                <span>3 MIN READ</span>
+                <span>4 MIN READ</span>
                 <span className="dot-sep">·</span>
-                <span className="text-[var(--magenta)] font-bold">JUST IN</span>
+                <span className="text-[var(--magenta)] font-bold">OBITUARY</span>
               </div>
             </div>
           </Link>
 
           {/* Right Stack: The last 2 movie blogs uploaded before this one */}
           <div className="stack">
-            {/* Card 1: Junglywood Trailer */}
+            {/* Card 1: Siddharth Anand King SRK Update */}
+            <Link
+              href="/siddharth-anand-time-for-the-world-king-srk-birthday"
+              className="card m1 group block"
+            >
+              <div className="card-media relative overflow-hidden">
+                <Image
+                  src="/images/siddharth-anand-time-for-the-world-king-srk-birthday.jpg"
+                  alt="Siddharth Anand’s “Time For The World” Post Has SRK Fans Guessing: Is a King Update Coming?"
+                  fill
+                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 980px) 100vw, 35vw"
+                />
+                <span className="badge pink z-10 relative">King Update</span>
+              </div>
+              <div className="card-body">
+                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
+                  Siddharth Anand’s “Time For The World” Post Has SRK Fans Guessing
+                </h3>
+                <div className="meta-row mt-2">
+                  <span className="text-[var(--lime)] font-bold">CINEMA</span>
+                  <span className="dot-sep">◆</span>
+                  <span>3 MIN READ</span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Card 2: Junglywood Trailer */}
             <Link
               href="/junglywood-trailer-shaan-r-grover"
-              className="card m1 group block"
+              className="card m6 group block"
             >
               <div className="card-media relative overflow-hidden">
                 <Image
@@ -201,33 +238,6 @@ export default function MoviesView() {
                 </div>
               </div>
             </Link>
-
-            {/* Card 2: Bhumi Pednekar Joins Akshay Kumar */}
-            <Link
-              href="/bhumi-pednekar-akshay-kumar-priyadarshan-next-film"
-              className="card m6 group block"
-            >
-              <div className="card-media relative overflow-hidden">
-                <Image
-                  src="/images/bhumi-pednekar-akshay-kumar-priyadarshan-next-film.jpg"
-                  alt="Bhumi Pednekar Joins Akshay Kumar in Priyadarshan’s Next Film"
-                  fill
-                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
-                  sizes="(max-width: 980px) 100vw, 35vw"
-                />
-                <span className="badge pink z-10 relative">Casting Scoop</span>
-              </div>
-              <div className="card-body">
-                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
-                  Bhumi Pednekar Joins Akshay Kumar in Priyadarshan’s Next Film
-                </h3>
-                <div className="meta-row mt-2">
-                  <span className="text-[var(--lime)] font-bold">CINEMA</span>
-                  <span className="dot-sep">◆</span>
-                  <span>3 MIN READ</span>
-                </div>
-              </div>
-            </Link>
           </div>
         </section>
 
@@ -240,7 +250,7 @@ export default function MoviesView() {
               </h2>
             </div>
             <span className="text-xs font-mono text-[var(--lime)] font-bold">
-              6 STORIES PUBLISHED
+              7 STORIES PUBLISHED
             </span>
           </div>
 

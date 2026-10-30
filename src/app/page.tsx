@@ -177,8 +177,22 @@ export default function Home() {
 
   const editorialArticles: EditorialArticle[] = [
     {
-      id: "mirzapur-the-movie-ott",
+      id: "patrick-stewart-dies-at-86",
       anchorId: "latest-story",
+      href: "/patrick-stewart-dies-at-86-avengers-doomsday-final-role",
+      title: "Patrick Stewart Dies at 86: Avengers: Doomsday Will Be His Final Screen Role",
+      excerpt: "Patrick Stewart, Star Trek's Picard and X-Men's Professor X, died at 86. Marvel confirms Avengers: Doomsday is his final on-screen role.",
+      category: "News",
+      secondaryCategory: "Bollywood & Hollywood",
+      displayCategory: "HOLLYWOOD & MOVIES",
+      badge: "In Memoriam",
+      badgeType: "pink",
+      readTime: "4 MIN READ",
+      image: "/images/patrick-stewart-dies-at-86-avengers-doomsday-final-role.jpg",
+    },
+    {
+      id: "mirzapur-the-movie-ott",
+      anchorId: "mirzapur-story",
       href: "/mirzapur-the-movie-prime-video-extended-cut",
       title: "Mirzapur: The Movie Is Now Streaming on Prime Video With an Extended Cut",
       excerpt: "Mirzapur: The Movie is streaming on Prime Video with an extended cut packing 14 extra minutes of unseen scenes.",
@@ -448,15 +462,15 @@ export default function Home() {
         <section className="hero" id="featured">
           {/* 1. Main Featured Story (Commanding Top Story Presentation) */}
           <Link
-            href="/mirzapur-the-movie-prime-video-extended-cut"
+            href="/patrick-stewart-dies-at-86-avengers-doomsday-final-role"
             className="feature-card block transition-all hover:border-[var(--lime)] focus-visible:ring-2 focus-visible:ring-[var(--lime)] group"
             style={{ textDecoration: "none", color: "inherit" }}
-            aria-label="Read full article: Mirzapur: The Movie Is Now Streaming on Prime Video With an Extended Cut"
+            aria-label="Read full article: Patrick Stewart Dies at 86: Avengers: Doomsday Will Be His Final Screen Role"
           >
             <div className="feature-media" style={{ overflow: "hidden", position: "relative" }}>
               <Image
-                src="/images/mirzapur-the-movie-prime-video-extended-cut.jpg"
-                alt="Mirzapur: The Movie Is Now Streaming on Prime Video With an Extended Cut"
+                src="/images/patrick-stewart-dies-at-86-avengers-doomsday-final-role.jpg"
+                alt="Patrick Stewart Dies at 86: Avengers: Doomsday Will Be His Final Screen Role"
                 fill
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 750px"
@@ -465,26 +479,26 @@ export default function Home() {
               />
               <div className="noise" style={{ pointerEvents: "none" }}></div>
               <div className="feature-tag flex items-center gap-2">
-                <span className="badge pink">🔥 Cover Story</span>
-                <span className="badge">Prime Video</span>
-                <span className="badge lime">Extended Cut</span>
+                <span className="badge pink">🕊️ In Memoriam</span>
+                <span className="badge">Hollywood News</span>
+                <span className="badge lime">Avengers: Doomsday</span>
               </div>
             </div>
             <div className="feature-body">
               <div className="flex items-center gap-2 mb-2 font-mono text-xs text-[var(--lime)] font-bold tracking-wider uppercase">
-                <span>★ TOP STORY · PRIME VIDEO OTT PREMIERE</span>
+                <span>★ TOP STORY · HOLLYWOOD OBITUARY</span>
               </div>
               <h1 className="disp" style={{ color: "#fff" }}>
-                Mirzapur: The Movie Is Now Streaming on Prime Video With an Extended Cut
+                Patrick Stewart Dies at 86: Avengers: Doomsday Will Be His Final Screen Role
               </h1>
               <p>
-                Mirzapur: The Movie has officially dropped on Prime Video featuring an extended cut with 14 minutes of unseen footage. Kaleen Bhaiya, Guddu Pandit and Munna Tripathi return in full force.
+                Sir Patrick Stewart, beloved as Captain Jean-Luc Picard in Star Trek and Professor X in X-Men, has passed away at 86. Marvel confirms Avengers: Doomsday will serve as his final on-screen appearance.
               </p>
               <div className="meta-row mt-auto pt-3 border-t border-white/[0.06] flex items-center justify-between">
                 <div className="flex items-center gap-3">
-                  <span>BOLLYWOOD &amp; WEB SERIES</span>
+                  <span>NEWS &amp; MOVIES</span>
                   <span className="dot-sep">◆</span>
-                  <span>3 MIN READ</span>
+                  <span>4 MIN READ</span>
                   <span className="dot-sep">◆</span>
                   <span style={{ color: "var(--lime)" }}>EDITORIAL DESK</span>
                 </div>
@@ -505,6 +519,18 @@ export default function Home() {
               <span className="trend-rank">01</span>
               <div className="trend-text">
                 <Link
+                  href="/patrick-stewart-dies-at-86-avengers-doomsday-final-role"
+                  style={{ color: "inherit" }}
+                >
+                  <h3>Patrick Stewart dies at 86: Marvel confirms Avengers: Doomsday will be his final screen role</h3>
+                  <span>NEWS &amp; MOVIES · 210K REACTIONS</span>
+                </Link>
+              </div>
+            </div>
+            <div className="trend-item">
+              <span className="trend-rank">02</span>
+              <div className="trend-text">
+                <Link
                   href="/mirzapur-the-movie-prime-video-extended-cut"
                   style={{ color: "inherit" }}
                 >
@@ -514,7 +540,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">02</span>
+              <span className="trend-rank">03</span>
               <div className="trend-text">
                 <Link
                   href="/siddharth-anand-time-for-the-world-king-srk-birthday"
@@ -526,7 +552,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">03</span>
+              <span className="trend-rank">04</span>
               <div className="trend-text">
                 <Link
                   href="/junglywood-trailer-shaan-r-grover"
@@ -538,7 +564,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">04</span>
+              <span className="trend-rank">05</span>
               <div className="trend-text">
                 <Link
                   href="/bigg-boss-20-gullu-evicted-yung-dsa-fight"
@@ -546,18 +572,6 @@ export default function Home() {
                 >
                   <h3>Bigg Boss 20: Will Gullu be evicted after violent Yung DSA fight? Fans demand Nakul Dhull rule</h3>
                   <span>REALITY TV · 165K REACTIONS</span>
-                </Link>
-              </div>
-            </div>
-            <div className="trend-item">
-              <span className="trend-rank">05</span>
-              <div className="trend-text">
-                <Link
-                  href="/disha-patani-launches-clothing-brand-dz"
-                  style={{ color: "inherit" }}
-                >
-                  <h3>Disha Patani launches her own clothing brand DZ with baggy fits and alien themes</h3>
-                  <span>BOLLYWOOD &amp; FASHION · 158K REACTIONS</span>
                 </Link>
               </div>
             </div>
