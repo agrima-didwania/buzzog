@@ -8,6 +8,11 @@ export const metadata: Metadata = {
   keywords: [
     "Entertainment News Buzz Originals",
     "Bollywood breaking news",
+    "Ibrahim Ali Khan Palak Tiwari breakup",
+    "Palak Tiwari Ibrahim Ali Khan",
+    "Palak Tiwari",
+    "Ibrahim Ali Khan",
+    "Bollywood breakup news",
     "Reality TV scoops",
     "Bigg Boss 20 latest news",
     "Koffee With Karan updates",
@@ -33,10 +38,10 @@ export const metadata: Metadata = {
     siteName: "Buzz Originals",
     images: [
       {
-        url: "/images/ramayana-advance-booking-us-jump-la-premiere.jpg",
+        url: "/images/ibrahim-ali-khan-palak-tiwari-breakup.jpg",
         width: 1024,
         height: 576,
-        alt: "The News Desk — Buzz Originals Breaking Entertainment News",
+        alt: "Ibrahim Ali Khan and Palak Tiwari Reportedly Break Up After 3 Years — Buzz Originals News",
       },
     ],
     type: "website",
@@ -46,7 +51,7 @@ export const metadata: Metadata = {
     title: "News — Buzz Originals",
     description:
       "Raw, unfiltered entertainment news across reality TV, Bollywood, movies and OTT.",
-    images: ["/images/ramayana-advance-booking-us-jump-la-premiere.jpg"],
+    images: ["/images/ibrahim-ali-khan-palak-tiwari-breakup.jpg"],
   },
 };
 

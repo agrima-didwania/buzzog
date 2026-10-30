@@ -8,6 +8,11 @@ export const metadata: Metadata = {
   keywords: [
     "Bollywood Buzz Originals",
     "Bollywood news",
+    "Ibrahim Ali Khan Palak Tiwari breakup",
+    "Palak Tiwari Ibrahim Ali Khan",
+    "Bollywood breakup news",
+    "Palak Tiwari",
+    "Ibrahim Ali Khan",
     "Jiya Shankar",
     "Jiya Shankar KD",
     "Kaaran Dhanak",
@@ -85,10 +90,10 @@ export const metadata: Metadata = {
     siteName: "Buzz Originals",
     images: [
       {
-        url: "/images/jiya-shankar-unfollows-fiance-kd-instagram.jpg",
+        url: "/images/ibrahim-ali-khan-palak-tiwari-breakup.jpg",
         width: 1024,
         height: 576,
-        alt: "Jiya Shankar Unfollows Fiancé KD on Instagram: What We Know So Far — Buzz Originals Bollywood",
+        alt: "Ibrahim Ali Khan and Palak Tiwari Reportedly Break Up After 3 Years — Buzz Originals Bollywood",
       },
     ],
     type: "website",
@@ -98,7 +103,7 @@ export const metadata: Metadata = {
     title: "Bollywood — Buzz Originals",
     description:
       "Raw, unfiltered Bollywood coverage of red carpets, gossip, airport sightings & exclusives.",
-    images: ["/images/jiya-shankar-unfollows-fiance-kd-instagram.jpg"],
+    images: ["/images/ibrahim-ali-khan-palak-tiwari-breakup.jpg"],
   },
 };
 
@@ -125,24 +130,30 @@ export default function BollywoodPage() {
         {
           "@type": "ListItem",
           position: 1,
+          name: "Ibrahim Ali Khan and Palak Tiwari Reportedly Break Up After 3 Years",
+          url: "https://www.buzzoriginals.com/ibrahim-ali-khan-palak-tiwari-breakup",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
           name: "Jiya Shankar Unfollows Fiancé KD on Instagram: What We Know So Far",
           url: "https://www.buzzoriginals.com/jiya-shankar-unfollows-fiance-kd-instagram",
         },
         {
           "@type": "ListItem",
-          position: 2,
+          position: 3,
           name: "Parivarik ManuRanjan Release Date: Pankaj Tripathi and Aditi Rao Hydari’s Film Is Coming to Sony LIV",
           url: "https://www.buzzoriginals.com/parivarik-manuranjan-ott-release-date-sony-liv",
         },
         {
           "@type": "ListItem",
-          position: 3,
+          position: 4,
           name: "Ramayana Advance Booking: US Sales Jump 27% After LA Premiere",
           url: "https://www.buzzoriginals.com/ramayana-advance-booking-us-jump-la-premiere",
         },
         {
           "@type": "ListItem",
-          position: 4,
+          position: 5,
           name: "Sara Ali Khan Faces Fatwa After Kedarnath Temple Visit",
           url: "https://www.buzzoriginals.com/sara-ali-khan-fatwa-kedarnath-temple-visit",
         },

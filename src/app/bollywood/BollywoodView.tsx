@@ -20,6 +20,16 @@ interface BollywoodArticle {
 
 const bollywoodArticles: BollywoodArticle[] = [
   {
+    id: "ibrahim-ali-khan-palak-tiwari-breakup",
+    category: "Relationship & Breakup",
+    title: "Ibrahim Ali Khan and Palak Tiwari Reportedly Break Up After 3 Years",
+    badge: "Breakup Scoop",
+    badgeType: "pink",
+    image: "/images/ibrahim-ali-khan-palak-tiwari-breakup.jpg",
+    href: "/ibrahim-ali-khan-palak-tiwari-breakup",
+    readOrTime: "3 MIN READ",
+  },
+  {
     id: "jiya-shankar-unfollows-kd",
     category: "Relationship & Breakup",
     title: "Jiya Shankar Unfollows Fiancé KD on Instagram: What We Know So Far",
@@ -246,16 +256,16 @@ export default function BollywoodView() {
 
         {/* Lead Section: Latest Bollywood Published Article (Cover Story) + The Last 2 Blogs Uploaded Before It */}
         <section className="lead">
-          {/* Cover Story: Latest Published Bollywood Story (Jiya Shankar) */}
+          {/* Cover Story: Latest Published Bollywood Story (Ibrahim & Palak Breakup) */}
           <Link
-            href="/jiya-shankar-unfollows-fiance-kd-instagram"
+            href="/ibrahim-ali-khan-palak-tiwari-breakup"
             className="feature-card group block"
-            aria-label="Read full cover story: Jiya Shankar Unfollows Fiancé KD on Instagram: What We Know So Far"
+            aria-label="Read full cover story: Ibrahim Ali Khan and Palak Tiwari Reportedly Break Up After 3 Years"
           >
             <div className="feature-media relative overflow-hidden">
               <Image
-                src="/images/jiya-shankar-unfollows-fiance-kd-instagram.jpg"
-                alt="Jiya Shankar Unfollows Fiancé KD on Instagram"
+                src="/images/ibrahim-ali-khan-palak-tiwari-breakup.jpg"
+                alt="Ibrahim Ali Khan and Palak Tiwari Reportedly Break Up After 3 Years"
                 fill
                 priority
                 className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
@@ -263,18 +273,18 @@ export default function BollywoodView() {
               />
               <div className="noise" />
               <span className="badge pink feature-tag z-10">
-                💔 Breakup Rumours
+                💔 Breakup Scoop
               </span>
             </div>
             <div className="feature-body">
               <h2 className="disp text-white group-hover:text-[var(--lime)] transition-colors">
-                Jiya Shankar Unfollows Fiancé KD on Instagram: What We Know So Far
+                Ibrahim Ali Khan and Palak Tiwari Reportedly Break Up After 3 Years
               </h2>
               <p>
-                Jiya Shankar has unfollowed fiancé Kaaran Dhanak (KD) and shared emotional reposts. Here is what fans noticed and what she said in her statement.
+                Ibrahim Ali Khan and Palak Tiwari have reportedly parted ways after 3 years. Know who ended it, the shoot cancellations, and what we know so far.
               </p>
               <div className="meta-row mt-3">
-                <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; REALITY</span>
+                <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; NEWS</span>
                 <span className="dot-sep">◆</span>
                 <span>3 MIN READ</span>
                 <span className="dot-sep">◆</span>
@@ -285,7 +295,34 @@ export default function BollywoodView() {
 
           {/* Right Stack: The last 2 blogs uploaded before the latest one */}
           <div className="stack">
-            {/* Card 1: Parivarik ManuRanjan */}
+            {/* Card 1: Jiya Shankar */}
+            <Link
+              href="/jiya-shankar-unfollows-fiance-kd-instagram"
+              className="card m1 group block"
+            >
+              <div className="card-media relative overflow-hidden">
+                <Image
+                  src="/images/jiya-shankar-unfollows-fiance-kd-instagram.jpg"
+                  alt="Jiya Shankar Unfollows Fiancé KD on Instagram"
+                  fill
+                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 980px) 100vw, 35vw"
+                />
+                <span className="badge pink z-10 relative">Breakup Rumours</span>
+              </div>
+              <div className="card-body">
+                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
+                  Jiya Shankar Unfollows Fiancé KD on Instagram: What We Know So Far
+                </h3>
+                <div className="meta-row mt-2">
+                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD</span>
+                  <span className="dot-sep">◆</span>
+                  <span>3 MIN READ</span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Card 2: Parivarik ManuRanjan */}
             <Link
               href="/parivarik-manuranjan-ott-release-date-sony-liv"
               className="card m1 group block"
@@ -311,33 +348,6 @@ export default function BollywoodView() {
                 </div>
               </div>
             </Link>
-
-            {/* Card 2: Ramayana Advance Booking */}
-            <Link
-              href="/ramayana-advance-booking-us-jump-la-premiere"
-              className="card m1 group block"
-            >
-              <div className="card-media relative overflow-hidden">
-                <Image
-                  src="/images/ramayana-advance-booking-us-jump-la-premiere.jpg"
-                  alt="Ramayana Advance Booking: US Sales Jump 27% After LA Premiere"
-                  fill
-                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
-                  sizes="(max-width: 980px) 100vw, 35vw"
-                />
-                <span className="badge lime z-10 relative">Box Office Jump</span>
-              </div>
-              <div className="card-body">
-                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
-                  Ramayana Advance Booking: US Sales Jump 27% After LA Premiere
-                </h3>
-                <div className="meta-row mt-2">
-                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD</span>
-                  <span className="dot-sep">◆</span>
-                  <span>3 MIN READ</span>
-                </div>
-              </div>
-            </Link>
           </div>
         </section>
 
@@ -350,7 +360,7 @@ export default function BollywoodView() {
               </h2>
             </div>
             <span className="text-xs font-mono text-[var(--lime)] font-bold">
-              17 STORIES PUBLISHED
+              18 STORIES PUBLISHED
             </span>
           </div>
 

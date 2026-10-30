@@ -177,6 +177,20 @@ export default function Home() {
 
   const editorialArticles: EditorialArticle[] = [
     {
+      id: "ibrahim-palak-breakup",
+      anchorId: "ibrahim-palak-story",
+      href: "/ibrahim-ali-khan-palak-tiwari-breakup",
+      title: "Ibrahim Ali Khan and Palak Tiwari Reportedly Break Up After 3 Years",
+      excerpt: "Bollywood’s young pair Ibrahim Ali Khan and Palak Tiwari have reportedly parted ways after more than three years together. Here is what sources say about the calm split.",
+      category: "Bollywood",
+      secondaryCategory: "News",
+      displayCategory: "BOLLYWOOD & NEWS",
+      badge: "Breakup Scoop",
+      badgeType: "pink",
+      readTime: "3 MIN READ",
+      image: "/images/ibrahim-ali-khan-palak-tiwari-breakup.jpg",
+    },
+    {
       id: "jiya-shankar-unfollows-kd",
       anchorId: "jiya-kd-story",
       href: "/jiya-shankar-unfollows-fiance-kd-instagram",
@@ -546,15 +560,15 @@ export default function Home() {
         <section className="hero" id="featured">
           {/* 1. Main Featured Story (Commanding Top Story Presentation) */}
           <Link
-            href="/jiya-shankar-unfollows-fiance-kd-instagram"
+            href="/ibrahim-ali-khan-palak-tiwari-breakup"
             className="feature-card block transition-all hover:border-[var(--lime)] focus-visible:ring-2 focus-visible:ring-[var(--lime)] group"
             style={{ textDecoration: "none", color: "inherit" }}
-            aria-label="Read full article: Jiya Shankar Unfollows Fiancé KD on Instagram: What We Know So Far"
+            aria-label="Read full article: Ibrahim Ali Khan and Palak Tiwari Reportedly Break Up After 3 Years"
           >
             <div className="feature-media" style={{ overflow: "hidden", position: "relative" }}>
               <Image
-                src="/images/jiya-shankar-unfollows-fiance-kd-instagram.jpg"
-                alt="Jiya Shankar Unfollows Fiancé KD on Instagram: What We Know So Far"
+                src="/images/ibrahim-ali-khan-palak-tiwari-breakup.jpg"
+                alt="Ibrahim Ali Khan and Palak Tiwari Reportedly Break Up After 3 Years"
                 fill
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 750px"
@@ -563,24 +577,24 @@ export default function Home() {
               />
               <div className="noise" style={{ pointerEvents: "none" }}></div>
               <div className="feature-tag flex items-center gap-2">
-                <span className="badge pink">💔 Breakup Rumours</span>
-                <span className="badge">Bollywood &amp; Reality</span>
-                <span className="badge lime">Bigg Boss OTT 2</span>
+                <span className="badge pink">💔 Breakup Scoop</span>
+                <span className="badge">Bollywood &amp; News</span>
+                <span className="badge lime">Saif’s Son &amp; Palak</span>
               </div>
             </div>
             <div className="feature-body">
               <div className="flex items-center gap-2 mb-2 font-mono text-xs text-[var(--lime)] font-bold tracking-wider uppercase">
-                <span>★ TOP STORY · BREAKUP SPECULATION</span>
+                <span>★ TOP STORY · BREAKUP REPORT</span>
               </div>
               <h1 className="disp" style={{ color: "#fff" }}>
-                Jiya Shankar Unfollows Fiancé KD on Instagram: What We Know So Far
+                Ibrahim Ali Khan &amp; Palak Tiwari Reportedly Part Ways After 3 Years
               </h1>
               <p>
-                Fans of Bigg Boss OTT 2 star Jiya Shankar are concerned after she unfollowed fiancé Kaaran Dhanak (KD) and shared cryptic heartbreak notes, before issuing a statement addressing the speculation.
+                Bollywood’s much-talked-about young pair have reportedly ended their three-year relationship calmly, with planned joint shoots placed on hold ahead of Ibrahim&apos;s upcoming talk show appearance.
               </p>
               <div className="meta-row mt-auto pt-3 border-t border-white/[0.06] flex items-center justify-between">
                 <div className="flex items-center gap-3">
-                  <span>BOLLYWOOD &amp; REALITY SHOWS</span>
+                  <span>BOLLYWOOD &amp; NEWS</span>
                   <span className="dot-sep">◆</span>
                   <span>3 MIN READ</span>
                   <span className="dot-sep">◆</span>
@@ -603,6 +617,18 @@ export default function Home() {
               <span className="trend-rank">01</span>
               <div className="trend-text">
                 <Link
+                  href="/ibrahim-ali-khan-palak-tiwari-breakup"
+                  style={{ color: "inherit" }}
+                >
+                  <h3>Ibrahim Ali Khan &amp; Palak Tiwari reportedly break up after 3 years: Joint shoots on hold</h3>
+                  <span>BOLLYWOOD &amp; NEWS · 340K REACTIONS</span>
+                </Link>
+              </div>
+            </div>
+            <div className="trend-item">
+              <span className="trend-rank">02</span>
+              <div className="trend-text">
+                <Link
                   href="/jiya-shankar-unfollows-fiance-kd-instagram"
                   style={{ color: "inherit" }}
                 >
@@ -612,7 +638,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">02</span>
+              <span className="trend-rank">03</span>
               <div className="trend-text">
                 <Link
                   href="/parivarik-manuranjan-ott-release-date-sony-liv"
@@ -624,7 +650,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">03</span>
+              <span className="trend-rank">04</span>
               <div className="trend-text">
                 <Link
                   href="/ramayana-advance-booking-us-jump-la-premiere"
@@ -636,7 +662,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">04</span>
+              <span className="trend-rank">05</span>
               <div className="trend-text">
                 <Link
                   href="/priyanka-chopra-we-were-here-executive-producer"
@@ -644,18 +670,6 @@ export default function Home() {
                 >
                   <h3>Priyanka Chopra joins Oscar-qualified short film We Were Here as executive producer</h3>
                   <span>MOVIES &amp; NEWS · 275K REACTIONS</span>
-                </Link>
-              </div>
-            </div>
-            <div className="trend-item">
-              <span className="trend-rank">05</span>
-              <div className="trend-text">
-                <Link
-                  href="/sara-ali-khan-fatwa-kedarnath-temple-visit"
-                  style={{ color: "inherit" }}
-                >
-                  <h3>Sara Ali Khan faces fatwa after Kedarnath temple visit: Cleric calls it impermissible</h3>
-                  <span>BOLLYWOOD &amp; NEWS · 260K REACTIONS</span>
                 </Link>
               </div>
             </div>

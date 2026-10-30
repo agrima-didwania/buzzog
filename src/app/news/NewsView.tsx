@@ -22,6 +22,18 @@ interface NewsArticle {
 // Only verified breaking entertainment news stories (fatwas, obituaries, police complaints, eviction rows, box-office shifts)
 const newsArticles: NewsArticle[] = [
   {
+    id: "ibrahim-ali-khan-palak-tiwari-breakup",
+    category: "Bollywood",
+    title: "Ibrahim Ali Khan and Palak Tiwari Reportedly Break Up After 3 Years",
+    badge: "Breakup Scoop",
+    badgeType: "pink",
+    image: "/images/ibrahim-ali-khan-palak-tiwari-breakup.jpg",
+    href: "/ibrahim-ali-khan-palak-tiwari-breakup",
+    readOrTime: "3 MIN READ",
+    excerpt:
+      "Ibrahim Ali Khan and Palak Tiwari have reportedly parted ways after 3 years. Know who ended it, the shoot cancellations, and what we know so far.",
+  },
+  {
     id: "ramayana-advance-booking-us",
     category: "Movies",
     title: "Ramayana Advance Booking: US Sales Jump 27% After LA Premiere",
