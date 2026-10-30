@@ -20,6 +20,16 @@ interface BollywoodArticle {
 
 const bollywoodArticles: BollywoodArticle[] = [
   {
+    id: "siddharth-anand-king-srk",
+    category: "Action Thriller",
+    title: "Siddharth Anand’s “Time For The World” Post Has SRK Fans Guessing: Is a King Update Coming?",
+    badge: "Cover Story",
+    badgeType: "pink",
+    image: "/images/siddharth-anand-time-for-the-world-king-srk-birthday.jpg",
+    href: "/siddharth-anand-time-for-the-world-king-srk-birthday",
+    readOrTime: "3 MIN READ",
+  },
+  {
     id: "junglywood-trailer-shaan-grover",
     category: "Trailer & Thriller",
     title: "Junglywood Trailer Out: Shaan R Grover Takes On Bollywood's Insider vs Outsider Debate",
@@ -176,16 +186,16 @@ export default function BollywoodView() {
 
         {/* Lead Section: Latest Bollywood Published Article (Cover Story) + The Last 2 Blogs Uploaded Before It */}
         <section className="lead">
-          {/* Cover Story: Latest Published Bollywood Story (Junglywood Trailer) */}
+          {/* Cover Story: Latest Published Bollywood Story (King SRK Birthday Update) */}
           <Link
-            href="/junglywood-trailer-shaan-r-grover"
+            href="/siddharth-anand-time-for-the-world-king-srk-birthday"
             className="feature-card group block"
-            aria-label="Read full cover story: Junglywood Trailer Out: Shaan R Grover Takes On Bollywood's Insider vs Outsider Debate"
+            aria-label="Read full cover story: Siddharth Anand’s “Time For The World” Post Has SRK Fans Guessing: Is a King Update Coming?"
           >
             <div className="feature-media relative overflow-hidden">
               <Image
-                src="/images/junglywood-trailer-shaan-r-grover.jpg"
-                alt="Junglywood Trailer Out: Shaan R Grover Takes On Bollywood's Insider vs Outsider Debate"
+                src="/images/siddharth-anand-time-for-the-world-king-srk-birthday.jpg"
+                alt="Siddharth Anand’s “Time For The World” Post Has SRK Fans Guessing: Is a King Update Coming?"
                 fill
                 priority
                 className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
@@ -193,15 +203,15 @@ export default function BollywoodView() {
               />
               <div className="noise" />
               <span className="badge pink feature-tag z-10">
-                🎬 Trailer Out
+                👑 King Update
               </span>
             </div>
             <div className="feature-body">
               <h2 className="disp text-white group-hover:text-[var(--lime)] transition-colors">
-                Junglywood Trailer Out: Shaan R Grover Takes On Bollywood&apos;s Insider vs Outsider Debate
+                Siddharth Anand’s “Time For The World” Post Has SRK Fans Guessing: Is a King Update Coming?
               </h2>
               <p>
-                The Junglywood trailer is out. Shaan R Grover stars in Chand Mohammad’s zero-VFX dark comedy thriller exploring Bollywood&apos;s fierce insider vs outsider debate.
+                Siddharth Anand posted “It’s” and then “Time For The World” about King. Is a surprise coming on Shah Rukh Khan’s 61st birthday? Here’s what we know.
               </p>
               <div className="meta-row mt-3">
                 <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; CINEMA</span>
@@ -215,7 +225,34 @@ export default function BollywoodView() {
 
           {/* Right Stack: The last 2 blogs uploaded before the latest one */}
           <div className="stack">
-            {/* Card 1: Disha Patani DZ Brand */}
+            {/* Card 1: Junglywood Trailer */}
+            <Link
+              href="/junglywood-trailer-shaan-r-grover"
+              className="card m1 group block"
+            >
+              <div className="card-media relative overflow-hidden">
+                <Image
+                  src="/images/junglywood-trailer-shaan-r-grover.jpg"
+                  alt="Junglywood Trailer Out: Shaan R Grover Takes On Bollywood's Insider vs Outsider Debate"
+                  fill
+                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 980px) 100vw, 35vw"
+                />
+                <span className="badge pink z-10 relative">Trailer Out</span>
+              </div>
+              <div className="card-body">
+                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
+                  Junglywood Trailer Out: Shaan R Grover Takes On Bollywood&apos;s Insider vs Outsider Debate
+                </h3>
+                <div className="meta-row mt-2">
+                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; CINEMA</span>
+                  <span className="dot-sep">◆</span>
+                  <span>3 MIN READ</span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Card 2: Disha Patani DZ Brand */}
             <Link
               href="/disha-patani-launches-clothing-brand-dz"
               className="card m6 group block"
@@ -241,33 +278,6 @@ export default function BollywoodView() {
                 </div>
               </div>
             </Link>
-
-            {/* Card 2: Janhvi Kapoor Concert Advice */}
-            <Link
-              href="/janhvi-kapoor-veer-pahariya-concert-advice-koffee-with-karan"
-              className="card m1 group block"
-            >
-              <div className="card-media relative overflow-hidden">
-                <Image
-                  src="/images/janhvi-kapoor-veer-pahariya-concert-advice-koffee-with-karan.jpg"
-                  alt="Janhvi Kapoor's Concert Advice for Veer Pahariya on Koffee With Karan Is Going Viral"
-                  fill
-                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
-                  sizes="(max-width: 980px) 100vw, 35vw"
-                />
-                <span className="badge pink z-10 relative">Viral Scoop</span>
-              </div>
-              <div className="card-body">
-                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
-                  Janhvi Kapoor&apos;s &ldquo;Concert&rdquo; Advice for Veer Pahariya on Koffee With Karan Is Going Viral
-                </h3>
-                <div className="meta-row mt-2">
-                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; KWK 9</span>
-                  <span className="dot-sep">◆</span>
-                  <span>3 MIN READ</span>
-                </div>
-              </div>
-            </Link>
           </div>
         </section>
 
@@ -280,7 +290,7 @@ export default function BollywoodView() {
               </h2>
             </div>
             <span className="text-xs font-mono text-[var(--lime)] font-bold">
-              10 STORIES PUBLISHED
+              11 STORIES PUBLISHED
             </span>
           </div>
 

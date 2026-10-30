@@ -20,6 +20,16 @@ interface MovieArticle {
 
 const movieArticles: MovieArticle[] = [
   {
+    id: "siddharth-anand-king-srk",
+    category: "Action Thriller",
+    title: "Siddharth Anand’s “Time For The World” Post Has SRK Fans Guessing: Is a King Update Coming?",
+    badge: "Cover Story",
+    badgeType: "pink",
+    image: "/images/siddharth-anand-time-for-the-world-king-srk-birthday.jpg",
+    href: "/siddharth-anand-time-for-the-world-king-srk-birthday",
+    readOrTime: "3 MIN READ",
+  },
+  {
     id: "junglywood-trailer-shaan-grover",
     category: "Trailer & Thriller",
     title: "Junglywood Trailer Out: Shaan R Grover Takes On Bollywood's Insider vs Outsider Debate",
@@ -126,16 +136,16 @@ export default function MoviesView() {
 
         {/* Lead Section: Latest Movie Published Article (Cover Story) + The Last 2 Blogs Uploaded Before It */}
         <section className="lead">
-          {/* Featured Card: Junglywood Trailer */}
+          {/* Featured Card: King SRK Birthday Update */}
           <Link
-            href="/junglywood-trailer-shaan-r-grover"
+            href="/siddharth-anand-time-for-the-world-king-srk-birthday"
             className="feature-card group block"
-            aria-label="Read full article: Junglywood Trailer Out: Shaan R Grover Takes On Bollywood's Insider vs Outsider Debate"
+            aria-label="Read full article: Siddharth Anand’s “Time For The World” Post Has SRK Fans Guessing: Is a King Update Coming?"
           >
             <div className="feature-media relative overflow-hidden">
               <Image
-                src="/images/junglywood-trailer-shaan-r-grover.jpg"
-                alt="Junglywood Trailer Out: Shaan R Grover Takes On Bollywood's Insider vs Outsider Debate"
+                src="/images/siddharth-anand-time-for-the-world-king-srk-birthday.jpg"
+                alt="Siddharth Anand’s “Time For The World” Post Has SRK Fans Guessing: Is a King Update Coming?"
                 fill
                 priority
                 className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
@@ -143,15 +153,15 @@ export default function MoviesView() {
               />
               <div className="noise" />
               <span className="badge pink feature-tag z-10">
-                🎬 Trailer Out
+                👑 King Update
               </span>
             </div>
             <div className="feature-body">
               <h2 className="disp text-white group-hover:text-[var(--lime)] transition-colors">
-                Junglywood Trailer Out: Shaan R Grover Takes On Bollywood&apos;s Insider vs Outsider Debate
+                Siddharth Anand’s “Time For The World” Post Has SRK Fans Guessing: Is a King Update Coming?
               </h2>
               <p>
-                The Junglywood trailer is out. Shaan R Grover stars in Chand Mohammad’s zero-VFX dark comedy thriller exploring Bollywood&apos;s fierce insider vs outsider debate.
+                Siddharth Anand posted “It’s” and then “Time For The World” about King. Is a surprise coming on Shah Rukh Khan’s 61st birthday? Here’s what we know.
               </p>
               <div className="meta-row mt-3">
                 <span className="text-[var(--lime)] font-bold">CINEMA</span>
@@ -165,7 +175,34 @@ export default function MoviesView() {
 
           {/* Right Stack: The last 2 movie blogs uploaded before this one */}
           <div className="stack">
-            {/* Card 1: Bhumi Pednekar Joins Akshay Kumar */}
+            {/* Card 1: Junglywood Trailer */}
+            <Link
+              href="/junglywood-trailer-shaan-r-grover"
+              className="card m1 group block"
+            >
+              <div className="card-media relative overflow-hidden">
+                <Image
+                  src="/images/junglywood-trailer-shaan-r-grover.jpg"
+                  alt="Junglywood Trailer Out: Shaan R Grover Takes On Bollywood's Insider vs Outsider Debate"
+                  fill
+                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 980px) 100vw, 35vw"
+                />
+                <span className="badge pink z-10 relative">Trailer Out</span>
+              </div>
+              <div className="card-body">
+                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
+                  Junglywood Trailer Out: Shaan R Grover Takes On Bollywood&apos;s Insider vs Outsider Debate
+                </h3>
+                <div className="meta-row mt-2">
+                  <span className="text-[var(--lime)] font-bold">CINEMA</span>
+                  <span className="dot-sep">◆</span>
+                  <span>3 MIN READ</span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Card 2: Bhumi Pednekar Joins Akshay Kumar */}
             <Link
               href="/bhumi-pednekar-akshay-kumar-priyadarshan-next-film"
               className="card m6 group block"
@@ -191,33 +228,6 @@ export default function MoviesView() {
                 </div>
               </div>
             </Link>
-
-            {/* Card 2: Janhvi Kapoor Peddi Row */}
-            <Link
-              href="/janhvi-kapoor-peddi-controversy-koffee-with-karan-9"
-              className="card m1 group block"
-            >
-              <div className="card-media relative overflow-hidden">
-                <Image
-                  src="/images/janhvi-kapoor-peddi-controversy-koffee-with-karan-9.jpg"
-                  alt="Janhvi Kapoor Breaks Silence on Peddi Controversy"
-                  fill
-                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
-                  sizes="(max-width: 980px) 100vw, 35vw"
-                />
-                <span className="badge pink z-10 relative">Film Row</span>
-              </div>
-              <div className="card-body">
-                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
-                  Janhvi Kapoor Breaks Silence on Peddi Controversy: &ldquo;A Violating Experience&rdquo;
-                </h3>
-                <div className="meta-row mt-2">
-                  <span className="text-[var(--lime)] font-bold">CINEMA</span>
-                  <span className="dot-sep">◆</span>
-                  <span>4 MIN READ</span>
-                </div>
-              </div>
-            </Link>
           </div>
         </section>
 
@@ -230,7 +240,7 @@ export default function MoviesView() {
               </h2>
             </div>
             <span className="text-xs font-mono text-[var(--lime)] font-bold">
-              5 STORIES PUBLISHED
+              6 STORIES PUBLISHED
             </span>
           </div>
 

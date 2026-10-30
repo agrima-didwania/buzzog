@@ -177,8 +177,22 @@ export default function Home() {
 
   const editorialArticles: EditorialArticle[] = [
     {
-      id: "junglywood-trailer-shaan-grover",
+      id: "siddharth-anand-king-srk",
       anchorId: "latest-story",
+      href: "/siddharth-anand-time-for-the-world-king-srk-birthday",
+      title: "Siddharth Anand’s “Time For The World” Post Has SRK Fans Guessing: Is a King Update Coming?",
+      excerpt: "Siddharth Anand posted “It’s” and then “Time For The World” on X. With SRK’s 61st birthday days away, fans are anticipating a massive King reveal.",
+      category: "Latest",
+      secondaryCategory: "Bollywood & Hollywood",
+      displayCategory: "BOLLYWOOD & MOVIES",
+      badge: "King Update",
+      badgeType: "pink",
+      readTime: "3 MIN READ",
+      image: "/images/siddharth-anand-time-for-the-world-king-srk-birthday.jpg",
+    },
+    {
+      id: "junglywood-trailer-shaan-grover",
+      anchorId: "junglywood-story",
       href: "/junglywood-trailer-shaan-r-grover",
       title: "Junglywood Trailer Out: Shaan R Grover Takes On Bollywood's Insider vs Outsider Debate",
       excerpt: "The Junglywood trailer is out. Shaan R Grover stars in Chand Mohammad’s zero-VFX dark comedy thriller exploring Bollywood's insider vs outsider debate.",
@@ -420,15 +434,15 @@ export default function Home() {
         <section className="hero" id="featured">
           {/* 1. Main Featured Story (Commanding Top Story Presentation) */}
           <Link
-            href="/junglywood-trailer-shaan-r-grover"
+            href="/siddharth-anand-time-for-the-world-king-srk-birthday"
             className="feature-card block transition-all hover:border-[var(--lime)] focus-visible:ring-2 focus-visible:ring-[var(--lime)] group"
             style={{ textDecoration: "none", color: "inherit" }}
-            aria-label="Read full article: Junglywood Trailer Out: Shaan R Grover Takes On Bollywood's Insider vs Outsider Debate"
+            aria-label="Read full article: Siddharth Anand’s “Time For The World” Post Has SRK Fans Guessing: Is a King Update Coming?"
           >
             <div className="feature-media" style={{ overflow: "hidden", position: "relative" }}>
               <Image
-                src="/images/junglywood-trailer-shaan-r-grover.jpg"
-                alt="Junglywood Trailer Out: Shaan R Grover Takes On Bollywood's Insider vs Outsider Debate"
+                src="/images/siddharth-anand-time-for-the-world-king-srk-birthday.jpg"
+                alt="Siddharth Anand’s “Time For The World” Post Has SRK Fans Guessing: Is a King Update Coming?"
                 fill
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 750px"
@@ -439,18 +453,18 @@ export default function Home() {
               <div className="feature-tag flex items-center gap-2">
                 <span className="badge pink">🔥 Cover Story</span>
                 <span className="badge">Bollywood</span>
-                <span className="badge lime">Trailer Out</span>
+                <span className="badge lime">King</span>
               </div>
             </div>
             <div className="feature-body">
               <div className="flex items-center gap-2 mb-2 font-mono text-xs text-[var(--lime)] font-bold tracking-wider uppercase">
-                <span>★ TOP STORY · BOLLYWOOD THRILLER</span>
+                <span>★ TOP STORY · SRK&apos;S KING UPDATE</span>
               </div>
               <h1 className="disp" style={{ color: "#fff" }}>
-                Junglywood Trailer Out: Shaan R Grover Takes On Bollywood&apos;s Insider vs Outsider Debate
+                Siddharth Anand’s “Time For The World” Post Has SRK Fans Guessing: Is a King Update Coming?
               </h1>
               <p>
-                The Junglywood trailer is finally here. Shaan R Grover headlines Chand Mohammad’s zero-VFX dark comedy thriller, taking viewers into a dangerous party that tackles the film industry&apos;s real power games.
+                Siddharth Anand posted “It’s” and then “Time For The World” on X. With Shah Rukh Khan&apos;s 61st birthday around the corner, fans are connecting the dots to a massive King surprise.
               </p>
               <div className="meta-row mt-auto pt-3 border-t border-white/[0.06] flex items-center justify-between">
                 <div className="flex items-center gap-3">
@@ -477,6 +491,18 @@ export default function Home() {
               <span className="trend-rank">01</span>
               <div className="trend-text">
                 <Link
+                  href="/siddharth-anand-time-for-the-world-king-srk-birthday"
+                  style={{ color: "inherit" }}
+                >
+                  <h3>Siddharth Anand’s “Time For The World” post has SRK fans guessing: Is a King update coming?</h3>
+                  <span>BOLLYWOOD &amp; MOVIES · 185K REACTIONS</span>
+                </Link>
+              </div>
+            </div>
+            <div className="trend-item">
+              <span className="trend-rank">02</span>
+              <div className="trend-text">
+                <Link
                   href="/junglywood-trailer-shaan-r-grover"
                   style={{ color: "inherit" }}
                 >
@@ -486,7 +512,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">02</span>
+              <span className="trend-rank">03</span>
               <div className="trend-text">
                 <Link
                   href="/bigg-boss-20-gullu-evicted-yung-dsa-fight"
@@ -498,7 +524,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">03</span>
+              <span className="trend-rank">04</span>
               <div className="trend-text">
                 <Link
                   href="/disha-patani-launches-clothing-brand-dz"
@@ -510,7 +536,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">04</span>
+              <span className="trend-rank">05</span>
               <div className="trend-text">
                 <Link
                   href="/bigg-boss-20-100-per-cent-ration-housemates"
@@ -518,18 +544,6 @@ export default function Home() {
                 >
                   <h3>Bigg Boss 20: Housemates get 100% full weekly ration for first time this season</h3>
                   <span>REALITY TV · 142K REACTIONS</span>
-                </Link>
-              </div>
-            </div>
-            <div className="trend-item">
-              <span className="trend-rank">05</span>
-              <div className="trend-text">
-                <Link
-                  href="/janhvi-kapoor-veer-pahariya-concert-advice-koffee-with-karan"
-                  style={{ color: "inherit" }}
-                >
-                  <h3>Janhvi Kapoor&apos;s concert advice for Veer Pahariya on Koffee With Karan 9</h3>
-                  <span>BOLLYWOOD &amp; REALITY · 134K REACTIONS</span>
                 </Link>
               </div>
             </div>
