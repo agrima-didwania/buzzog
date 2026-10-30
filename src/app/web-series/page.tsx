@@ -11,13 +11,13 @@ export const metadata: Metadata = {
     "Netflix web series hindi",
     "Prime Video originals",
     "JioHotstar web series",
-    "Koffee With Karan 9",
-    "Janhvi Kapoor Koffee With Karan",
     "SonyLIV web series",
     "ZEE5 originals",
     "Ending explained web series",
     "Season finale reviews",
     "Binge or Skip radar",
+    "Hindi OTT series",
+    "Indian web series 2026",
   ],
   alternates: {
     canonical: "/web-series",
@@ -30,9 +30,9 @@ export const metadata: Metadata = {
     siteName: "Buzz Originals",
     images: [
       {
-        url: "/images/janhvi-kapoor-peddi-controversy-koffee-with-karan-9.jpg",
-        width: 1024,
-        height: 682,
+        url: "/assets/buzzog-logo.png",
+        width: 1200,
+        height: 630,
         alt: "Web Series Coverage — Buzz Originals",
       },
     ],
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     title: "Web Series — Buzz Originals",
     description:
       "OTT binge guides, trailers, recaps and ending explainers — Netflix, Prime Video, JioHotstar, ZEE5 and SonyLIV in one place.",
-    images: ["/images/janhvi-kapoor-peddi-controversy-koffee-with-karan-9.jpg"],
+    images: ["/assets/buzzog-logo.png"],
   },
 };
 
@@ -70,25 +70,31 @@ export default function WebSeriesPage() {
         {
           "@type": "ListItem",
           position: 1,
-          name: "Janhvi Kapoor Breaks Silence on Peddi Controversy: A Violating Experience on Koffee With Karan 9",
-          url: "https://www.buzzoriginals.com/janhvi-kapoor-peddi-controversy-koffee-with-karan-9",
-        },
-        {
-          "@type": "ListItem",
-          position: 2,
-          name: "Janhvi Kapoor Drops Veer Pahariya's Unfiltered Concert Advice on Koffee With Karan 9",
-          url: "https://www.buzzoriginals.com/janhvi-kapoor-veer-pahariya-concert-advice-koffee-with-karan",
-        },
-        {
-          "@type": "ListItem",
-          position: 3,
           name: "New crime thriller has the timeline refusing to sleep — Netflix OTT Binge",
           url: "https://www.buzzoriginals.com/web-series#binge-buzz",
         },
         {
           "@type": "ListItem",
-          position: 4,
+          position: 2,
           name: "The trailer for this college drama is already a meme template — Prime Video",
+          url: "https://www.buzzoriginals.com/web-series#binge-buzz",
+        },
+        {
+          "@type": "ListItem",
+          position: 3,
+          name: "Season finale verdict: did it stick the landing? — JioHotstar",
+          url: "https://www.buzzoriginals.com/web-series#binge-buzz",
+        },
+        {
+          "@type": "ListItem",
+          position: 4,
+          name: "Cast spills on the scene fans keep rewatching — ZEE5",
+          url: "https://www.buzzoriginals.com/web-series#binge-buzz",
+        },
+        {
+          "@type": "ListItem",
+          position: 5,
+          name: "Episode 5 recap: the twist nobody saw coming — SonyLIV",
           url: "https://www.buzzoriginals.com/web-series#binge-buzz",
         },
       ],

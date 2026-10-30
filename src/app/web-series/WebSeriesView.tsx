@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import Image from "next/image";
 import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -14,7 +13,6 @@ interface WebSeriesArticle {
   badge: string;
   badgeType?: "pink" | "lime" | "default";
   mediaClass?: string;
-  image?: string;
   href: string;
   time: string;
   readOrTime?: string;
@@ -34,7 +32,7 @@ const webSeriesArticles: WebSeriesArticle[] = [
   {
     id: "crime-thriller-timeline",
     platform: "Netflix",
-    category: "Crime & Suspense",
+    category: "Crime Thriller",
     title: "New crime thriller has the timeline refusing to sleep",
     badge: "Binge",
     badgeType: "default",
@@ -43,20 +41,6 @@ const webSeriesArticles: WebSeriesArticle[] = [
     readOrTime: "3 MIN READ",
     href: "#",
     excerpt: "Tight episodes, a cliffhanger every 40 minutes and a twist your group chat will argue about all week.",
-  },
-  {
-    id: "janhvi-peddi-koffee",
-    platform: "JioHotstar",
-    category: "Talk Show & OTT",
-    title: "Janhvi Kapoor Breaks Silence on Peddi Controversy: “A Violating Experience” on Koffee With Karan 9",
-    badge: "Exclusive Scoop",
-    badgeType: "pink",
-    mediaClass: "m3",
-    image: "/images/janhvi-kapoor-peddi-controversy-koffee-with-karan-9.jpg",
-    time: "HOTSTAR OTT",
-    readOrTime: "4 MIN READ",
-    href: "/janhvi-kapoor-peddi-controversy-koffee-with-karan-9",
-    excerpt: "From digital invasion to setting boundaries, Janhvi unpacks the intense online debates surrounding Peddi.",
   },
   {
     id: "cast-spills-zee5",
@@ -116,43 +100,6 @@ const webSeriesArticles: WebSeriesArticle[] = [
     mediaClass: "m3",
     time: "2D AGO",
     readOrTime: "3 MIN READ",
-    href: "#",
-  },
-  {
-    id: "janhvi-veer-koffee",
-    platform: "JioHotstar",
-    category: "Hotstar Originals",
-    title: "Janhvi Kapoor Drops Veer Pahariya's Unfiltered Concert Advice on Koffee With Karan 9",
-    badge: "Season 9",
-    badgeType: "pink",
-    mediaClass: "m2",
-    image: "/images/janhvi-kapoor-veer-pahariya-concert-advice-koffee-with-karan.jpg",
-    time: "HOTSTAR OTT",
-    readOrTime: "3 MIN READ",
-    href: "/janhvi-kapoor-veer-pahariya-concert-advice-koffee-with-karan",
-  },
-  {
-    id: "college-drama-meme-prime",
-    platform: "Prime Video",
-    category: "Youth Drama",
-    title: "The trailer for this college drama is already a meme template",
-    badge: "Trailer",
-    badgeType: "pink",
-    mediaClass: "m2",
-    time: "4H AGO",
-    readOrTime: "2 MIN READ",
-    href: "#",
-  },
-  {
-    id: "season-finale-verdict-hotstar",
-    platform: "JioHotstar",
-    category: "Series Finale",
-    title: "Season finale verdict: did it stick the landing?",
-    badge: "Review",
-    badgeType: "default",
-    mediaClass: "m3",
-    time: "6H AGO",
-    readOrTime: "4 MIN READ",
     href: "#",
   },
 ];
@@ -235,9 +182,8 @@ export default function WebSeriesView() {
         {/* Lead Section: Featured Crime Thriller + 2 Card Stack */}
         <section className="lead">
           {/* Featured Card */}
-          <Link
-            href="/janhvi-kapoor-peddi-controversy-koffee-with-karan-9"
-            className="feature-card group block"
+          <div
+            className="feature-card group block cursor-pointer"
             aria-label="Read featured story: New crime thriller has the timeline refusing to sleep"
           >
             <div className="feature-media relative overflow-hidden">
@@ -261,7 +207,7 @@ export default function WebSeriesView() {
                 <span className="text-[var(--lime)] font-bold">STREAMING NOW</span>
               </div>
             </div>
-          </Link>
+          </div>
 
           {/* Right Stack: 2 OTT Highlights */}
           <div className="stack">
@@ -282,32 +228,22 @@ export default function WebSeriesView() {
               </div>
             </div>
 
-            {/* Card 2: Koffee With Karan 9 JioHotstar / Season Finale */}
-            <Link
-              href="/janhvi-kapoor-veer-pahariya-concert-advice-koffee-with-karan"
-              className="card m3 group block"
-            >
+            {/* Card 2: Season Finale Verdict */}
+            <div className="card m3 group block cursor-pointer">
               <div className="card-media relative overflow-hidden">
-                <Image
-                  src="/images/janhvi-kapoor-veer-pahariya-concert-advice-koffee-with-karan.jpg"
-                  alt="Janhvi Kapoor Drops Veer Pahariya's Unfiltered Concert Advice on Koffee With Karan 9"
-                  fill
-                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
-                  sizes="(max-width: 980px) 100vw, 35vw"
-                />
-                <span className="badge pink z-10 relative">Season 9</span>
+                <span className="badge z-10 relative">Review</span>
               </div>
               <div className="card-body">
                 <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
-                  Season finale verdict: did it stick the landing? Inside Koffee With Karan 9
+                  Season finale verdict: did it stick the landing?
                 </h3>
                 <div className="meta-row mt-2">
                   <span className="text-[var(--lime)] font-bold">JIOHOTSTAR</span>
                   <span className="dot-sep">◆</span>
-                  <span>3 MIN READ</span>
+                  <span>6H AGO</span>
                 </div>
               </div>
-            </Link>
+            </div>
           </div>
         </section>
 
@@ -326,21 +262,11 @@ export default function WebSeriesView() {
 
           <div className="grid">
             {filteredArticles.map((art) => (
-              <Link
+              <div
                 key={art.id}
-                href={art.href}
-                className={`card ${art.mediaClass || "m1"} group flex flex-col justify-between`}
+                className={`card ${art.mediaClass || "m1"} group flex flex-col justify-between cursor-pointer`}
               >
                 <div className="card-media relative overflow-hidden">
-                  {art.image ? (
-                    <Image
-                      src={art.image}
-                      alt={art.title}
-                      fill
-                      className="object-cover group-hover:scale-105 transition-transform duration-300"
-                      sizes="(max-width: 640px) 100vw, (max-width: 980px) 50vw, 33vw"
-                    />
-                  ) : null}
                   <span
                     className={`badge ${
                       art.badgeType === "pink" ? "pink" : ""
@@ -367,7 +293,7 @@ export default function WebSeriesView() {
                     <span>{art.readOrTime || art.time}</span>
                   </div>
                 </div>
-              </Link>
+              </div>
             ))}
           </div>
         </section>
