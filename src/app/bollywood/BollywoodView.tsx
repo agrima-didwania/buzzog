@@ -20,6 +20,16 @@ interface BollywoodArticle {
 
 const bollywoodArticles: BollywoodArticle[] = [
   {
+    id: "parivarik-manuranjan-ott-release",
+    category: "OTT Premiere",
+    title: "Parivarik ManuRanjan: Pankaj Tripathi & Aditi Rao Hydari's Rom-Com Sets Sony LIV Date",
+    badge: "OTT Premiere",
+    badgeType: "lime",
+    image: "/images/parivarik-manuranjan-ott-release-date-sony-liv.jpg",
+    href: "/parivarik-manuranjan-ott-release-date-sony-liv",
+    readOrTime: "3 MIN READ",
+  },
+  {
     id: "ramayana-advance-booking-us",
     category: "Box Office",
     title: "Ramayana Advance Booking: US Sales Jump 27% After LA Premiere",
@@ -226,16 +236,16 @@ export default function BollywoodView() {
 
         {/* Lead Section: Latest Bollywood Published Article (Cover Story) + The Last 2 Blogs Uploaded Before It */}
         <section className="lead">
-          {/* Cover Story: Latest Published Bollywood Story (Ramayana Advance Booking) */}
+          {/* Cover Story: Latest Published Bollywood Story (Parivarik ManuRanjan) */}
           <Link
-            href="/ramayana-advance-booking-us-jump-la-premiere"
+            href="/parivarik-manuranjan-ott-release-date-sony-liv"
             className="feature-card group block"
-            aria-label="Read full cover story: Ramayana Advance Booking: US Sales Jump 27% After LA Premiere"
+            aria-label="Read full cover story: Parivarik ManuRanjan Release Date: Pankaj Tripathi and Aditi Rao Hydari’s Film Is Coming to Sony LIV"
           >
             <div className="feature-media relative overflow-hidden">
               <Image
-                src="/images/ramayana-advance-booking-us-jump-la-premiere.jpg"
-                alt="Ramayana Advance Booking: US Sales Jump 27% After LA Premiere"
+                src="/images/parivarik-manuranjan-ott-release-date-sony-liv.jpg"
+                alt="Parivarik ManuRanjan OTT Release Date: Sony LIV"
                 fill
                 priority
                 className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
@@ -243,29 +253,56 @@ export default function BollywoodView() {
               />
               <div className="noise" />
               <span className="badge lime feature-tag z-10">
-                📈 Box Office Jump
+                📺 OTT Premiere
               </span>
             </div>
             <div className="feature-body">
               <h2 className="disp text-white group-hover:text-[var(--lime)] transition-colors">
-                Ramayana Advance Booking: US Sales Jump 27% After LA Premiere
+                Parivarik ManuRanjan Release Date: Pankaj Tripathi and Aditi Rao Hydari’s Film Is Coming to Sony LIV
               </h2>
               <p>
-                Ramayana Part One is getting stronger bookings in the US after its LA premiere. Here are the booking numbers, the early reactions and the release date.
+                Parivarik ManuRanjan starring Pankaj Tripathi and Aditi Rao Hydari premieres on Sony LIV on November 13. Know the story, cast, director and more.
               </p>
               <div className="meta-row mt-3">
-                <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; CINEMA</span>
+                <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; OTT</span>
                 <span className="dot-sep">◆</span>
                 <span>3 MIN READ</span>
                 <span className="dot-sep">◆</span>
-                <span className="text-[var(--lime)] font-bold">RELEASE NOV 5</span>
+                <span className="text-[var(--lime)] font-bold">PREMIERE NOV 13</span>
               </div>
             </div>
           </Link>
 
           {/* Right Stack: The last 2 blogs uploaded before the latest one */}
           <div className="stack">
-            {/* Card 1: Sara Ali Khan Fatwa */}
+            {/* Card 1: Ramayana Advance Booking */}
+            <Link
+              href="/ramayana-advance-booking-us-jump-la-premiere"
+              className="card m1 group block"
+            >
+              <div className="card-media relative overflow-hidden">
+                <Image
+                  src="/images/ramayana-advance-booking-us-jump-la-premiere.jpg"
+                  alt="Ramayana Advance Booking: US Sales Jump 27% After LA Premiere"
+                  fill
+                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 980px) 100vw, 35vw"
+                />
+                <span className="badge lime z-10 relative">Box Office Jump</span>
+              </div>
+              <div className="card-body">
+                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
+                  Ramayana Advance Booking: US Sales Jump 27% After LA Premiere
+                </h3>
+                <div className="meta-row mt-2">
+                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD</span>
+                  <span className="dot-sep">◆</span>
+                  <span>3 MIN READ</span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Card 2: Sara Ali Khan Fatwa */}
             <Link
               href="/sara-ali-khan-fatwa-kedarnath-temple-visit"
               className="card m1 group block"
@@ -291,33 +328,6 @@ export default function BollywoodView() {
                 </div>
               </div>
             </Link>
-
-            {/* Card 2: Eetha Trailer */}
-            <Link
-              href="/eetha-trailer-shraddha-kapoor-vithabai-narayangaonkar"
-              className="card m1 group block"
-            >
-              <div className="card-media relative overflow-hidden">
-                <Image
-                  src="/images/eetha-trailer-shraddha-kapoor-vithabai-narayangaonkar.jpg"
-                  alt="Eetha Trailer Out: Shraddha Kapoor Becomes Tamasha Queen Vithabai Narayangaonkar"
-                  fill
-                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
-                  sizes="(max-width: 980px) 100vw, 35vw"
-                />
-                <span className="badge pink z-10 relative">Trailer Out</span>
-              </div>
-              <div className="card-body">
-                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
-                  Eetha Trailer Out: Shraddha Kapoor Becomes Tamasha Queen Vithabai
-                </h3>
-                <div className="meta-row mt-2">
-                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; MOVIES</span>
-                  <span className="dot-sep">◆</span>
-                  <span>3 MIN READ</span>
-                </div>
-              </div>
-            </Link>
           </div>
         </section>
 
@@ -330,7 +340,7 @@ export default function BollywoodView() {
               </h2>
             </div>
             <span className="text-xs font-mono text-[var(--lime)] font-bold">
-              15 STORIES PUBLISHED
+              16 STORIES PUBLISHED
             </span>
           </div>
 

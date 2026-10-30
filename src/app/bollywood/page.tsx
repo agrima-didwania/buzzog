@@ -8,6 +8,12 @@ export const metadata: Metadata = {
   keywords: [
     "Bollywood Buzz Originals",
     "Bollywood news",
+    "Parivarik ManuRanjan OTT release date",
+    "Parivarik ManuRanjan Sony LIV",
+    "Parivarik ManuRanjan cast",
+    "Parivarik ManuRanjan story",
+    "Pankaj Tripathi new movie",
+    "Aditi Rao Hydari new movie",
     "Ramayana advance booking",
     "Ramayana Part One",
     "Ranbir Kapoor Ramayana",
@@ -74,10 +80,10 @@ export const metadata: Metadata = {
     siteName: "Buzz Originals",
     images: [
       {
-        url: "/images/ramayana-advance-booking-us-jump-la-premiere.jpg",
+        url: "/images/parivarik-manuranjan-ott-release-date-sony-liv.jpg",
         width: 1024,
-        height: 576,
-        alt: "Ramayana Advance Booking: US Sales Jump 27% After LA Premiere — Buzz Originals Bollywood",
+        height: 682,
+        alt: "Parivarik ManuRanjan OTT Release Date: Sony LIV — Buzz Originals Bollywood",
       },
     ],
     type: "website",
@@ -87,7 +93,7 @@ export const metadata: Metadata = {
     title: "Bollywood — Buzz Originals",
     description:
       "Raw, unfiltered Bollywood coverage of red carpets, gossip, airport sightings & exclusives.",
-    images: ["/images/ramayana-advance-booking-us-jump-la-premiere.jpg"],
+    images: ["/images/parivarik-manuranjan-ott-release-date-sony-liv.jpg"],
   },
 };
 
@@ -114,24 +120,30 @@ export default function BollywoodPage() {
         {
           "@type": "ListItem",
           position: 1,
+          name: "Parivarik ManuRanjan Release Date: Pankaj Tripathi and Aditi Rao Hydari’s Film Is Coming to Sony LIV",
+          url: "https://www.buzzoriginals.com/parivarik-manuranjan-ott-release-date-sony-liv",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
           name: "Ramayana Advance Booking: US Sales Jump 27% After LA Premiere",
           url: "https://www.buzzoriginals.com/ramayana-advance-booking-us-jump-la-premiere",
         },
         {
           "@type": "ListItem",
-          position: 2,
+          position: 3,
           name: "Sara Ali Khan Faces Fatwa After Kedarnath Temple Visit",
           url: "https://www.buzzoriginals.com/sara-ali-khan-fatwa-kedarnath-temple-visit",
         },
         {
           "@type": "ListItem",
-          position: 3,
+          position: 4,
           name: "Eetha Trailer Out: Shraddha Kapoor Becomes Tamasha Queen Vithabai Narayangaonkar",
           url: "https://www.buzzoriginals.com/eetha-trailer-shraddha-kapoor-vithabai-narayangaonkar",
         },
         {
           "@type": "ListItem",
-          position: 4,
+          position: 5,
           name: "Mirzapur: The Movie Is Now Streaming on Prime Video With an Extended Cut",
           url: "https://www.buzzoriginals.com/mirzapur-the-movie-prime-video-extended-cut",
         },
