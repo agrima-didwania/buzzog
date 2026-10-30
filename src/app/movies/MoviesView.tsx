@@ -20,6 +20,16 @@ interface MovieArticle {
 
 const movieArticles: MovieArticle[] = [
   {
+    id: "priyanka-chopra-we-were-here",
+    category: "Oscar Contender",
+    title: "Priyanka Chopra Joins Oscar-Qualified Short Film We Were Here",
+    badge: "Oscar Qualified",
+    badgeType: "lime",
+    image: "/images/priyanka-chopra-we-were-here-executive-producer.jpg",
+    href: "/priyanka-chopra-we-were-here-executive-producer",
+    readOrTime: "3 MIN READ",
+  },
+  {
     id: "eetha-trailer-shraddha-kapoor",
     category: "Trailer & Folk Drama",
     title: "Eetha Trailer Out: Shraddha Kapoor Becomes Tamasha Queen Vithabai Narayangaonkar",
@@ -156,46 +166,73 @@ export default function MoviesView() {
 
         {/* Lead Section: Latest Movie Published Article (Cover Story) + The Last 2 Blogs Uploaded Before It */}
         <section className="lead">
-          {/* Featured Card: Eetha Trailer Out */}
+          {/* Featured Card: Priyanka Chopra - We Were Here */}
           <Link
-            href="/eetha-trailer-shraddha-kapoor-vithabai-narayangaonkar"
+            href="/priyanka-chopra-we-were-here-executive-producer"
             className="feature-card group block"
-            aria-label="Read full article: Eetha Trailer Out: Shraddha Kapoor Becomes Tamasha Queen Vithabai Narayangaonkar"
+            aria-label="Read full article: Priyanka Chopra Joins Oscar-Qualified Short Film We Were Here"
           >
             <div className="feature-media relative overflow-hidden">
               <Image
-                src="/images/eetha-trailer-shraddha-kapoor-vithabai-narayangaonkar.jpg"
-                alt="Eetha Trailer Out: Shraddha Kapoor Becomes Tamasha Queen Vithabai Narayangaonkar"
+                src="/images/priyanka-chopra-we-were-here-executive-producer.jpg"
+                alt="Priyanka Chopra Joins Oscar-Qualified Short Film We Were Here"
                 fill
                 priority
                 className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
                 sizes="(max-width: 980px) 100vw, 65vw"
               />
               <div className="noise" />
-              <span className="badge pink feature-tag z-10">
-                🔥 Trailer Out
+              <span className="badge lime feature-tag z-10">
+                🏆 Oscar Qualified
               </span>
             </div>
             <div className="feature-body">
               <h2 className="disp text-white group-hover:text-[var(--lime)] transition-colors">
-                Eetha Trailer Out: Shraddha Kapoor Becomes Tamasha Queen Vithabai Narayangaonkar
+                Priyanka Chopra Joins Oscar-Qualified Short Film We Were Here
               </h2>
               <p>
-                The Eetha trailer is out! See Shraddha Kapoor as Lavani legend Vithabai Narayangaonkar, plus cast, director, new release date and what to expect.
+                Priyanka Chopra Jonas is now an executive producer on “We Were Here,” an Indian short film that has qualified for the Oscars.
               </p>
               <div className="meta-row mt-3">
-                <span className="text-[var(--lime)] font-bold">BOLLYWOOD &amp; CINEMA</span>
+                <span className="text-[var(--lime)] font-bold">MOVIES &amp; CINEMA</span>
                 <span className="dot-sep">·</span>
                 <span>3 MIN READ</span>
                 <span className="dot-sep">·</span>
-                <span className="text-[var(--magenta)] font-bold">DECEMBER 4, 2026</span>
+                <span className="text-[var(--magenta)] font-bold">OSCAR CONTENDER</span>
               </div>
             </div>
           </Link>
 
           {/* Right Stack: The last 2 movie blogs uploaded before this one */}
           <div className="stack">
-            {/* Card 1: Patrick Stewart In Memoriam */}
+            {/* Card 1: Eetha Trailer */}
+            <Link
+              href="/eetha-trailer-shraddha-kapoor-vithabai-narayangaonkar"
+              className="card m1 group block"
+            >
+              <div className="card-media relative overflow-hidden">
+                <Image
+                  src="/images/eetha-trailer-shraddha-kapoor-vithabai-narayangaonkar.jpg"
+                  alt="Eetha Trailer Out: Shraddha Kapoor Becomes Tamasha Queen Vithabai Narayangaonkar"
+                  fill
+                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 980px) 100vw, 35vw"
+                />
+                <span className="badge pink z-10 relative">Trailer Out</span>
+              </div>
+              <div className="card-body">
+                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
+                  Eetha Trailer Out: Shraddha Kapoor Becomes Tamasha Queen Vithabai
+                </h3>
+                <div className="meta-row mt-2">
+                  <span className="text-[var(--lime)] font-bold">BOLLYWOOD</span>
+                  <span className="dot-sep">◆</span>
+                  <span>3 MIN READ</span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Card 2: Patrick Stewart In Memoriam */}
             <Link
               href="/patrick-stewart-dies-at-86-avengers-doomsday-final-role"
               className="card m1 group block"
@@ -221,33 +258,6 @@ export default function MoviesView() {
                 </div>
               </div>
             </Link>
-
-            {/* Card 2: Siddharth Anand King SRK Update */}
-            <Link
-              href="/siddharth-anand-time-for-the-world-king-srk-birthday"
-              className="card m1 group block"
-            >
-              <div className="card-media relative overflow-hidden">
-                <Image
-                  src="/images/siddharth-anand-time-for-the-world-king-srk-birthday.jpg"
-                  alt="Siddharth Anand’s “Time For The World” Post Has SRK Fans Guessing: Is a King Update Coming?"
-                  fill
-                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
-                  sizes="(max-width: 980px) 100vw, 35vw"
-                />
-                <span className="badge pink z-10 relative">King Update</span>
-              </div>
-              <div className="card-body">
-                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
-                  Siddharth Anand’s “Time For The World” Post Has SRK Fans Guessing
-                </h3>
-                <div className="meta-row mt-2">
-                  <span className="text-[var(--lime)] font-bold">CINEMA</span>
-                  <span className="dot-sep">◆</span>
-                  <span>3 MIN READ</span>
-                </div>
-              </div>
-            </Link>
           </div>
         </section>
 
@@ -260,7 +270,7 @@ export default function MoviesView() {
               </h2>
             </div>
             <span className="text-xs font-mono text-[var(--lime)] font-bold">
-              8 STORIES PUBLISHED
+              9 STORIES PUBLISHED
             </span>
           </div>
 

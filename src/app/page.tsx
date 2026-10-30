@@ -177,6 +177,20 @@ export default function Home() {
 
   const editorialArticles: EditorialArticle[] = [
     {
+      id: "priyanka-chopra-we-were-here",
+      anchorId: "priyanka-story",
+      href: "/priyanka-chopra-we-were-here-executive-producer",
+      title: "Priyanka Chopra Joins Oscar-Qualified Short Film We Were Here",
+      excerpt: "Priyanka Chopra Jonas is now an executive producer on “We Were Here,” an Indian short film that has qualified for the Oscars.",
+      category: "News",
+      secondaryCategory: "Bollywood & Hollywood",
+      displayCategory: "MOVIES & NEWS",
+      badge: "Oscar Qualified",
+      badgeType: "lime",
+      readTime: "3 MIN READ",
+      image: "/images/priyanka-chopra-we-were-here-executive-producer.jpg",
+    },
+    {
       id: "sara-ali-khan-fatwa-kedarnath",
       anchorId: "sara-fatwa-story",
       href: "/sara-ali-khan-fatwa-kedarnath-temple-visit",
@@ -490,15 +504,15 @@ export default function Home() {
         <section className="hero" id="featured">
           {/* 1. Main Featured Story (Commanding Top Story Presentation) */}
           <Link
-            href="/sara-ali-khan-fatwa-kedarnath-temple-visit"
+            href="/priyanka-chopra-we-were-here-executive-producer"
             className="feature-card block transition-all hover:border-[var(--lime)] focus-visible:ring-2 focus-visible:ring-[var(--lime)] group"
             style={{ textDecoration: "none", color: "inherit" }}
-            aria-label="Read full article: Sara Ali Khan Faces Fatwa After Kedarnath Temple Visit"
+            aria-label="Read full article: Priyanka Chopra Joins Oscar-Qualified Short Film We Were Here"
           >
             <div className="feature-media" style={{ overflow: "hidden", position: "relative" }}>
               <Image
-                src="/images/sara-ali-khan-fatwa-kedarnath-temple-visit.jpg"
-                alt="Sara Ali Khan Faces Fatwa After Kedarnath Temple Visit"
+                src="/images/priyanka-chopra-we-were-here-executive-producer.jpg"
+                alt="Priyanka Chopra Joins Oscar-Qualified Short Film We Were Here"
                 fill
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 750px"
@@ -507,24 +521,24 @@ export default function Home() {
               />
               <div className="noise" style={{ pointerEvents: "none" }}></div>
               <div className="feature-tag flex items-center gap-2">
-                <span className="badge pink">🔥 Fatwa Row</span>
-                <span className="badge">Bollywood News</span>
-                <span className="badge lime">Kedarnath Visit</span>
+                <span className="badge lime">🏆 Oscar Qualified</span>
+                <span className="badge">Movies &amp; News</span>
+                <span className="badge pink">Priyanka Chopra</span>
               </div>
             </div>
             <div className="feature-body">
               <div className="flex items-center gap-2 mb-2 font-mono text-xs text-[var(--lime)] font-bold tracking-wider uppercase">
-                <span>★ TOP STORY · CONTROVERSY</span>
+                <span>★ TOP STORY · OSCAR CONTENDER</span>
               </div>
               <h1 className="disp" style={{ color: "#fff" }}>
-                Sara Ali Khan Faces Fatwa After Kedarnath Temple Visit
+                Priyanka Chopra Joins Oscar-Qualified Short Film We Were Here
               </h1>
               <p>
-                Bareilly cleric Maulana Mufti Shahabuddin Razvi Barelvi has issued a fatwa against Sara Ali Khan following her recent trip to Kedarnath Temple, terming the prayers &lsquo;impermissible&rsquo; and &lsquo;haram&rsquo;. Here is what happened, the affidavit rule, and her viral statements.
+                Priyanka Chopra Jonas has joined the Oscar-qualified Indian short film &ldquo;We Were Here&rdquo; as an executive producer alongside Andrew Scott and playwright V. Directed by Pranav Bhasin, the acclaimed mockumentary has swept over 80 festivals and won 20+ awards.
               </p>
               <div className="meta-row mt-auto pt-3 border-t border-white/[0.06] flex items-center justify-between">
                 <div className="flex items-center gap-3">
-                  <span>BOLLYWOOD &amp; NEWS</span>
+                  <span>MOVIES &amp; NEWS</span>
                   <span className="dot-sep">◆</span>
                   <span>3 MIN READ</span>
                   <span className="dot-sep">◆</span>
@@ -547,6 +561,18 @@ export default function Home() {
               <span className="trend-rank">01</span>
               <div className="trend-text">
                 <Link
+                  href="/priyanka-chopra-we-were-here-executive-producer"
+                  style={{ color: "inherit" }}
+                >
+                  <h3>Priyanka Chopra joins Oscar-qualified short film We Were Here as executive producer</h3>
+                  <span>MOVIES &amp; NEWS · 275K REACTIONS</span>
+                </Link>
+              </div>
+            </div>
+            <div className="trend-item">
+              <span className="trend-rank">02</span>
+              <div className="trend-text">
+                <Link
                   href="/sara-ali-khan-fatwa-kedarnath-temple-visit"
                   style={{ color: "inherit" }}
                 >
@@ -556,7 +582,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">02</span>
+              <span className="trend-rank">03</span>
               <div className="trend-text">
                 <Link
                   href="/eetha-trailer-shraddha-kapoor-vithabai-narayangaonkar"
@@ -568,7 +594,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">03</span>
+              <span className="trend-rank">04</span>
               <div className="trend-text">
                 <Link
                   href="/patrick-stewart-dies-at-86-avengers-doomsday-final-role"
@@ -580,7 +606,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">04</span>
+              <span className="trend-rank">05</span>
               <div className="trend-text">
                 <Link
                   href="/mirzapur-the-movie-prime-video-extended-cut"
@@ -588,18 +614,6 @@ export default function Home() {
                 >
                   <h3>Mirzapur: The Movie now streaming on Prime Video with an extended cut and unseen scenes</h3>
                   <span>BOLLYWOOD &amp; WEB SERIES · 195K REACTIONS</span>
-                </Link>
-              </div>
-            </div>
-            <div className="trend-item">
-              <span className="trend-rank">05</span>
-              <div className="trend-text">
-                <Link
-                  href="/siddharth-anand-time-for-the-world-king-srk-birthday"
-                  style={{ color: "inherit" }}
-                >
-                  <h3>Siddharth Anand’s “Time For The World” post has SRK fans guessing: Is a King update coming?</h3>
-                  <span>BOLLYWOOD &amp; MOVIES · 185K REACTIONS</span>
                 </Link>
               </div>
             </div>
