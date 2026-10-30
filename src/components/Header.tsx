@@ -19,7 +19,7 @@ export default function Header({ activeNav = "Home" }: HeaderProps) {
     { label: "Reality Shows", href: "/reality-shows" },
     { label: "Bollywood", href: "/bollywood" },
     { label: "Movies", href: "/movies" },
-    { label: "Web Series", href: "/#web-series" },
+    { label: "Web Series", href: "/web-series" },
     { label: "News", href: "/#news" },
   ];
 

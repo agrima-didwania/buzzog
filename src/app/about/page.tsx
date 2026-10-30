@@ -81,7 +81,7 @@ export default function AboutPage() {
             <li>
               <div className="flex flex-col sm:flex-row sm:items-start gap-1 sm:gap-3 flex-1">
                 <strong className="text-white font-bold sm:min-w-[150px] flex-shrink-0">
-                  <Link href="/#web-series" className="hover:text-[var(--lime)] transition-colors">
+                  <Link href="/web-series" className="hover:text-[var(--lime)] transition-colors">
                     Web Series:
                   </Link>
                 </strong>
