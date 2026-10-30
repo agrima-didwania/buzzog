@@ -7,6 +7,12 @@ export const metadata: Metadata = {
     "Movies coverage from Buzz Originals — raw, unfiltered, built for the group chat. Box office numbers, trailer breakdowns, clashes and spoiler-free verdicts.",
   keywords: [
     "Movies Buzz Originals",
+    "IIFA 2026 winners",
+    "IIFA Awards 2026 full list",
+    "Dhurandhar IIFA awards",
+    "Ranveer Singh Best Actor",
+    "Aneet Padda Best Actress",
+    "Ranveer Singh",
     "Parivarik ManuRanjan OTT release date",
     "Parivarik ManuRanjan Sony LIV",
     "Parivarik ManuRanjan cast",
@@ -71,10 +77,10 @@ export const metadata: Metadata = {
     siteName: "Buzz Originals",
     images: [
       {
-        url: "/images/parivarik-manuranjan-ott-release-date-sony-liv.jpg",
+        url: "/images/iifa-2026-winners-list.jpg",
         width: 1024,
-        height: 682,
-        alt: "Parivarik ManuRanjan OTT Release Date: Sony LIV — Buzz Originals Movies",
+        height: 576,
+        alt: "IIFA 2026 Winners List: Dhurandhar Wins 12 Awards — Buzz Originals Movies",
       },
     ],
     type: "website",
@@ -84,7 +90,7 @@ export const metadata: Metadata = {
     title: "Movies — Buzz Originals",
     description:
       "Raw, unfiltered movie coverage: box office clashes, trailer breakdowns & spoiler-free verdicts.",
-    images: ["/images/parivarik-manuranjan-ott-release-date-sony-liv.jpg"],
+    images: ["/images/iifa-2026-winners-list.jpg"],
   },
 };
 
@@ -111,12 +117,18 @@ export default function MoviesPage() {
         {
           "@type": "ListItem",
           position: 1,
+          name: "IIFA 2026 Winners List: Dhurandhar Wins 12 Awards",
+          url: "https://www.buzzoriginals.com/iifa-2026-winners-list",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
           name: "Parivarik ManuRanjan Release Date: Pankaj Tripathi and Aditi Rao Hydari’s Film Is Coming to Sony LIV",
           url: "https://www.buzzoriginals.com/parivarik-manuranjan-ott-release-date-sony-liv",
         },
         {
           "@type": "ListItem",
-          position: 2,
+          position: 3,
           name: "Ramayana Advance Booking: US Sales Jump 27% After LA Premiere",
           url: "https://www.buzzoriginals.com/ramayana-advance-booking-us-jump-la-premiere",
         },

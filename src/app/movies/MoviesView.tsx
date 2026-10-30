@@ -20,6 +20,16 @@ interface MovieArticle {
 
 const movieArticles: MovieArticle[] = [
   {
+    id: "iifa-2026-winners",
+    category: "IIFA Awards 2026",
+    title: "IIFA 2026 Winners List: Dhurandhar Wins 12 Awards, Ranveer Singh & Aneet Padda Win Big",
+    badge: "IIFA Winners",
+    badgeType: "lime",
+    image: "/images/iifa-2026-winners-list.jpg",
+    href: "/iifa-2026-winners-list",
+    readOrTime: "4 MIN READ",
+  },
+  {
     id: "parivarik-manuranjan-ott-release",
     category: "OTT Premiere",
     title: "Parivarik ManuRanjan: Pankaj Tripathi & Aditi Rao Hydari's Rom-Com Sets Sony LIV Date",
@@ -186,16 +196,16 @@ export default function MoviesView() {
 
         {/* Lead Section: Latest Movie Published Article (Cover Story) + The Last 2 Blogs Uploaded Before It */}
         <section className="lead">
-          {/* Featured Card: Parivarik ManuRanjan */}
+          {/* Featured Card: IIFA 2026 Winners List */}
           <Link
-            href="/parivarik-manuranjan-ott-release-date-sony-liv"
+            href="/iifa-2026-winners-list"
             className="feature-card group block"
-            aria-label="Read full article: Parivarik ManuRanjan OTT Release Date: Sony LIV"
+            aria-label="Read full article: IIFA 2026 Winners List: Dhurandhar Wins 12 Awards"
           >
             <div className="feature-media relative overflow-hidden">
               <Image
-                src="/images/parivarik-manuranjan-ott-release-date-sony-liv.jpg"
-                alt="Parivarik ManuRanjan OTT Release Date: Sony LIV"
+                src="/images/iifa-2026-winners-list.jpg"
+                alt="IIFA 2026 Winners List: Dhurandhar Wins 12 Awards"
                 fill
                 priority
                 className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
@@ -203,29 +213,56 @@ export default function MoviesView() {
               />
               <div className="noise" />
               <span className="badge lime feature-tag z-10">
-                📺 OTT Premiere
+                🏆 IIFA 2026 Winners
               </span>
             </div>
             <div className="feature-body">
               <h2 className="disp text-white group-hover:text-[var(--lime)] transition-colors">
-                Parivarik ManuRanjan OTT Release Date: Sony LIV
+                IIFA 2026 Winners List: Dhurandhar Wins 12 Awards
               </h2>
               <p>
-                Parivarik ManuRanjan starring Pankaj Tripathi and Aditi Rao Hydari premieres on Sony LIV on November 13. Know the story, cast, director and more.
+                See the full IIFA 2026 winners list. Dhurandhar won 12 awards, Ranveer Singh and Aneet Padda won top acting prizes, and The Ba*ds of Bollywood won Best Series.
               </p>
               <div className="meta-row mt-3">
-                <span className="text-[var(--lime)] font-bold">MOVIES &amp; OTT</span>
+                <span className="text-[var(--lime)] font-bold">MOVIES &amp; AWARDS</span>
                 <span className="dot-sep">·</span>
-                <span>3 MIN READ</span>
+                <span>4 MIN READ</span>
                 <span className="dot-sep">·</span>
-                <span className="text-[var(--magenta)] font-bold">NOV 13 PREMIERE</span>
+                <span className="text-[var(--magenta)] font-bold">OCT 31 WINNERS</span>
               </div>
             </div>
           </Link>
 
           {/* Right Stack: The last 2 movie blogs uploaded before this one */}
           <div className="stack">
-            {/* Card 1: Ramayana Advance Booking */}
+            {/* Card 1: Parivarik ManuRanjan */}
+            <Link
+              href="/parivarik-manuranjan-ott-release-date-sony-liv"
+              className="card m1 group block"
+            >
+              <div className="card-media relative overflow-hidden">
+                <Image
+                  src="/images/parivarik-manuranjan-ott-release-date-sony-liv.jpg"
+                  alt="Parivarik ManuRanjan OTT Release Date: Sony LIV"
+                  fill
+                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 980px) 100vw, 35vw"
+                />
+                <span className="badge lime z-10 relative">OTT Premiere</span>
+              </div>
+              <div className="card-body">
+                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
+                  Parivarik ManuRanjan: Pankaj Tripathi &amp; Aditi Rao Hydari Film on Sony LIV
+                </h3>
+                <div className="meta-row mt-2">
+                  <span className="text-[var(--lime)] font-bold">OTT PREMIERE</span>
+                  <span className="dot-sep">◆</span>
+                  <span>3 MIN READ</span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Card 2: Ramayana Advance Booking */}
             <Link
               href="/ramayana-advance-booking-us-jump-la-premiere"
               className="card m1 group block"
@@ -251,33 +288,6 @@ export default function MoviesView() {
                 </div>
               </div>
             </Link>
-
-            {/* Card 2: Priyanka Chopra - We Were Here */}
-            <Link
-              href="/priyanka-chopra-we-were-here-executive-producer"
-              className="card m1 group block"
-            >
-              <div className="card-media relative overflow-hidden">
-                <Image
-                  src="/images/priyanka-chopra-we-were-here-executive-producer.jpg"
-                  alt="Priyanka Chopra Joins Oscar-Qualified Short Film We Were Here"
-                  fill
-                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
-                  sizes="(max-width: 980px) 100vw, 35vw"
-                />
-                <span className="badge lime z-10 relative">Oscar Qualified</span>
-              </div>
-              <div className="card-body">
-                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
-                  Priyanka Chopra Joins Oscar-Qualified Film We Were Here
-                </h3>
-                <div className="meta-row mt-2">
-                  <span className="text-[var(--lime)] font-bold">CINEMA</span>
-                  <span className="dot-sep">◆</span>
-                  <span>3 MIN READ</span>
-                </div>
-              </div>
-            </Link>
           </div>
         </section>
 
@@ -290,7 +300,7 @@ export default function MoviesView() {
               </h2>
             </div>
             <span className="text-xs font-mono text-[var(--lime)] font-bold">
-              11 STORIES PUBLISHED
+              12 STORIES PUBLISHED
             </span>
           </div>
 

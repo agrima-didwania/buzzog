@@ -639,6 +639,18 @@ export default function IIFA2026WinnersPage() {
               ← Back to Bollywood Hub
             </Link>
             <Link
+              href="/movies"
+              style={{
+                color: "var(--lime)",
+                fontSize: "14px",
+                fontFamily: "var(--font-space-mono)",
+                fontWeight: 700,
+                textDecoration: "underline",
+              }}
+            >
+              Movies Hub →
+            </Link>
+            <Link
               href="/web-series"
               style={{
                 color: "var(--magenta)",
