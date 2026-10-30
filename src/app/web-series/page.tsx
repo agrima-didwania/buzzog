@@ -70,8 +70,20 @@ export default function WebSeriesPage() {
         {
           "@type": "ListItem",
           position: 1,
+          name: "Parivarik ManuRanjan: Pankaj Tripathi & Aditi Rao Hydari's Rom-Com Sets Sony LIV Date",
+          url: "https://www.buzzoriginals.com/parivarik-manuranjan-ott-release-date-sony-liv",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
           name: "Mirzapur: The Movie Is Now Streaming on Prime Video With an Extended Cut",
           url: "https://www.buzzoriginals.com/mirzapur-the-movie-prime-video-extended-cut",
+        },
+        {
+          "@type": "ListItem",
+          position: 3,
+          name: "Priyanka Chopra Joins Oscar-Qualified Short Film We Were Here",
+          url: "https://www.buzzoriginals.com/priyanka-chopra-we-were-here-executive-producer",
         },
       ],
     },

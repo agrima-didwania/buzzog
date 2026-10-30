@@ -13,14 +13,26 @@ interface WebSeriesArticle {
   badge: string;
   badgeType?: "pink" | "lime" | "default";
   mediaClass?: string;
-  image?: string;
+  image: string;
   href: string;
   readOrTime: string;
   excerpt?: string;
 }
 
-// All verified web series articles in reverse chronological order
+// All verified web series and OTT articles in reverse chronological order
 const webSeriesArticles: WebSeriesArticle[] = [
+  {
+    id: "parivarik-manuranjan-ott-release",
+    category: "Sony LIV Original",
+    title: "Parivarik ManuRanjan: Pankaj Tripathi & Aditi Rao Hydari's Rom-Com Sets Sony LIV Date",
+    badge: "OTT Premiere",
+    badgeType: "lime",
+    image: "/images/parivarik-manuranjan-ott-release-date-sony-liv.jpg",
+    href: "/parivarik-manuranjan-ott-release-date-sony-liv",
+    readOrTime: "3 MIN READ",
+    excerpt:
+      "Parivarik ManuRanjan starring Pankaj Tripathi and Aditi Rao Hydari premieres on Sony LIV on November 13. Know the story, cast, director and more.",
+  },
   {
     id: "mirzapur-the-movie-ott",
     category: "Prime Video Original",
@@ -32,6 +44,18 @@ const webSeriesArticles: WebSeriesArticle[] = [
     readOrTime: "3 MIN READ",
     excerpt:
       "Mirzapur: The Movie is now on Prime Video with an extended cut and unseen scenes. Check the runtime, cast, language and how to watch.",
+  },
+  {
+    id: "priyanka-chopra-we-were-here",
+    category: "Digital Premiere",
+    title: "Priyanka Chopra Joins Oscar-Qualified Short Film We Were Here",
+    badge: "Oscar Qualified",
+    badgeType: "lime",
+    image: "/images/priyanka-chopra-we-were-here-executive-producer.jpg",
+    href: "/priyanka-chopra-we-were-here-executive-producer",
+    readOrTime: "3 MIN READ",
+    excerpt:
+      "Priyanka Chopra Jonas is now an executive producer on “We Were Here,” an Indian short film streaming on digital platforms that has qualified for the Oscars.",
   },
 ];
 
@@ -88,95 +112,100 @@ export default function WebSeriesView() {
           </div>
         </section>
 
-        {/* Lead Section: Latest Published Web Series (Cover Story) + Stack of Previous Articles */}
-        {webSeriesArticles.length > 0 && (
-          <section
-            className="lead"
-            style={{
-              gridTemplateColumns:
-                webSeriesArticles.length > 1 ? undefined : "1fr",
-            }}
+        {/* Lead Section: Latest Published Web Series (Cover Story) + 2-Card Stack */}
+        <section className="lead">
+          {/* Featured Cover Story */}
+          <Link
+            href={webSeriesArticles[0].href}
+            className="feature-card group block"
+            aria-label={`Read full article: ${webSeriesArticles[0].title}`}
           >
-            {/* Featured Cover Story */}
-            <Link
-              href={webSeriesArticles[0].href}
-              className="feature-card group block"
-              aria-label={`Read full article: ${webSeriesArticles[0].title}`}
-            >
-              <div className="feature-media relative overflow-hidden">
-                {webSeriesArticles[0].image && (
-                  <Image
-                    src={webSeriesArticles[0].image}
-                    alt={webSeriesArticles[0].title}
-                    fill
-                    priority
-                    className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
-                    sizes="(max-width: 980px) 100vw, 65vw"
-                  />
-                )}
-                <div className="noise" />
-                <span className="badge pink feature-tag z-10">
-                  💥 {webSeriesArticles[0].badge}
+            <div className="feature-media relative overflow-hidden">
+              <Image
+                src={webSeriesArticles[0].image}
+                alt={webSeriesArticles[0].title}
+                fill
+                priority
+                className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                sizes="(max-width: 980px) 100vw, 65vw"
+              />
+              <div className="noise" />
+              <span
+                className={`badge ${
+                  webSeriesArticles[0].badgeType === "lime" ? "lime" : "pink"
+                } feature-tag z-10`}
+              >
+                {webSeriesArticles[0].badgeType === "lime" ? "📺" : "💥"}{" "}
+                {webSeriesArticles[0].badge}
+              </span>
+            </div>
+            <div className="feature-body">
+              <h2 className="disp text-white group-hover:text-[var(--lime)] transition-colors">
+                {webSeriesArticles[0].title}
+              </h2>
+              <p>{webSeriesArticles[0].excerpt}</p>
+              <div className="meta-row mt-3">
+                <span className="text-[var(--lime)] font-bold">
+                  {webSeriesArticles[0].category.toUpperCase()}
+                </span>
+                <span className="dot-sep">◆</span>
+                <span>{webSeriesArticles[0].readOrTime}</span>
+                <span className="dot-sep">◆</span>
+                <span className="text-[var(--magenta)] font-bold">
+                  STREAMING NOW
                 </span>
               </div>
-              <div className="feature-body">
-                <h2 className="disp text-white group-hover:text-[var(--lime)] transition-colors">
-                  {webSeriesArticles[0].title}
-                </h2>
-                <p>{webSeriesArticles[0].excerpt}</p>
-                <div className="meta-row mt-3">
-                  <span className="text-[var(--magenta)] font-bold">
-                    {webSeriesArticles[0].category.toUpperCase()}
-                  </span>
-                  <span className="dot-sep">◆</span>
-                  <span>{webSeriesArticles[0].readOrTime}</span>
-                  <span className="dot-sep">◆</span>
-                  <span className="text-[var(--lime)] font-bold">STREAMING NOW</span>
-                </div>
-              </div>
-            </Link>
+            </div>
+          </Link>
 
-            {/* Right Stack: Only rendered when there are previous articles */}
-            {webSeriesArticles.length > 1 && (
-              <div className="stack">
-                {webSeriesArticles.slice(1, 3).map((art) => (
-                  <Link
-                    key={art.id}
-                    href={art.href}
-                    className="card m1 group block"
+          {/* Right Stack: 2 Recent Stories */}
+          <div className="stack">
+            {webSeriesArticles.slice(1, 3).map((art) => (
+              <Link
+                key={art.id}
+                href={art.href}
+                className="card m1 group block"
+              >
+                <div className="card-media relative overflow-hidden">
+                  <Image
+                    src={art.image}
+                    alt={art.title}
+                    fill
+                    className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                    sizes="(max-width: 980px) 100vw, 35vw"
+                  />
+                  <span
+                    className={`badge ${
+                      art.badgeType === "lime" ? "lime" : "pink"
+                    } z-10 relative`}
                   >
-                    <div className="card-media relative overflow-hidden">
-                      {art.image && (
-                        <Image
-                          src={art.image}
-                          alt={art.title}
-                          fill
-                          className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
-                          sizes="(max-width: 980px) 100vw, 35vw"
-                        />
-                      )}
-                      <span className="badge pink z-10 relative">{art.badge}</span>
-                    </div>
-                    <div className="card-body">
-                      <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
-                        {art.title}
-                      </h3>
-                      <div className="meta-row mt-2">
-                        <span className="text-[var(--lime)] font-bold">
-                          {art.category.toUpperCase()}
-                        </span>
-                        <span className="dot-sep">◆</span>
-                        <span>{art.readOrTime}</span>
-                      </div>
-                    </div>
-                  </Link>
-                ))}
-              </div>
-            )}
-          </section>
-        )}
+                    {art.badge}
+                  </span>
+                </div>
+                <div className="card-body">
+                  <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
+                    {art.title}
+                  </h3>
+                  <div className="meta-row mt-2">
+                    <span
+                      className={`font-bold ${
+                        art.badgeType === "lime"
+                          ? "text-[var(--lime)]"
+                          : "text-[var(--magenta)]"
+                      }`}
+                    >
+                      {art.category.toUpperCase()}
+                    </span>
+                    <span className="dot-sep">◆</span>
+                    <span>{art.readOrTime}</span>
+                  </div>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </section>
 
-        {/* All Web Series Buzz Grid - Only published articles shown */}
+        {/* All Web Series Buzz Grid */}
         <section className="section" id="webseries-grid">
           <div className="section-head">
             <div>
@@ -185,8 +214,7 @@ export default function WebSeriesView() {
               </h2>
             </div>
             <span className="text-xs font-mono text-[var(--lime)] font-bold">
-              {webSeriesArticles.length}{" "}
-              {webSeriesArticles.length === 1 ? "STORY" : "STORIES"} PUBLISHED
+              {webSeriesArticles.length} STORIES PUBLISHED
             </span>
           </div>
 
@@ -198,18 +226,16 @@ export default function WebSeriesView() {
                 className={`card ${art.mediaClass || "m1"} group flex flex-col justify-between`}
               >
                 <div className="card-media relative overflow-hidden">
-                  {art.image && (
-                    <Image
-                      src={art.image}
-                      alt={art.title}
-                      fill
-                      className="object-cover group-hover:scale-105 transition-transform duration-300"
-                      sizes="(max-width: 640px) 100vw, (max-width: 980px) 50vw, 33vw"
-                    />
-                  )}
+                  <Image
+                    src={art.image}
+                    alt={art.title}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-300"
+                    sizes="(max-width: 640px) 100vw, (max-width: 980px) 50vw, 33vw"
+                  />
                   <span
                     className={`badge ${
-                      art.badgeType === "pink" ? "pink" : ""
+                      art.badgeType === "lime" ? "lime" : "pink"
                     } z-10 relative`}
                   >
                     {art.badge}
@@ -222,9 +248,9 @@ export default function WebSeriesView() {
                   <div className="meta-row mt-3">
                     <span
                       className={`font-bold uppercase ${
-                        art.badgeType === "pink"
-                          ? "text-[var(--magenta)]"
-                          : "text-[var(--lime)]"
+                        art.badgeType === "lime"
+                          ? "text-[var(--lime)]"
+                          : "text-[var(--magenta)]"
                       }`}
                     >
                       {art.category}
