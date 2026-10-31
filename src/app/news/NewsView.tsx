@@ -22,6 +22,18 @@ interface NewsArticle {
 // Only verified breaking entertainment news stories (fatwas, obituaries, police complaints, eviction rows, box-office shifts)
 const newsArticles: NewsArticle[] = [
   {
+    id: "sanjay-dutt-kaante-2-promise",
+    category: "Bollywood",
+    title: "Sanjay Dutt Promises to Make Kaante 2 in Memory of Sanjay Gupta",
+    badge: "Kaante 2 Promise",
+    badgeType: "lime",
+    image: "/images/sanjay-dutt-kaante-2-promise-sanjay-gupta-death.jpg",
+    href: "/sanjay-dutt-kaante-2-promise-sanjay-gupta-death",
+    readOrTime: "3 MIN READ",
+    excerpt:
+      "Sanjay Dutt shares an emotional note after Sanjay Gupta's demise, vowing to fulfill his dream of making Kaante 2 in memory of their lifelong friendship.",
+  },
+  {
     id: "sanjay-gupta-passes-away",
     category: "Bollywood",
     title: "Sanjay Gupta Passes Away: Bollywood Loses the Director of Kaante and Shootout at Wadala",

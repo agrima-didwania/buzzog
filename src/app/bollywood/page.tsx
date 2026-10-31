@@ -8,6 +8,10 @@ export const metadata: Metadata = {
   keywords: [
     "Bollywood Buzz Originals",
     "Bollywood news",
+    "Sanjay Dutt",
+    "Sanjay Gupta death",
+    "Kaante 2",
+    "Sanjay Dutt Kaante 2",
     "Varun Dhawan Sidharth Malhotra",
     "Varun Dhawan Kiara Advani",
     "Varun Dhawan Instagram post",
@@ -108,10 +112,10 @@ export const metadata: Metadata = {
     siteName: "Buzz Originals",
     images: [
       {
-        url: "/images/varun-dhawan-sidharth-malhotra-kiara-advani-reunion.jpg",
+        url: "/images/sanjay-dutt-kaante-2-promise-sanjay-gupta-death.jpg",
         width: 1024,
         height: 576,
-        alt: "Varun Dhawan Sidharth Malhotra Reunion: “Never a Rivalry” — Buzz Originals Bollywood",
+        alt: "Sanjay Dutt Promises Kaante 2 After Sanjay Gupta’s Death — Buzz Originals Bollywood",
       },
     ],
     type: "website",
@@ -121,7 +125,7 @@ export const metadata: Metadata = {
     title: "Bollywood — Buzz Originals",
     description:
       "Raw, unfiltered Bollywood coverage of red carpets, gossip, airport sightings & exclusives.",
-    images: ["/images/varun-dhawan-sidharth-malhotra-kiara-advani-reunion.jpg"],
+    images: ["/images/sanjay-dutt-kaante-2-promise-sanjay-gupta-death.jpg"],
   },
 };
 
@@ -148,18 +152,24 @@ export default function BollywoodPage() {
         {
           "@type": "ListItem",
           position: 1,
+          name: "Sanjay Dutt Promises Kaante 2 After Sanjay Gupta’s Death",
+          url: "https://www.buzzoriginals.com/sanjay-dutt-kaante-2-promise-sanjay-gupta-death",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
           name: "Varun Dhawan Sidharth Malhotra Reunion: “Never a Rivalry”",
           url: "https://www.buzzoriginals.com/varun-dhawan-sidharth-malhotra-kiara-advani-reunion",
         },
         {
           "@type": "ListItem",
-          position: 2,
+          position: 3,
           name: "Sanjay Gupta Passes Away: Bollywood Loses the Director of Kaante and Shootout at Wadala",
           url: "https://www.buzzoriginals.com/sanjay-gupta-passes-away-shootout-at-wadala-director",
         },
         {
           "@type": "ListItem",
-          position: 3,
+          position: 4,
           name: "IIFA 2026 Winners List: Dhurandhar Wins 12 Awards",
           url: "https://www.buzzoriginals.com/iifa-2026-winners-list",
         },

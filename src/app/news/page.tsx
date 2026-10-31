@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   keywords: [
     "Entertainment News Buzz Originals",
     "Bollywood breaking news",
+    "Sanjay Dutt",
+    "Kaante 2",
+    "Sanjay Dutt Kaante 2",
     "Sanjay Gupta death",
     "Sanjay Gupta passes away",
     "Shootout at Wadala director",
@@ -51,10 +54,10 @@ export const metadata: Metadata = {
     siteName: "Buzz Originals",
     images: [
       {
-        url: "/images/sanjay-gupta-passes-away-shootout-at-wadala-director.jpg",
+        url: "/images/sanjay-dutt-kaante-2-promise-sanjay-gupta-death.jpg",
         width: 1024,
         height: 576,
-        alt: "Sanjay Gupta Passes Away: Bollywood Loses the Director of Kaante and Shootout at Wadala — Buzz Originals News Desk",
+        alt: "Sanjay Dutt Promises Kaante 2 After Sanjay Gupta’s Death — Buzz Originals News Desk",
       },
     ],
     type: "website",
@@ -64,7 +67,7 @@ export const metadata: Metadata = {
     title: "News — Buzz Originals",
     description:
       "Raw, unfiltered entertainment news across reality TV, Bollywood, movies and OTT.",
-    images: ["/images/sanjay-gupta-passes-away-shootout-at-wadala-director.jpg"],
+    images: ["/images/sanjay-dutt-kaante-2-promise-sanjay-gupta-death.jpg"],
   },
 };
 

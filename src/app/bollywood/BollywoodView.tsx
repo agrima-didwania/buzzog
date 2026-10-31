@@ -20,6 +20,16 @@ interface BollywoodArticle {
 
 const bollywoodArticles: BollywoodArticle[] = [
   {
+    id: "sanjay-dutt-kaante-2-promise",
+    category: "In Memoriam & Sequel",
+    title: "Sanjay Dutt Promises to Make Kaante 2 in Memory of Sanjay Gupta",
+    badge: "Kaante 2 Promise",
+    badgeType: "lime",
+    image: "/images/sanjay-dutt-kaante-2-promise-sanjay-gupta-death.jpg",
+    href: "/sanjay-dutt-kaante-2-promise-sanjay-gupta-death",
+    readOrTime: "3 MIN READ",
+  },
+  {
     id: "varun-sidharth-reunion",
     category: "Reunion & Friendship",
     title: "Varun Dhawan Sidharth Malhotra Reunion: “Never a Rivalry” With Kiara Advani",
@@ -286,16 +296,16 @@ export default function BollywoodView() {
 
         {/* Lead Section: Latest Bollywood Published Article (Cover Story) + The Last 2 Blogs Uploaded Before It */}
         <section className="lead">
-          {/* Cover Story: Latest Published Bollywood Story (Varun & Sidharth Reunion) */}
+          {/* Cover Story: Latest Published Bollywood Story (Sanjay Dutt Promises Kaante 2) */}
           <Link
-            href="/varun-dhawan-sidharth-malhotra-kiara-advani-reunion"
+            href="/sanjay-dutt-kaante-2-promise-sanjay-gupta-death"
             className="feature-card group block"
-            aria-label="Read full cover story: Varun Dhawan Sidharth Malhotra Reunion"
+            aria-label="Read full cover story: Sanjay Dutt Promises Kaante 2 After Sanjay Gupta's Death"
           >
             <div className="feature-media relative overflow-hidden">
               <Image
-                src="/images/varun-dhawan-sidharth-malhotra-kiara-advani-reunion.jpg"
-                alt="Varun Dhawan Sidharth Malhotra Reunion: “Never a Rivalry” — Kiara Advani"
+                src="/images/sanjay-dutt-kaante-2-promise-sanjay-gupta-death.jpg"
+                alt="Sanjay Dutt Promises Kaante 2 After Sanjay Gupta’s Death"
                 fill
                 priority
                 className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
@@ -303,18 +313,18 @@ export default function BollywoodView() {
               />
               <div className="noise" />
               <span className="badge pink feature-tag z-10">
-                ✨ SOTY Reunion
+                💔 In Memoriam
               </span>
             </div>
             <div className="feature-body">
               <h2 className="disp text-white group-hover:text-[var(--lime)] transition-colors">
-                Varun Dhawan Meets Sidharth Malhotra and Kiara Advani, Fans Love the Bollywood Friendship
+                Sanjay Dutt Promises to Make Kaante 2 in Memory of Sanjay Gupta
               </h2>
               <p>
-                Varun Dhawan meets Sidharth Malhotra and Kiara Advani in Mumbai. Read his viral Instagram post, Sidharth’s reply and Karan Johar’s reaction.
+                Sanjay Dutt has shared an emotional note after filmmaker Sanjay Gupta’s death. He has promised to make Kaante 2 in memory of his close friend.
               </p>
               <div className="meta-row mt-3">
-                <span className="text-[var(--magenta)] font-bold">BOLLYWOOD</span>
+                <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; NEWS</span>
                 <span className="dot-sep">◆</span>
                 <span>3 MIN READ</span>
                 <span className="dot-sep">◆</span>
@@ -325,7 +335,34 @@ export default function BollywoodView() {
 
           {/* Right Stack: The last 2 blogs uploaded before the latest one */}
           <div className="stack">
-            {/* Card 1: Sanjay Gupta Passes Away */}
+            {/* Card 1: Varun Dhawan & Sidharth Malhotra Reunion */}
+            <Link
+              href="/varun-dhawan-sidharth-malhotra-kiara-advani-reunion"
+              className="card m1 group block"
+            >
+              <div className="card-media relative overflow-hidden">
+                <Image
+                  src="/images/varun-dhawan-sidharth-malhotra-kiara-advani-reunion.jpg"
+                  alt="Varun Dhawan Sidharth Malhotra Reunion: “Never a Rivalry” — Kiara Advani"
+                  fill
+                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 980px) 100vw, 35vw"
+                />
+                <span className="badge pink z-10 relative">✨ SOTY Reunion</span>
+              </div>
+              <div className="card-body">
+                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
+                  Varun Dhawan Meets Sidharth Malhotra &amp; Kiara Advani: “Never a Rivalry”
+                </h3>
+                <div className="meta-row mt-2">
+                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD</span>
+                  <span className="dot-sep">◆</span>
+                  <span>3 MIN READ</span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Card 2: Sanjay Gupta Passes Away */}
             <Link
               href="/sanjay-gupta-passes-away-shootout-at-wadala-director"
               className="card m1 group block"
@@ -351,33 +388,6 @@ export default function BollywoodView() {
                 </div>
               </div>
             </Link>
-
-            {/* Card 2: IIFA 2026 Winners */}
-            <Link
-              href="/iifa-2026-winners-list"
-              className="card m1 group block"
-            >
-              <div className="card-media relative overflow-hidden">
-                <Image
-                  src="/images/iifa-2026-winners-list.jpg"
-                  alt="IIFA 2026 Winners List: Dhurandhar Wins 12 Awards"
-                  fill
-                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
-                  sizes="(max-width: 980px) 100vw, 35vw"
-                />
-                <span className="badge lime z-10 relative">IIFA Winners</span>
-              </div>
-              <div className="card-body">
-                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
-                  IIFA 2026 Winners List: Dhurandhar Wins 12 Awards, Ranveer &amp; Aneet Top Honors
-                </h3>
-                <div className="meta-row mt-2">
-                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; WEB SERIES</span>
-                  <span className="dot-sep">◆</span>
-                  <span>4 MIN READ</span>
-                </div>
-              </div>
-            </Link>
           </div>
         </section>
 
@@ -390,7 +400,7 @@ export default function BollywoodView() {
               </h2>
             </div>
             <span className="text-xs font-mono text-[var(--lime)] font-bold">
-              21 STORIES PUBLISHED
+              22 STORIES PUBLISHED
             </span>
           </div>
 

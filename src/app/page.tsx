@@ -177,6 +177,20 @@ export default function Home() {
 
   const editorialArticles: EditorialArticle[] = [
     {
+      id: "sanjay-dutt-kaante-2-promise",
+      anchorId: "sanjay-dutt-story",
+      href: "/sanjay-dutt-kaante-2-promise-sanjay-gupta-death",
+      title: "Sanjay Dutt Promises to Make Kaante 2 in Memory of Sanjay Gupta",
+      excerpt: "Sanjay Dutt shares an emotional tribute to late filmmaker Sanjay Gupta, promising to fulfill his dream project Kaante 2 following Gupta’s sudden demise.",
+      category: "Bollywood",
+      secondaryCategory: "News",
+      displayCategory: "BOLLYWOOD & NEWS",
+      badge: "Kaante 2 Promise",
+      badgeType: "lime",
+      readTime: "3 MIN READ",
+      image: "/images/sanjay-dutt-kaante-2-promise-sanjay-gupta-death.jpg",
+    },
+    {
       id: "varun-sidharth-reunion",
       anchorId: "varun-sid-story",
       href: "/varun-dhawan-sidharth-malhotra-kiara-advani-reunion",
@@ -602,15 +616,15 @@ export default function Home() {
         <section className="hero" id="featured">
           {/* 1. Main Featured Story (Commanding Top Story Presentation) */}
           <Link
-            href="/varun-dhawan-sidharth-malhotra-kiara-advani-reunion"
+            href="/sanjay-dutt-kaante-2-promise-sanjay-gupta-death"
             className="feature-card block transition-all hover:border-[var(--lime)] focus-visible:ring-2 focus-visible:ring-[var(--lime)] group"
             style={{ textDecoration: "none", color: "inherit" }}
-            aria-label="Read full article: Varun Dhawan Sidharth Malhotra Reunion"
+            aria-label="Read full article: Sanjay Dutt Promises Kaante 2 After Sanjay Gupta's Death"
           >
             <div className="feature-media" style={{ overflow: "hidden", position: "relative" }}>
               <Image
-                src="/images/varun-dhawan-sidharth-malhotra-kiara-advani-reunion.jpg"
-                alt="Varun Dhawan Sidharth Malhotra Reunion: “Never a Rivalry” — Kiara Advani"
+                src="/images/sanjay-dutt-kaante-2-promise-sanjay-gupta-death.jpg"
+                alt="Sanjay Dutt Promises Kaante 2 After Sanjay Gupta’s Death"
                 fill
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 750px"
@@ -619,24 +633,24 @@ export default function Home() {
               />
               <div className="noise" style={{ pointerEvents: "none" }}></div>
               <div className="feature-tag flex items-center gap-2">
-                <span className="badge pink">✨ SOTY Reunion</span>
-                <span className="badge">Bollywood Buzz</span>
-                <span className="badge lime">Varun, Sid &amp; Kiara</span>
+                <span className="badge pink">💔 In Memoriam</span>
+                <span className="badge lime">Kaante 2</span>
+                <span className="badge">Bollywood Tribute</span>
               </div>
             </div>
             <div className="feature-body">
               <div className="flex items-center gap-2 mb-2 font-mono text-xs text-[var(--lime)] font-bold tracking-wider uppercase">
-                <span>★ TOP STORY · SOTY REUNION</span>
+                <span>★ TOP STORY · KAANTE 2 PROMISE</span>
               </div>
               <h1 className="disp" style={{ color: "#fff" }}>
-                Varun Dhawan Meets Sidharth Malhotra &amp; Kiara Advani: “Never a Rivalry”
+                Sanjay Dutt Promises to Make Kaante 2 in Memory of Sanjay Gupta
               </h1>
               <p>
-                The Student of the Year stars reunite in Mumbai as Varun visits Sidharth and Kiara Advani, sparking hilarious banter with Karan Johar over their Koffee With Karan Heated Rivalry joke.
+                Bollywood mourns filmmaker Sanjay Gupta as his longtime friend and collaborator Sanjay Dutt pens an emotional tribute, vowing to fulfill his dream of bringing Kaante 2 to life.
               </p>
               <div className="meta-row mt-auto pt-3 border-t border-white/[0.06] flex items-center justify-between">
                 <div className="flex items-center gap-3">
-                  <span>BOLLYWOOD</span>
+                  <span>BOLLYWOOD &amp; NEWS</span>
                   <span className="dot-sep">◆</span>
                   <span>3 MIN READ</span>
                   <span className="dot-sep">◆</span>
@@ -659,6 +673,18 @@ export default function Home() {
               <span className="trend-rank">01</span>
               <div className="trend-text">
                 <Link
+                  href="/sanjay-dutt-kaante-2-promise-sanjay-gupta-death"
+                  style={{ color: "inherit" }}
+                >
+                  <h3>Sanjay Dutt promises Kaante 2 in memory of Sanjay Gupta: “I will make your dream come true”</h3>
+                  <span>BOLLYWOOD &amp; NEWS · 410K REACTIONS</span>
+                </Link>
+              </div>
+            </div>
+            <div className="trend-item">
+              <span className="trend-rank">02</span>
+              <div className="trend-text">
+                <Link
                   href="/varun-dhawan-sidharth-malhotra-kiara-advani-reunion"
                   style={{ color: "inherit" }}
                 >
@@ -668,7 +694,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">02</span>
+              <span className="trend-rank">03</span>
               <div className="trend-text">
                 <Link
                   href="/sanjay-gupta-passes-away-shootout-at-wadala-director"
@@ -680,7 +706,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">03</span>
+              <span className="trend-rank">04</span>
               <div className="trend-text">
                 <Link
                   href="/iifa-2026-winners-list"
@@ -692,7 +718,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">04</span>
+              <span className="trend-rank">05</span>
               <div className="trend-text">
                 <Link
                   href="/ibrahim-ali-khan-palak-tiwari-breakup"
@@ -704,7 +730,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">04</span>
+              <span className="trend-rank">06</span>
               <div className="trend-text">
                 <Link
                   href="/jiya-shankar-unfollows-fiance-kd-instagram"
@@ -716,7 +742,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">04</span>
+              <span className="trend-rank">07</span>
               <div className="trend-text">
                 <Link
                   href="/parivarik-manuranjan-ott-release-date-sony-liv"
@@ -728,7 +754,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">04</span>
+              <span className="trend-rank">08</span>
               <div className="trend-text">
                 <Link
                   href="/ramayana-advance-booking-us-jump-la-premiere"
@@ -740,7 +766,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">05</span>
+              <span className="trend-rank">09</span>
               <div className="trend-text">
                 <Link
                   href="/priyanka-chopra-we-were-here-executive-producer"
