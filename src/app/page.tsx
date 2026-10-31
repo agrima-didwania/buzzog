@@ -177,6 +177,20 @@ export default function Home() {
 
   const editorialArticles: EditorialArticle[] = [
     {
+      id: "sanjay-gupta-funeral",
+      anchorId: "sanjay-funeral-story",
+      href: "/sanjay-gupta-funeral-pawan-hans-crematorium",
+      title: "Sanjay Gupta Funeral: Last Rites Today, Mumbai",
+      excerpt: "Kaante director Sanjay Gupta’s last rites will be held today at Pawan Hans Crematorium in Vile Parle as Bollywood colleagues gather to pay their final respects.",
+      category: "Bollywood",
+      secondaryCategory: "News",
+      displayCategory: "BOLLYWOOD & NEWS",
+      badge: "Funeral Details",
+      badgeType: "pink",
+      readTime: "3 MIN READ",
+      image: "/images/sanjay-gupta-funeral-pawan-hans-crematorium.jpg",
+    },
+    {
       id: "diljit-cjp-delhi-concert",
       anchorId: "diljit-cjp-story",
       href: "/diljit-dosanjh-cjp-delhi-concert-abhijeet-dipke-response",
@@ -644,15 +658,15 @@ export default function Home() {
         <section className="hero" id="featured">
           {/* 1. Main Featured Story (Commanding Top Story Presentation) */}
           <Link
-            href="/diljit-dosanjh-cjp-delhi-concert-abhijeet-dipke-response"
+            href="/sanjay-gupta-funeral-pawan-hans-crematorium"
             className="feature-card block transition-all hover:border-[var(--lime)] focus-visible:ring-2 focus-visible:ring-[var(--lime)] group"
             style={{ textDecoration: "none", color: "inherit" }}
-            aria-label="Read full article: Diljit Dosanjh Hits Back at CJP at Delhi Concert"
+            aria-label="Read full article: Sanjay Gupta Funeral: Last Rites Today, Mumbai"
           >
             <div className="feature-media" style={{ overflow: "hidden", position: "relative" }}>
               <Image
-                src="/images/diljit-dosanjh-cjp-delhi-concert-abhijeet-dipke-response.jpg"
-                alt="Diljit Dosanjh Hits Back at CJP at Delhi Concert, Abhijeet Dipke Replies With Mitti Pao"
+                src="/images/sanjay-gupta-funeral-pawan-hans-crematorium.jpg"
+                alt="Sanjay Gupta Funeral: Last Rites Today in Mumbai, Bollywood Mourns Kaante Director"
                 fill
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 750px"
@@ -661,24 +675,24 @@ export default function Home() {
               />
               <div className="noise" style={{ pointerEvents: "none" }}></div>
               <div className="feature-tag flex items-center gap-2">
-                <span className="badge pink">⚡ Concert Row</span>
-                <span className="badge lime">Diljit Dosanjh</span>
-                <span className="badge">Delhi Concert</span>
+                <span className="badge pink">🕊️ In Memoriam</span>
+                <span className="badge lime">Funeral Details</span>
+                <span className="badge">Bollywood &amp; News</span>
               </div>
             </div>
             <div className="feature-body">
               <div className="flex items-center gap-2 mb-2 font-mono text-xs text-[var(--lime)] font-bold tracking-wider uppercase">
-                <span>★ TOP STORY · CONCERT CONTROVERSY</span>
+                <span>★ TOP STORY · LAST RITES TODAY</span>
               </div>
               <h1 className="disp" style={{ color: "#fff" }}>
-                Diljit Dosanjh Takes a Dig at CJP at Delhi Concert: Abhijeet Dipke Replies
+                Sanjay Gupta Funeral: Last Rites Today in Mumbai, Bollywood Mourns Kaante Director
               </h1>
               <p>
-                Performing before 70,000 fans at JLN Stadium, Diljit declares “don’t teach Punjabis how to fight”, prompting Cockroach Janta Party founder Abhijeet Dipke to pen an open olive branch asking to “Mitti Pao”.
+                Filmmaker Sanjay Gupta’s last rites will be held today at Pawan Hans Crematorium in Vile Parle. Bollywood colleagues including Sanjay Dutt, Hansal Mehta and Ashoke Pandit pay emotional tributes.
               </p>
               <div className="meta-row mt-auto pt-3 border-t border-white/[0.06] flex items-center justify-between">
                 <div className="flex items-center gap-3">
-                  <span>NEWS</span>
+                  <span>BOLLYWOOD &amp; NEWS</span>
                   <span className="dot-sep">◆</span>
                   <span>3 MIN READ</span>
                   <span className="dot-sep">◆</span>
@@ -701,6 +715,18 @@ export default function Home() {
               <span className="trend-rank">01</span>
               <div className="trend-text">
                 <Link
+                  href="/sanjay-gupta-funeral-pawan-hans-crematorium"
+                  style={{ color: "inherit" }}
+                >
+                  <h3>Sanjay Gupta funeral: Last rites today at Pawan Hans Crematorium; Bollywood mourns</h3>
+                  <span>BOLLYWOOD &amp; NEWS · 450K REACTIONS</span>
+                </Link>
+              </div>
+            </div>
+            <div className="trend-item">
+              <span className="trend-rank">02</span>
+              <div className="trend-text">
+                <Link
                   href="/diljit-dosanjh-cjp-delhi-concert-abhijeet-dipke-response"
                   style={{ color: "inherit" }}
                 >
@@ -710,7 +736,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">02</span>
+              <span className="trend-rank">03</span>
               <div className="trend-text">
                 <Link
                   href="/orry-halloween-2026-janhvi-khushi-kapoor-competition"
@@ -722,7 +748,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">03</span>
+              <span className="trend-rank">04</span>
               <div className="trend-text">
                 <Link
                   href="/sanjay-dutt-kaante-2-promise-sanjay-gupta-death"
@@ -734,7 +760,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">04</span>
+              <span className="trend-rank">05</span>
               <div className="trend-text">
                 <Link
                   href="/varun-dhawan-sidharth-malhotra-kiara-advani-reunion"
@@ -746,7 +772,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">05</span>
+              <span className="trend-rank">06</span>
               <div className="trend-text">
                 <Link
                   href="/sanjay-gupta-passes-away-shootout-at-wadala-director"
@@ -758,7 +784,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">06</span>
+              <span className="trend-rank">07</span>
               <div className="trend-text">
                 <Link
                   href="/iifa-2026-winners-list"
@@ -770,7 +796,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">07</span>
+              <span className="trend-rank">08</span>
               <div className="trend-text">
                 <Link
                   href="/ibrahim-ali-khan-palak-tiwari-breakup"
@@ -782,7 +808,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">08</span>
+              <span className="trend-rank">09</span>
               <div className="trend-text">
                 <Link
                   href="/jiya-shankar-unfollows-fiance-kd-instagram"
@@ -794,7 +820,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">09</span>
+              <span className="trend-rank">10</span>
               <div className="trend-text">
                 <Link
                   href="/parivarik-manuranjan-ott-release-date-sony-liv"

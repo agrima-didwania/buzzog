@@ -22,6 +22,18 @@ interface NewsArticle {
 // Only verified breaking entertainment news stories (fatwas, obituaries, police complaints, eviction rows, box-office shifts)
 const newsArticles: NewsArticle[] = [
   {
+    id: "sanjay-gupta-funeral",
+    category: "Bollywood",
+    title: "Sanjay Gupta Funeral: Last Rites Today in Mumbai, Bollywood Mourns Kaante Director",
+    badge: "Funeral Details",
+    badgeType: "pink",
+    image: "/images/sanjay-gupta-funeral-pawan-hans-crematorium.jpg",
+    href: "/sanjay-gupta-funeral-pawan-hans-crematorium",
+    readOrTime: "3 MIN READ",
+    excerpt:
+      "Kaante director Sanjay Gupta’s last rites will be held today at Pawan Hans Crematorium, Vile Parle. Here is what we know and how Bollywood is reacting.",
+  },
+  {
     id: "diljit-cjp-delhi-concert",
     category: "Bollywood",
     title: "Diljit Dosanjh Takes a Dig at CJP at Delhi Concert, Abhijeet Dipke Replies With “Mitti Pao”",

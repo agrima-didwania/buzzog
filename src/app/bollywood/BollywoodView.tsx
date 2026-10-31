@@ -20,6 +20,16 @@ interface BollywoodArticle {
 
 const bollywoodArticles: BollywoodArticle[] = [
   {
+    id: "sanjay-gupta-funeral",
+    category: "In Memoriam & Funeral",
+    title: "Sanjay Gupta Funeral: Last Rites Today in Mumbai, Bollywood Mourns Kaante Director",
+    badge: "Funeral Details",
+    badgeType: "pink",
+    image: "/images/sanjay-gupta-funeral-pawan-hans-crematorium.jpg",
+    href: "/sanjay-gupta-funeral-pawan-hans-crematorium",
+    readOrTime: "3 MIN READ",
+  },
+  {
     id: "orry-halloween-competition",
     category: "Halloween 2026",
     title: "Orry Names Janhvi and Khushi Kapoor as His Biggest Halloween Competition",
@@ -306,16 +316,16 @@ export default function BollywoodView() {
 
         {/* Lead Section: Latest Bollywood Published Article (Cover Story) + The Last 2 Blogs Uploaded Before It */}
         <section className="lead">
-          {/* Cover Story: Latest Published Bollywood Story (Orry Halloween Competition) */}
+          {/* Cover Story: Latest Published Bollywood Story (Sanjay Gupta Funeral) */}
           <Link
-            href="/orry-halloween-2026-janhvi-khushi-kapoor-competition"
+            href="/sanjay-gupta-funeral-pawan-hans-crematorium"
             className="feature-card group block"
-            aria-label="Read full cover story: Orry Names Janhvi and Khushi Kapoor as His Biggest Halloween Competition"
+            aria-label="Read full cover story: Sanjay Gupta Funeral: Last Rites Today in Mumbai, Bollywood Mourns Kaante Director"
           >
             <div className="feature-media relative overflow-hidden">
               <Image
-                src="/images/orry-halloween-2026-janhvi-khushi-kapoor-competition.jpg"
-                alt="Orry Names Janhvi and Khushi Kapoor as His Biggest Halloween Competition"
+                src="/images/sanjay-gupta-funeral-pawan-hans-crematorium.jpg"
+                alt="Sanjay Gupta Funeral: Last Rites Today in Mumbai, Bollywood Mourns Kaante Director"
                 fill
                 priority
                 className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
@@ -323,18 +333,18 @@ export default function BollywoodView() {
               />
               <div className="noise" />
               <span className="badge pink feature-tag z-10">
-                🎃 Halloween 2026
+                🕊️ Funeral Details
               </span>
             </div>
             <div className="feature-body">
               <h2 className="disp text-white group-hover:text-[var(--lime)] transition-colors">
-                Orry Names Janhvi and Khushi Kapoor as His Biggest Halloween Competition
+                Sanjay Gupta Funeral: Last Rites Today in Mumbai, Bollywood Mourns Kaante Director
               </h2>
               <p>
-                Orry plans 17 to 18 Halloween looks this year and says only Janhvi and Khushi Kapoor can compete with him. Read what he shared.
+                Kaante director Sanjay Gupta’s last rites will be held today at Pawan Hans Crematorium, Vile Parle. Here is what we know and how Bollywood is reacting.
               </p>
               <div className="meta-row mt-3">
-                <span className="text-[var(--magenta)] font-bold">BOLLYWOOD</span>
+                <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; NEWS</span>
                 <span className="dot-sep">◆</span>
                 <span>3 MIN READ</span>
                 <span className="dot-sep">◆</span>
@@ -345,7 +355,34 @@ export default function BollywoodView() {
 
           {/* Right Stack: The last 2 blogs uploaded before the latest one */}
           <div className="stack">
-            {/* Card 1: Sanjay Dutt Promises Kaante 2 */}
+            {/* Card 1: Orry Halloween Competition */}
+            <Link
+              href="/orry-halloween-2026-janhvi-khushi-kapoor-competition"
+              className="card m1 group block"
+            >
+              <div className="card-media relative overflow-hidden">
+                <Image
+                  src="/images/orry-halloween-2026-janhvi-khushi-kapoor-competition.jpg"
+                  alt="Orry Names Janhvi and Khushi Kapoor as His Biggest Halloween Competition"
+                  fill
+                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 980px) 100vw, 35vw"
+                />
+                <span className="badge pink z-10 relative">🎃 Halloween 2026</span>
+              </div>
+              <div className="card-body">
+                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
+                  Orry Names Janhvi &amp; Khushi Kapoor as His Biggest Halloween Competition
+                </h3>
+                <div className="meta-row mt-2">
+                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD</span>
+                  <span className="dot-sep">◆</span>
+                  <span>3 MIN READ</span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Card 2: Sanjay Dutt Promises Kaante 2 */}
             <Link
               href="/sanjay-dutt-kaante-2-promise-sanjay-gupta-death"
               className="card m1 group block"
@@ -371,33 +408,6 @@ export default function BollywoodView() {
                 </div>
               </div>
             </Link>
-
-            {/* Card 2: Varun Dhawan & Sidharth Malhotra Reunion */}
-            <Link
-              href="/varun-dhawan-sidharth-malhotra-kiara-advani-reunion"
-              className="card m1 group block"
-            >
-              <div className="card-media relative overflow-hidden">
-                <Image
-                  src="/images/varun-dhawan-sidharth-malhotra-kiara-advani-reunion.jpg"
-                  alt="Varun Dhawan Sidharth Malhotra Reunion: “Never a Rivalry” — Kiara Advani"
-                  fill
-                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
-                  sizes="(max-width: 980px) 100vw, 35vw"
-                />
-                <span className="badge pink z-10 relative">✨ SOTY Reunion</span>
-              </div>
-              <div className="card-body">
-                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
-                  Varun Dhawan Meets Sidharth Malhotra &amp; Kiara Advani: “Never a Rivalry”
-                </h3>
-                <div className="meta-row mt-2">
-                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD</span>
-                  <span className="dot-sep">◆</span>
-                  <span>3 MIN READ</span>
-                </div>
-              </div>
-            </Link>
           </div>
         </section>
 
@@ -410,7 +420,7 @@ export default function BollywoodView() {
               </h2>
             </div>
             <span className="text-xs font-mono text-[var(--lime)] font-bold">
-              23 STORIES PUBLISHED
+              24 STORIES PUBLISHED
             </span>
           </div>
 

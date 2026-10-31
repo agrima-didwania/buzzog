@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   keywords: [
     "Entertainment News Buzz Originals",
     "Bollywood breaking news",
+    "Sanjay Gupta funeral",
+    "Pawan Hans Crematorium",
+    "Sanjay Gupta last rites",
     "Diljit Dosanjh CJP",
     "Abhijeet Dipke",
     "Diljit Dosanjh Delhi concert",
@@ -60,10 +63,10 @@ export const metadata: Metadata = {
     siteName: "Buzz Originals",
     images: [
       {
-        url: "/images/diljit-dosanjh-cjp-delhi-concert-abhijeet-dipke-response.jpg",
+        url: "/images/sanjay-gupta-funeral-pawan-hans-crematorium.jpg",
         width: 1024,
-        height: 614,
-        alt: "Diljit Dosanjh Takes a Dig at CJP at Delhi Concert, Abhijeet Dipke Replies — Buzz Originals News Desk",
+        height: 576,
+        alt: "Sanjay Gupta Funeral: Last Rites Today in Mumbai — Buzz Originals News Desk",
       },
     ],
     type: "website",
@@ -73,7 +76,7 @@ export const metadata: Metadata = {
     title: "News — Buzz Originals",
     description:
       "Raw, unfiltered entertainment news across reality TV, Bollywood, movies and OTT.",
-    images: ["/images/diljit-dosanjh-cjp-delhi-concert-abhijeet-dipke-response.jpg"],
+    images: ["/images/sanjay-gupta-funeral-pawan-hans-crematorium.jpg"],
   },
 };
 
