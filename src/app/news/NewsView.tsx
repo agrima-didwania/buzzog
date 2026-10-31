@@ -22,6 +22,18 @@ interface NewsArticle {
 // Only verified breaking entertainment news stories (fatwas, obituaries, police complaints, eviction rows, box-office shifts)
 const newsArticles: NewsArticle[] = [
   {
+    id: "sanjay-gupta-passes-away",
+    category: "Bollywood",
+    title: "Sanjay Gupta Passes Away: Bollywood Loses the Director of Kaante and Shootout at Wadala",
+    badge: "In Memoriam",
+    badgeType: "pink",
+    image: "/images/sanjay-gupta-passes-away-shootout-at-wadala-director.jpg",
+    href: "/sanjay-gupta-passes-away-shootout-at-wadala-director",
+    readOrTime: "3 MIN READ",
+    excerpt:
+      "Filmmaker Sanjay Gupta, director of Kaante, Shootout at Wadala and Kaabil, has passed away. Here is what we know so far and a look at his film journey.",
+  },
+  {
     id: "iifa-2026-winners",
     category: "Bollywood",
     title: "IIFA 2026 Winners List: Dhurandhar Wins 12 Awards, Ranveer & Aneet Top Acting Prizes",

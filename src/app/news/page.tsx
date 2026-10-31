@@ -8,6 +8,11 @@ export const metadata: Metadata = {
   keywords: [
     "Entertainment News Buzz Originals",
     "Bollywood breaking news",
+    "Sanjay Gupta death",
+    "Sanjay Gupta passes away",
+    "Shootout at Wadala director",
+    "Kaante director dies",
+    "Sanjay Gupta",
     "IIFA 2026 winners",
     "IIFA Awards 2026 full list",
     "Dhurandhar IIFA awards",
@@ -46,10 +51,10 @@ export const metadata: Metadata = {
     siteName: "Buzz Originals",
     images: [
       {
-        url: "/images/iifa-2026-winners-list.jpg",
+        url: "/images/sanjay-gupta-passes-away-shootout-at-wadala-director.jpg",
         width: 1024,
         height: 576,
-        alt: "IIFA 2026 Winners List: Dhurandhar Wins 12 Awards — Buzz Originals News Desk",
+        alt: "Sanjay Gupta Passes Away: Bollywood Loses the Director of Kaante and Shootout at Wadala — Buzz Originals News Desk",
       },
     ],
     type: "website",
@@ -59,7 +64,7 @@ export const metadata: Metadata = {
     title: "News — Buzz Originals",
     description:
       "Raw, unfiltered entertainment news across reality TV, Bollywood, movies and OTT.",
-    images: ["/images/iifa-2026-winners-list.jpg"],
+    images: ["/images/sanjay-gupta-passes-away-shootout-at-wadala-director.jpg"],
   },
 };
 

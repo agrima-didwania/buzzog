@@ -8,6 +8,11 @@ export const metadata: Metadata = {
   keywords: [
     "Bollywood Buzz Originals",
     "Bollywood news",
+    "Sanjay Gupta death",
+    "Sanjay Gupta passes away",
+    "Shootout at Wadala director",
+    "Kaante director dies",
+    "Sanjay Gupta",
     "IIFA 2026 winners",
     "IIFA Awards 2026 full list",
     "Dhurandhar IIFA awards",
@@ -98,10 +103,10 @@ export const metadata: Metadata = {
     siteName: "Buzz Originals",
     images: [
       {
-        url: "/images/iifa-2026-winners-list.jpg",
+        url: "/images/sanjay-gupta-passes-away-shootout-at-wadala-director.jpg",
         width: 1024,
         height: 576,
-        alt: "IIFA 2026 Winners List: Dhurandhar Wins 12 Awards — Buzz Originals Bollywood",
+        alt: "Sanjay Gupta Passes Away: Bollywood Loses the Director of Kaante and Shootout at Wadala — Buzz Originals Bollywood",
       },
     ],
     type: "website",
@@ -111,7 +116,7 @@ export const metadata: Metadata = {
     title: "Bollywood — Buzz Originals",
     description:
       "Raw, unfiltered Bollywood coverage of red carpets, gossip, airport sightings & exclusives.",
-    images: ["/images/iifa-2026-winners-list.jpg"],
+    images: ["/images/sanjay-gupta-passes-away-shootout-at-wadala-director.jpg"],
   },
 };
 
@@ -138,12 +143,18 @@ export default function BollywoodPage() {
         {
           "@type": "ListItem",
           position: 1,
+          name: "Sanjay Gupta Passes Away: Bollywood Loses the Director of Kaante and Shootout at Wadala",
+          url: "https://www.buzzoriginals.com/sanjay-gupta-passes-away-shootout-at-wadala-director",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
           name: "IIFA 2026 Winners List: Dhurandhar Wins 12 Awards",
           url: "https://www.buzzoriginals.com/iifa-2026-winners-list",
         },
         {
           "@type": "ListItem",
-          position: 2,
+          position: 3,
           name: "Ibrahim Ali Khan and Palak Tiwari Reportedly Break Up After 3 Years",
           url: "https://www.buzzoriginals.com/ibrahim-ali-khan-palak-tiwari-breakup",
         },
