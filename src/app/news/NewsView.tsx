@@ -22,6 +22,18 @@ interface NewsArticle {
 // Only verified breaking entertainment news stories (fatwas, obituaries, police complaints, eviction rows, box-office shifts)
 const newsArticles: NewsArticle[] = [
   {
+    id: "diljit-cjp-delhi-concert",
+    category: "Bollywood",
+    title: "Diljit Dosanjh Takes a Dig at CJP at Delhi Concert, Abhijeet Dipke Replies With “Mitti Pao”",
+    badge: "Concert Row",
+    badgeType: "pink",
+    image: "/images/diljit-dosanjh-cjp-delhi-concert-abhijeet-dipke-response.jpg",
+    href: "/diljit-dosanjh-cjp-delhi-concert-abhijeet-dipke-response",
+    readOrTime: "3 MIN READ",
+    excerpt:
+      "Diljit Dosanjh told critics “don’t teach Punjabis how to fight” at his 70,000-strong Delhi concert, prompting CJP founder Abhijeet Dipke to pen an open letter urging peace.",
+  },
+  {
     id: "sanjay-dutt-kaante-2-promise",
     category: "Bollywood",
     title: "Sanjay Dutt Promises to Make Kaante 2 in Memory of Sanjay Gupta",

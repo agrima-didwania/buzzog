@@ -8,6 +8,12 @@ export const metadata: Metadata = {
   keywords: [
     "Entertainment News Buzz Originals",
     "Bollywood breaking news",
+    "Diljit Dosanjh CJP",
+    "Abhijeet Dipke",
+    "Diljit Dosanjh Delhi concert",
+    "Punjabian nu na sikhaao",
+    "CJP",
+    "Diljit Dosanjh",
     "Sanjay Dutt",
     "Kaante 2",
     "Sanjay Dutt Kaante 2",
@@ -54,10 +60,10 @@ export const metadata: Metadata = {
     siteName: "Buzz Originals",
     images: [
       {
-        url: "/images/sanjay-dutt-kaante-2-promise-sanjay-gupta-death.jpg",
+        url: "/images/diljit-dosanjh-cjp-delhi-concert-abhijeet-dipke-response.jpg",
         width: 1024,
-        height: 576,
-        alt: "Sanjay Dutt Promises Kaante 2 After Sanjay Gupta’s Death — Buzz Originals News Desk",
+        height: 614,
+        alt: "Diljit Dosanjh Takes a Dig at CJP at Delhi Concert, Abhijeet Dipke Replies — Buzz Originals News Desk",
       },
     ],
     type: "website",
@@ -67,7 +73,7 @@ export const metadata: Metadata = {
     title: "News — Buzz Originals",
     description:
       "Raw, unfiltered entertainment news across reality TV, Bollywood, movies and OTT.",
-    images: ["/images/sanjay-dutt-kaante-2-promise-sanjay-gupta-death.jpg"],
+    images: ["/images/diljit-dosanjh-cjp-delhi-concert-abhijeet-dipke-response.jpg"],
   },
 };
 

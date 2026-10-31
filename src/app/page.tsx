@@ -177,6 +177,20 @@ export default function Home() {
 
   const editorialArticles: EditorialArticle[] = [
     {
+      id: "diljit-cjp-delhi-concert",
+      anchorId: "diljit-cjp-story",
+      href: "/diljit-dosanjh-cjp-delhi-concert-abhijeet-dipke-response",
+      title: "Diljit Dosanjh Hits Back at CJP at Delhi Concert",
+      excerpt: "Diljit Dosanjh tells critics “don't teach Punjabis how to fight” at his massive Delhi concert, prompting a thoughtful “Mitti Pao” reply from CJP founder Abhijeet Dipke.",
+      category: "News",
+      secondaryCategory: "Bollywood & Hollywood",
+      displayCategory: "NEWS & CONCERT ROW",
+      badge: "Concert Row",
+      badgeType: "pink",
+      readTime: "3 MIN READ",
+      image: "/images/diljit-dosanjh-cjp-delhi-concert-abhijeet-dipke-response.jpg",
+    },
+    {
       id: "orry-halloween-competition",
       anchorId: "orry-story",
       href: "/orry-halloween-2026-janhvi-khushi-kapoor-competition",
@@ -630,15 +644,15 @@ export default function Home() {
         <section className="hero" id="featured">
           {/* 1. Main Featured Story (Commanding Top Story Presentation) */}
           <Link
-            href="/orry-halloween-2026-janhvi-khushi-kapoor-competition"
+            href="/diljit-dosanjh-cjp-delhi-concert-abhijeet-dipke-response"
             className="feature-card block transition-all hover:border-[var(--lime)] focus-visible:ring-2 focus-visible:ring-[var(--lime)] group"
             style={{ textDecoration: "none", color: "inherit" }}
-            aria-label="Read full article: Orry Names Janhvi and Khushi Kapoor as His Biggest Halloween Competition"
+            aria-label="Read full article: Diljit Dosanjh Hits Back at CJP at Delhi Concert"
           >
             <div className="feature-media" style={{ overflow: "hidden", position: "relative" }}>
               <Image
-                src="/images/orry-halloween-2026-janhvi-khushi-kapoor-competition.jpg"
-                alt="Orry Names Janhvi and Khushi Kapoor as His Biggest Halloween Competition"
+                src="/images/diljit-dosanjh-cjp-delhi-concert-abhijeet-dipke-response.jpg"
+                alt="Diljit Dosanjh Hits Back at CJP at Delhi Concert, Abhijeet Dipke Replies With Mitti Pao"
                 fill
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 750px"
@@ -647,24 +661,24 @@ export default function Home() {
               />
               <div className="noise" style={{ pointerEvents: "none" }}></div>
               <div className="feature-tag flex items-center gap-2">
-                <span className="badge pink">🎃 Halloween 2026</span>
-                <span className="badge lime">Viral Scoop</span>
-                <span className="badge">Bollywood Buzz</span>
+                <span className="badge pink">⚡ Concert Row</span>
+                <span className="badge lime">Diljit Dosanjh</span>
+                <span className="badge">Delhi Concert</span>
               </div>
             </div>
             <div className="feature-body">
               <div className="flex items-center gap-2 mb-2 font-mono text-xs text-[var(--lime)] font-bold tracking-wider uppercase">
-                <span>★ TOP STORY · HALLOWEEN 2026</span>
+                <span>★ TOP STORY · CONCERT CONTROVERSY</span>
               </div>
               <h1 className="disp" style={{ color: "#fff" }}>
-                Orry Names Janhvi &amp; Khushi Kapoor as His Biggest Halloween Competition
+                Diljit Dosanjh Takes a Dig at CJP at Delhi Concert: Abhijeet Dipke Replies
               </h1>
               <p>
-                Planning 17 to 18 distinct looks from cutesy princess vibes to dark psychotic energy, Orry reveals why only the Kapoor sisters can rival his full-blown holiday production.
+                Performing before 70,000 fans at JLN Stadium, Diljit declares “don’t teach Punjabis how to fight”, prompting Cockroach Janta Party founder Abhijeet Dipke to pen an open olive branch asking to “Mitti Pao”.
               </p>
               <div className="meta-row mt-auto pt-3 border-t border-white/[0.06] flex items-center justify-between">
                 <div className="flex items-center gap-3">
-                  <span>BOLLYWOOD</span>
+                  <span>NEWS</span>
                   <span className="dot-sep">◆</span>
                   <span>3 MIN READ</span>
                   <span className="dot-sep">◆</span>
@@ -687,6 +701,18 @@ export default function Home() {
               <span className="trend-rank">01</span>
               <div className="trend-text">
                 <Link
+                  href="/diljit-dosanjh-cjp-delhi-concert-abhijeet-dipke-response"
+                  style={{ color: "inherit" }}
+                >
+                  <h3>Diljit Dosanjh hits back at CJP in Delhi concert: Abhijeet Dipke replies with “Mitti Pao”</h3>
+                  <span>NEWS · 430K REACTIONS</span>
+                </Link>
+              </div>
+            </div>
+            <div className="trend-item">
+              <span className="trend-rank">02</span>
+              <div className="trend-text">
+                <Link
                   href="/orry-halloween-2026-janhvi-khushi-kapoor-competition"
                   style={{ color: "inherit" }}
                 >
@@ -696,7 +722,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">02</span>
+              <span className="trend-rank">03</span>
               <div className="trend-text">
                 <Link
                   href="/sanjay-dutt-kaante-2-promise-sanjay-gupta-death"
@@ -708,7 +734,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">03</span>
+              <span className="trend-rank">04</span>
               <div className="trend-text">
                 <Link
                   href="/varun-dhawan-sidharth-malhotra-kiara-advani-reunion"
@@ -720,7 +746,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">04</span>
+              <span className="trend-rank">05</span>
               <div className="trend-text">
                 <Link
                   href="/sanjay-gupta-passes-away-shootout-at-wadala-director"
@@ -732,7 +758,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">05</span>
+              <span className="trend-rank">06</span>
               <div className="trend-text">
                 <Link
                   href="/iifa-2026-winners-list"
@@ -744,7 +770,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">06</span>
+              <span className="trend-rank">07</span>
               <div className="trend-text">
                 <Link
                   href="/ibrahim-ali-khan-palak-tiwari-breakup"
@@ -756,7 +782,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">07</span>
+              <span className="trend-rank">08</span>
               <div className="trend-text">
                 <Link
                   href="/jiya-shankar-unfollows-fiance-kd-instagram"
@@ -768,7 +794,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">08</span>
+              <span className="trend-rank">09</span>
               <div className="trend-text">
                 <Link
                   href="/parivarik-manuranjan-ott-release-date-sony-liv"
@@ -780,7 +806,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">09</span>
+              <span className="trend-rank">10</span>
               <div className="trend-text">
                 <Link
                   href="/ramayana-advance-booking-us-jump-la-premiere"
