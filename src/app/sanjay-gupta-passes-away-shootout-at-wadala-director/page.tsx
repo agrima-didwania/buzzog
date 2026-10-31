@@ -8,23 +8,25 @@ import SocialShare from "@/components/SocialShare";
 export const metadata: Metadata = {
   title: "Sanjay Gupta Passes Away",
   description:
-    "Filmmaker Sanjay Gupta, director of Kaante, Shootout at Wadala and Kaabil, has passed away. Here is what we know so far and a look at his film journey.",
+    "Filmmaker Sanjay Gupta, director of Kaante, Shootout at Wadala and Kaabil, has passed away. Read the latest updates on his funeral at Pawan Hans Crematorium, police report, and tributes from Sanjay Dutt and Hansal Mehta.",
   keywords: [
     "Sanjay Gupta death",
     "Sanjay Gupta passes away",
     "Shootout at Wadala director",
     "Kaante director dies",
     "Sanjay Gupta",
-    "Bollywood director death",
-    "Kaabil director",
-    "Sanjay Gupta films",
+    "Sanjay Gupta funeral",
+    "Pawan Hans Crematorium",
+    "Ashoke Pandit Sanjay Gupta",
+    "Sanjay Dutt Kaante 2",
+    "Hansal Mehta Sanjay Gupta",
     "Bollywood news today",
     "In Memoriam",
   ],
   openGraph: {
-    title: "Sanjay Gupta Passes Away",
+    title: "Sanjay Gupta Passes Away: Bollywood Loses the Director of Kaante and Shootout at Wadala",
     description:
-      "Filmmaker Sanjay Gupta, director of Kaante, Shootout at Wadala and Kaabil, has passed away. Here is what we know so far and a look at his film journey.",
+      "Filmmaker Sanjay Gupta has passed away. Read latest funeral details at Pawan Hans Crematorium, Mumbai Police ADR report, and tributes from Sanjay Dutt, Hansal Mehta and Bollywood.",
     url: "https://www.buzzoriginals.com/sanjay-gupta-passes-away-shootout-at-wadala-director",
     siteName: "Buzz Originals",
     images: [
@@ -37,13 +39,14 @@ export const metadata: Metadata = {
     ],
     type: "article",
     publishedTime: "2026-10-31T11:50:00.000Z",
+    modifiedTime: "2026-10-31T17:25:00.000Z",
     authors: ["Buzz Originals Entertainment Desk"],
   },
   twitter: {
     card: "summary_large_image",
     title: "Sanjay Gupta Passes Away",
     description:
-      "Filmmaker Sanjay Gupta, director of Kaante, Shootout at Wadala and Kaabil, has passed away. Here is what we know so far and a look at his film journey.",
+      "Filmmaker Sanjay Gupta has passed away. Read latest funeral details, Mumbai Police report, and industry tributes.",
     images: ["/images/sanjay-gupta-passes-away-shootout-at-wadala-director.jpg"],
   },
   alternates: {
@@ -65,7 +68,7 @@ export default function SanjayGuptaPassesAwayPage() {
       "https://www.buzzoriginals.com/images/sanjay-gupta-passes-away-shootout-at-wadala-director.jpg",
     ],
     datePublished: "2026-10-31T11:50:00+05:30",
-    dateModified: "2026-10-31T11:50:00+05:30",
+    dateModified: "2026-10-31T17:25:00+05:30",
     author: [
       {
         "@type": "NewsMediaOrganization",
@@ -82,7 +85,7 @@ export default function SanjayGuptaPassesAwayPage() {
       },
     },
     description:
-      "Filmmaker Sanjay Gupta, director of Kaante, Shootout at Wadala and Kaabil, has passed away. Here is what we know so far and a look at his film journey.",
+      "Filmmaker Sanjay Gupta, director of Kaante, Shootout at Wadala and Kaabil, has passed away. Latest updates on his funeral at Pawan Hans Crematorium, Mumbai Police ADR, and Bollywood tributes.",
     mainEntityOfPage: {
       "@type": "WebPage",
       "@id": pageUrl,
@@ -153,7 +156,7 @@ export default function SanjayGuptaPassesAwayPage() {
           <div style={{ display: "flex", gap: "8px", alignItems: "center", flexWrap: "wrap" }}>
             <span className="badge pink">🕊️ In Memoriam</span>
             <span className="badge">Bollywood &amp; News</span>
-            <span className="badge lime">Breaking News</span>
+            <span className="badge lime">Latest Update</span>
           </div>
 
           <h1 className="article-title">{pageTitle}</h1>
@@ -172,7 +175,7 @@ export default function SanjayGuptaPassesAwayPage() {
             <div style={{ display: "flex", gap: "14px", alignItems: "center" }}>
               <span>OCT 31, 2026</span>
               <span style={{ color: "var(--magenta)" }}>◆</span>
-              <span style={{ color: "var(--lime)" }}>3 MIN READ</span>
+              <span style={{ color: "var(--lime)" }}>UPDATED</span>
             </div>
           </div>
         </header>
@@ -196,23 +199,46 @@ export default function SanjayGuptaPassesAwayPage() {
         {/* Article Body */}
         <article className="article-content">
           <p className="article-lead">
-            Bollywood woke up to sad news on Saturday, 31 October 2026. Filmmaker <strong>Sanjay Gupta</strong>, known for stylish action and crime films, has died.
+            Bollywood woke up to sad news on Saturday, 31 October 2026. Filmmaker <strong>Sanjay Gupta</strong>, known for stylish action and crime films, has died. His last rites will be held today at Pawan Hans Crematorium in Vile Parle, Mumbai.
           </p>
 
           <h2>What Happened to Sanjay Gupta?</h2>
           <p>
-            Reports say he passed away on the night of 30 October. Early reports say he fell in his bathroom at night. Nobody realised it until the next morning, when it came out that he had died.
+            Reports say Gupta slipped and fell at his Mumbai home on the night of 30 October and suffered a serious head injury. The news came out early on Saturday morning.
           </p>
           <p>
-            The exact cause of death has not been officially confirmed. Details from his family are still awaited.
+            His close friend, producer <strong>Ashoke Pandit</strong>, told Outlook: <em>“I just spoke to his brother-in-law also, so he probably slipped at home and had a fatal head injury. He bled very profusely and expired.”</em> He added, <em>“It was not an age to go.”</em>
+          </p>
+          <p>
+            Mumbai Police have said that Versova Police registered an Accidental Death Report and are looking into the matter. Police have said that no foul play has been found so far.
           </p>
 
-          <h2>Who Was Sanjay Gupta?</h2>
+          <div className="article-quote-box">
+            <p style={{ margin: 0, fontSize: "15px" }}>
+              <strong>Also Read:</strong>{" "}
+              <Link
+                href="/sanjay-dutt-kaante-2-promise-sanjay-gupta-death"
+                style={{ color: "var(--lime)", textDecoration: "underline", fontWeight: 700 }}
+              >
+                Sanjay Dutt Promises to Make Kaante 2 in Memory of Sanjay Gupta →
+              </Link>
+            </p>
+          </div>
+
+          <h2>Sanjay Gupta Funeral Details</h2>
+          <ul>
+            <li>
+              <strong>Date:</strong> Saturday, 31 October
+            </li>
+            <li>
+              <strong>Place:</strong> Pawan Hans Crematorium, Vile Parle, Mumbai
+            </li>
+          </ul>
           <p>
-            Sanjay Gupta was a director, producer and writer in Hindi cinema. Before directing, he worked in post-production and sound design. He also assisted filmmaker Pankaj Parashar.
+            Ashoke Pandit shared the family’s message on Instagram. It read: <em>“We regret to inform you of the sad demise of our beloved Sanjay Gupta.”</em> The family also requested, <em>“We request your presence and prayers as we bid final farewell.”</em>
           </p>
           <p>
-            He started his directing career with <em>Aatish: Feel the Fire</em> in 1994. After films like <em>Khauff</em> and <em>Jung</em>, he made <strong>Kaante</strong> in 2002, which became one of his best-known films.
+            Several people from the film industry have already reached his home to meet the family, and more are expected at the funeral.
           </p>
 
           {/* Instagram Follow CTA */}
@@ -253,58 +279,57 @@ export default function SanjayGuptaPassesAwayPage() {
             </a>
           </div>
 
+          <h2>Who Was Sanjay Gupta?</h2>
+          <p>
+            Sanjay Gupta was a director, producer and writer in Hindi cinema. He started his directing career with <em>Aatish: Feel the Fire</em> in 1994, starring Sanjay Dutt. After films like <em>Khauff</em> and <em>Jung</em>, he made <strong>Kaante</strong> in 2002, which became one of his best-known films.
+          </p>
+          <p>
+            He was known for dark lighting, sharp dialogues, big action scenes and a stylish, neo-noir look. He worked with Sanjay Dutt many times, and also with John Abraham on films like <em>Shootout at Wadala</em> and <em>Mumbai Saga</em>.
+          </p>
+
           <h2>Sanjay Gupta’s Best-Known Films</h2>
           <ul>
             <li>
-              <strong>Kaante (2002)</strong> – Groundbreaking multi-starrer heist thriller shot in Los Angeles
+              <strong>Kaante (2002)</strong>
             </li>
             <li>
-              <strong>Zinda (2006)</strong> – Gritty, psychological neo-noir thriller starring Sanjay Dutt and John Abraham
+              <strong>Zinda (2006)</strong>
             </li>
             <li>
-              <strong>Shootout at Lokhandwala (2007)</strong> – Produced by Gupta, chronicling Mumbai Police’s real encounter
+              <strong>Shootout at Lokhandwala (2007)</strong>, which he produced and Apoorva Lakhia directed
             </li>
             <li>
-              <strong>Shootout at Wadala (2013)</strong> – Action crime drama dramatizing the first recorded encounter of Manya Surve
+              <strong>Shootout at Wadala (2013)</strong>
             </li>
             <li>
-              <strong>Jazbaa (2015)</strong> – Aishwarya Rai Bachchan and Irrfan Khan legal crime thriller
+              <strong>Jazbaa (2015)</strong>
             </li>
             <li>
-              <strong>Kaabil (2017)</strong> – High-octane revenge drama starring Hrithik Roshan and Yami Gautam
+              <strong>Kaabil (2017)</strong>
             </li>
             <li>
-              <strong>Mumbai Saga (2021)</strong> – Period underworld saga set across the 1980s and 1990s Mumbai
+              <strong>Mumbai Saga (2021)</strong>
             </li>
           </ul>
 
-          <p>
-            He was known for dark lighting, sharp dialogues and big action scenes. He often worked with actors like <strong>Sanjay Dutt</strong> and <strong>John Abraham</strong>.
-          </p>
-
-          <div className="article-quote-box">
-            <p style={{ margin: 0, fontSize: "15px" }}>
-              <strong>Also Read:</strong>{" "}
-              <Link
-                href="/iifa-2026-winners-list"
-                style={{ color: "var(--lime)", textDecoration: "underline", fontWeight: 700 }}
-              >
-                IIFA 2026 Winners List: Dhurandhar Wins 12 Awards, Ranveer Singh &amp; Aneet Padda Top Acting Honors →
-              </Link>
-            </p>
-          </div>
-
-          <h2>A Life With Ups and Downs</h2>
-          <p>
-            Gupta’s life was not always easy. Years ago, he survived a serious car accident while driving from Pune to Mumbai. He was also known to have heated fights with producers, yet he stayed a popular name in the industry. In his personal life, he divorced his wife and then remarried her a few years later.
-          </p>
-          <p>
-            Many people who knew him remember his big smile and boyish charm.
-          </p>
-
           <h2>Bollywood Reacts</h2>
           <p>
-            The film industry is in shock. Colleagues and fans are sharing tributes on social media, and many are remembering him as a passionate filmmaker.
+            The film industry is in shock, and tributes are pouring in on social media.
+          </p>
+          <p>
+            <strong>Sanjay Dutt</strong> wrote on X: <em>“We have shared so much together, so many memories and so many years of friendship. You have always been family to me, and that will never change.”</em> He also made a promise: <em>“I will make Kaante 2 your dream, in memory of you my brother.”</em>
+          </p>
+          <p>
+            <strong>Hansal Mehta</strong> called him <em>“My only boss in the film industry, perhaps. But more than that, a dear friend.”</em> He added: <em>“My first and only Rolex came from him. Today it’s the one memory of him I carry on my wrist, and I don’t think I’ll ever take it off.”</em>
+          </p>
+          <p>
+            <strong>Neil Nitin Mukesh</strong> wrote that Gupta was <em>“a powerhouse filmmaker we all loved and respected. Gone far too soon.”</em>
+          </p>
+          <p>
+            <strong>Tusshar Kapoor</strong> said: <em>“Life is so unpredictable, though this man was a lesson learned in living life to the fullest!”</em>
+          </p>
+          <p>
+            <strong>Kunal Kohli</strong>, <strong>Dia Mirza</strong>, <strong>Madhur Bhandarkar</strong> and lyricist <strong>Manoj Muntashir</strong> also paid tribute. Many people are remembering him as a passionate filmmaker with a big heart.
           </p>
           <p>
             Follow <strong>Buzz OG</strong> for more updates.
@@ -327,6 +352,10 @@ export default function SanjayGuptaPassesAwayPage() {
               "Shootout at Wadala director",
               "Kaante director dies",
               "Sanjay Gupta",
+              "Sanjay Gupta funeral",
+              "Pawan Hans Crematorium",
+              "Sanjay Dutt Kaante 2",
+              "Hansal Mehta",
               "Bollywood News",
               "In Memoriam",
             ].map((tag) => (
