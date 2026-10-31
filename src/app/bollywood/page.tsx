@@ -8,6 +8,12 @@ export const metadata: Metadata = {
   keywords: [
     "Bollywood Buzz Originals",
     "Bollywood news",
+    "Orry",
+    "Orry Halloween 2026",
+    "Orry Halloween looks",
+    "Janhvi Kapoor",
+    "Khushi Kapoor",
+    "Bollywood Halloween",
     "Sanjay Dutt",
     "Sanjay Gupta death",
     "Kaante 2",
@@ -112,10 +118,10 @@ export const metadata: Metadata = {
     siteName: "Buzz Originals",
     images: [
       {
-        url: "/images/sanjay-dutt-kaante-2-promise-sanjay-gupta-death.jpg",
+        url: "/images/orry-halloween-2026-janhvi-khushi-kapoor-competition.jpg",
         width: 1024,
         height: 576,
-        alt: "Sanjay Dutt Promises Kaante 2 After Sanjay Gupta’s Death — Buzz Originals Bollywood",
+        alt: "Orry: Janhvi and Khushi Kapoor are His Halloween Competition — Buzz Originals Bollywood",
       },
     ],
     type: "website",
@@ -125,7 +131,7 @@ export const metadata: Metadata = {
     title: "Bollywood — Buzz Originals",
     description:
       "Raw, unfiltered Bollywood coverage of red carpets, gossip, airport sightings & exclusives.",
-    images: ["/images/sanjay-dutt-kaante-2-promise-sanjay-gupta-death.jpg"],
+    images: ["/images/orry-halloween-2026-janhvi-khushi-kapoor-competition.jpg"],
   },
 };
 
@@ -152,24 +158,30 @@ export default function BollywoodPage() {
         {
           "@type": "ListItem",
           position: 1,
+          name: "Orry: Janhvi and Khushi Kapoor are His Halloween Competition",
+          url: "https://www.buzzoriginals.com/orry-halloween-2026-janhvi-khushi-kapoor-competition",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
           name: "Sanjay Dutt Promises Kaante 2 After Sanjay Gupta’s Death",
           url: "https://www.buzzoriginals.com/sanjay-dutt-kaante-2-promise-sanjay-gupta-death",
         },
         {
           "@type": "ListItem",
-          position: 2,
+          position: 3,
           name: "Varun Dhawan Sidharth Malhotra Reunion: “Never a Rivalry”",
           url: "https://www.buzzoriginals.com/varun-dhawan-sidharth-malhotra-kiara-advani-reunion",
         },
         {
           "@type": "ListItem",
-          position: 3,
+          position: 4,
           name: "Sanjay Gupta Passes Away: Bollywood Loses the Director of Kaante and Shootout at Wadala",
           url: "https://www.buzzoriginals.com/sanjay-gupta-passes-away-shootout-at-wadala-director",
         },
         {
           "@type": "ListItem",
-          position: 4,
+          position: 5,
           name: "IIFA 2026 Winners List: Dhurandhar Wins 12 Awards",
           url: "https://www.buzzoriginals.com/iifa-2026-winners-list",
         },

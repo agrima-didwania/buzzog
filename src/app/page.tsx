@@ -177,6 +177,20 @@ export default function Home() {
 
   const editorialArticles: EditorialArticle[] = [
     {
+      id: "orry-halloween-competition",
+      anchorId: "orry-story",
+      href: "/orry-halloween-2026-janhvi-khushi-kapoor-competition",
+      title: "Orry: Janhvi and Khushi Kapoor are His Halloween Competition",
+      excerpt: "Orry plans 17 to 18 Halloween looks this year and says only Janhvi and Khushi Kapoor can compete with him. Read what he shared.",
+      category: "Bollywood",
+      secondaryCategory: "Bollywood & Hollywood",
+      displayCategory: "BOLLYWOOD & HALLOWEEN",
+      badge: "Halloween 2026",
+      badgeType: "pink",
+      readTime: "3 MIN READ",
+      image: "/images/orry-halloween-2026-janhvi-khushi-kapoor-competition.jpg",
+    },
+    {
       id: "sanjay-dutt-kaante-2-promise",
       anchorId: "sanjay-dutt-story",
       href: "/sanjay-dutt-kaante-2-promise-sanjay-gupta-death",
@@ -616,15 +630,15 @@ export default function Home() {
         <section className="hero" id="featured">
           {/* 1. Main Featured Story (Commanding Top Story Presentation) */}
           <Link
-            href="/sanjay-dutt-kaante-2-promise-sanjay-gupta-death"
+            href="/orry-halloween-2026-janhvi-khushi-kapoor-competition"
             className="feature-card block transition-all hover:border-[var(--lime)] focus-visible:ring-2 focus-visible:ring-[var(--lime)] group"
             style={{ textDecoration: "none", color: "inherit" }}
-            aria-label="Read full article: Sanjay Dutt Promises Kaante 2 After Sanjay Gupta's Death"
+            aria-label="Read full article: Orry Names Janhvi and Khushi Kapoor as His Biggest Halloween Competition"
           >
             <div className="feature-media" style={{ overflow: "hidden", position: "relative" }}>
               <Image
-                src="/images/sanjay-dutt-kaante-2-promise-sanjay-gupta-death.jpg"
-                alt="Sanjay Dutt Promises Kaante 2 After Sanjay Gupta’s Death"
+                src="/images/orry-halloween-2026-janhvi-khushi-kapoor-competition.jpg"
+                alt="Orry Names Janhvi and Khushi Kapoor as His Biggest Halloween Competition"
                 fill
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 750px"
@@ -633,24 +647,24 @@ export default function Home() {
               />
               <div className="noise" style={{ pointerEvents: "none" }}></div>
               <div className="feature-tag flex items-center gap-2">
-                <span className="badge pink">💔 In Memoriam</span>
-                <span className="badge lime">Kaante 2</span>
-                <span className="badge">Bollywood Tribute</span>
+                <span className="badge pink">🎃 Halloween 2026</span>
+                <span className="badge lime">Viral Scoop</span>
+                <span className="badge">Bollywood Buzz</span>
               </div>
             </div>
             <div className="feature-body">
               <div className="flex items-center gap-2 mb-2 font-mono text-xs text-[var(--lime)] font-bold tracking-wider uppercase">
-                <span>★ TOP STORY · KAANTE 2 PROMISE</span>
+                <span>★ TOP STORY · HALLOWEEN 2026</span>
               </div>
               <h1 className="disp" style={{ color: "#fff" }}>
-                Sanjay Dutt Promises to Make Kaante 2 in Memory of Sanjay Gupta
+                Orry Names Janhvi &amp; Khushi Kapoor as His Biggest Halloween Competition
               </h1>
               <p>
-                Bollywood mourns filmmaker Sanjay Gupta as his longtime friend and collaborator Sanjay Dutt pens an emotional tribute, vowing to fulfill his dream of bringing Kaante 2 to life.
+                Planning 17 to 18 distinct looks from cutesy princess vibes to dark psychotic energy, Orry reveals why only the Kapoor sisters can rival his full-blown holiday production.
               </p>
               <div className="meta-row mt-auto pt-3 border-t border-white/[0.06] flex items-center justify-between">
                 <div className="flex items-center gap-3">
-                  <span>BOLLYWOOD &amp; NEWS</span>
+                  <span>BOLLYWOOD</span>
                   <span className="dot-sep">◆</span>
                   <span>3 MIN READ</span>
                   <span className="dot-sep">◆</span>
@@ -673,6 +687,18 @@ export default function Home() {
               <span className="trend-rank">01</span>
               <div className="trend-text">
                 <Link
+                  href="/orry-halloween-2026-janhvi-khushi-kapoor-competition"
+                  style={{ color: "inherit" }}
+                >
+                  <h3>Orry plans 18 Halloween looks, crowns Janhvi &amp; Khushi Kapoor his only competition</h3>
+                  <span>BOLLYWOOD · 425K REACTIONS</span>
+                </Link>
+              </div>
+            </div>
+            <div className="trend-item">
+              <span className="trend-rank">02</span>
+              <div className="trend-text">
+                <Link
                   href="/sanjay-dutt-kaante-2-promise-sanjay-gupta-death"
                   style={{ color: "inherit" }}
                 >
@@ -682,7 +708,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">02</span>
+              <span className="trend-rank">03</span>
               <div className="trend-text">
                 <Link
                   href="/varun-dhawan-sidharth-malhotra-kiara-advani-reunion"
@@ -694,7 +720,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">03</span>
+              <span className="trend-rank">04</span>
               <div className="trend-text">
                 <Link
                   href="/sanjay-gupta-passes-away-shootout-at-wadala-director"
@@ -706,7 +732,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">04</span>
+              <span className="trend-rank">05</span>
               <div className="trend-text">
                 <Link
                   href="/iifa-2026-winners-list"
@@ -718,7 +744,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">05</span>
+              <span className="trend-rank">06</span>
               <div className="trend-text">
                 <Link
                   href="/ibrahim-ali-khan-palak-tiwari-breakup"
@@ -730,7 +756,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">06</span>
+              <span className="trend-rank">07</span>
               <div className="trend-text">
                 <Link
                   href="/jiya-shankar-unfollows-fiance-kd-instagram"
@@ -742,7 +768,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">07</span>
+              <span className="trend-rank">08</span>
               <div className="trend-text">
                 <Link
                   href="/parivarik-manuranjan-ott-release-date-sony-liv"
@@ -754,7 +780,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">08</span>
+              <span className="trend-rank">09</span>
               <div className="trend-text">
                 <Link
                   href="/ramayana-advance-booking-us-jump-la-premiere"
@@ -766,7 +792,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">09</span>
+              <span className="trend-rank">10</span>
               <div className="trend-text">
                 <Link
                   href="/priyanka-chopra-we-were-here-executive-producer"

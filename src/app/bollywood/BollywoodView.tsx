@@ -20,6 +20,16 @@ interface BollywoodArticle {
 
 const bollywoodArticles: BollywoodArticle[] = [
   {
+    id: "orry-halloween-competition",
+    category: "Halloween 2026",
+    title: "Orry Names Janhvi and Khushi Kapoor as His Biggest Halloween Competition",
+    badge: "Halloween 2026",
+    badgeType: "pink",
+    image: "/images/orry-halloween-2026-janhvi-khushi-kapoor-competition.jpg",
+    href: "/orry-halloween-2026-janhvi-khushi-kapoor-competition",
+    readOrTime: "3 MIN READ",
+  },
+  {
     id: "sanjay-dutt-kaante-2-promise",
     category: "In Memoriam & Sequel",
     title: "Sanjay Dutt Promises to Make Kaante 2 in Memory of Sanjay Gupta",
@@ -296,16 +306,16 @@ export default function BollywoodView() {
 
         {/* Lead Section: Latest Bollywood Published Article (Cover Story) + The Last 2 Blogs Uploaded Before It */}
         <section className="lead">
-          {/* Cover Story: Latest Published Bollywood Story (Sanjay Dutt Promises Kaante 2) */}
+          {/* Cover Story: Latest Published Bollywood Story (Orry Halloween Competition) */}
           <Link
-            href="/sanjay-dutt-kaante-2-promise-sanjay-gupta-death"
+            href="/orry-halloween-2026-janhvi-khushi-kapoor-competition"
             className="feature-card group block"
-            aria-label="Read full cover story: Sanjay Dutt Promises Kaante 2 After Sanjay Gupta's Death"
+            aria-label="Read full cover story: Orry Names Janhvi and Khushi Kapoor as His Biggest Halloween Competition"
           >
             <div className="feature-media relative overflow-hidden">
               <Image
-                src="/images/sanjay-dutt-kaante-2-promise-sanjay-gupta-death.jpg"
-                alt="Sanjay Dutt Promises Kaante 2 After Sanjay Gupta’s Death"
+                src="/images/orry-halloween-2026-janhvi-khushi-kapoor-competition.jpg"
+                alt="Orry Names Janhvi and Khushi Kapoor as His Biggest Halloween Competition"
                 fill
                 priority
                 className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
@@ -313,18 +323,18 @@ export default function BollywoodView() {
               />
               <div className="noise" />
               <span className="badge pink feature-tag z-10">
-                💔 In Memoriam
+                🎃 Halloween 2026
               </span>
             </div>
             <div className="feature-body">
               <h2 className="disp text-white group-hover:text-[var(--lime)] transition-colors">
-                Sanjay Dutt Promises to Make Kaante 2 in Memory of Sanjay Gupta
+                Orry Names Janhvi and Khushi Kapoor as His Biggest Halloween Competition
               </h2>
               <p>
-                Sanjay Dutt has shared an emotional note after filmmaker Sanjay Gupta’s death. He has promised to make Kaante 2 in memory of his close friend.
+                Orry plans 17 to 18 Halloween looks this year and says only Janhvi and Khushi Kapoor can compete with him. Read what he shared.
               </p>
               <div className="meta-row mt-3">
-                <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; NEWS</span>
+                <span className="text-[var(--magenta)] font-bold">BOLLYWOOD</span>
                 <span className="dot-sep">◆</span>
                 <span>3 MIN READ</span>
                 <span className="dot-sep">◆</span>
@@ -335,7 +345,34 @@ export default function BollywoodView() {
 
           {/* Right Stack: The last 2 blogs uploaded before the latest one */}
           <div className="stack">
-            {/* Card 1: Varun Dhawan & Sidharth Malhotra Reunion */}
+            {/* Card 1: Sanjay Dutt Promises Kaante 2 */}
+            <Link
+              href="/sanjay-dutt-kaante-2-promise-sanjay-gupta-death"
+              className="card m1 group block"
+            >
+              <div className="card-media relative overflow-hidden">
+                <Image
+                  src="/images/sanjay-dutt-kaante-2-promise-sanjay-gupta-death.jpg"
+                  alt="Sanjay Dutt Promises Kaante 2 After Sanjay Gupta's Death"
+                  fill
+                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 980px) 100vw, 35vw"
+                />
+                <span className="badge lime z-10 relative">Kaante 2 Promise</span>
+              </div>
+              <div className="card-body">
+                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
+                  Sanjay Dutt Promises to Make Kaante 2 in Memory of Sanjay Gupta
+                </h3>
+                <div className="meta-row mt-2">
+                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; NEWS</span>
+                  <span className="dot-sep">◆</span>
+                  <span>3 MIN READ</span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Card 2: Varun Dhawan & Sidharth Malhotra Reunion */}
             <Link
               href="/varun-dhawan-sidharth-malhotra-kiara-advani-reunion"
               className="card m1 group block"
@@ -361,33 +398,6 @@ export default function BollywoodView() {
                 </div>
               </div>
             </Link>
-
-            {/* Card 2: Sanjay Gupta Passes Away */}
-            <Link
-              href="/sanjay-gupta-passes-away-shootout-at-wadala-director"
-              className="card m1 group block"
-            >
-              <div className="card-media relative overflow-hidden">
-                <Image
-                  src="/images/sanjay-gupta-passes-away-shootout-at-wadala-director.jpg"
-                  alt="Sanjay Gupta Passes Away: Bollywood Loses Director of Kaante and Shootout at Wadala"
-                  fill
-                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
-                  sizes="(max-width: 980px) 100vw, 35vw"
-                />
-                <span className="badge pink z-10 relative">In Memoriam</span>
-              </div>
-              <div className="card-body">
-                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
-                  Sanjay Gupta Passes Away: Bollywood Loses Director of Kaante &amp; Shootout at Wadala
-                </h3>
-                <div className="meta-row mt-2">
-                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; NEWS</span>
-                  <span className="dot-sep">◆</span>
-                  <span>3 MIN READ</span>
-                </div>
-              </div>
-            </Link>
           </div>
         </section>
 
@@ -400,7 +410,7 @@ export default function BollywoodView() {
               </h2>
             </div>
             <span className="text-xs font-mono text-[var(--lime)] font-bold">
-              22 STORIES PUBLISHED
+              23 STORIES PUBLISHED
             </span>
           </div>
 
