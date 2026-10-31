@@ -22,6 +22,18 @@ interface WebSeriesArticle {
 // All verified web series and OTT articles in reverse chronological order
 const webSeriesArticles: WebSeriesArticle[] = [
   {
+    id: "radhika-apte-rudra-akka",
+    category: "Netflix Original",
+    title: "Radhika Apte on Playing Rudra in Netflix’s Akka: Why This Role Is Different",
+    badge: "Akka Netflix",
+    badgeType: "pink",
+    image: "/images/radhika-apte-rudra-akka-netflix.jpg",
+    href: "/radhika-apte-rudra-akka-netflix",
+    readOrTime: "3 MIN READ",
+    excerpt:
+      "Radhika Apte shares why playing Rudra in Netflix's 1980s retro gangster series Akka alongside Keerthy Suresh is unlike any character she has tackled before.",
+  },
+  {
     id: "iifa-2026-winners",
     category: "IIFA Digital Awards",
     title: "IIFA 2026 Winners List: Dhurandhar Wins 12 Awards, The Ba***ds of Bollywood Best Series",

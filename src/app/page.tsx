@@ -177,6 +177,20 @@ export default function Home() {
 
   const editorialArticles: EditorialArticle[] = [
     {
+      id: "radhika-apte-rudra-akka",
+      anchorId: "akka-netflix-story",
+      href: "/radhika-apte-rudra-akka-netflix",
+      title: "Radhika Apte on Her Akka Role Rudra: Never Played Before",
+      excerpt: "Radhika Apte shares why Rudra in Netflix’s 1980s retro gangster series Akka alongside Keerthy Suresh is unlike any character she has tackled before.",
+      category: "Latest",
+      secondaryCategory: "Web Series",
+      displayCategory: "WEB SERIES & NETFLIX",
+      badge: "Akka Netflix",
+      badgeType: "pink",
+      readTime: "3 MIN READ",
+      image: "/images/radhika-apte-rudra-akka-netflix.jpg",
+    },
+    {
       id: "sanjay-gupta-funeral",
       anchorId: "sanjay-funeral-story",
       href: "/sanjay-gupta-funeral-pawan-hans-crematorium",
@@ -658,15 +672,15 @@ export default function Home() {
         <section className="hero" id="featured">
           {/* 1. Main Featured Story (Commanding Top Story Presentation) */}
           <Link
-            href="/sanjay-gupta-funeral-pawan-hans-crematorium"
+            href="/radhika-apte-rudra-akka-netflix"
             className="feature-card block transition-all hover:border-[var(--lime)] focus-visible:ring-2 focus-visible:ring-[var(--lime)] group"
             style={{ textDecoration: "none", color: "inherit" }}
-            aria-label="Read full article: Sanjay Gupta Funeral: Last Rites Today, Mumbai"
+            aria-label="Read full article: Radhika Apte on Her Akka Role Rudra: Never Played Before"
           >
             <div className="feature-media" style={{ overflow: "hidden", position: "relative" }}>
               <Image
-                src="/images/sanjay-gupta-funeral-pawan-hans-crematorium.jpg"
-                alt="Sanjay Gupta Funeral: Last Rites Today in Mumbai, Bollywood Mourns Kaante Director"
+                src="/images/radhika-apte-rudra-akka-netflix.jpg"
+                alt="Radhika Apte on Playing Rudra in Netflix’s Akka: Why This Role Is Different"
                 fill
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 750px"
@@ -675,28 +689,28 @@ export default function Home() {
               />
               <div className="noise" style={{ pointerEvents: "none" }}></div>
               <div className="feature-tag flex items-center gap-2">
-                <span className="badge pink">🕊️ In Memoriam</span>
-                <span className="badge lime">Funeral Details</span>
-                <span className="badge">Bollywood &amp; News</span>
+                <span className="badge pink">📺 Netflix Original</span>
+                <span className="badge lime">Akka Netflix</span>
+                <span className="badge">Web Series</span>
               </div>
             </div>
             <div className="feature-body">
               <div className="flex items-center gap-2 mb-2 font-mono text-xs text-[var(--lime)] font-bold tracking-wider uppercase">
-                <span>★ TOP STORY · LAST RITES TODAY</span>
+                <span>★ TOP STORY · STREAMING NOW ON NETFLIX</span>
               </div>
               <h1 className="disp" style={{ color: "#fff" }}>
-                Sanjay Gupta Funeral: Last Rites Today in Mumbai, Bollywood Mourns Kaante Director
+                Radhika Apte on Playing Rudra in Netflix’s Akka: Why This Role Is Different
               </h1>
               <p>
-                Filmmaker Sanjay Gupta’s last rites will be held today at Pawan Hans Crematorium in Vile Parle. Bollywood colleagues including Sanjay Dutt, Hansal Mehta and Ashoke Pandit pay emotional tributes.
+                Radhika Apte opens up on playing Rudra in Netflix’s 1980s retro gangster drama Akka alongside Keerthy Suresh, why the layered character is unlike anything she has tackled before, and drawing inspiration from Zeenat Aman.
               </p>
               <div className="meta-row mt-auto pt-3 border-t border-white/[0.06] flex items-center justify-between">
                 <div className="flex items-center gap-3">
-                  <span>BOLLYWOOD &amp; NEWS</span>
+                  <span>WEB SERIES &amp; NETFLIX</span>
                   <span className="dot-sep">◆</span>
                   <span>3 MIN READ</span>
                   <span className="dot-sep">◆</span>
-                  <span style={{ color: "var(--lime)" }}>EDITORIAL DESK</span>
+                  <span style={{ color: "var(--lime)" }}>STREAMING NOW</span>
                 </div>
                 <span className="text-xs font-mono font-bold text-[var(--lime)] hidden sm:inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform">
                   Read Full Story →
@@ -715,6 +729,18 @@ export default function Home() {
               <span className="trend-rank">01</span>
               <div className="trend-text">
                 <Link
+                  href="/radhika-apte-rudra-akka-netflix"
+                  style={{ color: "inherit" }}
+                >
+                  <h3>Radhika Apte on playing Rudra in Netflix’s Akka: “A character I had never played before”</h3>
+                  <span>WEB SERIES &amp; NETFLIX · 460K REACTIONS</span>
+                </Link>
+              </div>
+            </div>
+            <div className="trend-item">
+              <span className="trend-rank">02</span>
+              <div className="trend-text">
+                <Link
                   href="/sanjay-gupta-funeral-pawan-hans-crematorium"
                   style={{ color: "inherit" }}
                 >
@@ -724,7 +750,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">02</span>
+              <span className="trend-rank">03</span>
               <div className="trend-text">
                 <Link
                   href="/diljit-dosanjh-cjp-delhi-concert-abhijeet-dipke-response"
@@ -736,7 +762,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">03</span>
+              <span className="trend-rank">04</span>
               <div className="trend-text">
                 <Link
                   href="/orry-halloween-2026-janhvi-khushi-kapoor-competition"
@@ -748,7 +774,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">04</span>
+              <span className="trend-rank">05</span>
               <div className="trend-text">
                 <Link
                   href="/sanjay-dutt-kaante-2-promise-sanjay-gupta-death"
@@ -760,7 +786,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">05</span>
+              <span className="trend-rank">06</span>
               <div className="trend-text">
                 <Link
                   href="/varun-dhawan-sidharth-malhotra-kiara-advani-reunion"
@@ -772,7 +798,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">06</span>
+              <span className="trend-rank">07</span>
               <div className="trend-text">
                 <Link
                   href="/sanjay-gupta-passes-away-shootout-at-wadala-director"
@@ -784,7 +810,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">07</span>
+              <span className="trend-rank">08</span>
               <div className="trend-text">
                 <Link
                   href="/iifa-2026-winners-list"
@@ -796,7 +822,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">08</span>
+              <span className="trend-rank">09</span>
               <div className="trend-text">
                 <Link
                   href="/ibrahim-ali-khan-palak-tiwari-breakup"
@@ -808,7 +834,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">09</span>
+              <span className="trend-rank">10</span>
               <div className="trend-text">
                 <Link
                   href="/jiya-shankar-unfollows-fiance-kd-instagram"
@@ -816,18 +842,6 @@ export default function Home() {
                 >
                   <h3>Jiya Shankar unfollows fiancé KD on Instagram: Cryptic posts spark breakup speculation</h3>
                   <span>BOLLYWOOD &amp; REALITY · 325K REACTIONS</span>
-                </Link>
-              </div>
-            </div>
-            <div className="trend-item">
-              <span className="trend-rank">10</span>
-              <div className="trend-text">
-                <Link
-                  href="/parivarik-manuranjan-ott-release-date-sony-liv"
-                  style={{ color: "inherit" }}
-                >
-                  <h3>Parivarik ManuRanjan: Pankaj Tripathi &amp; Aditi Rao Hydari rom-com premieres Nov 13 on Sony LIV</h3>
-                  <span>MOVIES &amp; BOLLYWOOD · 310K REACTIONS</span>
                 </Link>
               </div>
             </div>
