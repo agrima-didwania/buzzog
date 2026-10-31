@@ -8,6 +8,12 @@ export const metadata: Metadata = {
   keywords: [
     "Bollywood Buzz Originals",
     "Bollywood news",
+    "Manoj Bajpayee on women in cinema",
+    "Manoj Bajpayee Vidya Balan Kajol",
+    "women-led films Bollywood",
+    "Manoj Bajpayee latest news",
+    "Manoj Bajpayee Gajab Raat",
+    "OTT women-led stories",
     "Sanjay Gupta funeral",
     "Pawan Hans Crematorium",
     "Sanjay Gupta last rites",
@@ -121,10 +127,10 @@ export const metadata: Metadata = {
     siteName: "Buzz Originals",
     images: [
       {
-        url: "/images/sanjay-gupta-funeral-pawan-hans-crematorium.jpg",
+        url: "/images/manoj-bajpayee-vidya-balan-kajol-women-in-cinema.jpg",
         width: 1024,
         height: 576,
-        alt: "Sanjay Gupta Funeral: Last Rites Today in Mumbai — Buzz Originals Bollywood",
+        alt: "Manoj Bajpayee on Women in Cinema: Vidya Balan, Kajol — Buzz Originals Bollywood",
       },
     ],
     type: "website",
@@ -134,7 +140,7 @@ export const metadata: Metadata = {
     title: "Bollywood — Buzz Originals",
     description:
       "Raw, unfiltered Bollywood coverage of red carpets, gossip, airport sightings & exclusives.",
-    images: ["/images/sanjay-gupta-funeral-pawan-hans-crematorium.jpg"],
+    images: ["/images/manoj-bajpayee-vidya-balan-kajol-women-in-cinema.jpg"],
   },
 };
 
@@ -161,12 +167,18 @@ export default function BollywoodPage() {
         {
           "@type": "ListItem",
           position: 1,
+          name: "Manoj Bajpayee on Women in Cinema: Vidya Balan, Kajol",
+          url: "https://www.buzzoriginals.com/manoj-bajpayee-vidya-balan-kajol-women-in-cinema",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
           name: "Sanjay Gupta Funeral: Last Rites Today, Mumbai",
           url: "https://www.buzzoriginals.com/sanjay-gupta-funeral-pawan-hans-crematorium",
         },
         {
           "@type": "ListItem",
-          position: 2,
+          position: 3,
           name: "Orry: Janhvi and Khushi Kapoor are His Halloween Competition",
           url: "https://www.buzzoriginals.com/orry-halloween-2026-janhvi-khushi-kapoor-competition",
         },

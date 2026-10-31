@@ -20,6 +20,16 @@ interface BollywoodArticle {
 
 const bollywoodArticles: BollywoodArticle[] = [
   {
+    id: "manoj-bajpayee-women-cinema",
+    category: "Women in Cinema",
+    title: "Manoj Bajpayee Says Women Have Been Leading Bollywood for Years",
+    badge: "Cinema & Culture",
+    badgeType: "pink",
+    image: "/images/manoj-bajpayee-vidya-balan-kajol-women-in-cinema.jpg",
+    href: "/manoj-bajpayee-vidya-balan-kajol-women-in-cinema",
+    readOrTime: "3 MIN READ",
+  },
+  {
     id: "sanjay-gupta-funeral",
     category: "In Memoriam & Funeral",
     title: "Sanjay Gupta Funeral: Last Rites Today in Mumbai, Bollywood Mourns Kaante Director",
@@ -316,16 +326,16 @@ export default function BollywoodView() {
 
         {/* Lead Section: Latest Bollywood Published Article (Cover Story) + The Last 2 Blogs Uploaded Before It */}
         <section className="lead">
-          {/* Cover Story: Latest Published Bollywood Story (Sanjay Gupta Funeral) */}
+          {/* Cover Story: Latest Published Bollywood Story (Manoj Bajpayee Women in Cinema) */}
           <Link
-            href="/sanjay-gupta-funeral-pawan-hans-crematorium"
+            href="/manoj-bajpayee-vidya-balan-kajol-women-in-cinema"
             className="feature-card group block"
-            aria-label="Read full cover story: Sanjay Gupta Funeral: Last Rites Today in Mumbai, Bollywood Mourns Kaante Director"
+            aria-label="Read full cover story: Manoj Bajpayee Says Women Have Been Leading Bollywood for Years"
           >
             <div className="feature-media relative overflow-hidden">
               <Image
-                src="/images/sanjay-gupta-funeral-pawan-hans-crematorium.jpg"
-                alt="Sanjay Gupta Funeral: Last Rites Today in Mumbai, Bollywood Mourns Kaante Director"
+                src="/images/manoj-bajpayee-vidya-balan-kajol-women-in-cinema.jpg"
+                alt="Manoj Bajpayee Says Women Have Been Leading Bollywood for Years with Vidya Balan and Kajol"
                 fill
                 priority
                 className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
@@ -333,18 +343,18 @@ export default function BollywoodView() {
               />
               <div className="noise" />
               <span className="badge pink feature-tag z-10">
-                🕊️ Funeral Details
+                🎬 Women in Cinema
               </span>
             </div>
             <div className="feature-body">
               <h2 className="disp text-white group-hover:text-[var(--lime)] transition-colors">
-                Sanjay Gupta Funeral: Last Rites Today in Mumbai, Bollywood Mourns Kaante Director
+                Manoj Bajpayee Says Women Have Been Leading Bollywood for Years
               </h2>
               <p>
-                Kaante director Sanjay Gupta’s last rites will be held today at Pawan Hans Crematorium, Vile Parle. Here is what we know and how Bollywood is reacting.
+                Manoj Bajpayee says heroines have been leading films for a long time. He names Vidya Balan and Kajol, and talks about how OTT is changing things.
               </p>
               <div className="meta-row mt-3">
-                <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; NEWS</span>
+                <span className="text-[var(--magenta)] font-bold">BOLLYWOOD</span>
                 <span className="dot-sep">◆</span>
                 <span>3 MIN READ</span>
                 <span className="dot-sep">◆</span>
@@ -355,7 +365,34 @@ export default function BollywoodView() {
 
           {/* Right Stack: The last 2 blogs uploaded before the latest one */}
           <div className="stack">
-            {/* Card 1: Orry Halloween Competition */}
+            {/* Card 1: Sanjay Gupta Funeral */}
+            <Link
+              href="/sanjay-gupta-funeral-pawan-hans-crematorium"
+              className="card m1 group block"
+            >
+              <div className="card-media relative overflow-hidden">
+                <Image
+                  src="/images/sanjay-gupta-funeral-pawan-hans-crematorium.jpg"
+                  alt="Sanjay Gupta Funeral: Last Rites Today in Mumbai, Bollywood Mourns Kaante Director"
+                  fill
+                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 980px) 100vw, 35vw"
+                />
+                <span className="badge pink z-10 relative">🕊️ Funeral Details</span>
+              </div>
+              <div className="card-body">
+                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
+                  Sanjay Gupta Funeral: Last Rites Today in Mumbai, Bollywood Mourns
+                </h3>
+                <div className="meta-row mt-2">
+                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; NEWS</span>
+                  <span className="dot-sep">◆</span>
+                  <span>3 MIN READ</span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Card 2: Orry Halloween Competition */}
             <Link
               href="/orry-halloween-2026-janhvi-khushi-kapoor-competition"
               className="card m1 group block"
@@ -368,7 +405,7 @@ export default function BollywoodView() {
                   className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
                   sizes="(max-width: 980px) 100vw, 35vw"
                 />
-                <span className="badge pink z-10 relative">🎃 Halloween 2026</span>
+                <span className="badge lime z-10 relative">🎃 Halloween 2026</span>
               </div>
               <div className="card-body">
                 <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
@@ -376,33 +413,6 @@ export default function BollywoodView() {
                 </h3>
                 <div className="meta-row mt-2">
                   <span className="text-[var(--magenta)] font-bold">BOLLYWOOD</span>
-                  <span className="dot-sep">◆</span>
-                  <span>3 MIN READ</span>
-                </div>
-              </div>
-            </Link>
-
-            {/* Card 2: Sanjay Dutt Promises Kaante 2 */}
-            <Link
-              href="/sanjay-dutt-kaante-2-promise-sanjay-gupta-death"
-              className="card m1 group block"
-            >
-              <div className="card-media relative overflow-hidden">
-                <Image
-                  src="/images/sanjay-dutt-kaante-2-promise-sanjay-gupta-death.jpg"
-                  alt="Sanjay Dutt Promises Kaante 2 After Sanjay Gupta's Death"
-                  fill
-                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
-                  sizes="(max-width: 980px) 100vw, 35vw"
-                />
-                <span className="badge lime z-10 relative">Kaante 2 Promise</span>
-              </div>
-              <div className="card-body">
-                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
-                  Sanjay Dutt Promises to Make Kaante 2 in Memory of Sanjay Gupta
-                </h3>
-                <div className="meta-row mt-2">
-                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; NEWS</span>
                   <span className="dot-sep">◆</span>
                   <span>3 MIN READ</span>
                 </div>
@@ -420,7 +430,7 @@ export default function BollywoodView() {
               </h2>
             </div>
             <span className="text-xs font-mono text-[var(--lime)] font-bold">
-              24 STORIES PUBLISHED
+              25 STORIES PUBLISHED
             </span>
           </div>
 

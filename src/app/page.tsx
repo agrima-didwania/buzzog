@@ -177,6 +177,20 @@ export default function Home() {
 
   const editorialArticles: EditorialArticle[] = [
     {
+      id: "manoj-bajpayee-women-cinema",
+      anchorId: "manoj-cinema-story",
+      href: "/manoj-bajpayee-vidya-balan-kajol-women-in-cinema",
+      title: "Manoj Bajpayee on Women in Cinema: Vidya Balan, Kajol",
+      excerpt: "Manoj Bajpayee says heroines have been carrying films as heroes for years, naming Vidya Balan and Kajol as trailblazers while breaking down how OTT is lowering financial risks.",
+      category: "Bollywood",
+      secondaryCategory: "Bollywood & Hollywood",
+      displayCategory: "BOLLYWOOD & CINEMA",
+      badge: "Women in Cinema",
+      badgeType: "pink",
+      readTime: "3 MIN READ",
+      image: "/images/manoj-bajpayee-vidya-balan-kajol-women-in-cinema.jpg",
+    },
+    {
       id: "radhika-apte-rudra-akka",
       anchorId: "akka-netflix-story",
       href: "/radhika-apte-rudra-akka-netflix",
@@ -672,15 +686,15 @@ export default function Home() {
         <section className="hero" id="featured">
           {/* 1. Main Featured Story (Commanding Top Story Presentation) */}
           <Link
-            href="/radhika-apte-rudra-akka-netflix"
+            href="/manoj-bajpayee-vidya-balan-kajol-women-in-cinema"
             className="feature-card block transition-all hover:border-[var(--lime)] focus-visible:ring-2 focus-visible:ring-[var(--lime)] group"
             style={{ textDecoration: "none", color: "inherit" }}
-            aria-label="Read full article: Radhika Apte on Her Akka Role Rudra: Never Played Before"
+            aria-label="Read full article: Manoj Bajpayee on Women in Cinema: Vidya Balan, Kajol"
           >
             <div className="feature-media" style={{ overflow: "hidden", position: "relative" }}>
               <Image
-                src="/images/radhika-apte-rudra-akka-netflix.jpg"
-                alt="Radhika Apte on Playing Rudra in Netflix’s Akka: Why This Role Is Different"
+                src="/images/manoj-bajpayee-vidya-balan-kajol-women-in-cinema.jpg"
+                alt="Manoj Bajpayee Says Women Have Been Leading Bollywood for Years with Vidya Balan and Kajol"
                 fill
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 750px"
@@ -689,28 +703,28 @@ export default function Home() {
               />
               <div className="noise" style={{ pointerEvents: "none" }}></div>
               <div className="feature-tag flex items-center gap-2">
-                <span className="badge pink">📺 Netflix Original</span>
-                <span className="badge lime">Akka Netflix</span>
-                <span className="badge">Web Series</span>
+                <span className="badge pink">🎬 Cinema &amp; Culture</span>
+                <span className="badge lime">Women in Cinema</span>
+                <span className="badge">Bollywood Exclusive</span>
               </div>
             </div>
             <div className="feature-body">
               <div className="flex items-center gap-2 mb-2 font-mono text-xs text-[var(--lime)] font-bold tracking-wider uppercase">
-                <span>★ TOP STORY · STREAMING NOW ON NETFLIX</span>
+                <span>★ TOP STORY · CINEMA &amp; CULTURE</span>
               </div>
               <h1 className="disp" style={{ color: "#fff" }}>
-                Radhika Apte on Playing Rudra in Netflix’s Akka: Why This Role Is Different
+                Manoj Bajpayee Says Women Have Been Leading Bollywood for Years
               </h1>
               <p>
-                Radhika Apte opens up on playing Rudra in Netflix’s 1980s retro gangster drama Akka alongside Keerthy Suresh, why the layered character is unlike anything she has tackled before, and drawing inspiration from Zeenat Aman.
+                Manoj Bajpayee explains why women-led films aren’t new, crediting Vidya Balan and Kajol as powerhouse heroes while discussing how OTT is changing the economics of cinema for male and female actors alike.
               </p>
               <div className="meta-row mt-auto pt-3 border-t border-white/[0.06] flex items-center justify-between">
                 <div className="flex items-center gap-3">
-                  <span>WEB SERIES &amp; NETFLIX</span>
+                  <span>BOLLYWOOD</span>
                   <span className="dot-sep">◆</span>
                   <span>3 MIN READ</span>
                   <span className="dot-sep">◆</span>
-                  <span style={{ color: "var(--lime)" }}>STREAMING NOW</span>
+                  <span style={{ color: "var(--lime)" }}>EXCLUSIVE INTERVIEW</span>
                 </div>
                 <span className="text-xs font-mono font-bold text-[var(--lime)] hidden sm:inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform">
                   Read Full Story →
@@ -729,6 +743,18 @@ export default function Home() {
               <span className="trend-rank">01</span>
               <div className="trend-text">
                 <Link
+                  href="/manoj-bajpayee-vidya-balan-kajol-women-in-cinema"
+                  style={{ color: "inherit" }}
+                >
+                  <h3>Manoj Bajpayee on women in cinema: “Heroines have been coming as heroes for a long time”</h3>
+                  <span>BOLLYWOOD · 470K REACTIONS</span>
+                </Link>
+              </div>
+            </div>
+            <div className="trend-item">
+              <span className="trend-rank">02</span>
+              <div className="trend-text">
+                <Link
                   href="/radhika-apte-rudra-akka-netflix"
                   style={{ color: "inherit" }}
                 >
@@ -738,7 +764,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">02</span>
+              <span className="trend-rank">03</span>
               <div className="trend-text">
                 <Link
                   href="/sanjay-gupta-funeral-pawan-hans-crematorium"
@@ -750,7 +776,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">03</span>
+              <span className="trend-rank">04</span>
               <div className="trend-text">
                 <Link
                   href="/diljit-dosanjh-cjp-delhi-concert-abhijeet-dipke-response"
@@ -762,7 +788,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">04</span>
+              <span className="trend-rank">05</span>
               <div className="trend-text">
                 <Link
                   href="/orry-halloween-2026-janhvi-khushi-kapoor-competition"
@@ -774,7 +800,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">05</span>
+              <span className="trend-rank">06</span>
               <div className="trend-text">
                 <Link
                   href="/sanjay-dutt-kaante-2-promise-sanjay-gupta-death"
@@ -786,7 +812,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">06</span>
+              <span className="trend-rank">07</span>
               <div className="trend-text">
                 <Link
                   href="/varun-dhawan-sidharth-malhotra-kiara-advani-reunion"
@@ -798,7 +824,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">07</span>
+              <span className="trend-rank">08</span>
               <div className="trend-text">
                 <Link
                   href="/sanjay-gupta-passes-away-shootout-at-wadala-director"
@@ -810,7 +836,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">08</span>
+              <span className="trend-rank">09</span>
               <div className="trend-text">
                 <Link
                   href="/iifa-2026-winners-list"
@@ -822,7 +848,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">09</span>
+              <span className="trend-rank">10</span>
               <div className="trend-text">
                 <Link
                   href="/ibrahim-ali-khan-palak-tiwari-breakup"
@@ -830,42 +856,6 @@ export default function Home() {
                 >
                   <h3>Ibrahim Ali Khan &amp; Palak Tiwari reportedly break up after 3 years: Joint shoots on hold</h3>
                   <span>BOLLYWOOD &amp; NEWS · 340K REACTIONS</span>
-                </Link>
-              </div>
-            </div>
-            <div className="trend-item">
-              <span className="trend-rank">10</span>
-              <div className="trend-text">
-                <Link
-                  href="/jiya-shankar-unfollows-fiance-kd-instagram"
-                  style={{ color: "inherit" }}
-                >
-                  <h3>Jiya Shankar unfollows fiancé KD on Instagram: Cryptic posts spark breakup speculation</h3>
-                  <span>BOLLYWOOD &amp; REALITY · 325K REACTIONS</span>
-                </Link>
-              </div>
-            </div>
-            <div className="trend-item">
-              <span className="trend-rank">10</span>
-              <div className="trend-text">
-                <Link
-                  href="/ramayana-advance-booking-us-jump-la-premiere"
-                  style={{ color: "inherit" }}
-                >
-                  <h3>Ramayana advance booking: US sales jump 27% after starry LA premiere</h3>
-                  <span>BOLLYWOOD &amp; MOVIES · 295K REACTIONS</span>
-                </Link>
-              </div>
-            </div>
-            <div className="trend-item">
-              <span className="trend-rank">10</span>
-              <div className="trend-text">
-                <Link
-                  href="/priyanka-chopra-we-were-here-executive-producer"
-                  style={{ color: "inherit" }}
-                >
-                  <h3>Priyanka Chopra joins Oscar-qualified short film We Were Here as executive producer</h3>
-                  <span>MOVIES &amp; NEWS · 275K REACTIONS</span>
                 </Link>
               </div>
             </div>
