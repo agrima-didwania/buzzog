@@ -20,6 +20,16 @@ interface BollywoodArticle {
 
 const bollywoodArticles: BollywoodArticle[] = [
   {
+    id: "varun-sidharth-reunion",
+    category: "Reunion & Friendship",
+    title: "Varun Dhawan Sidharth Malhotra Reunion: “Never a Rivalry” With Kiara Advani",
+    badge: "SOTY Reunion",
+    badgeType: "pink",
+    image: "/images/varun-dhawan-sidharth-malhotra-kiara-advani-reunion.jpg",
+    href: "/varun-dhawan-sidharth-malhotra-kiara-advani-reunion",
+    readOrTime: "3 MIN READ",
+  },
+  {
     id: "sanjay-gupta-passes-away",
     category: "In Memoriam",
     title: "Sanjay Gupta Passes Away: Bollywood Loses the Director of Kaante and Shootout at Wadala",
@@ -276,16 +286,16 @@ export default function BollywoodView() {
 
         {/* Lead Section: Latest Bollywood Published Article (Cover Story) + The Last 2 Blogs Uploaded Before It */}
         <section className="lead">
-          {/* Cover Story: Latest Published Bollywood Story (Sanjay Gupta Passes Away) */}
+          {/* Cover Story: Latest Published Bollywood Story (Varun & Sidharth Reunion) */}
           <Link
-            href="/sanjay-gupta-passes-away-shootout-at-wadala-director"
+            href="/varun-dhawan-sidharth-malhotra-kiara-advani-reunion"
             className="feature-card group block"
-            aria-label="Read full cover story: Sanjay Gupta Passes Away"
+            aria-label="Read full cover story: Varun Dhawan Sidharth Malhotra Reunion"
           >
             <div className="feature-media relative overflow-hidden">
               <Image
-                src="/images/sanjay-gupta-passes-away-shootout-at-wadala-director.jpg"
-                alt="Sanjay Gupta Passes Away: Bollywood Loses the Director of Kaante and Shootout at Wadala"
+                src="/images/varun-dhawan-sidharth-malhotra-kiara-advani-reunion.jpg"
+                alt="Varun Dhawan Sidharth Malhotra Reunion: “Never a Rivalry” — Kiara Advani"
                 fill
                 priority
                 className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
@@ -293,18 +303,18 @@ export default function BollywoodView() {
               />
               <div className="noise" />
               <span className="badge pink feature-tag z-10">
-                🕊️ In Memoriam
+                ✨ SOTY Reunion
               </span>
             </div>
             <div className="feature-body">
               <h2 className="disp text-white group-hover:text-[var(--lime)] transition-colors">
-                Sanjay Gupta Passes Away: Bollywood Loses the Director of Kaante and Shootout at Wadala
+                Varun Dhawan Meets Sidharth Malhotra and Kiara Advani, Fans Love the Bollywood Friendship
               </h2>
               <p>
-                Filmmaker Sanjay Gupta, director of Kaante, Shootout at Wadala and Kaabil, has passed away. Here is what we know so far and a look at his film journey.
+                Varun Dhawan meets Sidharth Malhotra and Kiara Advani in Mumbai. Read his viral Instagram post, Sidharth’s reply and Karan Johar’s reaction.
               </p>
               <div className="meta-row mt-3">
-                <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; NEWS</span>
+                <span className="text-[var(--magenta)] font-bold">BOLLYWOOD</span>
                 <span className="dot-sep">◆</span>
                 <span>3 MIN READ</span>
                 <span className="dot-sep">◆</span>
@@ -315,7 +325,34 @@ export default function BollywoodView() {
 
           {/* Right Stack: The last 2 blogs uploaded before the latest one */}
           <div className="stack">
-            {/* Card 1: IIFA 2026 Winners */}
+            {/* Card 1: Sanjay Gupta Passes Away */}
+            <Link
+              href="/sanjay-gupta-passes-away-shootout-at-wadala-director"
+              className="card m1 group block"
+            >
+              <div className="card-media relative overflow-hidden">
+                <Image
+                  src="/images/sanjay-gupta-passes-away-shootout-at-wadala-director.jpg"
+                  alt="Sanjay Gupta Passes Away: Bollywood Loses Director of Kaante and Shootout at Wadala"
+                  fill
+                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 980px) 100vw, 35vw"
+                />
+                <span className="badge pink z-10 relative">In Memoriam</span>
+              </div>
+              <div className="card-body">
+                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
+                  Sanjay Gupta Passes Away: Bollywood Loses Director of Kaante &amp; Shootout at Wadala
+                </h3>
+                <div className="meta-row mt-2">
+                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; NEWS</span>
+                  <span className="dot-sep">◆</span>
+                  <span>3 MIN READ</span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Card 2: IIFA 2026 Winners */}
             <Link
               href="/iifa-2026-winners-list"
               className="card m1 group block"
@@ -341,33 +378,6 @@ export default function BollywoodView() {
                 </div>
               </div>
             </Link>
-
-            {/* Card 2: Ibrahim Ali Khan & Palak Tiwari */}
-            <Link
-              href="/ibrahim-ali-khan-palak-tiwari-breakup"
-              className="card m1 group block"
-            >
-              <div className="card-media relative overflow-hidden">
-                <Image
-                  src="/images/ibrahim-ali-khan-palak-tiwari-breakup.jpg"
-                  alt="Ibrahim Ali Khan and Palak Tiwari Reportedly Break Up After 3 Years"
-                  fill
-                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
-                  sizes="(max-width: 980px) 100vw, 35vw"
-                />
-                <span className="badge pink z-10 relative">Breakup Scoop</span>
-              </div>
-              <div className="card-body">
-                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
-                  Ibrahim Ali Khan and Palak Tiwari Reportedly Break Up After 3 Years
-                </h3>
-                <div className="meta-row mt-2">
-                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; NEWS</span>
-                  <span className="dot-sep">◆</span>
-                  <span>3 MIN READ</span>
-                </div>
-              </div>
-            </Link>
           </div>
         </section>
 
@@ -380,7 +390,7 @@ export default function BollywoodView() {
               </h2>
             </div>
             <span className="text-xs font-mono text-[var(--lime)] font-bold">
-              20 STORIES PUBLISHED
+              21 STORIES PUBLISHED
             </span>
           </div>
 

@@ -8,6 +8,11 @@ export const metadata: Metadata = {
   keywords: [
     "Bollywood Buzz Originals",
     "Bollywood news",
+    "Varun Dhawan Sidharth Malhotra",
+    "Varun Dhawan Kiara Advani",
+    "Varun Dhawan Instagram post",
+    "Student of the Year reunion",
+    "Varun Dhawan Sidharth Malhotra friendship",
     "Sanjay Gupta death",
     "Sanjay Gupta passes away",
     "Shootout at Wadala director",
@@ -103,10 +108,10 @@ export const metadata: Metadata = {
     siteName: "Buzz Originals",
     images: [
       {
-        url: "/images/sanjay-gupta-passes-away-shootout-at-wadala-director.jpg",
+        url: "/images/varun-dhawan-sidharth-malhotra-kiara-advani-reunion.jpg",
         width: 1024,
         height: 576,
-        alt: "Sanjay Gupta Passes Away: Bollywood Loses the Director of Kaante and Shootout at Wadala — Buzz Originals Bollywood",
+        alt: "Varun Dhawan Sidharth Malhotra Reunion: “Never a Rivalry” — Buzz Originals Bollywood",
       },
     ],
     type: "website",
@@ -116,7 +121,7 @@ export const metadata: Metadata = {
     title: "Bollywood — Buzz Originals",
     description:
       "Raw, unfiltered Bollywood coverage of red carpets, gossip, airport sightings & exclusives.",
-    images: ["/images/sanjay-gupta-passes-away-shootout-at-wadala-director.jpg"],
+    images: ["/images/varun-dhawan-sidharth-malhotra-kiara-advani-reunion.jpg"],
   },
 };
 
@@ -143,12 +148,18 @@ export default function BollywoodPage() {
         {
           "@type": "ListItem",
           position: 1,
+          name: "Varun Dhawan Sidharth Malhotra Reunion: “Never a Rivalry”",
+          url: "https://www.buzzoriginals.com/varun-dhawan-sidharth-malhotra-kiara-advani-reunion",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
           name: "Sanjay Gupta Passes Away: Bollywood Loses the Director of Kaante and Shootout at Wadala",
           url: "https://www.buzzoriginals.com/sanjay-gupta-passes-away-shootout-at-wadala-director",
         },
         {
           "@type": "ListItem",
-          position: 2,
+          position: 3,
           name: "IIFA 2026 Winners List: Dhurandhar Wins 12 Awards",
           url: "https://www.buzzoriginals.com/iifa-2026-winners-list",
         },

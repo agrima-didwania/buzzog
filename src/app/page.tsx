@@ -177,6 +177,20 @@ export default function Home() {
 
   const editorialArticles: EditorialArticle[] = [
     {
+      id: "varun-sidharth-reunion",
+      anchorId: "varun-sid-story",
+      href: "/varun-dhawan-sidharth-malhotra-kiara-advani-reunion",
+      title: "Varun Dhawan Sidharth Malhotra Reunion: “Never a Rivalry” With Kiara Advani",
+      excerpt: "Varun Dhawan visits Sidharth Malhotra and Kiara Advani in Mumbai, sparking viral Student of the Year nostalgia with Karan Johar joining the fun.",
+      category: "Bollywood",
+      secondaryCategory: "Bollywood & Hollywood",
+      displayCategory: "BOLLYWOOD REUNION",
+      badge: "SOTY Reunion",
+      badgeType: "pink",
+      readTime: "3 MIN READ",
+      image: "/images/varun-dhawan-sidharth-malhotra-kiara-advani-reunion.jpg",
+    },
+    {
       id: "sanjay-gupta-passes-away",
       anchorId: "sanjay-gupta-story",
       href: "/sanjay-gupta-passes-away-shootout-at-wadala-director",
@@ -588,15 +602,15 @@ export default function Home() {
         <section className="hero" id="featured">
           {/* 1. Main Featured Story (Commanding Top Story Presentation) */}
           <Link
-            href="/sanjay-gupta-passes-away-shootout-at-wadala-director"
+            href="/varun-dhawan-sidharth-malhotra-kiara-advani-reunion"
             className="feature-card block transition-all hover:border-[var(--lime)] focus-visible:ring-2 focus-visible:ring-[var(--lime)] group"
             style={{ textDecoration: "none", color: "inherit" }}
-            aria-label="Read full article: Sanjay Gupta Passes Away"
+            aria-label="Read full article: Varun Dhawan Sidharth Malhotra Reunion"
           >
             <div className="feature-media" style={{ overflow: "hidden", position: "relative" }}>
               <Image
-                src="/images/sanjay-gupta-passes-away-shootout-at-wadala-director.jpg"
-                alt="Sanjay Gupta Passes Away: Bollywood Loses the Director of Kaante and Shootout at Wadala"
+                src="/images/varun-dhawan-sidharth-malhotra-kiara-advani-reunion.jpg"
+                alt="Varun Dhawan Sidharth Malhotra Reunion: “Never a Rivalry” — Kiara Advani"
                 fill
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 750px"
@@ -605,24 +619,24 @@ export default function Home() {
               />
               <div className="noise" style={{ pointerEvents: "none" }}></div>
               <div className="feature-tag flex items-center gap-2">
-                <span className="badge pink">🕊️ In Memoriam</span>
-                <span className="badge">Bollywood &amp; News</span>
-                <span className="badge lime">Kaante &amp; Wadala Director</span>
+                <span className="badge pink">✨ SOTY Reunion</span>
+                <span className="badge">Bollywood Buzz</span>
+                <span className="badge lime">Varun, Sid &amp; Kiara</span>
               </div>
             </div>
             <div className="feature-body">
               <div className="flex items-center gap-2 mb-2 font-mono text-xs text-[var(--lime)] font-bold tracking-wider uppercase">
-                <span>★ BREAKING STORY · IN MEMORIAM</span>
+                <span>★ TOP STORY · SOTY REUNION</span>
               </div>
               <h1 className="disp" style={{ color: "#fff" }}>
-                Sanjay Gupta Passes Away: Bollywood Loses Director of Kaante &amp; Shootout at Wadala
+                Varun Dhawan Meets Sidharth Malhotra &amp; Kiara Advani: “Never a Rivalry”
               </h1>
               <p>
-                Bollywood wakes up to heartbreaking news as celebrated filmmaker Sanjay Gupta passes away in Mumbai. From Kaante to Shootout at Wadala and Kaabil, the film industry mourns a stylish cinematic voice.
+                The Student of the Year stars reunite in Mumbai as Varun visits Sidharth and Kiara Advani, sparking hilarious banter with Karan Johar over their Koffee With Karan Heated Rivalry joke.
               </p>
               <div className="meta-row mt-auto pt-3 border-t border-white/[0.06] flex items-center justify-between">
                 <div className="flex items-center gap-3">
-                  <span>BOLLYWOOD &amp; NEWS</span>
+                  <span>BOLLYWOOD</span>
                   <span className="dot-sep">◆</span>
                   <span>3 MIN READ</span>
                   <span className="dot-sep">◆</span>
@@ -645,6 +659,18 @@ export default function Home() {
               <span className="trend-rank">01</span>
               <div className="trend-text">
                 <Link
+                  href="/varun-dhawan-sidharth-malhotra-kiara-advani-reunion"
+                  style={{ color: "inherit" }}
+                >
+                  <h3>Varun Dhawan &amp; Sidharth Malhotra reunion: “Never a rivalry” photo with Kiara Advani goes viral</h3>
+                  <span>BOLLYWOOD · 390K REACTIONS</span>
+                </Link>
+              </div>
+            </div>
+            <div className="trend-item">
+              <span className="trend-rank">02</span>
+              <div className="trend-text">
+                <Link
                   href="/sanjay-gupta-passes-away-shootout-at-wadala-director"
                   style={{ color: "inherit" }}
                 >
@@ -654,7 +680,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">02</span>
+              <span className="trend-rank">03</span>
               <div className="trend-text">
                 <Link
                   href="/iifa-2026-winners-list"
@@ -666,7 +692,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">03</span>
+              <span className="trend-rank">04</span>
               <div className="trend-text">
                 <Link
                   href="/ibrahim-ali-khan-palak-tiwari-breakup"
