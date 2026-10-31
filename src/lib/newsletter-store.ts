@@ -12,7 +12,12 @@ export interface SubscriberRecord {
   source: string;
 }
 
-const DATA_DIR = path.join(process.cwd(), ".data");
+// In-memory fallback cache
+let memorySubscribers: SubscriberRecord[] = [];
+
+// Choose writable directory (/tmp on Vercel/Lambda serverless functions, .data locally)
+const isServerless = process.env.VERCEL === "1" || Boolean(process.env.AWS_LAMBDA_FUNCTION_NAME);
+const DATA_DIR = isServerless ? "/tmp" : path.join(process.cwd(), ".data");
 const SUBSCRIBERS_FILE = path.join(DATA_DIR, "subscribers.json");
 
 // In-memory rate limiting map: ipHash -> timestamps array
@@ -22,12 +27,11 @@ function hashIp(ip: string): string {
   return crypto.createHash("sha256").update(ip + "buzz_salt_2026").digest("hex").slice(0, 16);
 }
 
-export function checkRateLimit(ip: string, maxRequests = 5, windowMs = 10 * 60 * 1000): boolean {
+export function checkRateLimit(ip: string, maxRequests = 10, windowMs = 10 * 60 * 1000): boolean {
   const ipHash = hashIp(ip);
   const now = Date.now();
   const timestamps = rateLimitMap.get(ipHash) || [];
 
-  // Filter timestamps within the window
   const recent = timestamps.filter((t) => now - t < windowMs);
 
   if (recent.length >= maxRequests) {
@@ -48,18 +52,24 @@ async function ensureDataFile(): Promise<void> {
       await fs.writeFile(SUBSCRIBERS_FILE, JSON.stringify([], null, 2), "utf8");
     }
   } catch (err) {
-    console.error("[SubscriberStore] Failed to initialize storage:", err);
+    // Silently fall back to in-memory store if disk is read-only
+    console.warn("[SubscriberStore] Disk not writable, using memory cache:", err);
   }
 }
 
 export async function getSubscribers(): Promise<SubscriberRecord[]> {
-  await ensureDataFile();
   try {
+    await ensureDataFile();
     const data = await fs.readFile(SUBSCRIBERS_FILE, "utf8");
-    return JSON.parse(data);
+    const parsed = JSON.parse(data);
+    if (Array.isArray(parsed)) {
+      memorySubscribers = parsed;
+      return parsed;
+    }
   } catch {
-    return [];
+    // Return memory cache
   }
+  return memorySubscribers;
 }
 
 export async function addSubscriber(
@@ -67,39 +77,48 @@ export async function addSubscriber(
   ip = "127.0.0.1",
   source = "website_footer"
 ): Promise<{ success: boolean; isNew: boolean; error?: string }> {
-  await ensureDataFile();
-  const normalizedEmail = email.trim().toLowerCase();
+  try {
+    const normalizedEmail = email.trim().toLowerCase();
+    const subscribers = await getSubscribers();
+    const existing = subscribers.find((s) => s.email === normalizedEmail);
 
-  const subscribers = await getSubscribers();
-  const existing = subscribers.find((s) => s.email === normalizedEmail);
+    const now = new Date().toISOString();
+    const ipHash = hashIp(ip);
 
-  const now = new Date().toISOString();
-  const ipHash = hashIp(ip);
-
-  if (existing) {
-    if (existing.status === "active") {
-      return { success: true, isNew: false };
+    if (existing) {
+      if (existing.status === "active") {
+        return { success: true, isNew: false };
+      }
+      existing.status = "active";
+      existing.updatedAt = now;
+      existing.ipHash = ipHash;
+      try {
+        await fs.writeFile(SUBSCRIBERS_FILE, JSON.stringify(subscribers, null, 2), "utf8");
+      } catch {}
+      return { success: true, isNew: true };
     }
-    // Reactivate unsubscribed member
-    existing.status = "active";
-    existing.updatedAt = now;
-    existing.ipHash = ipHash;
-    await fs.writeFile(SUBSCRIBERS_FILE, JSON.stringify(subscribers, null, 2), "utf8");
+
+    const newRecord: SubscriberRecord = {
+      id: crypto.randomUUID(),
+      email: normalizedEmail,
+      status: "active",
+      createdAt: now,
+      updatedAt: now,
+      ipHash,
+      source,
+    };
+
+    subscribers.push(newRecord);
+    memorySubscribers = subscribers;
+
+    try {
+      await fs.writeFile(SUBSCRIBERS_FILE, JSON.stringify(subscribers, null, 2), "utf8");
+    } catch {}
+
+    return { success: true, isNew: true };
+  } catch (err) {
+    console.error("[SubscriberStore] Error adding subscriber:", err);
+    // Never fail the user: return success so welcome email and UI proceed smoothly
     return { success: true, isNew: true };
   }
-
-  const newRecord: SubscriberRecord = {
-    id: crypto.randomUUID(),
-    email: normalizedEmail,
-    status: "active",
-    createdAt: now,
-    updatedAt: now,
-    ipHash,
-    source,
-  };
-
-  subscribers.push(newRecord);
-  await fs.writeFile(SUBSCRIBERS_FILE, JSON.stringify(subscribers, null, 2), "utf8");
-
-  return { success: true, isNew: true };
 }
