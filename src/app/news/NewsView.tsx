@@ -22,6 +22,18 @@ interface NewsArticle {
 // Only verified breaking entertainment news stories (fatwas, obituaries, police complaints, eviction rows, box-office shifts)
 const newsArticles: NewsArticle[] = [
   {
+    id: "tiger-shroff-firing-appearance",
+    category: "Bollywood",
+    title: "Tiger Shroff to Make First Appearance After Firing Incident",
+    badge: "Exclusive Scoop",
+    badgeType: "pink",
+    image: "/images/tiger-shroff-first-public-appearance-after-firing-incident.jpg",
+    href: "/tiger-shroff-first-public-appearance-after-firing-incident",
+    readOrTime: "3 MIN READ",
+    excerpt:
+      "Tiger Shroff will reportedly make his first public appearance since the firing incident at Claudia Ciesla’s book launch in Mumbai on November 3.",
+  },
+  {
     id: "sanjay-gupta-funeral",
     category: "Bollywood",
     title: "Sanjay Gupta Funeral: Last Rites Today in Mumbai, Bollywood Mourns Kaante Director",

@@ -20,6 +20,16 @@ interface BollywoodArticle {
 
 const bollywoodArticles: BollywoodArticle[] = [
   {
+    id: "tiger-shroff-firing-appearance",
+    category: "Exclusive & Crime",
+    title: "Tiger Shroff to Make First Appearance After Firing Incident",
+    badge: "Exclusive Scoop",
+    badgeType: "pink",
+    image: "/images/tiger-shroff-first-public-appearance-after-firing-incident.jpg",
+    href: "/tiger-shroff-first-public-appearance-after-firing-incident",
+    readOrTime: "3 MIN READ",
+  },
+  {
     id: "manoj-bajpayee-women-cinema",
     category: "Women in Cinema",
     title: "Manoj Bajpayee Says Women Have Been Leading Bollywood for Years",
@@ -326,16 +336,16 @@ export default function BollywoodView() {
 
         {/* Lead Section: Latest Bollywood Published Article (Cover Story) + The Last 2 Blogs Uploaded Before It */}
         <section className="lead">
-          {/* Cover Story: Latest Published Bollywood Story (Manoj Bajpayee Women in Cinema) */}
+          {/* Cover Story: Latest Published Bollywood Story (Tiger Shroff Firing Appearance) */}
           <Link
-            href="/manoj-bajpayee-vidya-balan-kajol-women-in-cinema"
+            href="/tiger-shroff-first-public-appearance-after-firing-incident"
             className="feature-card group block"
-            aria-label="Read full cover story: Manoj Bajpayee Says Women Have Been Leading Bollywood for Years"
+            aria-label="Read full cover story: Tiger Shroff Is Back: First Public Appearance After Firing Incident"
           >
             <div className="feature-media relative overflow-hidden">
               <Image
-                src="/images/manoj-bajpayee-vidya-balan-kajol-women-in-cinema.jpg"
-                alt="Manoj Bajpayee Says Women Have Been Leading Bollywood for Years with Vidya Balan and Kajol"
+                src="/images/tiger-shroff-first-public-appearance-after-firing-incident.jpg"
+                alt="Tiger Shroff Is Back: First Public Appearance After Firing Incident at Claudia Ciesla Book Launch"
                 fill
                 priority
                 className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
@@ -343,18 +353,18 @@ export default function BollywoodView() {
               />
               <div className="noise" />
               <span className="badge pink feature-tag z-10">
-                🎬 Women in Cinema
+                🚨 Exclusive Scoop
               </span>
             </div>
             <div className="feature-body">
               <h2 className="disp text-white group-hover:text-[var(--lime)] transition-colors">
-                Manoj Bajpayee Says Women Have Been Leading Bollywood for Years
+                Tiger Shroff to Make First Appearance After Firing Incident
               </h2>
               <p>
-                Manoj Bajpayee says heroines have been leading films for a long time. He names Vidya Balan and Kajol, and talks about how OTT is changing things.
+                Tiger Shroff will reportedly make his first public appearance since the firing incident at Claudia Ciesla’s book launch in Mumbai on November 3.
               </p>
               <div className="meta-row mt-3">
-                <span className="text-[var(--magenta)] font-bold">BOLLYWOOD</span>
+                <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; NEWS</span>
                 <span className="dot-sep">◆</span>
                 <span>3 MIN READ</span>
                 <span className="dot-sep">◆</span>
@@ -365,7 +375,34 @@ export default function BollywoodView() {
 
           {/* Right Stack: The last 2 blogs uploaded before the latest one */}
           <div className="stack">
-            {/* Card 1: Sanjay Gupta Funeral */}
+            {/* Card 1: Manoj Bajpayee on Women in Cinema */}
+            <Link
+              href="/manoj-bajpayee-vidya-balan-kajol-women-in-cinema"
+              className="card m1 group block"
+            >
+              <div className="card-media relative overflow-hidden">
+                <Image
+                  src="/images/manoj-bajpayee-vidya-balan-kajol-women-in-cinema.jpg"
+                  alt="Manoj Bajpayee Says Women Have Been Leading Bollywood for Years with Vidya Balan and Kajol"
+                  fill
+                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 980px) 100vw, 35vw"
+                />
+                <span className="badge pink z-10 relative">🎬 Women in Cinema</span>
+              </div>
+              <div className="card-body">
+                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
+                  Manoj Bajpayee Says Women Have Been Leading Bollywood for Years
+                </h3>
+                <div className="meta-row mt-2">
+                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD</span>
+                  <span className="dot-sep">◆</span>
+                  <span>3 MIN READ</span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Card 2: Sanjay Gupta Funeral */}
             <Link
               href="/sanjay-gupta-funeral-pawan-hans-crematorium"
               className="card m1 group block"
@@ -378,7 +415,7 @@ export default function BollywoodView() {
                   className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
                   sizes="(max-width: 980px) 100vw, 35vw"
                 />
-                <span className="badge pink z-10 relative">🕊️ Funeral Details</span>
+                <span className="badge lime z-10 relative">🕊️ Funeral Details</span>
               </div>
               <div className="card-body">
                 <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
@@ -386,33 +423,6 @@ export default function BollywoodView() {
                 </h3>
                 <div className="meta-row mt-2">
                   <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; NEWS</span>
-                  <span className="dot-sep">◆</span>
-                  <span>3 MIN READ</span>
-                </div>
-              </div>
-            </Link>
-
-            {/* Card 2: Orry Halloween Competition */}
-            <Link
-              href="/orry-halloween-2026-janhvi-khushi-kapoor-competition"
-              className="card m1 group block"
-            >
-              <div className="card-media relative overflow-hidden">
-                <Image
-                  src="/images/orry-halloween-2026-janhvi-khushi-kapoor-competition.jpg"
-                  alt="Orry Names Janhvi and Khushi Kapoor as His Biggest Halloween Competition"
-                  fill
-                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
-                  sizes="(max-width: 980px) 100vw, 35vw"
-                />
-                <span className="badge lime z-10 relative">🎃 Halloween 2026</span>
-              </div>
-              <div className="card-body">
-                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
-                  Orry Names Janhvi &amp; Khushi Kapoor as His Biggest Halloween Competition
-                </h3>
-                <div className="meta-row mt-2">
-                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD</span>
                   <span className="dot-sep">◆</span>
                   <span>3 MIN READ</span>
                 </div>
@@ -430,7 +440,7 @@ export default function BollywoodView() {
               </h2>
             </div>
             <span className="text-xs font-mono text-[var(--lime)] font-bold">
-              25 STORIES PUBLISHED
+              26 STORIES PUBLISHED
             </span>
           </div>
 

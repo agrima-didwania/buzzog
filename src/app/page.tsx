@@ -177,6 +177,20 @@ export default function Home() {
 
   const editorialArticles: EditorialArticle[] = [
     {
+      id: "tiger-shroff-firing-appearance",
+      anchorId: "tiger-firing-story",
+      href: "/tiger-shroff-first-public-appearance-after-firing-incident",
+      title: "Tiger Shroff to Make First Appearance After Firing Incident",
+      excerpt: "Tiger Shroff will make his first public appearance since the alarming Juhu firing incident at Claudia Ciesla’s book launch in Mumbai on November 3.",
+      category: "Bollywood",
+      secondaryCategory: "News",
+      displayCategory: "BOLLYWOOD & NEWS",
+      badge: "Exclusive Scoop",
+      badgeType: "pink",
+      readTime: "3 MIN READ",
+      image: "/images/tiger-shroff-first-public-appearance-after-firing-incident.jpg",
+    },
+    {
       id: "manoj-bajpayee-women-cinema",
       anchorId: "manoj-cinema-story",
       href: "/manoj-bajpayee-vidya-balan-kajol-women-in-cinema",
@@ -686,15 +700,15 @@ export default function Home() {
         <section className="hero" id="featured">
           {/* 1. Main Featured Story (Commanding Top Story Presentation) */}
           <Link
-            href="/manoj-bajpayee-vidya-balan-kajol-women-in-cinema"
+            href="/tiger-shroff-first-public-appearance-after-firing-incident"
             className="feature-card block transition-all hover:border-[var(--lime)] focus-visible:ring-2 focus-visible:ring-[var(--lime)] group"
             style={{ textDecoration: "none", color: "inherit" }}
-            aria-label="Read full article: Manoj Bajpayee on Women in Cinema: Vidya Balan, Kajol"
+            aria-label="Read full article: Tiger Shroff to Make First Appearance After Firing Incident"
           >
             <div className="feature-media" style={{ overflow: "hidden", position: "relative" }}>
               <Image
-                src="/images/manoj-bajpayee-vidya-balan-kajol-women-in-cinema.jpg"
-                alt="Manoj Bajpayee Says Women Have Been Leading Bollywood for Years with Vidya Balan and Kajol"
+                src="/images/tiger-shroff-first-public-appearance-after-firing-incident.jpg"
+                alt="Tiger Shroff Is Back: First Public Appearance After Firing Incident at Claudia Ciesla Book Launch"
                 fill
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 750px"
@@ -703,28 +717,28 @@ export default function Home() {
               />
               <div className="noise" style={{ pointerEvents: "none" }}></div>
               <div className="feature-tag flex items-center gap-2">
-                <span className="badge pink">🎬 Cinema &amp; Culture</span>
-                <span className="badge lime">Women in Cinema</span>
-                <span className="badge">Bollywood Exclusive</span>
+                <span className="badge pink">🚨 Exclusive Scoop</span>
+                <span className="badge lime">Tiger Shroff</span>
+                <span className="badge">Bollywood &amp; News</span>
               </div>
             </div>
             <div className="feature-body">
               <div className="flex items-center gap-2 mb-2 font-mono text-xs text-[var(--lime)] font-bold tracking-wider uppercase">
-                <span>★ TOP STORY · CINEMA &amp; CULTURE</span>
+                <span>★ TOP STORY · FIRST APPEARANCE</span>
               </div>
               <h1 className="disp" style={{ color: "#fff" }}>
-                Manoj Bajpayee Says Women Have Been Leading Bollywood for Years
+                Tiger Shroff Is Back: Here’s Where He Will Be Seen First After the Firing Incident
               </h1>
               <p>
-                Manoj Bajpayee explains why women-led films aren’t new, crediting Vidya Balan and Kajol as powerhouse heroes while discussing how OTT is changing the economics of cinema for male and female actors alike.
+                Tiger Shroff is set to make his first public appearance since the scary Juhu firing attack at Claudia Ciesla’s book launch in Mumbai on November 3, as Mumbai Police invoke MCOCA and arrest a 12th accused.
               </p>
               <div className="meta-row mt-auto pt-3 border-t border-white/[0.06] flex items-center justify-between">
                 <div className="flex items-center gap-3">
-                  <span>BOLLYWOOD</span>
+                  <span>BOLLYWOOD &amp; NEWS</span>
                   <span className="dot-sep">◆</span>
                   <span>3 MIN READ</span>
                   <span className="dot-sep">◆</span>
-                  <span style={{ color: "var(--lime)" }}>EXCLUSIVE INTERVIEW</span>
+                  <span style={{ color: "var(--lime)" }}>EXCLUSIVE SCOOP</span>
                 </div>
                 <span className="text-xs font-mono font-bold text-[var(--lime)] hidden sm:inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform">
                   Read Full Story →
@@ -743,6 +757,18 @@ export default function Home() {
               <span className="trend-rank">01</span>
               <div className="trend-text">
                 <Link
+                  href="/tiger-shroff-first-public-appearance-after-firing-incident"
+                  style={{ color: "inherit" }}
+                >
+                  <h3>Tiger Shroff to make first public appearance after firing incident at Claudia Ciesla book launch</h3>
+                  <span>BOLLYWOOD &amp; NEWS · 490K REACTIONS</span>
+                </Link>
+              </div>
+            </div>
+            <div className="trend-item">
+              <span className="trend-rank">02</span>
+              <div className="trend-text">
+                <Link
                   href="/manoj-bajpayee-vidya-balan-kajol-women-in-cinema"
                   style={{ color: "inherit" }}
                 >
@@ -752,7 +778,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">02</span>
+              <span className="trend-rank">03</span>
               <div className="trend-text">
                 <Link
                   href="/radhika-apte-rudra-akka-netflix"
@@ -764,7 +790,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">03</span>
+              <span className="trend-rank">04</span>
               <div className="trend-text">
                 <Link
                   href="/sanjay-gupta-funeral-pawan-hans-crematorium"
@@ -776,7 +802,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">04</span>
+              <span className="trend-rank">05</span>
               <div className="trend-text">
                 <Link
                   href="/diljit-dosanjh-cjp-delhi-concert-abhijeet-dipke-response"
@@ -788,7 +814,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">05</span>
+              <span className="trend-rank">06</span>
               <div className="trend-text">
                 <Link
                   href="/orry-halloween-2026-janhvi-khushi-kapoor-competition"
@@ -800,7 +826,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">06</span>
+              <span className="trend-rank">07</span>
               <div className="trend-text">
                 <Link
                   href="/sanjay-dutt-kaante-2-promise-sanjay-gupta-death"
@@ -812,7 +838,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">07</span>
+              <span className="trend-rank">08</span>
               <div className="trend-text">
                 <Link
                   href="/varun-dhawan-sidharth-malhotra-kiara-advani-reunion"
@@ -824,7 +850,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">08</span>
+              <span className="trend-rank">09</span>
               <div className="trend-text">
                 <Link
                   href="/sanjay-gupta-passes-away-shootout-at-wadala-director"
@@ -836,7 +862,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">09</span>
+              <span className="trend-rank">10</span>
               <div className="trend-text">
                 <Link
                   href="/iifa-2026-winners-list"
@@ -844,18 +870,6 @@ export default function Home() {
                 >
                   <h3>IIFA 2026 winners: Dhurandhar wins 12 awards; Ranveer Singh &amp; Aneet Padda bag top honors</h3>
                   <span>BOLLYWOOD &amp; WEB SERIES · 350K REACTIONS</span>
-                </Link>
-              </div>
-            </div>
-            <div className="trend-item">
-              <span className="trend-rank">10</span>
-              <div className="trend-text">
-                <Link
-                  href="/ibrahim-ali-khan-palak-tiwari-breakup"
-                  style={{ color: "inherit" }}
-                >
-                  <h3>Ibrahim Ali Khan &amp; Palak Tiwari reportedly break up after 3 years: Joint shoots on hold</h3>
-                  <span>BOLLYWOOD &amp; NEWS · 340K REACTIONS</span>
                 </Link>
               </div>
             </div>

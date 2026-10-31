@@ -8,6 +8,11 @@ export const metadata: Metadata = {
   keywords: [
     "Entertainment News Buzz Originals",
     "Bollywood breaking news",
+    "Tiger Shroff",
+    "Tiger Shroff first public appearance",
+    "Tiger Shroff firing incident",
+    "Tiger Shroff latest news",
+    "Claudia Ciesla book launch",
     "Sanjay Gupta funeral",
     "Pawan Hans Crematorium",
     "Sanjay Gupta last rites",
@@ -63,10 +68,10 @@ export const metadata: Metadata = {
     siteName: "Buzz Originals",
     images: [
       {
-        url: "/images/sanjay-gupta-funeral-pawan-hans-crematorium.jpg",
+        url: "/images/tiger-shroff-first-public-appearance-after-firing-incident.jpg",
         width: 1024,
         height: 576,
-        alt: "Sanjay Gupta Funeral: Last Rites Today in Mumbai — Buzz Originals News Desk",
+        alt: "Tiger Shroff to Make First Appearance After Firing Incident — Buzz Originals News Desk",
       },
     ],
     type: "website",
@@ -76,7 +81,7 @@ export const metadata: Metadata = {
     title: "News — Buzz Originals",
     description:
       "Raw, unfiltered entertainment news across reality TV, Bollywood, movies and OTT.",
-    images: ["/images/sanjay-gupta-funeral-pawan-hans-crematorium.jpg"],
+    images: ["/images/tiger-shroff-first-public-appearance-after-firing-incident.jpg"],
   },
 };
 

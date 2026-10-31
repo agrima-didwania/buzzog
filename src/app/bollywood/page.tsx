@@ -8,6 +8,11 @@ export const metadata: Metadata = {
   keywords: [
     "Bollywood Buzz Originals",
     "Bollywood news",
+    "Tiger Shroff",
+    "Tiger Shroff first public appearance",
+    "Tiger Shroff firing incident",
+    "Tiger Shroff latest news",
+    "Claudia Ciesla book launch",
     "Manoj Bajpayee on women in cinema",
     "Manoj Bajpayee Vidya Balan Kajol",
     "women-led films Bollywood",
@@ -127,10 +132,10 @@ export const metadata: Metadata = {
     siteName: "Buzz Originals",
     images: [
       {
-        url: "/images/manoj-bajpayee-vidya-balan-kajol-women-in-cinema.jpg",
+        url: "/images/tiger-shroff-first-public-appearance-after-firing-incident.jpg",
         width: 1024,
         height: 576,
-        alt: "Manoj Bajpayee on Women in Cinema: Vidya Balan, Kajol — Buzz Originals Bollywood",
+        alt: "Tiger Shroff to Make First Appearance After Firing Incident — Buzz Originals Bollywood",
       },
     ],
     type: "website",
@@ -140,7 +145,7 @@ export const metadata: Metadata = {
     title: "Bollywood — Buzz Originals",
     description:
       "Raw, unfiltered Bollywood coverage of red carpets, gossip, airport sightings & exclusives.",
-    images: ["/images/manoj-bajpayee-vidya-balan-kajol-women-in-cinema.jpg"],
+    images: ["/images/tiger-shroff-first-public-appearance-after-firing-incident.jpg"],
   },
 };
 
@@ -167,18 +172,24 @@ export default function BollywoodPage() {
         {
           "@type": "ListItem",
           position: 1,
+          name: "Tiger Shroff to Make First Appearance After Firing Incident",
+          url: "https://www.buzzoriginals.com/tiger-shroff-first-public-appearance-after-firing-incident",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
           name: "Manoj Bajpayee on Women in Cinema: Vidya Balan, Kajol",
           url: "https://www.buzzoriginals.com/manoj-bajpayee-vidya-balan-kajol-women-in-cinema",
         },
         {
           "@type": "ListItem",
-          position: 2,
+          position: 3,
           name: "Sanjay Gupta Funeral: Last Rites Today, Mumbai",
           url: "https://www.buzzoriginals.com/sanjay-gupta-funeral-pawan-hans-crematorium",
         },
         {
           "@type": "ListItem",
-          position: 3,
+          position: 4,
           name: "Orry: Janhvi and Khushi Kapoor are His Halloween Competition",
           url: "https://www.buzzoriginals.com/orry-halloween-2026-janhvi-khushi-kapoor-competition",
         },
