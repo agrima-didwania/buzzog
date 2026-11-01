@@ -8,6 +8,22 @@ export const metadata: Metadata = {
   keywords: [
     "Entertainment News Buzz Originals",
     "Bollywood breaking news",
+    "Honey Singh nephew Vidit Olak",
+    "Honey Singh nephew death",
+    "Vidit Olak death",
+    "Vidit Olak accident",
+    "Vidit Auluck",
+    "Yo Yo Honey Singh nephew",
+    "Jalandhar car accident",
+    "Jalandhar flyover accident",
+    "Aarav Talwar accident",
+    "Punjabi singer",
+    "Speed Records",
+    "road accident in Punjab",
+    "tractor-trolley",
+    "Baradari police",
+    "Police Lines Jalandhar",
+    "Honey Singh latest news",
     "Ram Gopal Varma legal notice",
     "Ram Gopal Varma Eclatant Films",
     "RGV legal notice 29.67 crore",
@@ -88,10 +104,10 @@ export const metadata: Metadata = {
     siteName: "Buzz Originals",
     images: [
       {
-        url: "/images/ram-gopal-varma-legal-notice-eclatant-films-29-67-crore.jpg",
+        url: "/images/honey-singh-nephew-vidit-olak-dies-jalandhar-accident.jpg",
         width: 1024,
         height: 576,
-        alt: "Ram Gopal Varma in Legal Trouble Over ₹29.67 Crore — Buzz Originals News Desk",
+        alt: "Honey Singh’s Nephew Vidit Olak Dies in Jalandhar Car Accident — Buzz Originals News Desk",
       },
     ],
     type: "website",
@@ -101,7 +117,7 @@ export const metadata: Metadata = {
     title: "News — Buzz Originals",
     description:
       "Raw, unfiltered entertainment news across reality TV, Bollywood, movies and OTT.",
-    images: ["/images/ram-gopal-varma-legal-notice-eclatant-films-29-67-crore.jpg"],
+    images: ["/images/honey-singh-nephew-vidit-olak-dies-jalandhar-accident.jpg"],
   },
 };
 

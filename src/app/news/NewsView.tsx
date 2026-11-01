@@ -22,6 +22,18 @@ interface NewsArticle {
 // Only verified breaking entertainment news stories (fatwas, obituaries, police complaints, eviction rows, box-office shifts)
 const newsArticles: NewsArticle[] = [
   {
+    id: "honey-singh-nephew-vidit-accident",
+    category: "Bollywood",
+    title: "Honey Singh’s Nephew Vidit Olak Dies in Jalandhar Car Accident",
+    badge: "Breaking News",
+    badgeType: "pink",
+    image: "/images/honey-singh-nephew-vidit-olak-dies-jalandhar-accident.jpg",
+    href: "/honey-singh-nephew-vidit-olak-dies-jalandhar-accident",
+    readOrTime: "3 MIN READ",
+    excerpt:
+      "Yo Yo Honey Singh’s nephew Vidit Olak and friend Aarav Talwar died after their car hit a parked tractor-trolley in Jalandhar. Honey Singh mourned the loss on Instagram.",
+  },
+  {
     id: "rgv-legal-notice-29-crore",
     category: "Bollywood",
     title: "Ram Gopal Varma in Legal Trouble Over ₹29.67 Crore",

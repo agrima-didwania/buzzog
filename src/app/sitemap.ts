@@ -15,7 +15,7 @@ const STATIC_PAGES: StaticPageConfig[] = [
   { path: "/bollywood", priority: 0.95, changeFrequency: "daily", defaultDate: "2026-11-01T16:55:00Z" },
   { path: "/movies", priority: 0.95, changeFrequency: "daily", defaultDate: "2026-10-31T01:18:00Z" },
   { path: "/web-series", priority: 0.95, changeFrequency: "daily", defaultDate: "2026-10-31T22:00:00Z" },
-  { path: "/news", priority: 0.95, changeFrequency: "daily", defaultDate: "2026-11-01T16:55:00Z" },
+  { path: "/news", priority: 0.95, changeFrequency: "daily", defaultDate: "2026-11-01T17:15:00Z" },
   { path: "/about", priority: 0.7, changeFrequency: "monthly", defaultDate: "2026-10-28T12:00:00Z" },
   { path: "/contact", priority: 0.7, changeFrequency: "monthly", defaultDate: "2026-10-28T12:00:00Z" },
   { path: "/editorial-policy", priority: 0.7, changeFrequency: "monthly", defaultDate: "2026-10-28T12:00:00Z" },

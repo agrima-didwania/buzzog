@@ -177,6 +177,19 @@ export default function Home() {
 
   const editorialArticles: EditorialArticle[] = [
     {
+      id: "honey-singh-nephew-vidit-accident",
+      anchorId: "honey-singh-nephew-story",
+      href: "/honey-singh-nephew-vidit-olak-dies-jalandhar-accident",
+      title: "Honey Singh’s Nephew Vidit Olak Dies in Car Accident",
+      excerpt: "Yo Yo Honey Singh’s nephew Vidit Olak died in a car accident in Jalandhar on November 1. Here is what happened and what the singer said.",
+      category: "News",
+      displayCategory: "NEWS & CRIME",
+      badge: "Breaking News",
+      badgeType: "pink",
+      readTime: "3 MIN READ",
+      image: "/images/honey-singh-nephew-vidit-olak-dies-jalandhar-accident.jpg",
+    },
+    {
       id: "rgv-legal-notice-29-crore",
       anchorId: "rgv-legal-story",
       href: "/ram-gopal-varma-legal-notice-eclatant-films-29-67-crore",
@@ -742,15 +755,15 @@ export default function Home() {
         <section className="hero" id="featured">
           {/* 1. Main Featured Story (Commanding Top Story Presentation) */}
           <Link
-            href="/ram-gopal-varma-legal-notice-eclatant-films-29-67-crore"
+            href="/honey-singh-nephew-vidit-olak-dies-jalandhar-accident"
             className="feature-card block transition-all hover:border-[var(--lime)] focus-visible:ring-2 focus-visible:ring-[var(--lime)] group"
             style={{ textDecoration: "none", color: "inherit" }}
-            aria-label="Read full article: Ram Gopal Varma Gets ₹29.67 Crore Legal Notice"
+            aria-label="Read full article: Honey Singh’s Nephew Vidit Olak Dies in Car Accident"
           >
             <div className="feature-media" style={{ overflow: "hidden", position: "relative" }}>
               <Image
-                src="/images/ram-gopal-varma-legal-notice-eclatant-films-29-67-crore.jpg"
-                alt="Ram Gopal Varma in Legal Trouble Over ₹29.67 Crore"
+                src="/images/honey-singh-nephew-vidit-olak-dies-jalandhar-accident.jpg"
+                alt="Honey Singh’s Nephew Vidit Olak Dies in Jalandhar Car Accident"
                 fill
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 750px"
@@ -759,28 +772,28 @@ export default function Home() {
               />
               <div className="noise" style={{ pointerEvents: "none" }}></div>
               <div className="feature-tag flex items-center gap-2">
-                <span className="badge pink">⚖️ Legal Dispute</span>
-                <span className="badge lime">Ram Gopal Varma</span>
-                <span className="badge">Bollywood &amp; News</span>
+                <span className="badge pink">🚨 Breaking News</span>
+                <span className="badge lime">Yo Yo Honey Singh</span>
+                <span className="badge">News</span>
               </div>
             </div>
             <div className="feature-body">
               <div className="flex items-center gap-2 mb-2 font-mono text-xs text-[var(--lime)] font-bold tracking-wider uppercase">
-                <span>★ TOP STORY · BREAKING LEGAL NEWS</span>
+                <span>★ TOP STORY · BREAKING NEWS</span>
               </div>
               <h1 className="disp" style={{ color: "#fff" }}>
-                Ram Gopal Varma in Legal Trouble Over ₹29.67 Crore
+                Honey Singh’s Nephew Vidit Olak Dies in Jalandhar Car Accident
               </h1>
               <p>
-                Production house Eclatant Films has reportedly sent Ram Gopal Varma a ₹29.67 crore legal notice over a 2010 agreement, issuing public notices in trade magazines and warning producers and OTT platforms against commercial pacts.
+                Yo Yo Honey Singh’s nephew Vidit Olak and friend Aarav Talwar lost their lives after their car rammed into a stationary tractor-trolley on a flyover in Jalandhar. The singer mourned the loss in an emotional Instagram note.
               </p>
               <div className="meta-row mt-auto pt-3 border-t border-white/[0.06] flex items-center justify-between">
                 <div className="flex items-center gap-3">
-                  <span>BOLLYWOOD &amp; NEWS</span>
+                  <span>NEWS</span>
                   <span className="dot-sep">◆</span>
                   <span>3 MIN READ</span>
                   <span className="dot-sep">◆</span>
-                  <span style={{ color: "var(--lime)" }}>LEGAL EXCLUSIVE</span>
+                  <span style={{ color: "var(--lime)" }}>BREAKING NEWS</span>
                 </div>
                 <span className="text-xs font-mono font-bold text-[var(--lime)] hidden sm:inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform">
                   Read Full Story →
@@ -799,6 +812,18 @@ export default function Home() {
               <span className="trend-rank">01</span>
               <div className="trend-text">
                 <Link
+                  href="/honey-singh-nephew-vidit-olak-dies-jalandhar-accident"
+                  style={{ color: "inherit" }}
+                >
+                  <h3>Honey Singh’s nephew Vidit Olak dies in Jalandhar car accident; singer posts emotional note</h3>
+                  <span>NEWS · 550K REACTIONS</span>
+                </Link>
+              </div>
+            </div>
+            <div className="trend-item">
+              <span className="trend-rank">02</span>
+              <div className="trend-text">
+                <Link
                   href="/ram-gopal-varma-legal-notice-eclatant-films-29-67-crore"
                   style={{ color: "inherit" }}
                 >
@@ -808,7 +833,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">02</span>
+              <span className="trend-rank">03</span>
               <div className="trend-text">
                 <Link
                   href="/himesh-reshammiya-deepika-padukone-irreplaceable-sandeep-reddy-vanga"
@@ -820,7 +845,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">03</span>
+              <span className="trend-rank">04</span>
               <div className="trend-text">
                 <Link
                   href="/prakash-raj-wife-pony-varma-lost-films-ads"
@@ -832,7 +857,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">04</span>
+              <span className="trend-rank">05</span>
               <div className="trend-text">
                 <Link
                   href="/tiger-shroff-first-public-appearance-after-firing-incident"
@@ -844,7 +869,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">05</span>
+              <span className="trend-rank">06</span>
               <div className="trend-text">
                 <Link
                   href="/manoj-bajpayee-vidya-balan-kajol-women-in-cinema"
@@ -856,7 +881,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">06</span>
+              <span className="trend-rank">07</span>
               <div className="trend-text">
                 <Link
                   href="/radhika-apte-rudra-akka-netflix"
@@ -868,7 +893,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">07</span>
+              <span className="trend-rank">08</span>
               <div className="trend-text">
                 <Link
                   href="/sanjay-gupta-funeral-pawan-hans-crematorium"
@@ -880,7 +905,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">08</span>
+              <span className="trend-rank">09</span>
               <div className="trend-text">
                 <Link
                   href="/diljit-dosanjh-cjp-delhi-concert-abhijeet-dipke-response"
@@ -892,7 +917,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">09</span>
+              <span className="trend-rank">10</span>
               <div className="trend-text">
                 <Link
                   href="/orry-halloween-2026-janhvi-khushi-kapoor-competition"
@@ -900,18 +925,6 @@ export default function Home() {
                 >
                   <h3>Orry plans 18 Halloween looks, crowns Janhvi &amp; Khushi Kapoor his only competition</h3>
                   <span>BOLLYWOOD · 425K REACTIONS</span>
-                </Link>
-              </div>
-            </div>
-            <div className="trend-item">
-              <span className="trend-rank">10</span>
-              <div className="trend-text">
-                <Link
-                  href="/sanjay-dutt-kaante-2-promise-sanjay-gupta-death"
-                  style={{ color: "inherit" }}
-                >
-                  <h3>Sanjay Dutt promises Kaante 2 in memory of Sanjay Gupta: “I will make your dream come true”</h3>
-                  <span>BOLLYWOOD &amp; NEWS · 410K REACTIONS</span>
                 </Link>
               </div>
             </div>
