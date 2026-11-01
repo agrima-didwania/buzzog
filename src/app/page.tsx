@@ -177,6 +177,20 @@ export default function Home() {
 
   const editorialArticles: EditorialArticle[] = [
     {
+      id: "maharani-season-5-release-date",
+      anchorId: "maharani-season-5-story",
+      href: "/maharani-season-5-release-date-january-2027",
+      title: "Maharani Season 5 Release Date: Huma Qureshi’s Political Drama May Return in January 2027",
+      excerpt: "Maharani Season 5 is tentatively planned for January 2027 on SonyLIV with filming wrapped across Delhi, Bhopal and Ladakh as Rani Bharti prepares for national politics.",
+      category: "Latest",
+      secondaryCategory: "Bollywood & Hollywood",
+      displayCategory: "WEB SERIES & SONYLIV",
+      badge: "Season 5 Scoop",
+      badgeType: "lime",
+      readTime: "3 MIN READ",
+      image: "/images/maharani-season-5-release-date-january-2027.jpg",
+    },
+    {
       id: "honey-singh-nephew-vidit-accident",
       anchorId: "honey-singh-nephew-story",
       href: "/honey-singh-nephew-vidit-olak-dies-jalandhar-accident",
@@ -755,15 +769,15 @@ export default function Home() {
         <section className="hero" id="featured">
           {/* 1. Main Featured Story (Commanding Top Story Presentation) */}
           <Link
-            href="/honey-singh-nephew-vidit-olak-dies-jalandhar-accident"
+            href="/maharani-season-5-release-date-january-2027"
             className="feature-card block transition-all hover:border-[var(--lime)] focus-visible:ring-2 focus-visible:ring-[var(--lime)] group"
             style={{ textDecoration: "none", color: "inherit" }}
-            aria-label="Read full article: Honey Singh’s Nephew Vidit Olak Dies in Car Accident"
+            aria-label="Read full article: Maharani Season 5 Release Date: Huma Qureshi’s Political Drama May Return in January 2027"
           >
             <div className="feature-media" style={{ overflow: "hidden", position: "relative" }}>
               <Image
-                src="/images/honey-singh-nephew-vidit-olak-dies-jalandhar-accident.jpg"
-                alt="Honey Singh’s Nephew Vidit Olak Dies in Jalandhar Car Accident"
+                src="/images/maharani-season-5-release-date-january-2027.jpg"
+                alt="Maharani Season 5 Release Date: Huma Qureshi’s Political Drama May Return in January 2027"
                 fill
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 750px"
@@ -772,28 +786,28 @@ export default function Home() {
               />
               <div className="noise" style={{ pointerEvents: "none" }}></div>
               <div className="feature-tag flex items-center gap-2">
-                <span className="badge pink">🚨 Breaking News</span>
-                <span className="badge lime">Yo Yo Honey Singh</span>
-                <span className="badge">News</span>
+                <span className="badge lime">👑 Season 5 Scoop</span>
+                <span className="badge pink">SonyLIV Original</span>
+                <span className="badge">Web Series</span>
               </div>
             </div>
             <div className="feature-body">
               <div className="flex items-center gap-2 mb-2 font-mono text-xs text-[var(--lime)] font-bold tracking-wider uppercase">
-                <span>★ TOP STORY · BREAKING NEWS</span>
+                <span>★ TOP STORY · OTT SCOOP</span>
               </div>
               <h1 className="disp" style={{ color: "#fff" }}>
-                Honey Singh’s Nephew Vidit Olak Dies in Jalandhar Car Accident
+                Maharani Season 5 Release Date: Huma Qureshi’s Political Drama May Return in January 2027
               </h1>
               <p>
-                Yo Yo Honey Singh’s nephew Vidit Olak and friend Aarav Talwar lost their lives after their car rammed into a stationary tractor-trolley on a flyover in Jalandhar. The singer mourned the loss in an emotional Instagram note.
+                Rani Bharti is coming back. Maharani Season 5 is tentatively planned for January 2027 on SonyLIV, with filming officially wrapped in Delhi, Bhopal and Ladakh and post-production underway.
               </p>
               <div className="meta-row mt-auto pt-3 border-t border-white/[0.06] flex items-center justify-between">
                 <div className="flex items-center gap-3">
-                  <span>NEWS</span>
+                  <span>WEB SERIES</span>
                   <span className="dot-sep">◆</span>
                   <span>3 MIN READ</span>
                   <span className="dot-sep">◆</span>
-                  <span style={{ color: "var(--lime)" }}>BREAKING NEWS</span>
+                  <span style={{ color: "var(--lime)" }}>SONYLIV</span>
                 </div>
                 <span className="text-xs font-mono font-bold text-[var(--lime)] hidden sm:inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform">
                   Read Full Story →
@@ -812,6 +826,18 @@ export default function Home() {
               <span className="trend-rank">01</span>
               <div className="trend-text">
                 <Link
+                  href="/maharani-season-5-release-date-january-2027"
+                  style={{ color: "inherit" }}
+                >
+                  <h3>Maharani Season 5 release date: Huma Qureshi’s political drama tentatively set for January 2027</h3>
+                  <span>WEB SERIES &amp; SONYLIV · 560K REACTIONS</span>
+                </Link>
+              </div>
+            </div>
+            <div className="trend-item">
+              <span className="trend-rank">02</span>
+              <div className="trend-text">
+                <Link
                   href="/honey-singh-nephew-vidit-olak-dies-jalandhar-accident"
                   style={{ color: "inherit" }}
                 >
@@ -821,7 +847,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">02</span>
+              <span className="trend-rank">03</span>
               <div className="trend-text">
                 <Link
                   href="/ram-gopal-varma-legal-notice-eclatant-films-29-67-crore"
@@ -833,7 +859,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">03</span>
+              <span className="trend-rank">04</span>
               <div className="trend-text">
                 <Link
                   href="/himesh-reshammiya-deepika-padukone-irreplaceable-sandeep-reddy-vanga"
@@ -845,7 +871,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">04</span>
+              <span className="trend-rank">05</span>
               <div className="trend-text">
                 <Link
                   href="/prakash-raj-wife-pony-varma-lost-films-ads"
@@ -857,7 +883,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">05</span>
+              <span className="trend-rank">06</span>
               <div className="trend-text">
                 <Link
                   href="/tiger-shroff-first-public-appearance-after-firing-incident"
@@ -869,7 +895,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">06</span>
+              <span className="trend-rank">07</span>
               <div className="trend-text">
                 <Link
                   href="/manoj-bajpayee-vidya-balan-kajol-women-in-cinema"
@@ -881,7 +907,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">07</span>
+              <span className="trend-rank">08</span>
               <div className="trend-text">
                 <Link
                   href="/radhika-apte-rudra-akka-netflix"
@@ -893,7 +919,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">08</span>
+              <span className="trend-rank">09</span>
               <div className="trend-text">
                 <Link
                   href="/sanjay-gupta-funeral-pawan-hans-crematorium"
@@ -905,7 +931,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">09</span>
+              <span className="trend-rank">10</span>
               <div className="trend-text">
                 <Link
                   href="/diljit-dosanjh-cjp-delhi-concert-abhijeet-dipke-response"

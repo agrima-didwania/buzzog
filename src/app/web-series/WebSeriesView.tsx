@@ -22,6 +22,18 @@ interface WebSeriesArticle {
 // All verified web series and OTT articles in reverse chronological order
 const webSeriesArticles: WebSeriesArticle[] = [
   {
+    id: "maharani-season-5-release-date",
+    category: "SonyLIV Original",
+    title: "Maharani Season 5 Release Date: Huma Qureshi’s Political Drama May Return in January 2027",
+    badge: "Season 5 Scoop",
+    badgeType: "lime",
+    image: "/images/maharani-season-5-release-date-january-2027.jpg",
+    href: "/maharani-season-5-release-date-january-2027",
+    readOrTime: "3 MIN READ",
+    excerpt:
+      "Rani Bharti is coming back. Maharani Season 5 is tentatively planned for January 2027 on SonyLIV, with filming wrapped across Delhi, Bhopal and Ladakh and post-production underway.",
+  },
+  {
     id: "radhika-apte-rudra-akka",
     category: "Netflix Original",
     title: "Radhika Apte on Playing Rudra in Netflix’s Akka: Why This Role Is Different",

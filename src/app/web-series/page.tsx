@@ -6,6 +6,12 @@ export const metadata: Metadata = {
   description:
     "Web Series coverage from Buzz Originals — raw, unfiltered, built for the group chat. OTT releases, streaming scoops, recaps and verdicts across Prime Video, Netflix, JioHotstar, ZEE5 and SonyLIV.",
   keywords: [
+    "Maharani Season 5 release date",
+    "Maharani 5",
+    "Huma Qureshi Rani Bharti",
+    "Maharani Season 5 teaser",
+    "Maharani SonyLIV",
+    "Maharani new season",
     "Web Series Buzz Originals",
     "Radhika Apte",
     "Akka Netflix",
@@ -41,10 +47,10 @@ export const metadata: Metadata = {
     siteName: "Buzz Originals",
     images: [
       {
-        url: "/images/radhika-apte-rudra-akka-netflix.jpg",
+        url: "/images/maharani-season-5-release-date-january-2027.jpg",
         width: 1024,
         height: 576,
-        alt: "Radhika Apte on Playing Rudra in Netflix’s Akka — Buzz Originals Web Series",
+        alt: "Maharani Season 5 Release Date: Huma Qureshi’s Political Drama May Return in January 2027 — Buzz Originals Web Series",
       },
     ],
     type: "website",
@@ -54,7 +60,7 @@ export const metadata: Metadata = {
     title: "Web Series — Buzz Originals",
     description:
       "Raw, unfiltered Web Series coverage of OTT releases, streaming scoops, recaps and verdicts.",
-    images: ["/images/radhika-apte-rudra-akka-netflix.jpg"],
+    images: ["/images/maharani-season-5-release-date-january-2027.jpg"],
   },
 };
 
@@ -81,30 +87,36 @@ export default function WebSeriesPage() {
         {
           "@type": "ListItem",
           position: 1,
+          name: "Maharani Season 5 Release Date: Jan 2027 Expected",
+          url: "https://www.buzzoriginals.com/maharani-season-5-release-date-january-2027",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
           name: "Radhika Apte on Her Akka Role Rudra: Never Played Before",
           url: "https://www.buzzoriginals.com/radhika-apte-rudra-akka-netflix",
         },
         {
           "@type": "ListItem",
-          position: 2,
+          position: 3,
           name: "IIFA 2026 Winners List: Dhurandhar Wins 12 Awards, The Ba***ds of Bollywood Best Series",
           url: "https://www.buzzoriginals.com/iifa-2026-winners-list",
         },
         {
           "@type": "ListItem",
-          position: 3,
+          position: 4,
           name: "Parivarik ManuRanjan: Pankaj Tripathi & Aditi Rao Hydari's Rom-Com Sets Sony LIV Date",
           url: "https://www.buzzoriginals.com/parivarik-manuranjan-ott-release-date-sony-liv",
         },
         {
           "@type": "ListItem",
-          position: 4,
+          position: 5,
           name: "Mirzapur: The Movie Is Now Streaming on Prime Video With an Extended Cut",
           url: "https://www.buzzoriginals.com/mirzapur-the-movie-prime-video-extended-cut",
         },
         {
           "@type": "ListItem",
-          position: 5,
+          position: 6,
           name: "Priyanka Chopra Joins Oscar-Qualified Short Film We Were Here",
           url: "https://www.buzzoriginals.com/priyanka-chopra-we-were-here-executive-producer",
         },
