@@ -6,6 +6,12 @@ export const metadata: Metadata = {
   description:
     "News coverage from Buzz Originals — raw, unfiltered, built for the group chat. Everything breaking across reality TV, Bollywood, movies and OTT — newest first, updated hourly.",
   keywords: [
+    "Diljit Dosanjh Aura India Tour",
+    "Diljit Dosanjh breaks silence",
+    "Diljit Dosanjh Delhi concert",
+    "Diljit Dosanjh India tour 2026",
+    "Diljit Dosanjh Instagram Live",
+    "Diljit Dosanjh JLN Stadium",
     "Entertainment News Buzz Originals",
     "Bollywood breaking news",
     "Honey Singh nephew Vidit Olak",
@@ -104,10 +110,10 @@ export const metadata: Metadata = {
     siteName: "Buzz Originals",
     images: [
       {
-        url: "/images/honey-singh-nephew-vidit-olak-dies-jalandhar-accident.jpg",
+        url: "/images/diljit-dosanjh-aura-india-tour-hurdles.jpg",
         width: 1024,
         height: 576,
-        alt: "Honey Singh’s Nephew Vidit Olak Dies in Jalandhar Car Accident — Buzz Originals News Desk",
+        alt: "Diljit Dosanjh Breaks Silence on Aura India Tour Hurdles — Buzz Originals News Desk",
       },
     ],
     type: "website",
@@ -117,7 +123,7 @@ export const metadata: Metadata = {
     title: "News — Buzz Originals",
     description:
       "Raw, unfiltered entertainment news across reality TV, Bollywood, movies and OTT.",
-    images: ["/images/honey-singh-nephew-vidit-olak-dies-jalandhar-accident.jpg"],
+    images: ["/images/diljit-dosanjh-aura-india-tour-hurdles.jpg"],
   },
 };
 

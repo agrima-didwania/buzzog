@@ -22,6 +22,18 @@ interface NewsArticle {
 // Only verified breaking entertainment news stories (fatwas, obituaries, police complaints, eviction rows, box-office shifts)
 const newsArticles: NewsArticle[] = [
   {
+    id: "diljit-dosanjh-aura-tour-hurdles",
+    category: "Bollywood",
+    title: "Diljit Dosanjh Breaks Silence on Aura India Tour Hurdles",
+    badge: "Breaking Silence",
+    badgeType: "lime",
+    image: "/images/diljit-dosanjh-aura-india-tour-hurdles.jpg",
+    href: "/diljit-dosanjh-aura-india-tour-hurdles",
+    readOrTime: "3 MIN READ",
+    excerpt:
+      "After his record-breaking Delhi concert, Diljit Dosanjh spoke about negativity and attempts to stop his Aura India Tour, confirming he will perform across India until December 20.",
+  },
+  {
     id: "honey-singh-nephew-vidit-accident",
     category: "Bollywood",
     title: "Honey Singh’s Nephew Vidit Olak Dies in Jalandhar Car Accident",

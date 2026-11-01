@@ -20,6 +20,16 @@ interface BollywoodArticle {
 
 const bollywoodArticles: BollywoodArticle[] = [
   {
+    id: "diljit-dosanjh-aura-tour-hurdles",
+    category: "Music & Tour",
+    title: "Diljit Dosanjh Breaks Silence on Aura India Tour Hurdles",
+    badge: "Breaking Silence",
+    badgeType: "lime",
+    image: "/images/diljit-dosanjh-aura-india-tour-hurdles.jpg",
+    href: "/diljit-dosanjh-aura-india-tour-hurdles",
+    readOrTime: "3 MIN READ",
+  },
+  {
     id: "bhansali-gangubai-eetha-backlash",
     category: "Social Media Backlash",
     title: "Bhansali Productions Trolled for Gangubai Kathiawadi Post on Eetha Trailer Day",
@@ -376,35 +386,35 @@ export default function BollywoodView() {
 
         {/* Lead Section: Latest Bollywood Published Article (Cover Story) + The Last 2 Blogs Uploaded Before It */}
         <section className="lead">
-          {/* Cover Story: Latest Published Bollywood Story (Bhansali Productions Trolled on Eetha Trailer Day) */}
+          {/* Cover Story: Latest Published Bollywood Story (Diljit Dosanjh Aura Tour Hurdles) */}
           <Link
-            href="/bhansali-productions-gangubai-post-eetha-trailer-backlash"
+            href="/diljit-dosanjh-aura-india-tour-hurdles"
             className="feature-card group block"
-            aria-label="Read full cover story: Bhansali Productions Trolled for Gangubai Kathiawadi Post on Eetha Trailer Day"
+            aria-label="Read full cover story: Diljit Dosanjh Breaks Silence on Aura India Tour Hurdles"
           >
             <div className="feature-media relative overflow-hidden">
               <Image
-                src="/images/bhansali-productions-gangubai-post-eetha-trailer-backlash.jpg"
-                alt="Bhansali Productions Trolled for Gangubai Kathiawadi Post on Eetha Trailer Day"
+                src="/images/diljit-dosanjh-aura-india-tour-hurdles.jpg"
+                alt="Diljit Dosanjh Breaks Silence on Aura India Tour Hurdles"
                 fill
                 priority
                 className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
                 sizes="(max-width: 980px) 100vw, 65vw"
               />
               <div className="noise" />
-              <span className="badge pink feature-tag z-10">
-                🔥 Social Media Backlash
+              <span className="badge lime feature-tag z-10">
+                🎤 Aura Tour 2026
               </span>
             </div>
             <div className="feature-body">
               <h2 className="disp text-white group-hover:text-[var(--lime)] transition-colors">
-                Bhansali Productions Trolled for Gangubai Kathiawadi Post on Eetha Trailer Day
+                Diljit Dosanjh Breaks Silence on Aura India Tour Hurdles
               </h2>
               <p>
-                Bhansali Productions posted about Gangubai Kathiawadi the same day Shraddha Kapoor’s Eetha trailer dropped. Here is why people are upset.
+                After his Delhi concert, Diljit Dosanjh spoke about negativity and attempts to stop his Aura India Tour. Here is everything he said.
               </p>
               <div className="meta-row mt-3">
-                <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; SOCIAL MEDIA</span>
+                <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; NEWS</span>
                 <span className="dot-sep">◆</span>
                 <span>3 MIN READ</span>
                 <span className="dot-sep">◆</span>
@@ -415,7 +425,34 @@ export default function BollywoodView() {
 
           {/* Right Stack: The last 2 blogs uploaded before the latest one */}
           <div className="stack">
-            {/* Card 1: Ram Gopal Varma Legal Notice */}
+            {/* Card 1: Bhansali Productions Backlash */}
+            <Link
+              href="/bhansali-productions-gangubai-post-eetha-trailer-backlash"
+              className="card m1 group block"
+            >
+              <div className="card-media relative overflow-hidden">
+                <Image
+                  src="/images/bhansali-productions-gangubai-post-eetha-trailer-backlash.jpg"
+                  alt="Bhansali Productions Trolled for Gangubai Kathiawadi Post on Eetha Trailer Day"
+                  fill
+                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 980px) 100vw, 35vw"
+                />
+                <span className="badge pink z-10 relative">🔥 Social Media Backlash</span>
+              </div>
+              <div className="card-body">
+                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
+                  Bhansali Productions Trolled for Gangubai Post on Eetha Trailer Day
+                </h3>
+                <div className="meta-row mt-2">
+                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD</span>
+                  <span className="dot-sep">◆</span>
+                  <span>3 MIN READ</span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Card 2: Ram Gopal Varma Legal Notice */}
             <Link
               href="/ram-gopal-varma-legal-notice-eclatant-films-29-67-crore"
               className="card m1 group block"
@@ -436,33 +473,6 @@ export default function BollywoodView() {
                 </h3>
                 <div className="meta-row mt-2">
                   <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; NEWS</span>
-                  <span className="dot-sep">◆</span>
-                  <span>3 MIN READ</span>
-                </div>
-              </div>
-            </Link>
-
-            {/* Card 2: Himesh Reshammiya Interview */}
-            <Link
-              href="/himesh-reshammiya-deepika-padukone-irreplaceable-sandeep-reddy-vanga"
-              className="card m1 group block"
-            >
-              <div className="card-media relative overflow-hidden">
-                <Image
-                  src="/images/himesh-reshammiya-deepika-padukone-irreplaceable-sandeep-reddy-vanga.jpg"
-                  alt="Himesh Reshammiya Says Deepika Padukone Is Irreplaceable"
-                  fill
-                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
-                  sizes="(max-width: 980px) 100vw, 35vw"
-                />
-                <span className="badge pink z-10 relative">🎙️ Rapid Fire Exclusive</span>
-              </div>
-              <div className="card-body">
-                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
-                  Himesh Reshammiya Says Deepika Padukone Is “Irreplaceable”
-                </h3>
-                <div className="meta-row mt-2">
-                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD</span>
                   <span className="dot-sep">◆</span>
                   <span>3 MIN READ</span>
                 </div>

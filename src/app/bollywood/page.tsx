@@ -6,6 +6,12 @@ export const metadata: Metadata = {
   description:
     "Bollywood coverage from Buzz Originals — raw, unfiltered, built for the group chat. Red carpets, rumours, airport looks and exclusives.",
   keywords: [
+    "Diljit Dosanjh Aura India Tour",
+    "Diljit Dosanjh breaks silence",
+    "Diljit Dosanjh Delhi concert",
+    "Diljit Dosanjh India tour 2026",
+    "Diljit Dosanjh Instagram Live",
+    "Diljit Dosanjh JLN Stadium",
     "Bhansali Productions Gangubai post",
     "Eetha trailer",
     "Gangubai Kathiawadi",
@@ -176,10 +182,10 @@ export const metadata: Metadata = {
     siteName: "Buzz Originals",
     images: [
       {
-        url: "/images/bhansali-productions-gangubai-post-eetha-trailer-backlash.jpg",
+        url: "/images/diljit-dosanjh-aura-india-tour-hurdles.jpg",
         width: 1024,
         height: 576,
-        alt: "Bhansali Productions Trolled for Gangubai Kathiawadi Post on Eetha Trailer Day — Buzz Originals Bollywood",
+        alt: "Diljit Dosanjh Breaks Silence on Aura India Tour Hurdles — Buzz Originals Bollywood",
       },
     ],
     type: "website",
@@ -189,7 +195,7 @@ export const metadata: Metadata = {
     title: "Bollywood — Buzz Originals",
     description:
       "Raw, unfiltered Bollywood coverage of red carpets, gossip, airport sightings & exclusives.",
-    images: ["/images/bhansali-productions-gangubai-post-eetha-trailer-backlash.jpg"],
+    images: ["/images/diljit-dosanjh-aura-india-tour-hurdles.jpg"],
   },
 };
 
@@ -216,12 +222,18 @@ export default function BollywoodPage() {
         {
           "@type": "ListItem",
           position: 1,
+          name: "Diljit Dosanjh Breaks Silence on Aura India Tour Hurdles",
+          url: "https://www.buzzoriginals.com/diljit-dosanjh-aura-india-tour-hurdles",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
           name: "Bhansali Trolled for Gangubai Post on Eetha Trailer Day",
           url: "https://www.buzzoriginals.com/bhansali-productions-gangubai-post-eetha-trailer-backlash",
         },
         {
           "@type": "ListItem",
-          position: 2,
+          position: 3,
           name: "Ram Gopal Varma Gets ₹29.67 Crore Legal Notice",
           url: "https://www.buzzoriginals.com/ram-gopal-varma-legal-notice-eclatant-films-29-67-crore",
         },

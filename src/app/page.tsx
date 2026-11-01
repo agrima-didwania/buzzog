@@ -177,6 +177,20 @@ export default function Home() {
 
   const editorialArticles: EditorialArticle[] = [
     {
+      id: "diljit-dosanjh-aura-tour-hurdles",
+      anchorId: "diljit-aura-tour-story",
+      href: "/diljit-dosanjh-aura-india-tour-hurdles",
+      title: "Diljit Dosanjh Breaks Silence on Aura India Tour Hurdles",
+      excerpt: "Diljit Dosanjh went live on Instagram after his packed Delhi concert to address attempts to stop his Aura India Tour and confirmed he will perform across India until December 20.",
+      category: "Bollywood",
+      secondaryCategory: "News",
+      displayCategory: "BOLLYWOOD & NEWS",
+      badge: "Breaking Silence",
+      badgeType: "lime",
+      readTime: "3 MIN READ",
+      image: "/images/diljit-dosanjh-aura-india-tour-hurdles.jpg",
+    },
+    {
       id: "bhansali-gangubai-eetha-backlash",
       anchorId: "bhansali-backlash-story",
       href: "/bhansali-productions-gangubai-post-eetha-trailer-backlash",
@@ -783,15 +797,15 @@ export default function Home() {
         <section className="hero" id="featured">
           {/* 1. Main Featured Story (Commanding Top Story Presentation) */}
           <Link
-            href="/bhansali-productions-gangubai-post-eetha-trailer-backlash"
+            href="/diljit-dosanjh-aura-india-tour-hurdles"
             className="feature-card block transition-all hover:border-[var(--lime)] focus-visible:ring-2 focus-visible:ring-[var(--lime)] group"
             style={{ textDecoration: "none", color: "inherit" }}
-            aria-label="Read full article: Bhansali Productions Trolled for Gangubai Kathiawadi Post on Eetha Trailer Day"
+            aria-label="Read full article: Diljit Dosanjh Breaks Silence on Aura India Tour Hurdles"
           >
             <div className="feature-media" style={{ overflow: "hidden", position: "relative" }}>
               <Image
-                src="/images/bhansali-productions-gangubai-post-eetha-trailer-backlash.jpg"
-                alt="Bhansali Productions Trolled for Gangubai Kathiawadi Post on Eetha Trailer Day"
+                src="/images/diljit-dosanjh-aura-india-tour-hurdles.jpg"
+                alt="Diljit Dosanjh Breaks Silence on Aura India Tour Hurdles"
                 fill
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 750px"
@@ -800,20 +814,20 @@ export default function Home() {
               />
               <div className="noise" style={{ pointerEvents: "none" }}></div>
               <div className="feature-tag flex items-center gap-2">
-                <span className="badge pink">🔥 Social Media Backlash</span>
-                <span className="badge lime">Alia vs Shraddha</span>
-                <span className="badge">Bollywood</span>
+                <span className="badge lime">🎤 Aura Tour 2026</span>
+                <span className="badge pink">Exclusive Statement</span>
+                <span className="badge">Bollywood &amp; News</span>
               </div>
             </div>
             <div className="feature-body">
               <div className="flex items-center gap-2 mb-2 font-mono text-xs text-[var(--lime)] font-bold tracking-wider uppercase">
-                <span>★ TOP STORY · BOLLYWOOD SCOOP</span>
+                <span>★ TOP STORY · TOUR EXCLUSIVE</span>
               </div>
               <h1 className="disp" style={{ color: "#fff" }}>
-                Bhansali Productions Trolled for Gangubai Kathiawadi Post on Eetha Trailer Day
+                Diljit Dosanjh Breaks Silence on Aura India Tour Hurdles
               </h1>
               <p>
-                Bhansali Productions is facing intense social media heat after sharing an Alia Bhatt Gangubai Kathiawadi post on the exact same day Shraddha Kapoor’s Eetha trailer dropped.
+                Following his 70,000-strong Delhi concert, Diljit Dosanjh addressed attempts to halt his Aura India Tour and confirmed he will remain in India until December 20 to complete all scheduled shows.
               </p>
               <div className="meta-row mt-auto pt-3 border-t border-white/[0.06] flex items-center justify-between">
                 <div className="flex items-center gap-3">
@@ -821,7 +835,7 @@ export default function Home() {
                   <span className="dot-sep">◆</span>
                   <span>3 MIN READ</span>
                   <span className="dot-sep">◆</span>
-                  <span style={{ color: "var(--lime)" }}>SOCIAL MEDIA</span>
+                  <span style={{ color: "var(--lime)" }}>TOUR NEWS</span>
                 </div>
                 <span className="text-xs font-mono font-bold text-[var(--lime)] hidden sm:inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform">
                   Read Full Story →
@@ -840,6 +854,18 @@ export default function Home() {
               <span className="trend-rank">01</span>
               <div className="trend-text">
                 <Link
+                  href="/diljit-dosanjh-aura-india-tour-hurdles"
+                  style={{ color: "inherit" }}
+                >
+                  <h3>Diljit Dosanjh breaks silence on Aura India Tour hurdles: “I’m not going anywhere”</h3>
+                  <span>BOLLYWOOD &amp; NEWS · 580K REACTIONS</span>
+                </Link>
+              </div>
+            </div>
+            <div className="trend-item">
+              <span className="trend-rank">02</span>
+              <div className="trend-text">
+                <Link
                   href="/bhansali-productions-gangubai-post-eetha-trailer-backlash"
                   style={{ color: "inherit" }}
                 >
@@ -849,7 +875,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">02</span>
+              <span className="trend-rank">03</span>
               <div className="trend-text">
                 <Link
                   href="/maharani-season-5-release-date-january-2027"
@@ -861,7 +887,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">03</span>
+              <span className="trend-rank">04</span>
               <div className="trend-text">
                 <Link
                   href="/honey-singh-nephew-vidit-olak-dies-jalandhar-accident"
@@ -873,7 +899,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">04</span>
+              <span className="trend-rank">05</span>
               <div className="trend-text">
                 <Link
                   href="/ram-gopal-varma-legal-notice-eclatant-films-29-67-crore"
@@ -885,7 +911,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">05</span>
+              <span className="trend-rank">06</span>
               <div className="trend-text">
                 <Link
                   href="/himesh-reshammiya-deepika-padukone-irreplaceable-sandeep-reddy-vanga"
@@ -897,7 +923,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">06</span>
+              <span className="trend-rank">07</span>
               <div className="trend-text">
                 <Link
                   href="/prakash-raj-wife-pony-varma-lost-films-ads"
@@ -909,7 +935,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">07</span>
+              <span className="trend-rank">08</span>
               <div className="trend-text">
                 <Link
                   href="/tiger-shroff-first-public-appearance-after-firing-incident"
@@ -921,7 +947,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">08</span>
+              <span className="trend-rank">09</span>
               <div className="trend-text">
                 <Link
                   href="/manoj-bajpayee-vidya-balan-kajol-women-in-cinema"
@@ -933,7 +959,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">09</span>
+              <span className="trend-rank">10</span>
               <div className="trend-text">
                 <Link
                   href="/radhika-apte-rudra-akka-netflix"
@@ -941,18 +967,6 @@ export default function Home() {
                 >
                   <h3>Radhika Apte on playing Rudra in Netflix’s Akka: “A character I had never played before”</h3>
                   <span>WEB SERIES &amp; NETFLIX · 460K REACTIONS</span>
-                </Link>
-              </div>
-            </div>
-            <div className="trend-item">
-              <span className="trend-rank">10</span>
-              <div className="trend-text">
-                <Link
-                  href="/sanjay-gupta-funeral-pawan-hans-crematorium"
-                  style={{ color: "inherit" }}
-                >
-                  <h3>Sanjay Gupta funeral: Last rites today at Pawan Hans Crematorium; Bollywood mourns</h3>
-                  <span>BOLLYWOOD &amp; NEWS · 450K REACTIONS</span>
                 </Link>
               </div>
             </div>
