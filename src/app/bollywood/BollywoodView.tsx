@@ -20,6 +20,16 @@ interface BollywoodArticle {
 
 const bollywoodArticles: BollywoodArticle[] = [
   {
+    id: "himesh-deepika-irreplaceable-vanga",
+    category: "Exclusive Interview",
+    title: "Himesh Reshammiya Says Deepika Padukone Is “Irreplaceable”",
+    badge: "Rapid Fire Scoop",
+    badgeType: "pink",
+    image: "/images/himesh-reshammiya-deepika-padukone-irreplaceable-sandeep-reddy-vanga.jpg",
+    href: "/himesh-reshammiya-deepika-padukone-irreplaceable-sandeep-reddy-vanga",
+    readOrTime: "3 MIN READ",
+  },
+  {
     id: "prakash-raj-lost-films-ads",
     category: "Exclusive Interview",
     title: "Prakash Raj Lost Films and Ad Deals for Speaking Out, Says Wife Pony Varma",
@@ -346,16 +356,16 @@ export default function BollywoodView() {
 
         {/* Lead Section: Latest Bollywood Published Article (Cover Story) + The Last 2 Blogs Uploaded Before It */}
         <section className="lead">
-          {/* Cover Story: Latest Published Bollywood Story (Prakash Raj Interview) */}
+          {/* Cover Story: Latest Published Bollywood Story (Himesh Reshammiya Rapid Fire) */}
           <Link
-            href="/prakash-raj-wife-pony-varma-lost-films-ads"
+            href="/himesh-reshammiya-deepika-padukone-irreplaceable-sandeep-reddy-vanga"
             className="feature-card group block"
-            aria-label="Read full cover story: Prakash Raj Lost Films and Ad Deals for Speaking Out, Says Wife Pony Varma"
+            aria-label="Read full cover story: Himesh Reshammiya Says Deepika Padukone Is “Irreplaceable”"
           >
             <div className="feature-media relative overflow-hidden">
               <Image
-                src="/images/prakash-raj-wife-pony-varma-lost-films-ads.jpg"
-                alt="Prakash Raj Lost Films and Ad Deals for Speaking Out, Says Wife Pony Varma"
+                src="/images/himesh-reshammiya-deepika-padukone-irreplaceable-sandeep-reddy-vanga.jpg"
+                alt="Himesh Reshammiya Says Deepika Padukone Is Irreplaceable"
                 fill
                 priority
                 className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
@@ -363,18 +373,18 @@ export default function BollywoodView() {
               />
               <div className="noise" />
               <span className="badge pink feature-tag z-10">
-                🎙️ Exclusive Interview
+                🎙️ Rapid Fire Exclusive
               </span>
             </div>
             <div className="feature-body">
               <h2 className="disp text-white group-hover:text-[var(--lime)] transition-colors">
-                Prakash Raj Lost Films and Ad Deals for Speaking Out, Says Wife Pony Varma
+                Himesh Reshammiya Says Deepika Padukone Is “Irreplaceable”
               </h2>
               <p>
-                Pony Varma says Prakash Raj lost films and ad deals over his political views. She also explains how Gauri Lankesh’s murder changed him forever.
+                Himesh Reshammiya picked Sandeep Reddy Vanga over Mohit Suri and Aditya Dhar, and named Salman Khan and Akshay Kumar as musically aware heroes.
               </p>
               <div className="meta-row mt-3">
-                <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; NEWS</span>
+                <span className="text-[var(--magenta)] font-bold">BOLLYWOOD</span>
                 <span className="dot-sep">◆</span>
                 <span>3 MIN READ</span>
                 <span className="dot-sep">◆</span>
@@ -385,7 +395,34 @@ export default function BollywoodView() {
 
           {/* Right Stack: The last 2 blogs uploaded before the latest one */}
           <div className="stack">
-            {/* Card 1: Tiger Shroff Firing Appearance */}
+            {/* Card 1: Prakash Raj Interview */}
+            <Link
+              href="/prakash-raj-wife-pony-varma-lost-films-ads"
+              className="card m1 group block"
+            >
+              <div className="card-media relative overflow-hidden">
+                <Image
+                  src="/images/prakash-raj-wife-pony-varma-lost-films-ads.jpg"
+                  alt="Prakash Raj Lost Films and Ad Deals for Speaking Out, Says Wife Pony Varma"
+                  fill
+                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 980px) 100vw, 35vw"
+                />
+                <span className="badge pink z-10 relative">🎙️ Exclusive Interview</span>
+              </div>
+              <div className="card-body">
+                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
+                  Prakash Raj Lost Films and Ad Deals for Speaking Out, Says Wife Pony Varma
+                </h3>
+                <div className="meta-row mt-2">
+                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; NEWS</span>
+                  <span className="dot-sep">◆</span>
+                  <span>3 MIN READ</span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Card 2: Tiger Shroff Firing Appearance */}
             <Link
               href="/tiger-shroff-first-public-appearance-after-firing-incident"
               className="card m1 group block"
@@ -411,33 +448,6 @@ export default function BollywoodView() {
                 </div>
               </div>
             </Link>
-
-            {/* Card 2: Manoj Bajpayee on Women in Cinema */}
-            <Link
-              href="/manoj-bajpayee-vidya-balan-kajol-women-in-cinema"
-              className="card m1 group block"
-            >
-              <div className="card-media relative overflow-hidden">
-                <Image
-                  src="/images/manoj-bajpayee-vidya-balan-kajol-women-in-cinema.jpg"
-                  alt="Manoj Bajpayee Says Women Have Been Leading Bollywood for Years with Vidya Balan and Kajol"
-                  fill
-                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
-                  sizes="(max-width: 980px) 100vw, 35vw"
-                />
-                <span className="badge lime z-10 relative">🎬 Women in Cinema</span>
-              </div>
-              <div className="card-body">
-                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
-                  Manoj Bajpayee Says Women Have Been Leading Bollywood for Years
-                </h3>
-                <div className="meta-row mt-2">
-                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD</span>
-                  <span className="dot-sep">◆</span>
-                  <span>3 MIN READ</span>
-                </div>
-              </div>
-            </Link>
           </div>
         </section>
 
@@ -450,7 +460,7 @@ export default function BollywoodView() {
               </h2>
             </div>
             <span className="text-xs font-mono text-[var(--lime)] font-bold">
-              27 STORIES PUBLISHED
+              28 STORIES PUBLISHED
             </span>
           </div>
 

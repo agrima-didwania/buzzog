@@ -8,6 +8,23 @@ export const metadata: Metadata = {
   keywords: [
     "Bollywood Buzz Originals",
     "Bollywood news",
+    "Himesh Reshammiya",
+    "Deepika Padukone",
+    "Sandeep Reddy Vanga",
+    "Salman Khan",
+    "Akshay Kumar",
+    "Bhushan Kumar",
+    "T-Series",
+    "Ramesh Taurani",
+    "Kumar Taurani",
+    "Ratan Jain",
+    "Mohit Suri",
+    "Aditya Dhar",
+    "Om Shanti Om",
+    "Aap Kaa Surroor",
+    "Spirit",
+    "Triptii Dimri",
+    "Komal Nahta",
     "Prakash Raj",
     "Pony Varma",
     "Prakash Raj wife",
@@ -143,10 +160,10 @@ export const metadata: Metadata = {
     siteName: "Buzz Originals",
     images: [
       {
-        url: "/images/prakash-raj-wife-pony-varma-lost-films-ads.jpg",
+        url: "/images/himesh-reshammiya-deepika-padukone-irreplaceable-sandeep-reddy-vanga.jpg",
         width: 1024,
         height: 576,
-        alt: "Prakash Raj’s Wife Reveals He Lost Films and Ads — Buzz Originals Bollywood",
+        alt: "Himesh Reshammiya Calls Deepika Padukone “Irreplaceable” — Buzz Originals Bollywood",
       },
     ],
     type: "website",
@@ -156,7 +173,7 @@ export const metadata: Metadata = {
     title: "Bollywood — Buzz Originals",
     description:
       "Raw, unfiltered Bollywood coverage of red carpets, gossip, airport sightings & exclusives.",
-    images: ["/images/prakash-raj-wife-pony-varma-lost-films-ads.jpg"],
+    images: ["/images/himesh-reshammiya-deepika-padukone-irreplaceable-sandeep-reddy-vanga.jpg"],
   },
 };
 
@@ -183,6 +200,12 @@ export default function BollywoodPage() {
         {
           "@type": "ListItem",
           position: 1,
+          name: "Himesh Reshammiya Calls Deepika Padukone “Irreplaceable”",
+          url: "https://www.buzzoriginals.com/himesh-reshammiya-deepika-padukone-irreplaceable-sandeep-reddy-vanga",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
           name: "Prakash Raj’s Wife Reveals He Lost Films and Ads",
           url: "https://www.buzzoriginals.com/prakash-raj-wife-pony-varma-lost-films-ads",
         },
