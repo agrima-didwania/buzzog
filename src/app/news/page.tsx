@@ -8,6 +8,15 @@ export const metadata: Metadata = {
   keywords: [
     "Entertainment News Buzz Originals",
     "Bollywood breaking news",
+    "Ram Gopal Varma legal notice",
+    "Ram Gopal Varma Eclatant Films",
+    "RGV legal notice 29.67 crore",
+    "Ram Gopal Varma 29.67 crore case",
+    "Eclatant Films legal notice",
+    "Ram Gopal Varma news today",
+    "RGV Eclatant Films dispute",
+    "Ram Gopal Varma",
+    "Eclatant Films",
     "Prakash Raj",
     "Pony Varma",
     "Prakash Raj wife",
@@ -79,10 +88,10 @@ export const metadata: Metadata = {
     siteName: "Buzz Originals",
     images: [
       {
-        url: "/images/prakash-raj-wife-pony-varma-lost-films-ads.jpg",
+        url: "/images/ram-gopal-varma-legal-notice-eclatant-films-29-67-crore.jpg",
         width: 1024,
         height: 576,
-        alt: "Prakash Raj’s Wife Reveals He Lost Films and Ads — Buzz Originals News Desk",
+        alt: "Ram Gopal Varma in Legal Trouble Over ₹29.67 Crore — Buzz Originals News Desk",
       },
     ],
     type: "website",
@@ -92,7 +101,7 @@ export const metadata: Metadata = {
     title: "News — Buzz Originals",
     description:
       "Raw, unfiltered entertainment news across reality TV, Bollywood, movies and OTT.",
-    images: ["/images/prakash-raj-wife-pony-varma-lost-films-ads.jpg"],
+    images: ["/images/ram-gopal-varma-legal-notice-eclatant-films-29-67-crore.jpg"],
   },
 };
 

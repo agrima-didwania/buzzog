@@ -8,6 +8,15 @@ export const metadata: Metadata = {
   keywords: [
     "Bollywood Buzz Originals",
     "Bollywood news",
+    "Ram Gopal Varma legal notice",
+    "Ram Gopal Varma Eclatant Films",
+    "RGV legal notice 29.67 crore",
+    "Ram Gopal Varma 29.67 crore case",
+    "Eclatant Films legal notice",
+    "Ram Gopal Varma news today",
+    "RGV Eclatant Films dispute",
+    "Ram Gopal Varma",
+    "Eclatant Films",
     "Himesh Reshammiya",
     "Deepika Padukone",
     "Sandeep Reddy Vanga",
@@ -160,10 +169,10 @@ export const metadata: Metadata = {
     siteName: "Buzz Originals",
     images: [
       {
-        url: "/images/himesh-reshammiya-deepika-padukone-irreplaceable-sandeep-reddy-vanga.jpg",
+        url: "/images/ram-gopal-varma-legal-notice-eclatant-films-29-67-crore.jpg",
         width: 1024,
         height: 576,
-        alt: "Himesh Reshammiya Calls Deepika Padukone “Irreplaceable” — Buzz Originals Bollywood",
+        alt: "Ram Gopal Varma in Legal Trouble Over ₹29.67 Crore — Buzz Originals Bollywood",
       },
     ],
     type: "website",
@@ -173,7 +182,7 @@ export const metadata: Metadata = {
     title: "Bollywood — Buzz Originals",
     description:
       "Raw, unfiltered Bollywood coverage of red carpets, gossip, airport sightings & exclusives.",
-    images: ["/images/himesh-reshammiya-deepika-padukone-irreplaceable-sandeep-reddy-vanga.jpg"],
+    images: ["/images/ram-gopal-varma-legal-notice-eclatant-films-29-67-crore.jpg"],
   },
 };
 
@@ -200,6 +209,12 @@ export default function BollywoodPage() {
         {
           "@type": "ListItem",
           position: 1,
+          name: "Ram Gopal Varma Gets ₹29.67 Crore Legal Notice",
+          url: "https://www.buzzoriginals.com/ram-gopal-varma-legal-notice-eclatant-films-29-67-crore",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
           name: "Himesh Reshammiya Calls Deepika Padukone “Irreplaceable”",
           url: "https://www.buzzoriginals.com/himesh-reshammiya-deepika-padukone-irreplaceable-sandeep-reddy-vanga",
         },

@@ -22,6 +22,18 @@ interface NewsArticle {
 // Only verified breaking entertainment news stories (fatwas, obituaries, police complaints, eviction rows, box-office shifts)
 const newsArticles: NewsArticle[] = [
   {
+    id: "rgv-legal-notice-29-crore",
+    category: "Bollywood",
+    title: "Ram Gopal Varma in Legal Trouble Over ₹29.67 Crore",
+    badge: "Legal Notice",
+    badgeType: "pink",
+    image: "/images/ram-gopal-varma-legal-notice-eclatant-films-29-67-crore.jpg",
+    href: "/ram-gopal-varma-legal-notice-eclatant-films-29-67-crore",
+    readOrTime: "3 MIN READ",
+    excerpt:
+      "Eclatant Films has reportedly sent Ram Gopal Varma a ₹29.67 crore legal notice over a 2010 deal, warning producers and OTT platforms against dealing with him.",
+  },
+  {
     id: "prakash-raj-lost-films-ads",
     category: "Bollywood",
     title: "Prakash Raj Lost Films and Ad Deals for Speaking Out, Says Wife Pony Varma",

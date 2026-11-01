@@ -177,6 +177,20 @@ export default function Home() {
 
   const editorialArticles: EditorialArticle[] = [
     {
+      id: "rgv-legal-notice-29-crore",
+      anchorId: "rgv-legal-story",
+      href: "/ram-gopal-varma-legal-notice-eclatant-films-29-67-crore",
+      title: "Ram Gopal Varma Gets ₹29.67 Crore Legal Notice",
+      excerpt: "Eclatant Films has reportedly sent Ram Gopal Varma a ₹29.67 crore legal notice over a 2010 deal, warning producers and OTT platforms against dealing with him.",
+      category: "Bollywood",
+      secondaryCategory: "News",
+      displayCategory: "BOLLYWOOD & NEWS",
+      badge: "Legal Trouble",
+      badgeType: "pink",
+      readTime: "3 MIN READ",
+      image: "/images/ram-gopal-varma-legal-notice-eclatant-films-29-67-crore.jpg",
+    },
+    {
       id: "himesh-deepika-irreplaceable-vanga",
       anchorId: "himesh-deepika-story",
       href: "/himesh-reshammiya-deepika-padukone-irreplaceable-sandeep-reddy-vanga",
@@ -728,15 +742,15 @@ export default function Home() {
         <section className="hero" id="featured">
           {/* 1. Main Featured Story (Commanding Top Story Presentation) */}
           <Link
-            href="/himesh-reshammiya-deepika-padukone-irreplaceable-sandeep-reddy-vanga"
+            href="/ram-gopal-varma-legal-notice-eclatant-films-29-67-crore"
             className="feature-card block transition-all hover:border-[var(--lime)] focus-visible:ring-2 focus-visible:ring-[var(--lime)] group"
             style={{ textDecoration: "none", color: "inherit" }}
-            aria-label="Read full article: Himesh Reshammiya Calls Deepika Padukone “Irreplaceable”"
+            aria-label="Read full article: Ram Gopal Varma Gets ₹29.67 Crore Legal Notice"
           >
             <div className="feature-media" style={{ overflow: "hidden", position: "relative" }}>
               <Image
-                src="/images/himesh-reshammiya-deepika-padukone-irreplaceable-sandeep-reddy-vanga.jpg"
-                alt="Himesh Reshammiya Says Deepika Padukone Is Irreplaceable"
+                src="/images/ram-gopal-varma-legal-notice-eclatant-films-29-67-crore.jpg"
+                alt="Ram Gopal Varma in Legal Trouble Over ₹29.67 Crore"
                 fill
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 750px"
@@ -745,28 +759,28 @@ export default function Home() {
               />
               <div className="noise" style={{ pointerEvents: "none" }}></div>
               <div className="feature-tag flex items-center gap-2">
-                <span className="badge pink">🎙️ Rapid Fire Exclusive</span>
-                <span className="badge lime">Himesh Reshammiya</span>
-                <span className="badge">Bollywood</span>
+                <span className="badge pink">⚖️ Legal Dispute</span>
+                <span className="badge lime">Ram Gopal Varma</span>
+                <span className="badge">Bollywood &amp; News</span>
               </div>
             </div>
             <div className="feature-body">
               <div className="flex items-center gap-2 mb-2 font-mono text-xs text-[var(--lime)] font-bold tracking-wider uppercase">
-                <span>★ TOP STORY · RAPID FIRE EXCLUSIVE</span>
+                <span>★ TOP STORY · BREAKING LEGAL NEWS</span>
               </div>
               <h1 className="disp" style={{ color: "#fff" }}>
-                Himesh Reshammiya Says Deepika Padukone Is “Irreplaceable”
+                Ram Gopal Varma in Legal Trouble Over ₹29.67 Crore
               </h1>
               <p>
-                In a rapid-fire chat with Komal Nahta, hit composer Himesh Reshammiya calls Deepika Padukone “irreplaceable,” picks Sandeep Reddy Vanga over Mohit Suri and Aditya Dhar, and names Salman Khan and Akshay Kumar as the most musically conscious stars.
+                Production house Eclatant Films has reportedly sent Ram Gopal Varma a ₹29.67 crore legal notice over a 2010 agreement, issuing public notices in trade magazines and warning producers and OTT platforms against commercial pacts.
               </p>
               <div className="meta-row mt-auto pt-3 border-t border-white/[0.06] flex items-center justify-between">
                 <div className="flex items-center gap-3">
-                  <span>BOLLYWOOD &amp; MUSIC</span>
+                  <span>BOLLYWOOD &amp; NEWS</span>
                   <span className="dot-sep">◆</span>
                   <span>3 MIN READ</span>
                   <span className="dot-sep">◆</span>
-                  <span style={{ color: "var(--lime)" }}>EXCLUSIVE INTERVIEW</span>
+                  <span style={{ color: "var(--lime)" }}>LEGAL EXCLUSIVE</span>
                 </div>
                 <span className="text-xs font-mono font-bold text-[var(--lime)] hidden sm:inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform">
                   Read Full Story →
@@ -785,6 +799,18 @@ export default function Home() {
               <span className="trend-rank">01</span>
               <div className="trend-text">
                 <Link
+                  href="/ram-gopal-varma-legal-notice-eclatant-films-29-67-crore"
+                  style={{ color: "inherit" }}
+                >
+                  <h3>Ram Gopal Varma gets ₹29.67 crore legal notice from Eclatant Films over 2010 pact</h3>
+                  <span>BOLLYWOOD &amp; NEWS · 535K REACTIONS</span>
+                </Link>
+              </div>
+            </div>
+            <div className="trend-item">
+              <span className="trend-rank">02</span>
+              <div className="trend-text">
+                <Link
                   href="/himesh-reshammiya-deepika-padukone-irreplaceable-sandeep-reddy-vanga"
                   style={{ color: "inherit" }}
                 >
@@ -794,7 +820,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">02</span>
+              <span className="trend-rank">03</span>
               <div className="trend-text">
                 <Link
                   href="/prakash-raj-wife-pony-varma-lost-films-ads"
@@ -806,7 +832,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">03</span>
+              <span className="trend-rank">04</span>
               <div className="trend-text">
                 <Link
                   href="/tiger-shroff-first-public-appearance-after-firing-incident"
@@ -818,7 +844,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">04</span>
+              <span className="trend-rank">05</span>
               <div className="trend-text">
                 <Link
                   href="/manoj-bajpayee-vidya-balan-kajol-women-in-cinema"
@@ -830,7 +856,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">05</span>
+              <span className="trend-rank">06</span>
               <div className="trend-text">
                 <Link
                   href="/radhika-apte-rudra-akka-netflix"
@@ -842,7 +868,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">06</span>
+              <span className="trend-rank">07</span>
               <div className="trend-text">
                 <Link
                   href="/sanjay-gupta-funeral-pawan-hans-crematorium"
@@ -854,7 +880,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">07</span>
+              <span className="trend-rank">08</span>
               <div className="trend-text">
                 <Link
                   href="/diljit-dosanjh-cjp-delhi-concert-abhijeet-dipke-response"
@@ -866,7 +892,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">08</span>
+              <span className="trend-rank">09</span>
               <div className="trend-text">
                 <Link
                   href="/orry-halloween-2026-janhvi-khushi-kapoor-competition"
@@ -878,7 +904,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">09</span>
+              <span className="trend-rank">10</span>
               <div className="trend-text">
                 <Link
                   href="/sanjay-dutt-kaante-2-promise-sanjay-gupta-death"
@@ -886,18 +912,6 @@ export default function Home() {
                 >
                   <h3>Sanjay Dutt promises Kaante 2 in memory of Sanjay Gupta: “I will make your dream come true”</h3>
                   <span>BOLLYWOOD &amp; NEWS · 410K REACTIONS</span>
-                </Link>
-              </div>
-            </div>
-            <div className="trend-item">
-              <span className="trend-rank">10</span>
-              <div className="trend-text">
-                <Link
-                  href="/varun-dhawan-sidharth-malhotra-kiara-advani-reunion"
-                  style={{ color: "inherit" }}
-                >
-                  <h3>Varun Dhawan &amp; Sidharth Malhotra reunion: “Never a rivalry” photo with Kiara Advani goes viral</h3>
-                  <span>BOLLYWOOD · 390K REACTIONS</span>
                 </Link>
               </div>
             </div>

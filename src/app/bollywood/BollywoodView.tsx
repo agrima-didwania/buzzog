@@ -20,6 +20,16 @@ interface BollywoodArticle {
 
 const bollywoodArticles: BollywoodArticle[] = [
   {
+    id: "rgv-legal-notice-29-crore",
+    category: "Legal & Crime",
+    title: "Ram Gopal Varma in Legal Trouble Over ₹29.67 Crore",
+    badge: "Legal Trouble",
+    badgeType: "pink",
+    image: "/images/ram-gopal-varma-legal-notice-eclatant-films-29-67-crore.jpg",
+    href: "/ram-gopal-varma-legal-notice-eclatant-films-29-67-crore",
+    readOrTime: "3 MIN READ",
+  },
+  {
     id: "himesh-deepika-irreplaceable-vanga",
     category: "Exclusive Interview",
     title: "Himesh Reshammiya Says Deepika Padukone Is “Irreplaceable”",
@@ -356,16 +366,16 @@ export default function BollywoodView() {
 
         {/* Lead Section: Latest Bollywood Published Article (Cover Story) + The Last 2 Blogs Uploaded Before It */}
         <section className="lead">
-          {/* Cover Story: Latest Published Bollywood Story (Himesh Reshammiya Rapid Fire) */}
+          {/* Cover Story: Latest Published Bollywood Story (RGV Legal Notice) */}
           <Link
-            href="/himesh-reshammiya-deepika-padukone-irreplaceable-sandeep-reddy-vanga"
+            href="/ram-gopal-varma-legal-notice-eclatant-films-29-67-crore"
             className="feature-card group block"
-            aria-label="Read full cover story: Himesh Reshammiya Says Deepika Padukone Is “Irreplaceable”"
+            aria-label="Read full cover story: Ram Gopal Varma in Legal Trouble Over ₹29.67 Crore"
           >
             <div className="feature-media relative overflow-hidden">
               <Image
-                src="/images/himesh-reshammiya-deepika-padukone-irreplaceable-sandeep-reddy-vanga.jpg"
-                alt="Himesh Reshammiya Says Deepika Padukone Is Irreplaceable"
+                src="/images/ram-gopal-varma-legal-notice-eclatant-films-29-67-crore.jpg"
+                alt="Ram Gopal Varma in Legal Trouble Over ₹29.67 Crore"
                 fill
                 priority
                 className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
@@ -373,18 +383,18 @@ export default function BollywoodView() {
               />
               <div className="noise" />
               <span className="badge pink feature-tag z-10">
-                🎙️ Rapid Fire Exclusive
+                ⚖️ Legal Dispute
               </span>
             </div>
             <div className="feature-body">
               <h2 className="disp text-white group-hover:text-[var(--lime)] transition-colors">
-                Himesh Reshammiya Says Deepika Padukone Is “Irreplaceable”
+                Ram Gopal Varma in Legal Trouble Over ₹29.67 Crore
               </h2>
               <p>
-                Himesh Reshammiya picked Sandeep Reddy Vanga over Mohit Suri and Aditya Dhar, and named Salman Khan and Akshay Kumar as musically aware heroes.
+                Eclatant Films has reportedly sent Ram Gopal Varma a ₹29.67 crore legal notice over a 2010 deal. Here is what the case is about.
               </p>
               <div className="meta-row mt-3">
-                <span className="text-[var(--magenta)] font-bold">BOLLYWOOD</span>
+                <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; NEWS</span>
                 <span className="dot-sep">◆</span>
                 <span>3 MIN READ</span>
                 <span className="dot-sep">◆</span>
@@ -395,7 +405,34 @@ export default function BollywoodView() {
 
           {/* Right Stack: The last 2 blogs uploaded before the latest one */}
           <div className="stack">
-            {/* Card 1: Prakash Raj Interview */}
+            {/* Card 1: Himesh Reshammiya Interview */}
+            <Link
+              href="/himesh-reshammiya-deepika-padukone-irreplaceable-sandeep-reddy-vanga"
+              className="card m1 group block"
+            >
+              <div className="card-media relative overflow-hidden">
+                <Image
+                  src="/images/himesh-reshammiya-deepika-padukone-irreplaceable-sandeep-reddy-vanga.jpg"
+                  alt="Himesh Reshammiya Says Deepika Padukone Is Irreplaceable"
+                  fill
+                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 980px) 100vw, 35vw"
+                />
+                <span className="badge pink z-10 relative">🎙️ Rapid Fire Exclusive</span>
+              </div>
+              <div className="card-body">
+                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
+                  Himesh Reshammiya Says Deepika Padukone Is “Irreplaceable”
+                </h3>
+                <div className="meta-row mt-2">
+                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD</span>
+                  <span className="dot-sep">◆</span>
+                  <span>3 MIN READ</span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Card 2: Prakash Raj Interview */}
             <Link
               href="/prakash-raj-wife-pony-varma-lost-films-ads"
               className="card m1 group block"
@@ -421,33 +458,6 @@ export default function BollywoodView() {
                 </div>
               </div>
             </Link>
-
-            {/* Card 2: Tiger Shroff Firing Appearance */}
-            <Link
-              href="/tiger-shroff-first-public-appearance-after-firing-incident"
-              className="card m1 group block"
-            >
-              <div className="card-media relative overflow-hidden">
-                <Image
-                  src="/images/tiger-shroff-first-public-appearance-after-firing-incident.jpg"
-                  alt="Tiger Shroff Is Back: First Public Appearance After Firing Incident at Claudia Ciesla Book Launch"
-                  fill
-                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
-                  sizes="(max-width: 980px) 100vw, 35vw"
-                />
-                <span className="badge pink z-10 relative">🚨 Exclusive Scoop</span>
-              </div>
-              <div className="card-body">
-                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
-                  Tiger Shroff to Make First Appearance After Firing Incident
-                </h3>
-                <div className="meta-row mt-2">
-                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; NEWS</span>
-                  <span className="dot-sep">◆</span>
-                  <span>3 MIN READ</span>
-                </div>
-              </div>
-            </Link>
           </div>
         </section>
 
@@ -460,7 +470,7 @@ export default function BollywoodView() {
               </h2>
             </div>
             <span className="text-xs font-mono text-[var(--lime)] font-bold">
-              28 STORIES PUBLISHED
+              29 STORIES PUBLISHED
             </span>
           </div>
 
