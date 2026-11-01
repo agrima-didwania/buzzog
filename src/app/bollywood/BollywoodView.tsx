@@ -20,6 +20,16 @@ interface BollywoodArticle {
 
 const bollywoodArticles: BollywoodArticle[] = [
   {
+    id: "prakash-raj-lost-films-ads",
+    category: "Exclusive Interview",
+    title: "Prakash Raj Lost Films and Ad Deals for Speaking Out, Says Wife Pony Varma",
+    badge: "Interview Scoop",
+    badgeType: "pink",
+    image: "/images/prakash-raj-wife-pony-varma-lost-films-ads.jpg",
+    href: "/prakash-raj-wife-pony-varma-lost-films-ads",
+    readOrTime: "3 MIN READ",
+  },
+  {
     id: "tiger-shroff-firing-appearance",
     category: "Exclusive & Crime",
     title: "Tiger Shroff to Make First Appearance After Firing Incident",
@@ -336,16 +346,16 @@ export default function BollywoodView() {
 
         {/* Lead Section: Latest Bollywood Published Article (Cover Story) + The Last 2 Blogs Uploaded Before It */}
         <section className="lead">
-          {/* Cover Story: Latest Published Bollywood Story (Tiger Shroff Firing Appearance) */}
+          {/* Cover Story: Latest Published Bollywood Story (Prakash Raj Interview) */}
           <Link
-            href="/tiger-shroff-first-public-appearance-after-firing-incident"
+            href="/prakash-raj-wife-pony-varma-lost-films-ads"
             className="feature-card group block"
-            aria-label="Read full cover story: Tiger Shroff Is Back: First Public Appearance After Firing Incident"
+            aria-label="Read full cover story: Prakash Raj Lost Films and Ad Deals for Speaking Out, Says Wife Pony Varma"
           >
             <div className="feature-media relative overflow-hidden">
               <Image
-                src="/images/tiger-shroff-first-public-appearance-after-firing-incident.jpg"
-                alt="Tiger Shroff Is Back: First Public Appearance After Firing Incident at Claudia Ciesla Book Launch"
+                src="/images/prakash-raj-wife-pony-varma-lost-films-ads.jpg"
+                alt="Prakash Raj Lost Films and Ad Deals for Speaking Out, Says Wife Pony Varma"
                 fill
                 priority
                 className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
@@ -353,29 +363,56 @@ export default function BollywoodView() {
               />
               <div className="noise" />
               <span className="badge pink feature-tag z-10">
-                🚨 Exclusive Scoop
+                🎙️ Exclusive Interview
               </span>
             </div>
             <div className="feature-body">
               <h2 className="disp text-white group-hover:text-[var(--lime)] transition-colors">
-                Tiger Shroff to Make First Appearance After Firing Incident
+                Prakash Raj Lost Films and Ad Deals for Speaking Out, Says Wife Pony Varma
               </h2>
               <p>
-                Tiger Shroff will reportedly make his first public appearance since the firing incident at Claudia Ciesla’s book launch in Mumbai on November 3.
+                Pony Varma says Prakash Raj lost films and ad deals over his political views. She also explains how Gauri Lankesh’s murder changed him forever.
               </p>
               <div className="meta-row mt-3">
                 <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; NEWS</span>
                 <span className="dot-sep">◆</span>
                 <span>3 MIN READ</span>
                 <span className="dot-sep">◆</span>
-                <span className="text-[var(--lime)] font-bold">OCT 31</span>
+                <span className="text-[var(--lime)] font-bold">NOV 01</span>
               </div>
             </div>
           </Link>
 
           {/* Right Stack: The last 2 blogs uploaded before the latest one */}
           <div className="stack">
-            {/* Card 1: Manoj Bajpayee on Women in Cinema */}
+            {/* Card 1: Tiger Shroff Firing Appearance */}
+            <Link
+              href="/tiger-shroff-first-public-appearance-after-firing-incident"
+              className="card m1 group block"
+            >
+              <div className="card-media relative overflow-hidden">
+                <Image
+                  src="/images/tiger-shroff-first-public-appearance-after-firing-incident.jpg"
+                  alt="Tiger Shroff Is Back: First Public Appearance After Firing Incident at Claudia Ciesla Book Launch"
+                  fill
+                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 980px) 100vw, 35vw"
+                />
+                <span className="badge pink z-10 relative">🚨 Exclusive Scoop</span>
+              </div>
+              <div className="card-body">
+                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
+                  Tiger Shroff to Make First Appearance After Firing Incident
+                </h3>
+                <div className="meta-row mt-2">
+                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; NEWS</span>
+                  <span className="dot-sep">◆</span>
+                  <span>3 MIN READ</span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Card 2: Manoj Bajpayee on Women in Cinema */}
             <Link
               href="/manoj-bajpayee-vidya-balan-kajol-women-in-cinema"
               className="card m1 group block"
@@ -388,7 +425,7 @@ export default function BollywoodView() {
                   className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
                   sizes="(max-width: 980px) 100vw, 35vw"
                 />
-                <span className="badge pink z-10 relative">🎬 Women in Cinema</span>
+                <span className="badge lime z-10 relative">🎬 Women in Cinema</span>
               </div>
               <div className="card-body">
                 <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
@@ -396,33 +433,6 @@ export default function BollywoodView() {
                 </h3>
                 <div className="meta-row mt-2">
                   <span className="text-[var(--magenta)] font-bold">BOLLYWOOD</span>
-                  <span className="dot-sep">◆</span>
-                  <span>3 MIN READ</span>
-                </div>
-              </div>
-            </Link>
-
-            {/* Card 2: Sanjay Gupta Funeral */}
-            <Link
-              href="/sanjay-gupta-funeral-pawan-hans-crematorium"
-              className="card m1 group block"
-            >
-              <div className="card-media relative overflow-hidden">
-                <Image
-                  src="/images/sanjay-gupta-funeral-pawan-hans-crematorium.jpg"
-                  alt="Sanjay Gupta Funeral: Last Rites Today in Mumbai, Bollywood Mourns Kaante Director"
-                  fill
-                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
-                  sizes="(max-width: 980px) 100vw, 35vw"
-                />
-                <span className="badge lime z-10 relative">🕊️ Funeral Details</span>
-              </div>
-              <div className="card-body">
-                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
-                  Sanjay Gupta Funeral: Last Rites Today in Mumbai, Bollywood Mourns
-                </h3>
-                <div className="meta-row mt-2">
-                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; NEWS</span>
                   <span className="dot-sep">◆</span>
                   <span>3 MIN READ</span>
                 </div>
@@ -440,7 +450,7 @@ export default function BollywoodView() {
               </h2>
             </div>
             <span className="text-xs font-mono text-[var(--lime)] font-bold">
-              26 STORIES PUBLISHED
+              27 STORIES PUBLISHED
             </span>
           </div>
 

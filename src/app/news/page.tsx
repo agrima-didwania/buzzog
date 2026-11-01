@@ -8,6 +8,17 @@ export const metadata: Metadata = {
   keywords: [
     "Entertainment News Buzz Originals",
     "Bollywood breaking news",
+    "Prakash Raj",
+    "Pony Varma",
+    "Prakash Raj wife",
+    "Gauri Lankesh",
+    "Prakash Raj lost films",
+    "Prakash Raj political views",
+    "Pony Varma interview",
+    "Gauri Lankesh murder",
+    "JustAsking",
+    "NaanuGauri",
+    "Prakash Raj news",
     "Tiger Shroff",
     "Tiger Shroff first public appearance",
     "Tiger Shroff firing incident",
@@ -68,10 +79,10 @@ export const metadata: Metadata = {
     siteName: "Buzz Originals",
     images: [
       {
-        url: "/images/tiger-shroff-first-public-appearance-after-firing-incident.jpg",
+        url: "/images/prakash-raj-wife-pony-varma-lost-films-ads.jpg",
         width: 1024,
         height: 576,
-        alt: "Tiger Shroff to Make First Appearance After Firing Incident — Buzz Originals News Desk",
+        alt: "Prakash Raj’s Wife Reveals He Lost Films and Ads — Buzz Originals News Desk",
       },
     ],
     type: "website",
@@ -81,7 +92,7 @@ export const metadata: Metadata = {
     title: "News — Buzz Originals",
     description:
       "Raw, unfiltered entertainment news across reality TV, Bollywood, movies and OTT.",
-    images: ["/images/tiger-shroff-first-public-appearance-after-firing-incident.jpg"],
+    images: ["/images/prakash-raj-wife-pony-varma-lost-films-ads.jpg"],
   },
 };
 

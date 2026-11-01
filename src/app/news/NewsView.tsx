@@ -22,6 +22,18 @@ interface NewsArticle {
 // Only verified breaking entertainment news stories (fatwas, obituaries, police complaints, eviction rows, box-office shifts)
 const newsArticles: NewsArticle[] = [
   {
+    id: "prakash-raj-lost-films-ads",
+    category: "Bollywood",
+    title: "Prakash Raj Lost Films and Ad Deals for Speaking Out, Says Wife Pony Varma",
+    badge: "Exclusive Interview",
+    badgeType: "pink",
+    image: "/images/prakash-raj-wife-pony-varma-lost-films-ads.jpg",
+    href: "/prakash-raj-wife-pony-varma-lost-films-ads",
+    readOrTime: "3 MIN READ",
+    excerpt:
+      "Pony Varma says Prakash Raj lost films and ad deals over his political views. She also explains how Gauri Lankesh’s murder changed him forever.",
+  },
+  {
     id: "tiger-shroff-firing-appearance",
     category: "Bollywood",
     title: "Tiger Shroff to Make First Appearance After Firing Incident",

@@ -8,6 +8,17 @@ export const metadata: Metadata = {
   keywords: [
     "Bollywood Buzz Originals",
     "Bollywood news",
+    "Prakash Raj",
+    "Pony Varma",
+    "Prakash Raj wife",
+    "Gauri Lankesh",
+    "Prakash Raj lost films",
+    "Prakash Raj political views",
+    "Pony Varma interview",
+    "Gauri Lankesh murder",
+    "JustAsking",
+    "NaanuGauri",
+    "Prakash Raj news",
     "Tiger Shroff",
     "Tiger Shroff first public appearance",
     "Tiger Shroff firing incident",
@@ -132,10 +143,10 @@ export const metadata: Metadata = {
     siteName: "Buzz Originals",
     images: [
       {
-        url: "/images/tiger-shroff-first-public-appearance-after-firing-incident.jpg",
+        url: "/images/prakash-raj-wife-pony-varma-lost-films-ads.jpg",
         width: 1024,
         height: 576,
-        alt: "Tiger Shroff to Make First Appearance After Firing Incident — Buzz Originals Bollywood",
+        alt: "Prakash Raj’s Wife Reveals He Lost Films and Ads — Buzz Originals Bollywood",
       },
     ],
     type: "website",
@@ -145,7 +156,7 @@ export const metadata: Metadata = {
     title: "Bollywood — Buzz Originals",
     description:
       "Raw, unfiltered Bollywood coverage of red carpets, gossip, airport sightings & exclusives.",
-    images: ["/images/tiger-shroff-first-public-appearance-after-firing-incident.jpg"],
+    images: ["/images/prakash-raj-wife-pony-varma-lost-films-ads.jpg"],
   },
 };
 
@@ -172,12 +183,18 @@ export default function BollywoodPage() {
         {
           "@type": "ListItem",
           position: 1,
+          name: "Prakash Raj’s Wife Reveals He Lost Films and Ads",
+          url: "https://www.buzzoriginals.com/prakash-raj-wife-pony-varma-lost-films-ads",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
           name: "Tiger Shroff to Make First Appearance After Firing Incident",
           url: "https://www.buzzoriginals.com/tiger-shroff-first-public-appearance-after-firing-incident",
         },
         {
           "@type": "ListItem",
-          position: 2,
+          position: 3,
           name: "Manoj Bajpayee on Women in Cinema: Vidya Balan, Kajol",
           url: "https://www.buzzoriginals.com/manoj-bajpayee-vidya-balan-kajol-women-in-cinema",
         },

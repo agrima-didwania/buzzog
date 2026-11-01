@@ -177,6 +177,20 @@ export default function Home() {
 
   const editorialArticles: EditorialArticle[] = [
     {
+      id: "prakash-raj-lost-films-ads",
+      anchorId: "prakash-raj-story",
+      href: "/prakash-raj-wife-pony-varma-lost-films-ads",
+      title: "Prakash Raj’s Wife Reveals He Lost Films and Ads",
+      excerpt: "Pony Varma reveals Prakash Raj lost films and brand deals for his political views, and shares how the murder of close friend Gauri Lankesh changed him forever.",
+      category: "Bollywood",
+      secondaryCategory: "News",
+      displayCategory: "BOLLYWOOD & NEWS",
+      badge: "Exclusive Interview",
+      badgeType: "pink",
+      readTime: "3 MIN READ",
+      image: "/images/prakash-raj-wife-pony-varma-lost-films-ads.jpg",
+    },
+    {
       id: "tiger-shroff-firing-appearance",
       anchorId: "tiger-firing-story",
       href: "/tiger-shroff-first-public-appearance-after-firing-incident",
@@ -700,15 +714,15 @@ export default function Home() {
         <section className="hero" id="featured">
           {/* 1. Main Featured Story (Commanding Top Story Presentation) */}
           <Link
-            href="/tiger-shroff-first-public-appearance-after-firing-incident"
+            href="/prakash-raj-wife-pony-varma-lost-films-ads"
             className="feature-card block transition-all hover:border-[var(--lime)] focus-visible:ring-2 focus-visible:ring-[var(--lime)] group"
             style={{ textDecoration: "none", color: "inherit" }}
-            aria-label="Read full article: Tiger Shroff to Make First Appearance After Firing Incident"
+            aria-label="Read full article: Prakash Raj’s Wife Reveals He Lost Films and Ads"
           >
             <div className="feature-media" style={{ overflow: "hidden", position: "relative" }}>
               <Image
-                src="/images/tiger-shroff-first-public-appearance-after-firing-incident.jpg"
-                alt="Tiger Shroff Is Back: First Public Appearance After Firing Incident at Claudia Ciesla Book Launch"
+                src="/images/prakash-raj-wife-pony-varma-lost-films-ads.jpg"
+                alt="Prakash Raj Lost Films and Ad Deals for Speaking Out, Says Wife Pony Varma"
                 fill
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 750px"
@@ -717,20 +731,20 @@ export default function Home() {
               />
               <div className="noise" style={{ pointerEvents: "none" }}></div>
               <div className="feature-tag flex items-center gap-2">
-                <span className="badge pink">🚨 Exclusive Scoop</span>
-                <span className="badge lime">Tiger Shroff</span>
+                <span className="badge pink">🎙️ Exclusive Interview</span>
+                <span className="badge lime">Prakash Raj</span>
                 <span className="badge">Bollywood &amp; News</span>
               </div>
             </div>
             <div className="feature-body">
               <div className="flex items-center gap-2 mb-2 font-mono text-xs text-[var(--lime)] font-bold tracking-wider uppercase">
-                <span>★ TOP STORY · FIRST APPEARANCE</span>
+                <span>★ TOP STORY · EXCLUSIVE INTERVIEW</span>
               </div>
               <h1 className="disp" style={{ color: "#fff" }}>
-                Tiger Shroff Is Back: Here’s Where He Will Be Seen First After the Firing Incident
+                Prakash Raj Lost Films and Ad Deals for Speaking Out, Says Wife Pony Varma
               </h1>
               <p>
-                Tiger Shroff is set to make his first public appearance since the scary Juhu firing attack at Claudia Ciesla’s book launch in Mumbai on November 3, as Mumbai Police invoke MCOCA and arrest a 12th accused.
+                Choreographer Pony Varma opens up about the career price Prakash Raj paid for vocal political stances, losing ads and film roles, and how Gauri Lankesh’s assassination sparked the #JustAsking movement.
               </p>
               <div className="meta-row mt-auto pt-3 border-t border-white/[0.06] flex items-center justify-between">
                 <div className="flex items-center gap-3">
@@ -738,7 +752,7 @@ export default function Home() {
                   <span className="dot-sep">◆</span>
                   <span>3 MIN READ</span>
                   <span className="dot-sep">◆</span>
-                  <span style={{ color: "var(--lime)" }}>EXCLUSIVE SCOOP</span>
+                  <span style={{ color: "var(--lime)" }}>EXCLUSIVE INTERVIEW</span>
                 </div>
                 <span className="text-xs font-mono font-bold text-[var(--lime)] hidden sm:inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform">
                   Read Full Story →
@@ -757,6 +771,18 @@ export default function Home() {
               <span className="trend-rank">01</span>
               <div className="trend-text">
                 <Link
+                  href="/prakash-raj-wife-pony-varma-lost-films-ads"
+                  style={{ color: "inherit" }}
+                >
+                  <h3>Prakash Raj lost films and ad deals for speaking out, reveals wife Pony Varma in new interview</h3>
+                  <span>BOLLYWOOD &amp; NEWS · 510K REACTIONS</span>
+                </Link>
+              </div>
+            </div>
+            <div className="trend-item">
+              <span className="trend-rank">02</span>
+              <div className="trend-text">
+                <Link
                   href="/tiger-shroff-first-public-appearance-after-firing-incident"
                   style={{ color: "inherit" }}
                 >
@@ -766,7 +792,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">02</span>
+              <span className="trend-rank">03</span>
               <div className="trend-text">
                 <Link
                   href="/manoj-bajpayee-vidya-balan-kajol-women-in-cinema"
@@ -778,7 +804,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">03</span>
+              <span className="trend-rank">04</span>
               <div className="trend-text">
                 <Link
                   href="/radhika-apte-rudra-akka-netflix"
@@ -790,7 +816,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">04</span>
+              <span className="trend-rank">05</span>
               <div className="trend-text">
                 <Link
                   href="/sanjay-gupta-funeral-pawan-hans-crematorium"
@@ -802,7 +828,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">05</span>
+              <span className="trend-rank">06</span>
               <div className="trend-text">
                 <Link
                   href="/diljit-dosanjh-cjp-delhi-concert-abhijeet-dipke-response"
@@ -814,7 +840,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">06</span>
+              <span className="trend-rank">07</span>
               <div className="trend-text">
                 <Link
                   href="/orry-halloween-2026-janhvi-khushi-kapoor-competition"
@@ -826,7 +852,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">07</span>
+              <span className="trend-rank">08</span>
               <div className="trend-text">
                 <Link
                   href="/sanjay-dutt-kaante-2-promise-sanjay-gupta-death"
@@ -838,7 +864,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">08</span>
+              <span className="trend-rank">09</span>
               <div className="trend-text">
                 <Link
                   href="/varun-dhawan-sidharth-malhotra-kiara-advani-reunion"
@@ -850,7 +876,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">09</span>
+              <span className="trend-rank">10</span>
               <div className="trend-text">
                 <Link
                   href="/sanjay-gupta-passes-away-shootout-at-wadala-director"
@@ -858,18 +884,6 @@ export default function Home() {
                 >
                   <h3>Sanjay Gupta passes away: Kaante &amp; Shootout at Wadala director dies in Mumbai</h3>
                   <span>BOLLYWOOD &amp; NEWS · 380K REACTIONS</span>
-                </Link>
-              </div>
-            </div>
-            <div className="trend-item">
-              <span className="trend-rank">10</span>
-              <div className="trend-text">
-                <Link
-                  href="/iifa-2026-winners-list"
-                  style={{ color: "inherit" }}
-                >
-                  <h3>IIFA 2026 winners: Dhurandhar wins 12 awards; Ranveer Singh &amp; Aneet Padda bag top honors</h3>
-                  <span>BOLLYWOOD &amp; WEB SERIES · 350K REACTIONS</span>
                 </Link>
               </div>
             </div>
