@@ -20,6 +20,16 @@ interface BollywoodArticle {
 
 const bollywoodArticles: BollywoodArticle[] = [
   {
+    id: "bhansali-gangubai-eetha-backlash",
+    category: "Social Media Backlash",
+    title: "Bhansali Productions Trolled for Gangubai Kathiawadi Post on Eetha Trailer Day",
+    badge: "Social Media Backlash",
+    badgeType: "pink",
+    image: "/images/bhansali-productions-gangubai-post-eetha-trailer-backlash.jpg",
+    href: "/bhansali-productions-gangubai-post-eetha-trailer-backlash",
+    readOrTime: "3 MIN READ",
+  },
+  {
     id: "rgv-legal-notice-29-crore",
     category: "Legal & Crime",
     title: "Ram Gopal Varma in Legal Trouble Over ₹29.67 Crore",
@@ -366,16 +376,16 @@ export default function BollywoodView() {
 
         {/* Lead Section: Latest Bollywood Published Article (Cover Story) + The Last 2 Blogs Uploaded Before It */}
         <section className="lead">
-          {/* Cover Story: Latest Published Bollywood Story (RGV Legal Notice) */}
+          {/* Cover Story: Latest Published Bollywood Story (Bhansali Productions Trolled on Eetha Trailer Day) */}
           <Link
-            href="/ram-gopal-varma-legal-notice-eclatant-films-29-67-crore"
+            href="/bhansali-productions-gangubai-post-eetha-trailer-backlash"
             className="feature-card group block"
-            aria-label="Read full cover story: Ram Gopal Varma in Legal Trouble Over ₹29.67 Crore"
+            aria-label="Read full cover story: Bhansali Productions Trolled for Gangubai Kathiawadi Post on Eetha Trailer Day"
           >
             <div className="feature-media relative overflow-hidden">
               <Image
-                src="/images/ram-gopal-varma-legal-notice-eclatant-films-29-67-crore.jpg"
-                alt="Ram Gopal Varma in Legal Trouble Over ₹29.67 Crore"
+                src="/images/bhansali-productions-gangubai-post-eetha-trailer-backlash.jpg"
+                alt="Bhansali Productions Trolled for Gangubai Kathiawadi Post on Eetha Trailer Day"
                 fill
                 priority
                 className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
@@ -383,18 +393,18 @@ export default function BollywoodView() {
               />
               <div className="noise" />
               <span className="badge pink feature-tag z-10">
-                ⚖️ Legal Dispute
+                🔥 Social Media Backlash
               </span>
             </div>
             <div className="feature-body">
               <h2 className="disp text-white group-hover:text-[var(--lime)] transition-colors">
-                Ram Gopal Varma in Legal Trouble Over ₹29.67 Crore
+                Bhansali Productions Trolled for Gangubai Kathiawadi Post on Eetha Trailer Day
               </h2>
               <p>
-                Eclatant Films has reportedly sent Ram Gopal Varma a ₹29.67 crore legal notice over a 2010 deal. Here is what the case is about.
+                Bhansali Productions posted about Gangubai Kathiawadi the same day Shraddha Kapoor’s Eetha trailer dropped. Here is why people are upset.
               </p>
               <div className="meta-row mt-3">
-                <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; NEWS</span>
+                <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; SOCIAL MEDIA</span>
                 <span className="dot-sep">◆</span>
                 <span>3 MIN READ</span>
                 <span className="dot-sep">◆</span>
@@ -405,7 +415,34 @@ export default function BollywoodView() {
 
           {/* Right Stack: The last 2 blogs uploaded before the latest one */}
           <div className="stack">
-            {/* Card 1: Himesh Reshammiya Interview */}
+            {/* Card 1: Ram Gopal Varma Legal Notice */}
+            <Link
+              href="/ram-gopal-varma-legal-notice-eclatant-films-29-67-crore"
+              className="card m1 group block"
+            >
+              <div className="card-media relative overflow-hidden">
+                <Image
+                  src="/images/ram-gopal-varma-legal-notice-eclatant-films-29-67-crore.jpg"
+                  alt="Ram Gopal Varma in Legal Trouble Over ₹29.67 Crore"
+                  fill
+                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 980px) 100vw, 35vw"
+                />
+                <span className="badge pink z-10 relative">⚖️ Legal Dispute</span>
+              </div>
+              <div className="card-body">
+                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
+                  Ram Gopal Varma in Legal Trouble Over ₹29.67 Crore
+                </h3>
+                <div className="meta-row mt-2">
+                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; NEWS</span>
+                  <span className="dot-sep">◆</span>
+                  <span>3 MIN READ</span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Card 2: Himesh Reshammiya Interview */}
             <Link
               href="/himesh-reshammiya-deepika-padukone-irreplaceable-sandeep-reddy-vanga"
               className="card m1 group block"
@@ -431,33 +468,6 @@ export default function BollywoodView() {
                 </div>
               </div>
             </Link>
-
-            {/* Card 2: Prakash Raj Interview */}
-            <Link
-              href="/prakash-raj-wife-pony-varma-lost-films-ads"
-              className="card m1 group block"
-            >
-              <div className="card-media relative overflow-hidden">
-                <Image
-                  src="/images/prakash-raj-wife-pony-varma-lost-films-ads.jpg"
-                  alt="Prakash Raj Lost Films and Ad Deals for Speaking Out, Says Wife Pony Varma"
-                  fill
-                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
-                  sizes="(max-width: 980px) 100vw, 35vw"
-                />
-                <span className="badge pink z-10 relative">🎙️ Exclusive Interview</span>
-              </div>
-              <div className="card-body">
-                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
-                  Prakash Raj Lost Films and Ad Deals for Speaking Out, Says Wife Pony Varma
-                </h3>
-                <div className="meta-row mt-2">
-                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; NEWS</span>
-                  <span className="dot-sep">◆</span>
-                  <span>3 MIN READ</span>
-                </div>
-              </div>
-            </Link>
           </div>
         </section>
 
@@ -470,7 +480,7 @@ export default function BollywoodView() {
               </h2>
             </div>
             <span className="text-xs font-mono text-[var(--lime)] font-bold">
-              29 STORIES PUBLISHED
+              {bollywoodArticles.length} STORIES PUBLISHED
             </span>
           </div>
 

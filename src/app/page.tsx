@@ -177,6 +177,20 @@ export default function Home() {
 
   const editorialArticles: EditorialArticle[] = [
     {
+      id: "bhansali-gangubai-eetha-backlash",
+      anchorId: "bhansali-backlash-story",
+      href: "/bhansali-productions-gangubai-post-eetha-trailer-backlash",
+      title: "Bhansali Productions Trolled for Gangubai Kathiawadi Post on Eetha Trailer Day",
+      excerpt: "Bhansali Productions posted about Gangubai Kathiawadi the same day Shraddha Kapoor’s Eetha trailer dropped, sparking social media backlash and reigniting the Alia vs Shraddha debate.",
+      category: "Bollywood",
+      secondaryCategory: "Latest",
+      displayCategory: "BOLLYWOOD & SOCIAL MEDIA",
+      badge: "Social Media Backlash",
+      badgeType: "pink",
+      readTime: "3 MIN READ",
+      image: "/images/bhansali-productions-gangubai-post-eetha-trailer-backlash.jpg",
+    },
+    {
       id: "maharani-season-5-release-date",
       anchorId: "maharani-season-5-story",
       href: "/maharani-season-5-release-date-january-2027",
@@ -769,15 +783,15 @@ export default function Home() {
         <section className="hero" id="featured">
           {/* 1. Main Featured Story (Commanding Top Story Presentation) */}
           <Link
-            href="/maharani-season-5-release-date-january-2027"
+            href="/bhansali-productions-gangubai-post-eetha-trailer-backlash"
             className="feature-card block transition-all hover:border-[var(--lime)] focus-visible:ring-2 focus-visible:ring-[var(--lime)] group"
             style={{ textDecoration: "none", color: "inherit" }}
-            aria-label="Read full article: Maharani Season 5 Release Date: Huma Qureshi’s Political Drama May Return in January 2027"
+            aria-label="Read full article: Bhansali Productions Trolled for Gangubai Kathiawadi Post on Eetha Trailer Day"
           >
             <div className="feature-media" style={{ overflow: "hidden", position: "relative" }}>
               <Image
-                src="/images/maharani-season-5-release-date-january-2027.jpg"
-                alt="Maharani Season 5 Release Date: Huma Qureshi’s Political Drama May Return in January 2027"
+                src="/images/bhansali-productions-gangubai-post-eetha-trailer-backlash.jpg"
+                alt="Bhansali Productions Trolled for Gangubai Kathiawadi Post on Eetha Trailer Day"
                 fill
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 750px"
@@ -786,28 +800,28 @@ export default function Home() {
               />
               <div className="noise" style={{ pointerEvents: "none" }}></div>
               <div className="feature-tag flex items-center gap-2">
-                <span className="badge lime">👑 Season 5 Scoop</span>
-                <span className="badge pink">SonyLIV Original</span>
-                <span className="badge">Web Series</span>
+                <span className="badge pink">🔥 Social Media Backlash</span>
+                <span className="badge lime">Alia vs Shraddha</span>
+                <span className="badge">Bollywood</span>
               </div>
             </div>
             <div className="feature-body">
               <div className="flex items-center gap-2 mb-2 font-mono text-xs text-[var(--lime)] font-bold tracking-wider uppercase">
-                <span>★ TOP STORY · OTT SCOOP</span>
+                <span>★ TOP STORY · BOLLYWOOD SCOOP</span>
               </div>
               <h1 className="disp" style={{ color: "#fff" }}>
-                Maharani Season 5 Release Date: Huma Qureshi’s Political Drama May Return in January 2027
+                Bhansali Productions Trolled for Gangubai Kathiawadi Post on Eetha Trailer Day
               </h1>
               <p>
-                Rani Bharti is coming back. Maharani Season 5 is tentatively planned for January 2027 on SonyLIV, with filming officially wrapped in Delhi, Bhopal and Ladakh and post-production underway.
+                Bhansali Productions is facing intense social media heat after sharing an Alia Bhatt Gangubai Kathiawadi post on the exact same day Shraddha Kapoor’s Eetha trailer dropped.
               </p>
               <div className="meta-row mt-auto pt-3 border-t border-white/[0.06] flex items-center justify-between">
                 <div className="flex items-center gap-3">
-                  <span>WEB SERIES</span>
+                  <span>BOLLYWOOD</span>
                   <span className="dot-sep">◆</span>
                   <span>3 MIN READ</span>
                   <span className="dot-sep">◆</span>
-                  <span style={{ color: "var(--lime)" }}>SONYLIV</span>
+                  <span style={{ color: "var(--lime)" }}>SOCIAL MEDIA</span>
                 </div>
                 <span className="text-xs font-mono font-bold text-[var(--lime)] hidden sm:inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform">
                   Read Full Story →
@@ -826,6 +840,18 @@ export default function Home() {
               <span className="trend-rank">01</span>
               <div className="trend-text">
                 <Link
+                  href="/bhansali-productions-gangubai-post-eetha-trailer-backlash"
+                  style={{ color: "inherit" }}
+                >
+                  <h3>Bhansali Productions trolled for Gangubai Kathiawadi post on Eetha trailer day</h3>
+                  <span>BOLLYWOOD &amp; SOCIAL MEDIA · 570K REACTIONS</span>
+                </Link>
+              </div>
+            </div>
+            <div className="trend-item">
+              <span className="trend-rank">02</span>
+              <div className="trend-text">
+                <Link
                   href="/maharani-season-5-release-date-january-2027"
                   style={{ color: "inherit" }}
                 >
@@ -835,7 +861,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">02</span>
+              <span className="trend-rank">03</span>
               <div className="trend-text">
                 <Link
                   href="/honey-singh-nephew-vidit-olak-dies-jalandhar-accident"
@@ -847,7 +873,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">03</span>
+              <span className="trend-rank">04</span>
               <div className="trend-text">
                 <Link
                   href="/ram-gopal-varma-legal-notice-eclatant-films-29-67-crore"
@@ -859,7 +885,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">04</span>
+              <span className="trend-rank">05</span>
               <div className="trend-text">
                 <Link
                   href="/himesh-reshammiya-deepika-padukone-irreplaceable-sandeep-reddy-vanga"
@@ -871,7 +897,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">05</span>
+              <span className="trend-rank">06</span>
               <div className="trend-text">
                 <Link
                   href="/prakash-raj-wife-pony-varma-lost-films-ads"
@@ -883,7 +909,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">06</span>
+              <span className="trend-rank">07</span>
               <div className="trend-text">
                 <Link
                   href="/tiger-shroff-first-public-appearance-after-firing-incident"
@@ -895,7 +921,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">07</span>
+              <span className="trend-rank">08</span>
               <div className="trend-text">
                 <Link
                   href="/manoj-bajpayee-vidya-balan-kajol-women-in-cinema"
@@ -907,7 +933,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">08</span>
+              <span className="trend-rank">09</span>
               <div className="trend-text">
                 <Link
                   href="/radhika-apte-rudra-akka-netflix"
@@ -919,7 +945,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">09</span>
+              <span className="trend-rank">10</span>
               <div className="trend-text">
                 <Link
                   href="/sanjay-gupta-funeral-pawan-hans-crematorium"
@@ -927,30 +953,6 @@ export default function Home() {
                 >
                   <h3>Sanjay Gupta funeral: Last rites today at Pawan Hans Crematorium; Bollywood mourns</h3>
                   <span>BOLLYWOOD &amp; NEWS · 450K REACTIONS</span>
-                </Link>
-              </div>
-            </div>
-            <div className="trend-item">
-              <span className="trend-rank">10</span>
-              <div className="trend-text">
-                <Link
-                  href="/diljit-dosanjh-cjp-delhi-concert-abhijeet-dipke-response"
-                  style={{ color: "inherit" }}
-                >
-                  <h3>Diljit Dosanjh hits back at CJP in Delhi concert: Abhijeet Dipke replies with “Mitti Pao”</h3>
-                  <span>NEWS · 430K REACTIONS</span>
-                </Link>
-              </div>
-            </div>
-            <div className="trend-item">
-              <span className="trend-rank">10</span>
-              <div className="trend-text">
-                <Link
-                  href="/orry-halloween-2026-janhvi-khushi-kapoor-competition"
-                  style={{ color: "inherit" }}
-                >
-                  <h3>Orry plans 18 Halloween looks, crowns Janhvi &amp; Khushi Kapoor his only competition</h3>
-                  <span>BOLLYWOOD · 425K REACTIONS</span>
                 </Link>
               </div>
             </div>

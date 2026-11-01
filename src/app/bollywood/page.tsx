@@ -6,6 +6,13 @@ export const metadata: Metadata = {
   description:
     "Bollywood coverage from Buzz Originals — raw, unfiltered, built for the group chat. Red carpets, rumours, airport looks and exclusives.",
   keywords: [
+    "Bhansali Productions Gangubai post",
+    "Eetha trailer",
+    "Gangubai Kathiawadi",
+    "Shraddha Kapoor Eetha",
+    "Alia Bhatt vs Shraddha Kapoor",
+    "Bhansali Productions trolled",
+    "Sanjay Leela Bhansali",
     "Bollywood Buzz Originals",
     "Bollywood news",
     "Ram Gopal Varma legal notice",
@@ -169,10 +176,10 @@ export const metadata: Metadata = {
     siteName: "Buzz Originals",
     images: [
       {
-        url: "/images/ram-gopal-varma-legal-notice-eclatant-films-29-67-crore.jpg",
+        url: "/images/bhansali-productions-gangubai-post-eetha-trailer-backlash.jpg",
         width: 1024,
         height: 576,
-        alt: "Ram Gopal Varma in Legal Trouble Over ₹29.67 Crore — Buzz Originals Bollywood",
+        alt: "Bhansali Productions Trolled for Gangubai Kathiawadi Post on Eetha Trailer Day — Buzz Originals Bollywood",
       },
     ],
     type: "website",
@@ -182,7 +189,7 @@ export const metadata: Metadata = {
     title: "Bollywood — Buzz Originals",
     description:
       "Raw, unfiltered Bollywood coverage of red carpets, gossip, airport sightings & exclusives.",
-    images: ["/images/ram-gopal-varma-legal-notice-eclatant-films-29-67-crore.jpg"],
+    images: ["/images/bhansali-productions-gangubai-post-eetha-trailer-backlash.jpg"],
   },
 };
 
@@ -209,12 +216,18 @@ export default function BollywoodPage() {
         {
           "@type": "ListItem",
           position: 1,
+          name: "Bhansali Trolled for Gangubai Post on Eetha Trailer Day",
+          url: "https://www.buzzoriginals.com/bhansali-productions-gangubai-post-eetha-trailer-backlash",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
           name: "Ram Gopal Varma Gets ₹29.67 Crore Legal Notice",
           url: "https://www.buzzoriginals.com/ram-gopal-varma-legal-notice-eclatant-films-29-67-crore",
         },
         {
           "@type": "ListItem",
-          position: 2,
+          position: 3,
           name: "Himesh Reshammiya Calls Deepika Padukone “Irreplaceable”",
           url: "https://www.buzzoriginals.com/himesh-reshammiya-deepika-padukone-irreplaceable-sandeep-reddy-vanga",
         },
