@@ -20,6 +20,16 @@ interface BollywoodArticle {
 
 const bollywoodArticles: BollywoodArticle[] = [
   {
+    id: "srk-61st-birthday-mannat-balcony",
+    category: "Shah Rukh Khan Birthday",
+    title: "Shah Rukh Khan Skips Midnight Greeting, Then Appears at Mannat on His 61st Birthday",
+    badge: "👑 61st Birthday",
+    badgeType: "lime",
+    image: "/images/shah-rukh-khan-61st-birthday-mannat-balcony.jpg",
+    href: "/shah-rukh-khan-61st-birthday-mannat-balcony",
+    readOrTime: "3 MIN READ",
+  },
+  {
     id: "king-first-song-tu-mil-jaaye",
     category: "Music & Bollywood",
     title: "King First Song ‘Tu Mil Jaaye’ Is Out: SRK and Deepika Light Up His 61st Birthday",
@@ -416,16 +426,16 @@ export default function BollywoodView() {
 
         {/* Lead Section: Latest Bollywood Published Article (Cover Story) + The Last 2 Blogs Uploaded Before It */}
         <section className="lead">
-          {/* Cover Story: Latest Published Bollywood Story (King First Song Tu Mil Jaaye) */}
+          {/* Cover Story: Latest Published Bollywood Story (Shah Rukh Khan 61st Birthday Mannat Greeting) */}
           <Link
-            href="/king-first-song-tu-mil-jaaye-shah-rukh-khan-deepika-padukone"
+            href="/shah-rukh-khan-61st-birthday-mannat-balcony"
             className="feature-card group block"
-            aria-label="Read full cover story: King First Song ‘Tu Mil Jaaye’ Is Out: SRK and Deepika Light Up His 61st Birthday"
+            aria-label="Read full cover story: Shah Rukh Khan Skips Midnight Greeting, Then Appears at Mannat on His 61st Birthday"
           >
             <div className="feature-media relative overflow-hidden">
               <Image
-                src="/images/king-first-song-tu-mil-jaaye-shah-rukh-khan-deepika-padukone.jpg"
-                alt="King First Song Tu Mil Jaaye Out Now - Shah Rukh Khan and Deepika Padukone"
+                src="/images/shah-rukh-khan-61st-birthday-mannat-balcony.jpg"
+                alt="Shah Rukh Khan 61st Birthday - SRK Greets Fans at Mannat Platform"
                 fill
                 priority
                 className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
@@ -433,18 +443,18 @@ export default function BollywoodView() {
               />
               <div className="noise" />
               <span className="badge lime feature-tag z-10">
-                🎵 Song Out Now
+                👑 61st Birthday
               </span>
             </div>
             <div className="feature-body">
               <h2 className="disp text-white group-hover:text-[var(--lime)] transition-colors">
-                King First Song ‘Tu Mil Jaaye’ Is Out: SRK and Deepika Light Up His 61st Birthday
+                Shah Rukh Khan Skips Midnight Greeting, Then Appears at Mannat on His 61st Birthday
               </h2>
               <p>
-                Shah Rukh Khan’s King first song ‘Tu Mil Jaaye’ is out! See the Arijit Singh and Ed Sheeran collab, SRK-Deepika chemistry, and fan reactions.
+                Shah Rukh Khan skipped his midnight Mannat greeting on his 61st birthday, then surprised fans in the evening. Read the note, King song and wishes.
               </p>
               <div className="meta-row mt-3">
-                <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; MUSIC</span>
+                <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; CELEB</span>
                 <span className="dot-sep">◆</span>
                 <span>3 MIN READ</span>
                 <span className="dot-sep">◆</span>
@@ -455,7 +465,34 @@ export default function BollywoodView() {
 
           {/* Right Stack: The last 2 blogs uploaded before the latest one */}
           <div className="stack">
-            {/* Card 1: Drishyam 3 OTT Release Date */}
+            {/* Card 1: King First Song Tu Mil Jaaye */}
+            <Link
+              href="/king-first-song-tu-mil-jaaye-shah-rukh-khan-deepika-padukone"
+              className="card m1 group block"
+            >
+              <div className="card-media relative overflow-hidden">
+                <Image
+                  src="/images/king-first-song-tu-mil-jaaye-shah-rukh-khan-deepika-padukone.jpg"
+                  alt="King First Song Tu Mil Jaaye Out Now - Shah Rukh Khan and Deepika Padukone"
+                  fill
+                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 980px) 100vw, 35vw"
+                />
+                <span className="badge lime z-10 relative">🎵 Song Out Now</span>
+              </div>
+              <div className="card-body">
+                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
+                  King First Song ‘Tu Mil Jaaye’ Is Out: SRK and Deepika Light Up His 61st Birthday
+                </h3>
+                <div className="meta-row mt-2">
+                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; MUSIC</span>
+                  <span className="dot-sep">◆</span>
+                  <span>3 MIN READ</span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Card 2: Drishyam 3 OTT Release Date */}
             <Link
               href="/drishyam-3-ott-release-date-netflix"
               className="card m1 group block"
@@ -476,33 +513,6 @@ export default function BollywoodView() {
                 </h3>
                 <div className="meta-row mt-2">
                   <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; OTT</span>
-                  <span className="dot-sep">◆</span>
-                  <span>3 MIN READ</span>
-                </div>
-              </div>
-            </Link>
-
-            {/* Card 2: Shah Rukh Khan 61st Birthday Note */}
-            <Link
-              href="/shah-rukh-khan-61st-birthday-mannat-handwritten-note"
-              className="card m1 group block"
-            >
-              <div className="card-media relative overflow-hidden">
-                <Image
-                  src="/images/shah-rukh-khan-61st-birthday-mannat-handwritten-note.jpg"
-                  alt="Shah Rukh Khan Skips Mannat Balcony on 61st Birthday, Sends Handwritten Note"
-                  fill
-                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
-                  sizes="(max-width: 980px) 100vw, 35vw"
-                />
-                <span className="badge lime z-10 relative">🎂 61st Birthday Note</span>
-              </div>
-              <div className="card-body">
-                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
-                  Shah Rukh Khan Skips Mannat Balcony on His 61st Birthday, Thanks Fans With a Handwritten Note
-                </h3>
-                <div className="meta-row mt-2">
-                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; NEWS</span>
                   <span className="dot-sep">◆</span>
                   <span>3 MIN READ</span>
                 </div>

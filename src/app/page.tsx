@@ -177,6 +177,20 @@ export default function Home() {
 
   const editorialArticles: EditorialArticle[] = [
     {
+      id: "srk-61st-birthday-mannat-balcony",
+      anchorId: "srk-balcony-story",
+      href: "/shah-rukh-khan-61st-birthday-mannat-balcony",
+      title: "Shah Rukh Khan Skips Midnight Greeting, Then Appears at Mannat on His 61st Birthday",
+      excerpt: "Shah Rukh Khan skipped his midnight Mannat greeting on his 61st birthday, then surprised fans in the evening. Read the note, King song and wishes.",
+      category: "Bollywood",
+      secondaryCategory: "Latest",
+      displayCategory: "BOLLYWOOD & CELEB",
+      badge: "61st Birthday",
+      badgeType: "lime",
+      readTime: "3 MIN READ",
+      image: "/images/shah-rukh-khan-61st-birthday-mannat-balcony.jpg",
+    },
+    {
       id: "bigg-boss-20-salman-slams-scoutop",
       anchorId: "salman-scoutop-story",
       href: "/bigg-boss-20-salman-khan-slams-scoutop-love-gill",
@@ -881,15 +895,15 @@ export default function Home() {
         <section className="hero" id="featured">
           {/* 1. Main Featured Story (Commanding Top Story Presentation) */}
           <Link
-            href="/king-first-song-tu-mil-jaaye-shah-rukh-khan-deepika-padukone"
+            href="/shah-rukh-khan-61st-birthday-mannat-balcony"
             className="feature-card block transition-all hover:border-[var(--lime)] focus-visible:ring-2 focus-visible:ring-[var(--lime)] group"
             style={{ textDecoration: "none", color: "inherit" }}
-            aria-label="Read full article: King First Song ‘Tu Mil Jaaye’ Is Out: SRK and Deepika Light Up His 61st Birthday"
+            aria-label="Read full article: Shah Rukh Khan Skips Midnight Greeting, Then Appears at Mannat on His 61st Birthday"
           >
             <div className="feature-media" style={{ overflow: "hidden", position: "relative" }}>
               <Image
-                src="/images/king-first-song-tu-mil-jaaye-shah-rukh-khan-deepika-padukone.jpg"
-                alt="King First Song Tu Mil Jaaye Out Now - Shah Rukh Khan and Deepika Padukone"
+                src="/images/shah-rukh-khan-61st-birthday-mannat-balcony.jpg"
+                alt="Shah Rukh Khan 61st Birthday - SRK Greets Fans at Mannat Platform"
                 fill
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 750px"
@@ -898,20 +912,20 @@ export default function Home() {
               />
               <div className="noise" style={{ pointerEvents: "none" }}></div>
               <div className="feature-tag flex items-center gap-2">
-                <span className="badge lime">🎵 Song Out Now</span>
-                <span className="badge pink">Ed Sheeran Collab</span>
-                <span className="badge">King</span>
+                <span className="badge lime">👑 61st Birthday</span>
+                <span className="badge pink">Mannat Evening Wave</span>
+                <span className="badge">King Song Out</span>
               </div>
             </div>
             <div className="feature-body">
               <div className="flex items-center gap-2 mb-2 font-mono text-xs text-[var(--lime)] font-bold tracking-wider uppercase">
-                <span>★ TOP STORY · KING FIRST SONG ‘TU MIL JAAYE’ OUT</span>
+                <span>★ TOP STORY · SHAH RUKH KHAN 61ST BIRTHDAY CELEBRATION</span>
               </div>
               <h1 className="disp" style={{ color: "#fff" }}>
-                King First Song ‘Tu Mil Jaaye’ Is Out: SRK and Deepika Light Up His 61st Birthday
+                Shah Rukh Khan Skips Midnight Greeting, Then Appears at Mannat on His 61st Birthday
               </h1>
               <p>
-                Shah Rukh Khan’s King first song ‘Tu Mil Jaaye’ is out! See the Arijit Singh and Ed Sheeran collab, SRK-Deepika chemistry, and fan reactions.
+                Shah Rukh Khan skipped his midnight Mannat greeting on his 61st birthday, then surprised fans in the evening. Read the note, King song and wishes.
               </p>
               <div className="meta-row mt-auto pt-3 border-t border-white/[0.06] flex items-center justify-between">
                 <div className="flex items-center gap-3">
@@ -919,7 +933,7 @@ export default function Home() {
                   <span className="dot-sep">◆</span>
                   <span>3 MIN READ</span>
                   <span className="dot-sep">◆</span>
-                  <span style={{ color: "var(--lime)" }}>ED SHEERAN COLLAB</span>
+                  <span style={{ color: "var(--lime)" }}>MANNAT SURPRISE</span>
                 </div>
                 <span className="text-xs font-mono font-bold text-[var(--lime)] hidden sm:inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform">
                   Read Full Story →
@@ -938,6 +952,18 @@ export default function Home() {
               <span className="trend-rank">01</span>
               <div className="trend-text">
                 <Link
+                  href="/shah-rukh-khan-61st-birthday-mannat-balcony"
+                  style={{ color: "inherit" }}
+                >
+                  <h3>Shah Rukh Khan 61st birthday: SRK surprises thousands outside Mannat in evening wave after skipping midnight greeting</h3>
+                  <span>BOLLYWOOD &amp; CELEB · 850K REACTIONS</span>
+                </Link>
+              </div>
+            </div>
+            <div className="trend-item">
+              <span className="trend-rank">02</span>
+              <div className="trend-text">
+                <Link
                   href="/king-first-song-tu-mil-jaaye-shah-rukh-khan-deepika-padukone"
                   style={{ color: "inherit" }}
                 >
@@ -947,7 +973,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">02</span>
+              <span className="trend-rank">03</span>
               <div className="trend-text">
                 <Link
                   href="/bigg-boss-20-salman-khan-slams-scoutop-love-gill"
@@ -959,7 +985,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">03</span>
+              <span className="trend-rank">04</span>
               <div className="trend-text">
                 <Link
                   href="/bigg-boss-20-aasif-khan-evicted"
@@ -971,7 +997,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">04</span>
+              <span className="trend-rank">05</span>
               <div className="trend-text">
                 <Link
                   href="/drishyam-3-ott-release-date-netflix"
@@ -979,18 +1005,6 @@ export default function Home() {
                 >
                   <h3>Drishyam 3 OTT release date: When and where will Ajay Devgn&apos;s ₹400-crore film stream on Netflix?</h3>
                   <span>BOLLYWOOD &amp; OTT · 640K REACTIONS</span>
-                </Link>
-              </div>
-            </div>
-            <div className="trend-item">
-              <span className="trend-rank">05</span>
-              <div className="trend-text">
-                <Link
-                  href="/shah-rukh-khan-61st-birthday-mannat-handwritten-note"
-                  style={{ color: "inherit" }}
-                >
-                  <h3>SRK skips Mannat balcony on 61st birthday, sends handwritten note; King song “Tu Mil Jaaye” out</h3>
-                  <span>BOLLYWOOD &amp; NEWS · 620K REACTIONS</span>
                 </Link>
               </div>
             </div>

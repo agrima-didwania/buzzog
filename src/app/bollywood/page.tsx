@@ -6,6 +6,18 @@ export const metadata: Metadata = {
   description:
     "Bollywood coverage from Buzz Originals — raw, unfiltered, built for the group chat. Red carpets, rumours, airport looks and exclusives.",
   keywords: [
+    "Shah Rukh Khan 61st birthday",
+    "SRK birthday 2026",
+    "Shah Rukh Khan Mannat balcony",
+    "SRK Mannat birthday",
+    "Shah Rukh Khan birthday celebration",
+    "Mannat renovation",
+    "King movie release date",
+    "Tu Mil Jaaye song",
+    "King Shah Rukh Khan Deepika Padukone",
+    "Shah Rukh Khan Suhana Khan King",
+    "SRK fans outside Mannat",
+    "Bollywood news today",
     "King first song",
     "Tu Mil Jaaye",
     "Tu Mil Jaaye song",
@@ -230,10 +242,10 @@ export const metadata: Metadata = {
     siteName: "Buzz Originals",
     images: [
       {
-        url: "/images/king-first-song-tu-mil-jaaye-shah-rukh-khan-deepika-padukone.jpg",
+        url: "/images/shah-rukh-khan-61st-birthday-mannat-balcony.jpg",
         width: 1024,
         height: 576,
-        alt: "King First Song Tu Mil Jaaye Out Now - Shah Rukh Khan and Deepika Padukone — Buzz Originals Bollywood",
+        alt: "Shah Rukh Khan 61st Birthday - SRK Greets Fans at Mannat — Buzz Originals Bollywood",
       },
     ],
     type: "website",
@@ -243,7 +255,7 @@ export const metadata: Metadata = {
     title: "Bollywood — Buzz Originals",
     description:
       "Raw, unfiltered Bollywood coverage of red carpets, gossip, airport sightings & exclusives.",
-    images: ["/images/king-first-song-tu-mil-jaaye-shah-rukh-khan-deepika-padukone.jpg"],
+    images: ["/images/shah-rukh-khan-61st-birthday-mannat-balcony.jpg"],
   },
 };
 
@@ -270,18 +282,24 @@ export default function BollywoodPage() {
         {
           "@type": "ListItem",
           position: 1,
+          name: "Shah Rukh Khan 61st Birthday: SRK Greets Fans at Mannat",
+          url: "https://www.buzzoriginals.com/shah-rukh-khan-61st-birthday-mannat-balcony",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
           name: "King First Song ‘Tu Mil Jaaye’ Is Out: SRK and Deepika Light Up His 61st Birthday",
           url: "https://www.buzzoriginals.com/king-first-song-tu-mil-jaaye-shah-rukh-khan-deepika-padukone",
         },
         {
           "@type": "ListItem",
-          position: 2,
+          position: 3,
           name: "Drishyam 3 OTT Release Date: When and Where to Watch",
           url: "https://www.buzzoriginals.com/drishyam-3-ott-release-date-netflix",
         },
         {
           "@type": "ListItem",
-          position: 2,
+          position: 4,
           name: "SRK Skips Mannat Balcony on 61st Birthday, Sends Note",
           url: "https://www.buzzoriginals.com/shah-rukh-khan-61st-birthday-mannat-handwritten-note",
         },
