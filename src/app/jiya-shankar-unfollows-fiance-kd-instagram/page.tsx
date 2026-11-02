@@ -230,41 +230,59 @@ export default function JiyaShankarUnfollowsKDPage() {
           </p>
 
           <h2>The Full Timeline</h2>
-          <div
-            style={{
-              background: "rgba(255, 255, 255, 0.03)",
-              border: "1px solid rgba(255, 255, 255, 0.08)",
-              borderRadius: "8px",
-              padding: "20px",
-              margin: "24px 0",
-            }}
-          >
-            <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
-              <li style={{ paddingBottom: "14px", borderBottom: "1px solid rgba(255, 255, 255, 0.06)" }}>
-                <span style={{ color: "var(--lime)", fontWeight: 700, fontFamily: "var(--font-space-mono)" }}>
-                  OCT 29, 2026:
-                </span>{" "}
-                Fans see Jiya resharing posts about heartbreak, betrayal and tough times on her Instagram profile.
-              </li>
-              <li style={{ padding: "14px 0", borderBottom: "1px solid rgba(255, 255, 255, 0.06)" }}>
-                <span style={{ color: "var(--magenta)", fontWeight: 700, fontFamily: "var(--font-space-mono)" }}>
-                  OCT 30, 2026:
-                </span>{" "}
-                People notice she has unfollowed KD on Instagram. Screenshots go viral and fans get deeply worried.
-              </li>
-              <li style={{ padding: "14px 0", borderBottom: "1px solid rgba(255, 255, 255, 0.06)" }}>
-                <span style={{ color: "var(--lime)", fontWeight: 700, fontFamily: "var(--font-space-mono)" }}>
-                  OCT 31, 2026:
-                </span>{" "}
-                Jiya posts an official statement on her Story, asking people to stop guessing about her relationship and respect privacy.
-              </li>
-              <li style={{ paddingTop: "14px" }}>
-                <span style={{ color: "var(--lime)", fontWeight: 700, fontFamily: "var(--font-space-mono)" }}>
-                  NOV 1, 2026:
-                </span>{" "}
-                She follows KD again on Instagram and shares their joint Halloween costume photo in Game of Thrones outfits.
-              </li>
-            </ul>
+          <div style={{ margin: "24px 0", display: "flex", flexDirection: "column", gap: "12px" }}>
+            {[
+              {
+                date: "OCT 29, 2026",
+                text: "Fans see Jiya resharing posts about heartbreak, betrayal and tough times on her Instagram profile.",
+                badgeColor: "var(--lime)",
+              },
+              {
+                date: "OCT 30, 2026",
+                text: "People notice she has unfollowed KD on Instagram. Screenshots go viral and fans get deeply worried.",
+                badgeColor: "var(--magenta)",
+              },
+              {
+                date: "OCT 31, 2026",
+                text: "Jiya posts an official statement on her Story, asking people to stop guessing about her relationship and respect privacy.",
+                badgeColor: "var(--lime)",
+              },
+              {
+                date: "NOV 1, 2026",
+                text: "She follows KD again on Instagram and shares their joint Halloween costume photo in Game of Thrones outfits.",
+                badgeColor: "var(--lime)",
+              },
+            ].map((item) => (
+              <div
+                key={item.date}
+                style={{
+                  background: "var(--ink-2)",
+                  border: "1px solid var(--line)",
+                  borderRadius: "10px",
+                  padding: "16px 20px",
+                  display: "flex",
+                  alignItems: "flex-start",
+                  gap: "14px",
+                }}
+              >
+                <span
+                  style={{
+                    color: item.badgeColor,
+                    fontFamily: "var(--font-space-mono)",
+                    fontSize: "13px",
+                    fontWeight: 700,
+                    letterSpacing: "0.04em",
+                    flexShrink: 0,
+                    paddingTop: "1px",
+                  }}
+                >
+                  {item.date}:
+                </span>
+                <span style={{ fontSize: "15.5px", lineHeight: "1.65", color: "#e4e4e7", flex: 1 }}>
+                  {item.text}
+                </span>
+              </div>
+            ))}
           </div>
 
           <h2>What Did Jiya Say?</h2>
