@@ -177,6 +177,20 @@ export default function Home() {
 
   const editorialArticles: EditorialArticle[] = [
     {
+      id: "bigg-boss-20-aasif-khan-evicted",
+      anchorId: "aasif-khan-eviction-story",
+      href: "/bigg-boss-20-aasif-khan-evicted",
+      title: "Bigg Boss 20: Aasif Khan Evicted, Scout and Yung DSA Cry as He Leaves",
+      excerpt: "Aasif Khan is out of Bigg Boss 20. Salman Khan announced the eviction on Weekend Ka Vaar, and Scout and Yung DSA cried as he left. Read the full story.",
+      category: "Reality TV Updates",
+      secondaryCategory: "Latest",
+      displayCategory: "BIGG BOSS 20 & EVICTION",
+      badge: "Weekend Ka Vaar",
+      badgeType: "pink",
+      readTime: "3 MIN READ",
+      image: "/images/bigg-boss-20-aasif-khan-evicted.jpg",
+    },
+    {
       id: "king-first-song-tu-mil-jaaye",
       anchorId: "king-song-story",
       href: "/king-first-song-tu-mil-jaaye-shah-rukh-khan-deepika-padukone",
@@ -922,6 +936,18 @@ export default function Home() {
               <span className="trend-rank">02</span>
               <div className="trend-text">
                 <Link
+                  href="/bigg-boss-20-aasif-khan-evicted"
+                  style={{ color: "inherit" }}
+                >
+                  <h3>Bigg Boss 20: Aasif Khan evicted, Scout and Yung DSA break down in tears as he leaves</h3>
+                  <span>REALITY SHOWS &amp; EVICTION · 680K REACTIONS</span>
+                </Link>
+              </div>
+            </div>
+            <div className="trend-item">
+              <span className="trend-rank">03</span>
+              <div className="trend-text">
+                <Link
                   href="/drishyam-3-ott-release-date-netflix"
                   style={{ color: "inherit" }}
                 >
@@ -931,7 +957,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">03</span>
+              <span className="trend-rank">04</span>
               <div className="trend-text">
                 <Link
                   href="/shah-rukh-khan-61st-birthday-mannat-handwritten-note"
@@ -943,7 +969,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">04</span>
+              <span className="trend-rank">05</span>
               <div className="trend-text">
                 <Link
                   href="/robert-downey-jr-pedro-pascal-halloween-costume-swap"

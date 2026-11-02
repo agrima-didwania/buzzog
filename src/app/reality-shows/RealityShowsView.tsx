@@ -23,6 +23,19 @@ interface RealityArticle {
 // All verified reality show articles in reverse chronological order
 const realityArticles: RealityArticle[] = [
   {
+    id: "bigg-boss-20-aasif-khan-evicted",
+    show: "Bigg Boss 20",
+    title: "Bigg Boss 20: Aasif Khan Evicted, Scout and Yung DSA Cry as He Leaves",
+    excerpt:
+      "Aasif Khan is out of Bigg Boss 20. Salman Khan announced the eviction on Weekend Ka Vaar, and Scout and Yung DSA cried as he left. Read the full story.",
+    badge: "⚡ Eviction Out",
+    badgeType: "pink",
+    image: "/images/bigg-boss-20-aasif-khan-evicted.jpg",
+    href: "/bigg-boss-20-aasif-khan-evicted",
+    readTime: "3 MIN READ",
+    timeAgo: "JUST IN",
+  },
+  {
     id: "jiya-shankar-unfollows-kd",
     show: "Bigg Boss OTT 2",
     title: "Jiya Shankar Follows Fiancé KD Again After Breakup Rumours: Full Timeline",
@@ -184,49 +197,76 @@ export default function RealityShowsView() {
 
         {/* Lead Section: Latest Reality Published Article (Cover Story) + The Last 2 Blogs Uploaded Before It */}
         <section className="lead">
-          {/* Featured Cover Story: Jiya Shankar Follows KD Again */}
+          {/* Featured Cover Story: Bigg Boss 20 Aasif Khan Evicted */}
           <Link
-            href="/jiya-shankar-unfollows-fiance-kd-instagram"
+            href="/bigg-boss-20-aasif-khan-evicted"
             className="feature-card group block"
-            aria-label="Read full cover story: Jiya Shankar Follows Fiancé KD Again After Breakup Rumours: Full Timeline"
+            aria-label="Read full cover story: Bigg Boss 20: Aasif Khan Evicted, Scout and Yung DSA Cry as He Leaves"
           >
             <div className="feature-media relative overflow-hidden">
               <Image
-                src="/images/jiya-shankar-unfollows-fiance-kd-instagram.jpg"
-                alt="Jiya Shankar Follows Fiancé KD Again After Breakup Rumours: Full Timeline"
+                src="/images/bigg-boss-20-aasif-khan-evicted.jpg"
+                alt="Aasif Khan Evicted Bigg Boss 20 - Scout & Yung DSA Break Down"
                 fill
                 priority
                 className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
                 sizes="(max-width: 980px) 100vw, 65vw"
               />
               <div className="noise" />
-              <span className="badge lime feature-tag z-10">
-                🎃 Reconciliation Hint
+              <span className="badge pink feature-tag z-10">
+                ⚡ Eviction Confirmed
               </span>
             </div>
             <div className="feature-body">
               <h2 className="disp text-white group-hover:text-[var(--lime)] transition-colors">
-                Jiya Shankar Follows Fiancé KD Again After Breakup Rumours: Full Timeline
+                Bigg Boss 20: Aasif Khan Evicted, Scout and Yung DSA Cry as He Leaves
               </h2>
               <p>
-                The breakup buzz around Jiya Shankar and Kaaran Dhanak (KD) has taken a new turn. Jiya is following KD on Instagram again and shared their Halloween costume picture. Here is the full timeline.
+                Aasif Khan is out of Bigg Boss 20. Salman Khan announced the eviction on Weekend Ka Vaar, and Scout and Yung DSA cried as he left. Read the full story.
               </p>
               <div className="meta-row mt-3">
-                <span className="text-[var(--lime)] font-bold">BIGG BOSS OTT 2</span>
+                <span className="text-[var(--lime)] font-bold">BIGG BOSS 20</span>
                 <span className="dot-sep">◆</span>
                 <span>3 MIN READ</span>
                 <span className="dot-sep">◆</span>
-                <span className="text-[var(--magenta)] font-bold">UPDATED NOV 2</span>
+                <span className="text-[var(--magenta)] font-bold">WEEKEND KA VAAR</span>
               </div>
             </div>
           </Link>
 
           {/* Right Stack: The last 2 blogs uploaded before the latest one */}
           <div className="stack">
-            {/* Card 1: Bigg Boss 20 Gullu Eviction Row */}
+            {/* Card 1: Jiya Shankar Follows KD Again */}
+            <Link
+              href="/jiya-shankar-unfollows-fiance-kd-instagram"
+              className="card m1 group block"
+            >
+              <div className="card-media relative overflow-hidden">
+                <Image
+                  src="/images/jiya-shankar-unfollows-fiance-kd-instagram.jpg"
+                  alt="Jiya Shankar Follows Fiancé KD Again After Breakup Rumours: Full Timeline"
+                  fill
+                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 980px) 100vw, 35vw"
+                />
+                <span className="badge lime z-10 relative">🎃 Reconciliation Hint</span>
+              </div>
+              <div className="card-body">
+                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
+                  Jiya Shankar Follows Fiancé KD Again After Breakup Rumours: Full Timeline
+                </h3>
+                <div className="meta-row mt-2">
+                  <span className="text-[var(--lime)] font-bold">BIGG BOSS OTT 2</span>
+                  <span className="dot-sep">◆</span>
+                  <span>3 MIN READ</span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Card 2: Bigg Boss 20 Gullu Eviction Row */}
             <Link
               href="/bigg-boss-20-gullu-evicted-yung-dsa-fight"
-              className="card m1 group block"
+              className="card m2 group block"
             >
               <div className="card-media relative overflow-hidden">
                 <Image
@@ -241,33 +281,6 @@ export default function RealityShowsView() {
               <div className="card-body">
                 <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
                   Bigg Boss 20: Will Gullu Be Evicted After Yung DSA Fight?
-                </h3>
-                <div className="meta-row mt-2">
-                  <span className="text-[var(--lime)] font-bold">BIGG BOSS 20</span>
-                  <span className="dot-sep">◆</span>
-                  <span>3 MIN READ</span>
-                </div>
-              </div>
-            </Link>
-
-            {/* Card 2: Bigg Boss 20 100% Ration */}
-            <Link
-              href="/bigg-boss-20-100-per-cent-ration-housemates"
-              className="card m2 group block"
-            >
-              <div className="card-media relative overflow-hidden">
-                <Image
-                  src="/images/bigg-boss-20-100-per-cent-ration-housemates.jpg"
-                  alt="Bigg Boss 20: Housemates Get 100% Ration for the First Time"
-                  fill
-                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
-                  sizes="(max-width: 980px) 100vw, 35vw"
-                />
-                <span className="badge lime z-10 relative">100% Ration</span>
-              </div>
-              <div className="card-body">
-                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
-                  Bigg Boss 20: Housemates Get 100% Ration for the First Time
                 </h3>
                 <div className="meta-row mt-2">
                   <span className="text-[var(--lime)] font-bold">BIGG BOSS 20</span>

@@ -6,6 +6,14 @@ export const metadata: Metadata = {
   description:
     "Eliminations, fights, weekly ration milestones, hot seat stories and dome drama — every Bigg Boss 20, Koffee With Karan, KBC 18 and Splitsvilla moment.",
   keywords: [
+    "Aasif Khan evicted Bigg Boss 20",
+    "Bigg Boss 20 eviction",
+    "Weekend Ka Vaar",
+    "Scout",
+    "Yung DSA",
+    "Elvish Yadav",
+    "Bigg Boss 20 latest news",
+    "Aasif Khan",
     "Reality Shows Buzz Originals",
     "Jiya Shankar",
     "Jiya Shankar KD",
@@ -52,10 +60,10 @@ export const metadata: Metadata = {
     siteName: "Buzz Originals",
     images: [
       {
-        url: "/images/jiya-shankar-unfollows-fiance-kd-instagram.jpg",
+        url: "/images/bigg-boss-20-aasif-khan-evicted.jpg",
         width: 1024,
         height: 576,
-        alt: "Jiya Shankar Unfollows Fiancé KD on Instagram: What We Know So Far — Buzz Originals Reality Shows",
+        alt: "Aasif Khan Evicted Bigg Boss 20 - Scout & Yung DSA Break Down — Buzz Originals Reality Shows",
       },
     ],
     type: "website",
@@ -65,7 +73,7 @@ export const metadata: Metadata = {
     title: "Reality Shows — Buzz Originals",
     description:
       "Raw, unfiltered entertainment coverage of Bigg Boss 20, Koffee With Karan, KBC 18, Splitsvilla & Rise and Fall.",
-    images: ["/images/jiya-shankar-unfollows-fiance-kd-instagram.jpg"],
+    images: ["/images/bigg-boss-20-aasif-khan-evicted.jpg"],
   },
 };
 
@@ -92,6 +100,12 @@ export default function RealityShowsPage() {
         {
           "@type": "ListItem",
           position: 1,
+          name: "Bigg Boss 20: Aasif Khan Evicted, Scout and Yung DSA Cry as He Leaves",
+          url: "https://www.buzzoriginals.com/bigg-boss-20-aasif-khan-evicted",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
           name: "Jiya Shankar Follows Fiancé KD Again After Breakup Rumours: Full Timeline",
           url: "https://www.buzzoriginals.com/jiya-shankar-unfollows-fiance-kd-instagram",
         },
