@@ -177,6 +177,20 @@ export default function Home() {
 
   const editorialArticles: EditorialArticle[] = [
     {
+      id: "drishyam-3-ott-release-date-netflix",
+      anchorId: "drishyam-3-ott-story",
+      href: "/drishyam-3-ott-release-date-netflix",
+      title: "Drishyam 3 OTT Release Date: When Will Ajay Devgn’s Film Come to Netflix?",
+      excerpt: "Drishyam 3 is coming to Netflix. Check the expected OTT date, cast, Jaideep Ahlawat’s role, and what makes Ajay Devgn’s final chapter different.",
+      category: "Bollywood",
+      secondaryCategory: "Latest",
+      displayCategory: "BOLLYWOOD & OTT",
+      badge: "Netflix OTT",
+      badgeType: "lime",
+      readTime: "3 MIN READ",
+      image: "/images/drishyam-3-ott-release-date-netflix.jpg",
+    },
+    {
       id: "srk-61st-birthday-mannat-note",
       anchorId: "srk-birthday-story",
       href: "/shah-rukh-khan-61st-birthday-mannat-handwritten-note",
@@ -825,15 +839,15 @@ export default function Home() {
         <section className="hero" id="featured">
           {/* 1. Main Featured Story (Commanding Top Story Presentation) */}
           <Link
-            href="/shah-rukh-khan-61st-birthday-mannat-handwritten-note"
+            href="/drishyam-3-ott-release-date-netflix"
             className="feature-card block transition-all hover:border-[var(--lime)] focus-visible:ring-2 focus-visible:ring-[var(--lime)] group"
             style={{ textDecoration: "none", color: "inherit" }}
-            aria-label="Read full article: Shah Rukh Khan Skips Mannat Balcony on His 61st Birthday, Thanks Fans With a Handwritten Note"
+            aria-label="Read full article: Drishyam 3 OTT Release Date: When Will Ajay Devgn’s Film Come to Netflix?"
           >
             <div className="feature-media" style={{ overflow: "hidden", position: "relative" }}>
               <Image
-                src="/images/shah-rukh-khan-61st-birthday-mannat-handwritten-note.jpg"
-                alt="Shah Rukh Khan Skips Mannat Balcony on 61st Birthday, Sends Handwritten Note"
+                src="/images/drishyam-3-ott-release-date-netflix.jpg"
+                alt="Drishyam 3 OTT Release Date: When &amp; Where to Watch on Netflix"
                 fill
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 750px"
@@ -842,20 +856,20 @@ export default function Home() {
               />
               <div className="noise" style={{ pointerEvents: "none" }}></div>
               <div className="feature-tag flex items-center gap-2">
-                <span className="badge lime">🎂 61st Birthday</span>
-                <span className="badge pink">Mannat Note</span>
+                <span className="badge lime">📺 OTT Premiere</span>
+                <span className="badge pink">Netflix</span>
                 <span className="badge">Bollywood</span>
               </div>
             </div>
             <div className="feature-body">
               <div className="flex items-center gap-2 mb-2 font-mono text-xs text-[var(--lime)] font-bold tracking-wider uppercase">
-                <span>★ TOP STORY · SRK 61ST BIRTHDAY</span>
+                <span>★ TOP STORY · DRISHYAM 3 OTT RELEASE</span>
               </div>
               <h1 className="disp" style={{ color: "#fff" }}>
-                Shah Rukh Khan Skips Mannat Balcony on His 61st Birthday, Thanks Fans With a Handwritten Note
+                Drishyam 3 OTT Release Date: When Will Ajay Devgn’s Film Come to Netflix?
               </h1>
               <p>
-                Shah Rukh Khan skipped the Mannat balcony on his 61st birthday due to renovations, thanking fans with a giant handwritten note outside Mannat while releasing King’s first song Tu Mil Jaaye.
+                Drishyam 3 is coming to Netflix. Check the expected OTT date, cast, Jaideep Ahlawat’s role, and what makes Ajay Devgn’s final chapter different.
               </p>
               <div className="meta-row mt-auto pt-3 border-t border-white/[0.06] flex items-center justify-between">
                 <div className="flex items-center gap-3">
@@ -863,7 +877,7 @@ export default function Home() {
                   <span className="dot-sep">◆</span>
                   <span>3 MIN READ</span>
                   <span className="dot-sep">◆</span>
-                  <span style={{ color: "var(--lime)" }}>BIRTHDAY EXCLUSIVE</span>
+                  <span style={{ color: "var(--lime)" }}>OTT PREMIERE</span>
                 </div>
                 <span className="text-xs font-mono font-bold text-[var(--lime)] hidden sm:inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform">
                   Read Full Story →
@@ -882,6 +896,18 @@ export default function Home() {
               <span className="trend-rank">01</span>
               <div className="trend-text">
                 <Link
+                  href="/drishyam-3-ott-release-date-netflix"
+                  style={{ color: "inherit" }}
+                >
+                  <h3>Drishyam 3 OTT release date: When and where will Ajay Devgn&apos;s ₹400-crore film stream on Netflix?</h3>
+                  <span>BOLLYWOOD &amp; OTT · 640K REACTIONS</span>
+                </Link>
+              </div>
+            </div>
+            <div className="trend-item">
+              <span className="trend-rank">02</span>
+              <div className="trend-text">
+                <Link
                   href="/shah-rukh-khan-61st-birthday-mannat-handwritten-note"
                   style={{ color: "inherit" }}
                 >
@@ -891,7 +917,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">02</span>
+              <span className="trend-rank">03</span>
               <div className="trend-text">
                 <Link
                   href="/robert-downey-jr-pedro-pascal-halloween-costume-swap"
@@ -903,7 +929,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">03</span>
+              <span className="trend-rank">04</span>
               <div className="trend-text">
                 <Link
                   href="/diljit-dosanjh-aura-india-tour-hurdles"
@@ -915,7 +941,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">04</span>
+              <span className="trend-rank">05</span>
               <div className="trend-text">
                 <Link
                   href="/bhansali-productions-gangubai-post-eetha-trailer-backlash"
@@ -927,7 +953,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">05</span>
+              <span className="trend-rank">06</span>
               <div className="trend-text">
                 <Link
                   href="/maharani-season-5-release-date-january-2027"
@@ -939,7 +965,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">06</span>
+              <span className="trend-rank">07</span>
               <div className="trend-text">
                 <Link
                   href="/honey-singh-nephew-vidit-olak-dies-jalandhar-accident"
@@ -951,7 +977,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">07</span>
+              <span className="trend-rank">08</span>
               <div className="trend-text">
                 <Link
                   href="/ram-gopal-varma-legal-notice-eclatant-films-29-67-crore"
@@ -963,7 +989,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">08</span>
+              <span className="trend-rank">09</span>
               <div className="trend-text">
                 <Link
                   href="/himesh-reshammiya-deepika-padukone-irreplaceable-sandeep-reddy-vanga"
@@ -975,7 +1001,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">09</span>
+              <span className="trend-rank">10</span>
               <div className="trend-text">
                 <Link
                   href="/prakash-raj-wife-pony-varma-lost-films-ads"
@@ -983,18 +1009,6 @@ export default function Home() {
                 >
                   <h3>Prakash Raj lost films and ad deals for speaking out, reveals wife Pony Varma in new interview</h3>
                   <span>BOLLYWOOD &amp; NEWS · 510K REACTIONS</span>
-                </Link>
-              </div>
-            </div>
-            <div className="trend-item">
-              <span className="trend-rank">10</span>
-              <div className="trend-text">
-                <Link
-                  href="/tiger-shroff-first-public-appearance-after-firing-incident"
-                  style={{ color: "inherit" }}
-                >
-                  <h3>Tiger Shroff to make first public appearance after firing incident at Claudia Ciesla book launch</h3>
-                  <span>BOLLYWOOD &amp; NEWS · 490K REACTIONS</span>
                 </Link>
               </div>
             </div>

@@ -6,6 +6,23 @@ export const metadata: Metadata = {
   description:
     "Bollywood coverage from Buzz Originals — raw, unfiltered, built for the group chat. Red carpets, rumours, airport looks and exclusives.",
   keywords: [
+    "Drishyam 3 OTT release date",
+    "Drishyam 3 Netflix",
+    "Drishyam 3 OTT release",
+    "Drishyam 3 OTT platform",
+    "Drishyam 3 Netflix release date",
+    "Drishyam The Conclusion OTT release",
+    "Ajay Devgn Drishyam 3",
+    "where to watch Drishyam 3",
+    "Jaideep Ahlawat Drishyam 3",
+    "Rajveer Tomar Drishyam 3",
+    "Drishyam 3 box office collection",
+    "Drishyam 3 review",
+    "Vijay Salgaonkar",
+    "Drishyam The Conclusion",
+    "Drishyam 3 cast",
+    "Tabu Drishyam 3",
+    "Prakash Raj Drishyam 3",
     "Shah Rukh Khan birthday",
     "SRK 61st birthday",
     "Mannat",
@@ -193,10 +210,10 @@ export const metadata: Metadata = {
     siteName: "Buzz Originals",
     images: [
       {
-        url: "/images/shah-rukh-khan-61st-birthday-mannat-handwritten-note.jpg",
+        url: "/images/drishyam-3-ott-release-date-netflix.jpg",
         width: 1024,
         height: 576,
-        alt: "Shah Rukh Khan Skips Mannat Balcony on 61st Birthday, Sends Handwritten Note — Buzz Originals Bollywood",
+        alt: "Drishyam 3 OTT Release Date: When & Where to Watch on Netflix — Buzz Originals Bollywood",
       },
     ],
     type: "website",
@@ -206,7 +223,7 @@ export const metadata: Metadata = {
     title: "Bollywood — Buzz Originals",
     description:
       "Raw, unfiltered Bollywood coverage of red carpets, gossip, airport sightings & exclusives.",
-    images: ["/images/shah-rukh-khan-61st-birthday-mannat-handwritten-note.jpg"],
+    images: ["/images/drishyam-3-ott-release-date-netflix.jpg"],
   },
 };
 
@@ -233,12 +250,18 @@ export default function BollywoodPage() {
         {
           "@type": "ListItem",
           position: 1,
+          name: "Drishyam 3 OTT Release Date: When and Where to Watch",
+          url: "https://www.buzzoriginals.com/drishyam-3-ott-release-date-netflix",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
           name: "SRK Skips Mannat Balcony on 61st Birthday, Sends Note",
           url: "https://www.buzzoriginals.com/shah-rukh-khan-61st-birthday-mannat-handwritten-note",
         },
         {
           "@type": "ListItem",
-          position: 2,
+          position: 3,
           name: "Diljit Dosanjh Breaks Silence on Aura India Tour Hurdles",
           url: "https://www.buzzoriginals.com/diljit-dosanjh-aura-india-tour-hurdles",
         },
