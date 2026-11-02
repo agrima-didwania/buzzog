@@ -6,6 +6,26 @@ export const metadata: Metadata = {
   description:
     "Bollywood coverage from Buzz Originals — raw, unfiltered, built for the group chat. Red carpets, rumours, airport looks and exclusives.",
   keywords: [
+    "King first song",
+    "Tu Mil Jaaye",
+    "Tu Mil Jaaye song",
+    "Shah Rukh Khan King song",
+    "Shah Rukh Khan birthday 2026",
+    "SRK 61st birthday",
+    "Arijit Singh Ed Sheeran song",
+    "Ed Sheeran Bollywood song",
+    "SRK Deepika Padukone song",
+    "King movie first song release",
+    "King movie release date",
+    "King movie cast",
+    "Sachin-Jigar new song",
+    "Tu Mil Jaye",
+    "Tum Mil Jaye",
+    "Shahrukh Khan",
+    "Shah Rukh Khan",
+    "Arijit Singh",
+    "Arjit Singh",
+    "King SRK",
     "Drishyam 3 OTT release date",
     "Drishyam 3 Netflix",
     "Drishyam 3 OTT release",
@@ -210,10 +230,10 @@ export const metadata: Metadata = {
     siteName: "Buzz Originals",
     images: [
       {
-        url: "/images/drishyam-3-ott-release-date-netflix.jpg",
+        url: "/images/king-first-song-tu-mil-jaaye-shah-rukh-khan-deepika-padukone.jpg",
         width: 1024,
         height: 576,
-        alt: "Drishyam 3 OTT Release Date: When & Where to Watch on Netflix — Buzz Originals Bollywood",
+        alt: "King First Song Tu Mil Jaaye Out Now - Shah Rukh Khan and Deepika Padukone — Buzz Originals Bollywood",
       },
     ],
     type: "website",
@@ -223,7 +243,7 @@ export const metadata: Metadata = {
     title: "Bollywood — Buzz Originals",
     description:
       "Raw, unfiltered Bollywood coverage of red carpets, gossip, airport sightings & exclusives.",
-    images: ["/images/drishyam-3-ott-release-date-netflix.jpg"],
+    images: ["/images/king-first-song-tu-mil-jaaye-shah-rukh-khan-deepika-padukone.jpg"],
   },
 };
 
@@ -250,6 +270,12 @@ export default function BollywoodPage() {
         {
           "@type": "ListItem",
           position: 1,
+          name: "King First Song ‘Tu Mil Jaaye’ Is Out: SRK and Deepika Light Up His 61st Birthday",
+          url: "https://www.buzzoriginals.com/king-first-song-tu-mil-jaaye-shah-rukh-khan-deepika-padukone",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
           name: "Drishyam 3 OTT Release Date: When and Where to Watch",
           url: "https://www.buzzoriginals.com/drishyam-3-ott-release-date-netflix",
         },

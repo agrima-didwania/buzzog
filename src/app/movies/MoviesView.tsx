@@ -20,6 +20,16 @@ interface MovieArticle {
 
 const movieArticles: MovieArticle[] = [
   {
+    id: "king-first-song-tu-mil-jaaye",
+    category: "Action & Music",
+    title: "King First Song ‘Tu Mil Jaaye’ Is Out: SRK and Deepika Light Up His 61st Birthday",
+    badge: "🎵 Song Out Now",
+    badgeType: "lime",
+    image: "/images/king-first-song-tu-mil-jaaye-shah-rukh-khan-deepika-padukone.jpg",
+    href: "/king-first-song-tu-mil-jaaye-shah-rukh-khan-deepika-padukone",
+    readOrTime: "3 MIN READ",
+  },
+  {
     id: "robert-downey-jr-pedro-pascal-halloween-swap",
     category: "Marvel & Hollywood",
     title: "Robert Downey Jr. and Pedro Pascal Swap Marvel Roles for Halloween",

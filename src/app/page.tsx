@@ -177,6 +177,20 @@ export default function Home() {
 
   const editorialArticles: EditorialArticle[] = [
     {
+      id: "king-first-song-tu-mil-jaaye",
+      anchorId: "king-song-story",
+      href: "/king-first-song-tu-mil-jaaye-shah-rukh-khan-deepika-padukone",
+      title: "King First Song ‘Tu Mil Jaaye’ Is Out: SRK and Deepika Light Up His 61st Birthday",
+      excerpt: "Shah Rukh Khan’s King first song ‘Tu Mil Jaaye’ is out! See the Arijit Singh and Ed Sheeran collab, SRK-Deepika chemistry, and fan reactions.",
+      category: "Bollywood",
+      secondaryCategory: "Latest",
+      displayCategory: "BOLLYWOOD & MUSIC",
+      badge: "Song Out Now",
+      badgeType: "lime",
+      readTime: "3 MIN READ",
+      image: "/images/king-first-song-tu-mil-jaaye-shah-rukh-khan-deepika-padukone.jpg",
+    },
+    {
       id: "drishyam-3-ott-release-date-netflix",
       anchorId: "drishyam-3-ott-story",
       href: "/drishyam-3-ott-release-date-netflix",
@@ -839,15 +853,15 @@ export default function Home() {
         <section className="hero" id="featured">
           {/* 1. Main Featured Story (Commanding Top Story Presentation) */}
           <Link
-            href="/drishyam-3-ott-release-date-netflix"
+            href="/king-first-song-tu-mil-jaaye-shah-rukh-khan-deepika-padukone"
             className="feature-card block transition-all hover:border-[var(--lime)] focus-visible:ring-2 focus-visible:ring-[var(--lime)] group"
             style={{ textDecoration: "none", color: "inherit" }}
-            aria-label="Read full article: Drishyam 3 OTT Release Date: When Will Ajay Devgn’s Film Come to Netflix?"
+            aria-label="Read full article: King First Song ‘Tu Mil Jaaye’ Is Out: SRK and Deepika Light Up His 61st Birthday"
           >
             <div className="feature-media" style={{ overflow: "hidden", position: "relative" }}>
               <Image
-                src="/images/drishyam-3-ott-release-date-netflix.jpg"
-                alt="Drishyam 3 OTT Release Date: When &amp; Where to Watch on Netflix"
+                src="/images/king-first-song-tu-mil-jaaye-shah-rukh-khan-deepika-padukone.jpg"
+                alt="King First Song Tu Mil Jaaye Out Now - Shah Rukh Khan and Deepika Padukone"
                 fill
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 750px"
@@ -856,20 +870,20 @@ export default function Home() {
               />
               <div className="noise" style={{ pointerEvents: "none" }}></div>
               <div className="feature-tag flex items-center gap-2">
-                <span className="badge lime">📺 OTT Premiere</span>
-                <span className="badge pink">Netflix</span>
-                <span className="badge">Bollywood</span>
+                <span className="badge lime">🎵 Song Out Now</span>
+                <span className="badge pink">Ed Sheeran Collab</span>
+                <span className="badge">King</span>
               </div>
             </div>
             <div className="feature-body">
               <div className="flex items-center gap-2 mb-2 font-mono text-xs text-[var(--lime)] font-bold tracking-wider uppercase">
-                <span>★ TOP STORY · DRISHYAM 3 OTT RELEASE</span>
+                <span>★ TOP STORY · KING FIRST SONG ‘TU MIL JAAYE’ OUT</span>
               </div>
               <h1 className="disp" style={{ color: "#fff" }}>
-                Drishyam 3 OTT Release Date: When Will Ajay Devgn’s Film Come to Netflix?
+                King First Song ‘Tu Mil Jaaye’ Is Out: SRK and Deepika Light Up His 61st Birthday
               </h1>
               <p>
-                Drishyam 3 is coming to Netflix. Check the expected OTT date, cast, Jaideep Ahlawat’s role, and what makes Ajay Devgn’s final chapter different.
+                Shah Rukh Khan’s King first song ‘Tu Mil Jaaye’ is out! See the Arijit Singh and Ed Sheeran collab, SRK-Deepika chemistry, and fan reactions.
               </p>
               <div className="meta-row mt-auto pt-3 border-t border-white/[0.06] flex items-center justify-between">
                 <div className="flex items-center gap-3">
@@ -877,7 +891,7 @@ export default function Home() {
                   <span className="dot-sep">◆</span>
                   <span>3 MIN READ</span>
                   <span className="dot-sep">◆</span>
-                  <span style={{ color: "var(--lime)" }}>OTT PREMIERE</span>
+                  <span style={{ color: "var(--lime)" }}>ED SHEERAN COLLAB</span>
                 </div>
                 <span className="text-xs font-mono font-bold text-[var(--lime)] hidden sm:inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform">
                   Read Full Story →
@@ -896,6 +910,18 @@ export default function Home() {
               <span className="trend-rank">01</span>
               <div className="trend-text">
                 <Link
+                  href="/king-first-song-tu-mil-jaaye-shah-rukh-khan-deepika-padukone"
+                  style={{ color: "inherit" }}
+                >
+                  <h3>King first song ‘Tu Mil Jaaye’ out: SRK and Deepika light up his 61st birthday with Arijit Singh &amp; Ed Sheeran collab</h3>
+                  <span>BOLLYWOOD &amp; MUSIC · 710K REACTIONS</span>
+                </Link>
+              </div>
+            </div>
+            <div className="trend-item">
+              <span className="trend-rank">02</span>
+              <div className="trend-text">
+                <Link
                   href="/drishyam-3-ott-release-date-netflix"
                   style={{ color: "inherit" }}
                 >
@@ -905,7 +931,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">02</span>
+              <span className="trend-rank">03</span>
               <div className="trend-text">
                 <Link
                   href="/shah-rukh-khan-61st-birthday-mannat-handwritten-note"
@@ -917,7 +943,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">03</span>
+              <span className="trend-rank">04</span>
               <div className="trend-text">
                 <Link
                   href="/robert-downey-jr-pedro-pascal-halloween-costume-swap"
@@ -929,7 +955,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">04</span>
+              <span className="trend-rank">05</span>
               <div className="trend-text">
                 <Link
                   href="/diljit-dosanjh-aura-india-tour-hurdles"

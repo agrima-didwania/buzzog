@@ -6,6 +6,14 @@ export const metadata: Metadata = {
   description:
     "Movies coverage from Buzz Originals — raw, unfiltered, built for the group chat. Box office numbers, trailer breakdowns, clashes and spoiler-free verdicts.",
   keywords: [
+    "King first song",
+    "Tu Mil Jaaye",
+    "Tu Mil Jaaye song",
+    "Shah Rukh Khan King song",
+    "King movie first song release",
+    "King movie release date",
+    "King movie cast",
+    "Arijit Singh Ed Sheeran song",
     "Robert Downey Jr Halloween",
     "Pedro Pascal Doctor Doom",
     "Avengers Doomsday",
@@ -127,6 +135,12 @@ export default function MoviesPage() {
         {
           "@type": "ListItem",
           position: 1,
+          name: "King First Song ‘Tu Mil Jaaye’ Is Out: SRK and Deepika Light Up His 61st Birthday",
+          url: "https://www.buzzoriginals.com/king-first-song-tu-mil-jaaye-shah-rukh-khan-deepika-padukone",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
           name: "Robert Downey Jr. and Pedro Pascal Swap Marvel Costumes for Halloween",
           url: "https://www.buzzoriginals.com/robert-downey-jr-pedro-pascal-halloween-costume-swap",
         },

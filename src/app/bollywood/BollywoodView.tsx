@@ -20,6 +20,16 @@ interface BollywoodArticle {
 
 const bollywoodArticles: BollywoodArticle[] = [
   {
+    id: "king-first-song-tu-mil-jaaye",
+    category: "Music & Bollywood",
+    title: "King First Song ‘Tu Mil Jaaye’ Is Out: SRK and Deepika Light Up His 61st Birthday",
+    badge: "🎵 Song Out Now",
+    badgeType: "lime",
+    image: "/images/king-first-song-tu-mil-jaaye-shah-rukh-khan-deepika-padukone.jpg",
+    href: "/king-first-song-tu-mil-jaaye-shah-rukh-khan-deepika-padukone",
+    readOrTime: "3 MIN READ",
+  },
+  {
     id: "drishyam-3-ott-release-date-netflix",
     category: "OTT Premiere",
     title: "Drishyam 3 OTT Release Date: When Will Ajay Devgn’s Film Come to Netflix?",
@@ -406,16 +416,16 @@ export default function BollywoodView() {
 
         {/* Lead Section: Latest Bollywood Published Article (Cover Story) + The Last 2 Blogs Uploaded Before It */}
         <section className="lead">
-          {/* Cover Story: Latest Published Bollywood Story (Drishyam 3 OTT Release Date) */}
+          {/* Cover Story: Latest Published Bollywood Story (King First Song Tu Mil Jaaye) */}
           <Link
-            href="/drishyam-3-ott-release-date-netflix"
+            href="/king-first-song-tu-mil-jaaye-shah-rukh-khan-deepika-padukone"
             className="feature-card group block"
-            aria-label="Read full cover story: Drishyam 3 OTT Release Date: When Will Ajay Devgn’s Film Come to Netflix?"
+            aria-label="Read full cover story: King First Song ‘Tu Mil Jaaye’ Is Out: SRK and Deepika Light Up His 61st Birthday"
           >
             <div className="feature-media relative overflow-hidden">
               <Image
-                src="/images/drishyam-3-ott-release-date-netflix.jpg"
-                alt="Drishyam 3 OTT Release Date: When &amp; Where to Watch on Netflix"
+                src="/images/king-first-song-tu-mil-jaaye-shah-rukh-khan-deepika-padukone.jpg"
+                alt="King First Song Tu Mil Jaaye Out Now - Shah Rukh Khan and Deepika Padukone"
                 fill
                 priority
                 className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
@@ -423,18 +433,18 @@ export default function BollywoodView() {
               />
               <div className="noise" />
               <span className="badge lime feature-tag z-10">
-                📺 Netflix OTT Premiere
+                🎵 Song Out Now
               </span>
             </div>
             <div className="feature-body">
               <h2 className="disp text-white group-hover:text-[var(--lime)] transition-colors">
-                Drishyam 3 OTT Release Date: When Will Ajay Devgn’s Film Come to Netflix?
+                King First Song ‘Tu Mil Jaaye’ Is Out: SRK and Deepika Light Up His 61st Birthday
               </h2>
               <p>
-                Drishyam 3 is coming to Netflix. Check the expected OTT date, cast, Jaideep Ahlawat’s role, and what makes Ajay Devgn’s final chapter different.
+                Shah Rukh Khan’s King first song ‘Tu Mil Jaaye’ is out! See the Arijit Singh and Ed Sheeran collab, SRK-Deepika chemistry, and fan reactions.
               </p>
               <div className="meta-row mt-3">
-                <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; OTT</span>
+                <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; MUSIC</span>
                 <span className="dot-sep">◆</span>
                 <span>3 MIN READ</span>
                 <span className="dot-sep">◆</span>
@@ -445,7 +455,34 @@ export default function BollywoodView() {
 
           {/* Right Stack: The last 2 blogs uploaded before the latest one */}
           <div className="stack">
-            {/* Card 1: Shah Rukh Khan 61st Birthday */}
+            {/* Card 1: Drishyam 3 OTT Release Date */}
+            <Link
+              href="/drishyam-3-ott-release-date-netflix"
+              className="card m1 group block"
+            >
+              <div className="card-media relative overflow-hidden">
+                <Image
+                  src="/images/drishyam-3-ott-release-date-netflix.jpg"
+                  alt="Drishyam 3 OTT Release Date: When &amp; Where to Watch on Netflix"
+                  fill
+                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 980px) 100vw, 35vw"
+                />
+                <span className="badge lime z-10 relative">📺 Netflix OTT</span>
+              </div>
+              <div className="card-body">
+                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
+                  Drishyam 3 OTT Release Date: When Will Ajay Devgn’s Film Come to Netflix?
+                </h3>
+                <div className="meta-row mt-2">
+                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; OTT</span>
+                  <span className="dot-sep">◆</span>
+                  <span>3 MIN READ</span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Card 2: Shah Rukh Khan 61st Birthday Note */}
             <Link
               href="/shah-rukh-khan-61st-birthday-mannat-handwritten-note"
               className="card m1 group block"
@@ -463,33 +500,6 @@ export default function BollywoodView() {
               <div className="card-body">
                 <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
                   Shah Rukh Khan Skips Mannat Balcony on His 61st Birthday, Thanks Fans With a Handwritten Note
-                </h3>
-                <div className="meta-row mt-2">
-                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; NEWS</span>
-                  <span className="dot-sep">◆</span>
-                  <span>3 MIN READ</span>
-                </div>
-              </div>
-            </Link>
-
-            {/* Card 2: Diljit Dosanjh Aura Tour */}
-            <Link
-              href="/diljit-dosanjh-aura-india-tour-hurdles"
-              className="card m1 group block"
-            >
-              <div className="card-media relative overflow-hidden">
-                <Image
-                  src="/images/diljit-dosanjh-aura-india-tour-hurdles.jpg"
-                  alt="Diljit Dosanjh Breaks Silence on Aura India Tour Hurdles"
-                  fill
-                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
-                  sizes="(max-width: 980px) 100vw, 35vw"
-                />
-                <span className="badge lime z-10 relative">🎤 Aura Tour 2026</span>
-              </div>
-              <div className="card-body">
-                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
-                  Diljit Dosanjh Breaks Silence on Aura India Tour Hurdles
                 </h3>
                 <div className="meta-row mt-2">
                   <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; NEWS</span>
