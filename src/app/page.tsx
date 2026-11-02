@@ -177,6 +177,20 @@ export default function Home() {
 
   const editorialArticles: EditorialArticle[] = [
     {
+      id: "robert-downey-jr-pedro-pascal-halloween-swap",
+      anchorId: "rdj-pedro-marvel-story",
+      href: "/robert-downey-jr-pedro-pascal-halloween-costume-swap",
+      title: "Robert Downey Jr. and Pedro Pascal Swap Marvel Roles for Halloween",
+      excerpt: "Robert Downey Jr. dressed as Mister Fantastic and Pedro Pascal as Doctor Doom for Halloween. See what happened, fan reactions, and when Avengers: Doomsday hits theatres.",
+      category: "Latest",
+      secondaryCategory: "Bollywood & Hollywood",
+      displayCategory: "MOVIES & MARVEL",
+      badge: "Halloween Swap",
+      badgeType: "lime",
+      readTime: "3 MIN READ",
+      image: "/images/robert-downey-jr-pedro-pascal-halloween-costume-swap.jpg",
+    },
+    {
       id: "diljit-dosanjh-aura-tour-hurdles",
       anchorId: "diljit-aura-tour-story",
       href: "/diljit-dosanjh-aura-india-tour-hurdles",
@@ -797,15 +811,15 @@ export default function Home() {
         <section className="hero" id="featured">
           {/* 1. Main Featured Story (Commanding Top Story Presentation) */}
           <Link
-            href="/diljit-dosanjh-aura-india-tour-hurdles"
+            href="/robert-downey-jr-pedro-pascal-halloween-costume-swap"
             className="feature-card block transition-all hover:border-[var(--lime)] focus-visible:ring-2 focus-visible:ring-[var(--lime)] group"
             style={{ textDecoration: "none", color: "inherit" }}
-            aria-label="Read full article: Diljit Dosanjh Breaks Silence on Aura India Tour Hurdles"
+            aria-label="Read full article: Robert Downey Jr. and Pedro Pascal Swap Marvel Roles for Halloween"
           >
             <div className="feature-media" style={{ overflow: "hidden", position: "relative" }}>
               <Image
-                src="/images/diljit-dosanjh-aura-india-tour-hurdles.jpg"
-                alt="Diljit Dosanjh Breaks Silence on Aura India Tour Hurdles"
+                src="/images/robert-downey-jr-pedro-pascal-halloween-costume-swap.jpg"
+                alt="Robert Downey Jr. and Pedro Pascal Swap Marvel Roles for Halloween"
                 fill
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 750px"
@@ -814,28 +828,28 @@ export default function Home() {
               />
               <div className="noise" style={{ pointerEvents: "none" }}></div>
               <div className="feature-tag flex items-center gap-2">
-                <span className="badge lime">🎤 Aura Tour 2026</span>
-                <span className="badge pink">Exclusive Statement</span>
-                <span className="badge">Bollywood &amp; News</span>
+                <span className="badge lime">🎃 Marvel Swap</span>
+                <span className="badge pink">Avengers Doomsday</span>
+                <span className="badge">Movies</span>
               </div>
             </div>
             <div className="feature-body">
               <div className="flex items-center gap-2 mb-2 font-mono text-xs text-[var(--lime)] font-bold tracking-wider uppercase">
-                <span>★ TOP STORY · TOUR EXCLUSIVE</span>
+                <span>★ TOP STORY · VIRAL HALLOWEEN SWAP</span>
               </div>
               <h1 className="disp" style={{ color: "#fff" }}>
-                Diljit Dosanjh Breaks Silence on Aura India Tour Hurdles
+                Robert Downey Jr. and Pedro Pascal Swap Marvel Roles for Halloween
               </h1>
               <p>
-                Following his 70,000-strong Delhi concert, Diljit Dosanjh addressed attempts to halt his Aura India Tour and confirmed he will remain in India until December 20 to complete all scheduled shows.
+                Robert Downey Jr. dressed as Mister Fantastic and Pedro Pascal as Doctor Doom for Halloween. See what happened, fan reactions, and when Avengers: Doomsday hits theatres.
               </p>
               <div className="meta-row mt-auto pt-3 border-t border-white/[0.06] flex items-center justify-between">
                 <div className="flex items-center gap-3">
-                  <span>BOLLYWOOD</span>
+                  <span>MOVIES</span>
                   <span className="dot-sep">◆</span>
                   <span>3 MIN READ</span>
                   <span className="dot-sep">◆</span>
-                  <span style={{ color: "var(--lime)" }}>TOUR NEWS</span>
+                  <span style={{ color: "var(--lime)" }}>MARVEL NEWS</span>
                 </div>
                 <span className="text-xs font-mono font-bold text-[var(--lime)] hidden sm:inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform">
                   Read Full Story →
@@ -854,6 +868,18 @@ export default function Home() {
               <span className="trend-rank">01</span>
               <div className="trend-text">
                 <Link
+                  href="/robert-downey-jr-pedro-pascal-halloween-costume-swap"
+                  style={{ color: "inherit" }}
+                >
+                  <h3>Robert Downey Jr. and Pedro Pascal swap Marvel costumes for Halloween: Doctor Doom &amp; Mister Fantastic</h3>
+                  <span>MOVIES &amp; MARVEL · 590K REACTIONS</span>
+                </Link>
+              </div>
+            </div>
+            <div className="trend-item">
+              <span className="trend-rank">02</span>
+              <div className="trend-text">
+                <Link
                   href="/diljit-dosanjh-aura-india-tour-hurdles"
                   style={{ color: "inherit" }}
                 >
@@ -863,7 +889,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">02</span>
+              <span className="trend-rank">03</span>
               <div className="trend-text">
                 <Link
                   href="/bhansali-productions-gangubai-post-eetha-trailer-backlash"
@@ -875,7 +901,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">03</span>
+              <span className="trend-rank">04</span>
               <div className="trend-text">
                 <Link
                   href="/maharani-season-5-release-date-january-2027"
@@ -887,7 +913,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">04</span>
+              <span className="trend-rank">05</span>
               <div className="trend-text">
                 <Link
                   href="/honey-singh-nephew-vidit-olak-dies-jalandhar-accident"
@@ -899,7 +925,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">05</span>
+              <span className="trend-rank">06</span>
               <div className="trend-text">
                 <Link
                   href="/ram-gopal-varma-legal-notice-eclatant-films-29-67-crore"
@@ -911,7 +937,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">06</span>
+              <span className="trend-rank">07</span>
               <div className="trend-text">
                 <Link
                   href="/himesh-reshammiya-deepika-padukone-irreplaceable-sandeep-reddy-vanga"
@@ -923,7 +949,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">07</span>
+              <span className="trend-rank">08</span>
               <div className="trend-text">
                 <Link
                   href="/prakash-raj-wife-pony-varma-lost-films-ads"
@@ -935,7 +961,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">08</span>
+              <span className="trend-rank">09</span>
               <div className="trend-text">
                 <Link
                   href="/tiger-shroff-first-public-appearance-after-firing-incident"
@@ -947,7 +973,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">09</span>
+              <span className="trend-rank">10</span>
               <div className="trend-text">
                 <Link
                   href="/manoj-bajpayee-vidya-balan-kajol-women-in-cinema"
@@ -955,18 +981,6 @@ export default function Home() {
                 >
                   <h3>Manoj Bajpayee on women in cinema: “Heroines have been coming as heroes for a long time”</h3>
                   <span>BOLLYWOOD · 470K REACTIONS</span>
-                </Link>
-              </div>
-            </div>
-            <div className="trend-item">
-              <span className="trend-rank">10</span>
-              <div className="trend-text">
-                <Link
-                  href="/radhika-apte-rudra-akka-netflix"
-                  style={{ color: "inherit" }}
-                >
-                  <h3>Radhika Apte on playing Rudra in Netflix’s Akka: “A character I had never played before”</h3>
-                  <span>WEB SERIES &amp; NETFLIX · 460K REACTIONS</span>
                 </Link>
               </div>
             </div>

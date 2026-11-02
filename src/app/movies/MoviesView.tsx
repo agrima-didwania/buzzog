@@ -20,6 +20,16 @@ interface MovieArticle {
 
 const movieArticles: MovieArticle[] = [
   {
+    id: "robert-downey-jr-pedro-pascal-halloween-swap",
+    category: "Marvel & Hollywood",
+    title: "Robert Downey Jr. and Pedro Pascal Swap Marvel Roles for Halloween",
+    badge: "Halloween Swap",
+    badgeType: "lime",
+    image: "/images/robert-downey-jr-pedro-pascal-halloween-costume-swap.jpg",
+    href: "/robert-downey-jr-pedro-pascal-halloween-costume-swap",
+    readOrTime: "3 MIN READ",
+  },
+  {
     id: "iifa-2026-winners",
     category: "IIFA Awards 2026",
     title: "IIFA 2026 Winners List: Dhurandhar Wins 12 Awards, Ranveer Singh & Aneet Padda Win Big",
@@ -196,16 +206,16 @@ export default function MoviesView() {
 
         {/* Lead Section: Latest Movie Published Article (Cover Story) + The Last 2 Blogs Uploaded Before It */}
         <section className="lead">
-          {/* Featured Card: IIFA 2026 Winners List */}
+          {/* Featured Card: Robert Downey Jr. and Pedro Pascal Swap Marvel Roles */}
           <Link
-            href="/iifa-2026-winners-list"
+            href="/robert-downey-jr-pedro-pascal-halloween-costume-swap"
             className="feature-card group block"
-            aria-label="Read full article: IIFA 2026 Winners List: Dhurandhar Wins 12 Awards"
+            aria-label="Read full article: Robert Downey Jr. and Pedro Pascal Swap Marvel Roles for Halloween"
           >
             <div className="feature-media relative overflow-hidden">
               <Image
-                src="/images/iifa-2026-winners-list.jpg"
-                alt="IIFA 2026 Winners List: Dhurandhar Wins 12 Awards"
+                src="/images/robert-downey-jr-pedro-pascal-halloween-costume-swap.jpg"
+                alt="Robert Downey Jr. and Pedro Pascal Swap Marvel Costumes for Halloween"
                 fill
                 priority
                 className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
@@ -213,29 +223,56 @@ export default function MoviesView() {
               />
               <div className="noise" />
               <span className="badge lime feature-tag z-10">
-                🏆 IIFA 2026 Winners
+                🎃 Marvel Costume Swap
               </span>
             </div>
             <div className="feature-body">
               <h2 className="disp text-white group-hover:text-[var(--lime)] transition-colors">
-                IIFA 2026 Winners List: Dhurandhar Wins 12 Awards
+                Robert Downey Jr. and Pedro Pascal Swap Marvel Roles for Halloween
               </h2>
               <p>
-                See the full IIFA 2026 winners list. Dhurandhar won 12 awards, Ranveer Singh and Aneet Padda won top acting prizes, and The Ba*ds of Bollywood won Best Series.
+                Robert Downey Jr. dressed as Mister Fantastic and Pedro Pascal as Doctor Doom for Halloween. See what happened, fan reactions, and when Avengers: Doomsday hits theatres.
               </p>
               <div className="meta-row mt-3">
-                <span className="text-[var(--lime)] font-bold">MOVIES &amp; AWARDS</span>
+                <span className="text-[var(--lime)] font-bold">MOVIES &amp; MARVEL</span>
                 <span className="dot-sep">·</span>
-                <span>4 MIN READ</span>
+                <span>3 MIN READ</span>
                 <span className="dot-sep">·</span>
-                <span className="text-[var(--magenta)] font-bold">OCT 31 WINNERS</span>
+                <span className="text-[var(--magenta)] font-bold">OCT 31 VIRAL</span>
               </div>
             </div>
           </Link>
 
           {/* Right Stack: The last 2 movie blogs uploaded before this one */}
           <div className="stack">
-            {/* Card 1: Parivarik ManuRanjan */}
+            {/* Card 1: IIFA 2026 Winners */}
+            <Link
+              href="/iifa-2026-winners-list"
+              className="card m1 group block"
+            >
+              <div className="card-media relative overflow-hidden">
+                <Image
+                  src="/images/iifa-2026-winners-list.jpg"
+                  alt="IIFA 2026 Winners List: Dhurandhar Wins Big"
+                  fill
+                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 980px) 100vw, 35vw"
+                />
+                <span className="badge lime z-10 relative">🏆 IIFA 2026</span>
+              </div>
+              <div className="card-body">
+                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
+                  IIFA 2026 Winners List: Dhurandhar Wins 12 Awards, Ranveer Singh &amp; Aneet Padda Win Big
+                </h3>
+                <div className="meta-row mt-2">
+                  <span className="text-[var(--lime)] font-bold">IIFA 2026</span>
+                  <span className="dot-sep">◆</span>
+                  <span>4 MIN READ</span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Card 2: Parivarik ManuRanjan */}
             <Link
               href="/parivarik-manuranjan-ott-release-date-sony-liv"
               className="card m1 group block"
@@ -261,33 +298,6 @@ export default function MoviesView() {
                 </div>
               </div>
             </Link>
-
-            {/* Card 2: Ramayana Advance Booking */}
-            <Link
-              href="/ramayana-advance-booking-us-jump-la-premiere"
-              className="card m1 group block"
-            >
-              <div className="card-media relative overflow-hidden">
-                <Image
-                  src="/images/ramayana-advance-booking-us-jump-la-premiere.jpg"
-                  alt="Ramayana Advance Booking: US Sales Jump 27% After LA Premiere"
-                  fill
-                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
-                  sizes="(max-width: 980px) 100vw, 35vw"
-                />
-                <span className="badge lime z-10 relative">Box Office Jump</span>
-              </div>
-              <div className="card-body">
-                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
-                  Ramayana Advance Booking: US Sales Jump 27% After LA Premiere
-                </h3>
-                <div className="meta-row mt-2">
-                  <span className="text-[var(--lime)] font-bold">BOX OFFICE</span>
-                  <span className="dot-sep">◆</span>
-                  <span>3 MIN READ</span>
-                </div>
-              </div>
-            </Link>
           </div>
         </section>
 
@@ -300,7 +310,7 @@ export default function MoviesView() {
               </h2>
             </div>
             <span className="text-xs font-mono text-[var(--lime)] font-bold">
-              12 STORIES PUBLISHED
+              {movieArticles.length} STORIES PUBLISHED
             </span>
           </div>
 
