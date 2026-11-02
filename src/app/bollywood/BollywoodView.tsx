@@ -20,6 +20,16 @@ interface BollywoodArticle {
 
 const bollywoodArticles: BollywoodArticle[] = [
   {
+    id: "srk-61st-birthday-mannat-note",
+    category: "Shah Rukh Khan Birthday",
+    title: "Shah Rukh Khan Skips Mannat Balcony on 61st Birthday, Thanks Fans With a Handwritten Note",
+    badge: "🎂 61st Birthday",
+    badgeType: "lime",
+    image: "/images/shah-rukh-khan-61st-birthday-mannat-handwritten-note.jpg",
+    href: "/shah-rukh-khan-61st-birthday-mannat-handwritten-note",
+    readOrTime: "3 MIN READ",
+  },
+  {
     id: "diljit-dosanjh-aura-tour-hurdles",
     category: "Music & Tour",
     title: "Diljit Dosanjh Breaks Silence on Aura India Tour Hurdles",
@@ -386,16 +396,16 @@ export default function BollywoodView() {
 
         {/* Lead Section: Latest Bollywood Published Article (Cover Story) + The Last 2 Blogs Uploaded Before It */}
         <section className="lead">
-          {/* Cover Story: Latest Published Bollywood Story (Diljit Dosanjh Aura Tour Hurdles) */}
+          {/* Cover Story: Latest Published Bollywood Story (Shah Rukh Khan 61st Birthday Mannat Note) */}
           <Link
-            href="/diljit-dosanjh-aura-india-tour-hurdles"
+            href="/shah-rukh-khan-61st-birthday-mannat-handwritten-note"
             className="feature-card group block"
-            aria-label="Read full cover story: Diljit Dosanjh Breaks Silence on Aura India Tour Hurdles"
+            aria-label="Read full cover story: Shah Rukh Khan Skips Mannat Balcony on 61st Birthday, Thanks Fans With a Handwritten Note"
           >
             <div className="feature-media relative overflow-hidden">
               <Image
-                src="/images/diljit-dosanjh-aura-india-tour-hurdles.jpg"
-                alt="Diljit Dosanjh Breaks Silence on Aura India Tour Hurdles"
+                src="/images/shah-rukh-khan-61st-birthday-mannat-handwritten-note.jpg"
+                alt="Shah Rukh Khan Skips Mannat Balcony on 61st Birthday, Sends Handwritten Note"
                 fill
                 priority
                 className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
@@ -403,29 +413,56 @@ export default function BollywoodView() {
               />
               <div className="noise" />
               <span className="badge lime feature-tag z-10">
-                🎤 Aura Tour 2026
+                🎂 61st Birthday Note
               </span>
             </div>
             <div className="feature-body">
               <h2 className="disp text-white group-hover:text-[var(--lime)] transition-colors">
-                Diljit Dosanjh Breaks Silence on Aura India Tour Hurdles
+                Shah Rukh Khan Skips Mannat Balcony on His 61st Birthday, Thanks Fans With a Handwritten Note
               </h2>
               <p>
-                After his Delhi concert, Diljit Dosanjh spoke about negativity and attempts to stop his Aura India Tour. Here is everything he said.
+                Shah Rukh Khan skipped the Mannat balcony on his 61st birthday but thanked fans with a handwritten note. King’s first song Tu Mil Jaaye is out too.
               </p>
               <div className="meta-row mt-3">
                 <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; NEWS</span>
                 <span className="dot-sep">◆</span>
                 <span>3 MIN READ</span>
                 <span className="dot-sep">◆</span>
-                <span className="text-[var(--lime)] font-bold">NOV 01</span>
+                <span className="text-[var(--lime)] font-bold">NOV 02</span>
               </div>
             </div>
           </Link>
 
           {/* Right Stack: The last 2 blogs uploaded before the latest one */}
           <div className="stack">
-            {/* Card 1: Bhansali Productions Backlash */}
+            {/* Card 1: Diljit Dosanjh Aura Tour */}
+            <Link
+              href="/diljit-dosanjh-aura-india-tour-hurdles"
+              className="card m1 group block"
+            >
+              <div className="card-media relative overflow-hidden">
+                <Image
+                  src="/images/diljit-dosanjh-aura-india-tour-hurdles.jpg"
+                  alt="Diljit Dosanjh Breaks Silence on Aura India Tour Hurdles"
+                  fill
+                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 980px) 100vw, 35vw"
+                />
+                <span className="badge lime z-10 relative">🎤 Aura Tour 2026</span>
+              </div>
+              <div className="card-body">
+                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
+                  Diljit Dosanjh Breaks Silence on Aura India Tour Hurdles
+                </h3>
+                <div className="meta-row mt-2">
+                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; NEWS</span>
+                  <span className="dot-sep">◆</span>
+                  <span>3 MIN READ</span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Card 2: Bhansali Productions Backlash */}
             <Link
               href="/bhansali-productions-gangubai-post-eetha-trailer-backlash"
               className="card m1 group block"
@@ -446,33 +483,6 @@ export default function BollywoodView() {
                 </h3>
                 <div className="meta-row mt-2">
                   <span className="text-[var(--magenta)] font-bold">BOLLYWOOD</span>
-                  <span className="dot-sep">◆</span>
-                  <span>3 MIN READ</span>
-                </div>
-              </div>
-            </Link>
-
-            {/* Card 2: Ram Gopal Varma Legal Notice */}
-            <Link
-              href="/ram-gopal-varma-legal-notice-eclatant-films-29-67-crore"
-              className="card m1 group block"
-            >
-              <div className="card-media relative overflow-hidden">
-                <Image
-                  src="/images/ram-gopal-varma-legal-notice-eclatant-films-29-67-crore.jpg"
-                  alt="Ram Gopal Varma in Legal Trouble Over ₹29.67 Crore"
-                  fill
-                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
-                  sizes="(max-width: 980px) 100vw, 35vw"
-                />
-                <span className="badge pink z-10 relative">⚖️ Legal Dispute</span>
-              </div>
-              <div className="card-body">
-                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
-                  Ram Gopal Varma in Legal Trouble Over ₹29.67 Crore
-                </h3>
-                <div className="meta-row mt-2">
-                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; NEWS</span>
                   <span className="dot-sep">◆</span>
                   <span>3 MIN READ</span>
                 </div>

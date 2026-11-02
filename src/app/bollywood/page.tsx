@@ -6,6 +6,17 @@ export const metadata: Metadata = {
   description:
     "Bollywood coverage from Buzz Originals — raw, unfiltered, built for the group chat. Red carpets, rumours, airport looks and exclusives.",
   keywords: [
+    "Shah Rukh Khan birthday",
+    "SRK 61st birthday",
+    "Mannat",
+    "King first song",
+    "Tu Mil Jaaye",
+    "SRK birthday Mannat",
+    "Shah Rukh Khan handwritten note",
+    "Mannat balcony",
+    "King first song Tu Mil Jaaye",
+    "King release date 24 December 2026",
+    "Shah Rukh Khan birthday 2026",
     "Diljit Dosanjh Aura India Tour",
     "Diljit Dosanjh breaks silence",
     "Diljit Dosanjh Delhi concert",
@@ -182,10 +193,10 @@ export const metadata: Metadata = {
     siteName: "Buzz Originals",
     images: [
       {
-        url: "/images/diljit-dosanjh-aura-india-tour-hurdles.jpg",
+        url: "/images/shah-rukh-khan-61st-birthday-mannat-handwritten-note.jpg",
         width: 1024,
         height: 576,
-        alt: "Diljit Dosanjh Breaks Silence on Aura India Tour Hurdles — Buzz Originals Bollywood",
+        alt: "Shah Rukh Khan Skips Mannat Balcony on 61st Birthday, Sends Handwritten Note — Buzz Originals Bollywood",
       },
     ],
     type: "website",
@@ -195,7 +206,7 @@ export const metadata: Metadata = {
     title: "Bollywood — Buzz Originals",
     description:
       "Raw, unfiltered Bollywood coverage of red carpets, gossip, airport sightings & exclusives.",
-    images: ["/images/diljit-dosanjh-aura-india-tour-hurdles.jpg"],
+    images: ["/images/shah-rukh-khan-61st-birthday-mannat-handwritten-note.jpg"],
   },
 };
 
@@ -222,24 +233,30 @@ export default function BollywoodPage() {
         {
           "@type": "ListItem",
           position: 1,
+          name: "SRK Skips Mannat Balcony on 61st Birthday, Sends Note",
+          url: "https://www.buzzoriginals.com/shah-rukh-khan-61st-birthday-mannat-handwritten-note",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
           name: "Diljit Dosanjh Breaks Silence on Aura India Tour Hurdles",
           url: "https://www.buzzoriginals.com/diljit-dosanjh-aura-india-tour-hurdles",
         },
         {
           "@type": "ListItem",
-          position: 2,
+          position: 3,
           name: "Bhansali Trolled for Gangubai Post on Eetha Trailer Day",
           url: "https://www.buzzoriginals.com/bhansali-productions-gangubai-post-eetha-trailer-backlash",
         },
         {
           "@type": "ListItem",
-          position: 3,
+          position: 4,
           name: "Ram Gopal Varma Gets ₹29.67 Crore Legal Notice",
           url: "https://www.buzzoriginals.com/ram-gopal-varma-legal-notice-eclatant-films-29-67-crore",
         },
         {
           "@type": "ListItem",
-          position: 3,
+          position: 5,
           name: "Himesh Reshammiya Calls Deepika Padukone “Irreplaceable”",
           url: "https://www.buzzoriginals.com/himesh-reshammiya-deepika-padukone-irreplaceable-sandeep-reddy-vanga",
         },
