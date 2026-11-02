@@ -182,9 +182,9 @@ const bollywoodArticles: BollywoodArticle[] = [
   {
     id: "jiya-shankar-unfollows-kd",
     category: "Relationship & Breakup",
-    title: "Jiya Shankar Unfollows Fiancé KD on Instagram: What We Know So Far",
-    badge: "Breakup Rumours",
-    badgeType: "pink",
+    title: "Jiya Shankar Follows Fiancé KD Again After Breakup Rumours: Full Timeline",
+    badge: "Halloween Update",
+    badgeType: "lime",
     image: "/images/jiya-shankar-unfollows-fiance-kd-instagram.jpg",
     href: "/jiya-shankar-unfollows-fiance-kd-instagram",
     readOrTime: "3 MIN READ",

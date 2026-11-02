@@ -6,9 +6,9 @@ import Footer from "@/components/Footer";
 import SocialShare from "@/components/SocialShare";
 
 export const metadata: Metadata = {
-  title: "Jiya Shankar Unfollows Fiancé KD on Instagram",
+  title: "Jiya Shankar Follows Fiancé KD Again After Breakup Rumours: Full Timeline",
   description:
-    "Jiya Shankar has unfollowed fiancé Kaaran Dhanak (KD) and shared emotional reposts. Here is what fans noticed and what she said in her statement.",
+    "Jiya Shankar is following fiancé Kaaran Dhanak (KD) again after breakup rumours, sharing a Game of Thrones Halloween photo. See the full timeline.",
   keywords: [
     "Jiya Shankar",
     "Jiya Shankar KD",
@@ -16,16 +16,18 @@ export const metadata: Metadata = {
     "Jiya Shankar engagement",
     "Bigg Boss OTT 2",
     "Bigg Boss",
-    "Influencer",
+    "Jiya Shankar Halloween",
     "Jiya Shankar breakup rumours",
     "Jiya Shankar Instagram unfollow",
+    "Jiya Shankar follows KD again",
     "Bollywood gossip",
     "Reality show news",
+    "Buzz Originals",
   ],
   openGraph: {
-    title: "Jiya Shankar Unfollows Fiancé KD on Instagram",
+    title: "Jiya Shankar Follows Fiancé KD Again After Breakup Rumours: Full Timeline",
     description:
-      "Jiya Shankar has unfollowed fiancé Kaaran Dhanak (KD) and shared emotional reposts. Here is what fans noticed and what she said in her statement.",
+      "Jiya Shankar is following fiancé Kaaran Dhanak (KD) again after breakup rumours, sharing a Game of Thrones Halloween photo. See the full timeline.",
     url: "https://www.buzzoriginals.com/jiya-shankar-unfollows-fiance-kd-instagram",
     siteName: "Buzz Originals",
     images: [
@@ -33,18 +35,19 @@ export const metadata: Metadata = {
         url: "/images/jiya-shankar-unfollows-fiance-kd-instagram.jpg",
         width: 1024,
         height: 576,
-        alt: "Jiya Shankar Unfollows Fiancé KD on Instagram: What We Know So Far",
+        alt: "Jiya Shankar Follows Fiancé KD Again After Breakup Rumours: Full Timeline",
       },
     ],
     type: "article",
     publishedTime: "2026-10-31T00:30:00.000Z",
+    modifiedTime: "2026-11-02T13:30:00.000Z",
     authors: ["Buzz Originals Entertainment Desk"],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Jiya Shankar Unfollows Fiancé KD on Instagram",
+    title: "Jiya Shankar Follows Fiancé KD Again After Breakup Rumours: Full Timeline",
     description:
-      "Jiya Shankar has unfollowed fiancé Kaaran Dhanak (KD) and shared emotional reposts. Here is what fans noticed and what she said in her statement.",
+      "Jiya Shankar is following fiancé Kaaran Dhanak (KD) again after breakup rumours, sharing a Game of Thrones Halloween photo. See the full timeline.",
     images: ["/images/jiya-shankar-unfollows-fiance-kd-instagram.jpg"],
   },
   alternates: {
@@ -56,7 +59,7 @@ export default function JiyaShankarUnfollowsKDPage() {
   const pageUrl =
     "https://www.buzzoriginals.com/jiya-shankar-unfollows-fiance-kd-instagram";
   const pageTitle =
-    "Jiya Shankar Unfollows Fiancé KD on Instagram: What We Know So Far";
+    "Jiya Shankar Follows Fiancé KD Again After Breakup Rumours: Full Timeline";
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -66,7 +69,7 @@ export default function JiyaShankarUnfollowsKDPage() {
       "https://www.buzzoriginals.com/images/jiya-shankar-unfollows-fiance-kd-instagram.jpg",
     ],
     datePublished: "2026-10-31T00:30:00+05:30",
-    dateModified: "2026-10-31T00:30:00+05:30",
+    dateModified: "2026-11-02T13:30:00+05:30",
     author: [
       {
         "@type": "NewsMediaOrganization",
@@ -83,7 +86,7 @@ export default function JiyaShankarUnfollowsKDPage() {
       },
     },
     description:
-      "Jiya Shankar has unfollowed fiancé Kaaran Dhanak (KD) and shared emotional reposts. Here is what fans noticed and what she said in her statement.",
+      "Jiya Shankar is following fiancé Kaaran Dhanak (KD) again after breakup rumours, sharing a Game of Thrones Halloween photo. See the full timeline.",
     mainEntityOfPage: {
       "@type": "WebPage",
       "@id": pageUrl,
@@ -115,7 +118,7 @@ export default function JiyaShankarUnfollowsKDPage() {
       {
         "@type": "ListItem",
         position: 4,
-        name: "Jiya Shankar Unfollows KD",
+        name: "Jiya Shankar & KD Timeline",
         item: pageUrl,
       },
     ],
@@ -146,15 +149,15 @@ export default function JiyaShankarUnfollowsKDPage() {
           <span>/</span>
           <Link href="/reality-shows">REALITY SHOWS</Link>
           <span>/</span>
-          <span style={{ color: "var(--lavender)" }}>JIYA SHANKAR UNFOLLOWS KD</span>
+          <span style={{ color: "var(--lavender)" }}>JIYA SHANKAR &amp; KD TIMELINE</span>
         </nav>
 
         {/* Article Header */}
         <header className="article-header">
           <div style={{ display: "flex", gap: "8px", alignItems: "center", flexWrap: "wrap" }}>
-            <span className="badge pink">💔 Breakup Rumours</span>
-            <span className="badge lime">Bigg Boss OTT 2</span>
-            <span className="badge">Bollywood &amp; Reality</span>
+            <span className="badge lime">🎃 Halloween Update</span>
+            <span className="badge pink">Reconciliation Hint</span>
+            <span className="badge">Bigg Boss OTT 2</span>
           </div>
 
           <h1 className="article-title">{pageTitle}</h1>
@@ -171,7 +174,7 @@ export default function JiyaShankarUnfollowsKDPage() {
               <span>REALITY &amp; CELEB BUREAU</span>
             </div>
             <div style={{ display: "flex", gap: "14px", alignItems: "center" }}>
-              <span>OCT 31, 2026</span>
+              <span>UPDATED: NOV 2, 2026</span>
               <span style={{ color: "var(--magenta)" }}>◆</span>
               <span style={{ color: "var(--lime)" }}>3 MIN READ</span>
             </div>
@@ -182,7 +185,7 @@ export default function JiyaShankarUnfollowsKDPage() {
         <div className="article-media-box">
           <Image
             src="/images/jiya-shankar-unfollows-fiance-kd-instagram.jpg"
-            alt="Jiya Shankar Unfollows Fiancé KD on Instagram: What We Know So Far"
+            alt="Jiya Shankar Follows Fiancé KD Again After Breakup Rumours: Full Timeline"
             width={1024}
             height={576}
             priority
@@ -190,146 +193,298 @@ export default function JiyaShankarUnfollowsKDPage() {
             style={{ width: "100%", height: "auto", display: "block" }}
           />
           <div className="article-media-caption">
-            📸 Bigg Boss OTT 2 star Jiya Shankar sparks breakup speculation after unfollowing fiancé Kaaran Dhanak (KD) and sharing emotional notes on Instagram. (Photo: Instagram / Jiya Shankar)
+            📸 Bigg Boss OTT 2 star Jiya Shankar has followed fiancé Kaaran Dhanak (KD) back on Instagram and shared a Game of Thrones Halloween costume look together, easing breakup fears. (Photo: Instagram / Jiya Shankar)
           </div>
         </div>
 
         {/* Article Body */}
         <article className="article-content">
           <p className="article-lead">
-            Fans of <em>Bigg Boss OTT 2</em> fame <strong>Jiya Shankar</strong> are worried. Her Instagram activity has changed suddenly, and people are asking one big question: is everything okay between her and her fiancé, <strong>Kaaran Dhanak</strong>, also known as <strong>KD</strong>?
+            <strong>Quick update:</strong> The breakup buzz around <strong>Jiya Shankar</strong> and <strong>Kaaran Dhanak (KD)</strong> has taken a new turn. Jiya is following KD on Instagram again, and she has shared a picture of the two of them in Halloween costumes.
           </p>
           <p>
-            Here is the full story in simple words.
+            Here is everything that happened, in order.
           </p>
 
-          <h2>What Made Fans Notice?</h2>
+          <h2>What Is the Latest?</h2>
           <p>
-            It began on October 29, 2026. Fans saw that Jiya was resharing emotional posts and reels. Many of them were about heartbreak, betrayal and tough times.
+            Jiya put a photo on her Instagram Story where she and KD are dressed as <em>Game of Thrones</em> characters for Halloween. Soon after, eagle-eyed fans noticed she had followed him again on the platform.
           </p>
           <p>
-            Two of the reposts got a lot of attention:
-          </p>
-          <blockquote style={{ borderLeft: "3px solid var(--magenta)", paddingLeft: "16px", fontStyle: "italic", margin: "20px 0" }}>
-            &ldquo;Two things I know for sure: Prayers work and tables eventually turn.&rdquo;
-          </blockquote>
-          <blockquote style={{ borderLeft: "3px solid var(--lime)", paddingLeft: "16px", fontStyle: "italic", margin: "20px 0" }}>
-            &ldquo;Some nights I don’t want healing. I want the universe to admit that what happened was cruel.&rdquo;
-          </blockquote>
-          <p>
-            Then came the biggest clue. Followers noticed that Jiya no longer follows KD on Instagram. On October 30, screenshots of her reposts spread across social media, and many fans said they were worried about her.
+            This unexpected reconciliation hint came just days after the unfollow and the sad reposts that had worried everyone across social media.
           </p>
           <p>
-            One key detail to note: her engagement photos are still intact on her profile.
+            Neither of them has said anything official about the status of the engagement. So while this is a strong hint that things have smoothed over, it is not yet a formal confirmation.
           </p>
 
-          <h2>What Did Jiya Shankar Say?</h2>
           <p>
-            Jiya has now spoken up, but she did not say whether the engagement is still on. She asked people to stop guessing.
-          </p>
-          <p>
-            In her official statement, she wrote:
-          </p>
-          <blockquote style={{ borderLeft: "3px solid var(--lavender)", paddingLeft: "16px", fontStyle: "italic", margin: "20px 0" }}>
-            &ldquo;I’d like to clarify something. Recent assumptions about my personal life have gone far beyond what I have actually shared.&rdquo;
-          </blockquote>
-          <p>
-            She also asked fans not to spread rumours:
-          </p>
-          <blockquote style={{ borderLeft: "3px solid var(--magenta)", paddingLeft: "16px", fontStyle: "italic", margin: "20px 0" }}>
-            &ldquo;Please don’t speculate about or spread rumors regarding my relationship.&rdquo;
-          </blockquote>
-          <p>
-            She ended her message with:
-          </p>
-          <blockquote style={{ borderLeft: "3px solid var(--lime)", paddingLeft: "16px", fontStyle: "italic", margin: "20px 0" }}>
-            &ldquo;Some things are private, and I’d appreciate everyone respecting that.&rdquo;
-          </blockquote>
-          <p>
-            So for now, there is no official confirmation of a breakup, and no confirmation that they are still together.
-          </p>
-
-          {/* Instagram Follow CTA */}
-          <div
-            style={{
-              margin: "28px 0",
-              padding: "16px 20px",
-              background:
-                "linear-gradient(135deg, rgba(230, 0, 106, 0.12) 0%, rgba(200, 255, 0, 0.06) 100%)",
-              border: "1px solid rgba(230, 0, 106, 0.35)",
-              borderRadius: "10px",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "space-between",
-              flexWrap: "wrap",
-              gap: "12px",
-            }}
-          >
-            <span style={{ fontSize: "15px", fontWeight: 600, color: "#fff" }}>
-              Follow us on Instagram for the latest updates:{" "}
-              <a
-                href="https://www.instagram.com/buzzoriginals?exln=MWdhNTk5dWdlYnF5cg=="
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{ color: "var(--lime)", textDecoration: "underline", fontWeight: 700 }}
-              >
-                Buzz Originals
-              </a>
-            </span>
+            Check Out:{" "}
             <a
-              href="https://www.instagram.com/buzzoriginals?exln=MWdhNTk5dWdlYnF5cg=="
+              href="https://www.instagram.com/p/DfNdUsgz3Dx/?obrf=b29yZGk2dTZvYXJt"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-primary"
-              style={{ padding: "6px 16px", fontSize: "12px", textTransform: "uppercase" }}
+              style={{ color: "var(--lime)", textDecoration: "underline", fontWeight: 600 }}
             >
-              Follow @buzzoriginals
+              Jiya Shankar shares halloween look with Fiance after breakup rumours
             </a>
+          </p>
+
+          <h2>The Full Timeline</h2>
+          <div
+            style={{
+              background: "rgba(255, 255, 255, 0.03)",
+              border: "1px solid rgba(255, 255, 255, 0.08)",
+              borderRadius: "8px",
+              padding: "20px",
+              margin: "24px 0",
+            }}
+          >
+            <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
+              <li style={{ paddingBottom: "14px", borderBottom: "1px solid rgba(255, 255, 255, 0.06)" }}>
+                <span style={{ color: "var(--lime)", fontWeight: 700, fontFamily: "var(--font-space-mono)" }}>
+                  OCT 29, 2026:
+                </span>{" "}
+                Fans see Jiya resharing posts about heartbreak, betrayal and tough times on her Instagram profile.
+              </li>
+              <li style={{ padding: "14px 0", borderBottom: "1px solid rgba(255, 255, 255, 0.06)" }}>
+                <span style={{ color: "var(--magenta)", fontWeight: 700, fontFamily: "var(--font-space-mono)" }}>
+                  OCT 30, 2026:
+                </span>{" "}
+                People notice she has unfollowed KD on Instagram. Screenshots go viral and fans get deeply worried.
+              </li>
+              <li style={{ padding: "14px 0", borderBottom: "1px solid rgba(255, 255, 255, 0.06)" }}>
+                <span style={{ color: "var(--lime)", fontWeight: 700, fontFamily: "var(--font-space-mono)" }}>
+                  OCT 31, 2026:
+                </span>{" "}
+                Jiya posts an official statement on her Story, asking people to stop guessing about her relationship and respect privacy.
+              </li>
+              <li style={{ paddingTop: "14px" }}>
+                <span style={{ color: "var(--lime)", fontWeight: 700, fontFamily: "var(--font-space-mono)" }}>
+                  NOV 1, 2026:
+                </span>{" "}
+                She follows KD again on Instagram and shares their joint Halloween costume photo in Game of Thrones outfits.
+              </li>
+            </ul>
           </div>
+
+          <h2>What Did Jiya Say?</h2>
+          <p>
+            Her message on Instagram Stories was short and direct. She said people had assumed far more than she ever shared, and she asked fans not to spread rumours. She also emphasized that some matters are deeply personal and deserve respect:
+          </p>
+
+          <blockquote
+            style={{
+              borderLeft: "3px solid var(--lavender)",
+              background: "rgba(255, 255, 255, 0.03)",
+              padding: "14px 18px",
+              fontStyle: "italic",
+              margin: "18px 0",
+              color: "#fff",
+            }}
+          >
+            &ldquo;I’d like to clarify something. Recent assumptions about my personal life have gone far beyond what I have actually shared.&rdquo;
+          </blockquote>
+
+          <blockquote
+            style={{
+              borderLeft: "3px solid var(--magenta)",
+              background: "rgba(255, 255, 255, 0.03)",
+              padding: "14px 18px",
+              fontStyle: "italic",
+              margin: "18px 0",
+              color: "#fff",
+            }}
+          >
+            &ldquo;Please don’t speculate about or spread rumors regarding my relationship. Some things are private, and I’d appreciate everyone respecting that.&rdquo;
+          </blockquote>
+
+          <p>
+            Notably, she did not say if the engagement is on or off. She did not explain the cryptic reposts or the temporary unfollow either.
+          </p>
+
+          <h2>What We Don’t Know</h2>
+          <p>
+            Despite the positive Halloween update, several questions remain unanswered:
+          </p>
+          <ul>
+            <li>Why she unfollowed KD in the first place</li>
+            <li>What the emotional reposts about heartbreak and betrayal were originally about</li>
+            <li>If the couple’s wedding plans have changed in any way</li>
+          </ul>
+          <p>
+            Some fans online speculated that KD had cheated. However, there is zero evidence or confirmation to support this claim, and Jiya has never made any such statement. We strongly advise treating that talk purely as unverified social media gossip.
+          </p>
 
           <h2>A Quick Look Back: Jiya and KD’s Engagement</h2>
           <p>
-            Jiya announced her engagement on August 5, 2026. She shared photos from a sunset proposal, showing KD down on one knee and her diamond ring. Her long, emotional caption spoke about distance, patience and choosing each other every day.
+            Jiya announced her engagement on <strong>August 5, 2026</strong>, sharing romantic photos of a sunset proposal showing KD down on one knee with a diamond ring. KD (Kaaran Dhanak) is a US-based entrepreneur who manages web businesses and hospitality ventures.
           </p>
-          <ul>
-            <li>
-              <strong>Engagement announcement:</strong> August 5, 2026, via sunset proposal photos
-            </li>
-            <li>
-              <strong>Fiancé profile:</strong> Kaaran Dhanak (KD) is a US-based entrepreneur working in web businesses and hospitality
-            </li>
-            <li>
-              <strong>Timeline:</strong> Speculation surfaces less than three months after the engagement
-            </li>
-            <li>
-              <strong>Current status:</strong> Unfollowed on Instagram; engagement posts remain visible
-            </li>
-          </ul>
+          <p>
+            Her emotional caption at the time celebrated distance, patience and choosing each other every day. Notably, those sunset engagement photos stayed pinned on her Instagram profile throughout the entire rumour phase, which gave many fans hope.
+          </p>
 
-          <div className="article-quote-box">
-            <p style={{ margin: 0, fontSize: "15px" }}>
-              <strong>Also Read:</strong>{" "}
-              <Link
-                href="/bigg-boss-20-gullu-evicted-yung-dsa-fight"
-                style={{ color: "var(--lime)", textDecoration: "underline", fontWeight: 700 }}
-              >
-                Bigg Boss 20: Will Gullu Be Evicted After Yung DSA Fight? →
-              </Link>
-            </p>
-          </div>
+          <p>
+            Also Check:{" "}
+            <a
+              href="https://www.instagram.com/reel/DfJsNFaT-pF/?psln=MTNydjQzZWR4ZDMxeg=="
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: "var(--lime)", textDecoration: "underline", fontWeight: 600 }}
+            >
+              Jiya Shankar Unfollows KD on Instagram Reel
+            </a>
+          </p>
 
           <h2>Who Is Jiya Shankar?</h2>
           <p>
-            Jiya Shankar is an actress and model. She became widely known across the country as a standout contestant on <em>Bigg Boss OTT 2</em>. With a loyal and massive fan following across social media, her personal life and career milestones frequently make headlines and trend online.
+            Jiya Shankar is an actress and model who became a household sensation as one of the most popular contestants on <em>Bigg Boss OTT 2</em>. Backed by an enthusiastic and vocal fanbase, even minor shifts in her Instagram following list or cryptic quotes quickly generate viral headlines.
           </p>
 
           <h2>What Happens Next?</h2>
           <p>
-            For now, all fans have to go on is her unfollow, her cryptic reposts and her short statement asking for privacy. Neither Jiya nor KD has shared a definitive statement regarding their future plans or marital commitments. We will update this story if either of them shares more.
+            For now, the unfollow is reversed, the Halloween costume photo is public, and Jiya has asked for privacy. We will continue updating this story if either Jiya Shankar or Kaaran Dhanak shares any further updates.
           </p>
           <p>
-            Stay tuned to <strong>Buzz Originals</strong> for more updates on Bigg Boss, reality TV buzz and Bollywood scoops.
+            Stay with <strong>Buzz Originals</strong> for more Bigg Boss scoops, reality TV updates, and Bollywood coverage.
           </p>
+
+          {/* Quick Facts Table */}
+          <div
+            style={{
+              background: "rgba(255, 255, 255, 0.03)",
+              border: "1px solid rgba(255, 255, 255, 0.08)",
+              borderRadius: "8px",
+              padding: "20px",
+              margin: "32px 0",
+              overflowX: "auto",
+            }}
+          >
+            <h3
+              style={{
+                fontFamily: "var(--font-space-mono)",
+                fontSize: "14px",
+                letterSpacing: "0.08em",
+                textTransform: "uppercase",
+                color: "var(--lime)",
+                marginBottom: "16px",
+                fontWeight: 700,
+              }}
+            >
+              ⚡ Quick Summary: Jiya Shankar &amp; KD Breakup Buzz
+            </h3>
+            <table
+              style={{
+                width: "100%",
+                borderCollapse: "collapse",
+                fontSize: "14px",
+                lineHeight: "1.6",
+              }}
+            >
+              <tbody>
+                <tr style={{ borderBottom: "1px solid rgba(255, 255, 255, 0.06)" }}>
+                  <td style={{ padding: "8px 12px", color: "var(--lavender)", width: "35%" }}>
+                    <strong>Celebrity</strong>
+                  </td>
+                  <td style={{ padding: "8px 12px", color: "#fff" }}>Jiya Shankar (Bigg Boss OTT 2)</td>
+                </tr>
+                <tr style={{ borderBottom: "1px solid rgba(255, 255, 255, 0.06)" }}>
+                  <td style={{ padding: "8px 12px", color: "var(--lavender)" }}>
+                    <strong>Fiancé</strong>
+                  </td>
+                  <td style={{ padding: "8px 12px", color: "#fff" }}>Kaaran Dhanak (KD) — US-based entrepreneur</td>
+                </tr>
+                <tr style={{ borderBottom: "1px solid rgba(255, 255, 255, 0.06)" }}>
+                  <td style={{ padding: "8px 12px", color: "var(--lavender)" }}>
+                    <strong>Engagement Date</strong>
+                  </td>
+                  <td style={{ padding: "8px 12px", color: "#fff" }}>August 5, 2026</td>
+                </tr>
+                <tr style={{ borderBottom: "1px solid rgba(255, 255, 255, 0.06)" }}>
+                  <td style={{ padding: "8px 12px", color: "var(--lavender)" }}>
+                    <strong>Initial Scare</strong>
+                  </td>
+                  <td style={{ padding: "8px 12px", color: "#fff" }}>
+                    Unfollowed KD on Oct 30 after cryptic heartbreak reposts
+                  </td>
+                </tr>
+                <tr style={{ borderBottom: "1px solid rgba(255, 255, 255, 0.06)" }}>
+                  <td style={{ padding: "8px 12px", color: "var(--lavender)" }}>
+                    <strong>Statement Issued</strong>
+                  </td>
+                  <td style={{ padding: "8px 12px", color: "#fff" }}>
+                    Oct 31, asking fans to respect privacy and stop speculating
+                  </td>
+                </tr>
+                <tr style={{ borderBottom: "1px solid rgba(255, 255, 255, 0.06)" }}>
+                  <td style={{ padding: "8px 12px", color: "var(--lavender)" }}>
+                    <strong>Latest Status</strong>
+                  </td>
+                  <td style={{ padding: "8px 12px", color: "var(--lime)", fontWeight: 700 }}>
+                    Following KD again; shared Game of Thrones Halloween photo on Nov 1
+                  </td>
+                </tr>
+                <tr>
+                  <td style={{ padding: "8px 12px", color: "var(--lavender)" }}>
+                    <strong>Engagement Photos</strong>
+                  </td>
+                  <td style={{ padding: "8px 12px", color: "#fff" }}>
+                    Remained intact throughout on Jiya&apos;s Instagram profile
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          {/* Related Stories Links */}
+          <div
+            style={{
+              background: "rgba(255, 255, 255, 0.03)",
+              border: "1px solid rgba(255, 255, 255, 0.08)",
+              borderRadius: "6px",
+              padding: "18px 22px",
+              margin: "32px 0 24px 0",
+            }}
+          >
+            <h4
+              style={{
+                color: "var(--lime)",
+                fontFamily: "var(--font-space-mono)",
+                fontSize: "13px",
+                letterSpacing: "0.05em",
+                textTransform: "uppercase",
+                marginBottom: "10px",
+                fontWeight: 700,
+              }}
+            >
+              Also Read on Buzz Originals
+            </h4>
+            <ul style={{ margin: 0, paddingLeft: "18px", lineHeight: "1.8", fontSize: "15px" }}>
+              <li>
+                <Link
+                  href="/orry-halloween-2026-janhvi-khushi-kapoor-competition"
+                  style={{ color: "var(--magenta)", textDecoration: "underline" }}
+                >
+                  Orry: Janhvi and Khushi Kapoor are His Halloween Competition
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/shah-rukh-khan-61st-birthday-mannat-handwritten-note"
+                  style={{ color: "var(--magenta)", textDecoration: "underline" }}
+                >
+                  Shah Rukh Khan Skips Mannat Balcony on His 61st Birthday, Thanks Fans With a Handwritten Note
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/bigg-boss-20-gullu-evicted-yung-dsa-fight"
+                  style={{ color: "var(--magenta)", textDecoration: "underline" }}
+                >
+                  Bigg Boss 20: Will Gullu Be Evicted After Yung DSA Fight?
+                </Link>
+              </li>
+            </ul>
+          </div>
 
           {/* Tags & Keywords */}
           <div
@@ -343,15 +498,16 @@ export default function JiyaShankarUnfollowsKDPage() {
             }}
           >
             {[
-              "Jiya Shankar",
-              "Jiya Shankar KD",
-              "Kaaran Dhanak",
-              "Jiya Shankar Engagement",
-              "Bigg Boss OTT 2",
-              "Bigg Boss",
+              "JiyaShankar",
+              "JiyaShankarKD",
+              "KaaranDhanak",
+              "JiyaShankarEngagement",
+              "BiggBossOTT2",
+              "BiggBoss",
               "Influencer",
-              "Bollywood News",
-              "Reality TV",
+              "BollywoodNews",
+              "RealityTV",
+              "Halloween2026",
             ].map((tag) => (
               <span
                 key={tag}

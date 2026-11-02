@@ -25,15 +25,15 @@ const realityArticles: RealityArticle[] = [
   {
     id: "jiya-shankar-unfollows-kd",
     show: "Bigg Boss OTT 2",
-    title: "Jiya Shankar Unfollows Fiancé KD on Instagram: What We Know So Far",
+    title: "Jiya Shankar Follows Fiancé KD Again After Breakup Rumours: Full Timeline",
     excerpt:
-      "Jiya Shankar has unfollowed fiancé Kaaran Dhanak (KD) and shared emotional reposts. Here is what fans noticed and what she said in her statement.",
-    badge: "Breakup Rumours",
-    badgeType: "pink",
+      "The breakup buzz around Jiya Shankar and Kaaran Dhanak (KD) has taken a new turn. Jiya is following KD on Instagram again and shared their Halloween costume picture. Here is the full timeline.",
+    badge: "🎃 Reconciliation Hint",
+    badgeType: "lime",
     image: "/images/jiya-shankar-unfollows-fiance-kd-instagram.jpg",
     href: "/jiya-shankar-unfollows-fiance-kd-instagram",
     readTime: "3 MIN READ",
-    timeAgo: "JUST IN",
+    timeAgo: "UPDATED",
   },
   {
     id: "bigg-boss-20-gullu-eviction",
@@ -184,39 +184,39 @@ export default function RealityShowsView() {
 
         {/* Lead Section: Latest Reality Published Article (Cover Story) + The Last 2 Blogs Uploaded Before It */}
         <section className="lead">
-          {/* Featured Cover Story: Jiya Shankar Unfollows KD */}
+          {/* Featured Cover Story: Jiya Shankar Follows KD Again */}
           <Link
             href="/jiya-shankar-unfollows-fiance-kd-instagram"
             className="feature-card group block"
-            aria-label="Read full cover story: Jiya Shankar Unfollows Fiancé KD on Instagram: What We Know So Far"
+            aria-label="Read full cover story: Jiya Shankar Follows Fiancé KD Again After Breakup Rumours: Full Timeline"
           >
             <div className="feature-media relative overflow-hidden">
               <Image
                 src="/images/jiya-shankar-unfollows-fiance-kd-instagram.jpg"
-                alt="Jiya Shankar Unfollows Fiancé KD on Instagram: What We Know So Far"
+                alt="Jiya Shankar Follows Fiancé KD Again After Breakup Rumours: Full Timeline"
                 fill
                 priority
                 className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
                 sizes="(max-width: 980px) 100vw, 65vw"
               />
               <div className="noise" />
-              <span className="badge pink feature-tag z-10">
-                💔 Breakup Rumours
+              <span className="badge lime feature-tag z-10">
+                🎃 Reconciliation Hint
               </span>
             </div>
             <div className="feature-body">
               <h2 className="disp text-white group-hover:text-[var(--lime)] transition-colors">
-                Jiya Shankar Unfollows Fiancé KD on Instagram: What We Know So Far
+                Jiya Shankar Follows Fiancé KD Again After Breakup Rumours: Full Timeline
               </h2>
               <p>
-                Jiya Shankar has unfollowed fiancé Kaaran Dhanak (KD) and shared emotional reposts. Here is what fans noticed and what she said in her statement.
+                The breakup buzz around Jiya Shankar and Kaaran Dhanak (KD) has taken a new turn. Jiya is following KD on Instagram again and shared their Halloween costume picture. Here is the full timeline.
               </p>
               <div className="meta-row mt-3">
                 <span className="text-[var(--lime)] font-bold">BIGG BOSS OTT 2</span>
                 <span className="dot-sep">◆</span>
                 <span>3 MIN READ</span>
                 <span className="dot-sep">◆</span>
-                <span className="text-[var(--magenta)] font-bold">JUST IN</span>
+                <span className="text-[var(--magenta)] font-bold">UPDATED NOV 2</span>
               </div>
             </div>
           </Link>

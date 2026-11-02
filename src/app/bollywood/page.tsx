@@ -346,7 +346,7 @@ export default function BollywoodPage() {
         {
           "@type": "ListItem",
           position: 3,
-          name: "Jiya Shankar Unfollows Fiancé KD on Instagram: What We Know So Far",
+          name: "Jiya Shankar Follows Fiancé KD Again After Breakup Rumours: Full Timeline",
           url: "https://www.buzzoriginals.com/jiya-shankar-unfollows-fiance-kd-instagram",
         },
         {
