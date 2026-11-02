@@ -177,6 +177,20 @@ export default function Home() {
 
   const editorialArticles: EditorialArticle[] = [
     {
+      id: "bigg-boss-20-salman-slams-scoutop",
+      anchorId: "salman-scoutop-story",
+      href: "/bigg-boss-20-salman-khan-slams-scoutop-love-gill",
+      title: "Bigg Boss 20: Salman Khan Slams ScoutOP for Not Standing Up for Love Gill",
+      excerpt: "Salman Khan came down hard on ScoutOP in Bigg Boss 20 Weekend Ka Vaar for not backing Love Gill. Here’s what he said and what led to it.",
+      category: "Reality TV Updates",
+      secondaryCategory: "Latest",
+      displayCategory: "BIGG BOSS 20 & WEEKEND KA VAAR",
+      badge: "Weekend Ka Vaar",
+      badgeType: "pink",
+      readTime: "3 MIN READ",
+      image: "/images/bigg-boss-20-salman-khan-slams-scoutop-love-gill.jpg",
+    },
+    {
       id: "bigg-boss-20-aasif-khan-evicted",
       anchorId: "aasif-khan-eviction-story",
       href: "/bigg-boss-20-aasif-khan-evicted",
@@ -936,6 +950,18 @@ export default function Home() {
               <span className="trend-rank">02</span>
               <div className="trend-text">
                 <Link
+                  href="/bigg-boss-20-salman-khan-slams-scoutop-love-gill"
+                  style={{ color: "inherit" }}
+                >
+                  <h3>Bigg Boss 20: Salman Khan slams ScoutOP over Love Gill: “Aap kisi ke saath loyal nahin”</h3>
+                  <span>REALITY SHOWS &amp; DRAMA · 730K REACTIONS</span>
+                </Link>
+              </div>
+            </div>
+            <div className="trend-item">
+              <span className="trend-rank">03</span>
+              <div className="trend-text">
+                <Link
                   href="/bigg-boss-20-aasif-khan-evicted"
                   style={{ color: "inherit" }}
                 >
@@ -945,7 +971,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">03</span>
+              <span className="trend-rank">04</span>
               <div className="trend-text">
                 <Link
                   href="/drishyam-3-ott-release-date-netflix"
@@ -957,7 +983,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">04</span>
+              <span className="trend-rank">05</span>
               <div className="trend-text">
                 <Link
                   href="/shah-rukh-khan-61st-birthday-mannat-handwritten-note"
@@ -969,7 +995,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">05</span>
+              <span className="trend-rank">06</span>
               <div className="trend-text">
                 <Link
                   href="/robert-downey-jr-pedro-pascal-halloween-costume-swap"
@@ -981,7 +1007,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">05</span>
+              <span className="trend-rank">07</span>
               <div className="trend-text">
                 <Link
                   href="/diljit-dosanjh-aura-india-tour-hurdles"
@@ -993,7 +1019,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">05</span>
+              <span className="trend-rank">08</span>
               <div className="trend-text">
                 <Link
                   href="/bhansali-productions-gangubai-post-eetha-trailer-backlash"
@@ -1005,7 +1031,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">06</span>
+              <span className="trend-rank">09</span>
               <div className="trend-text">
                 <Link
                   href="/maharani-season-5-release-date-january-2027"
@@ -1017,7 +1043,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">07</span>
+              <span className="trend-rank">10</span>
               <div className="trend-text">
                 <Link
                   href="/honey-singh-nephew-vidit-olak-dies-jalandhar-accident"

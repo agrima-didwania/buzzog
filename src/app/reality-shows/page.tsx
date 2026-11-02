@@ -6,6 +6,14 @@ export const metadata: Metadata = {
   description:
     "Eliminations, fights, weekly ration milestones, hot seat stories and dome drama — every Bigg Boss 20, Koffee With Karan, KBC 18 and Splitsvilla moment.",
   keywords: [
+    "Salman Khan slams ScoutOP",
+    "ScoutOP Love Gill",
+    "ScoutOP",
+    "Love Gill",
+    "Kaashvi Hiranandani",
+    "Rohit Shetty",
+    "Tanmay Singh",
+    "Lovepreet Kaur Gill",
     "Aasif Khan evicted Bigg Boss 20",
     "Bigg Boss 20 eviction",
     "Weekend Ka Vaar",
@@ -60,10 +68,10 @@ export const metadata: Metadata = {
     siteName: "Buzz Originals",
     images: [
       {
-        url: "/images/bigg-boss-20-aasif-khan-evicted.jpg",
+        url: "/images/bigg-boss-20-salman-khan-slams-scoutop-love-gill.jpg",
         width: 1024,
         height: 576,
-        alt: "Aasif Khan Evicted Bigg Boss 20 - Scout & Yung DSA Break Down — Buzz Originals Reality Shows",
+        alt: "Salman Slams ScoutOP Over Love Gill - Bigg Boss 20 Weekend Ka Vaar — Buzz Originals Reality Shows",
       },
     ],
     type: "website",
@@ -73,7 +81,7 @@ export const metadata: Metadata = {
     title: "Reality Shows — Buzz Originals",
     description:
       "Raw, unfiltered entertainment coverage of Bigg Boss 20, Koffee With Karan, KBC 18, Splitsvilla & Rise and Fall.",
-    images: ["/images/bigg-boss-20-aasif-khan-evicted.jpg"],
+    images: ["/images/bigg-boss-20-salman-khan-slams-scoutop-love-gill.jpg"],
   },
 };
 
@@ -100,6 +108,12 @@ export default function RealityShowsPage() {
         {
           "@type": "ListItem",
           position: 1,
+          name: "Bigg Boss 20: Salman Khan Slams ScoutOP for Not Standing Up for Love Gill",
+          url: "https://www.buzzoriginals.com/bigg-boss-20-salman-khan-slams-scoutop-love-gill",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
           name: "Bigg Boss 20: Aasif Khan Evicted, Scout and Yung DSA Cry as He Leaves",
           url: "https://www.buzzoriginals.com/bigg-boss-20-aasif-khan-evicted",
         },

@@ -23,6 +23,19 @@ interface RealityArticle {
 // All verified reality show articles in reverse chronological order
 const realityArticles: RealityArticle[] = [
   {
+    id: "bigg-boss-20-salman-slams-scoutop",
+    show: "Bigg Boss 20",
+    title: "Bigg Boss 20: Salman Khan Slams ScoutOP for Not Standing Up for Love Gill",
+    excerpt:
+      "Salman Khan came down hard on ScoutOP in Bigg Boss 20 Weekend Ka Vaar for not backing Love Gill. Here’s what he said and what led to it.",
+    badge: "🔥 Salman Slams Scout",
+    badgeType: "pink",
+    image: "/images/bigg-boss-20-salman-khan-slams-scoutop-love-gill.jpg",
+    href: "/bigg-boss-20-salman-khan-slams-scoutop-love-gill",
+    readTime: "3 MIN READ",
+    timeAgo: "JUST IN",
+  },
+  {
     id: "bigg-boss-20-aasif-khan-evicted",
     show: "Bigg Boss 20",
     title: "Bigg Boss 20: Aasif Khan Evicted, Scout and Yung DSA Cry as He Leaves",
@@ -197,16 +210,16 @@ export default function RealityShowsView() {
 
         {/* Lead Section: Latest Reality Published Article (Cover Story) + The Last 2 Blogs Uploaded Before It */}
         <section className="lead">
-          {/* Featured Cover Story: Bigg Boss 20 Aasif Khan Evicted */}
+          {/* Featured Cover Story: Salman Khan Slams ScoutOP */}
           <Link
-            href="/bigg-boss-20-aasif-khan-evicted"
+            href="/bigg-boss-20-salman-khan-slams-scoutop-love-gill"
             className="feature-card group block"
-            aria-label="Read full cover story: Bigg Boss 20: Aasif Khan Evicted, Scout and Yung DSA Cry as He Leaves"
+            aria-label="Read full cover story: Bigg Boss 20: Salman Khan Slams ScoutOP for Not Standing Up for Love Gill"
           >
             <div className="feature-media relative overflow-hidden">
               <Image
-                src="/images/bigg-boss-20-aasif-khan-evicted.jpg"
-                alt="Aasif Khan Evicted Bigg Boss 20 - Scout & Yung DSA Break Down"
+                src="/images/bigg-boss-20-salman-khan-slams-scoutop-love-gill.jpg"
+                alt="Salman Slams ScoutOP Over Love Gill - Bigg Boss 20 Weekend Ka Vaar"
                 fill
                 priority
                 className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
@@ -214,15 +227,15 @@ export default function RealityShowsView() {
               />
               <div className="noise" />
               <span className="badge pink feature-tag z-10">
-                ⚡ Eviction Confirmed
+                🔥 Salman Slams Scout
               </span>
             </div>
             <div className="feature-body">
               <h2 className="disp text-white group-hover:text-[var(--lime)] transition-colors">
-                Bigg Boss 20: Aasif Khan Evicted, Scout and Yung DSA Cry as He Leaves
+                Bigg Boss 20: Salman Khan Slams ScoutOP for Not Standing Up for Love Gill
               </h2>
               <p>
-                Aasif Khan is out of Bigg Boss 20. Salman Khan announced the eviction on Weekend Ka Vaar, and Scout and Yung DSA cried as he left. Read the full story.
+                Salman Khan came down hard on ScoutOP in Bigg Boss 20 Weekend Ka Vaar for not backing Love Gill. Here’s what he said and what led to it.
               </p>
               <div className="meta-row mt-3">
                 <span className="text-[var(--lime)] font-bold">BIGG BOSS 20</span>
@@ -236,10 +249,37 @@ export default function RealityShowsView() {
 
           {/* Right Stack: The last 2 blogs uploaded before the latest one */}
           <div className="stack">
-            {/* Card 1: Jiya Shankar Follows KD Again */}
+            {/* Card 1: Bigg Boss 20 Aasif Khan Evicted */}
+            <Link
+              href="/bigg-boss-20-aasif-khan-evicted"
+              className="card m1 group block"
+            >
+              <div className="card-media relative overflow-hidden">
+                <Image
+                  src="/images/bigg-boss-20-aasif-khan-evicted.jpg"
+                  alt="Aasif Khan Evicted Bigg Boss 20 - Scout & Yung DSA Break Down"
+                  fill
+                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 980px) 100vw, 35vw"
+                />
+                <span className="badge pink z-10 relative">⚡ Eviction Out</span>
+              </div>
+              <div className="card-body">
+                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
+                  Bigg Boss 20: Aasif Khan Evicted, Scout and Yung DSA Cry as He Leaves
+                </h3>
+                <div className="meta-row mt-2">
+                  <span className="text-[var(--lime)] font-bold">BIGG BOSS 20</span>
+                  <span className="dot-sep">◆</span>
+                  <span>3 MIN READ</span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Card 2: Jiya Shankar Follows KD Again */}
             <Link
               href="/jiya-shankar-unfollows-fiance-kd-instagram"
-              className="card m1 group block"
+              className="card m2 group block"
             >
               <div className="card-media relative overflow-hidden">
                 <Image
@@ -257,33 +297,6 @@ export default function RealityShowsView() {
                 </h3>
                 <div className="meta-row mt-2">
                   <span className="text-[var(--lime)] font-bold">BIGG BOSS OTT 2</span>
-                  <span className="dot-sep">◆</span>
-                  <span>3 MIN READ</span>
-                </div>
-              </div>
-            </Link>
-
-            {/* Card 2: Bigg Boss 20 Gullu Eviction Row */}
-            <Link
-              href="/bigg-boss-20-gullu-evicted-yung-dsa-fight"
-              className="card m2 group block"
-            >
-              <div className="card-media relative overflow-hidden">
-                <Image
-                  src="/images/bigg-boss-20-gullu-evicted-yung-dsa-fight.jpg"
-                  alt="Bigg Boss 20: Will Gullu Be Evicted After Yung DSA Fight?"
-                  fill
-                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
-                  sizes="(max-width: 980px) 100vw, 35vw"
-                />
-                <span className="badge pink z-10 relative">Eviction Row</span>
-              </div>
-              <div className="card-body">
-                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
-                  Bigg Boss 20: Will Gullu Be Evicted After Yung DSA Fight?
-                </h3>
-                <div className="meta-row mt-2">
-                  <span className="text-[var(--lime)] font-bold">BIGG BOSS 20</span>
                   <span className="dot-sep">◆</span>
                   <span>3 MIN READ</span>
                 </div>
