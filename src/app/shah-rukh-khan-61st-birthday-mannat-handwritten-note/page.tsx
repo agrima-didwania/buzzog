@@ -222,6 +222,15 @@ export default function ShahRukhKhan61stBirthdayMannatNotePage() {
           <p>
             Mannat is currently undergoing major reconstruction and expansion work, and SRK is living away from the house temporarily while renovations are completed. Because of the heavy ongoing structural work on the premises, the usual birthday balcony wave was not possible for safety reasons.
           </p>
+          <p style={{ marginTop: "16px" }}>
+            <strong>Also Read:</strong>{" "}
+            <Link
+              href="/king-first-song-tu-mil-jaaye-shah-rukh-khan-deepika-padukone"
+              style={{ color: "var(--lime)", textDecoration: "underline", fontWeight: 600 }}
+            >
+              King First Song ‘Tu Mil Jaaye’ Is Out
+            </Link>
+          </p>
 
           <h2>SRK’s Handwritten Note for Fans</h2>
           <p>
