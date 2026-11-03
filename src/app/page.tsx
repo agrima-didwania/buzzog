@@ -177,6 +177,20 @@ export default function Home() {
 
   const editorialArticles: EditorialArticle[] = [
     {
+      id: "koffee-with-karan-9-kareena-saif-teaser",
+      anchorId: "kwk-kareena-saif-story",
+      href: "/koffee-with-karan-9-kareena-kapoor-saif-ali-khan-teaser",
+      title: "Koffee With Karan 9: Kareena Kapoor Calls Herself No. 1, Saif Ali Khan Says He Is “Miscast”",
+      excerpt: "Kareena Kapoor and Saif Ali Khan return to Koffee With Karan 9 after 16 years. See teaser highlights and when to watch episode 4.",
+      category: "Reality TV Updates",
+      secondaryCategory: "Latest",
+      displayCategory: "REALITY TV & KWK 9",
+      badge: "☕ Saifeena Returns",
+      badgeType: "pink",
+      readTime: "4 MIN READ",
+      image: "/images/koffee-with-karan-9-kareena-kapoor-saif-ali-khan-teaser.jpg",
+    },
+    {
       id: "orry-sara-ali-khan-disappeared-friendship-fallout",
       anchorId: "orry-sara-fallout-story",
       href: "/orry-sara-ali-khan-disappeared-friendship-fallout",
@@ -965,15 +979,15 @@ export default function Home() {
         <section className="hero" id="featured">
           {/* 1. Main Featured Story (Commanding Top Story Presentation) */}
           <Link
-            href="/orry-sara-ali-khan-disappeared-friendship-fallout"
+            href="/koffee-with-karan-9-kareena-kapoor-saif-ali-khan-teaser"
             className="feature-card block transition-all hover:border-[var(--lime)] focus-visible:ring-2 focus-visible:ring-[var(--lime)] group"
             style={{ textDecoration: "none", color: "inherit" }}
-            aria-label="Read full article: Orry Says Sara Ali Khan “Disappeared” When He Needed Her Most"
+            aria-label="Read full article: Koffee With Karan 9: Kareena Kapoor Calls Herself No. 1, Saif Ali Khan Says He Is “Miscast”"
           >
             <div className="feature-media" style={{ overflow: "hidden", position: "relative" }}>
               <Image
-                src="/images/orry-sara-ali-khan-disappeared-friendship-fallout.jpg"
-                alt="Orry Says Sara Ali Khan Disappeared When He Needed Her Most"
+                src="/images/koffee-with-karan-9-kareena-kapoor-saif-ali-khan-teaser.jpg"
+                alt="Koffee With Karan 9: Kareena Kapoor Calls Herself No. 1, Saif Ali Khan Says He Is Miscast"
                 fill
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 750px"
@@ -982,28 +996,28 @@ export default function Home() {
               />
               <div className="noise" style={{ pointerEvents: "none" }}></div>
               <div className="feature-tag flex items-center gap-2">
-                <span className="badge pink">💔 Friendship Over?</span>
-                <span className="badge lime">Double Date Scoop</span>
-                <span className="badge">Bollywood Gossip</span>
+                <span className="badge pink">☕ Saifeena Returns</span>
+                <span className="badge lime">Episode 4 Teaser</span>
+                <span className="badge">KWK 9 Finale</span>
               </div>
             </div>
             <div className="feature-body">
               <div className="flex items-center gap-2 mb-2 font-mono text-xs text-[var(--lime)] font-bold tracking-wider uppercase">
-                <span>★ TOP STORY · ORRY BREAKS SILENCE ON SARA ALI KHAN &amp; AMRITA SINGH</span>
+                <span>★ TOP STORY · KAREENA &amp; SAIF REUNITE ON KOFFEE WITH KARAN AFTER 16 YEARS</span>
               </div>
               <h1 className="disp" style={{ color: "#fff" }}>
-                Orry Says Sara Ali Khan “Disappeared” When He Needed Her Most
+                Koffee With Karan 9: Kareena Kapoor Calls Herself No. 1, Saif Ali Khan Says He Is “Miscast”
               </h1>
               <p>
-                Orry says Sara Ali Khan was not there in his worst phase and he never got an apology. Here is what he said on Double Date and how the feud began.
+                Kareena Kapoor and Saif Ali Khan return to Koffee With Karan 9 after 16 years. See teaser highlights and when to watch episode 4.
               </p>
               <div className="meta-row mt-auto pt-3 border-t border-white/[0.06] flex items-center justify-between">
                 <div className="flex items-center gap-3">
-                  <span>BOLLYWOOD &amp; CELEB FEUD</span>
+                  <span>REALITY TV &amp; KOFFEE WITH KARAN</span>
                   <span className="dot-sep">◆</span>
                   <span>4 MIN READ</span>
                   <span className="dot-sep">◆</span>
-                  <span style={{ color: "var(--lime)" }}>EXCLUSIVE SCOOP</span>
+                  <span style={{ color: "var(--lime)" }}>EXCLUSIVE TEASER</span>
                 </div>
                 <span className="text-xs font-mono font-bold text-[var(--lime)] hidden sm:inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform">
                   Read Full Story →
@@ -1022,6 +1036,18 @@ export default function Home() {
               <span className="trend-rank">01</span>
               <div className="trend-text">
                 <Link
+                  href="/koffee-with-karan-9-kareena-kapoor-saif-ali-khan-teaser"
+                  style={{ color: "inherit" }}
+                >
+                  <h3>Koffee With Karan 9: Kareena Kapoor declares herself No. 1 actress as Saif jokes he is “miscast” on farewell season</h3>
+                  <span>REALITY TV &amp; KWK · 1.05M REACTIONS</span>
+                </Link>
+              </div>
+            </div>
+            <div className="trend-item">
+              <span className="trend-rank">02</span>
+              <div className="trend-text">
+                <Link
                   href="/orry-sara-ali-khan-disappeared-friendship-fallout"
                   style={{ color: "inherit" }}
                 >
@@ -1031,7 +1057,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">02</span>
+              <span className="trend-rank">03</span>
               <div className="trend-text">
                 <Link
                   href="/janhvi-kapoor-keerthy-suresh-deepfake-expert-new-laws"
@@ -1043,7 +1069,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">03</span>
+              <span className="trend-rank">04</span>
               <div className="trend-text">
                 <Link
                   href="/ramayana-advance-booking-73-crore-ranbir-kapoor"
@@ -1055,7 +1081,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">04</span>
+              <span className="trend-rank">05</span>
               <div className="trend-text">
                 <Link
                   href="/tiger-shroff-firing-case-13th-arrest-karnal-woman"
@@ -1063,18 +1089,6 @@ export default function Home() {
                 >
                   <h3>Tiger Shroff firing case: Mumbai Crime Branch arrests 22-year-old woman from Karnal, 13 in custody</h3>
                   <span>BOLLYWOOD &amp; CRIME · 920K REACTIONS</span>
-                </Link>
-              </div>
-            </div>
-            <div className="trend-item">
-              <span className="trend-rank">05</span>
-              <div className="trend-text">
-                <Link
-                  href="/udta-teer-aakash-kaushik-remembers-mukul-dev"
-                  style={{ color: "inherit" }}
-                >
-                  <h3>Udta Teer: Director Aakash Kaushik gets emotional remembering Mukul Dev’s midnight calls and final role</h3>
-                  <span>BOLLYWOOD &amp; TRIBUTE · 890K REACTIONS</span>
                 </Link>
               </div>
             </div>

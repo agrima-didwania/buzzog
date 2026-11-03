@@ -6,6 +6,14 @@ export const metadata: Metadata = {
   description:
     "Eliminations, fights, weekly ration milestones, hot seat stories and dome drama — every Bigg Boss 20, Koffee With Karan, KBC 18 and Splitsvilla moment.",
   keywords: [
+    "Koffee With Karan 9",
+    "Kareena Kapoor Saif Ali Khan Koffee With Karan",
+    "Koffee With Karan season 9 episode 4",
+    "KWK 9 teaser",
+    "Koffee With Karan 9 promo",
+    "Kareena Kapoor number one actress",
+    "Saif Ali Khan miscast",
+    "Koffee With Karan final season",
     "Salman Khan slams ScoutOP",
     "ScoutOP Love Gill",
     "ScoutOP",
@@ -68,10 +76,10 @@ export const metadata: Metadata = {
     siteName: "Buzz Originals",
     images: [
       {
-        url: "/images/bigg-boss-20-salman-khan-slams-scoutop-love-gill.jpg",
+        url: "/images/koffee-with-karan-9-kareena-kapoor-saif-ali-khan-teaser.jpg",
         width: 1024,
         height: 576,
-        alt: "Salman Slams ScoutOP Over Love Gill - Bigg Boss 20 Weekend Ka Vaar — Buzz Originals Reality Shows",
+        alt: "Koffee With Karan 9: Kareena Kapoor and Saif Ali Khan Return to the Couch — Buzz Originals Reality Shows",
       },
     ],
     type: "website",
@@ -81,7 +89,7 @@ export const metadata: Metadata = {
     title: "Reality Shows — Buzz Originals",
     description:
       "Raw, unfiltered entertainment coverage of Bigg Boss 20, Koffee With Karan, KBC 18, Splitsvilla & Rise and Fall.",
-    images: ["/images/bigg-boss-20-salman-khan-slams-scoutop-love-gill.jpg"],
+    images: ["/images/koffee-with-karan-9-kareena-kapoor-saif-ali-khan-teaser.jpg"],
   },
 };
 
@@ -108,12 +116,18 @@ export default function RealityShowsPage() {
         {
           "@type": "ListItem",
           position: 1,
+          name: "Koffee With Karan 9: Kareena Kapoor Calls Herself No. 1, Saif Ali Khan Says He Is “Miscast”",
+          url: "https://www.buzzoriginals.com/koffee-with-karan-9-kareena-kapoor-saif-ali-khan-teaser",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
           name: "Bigg Boss 20: Salman Khan Slams ScoutOP for Not Standing Up for Love Gill",
           url: "https://www.buzzoriginals.com/bigg-boss-20-salman-khan-slams-scoutop-love-gill",
         },
         {
           "@type": "ListItem",
-          position: 2,
+          position: 3,
           name: "Bigg Boss 20: Aasif Khan Evicted, Scout and Yung DSA Cry as He Leaves",
           url: "https://www.buzzoriginals.com/bigg-boss-20-aasif-khan-evicted",
         },
