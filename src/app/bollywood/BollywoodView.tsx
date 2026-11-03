@@ -20,6 +20,16 @@ interface BollywoodArticle {
 
 const bollywoodArticles: BollywoodArticle[] = [
   {
+    id: "orry-sara-ali-khan-disappeared-friendship-fallout",
+    category: "Celebrity Feud",
+    title: "Orry Says Sara Ali Khan “Disappeared” When He Needed Her Most",
+    badge: "💔 Friendship Over?",
+    badgeType: "pink",
+    image: "/images/orry-sara-ali-khan-disappeared-friendship-fallout.jpg",
+    href: "/orry-sara-ali-khan-disappeared-friendship-fallout",
+    readOrTime: "4 MIN READ",
+  },
+  {
     id: "janhvi-kapoor-keerthy-suresh-deepfake-expert-new-laws",
     category: "Cyber Controversy",
     title: "Janhvi Kapoor and Keerthy Suresh Hit by Deepfakes: Expert Demands Strict AI Laws",
@@ -466,16 +476,16 @@ export default function BollywoodView() {
 
         {/* Lead Section: Latest Bollywood Published Article (Cover Story) + The Last 2 Blogs Uploaded Before It */}
         <section className="lead">
-          {/* Cover Story: Latest Published Bollywood Story (Janhvi Kapoor and Keerthy Suresh Deepfake Row) */}
+          {/* Cover Story: Latest Published Bollywood Story (Orry & Sara Ali Khan Friendship Fallout) */}
           <Link
-            href="/janhvi-kapoor-keerthy-suresh-deepfake-expert-new-laws"
+            href="/orry-sara-ali-khan-disappeared-friendship-fallout"
             className="feature-card group block"
-            aria-label="Read full cover story: Janhvi Kapoor and Keerthy Suresh Hit by Deepfakes: Expert Demands Strict AI Laws"
+            aria-label="Read full cover story: Orry Says Sara Ali Khan “Disappeared” When He Needed Her Most"
           >
             <div className="feature-media relative overflow-hidden">
               <Image
-                src="/images/janhvi-kapoor-keerthy-suresh-deepfake-expert-new-laws.jpg"
-                alt="Janhvi Kapoor and Keerthy Suresh Hit by Deepfakes: Expert Demands Strict AI Laws"
+                src="/images/orry-sara-ali-khan-disappeared-friendship-fallout.jpg"
+                alt="Orry &amp; Sara Ali Khan Friendship Over? He Says She Disappeared"
                 fill
                 priority
                 className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
@@ -483,18 +493,18 @@ export default function BollywoodView() {
               />
               <div className="noise" />
               <span className="badge pink feature-tag z-10">
-                ⚠️ AI Misuse Row
+                💔 Friendship Over?
               </span>
             </div>
             <div className="feature-body">
               <h2 className="disp text-white group-hover:text-[var(--lime)] transition-colors">
-                Janhvi Kapoor and Keerthy Suresh Hit by Deepfakes: Expert Demands Strict AI Laws
+                Orry Says Sara Ali Khan “Disappeared” When He Needed Her Most
               </h2>
               <p>
-                Janhvi Kapoor and Keerthy Suresh were hit by deepfakes. A VFX expert wants bold AI labels by law. Read what happened.
+                Orry says Sara Ali Khan was not there in his worst phase and he never got an apology. Here is what he said on Double Date and how the feud began.
               </p>
               <div className="meta-row mt-3">
-                <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; CYBER ROW</span>
+                <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; CELEB FEUD</span>
                 <span className="dot-sep">◆</span>
                 <span>4 MIN READ</span>
                 <span className="dot-sep">◆</span>
@@ -505,7 +515,34 @@ export default function BollywoodView() {
 
           {/* Right Stack: The last 2 blogs uploaded before the latest one */}
           <div className="stack">
-            {/* Card 1: Ramayana Advance Booking Crosses Rs 73.40 Crore */}
+            {/* Card 1: Janhvi Kapoor and Keerthy Suresh Hit by Deepfakes */}
+            <Link
+              href="/janhvi-kapoor-keerthy-suresh-deepfake-expert-new-laws"
+              className="card m1 group block"
+            >
+              <div className="card-media relative overflow-hidden">
+                <Image
+                  src="/images/janhvi-kapoor-keerthy-suresh-deepfake-expert-new-laws.jpg"
+                  alt="Janhvi Kapoor and Keerthy Suresh Hit by Deepfakes: Expert Demands Strict AI Laws"
+                  fill
+                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 980px) 100vw, 35vw"
+                />
+                <span className="badge pink z-10 relative">⚠️ AI Misuse Row</span>
+              </div>
+              <div className="card-body">
+                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
+                  Janhvi Kapoor and Keerthy Suresh Hit by Deepfakes: Expert Demands Strict AI Laws
+                </h3>
+                <div className="meta-row mt-2">
+                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; CYBER</span>
+                  <span className="dot-sep">◆</span>
+                  <span>4 MIN READ</span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Card 2: Ramayana Advance Booking Crosses Rs 73.40 Crore */}
             <Link
               href="/ramayana-advance-booking-73-crore-ranbir-kapoor"
               className="card m1 group block"
@@ -526,33 +563,6 @@ export default function BollywoodView() {
                 </h3>
                 <div className="meta-row mt-2">
                   <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; BOX OFFICE</span>
-                  <span className="dot-sep">◆</span>
-                  <span>4 MIN READ</span>
-                </div>
-              </div>
-            </Link>
-
-            {/* Card 2: Tiger Shroff Firing Case 13th Arrest */}
-            <Link
-              href="/tiger-shroff-firing-case-13th-arrest-karnal-woman"
-              className="card m1 group block"
-            >
-              <div className="card-media relative overflow-hidden">
-                <Image
-                  src="/images/tiger-shroff-firing-case-13th-arrest-karnal-woman.jpg"
-                  alt="Tiger Shroff Firing Case: 13th Arrest Made - Woman Arrested From Karnal"
-                  fill
-                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
-                  sizes="(max-width: 980px) 100vw, 35vw"
-                />
-                <span className="badge pink z-10 relative">🚨 13th Arrest Made</span>
-              </div>
-              <div className="card-body">
-                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
-                  Tiger Shroff Firing Case: Woman Arrested From Karnal, 13 Accused Now in Custody
-                </h3>
-                <div className="meta-row mt-2">
-                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; CRIME</span>
                   <span className="dot-sep">◆</span>
                   <span>4 MIN READ</span>
                 </div>

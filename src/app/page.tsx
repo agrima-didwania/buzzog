@@ -177,6 +177,20 @@ export default function Home() {
 
   const editorialArticles: EditorialArticle[] = [
     {
+      id: "orry-sara-ali-khan-disappeared-friendship-fallout",
+      anchorId: "orry-sara-fallout-story",
+      href: "/orry-sara-ali-khan-disappeared-friendship-fallout",
+      title: "Orry Says Sara Ali Khan “Disappeared” When He Needed Her Most",
+      excerpt: "Orry says Sara Ali Khan was not there in his worst phase and he never got an apology. Here is what he said on Double Date and how the feud began.",
+      category: "Bollywood",
+      secondaryCategory: "Latest",
+      displayCategory: "BOLLYWOOD & CELEB FEUD",
+      badge: "💔 Friendship Over?",
+      badgeType: "pink",
+      readTime: "4 MIN READ",
+      image: "/images/orry-sara-ali-khan-disappeared-friendship-fallout.jpg",
+    },
+    {
       id: "janhvi-kapoor-keerthy-suresh-deepfake-expert-new-laws",
       anchorId: "janhvi-deepfake-story",
       href: "/janhvi-kapoor-keerthy-suresh-deepfake-expert-new-laws",
@@ -951,15 +965,15 @@ export default function Home() {
         <section className="hero" id="featured">
           {/* 1. Main Featured Story (Commanding Top Story Presentation) */}
           <Link
-            href="/janhvi-kapoor-keerthy-suresh-deepfake-expert-new-laws"
+            href="/orry-sara-ali-khan-disappeared-friendship-fallout"
             className="feature-card block transition-all hover:border-[var(--lime)] focus-visible:ring-2 focus-visible:ring-[var(--lime)] group"
             style={{ textDecoration: "none", color: "inherit" }}
-            aria-label="Read full article: Janhvi Kapoor and Keerthy Suresh Hit by Deepfakes: Expert Demands Strict AI Laws"
+            aria-label="Read full article: Orry Says Sara Ali Khan “Disappeared” When He Needed Her Most"
           >
             <div className="feature-media" style={{ overflow: "hidden", position: "relative" }}>
               <Image
-                src="/images/janhvi-kapoor-keerthy-suresh-deepfake-expert-new-laws.jpg"
-                alt="Janhvi Kapoor and Keerthy Suresh Hit by Deepfakes: Expert Demands Strict AI Laws"
+                src="/images/orry-sara-ali-khan-disappeared-friendship-fallout.jpg"
+                alt="Orry Says Sara Ali Khan Disappeared When He Needed Her Most"
                 fill
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 750px"
@@ -968,28 +982,28 @@ export default function Home() {
               />
               <div className="noise" style={{ pointerEvents: "none" }}></div>
               <div className="feature-tag flex items-center gap-2">
-                <span className="badge pink">⚠️ AI Misuse Row</span>
-                <span className="badge lime">Strict AI Laws Demanded</span>
-                <span className="badge">Cyber Controversy</span>
+                <span className="badge pink">💔 Friendship Over?</span>
+                <span className="badge lime">Double Date Scoop</span>
+                <span className="badge">Bollywood Gossip</span>
               </div>
             </div>
             <div className="feature-body">
               <div className="flex items-center gap-2 mb-2 font-mono text-xs text-[var(--lime)] font-bold tracking-wider uppercase">
-                <span>★ TOP STORY · AI MISUSE ROW ROCKS BOLLYWOOD &amp; SOUTH CINEMA</span>
+                <span>★ TOP STORY · ORRY BREAKS SILENCE ON SARA ALI KHAN &amp; AMRITA SINGH</span>
               </div>
               <h1 className="disp" style={{ color: "#fff" }}>
-                Janhvi Kapoor and Keerthy Suresh Hit by Deepfakes: Expert Demands Strict AI Laws
+                Orry Says Sara Ali Khan “Disappeared” When He Needed Her Most
               </h1>
               <p>
-                Janhvi Kapoor and Keerthy Suresh were hit by deepfakes. A VFX expert wants bold AI labels by law. Read what happened.
+                Orry says Sara Ali Khan was not there in his worst phase and he never got an apology. Here is what he said on Double Date and how the feud began.
               </p>
               <div className="meta-row mt-auto pt-3 border-t border-white/[0.06] flex items-center justify-between">
                 <div className="flex items-center gap-3">
-                  <span>BOLLYWOOD &amp; TECH CONTROVERSY</span>
+                  <span>BOLLYWOOD &amp; CELEB FEUD</span>
                   <span className="dot-sep">◆</span>
                   <span>4 MIN READ</span>
                   <span className="dot-sep">◆</span>
-                  <span style={{ color: "var(--lime)" }}>CYBER SPOTLIGHT</span>
+                  <span style={{ color: "var(--lime)" }}>EXCLUSIVE SCOOP</span>
                 </div>
                 <span className="text-xs font-mono font-bold text-[var(--lime)] hidden sm:inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform">
                   Read Full Story →
@@ -1008,6 +1022,18 @@ export default function Home() {
               <span className="trend-rank">01</span>
               <div className="trend-text">
                 <Link
+                  href="/orry-sara-ali-khan-disappeared-friendship-fallout"
+                  style={{ color: "inherit" }}
+                >
+                  <h3>Orry says Sara Ali Khan “disappeared” during his darkest phase: uncovers fallout with Amrita Singh on Double Date</h3>
+                  <span>BOLLYWOOD &amp; GOSSIP · 995K REACTIONS</span>
+                </Link>
+              </div>
+            </div>
+            <div className="trend-item">
+              <span className="trend-rank">02</span>
+              <div className="trend-text">
+                <Link
                   href="/janhvi-kapoor-keerthy-suresh-deepfake-expert-new-laws"
                   style={{ color: "inherit" }}
                 >
@@ -1017,7 +1043,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">02</span>
+              <span className="trend-rank">03</span>
               <div className="trend-text">
                 <Link
                   href="/ramayana-advance-booking-73-crore-ranbir-kapoor"
@@ -1029,7 +1055,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">03</span>
+              <span className="trend-rank">04</span>
               <div className="trend-text">
                 <Link
                   href="/tiger-shroff-firing-case-13th-arrest-karnal-woman"
@@ -1041,7 +1067,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">04</span>
+              <span className="trend-rank">05</span>
               <div className="trend-text">
                 <Link
                   href="/udta-teer-aakash-kaushik-remembers-mukul-dev"

@@ -6,6 +6,20 @@ export const metadata: Metadata = {
   description:
     "Bollywood coverage from Buzz Originals — raw, unfiltered, built for the group chat. Red carpets, rumours, airport looks and exclusives.",
   keywords: [
+    "Orry Sara Ali Khan",
+    "Orry Sara Ali Khan fallout",
+    "Orry Sara Ali Khan friendship",
+    "Orry Amrita Singh",
+    "Orry Double Date",
+    "Orry Sara Ali Khan Double Date",
+    "Sara Ali Khan Orry controversy",
+    "Orry latest news",
+    "Sara Ali Khan Orry feud",
+    "celebrity friendship fallout",
+    "Neha Dhupia Angad Bedi show",
+    "Ibrahim Ali Khan unfollow Orry",
+    "Palak Tiwari Orry",
+    "Sara Ali Khan NCB 2020",
     "Janhvi Kapoor deepfake",
     "Keerthy Suresh deepfake",
     "Janhvi Kapoor AI video",
@@ -292,10 +306,10 @@ export const metadata: Metadata = {
     siteName: "Buzz Originals",
     images: [
       {
-        url: "/images/janhvi-kapoor-keerthy-suresh-deepfake-expert-new-laws.jpg",
+        url: "/images/orry-sara-ali-khan-disappeared-friendship-fallout.jpg",
         width: 1024,
         height: 576,
-        alt: "Janhvi Kapoor and Keerthy Suresh Hit by Deepfakes: Expert Demands Strict AI Laws — Buzz Originals Bollywood",
+        alt: "Orry Says Sara Ali Khan Disappeared When He Needed Her Most — Buzz Originals Bollywood",
       },
     ],
     type: "website",
@@ -305,7 +319,7 @@ export const metadata: Metadata = {
     title: "Bollywood — Buzz Originals",
     description:
       "Raw, unfiltered Bollywood coverage of red carpets, gossip, airport sightings & exclusives.",
-    images: ["/images/janhvi-kapoor-keerthy-suresh-deepfake-expert-new-laws.jpg"],
+    images: ["/images/orry-sara-ali-khan-disappeared-friendship-fallout.jpg"],
   },
 };
 
@@ -332,18 +346,24 @@ export default function BollywoodPage() {
         {
           "@type": "ListItem",
           position: 1,
+          name: "Orry Says Sara Ali Khan “Disappeared” When He Needed Her Most",
+          url: "https://www.buzzoriginals.com/orry-sara-ali-khan-disappeared-friendship-fallout",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
           name: "Janhvi Kapoor Deepfake: Expert Demands Strict AI Laws",
           url: "https://www.buzzoriginals.com/janhvi-kapoor-keerthy-suresh-deepfake-expert-new-laws",
         },
         {
           "@type": "ListItem",
-          position: 2,
+          position: 3,
           name: "Ramayana Advance Booking: Film Hits Rs 73.40 Crore",
           url: "https://www.buzzoriginals.com/ramayana-advance-booking-73-crore-ranbir-kapoor",
         },
         {
           "@type": "ListItem",
-          position: 3,
+          position: 4,
           name: "Tiger Shroff Firing Case: 13th Arrest Made",
           url: "https://www.buzzoriginals.com/tiger-shroff-firing-case-13th-arrest-karnal-woman",
         },
