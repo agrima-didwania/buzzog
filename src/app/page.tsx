@@ -1391,10 +1391,10 @@ export default function Home() {
                             : `Vote for ${opt.label}`
                         }
                       >
-                        <div className="poll-opt-label">
-                          <span>{opt.label}</span>
+                        <div className="poll-opt-label flex justify-between items-baseline gap-2.5">
+                          <span className="text-left leading-snug">{opt.label}</span>
                           {pollVoted && (
-                            <span className="pct font-mono font-bold">
+                            <span className="pct font-mono font-bold whitespace-nowrap shrink-0 text-xs">
                               {voteCount} {voteCount === 1 ? "vote" : "votes"}
                             </span>
                           )}
