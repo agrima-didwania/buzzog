@@ -20,6 +20,16 @@ interface BollywoodArticle {
 
 const bollywoodArticles: BollywoodArticle[] = [
   {
+    id: "janhvi-kapoor-keerthy-suresh-deepfake-expert-new-laws",
+    category: "Cyber Controversy",
+    title: "Janhvi Kapoor and Keerthy Suresh Hit by Deepfakes: Expert Demands Strict AI Laws",
+    badge: "⚠️ AI Misuse Row",
+    badgeType: "pink",
+    image: "/images/janhvi-kapoor-keerthy-suresh-deepfake-expert-new-laws.jpg",
+    href: "/janhvi-kapoor-keerthy-suresh-deepfake-expert-new-laws",
+    readOrTime: "4 MIN READ",
+  },
+  {
     id: "ramayana-advance-booking-73-crore-ranbir-kapoor",
     category: "Box Office Record",
     title: "Ramayana Advance Booking: Ranbir Kapoor’s Film Crosses Rs 73.40 Crore Before Release",
@@ -456,35 +466,35 @@ export default function BollywoodView() {
 
         {/* Lead Section: Latest Bollywood Published Article (Cover Story) + The Last 2 Blogs Uploaded Before It */}
         <section className="lead">
-          {/* Cover Story: Latest Published Bollywood Story (Ramayana Advance Booking 73 Crore) */}
+          {/* Cover Story: Latest Published Bollywood Story (Janhvi Kapoor and Keerthy Suresh Deepfake Row) */}
           <Link
-            href="/ramayana-advance-booking-73-crore-ranbir-kapoor"
+            href="/janhvi-kapoor-keerthy-suresh-deepfake-expert-new-laws"
             className="feature-card group block"
-            aria-label="Read full cover story: Ramayana Advance Booking: Ranbir Kapoor’s Film Crosses Rs 73.40 Crore Before Release"
+            aria-label="Read full cover story: Janhvi Kapoor and Keerthy Suresh Hit by Deepfakes: Expert Demands Strict AI Laws"
           >
             <div className="feature-media relative overflow-hidden">
               <Image
-                src="/images/ramayana-advance-booking-73-crore-ranbir-kapoor.jpg"
-                alt="Ramayana Advance Booking Crosses Rs 73.40 Crore - Ranbir Kapoor, Sai Pallavi, Ravie Dubey"
+                src="/images/janhvi-kapoor-keerthy-suresh-deepfake-expert-new-laws.jpg"
+                alt="Janhvi Kapoor and Keerthy Suresh Hit by Deepfakes: Expert Demands Strict AI Laws"
                 fill
                 priority
                 className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
                 sizes="(max-width: 980px) 100vw, 65vw"
               />
               <div className="noise" />
-              <span className="badge lime feature-tag z-10">
-                🎟️ ₹73.40 Cr Advance
+              <span className="badge pink feature-tag z-10">
+                ⚠️ AI Misuse Row
               </span>
             </div>
             <div className="feature-body">
               <h2 className="disp text-white group-hover:text-[var(--lime)] transition-colors">
-                Ramayana Advance Booking: Ranbir Kapoor’s Film Crosses Rs 73.40 Crore Before Release
+                Janhvi Kapoor and Keerthy Suresh Hit by Deepfakes: Expert Demands Strict AI Laws
               </h2>
               <p>
-                Ramayana: Part One has earned Rs 73.40 crore in advance bookings in India. See ticket numbers, Hindi 3D sales, overseas numbers and release date.
+                Janhvi Kapoor and Keerthy Suresh were hit by deepfakes. A VFX expert wants bold AI labels by law. Read what happened.
               </p>
               <div className="meta-row mt-3">
-                <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; BOX OFFICE</span>
+                <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; CYBER ROW</span>
                 <span className="dot-sep">◆</span>
                 <span>4 MIN READ</span>
                 <span className="dot-sep">◆</span>
@@ -495,7 +505,34 @@ export default function BollywoodView() {
 
           {/* Right Stack: The last 2 blogs uploaded before the latest one */}
           <div className="stack">
-            {/* Card 1: Tiger Shroff Firing Case 13th Arrest */}
+            {/* Card 1: Ramayana Advance Booking Crosses Rs 73.40 Crore */}
+            <Link
+              href="/ramayana-advance-booking-73-crore-ranbir-kapoor"
+              className="card m1 group block"
+            >
+              <div className="card-media relative overflow-hidden">
+                <Image
+                  src="/images/ramayana-advance-booking-73-crore-ranbir-kapoor.jpg"
+                  alt="Ramayana Advance Booking Crosses Rs 73.40 Crore - Ranbir Kapoor, Sai Pallavi, Ravie Dubey"
+                  fill
+                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 980px) 100vw, 35vw"
+                />
+                <span className="badge lime z-10 relative">🎟️ ₹73.40 Cr Advance</span>
+              </div>
+              <div className="card-body">
+                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
+                  Ramayana Advance Booking: Ranbir Kapoor’s Film Crosses Rs 73.40 Crore Before Release
+                </h3>
+                <div className="meta-row mt-2">
+                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; BOX OFFICE</span>
+                  <span className="dot-sep">◆</span>
+                  <span>4 MIN READ</span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Card 2: Tiger Shroff Firing Case 13th Arrest */}
             <Link
               href="/tiger-shroff-firing-case-13th-arrest-karnal-woman"
               className="card m1 group block"
@@ -516,33 +553,6 @@ export default function BollywoodView() {
                 </h3>
                 <div className="meta-row mt-2">
                   <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; CRIME</span>
-                  <span className="dot-sep">◆</span>
-                  <span>4 MIN READ</span>
-                </div>
-              </div>
-            </Link>
-
-            {/* Card 2: Udta Teer Director Aakash Kaushik Remembers Mukul Dev */}
-            <Link
-              href="/udta-teer-aakash-kaushik-remembers-mukul-dev"
-              className="card m1 group block"
-            >
-              <div className="card-media relative overflow-hidden">
-                <Image
-                  src="/images/udta-teer-aakash-kaushik-remembers-mukul-dev.jpg"
-                  alt="Udta Teer director Aakash Kaushik with late actor Mukul Dev"
-                  fill
-                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
-                  sizes="(max-width: 980px) 100vw, 35vw"
-                />
-                <span className="badge lime z-10 relative">🎬 Director Scoop</span>
-              </div>
-              <div className="card-body">
-                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
-                  Udta Teer Director Aakash Kaushik Gets Emotional Remembering Mukul Dev
-                </h3>
-                <div className="meta-row mt-2">
-                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; TRIBUTE</span>
                   <span className="dot-sep">◆</span>
                   <span>4 MIN READ</span>
                 </div>

@@ -22,6 +22,18 @@ interface NewsArticle {
 // Only verified breaking entertainment news stories (fatwas, obituaries, police complaints, eviction rows, box-office shifts)
 const newsArticles: NewsArticle[] = [
   {
+    id: "janhvi-kapoor-keerthy-suresh-deepfake-expert-new-laws",
+    category: "Bollywood",
+    title: "Janhvi Kapoor and Keerthy Suresh Hit by Deepfakes: Expert Demands Strict AI Laws",
+    badge: "AI Misuse Row",
+    badgeType: "pink",
+    image: "/images/janhvi-kapoor-keerthy-suresh-deepfake-expert-new-laws.jpg",
+    href: "/janhvi-kapoor-keerthy-suresh-deepfake-expert-new-laws",
+    readOrTime: "4 MIN READ",
+    excerpt:
+      "Janhvi Kapoor and Keerthy Suresh were hit by deepfakes. A VFX expert wants bold AI labels by law. Read what happened.",
+  },
+  {
     id: "tiger-shroff-firing-case-13th-arrest-karnal-woman",
     category: "Bollywood",
     title: "Tiger Shroff Firing Case: Woman Arrested From Karnal, 13 Accused Now in Custody",

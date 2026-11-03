@@ -6,6 +6,13 @@ export const metadata: Metadata = {
   description:
     "News coverage from Buzz Originals — raw, unfiltered, built for the group chat. Everything breaking across reality TV, Bollywood, movies and OTT — newest first, updated hourly.",
   keywords: [
+    "Janhvi Kapoor deepfake",
+    "Keerthy Suresh deepfake",
+    "Janhvi Kapoor AI video",
+    "deepfake laws in India",
+    "AI content labelling",
+    "Jr NTR Chuttamalle deepfake",
+    "Bollywood deepfake news",
     "Tiger Shroff firing case",
     "Tiger Shroff firing case latest update",
     "Tiger Shroff firing case news",
@@ -126,10 +133,10 @@ export const metadata: Metadata = {
     siteName: "Buzz Originals",
     images: [
       {
-        url: "/images/tiger-shroff-firing-case-13th-arrest-karnal-woman.jpg",
+        url: "/images/janhvi-kapoor-keerthy-suresh-deepfake-expert-new-laws.jpg",
         width: 1024,
         height: 576,
-        alt: "Tiger Shroff Firing Case: 13th Arrest Made — Buzz Originals News Desk",
+        alt: "Janhvi Kapoor and Keerthy Suresh Hit by Deepfakes: Expert Demands Strict AI Laws — Buzz Originals News Desk",
       },
     ],
     type: "website",
@@ -139,7 +146,7 @@ export const metadata: Metadata = {
     title: "News — Buzz Originals",
     description:
       "Raw, unfiltered entertainment news across reality TV, Bollywood, movies and OTT.",
-    images: ["/images/tiger-shroff-firing-case-13th-arrest-karnal-woman.jpg"],
+    images: ["/images/janhvi-kapoor-keerthy-suresh-deepfake-expert-new-laws.jpg"],
   },
 };
 

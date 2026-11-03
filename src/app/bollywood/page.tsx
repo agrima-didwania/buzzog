@@ -6,6 +6,13 @@ export const metadata: Metadata = {
   description:
     "Bollywood coverage from Buzz Originals — raw, unfiltered, built for the group chat. Red carpets, rumours, airport looks and exclusives.",
   keywords: [
+    "Janhvi Kapoor deepfake",
+    "Keerthy Suresh deepfake",
+    "Janhvi Kapoor AI video",
+    "deepfake laws in India",
+    "AI content labelling",
+    "Jr NTR Chuttamalle deepfake",
+    "Bollywood deepfake news",
     "Ramayana advance booking",
     "Ramayana advance booking collection",
     "Ranbir Kapoor Ramayana",
@@ -285,10 +292,10 @@ export const metadata: Metadata = {
     siteName: "Buzz Originals",
     images: [
       {
-        url: "/images/ramayana-advance-booking-73-crore-ranbir-kapoor.jpg",
+        url: "/images/janhvi-kapoor-keerthy-suresh-deepfake-expert-new-laws.jpg",
         width: 1024,
         height: 576,
-        alt: "Ramayana Advance Booking Crosses Rs 73.40 Crore — Buzz Originals Bollywood",
+        alt: "Janhvi Kapoor and Keerthy Suresh Hit by Deepfakes: Expert Demands Strict AI Laws — Buzz Originals Bollywood",
       },
     ],
     type: "website",
@@ -298,7 +305,7 @@ export const metadata: Metadata = {
     title: "Bollywood — Buzz Originals",
     description:
       "Raw, unfiltered Bollywood coverage of red carpets, gossip, airport sightings & exclusives.",
-    images: ["/images/ramayana-advance-booking-73-crore-ranbir-kapoor.jpg"],
+    images: ["/images/janhvi-kapoor-keerthy-suresh-deepfake-expert-new-laws.jpg"],
   },
 };
 
@@ -325,18 +332,24 @@ export default function BollywoodPage() {
         {
           "@type": "ListItem",
           position: 1,
+          name: "Janhvi Kapoor Deepfake: Expert Demands Strict AI Laws",
+          url: "https://www.buzzoriginals.com/janhvi-kapoor-keerthy-suresh-deepfake-expert-new-laws",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
           name: "Ramayana Advance Booking: Film Hits Rs 73.40 Crore",
           url: "https://www.buzzoriginals.com/ramayana-advance-booking-73-crore-ranbir-kapoor",
         },
         {
           "@type": "ListItem",
-          position: 2,
+          position: 3,
           name: "Tiger Shroff Firing Case: 13th Arrest Made",
           url: "https://www.buzzoriginals.com/tiger-shroff-firing-case-13th-arrest-karnal-woman",
         },
         {
           "@type": "ListItem",
-          position: 3,
+          position: 4,
           name: "Udta Teer Director Aakash Kaushik Remembers Mukul Dev",
           url: "https://www.buzzoriginals.com/udta-teer-aakash-kaushik-remembers-mukul-dev",
         },
