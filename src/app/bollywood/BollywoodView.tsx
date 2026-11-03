@@ -20,6 +20,16 @@ interface BollywoodArticle {
 
 const bollywoodArticles: BollywoodArticle[] = [
   {
+    id: "chandan-roy-aakhri-ride-interview",
+    category: "Exclusive Interview",
+    title: "Chandan Roy on Aakhri Ride: Nine Years in Mumbai & Why He Said Yes to Anurag Kashyap",
+    badge: "🎬 Exclusive Interview",
+    badgeType: "pink",
+    image: "/images/chandan-roy-aakhri-ride-interview.jpg",
+    href: "/chandan-roy-aakhri-ride-interview",
+    readOrTime: "4 MIN READ",
+  },
+  {
     id: "honey-trehan-slams-new-cbfc-advisory-satluj",
     category: "Censorship Row",
     title: "Satluj Director Honey Trehan Slams CBFC’s New Advisory: “Cowardice and Dictatorship”",
@@ -486,16 +496,16 @@ export default function BollywoodView() {
 
         {/* Lead Section: Latest Bollywood Published Article (Cover Story) + The Last 2 Blogs Uploaded Before It */}
         <section className="lead">
-          {/* Cover Story: Latest Published Bollywood Story (Honey Trehan Slams CBFC Advisory) */}
+          {/* Cover Story: Latest Published Bollywood Story (Chandan Roy on Aakhri Ride) */}
           <Link
-            href="/honey-trehan-slams-new-cbfc-advisory-satluj"
+            href="/chandan-roy-aakhri-ride-interview"
             className="feature-card group block"
-            aria-label="Read full cover story: Satluj Director Honey Trehan Slams CBFC’s New Advisory: “Cowardice and Dictatorship”"
+            aria-label="Read full cover story: Chandan Roy Says His Mumbai Struggles Helped Him Play a Desperate Cab Driver in Aakhri Ride"
           >
             <div className="feature-media relative overflow-hidden">
               <Image
-                src="/images/honey-trehan-slams-new-cbfc-advisory-satluj.jpg"
-                alt="Honey Trehan Slams New CBFC Advisory: Satluj Director Calls Guidelines Dictatorship"
+                src="/images/chandan-roy-aakhri-ride-interview.jpg"
+                alt="Chandan Roy Aakhri Ride: Actor on Mumbai Struggles and Playing a Cab Driver"
                 fill
                 priority
                 className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
@@ -503,18 +513,18 @@ export default function BollywoodView() {
               />
               <div className="noise" />
               <span className="badge pink feature-tag z-10">
-                ⚡ CBFC Advisory Row
+                ⚡ Exclusive Interview
               </span>
             </div>
             <div className="feature-body">
               <h2 className="disp text-white group-hover:text-[var(--lime)] transition-colors">
-                Satluj Director Honey Trehan Slams CBFC’s New Advisory: “Cowardice and Dictatorship”
+                Chandan Roy Says His Mumbai Struggles Helped Him Play a Desperate Cab Driver in Aakhri Ride
               </h2>
               <p>
-                Honey Trehan, director of Satluj, has reacted strongly to CBFC’s new advisory for filmmakers. Here’s what the rules say and why he is angry.
+                Panchayat actor Chandan Roy talks about his Bihar roots, nine years in Mumbai and why he said yes to Aakhri Ride, presented by Anurag Kashyap.
               </p>
               <div className="meta-row mt-3">
-                <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; CENSORSHIP</span>
+                <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; INTERVIEW</span>
                 <span className="dot-sep">◆</span>
                 <span>4 MIN READ</span>
                 <span className="dot-sep">◆</span>
@@ -525,7 +535,34 @@ export default function BollywoodView() {
 
           {/* Right Stack: The last 2 blogs uploaded before the latest one */}
           <div className="stack">
-            {/* Card 1: Orry & Sara Ali Khan Friendship Fallout */}
+            {/* Card 1: Honey Trehan Slams New CBFC Advisory */}
+            <Link
+              href="/honey-trehan-slams-new-cbfc-advisory-satluj"
+              className="card m1 group block"
+            >
+              <div className="card-media relative overflow-hidden">
+                <Image
+                  src="/images/honey-trehan-slams-new-cbfc-advisory-satluj.jpg"
+                  alt="Honey Trehan Slams New CBFC Advisory: Satluj Director Calls Guidelines Dictatorship"
+                  fill
+                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 980px) 100vw, 35vw"
+                />
+                <span className="badge pink z-10 relative">⚡ CBFC Advisory Row</span>
+              </div>
+              <div className="card-body">
+                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
+                  Satluj Director Honey Trehan Slams CBFC’s New Advisory: “Cowardice and Dictatorship”
+                </h3>
+                <div className="meta-row mt-2">
+                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; CENSORSHIP</span>
+                  <span className="dot-sep">◆</span>
+                  <span>4 MIN READ</span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Card 2: Orry & Sara Ali Khan Friendship Fallout */}
             <Link
               href="/orry-sara-ali-khan-disappeared-friendship-fallout"
               className="card m1 group block"
@@ -546,33 +583,6 @@ export default function BollywoodView() {
                 </h3>
                 <div className="meta-row mt-2">
                   <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; CELEB FEUD</span>
-                  <span className="dot-sep">◆</span>
-                  <span>4 MIN READ</span>
-                </div>
-              </div>
-            </Link>
-
-            {/* Card 2: Janhvi Kapoor and Keerthy Suresh Hit by Deepfakes */}
-            <Link
-              href="/janhvi-kapoor-keerthy-suresh-deepfake-expert-new-laws"
-              className="card m1 group block"
-            >
-              <div className="card-media relative overflow-hidden">
-                <Image
-                  src="/images/janhvi-kapoor-keerthy-suresh-deepfake-expert-new-laws.jpg"
-                  alt="Janhvi Kapoor and Keerthy Suresh Hit by Deepfakes: Expert Demands Strict AI Laws"
-                  fill
-                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
-                  sizes="(max-width: 980px) 100vw, 35vw"
-                />
-                <span className="badge pink z-10 relative">⚠️ AI Misuse Row</span>
-              </div>
-              <div className="card-body">
-                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
-                  Janhvi Kapoor and Keerthy Suresh Hit by Deepfakes: Expert Demands Strict AI Laws
-                </h3>
-                <div className="meta-row mt-2">
-                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; CYBER</span>
                   <span className="dot-sep">◆</span>
                   <span>4 MIN READ</span>
                 </div>

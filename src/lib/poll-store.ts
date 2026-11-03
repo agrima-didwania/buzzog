@@ -23,14 +23,16 @@ const DATA_DIR = path.join(process.cwd(), ".data");
 const POLLS_FILE = path.join(DATA_DIR, "polls.json");
 
 const DEFAULT_POLL: PollState = {
-  id: "diwali-imax-clash-2026",
-  question: "Big Screen Clash: Which epic are you watching first on IMAX?",
-  category: "IMAX Box Office",
+  id: "king-tu-mil-jaaye-poll-2026",
+  question: "King is back with a new track, ‘Tu Mil Jaaye’! 🎶 But has it won your heart? Tell us what you think. Vote now!",
+  category: "New Music Track",
   options: [
-    { id: "A", label: "Ramayana: Part 1 (Ranbir & Yash)", votes: 142, percentage: 68 },
-    { id: "B", label: "Godzilla Minus Zero (Monsterverse)", votes: 67, percentage: 32 },
+    { id: "A", label: "❤️ Loved it! Already on repeat.", votes: 96, percentage: 52 },
+    { id: "B", label: "🔥 It's a chartbuster! King nailed it.", votes: 52, percentage: 28 },
+    { id: "C", label: "🙂 It's good, but not his best.", votes: 24, percentage: 13 },
+    { id: "D", label: "👎 Not really my vibe.", votes: 12, percentage: 7 },
   ],
-  totalVotes: 209,
+  totalVotes: 184,
   voterHashes: [],
   updatedAt: new Date().toISOString(),
 };
@@ -44,6 +46,11 @@ async function ensurePollFile(): Promise<void> {
     await fs.mkdir(DATA_DIR, { recursive: true });
     try {
       await fs.access(POLLS_FILE);
+      const raw = await fs.readFile(POLLS_FILE, "utf8");
+      const current = JSON.parse(raw);
+      if (current.id !== DEFAULT_POLL.id) {
+        await fs.writeFile(POLLS_FILE, JSON.stringify(DEFAULT_POLL, null, 2), "utf8");
+      }
     } catch {
       await fs.writeFile(POLLS_FILE, JSON.stringify(DEFAULT_POLL, null, 2), "utf8");
     }
@@ -56,7 +63,12 @@ export async function getPoll(): Promise<PollState> {
   await ensurePollFile();
   try {
     const raw = await fs.readFile(POLLS_FILE, "utf8");
-    return JSON.parse(raw);
+    const data = JSON.parse(raw);
+    if (data.id !== DEFAULT_POLL.id) {
+      await fs.writeFile(POLLS_FILE, JSON.stringify(DEFAULT_POLL, null, 2), "utf8");
+      return DEFAULT_POLL;
+    }
+    return data;
   } catch {
     return DEFAULT_POLL;
   }

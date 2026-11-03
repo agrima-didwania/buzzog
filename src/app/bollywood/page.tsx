@@ -6,6 +6,27 @@ export const metadata: Metadata = {
   description:
     "Bollywood coverage from Buzz Originals — raw, unfiltered, built for the group chat. Red carpets, rumours, airport looks and exclusives.",
   keywords: [
+    "Chandan Roy Aakhri Ride",
+    "Chandan Roy",
+    "Aakhri Ride",
+    "Chandan Roy interview",
+    "Panchayat actor Chandan Roy",
+    "Anurag Kashyap Vasan Bala short film",
+    "Aakhri Ride short film",
+    "Aakhri Ride cast",
+    "Aakhri Ride story",
+    "Aakhri Ride review",
+    "Aakhri Ride YouTube",
+    "Chandan Roy new film",
+    "Chandan Roy Mumbai struggle",
+    "Chandan Roy Bihar",
+    "Vikas Panchayat actor",
+    "Where to watch Aakhri Ride",
+    "Who is the director of Aakhri Ride",
+    "Chandan Roy cab driver role",
+    "Chandan Roy Anurag Kashyap",
+    "Aakhri Ride release date",
+    "Aakhri Ride Oh Short Flips",
     "Honey Trehan",
     "CBFC new advisory",
     "CBFC new guidelines",
@@ -319,10 +340,10 @@ export const metadata: Metadata = {
     siteName: "Buzz Originals",
     images: [
       {
-        url: "/images/honey-trehan-slams-new-cbfc-advisory-satluj.jpg",
+        url: "/images/chandan-roy-aakhri-ride-interview.jpg",
         width: 1024,
         height: 576,
-        alt: "Honey Trehan Slams New CBFC Advisory: Satluj Director Calls Guidelines Dictatorship — Buzz Originals Bollywood",
+        alt: "Chandan Roy on Aakhri Ride: Nine Years in Mumbai & Anurag Kashyap Presentation — Buzz Originals Bollywood",
       },
     ],
     type: "website",
@@ -332,7 +353,7 @@ export const metadata: Metadata = {
     title: "Bollywood — Buzz Originals",
     description:
       "Raw, unfiltered Bollywood coverage of red carpets, gossip, airport sightings & exclusives.",
-    images: ["/images/honey-trehan-slams-new-cbfc-advisory-satluj.jpg"],
+    images: ["/images/chandan-roy-aakhri-ride-interview.jpg"],
   },
 };
 
@@ -359,24 +380,30 @@ export default function BollywoodPage() {
         {
           "@type": "ListItem",
           position: 1,
+          name: "Chandan Roy on Aakhri Ride: Nine Years in Mumbai",
+          url: "https://www.buzzoriginals.com/chandan-roy-aakhri-ride-interview",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
           name: "Honey Trehan Slams New CBFC Advisory: Satluj Row",
           url: "https://www.buzzoriginals.com/honey-trehan-slams-new-cbfc-advisory-satluj",
         },
         {
           "@type": "ListItem",
-          position: 2,
+          position: 3,
           name: "Orry Says Sara Ali Khan “Disappeared” When He Needed Her Most",
           url: "https://www.buzzoriginals.com/orry-sara-ali-khan-disappeared-friendship-fallout",
         },
         {
           "@type": "ListItem",
-          position: 3,
+          position: 4,
           name: "Janhvi Kapoor Deepfake: Expert Demands Strict AI Laws",
           url: "https://www.buzzoriginals.com/janhvi-kapoor-keerthy-suresh-deepfake-expert-new-laws",
         },
         {
           "@type": "ListItem",
-          position: 4,
+          position: 5,
           name: "Ramayana Advance Booking: Film Hits Rs 73.40 Crore",
           url: "https://www.buzzoriginals.com/ramayana-advance-booking-73-crore-ranbir-kapoor",
         },
