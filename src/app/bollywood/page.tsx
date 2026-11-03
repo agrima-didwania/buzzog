@@ -6,6 +6,22 @@ export const metadata: Metadata = {
   description:
     "Bollywood coverage from Buzz Originals — raw, unfiltered, built for the group chat. Red carpets, rumours, airport looks and exclusives.",
   keywords: [
+    "Tiger Shroff firing case",
+    "Tiger Shroff firing case latest update",
+    "Tiger Shroff firing case news",
+    "Tiger Shroff firing incident Juhu",
+    "Tiger Shroff firing case arrest",
+    "Mumbai Crime Branch Tiger Shroff",
+    "Tiger Shroff firing case 13 accused",
+    "Tiger Shroff firing case MCOCA",
+    "Tiger Shroff firing case Karnal woman arrested",
+    "Bollywood celebrity firing case",
+    "Lawrence Bishnoi gang Bollywood",
+    "Salman Khan firing case 2024",
+    "Rohit Shetty house firing",
+    "Juhu firing incident",
+    "Haryana Police Mumbai Crime Branch",
+    "Delhi Police Special Cell arrest",
     "Udta Teer",
     "Mukul Dev",
     "Aakash Kaushik",
@@ -257,10 +273,10 @@ export const metadata: Metadata = {
     siteName: "Buzz Originals",
     images: [
       {
-        url: "/images/udta-teer-aakash-kaushik-remembers-mukul-dev.jpg",
+        url: "/images/tiger-shroff-firing-case-13th-arrest-karnal-woman.jpg",
         width: 1024,
         height: 576,
-        alt: "Udta Teer Director Aakash Kaushik Remembers Mukul Dev — Buzz Originals Bollywood",
+        alt: "Tiger Shroff Firing Case: 13th Arrest Made — Buzz Originals Bollywood",
       },
     ],
     type: "website",
@@ -270,7 +286,7 @@ export const metadata: Metadata = {
     title: "Bollywood — Buzz Originals",
     description:
       "Raw, unfiltered Bollywood coverage of red carpets, gossip, airport sightings & exclusives.",
-    images: ["/images/udta-teer-aakash-kaushik-remembers-mukul-dev.jpg"],
+    images: ["/images/tiger-shroff-firing-case-13th-arrest-karnal-woman.jpg"],
   },
 };
 
@@ -297,18 +313,24 @@ export default function BollywoodPage() {
         {
           "@type": "ListItem",
           position: 1,
+          name: "Tiger Shroff Firing Case: 13th Arrest Made",
+          url: "https://www.buzzoriginals.com/tiger-shroff-firing-case-13th-arrest-karnal-woman",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
           name: "Udta Teer Director Aakash Kaushik Remembers Mukul Dev",
           url: "https://www.buzzoriginals.com/udta-teer-aakash-kaushik-remembers-mukul-dev",
         },
         {
           "@type": "ListItem",
-          position: 2,
+          position: 3,
           name: "Shah Rukh Khan 61st Birthday: SRK Greets Fans at Mannat",
           url: "https://www.buzzoriginals.com/shah-rukh-khan-61st-birthday-mannat-balcony",
         },
         {
           "@type": "ListItem",
-          position: 3,
+          position: 4,
           name: "King First Song ‘Tu Mil Jaaye’ Is Out: SRK and Deepika Light Up His 61st Birthday",
           url: "https://www.buzzoriginals.com/king-first-song-tu-mil-jaaye-shah-rukh-khan-deepika-padukone",
         },

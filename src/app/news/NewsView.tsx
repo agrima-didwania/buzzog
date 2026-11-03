@@ -22,6 +22,18 @@ interface NewsArticle {
 // Only verified breaking entertainment news stories (fatwas, obituaries, police complaints, eviction rows, box-office shifts)
 const newsArticles: NewsArticle[] = [
   {
+    id: "tiger-shroff-firing-case-13th-arrest-karnal-woman",
+    category: "Bollywood",
+    title: "Tiger Shroff Firing Case: Woman Arrested From Karnal, 13 Accused Now in Custody",
+    badge: "13th Arrest Made",
+    badgeType: "pink",
+    image: "/images/tiger-shroff-firing-case-13th-arrest-karnal-woman.jpg",
+    href: "/tiger-shroff-firing-case-13th-arrest-karnal-woman",
+    readOrTime: "4 MIN READ",
+    excerpt:
+      "Mumbai Crime Branch has arrested a 22-year-old woman from Karnal in the Tiger Shroff firing case. Total arrests are now 13. Here is everything we know so far.",
+  },
+  {
     id: "diljit-dosanjh-aura-tour-hurdles",
     category: "Bollywood",
     title: "Diljit Dosanjh Breaks Silence on Aura India Tour Hurdles",

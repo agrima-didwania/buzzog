@@ -6,6 +6,22 @@ export const metadata: Metadata = {
   description:
     "News coverage from Buzz Originals — raw, unfiltered, built for the group chat. Everything breaking across reality TV, Bollywood, movies and OTT — newest first, updated hourly.",
   keywords: [
+    "Tiger Shroff firing case",
+    "Tiger Shroff firing case latest update",
+    "Tiger Shroff firing case news",
+    "Tiger Shroff firing incident Juhu",
+    "Tiger Shroff firing case arrest",
+    "Mumbai Crime Branch Tiger Shroff",
+    "Tiger Shroff firing case 13 accused",
+    "Tiger Shroff firing case MCOCA",
+    "Tiger Shroff firing case Karnal woman arrested",
+    "Bollywood celebrity firing case",
+    "Lawrence Bishnoi gang Bollywood",
+    "Salman Khan firing case 2024",
+    "Rohit Shetty house firing",
+    "Juhu firing incident",
+    "Haryana Police Mumbai Crime Branch",
+    "Delhi Police Special Cell arrest",
     "Diljit Dosanjh Aura India Tour",
     "Diljit Dosanjh breaks silence",
     "Diljit Dosanjh Delhi concert",
@@ -110,10 +126,10 @@ export const metadata: Metadata = {
     siteName: "Buzz Originals",
     images: [
       {
-        url: "/images/diljit-dosanjh-aura-india-tour-hurdles.jpg",
+        url: "/images/tiger-shroff-firing-case-13th-arrest-karnal-woman.jpg",
         width: 1024,
         height: 576,
-        alt: "Diljit Dosanjh Breaks Silence on Aura India Tour Hurdles — Buzz Originals News Desk",
+        alt: "Tiger Shroff Firing Case: 13th Arrest Made — Buzz Originals News Desk",
       },
     ],
     type: "website",
@@ -123,7 +139,7 @@ export const metadata: Metadata = {
     title: "News — Buzz Originals",
     description:
       "Raw, unfiltered entertainment news across reality TV, Bollywood, movies and OTT.",
-    images: ["/images/diljit-dosanjh-aura-india-tour-hurdles.jpg"],
+    images: ["/images/tiger-shroff-firing-case-13th-arrest-karnal-woman.jpg"],
   },
 };
 

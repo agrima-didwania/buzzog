@@ -20,6 +20,16 @@ interface BollywoodArticle {
 
 const bollywoodArticles: BollywoodArticle[] = [
   {
+    id: "tiger-shroff-firing-case-13th-arrest-karnal-woman",
+    category: "Crime & Bollywood",
+    title: "Tiger Shroff Firing Case: Woman Arrested From Karnal, 13 Accused Now in Custody",
+    badge: "🚨 13th Arrest Made",
+    badgeType: "pink",
+    image: "/images/tiger-shroff-firing-case-13th-arrest-karnal-woman.jpg",
+    href: "/tiger-shroff-firing-case-13th-arrest-karnal-woman",
+    readOrTime: "4 MIN READ",
+  },
+  {
     id: "udta-teer-aakash-kaushik-remembers-mukul-dev",
     category: "Director Tribute",
     title: "Udta Teer Director Aakash Kaushik Gets Emotional Remembering Mukul Dev",
@@ -436,35 +446,35 @@ export default function BollywoodView() {
 
         {/* Lead Section: Latest Bollywood Published Article (Cover Story) + The Last 2 Blogs Uploaded Before It */}
         <section className="lead">
-          {/* Cover Story: Latest Published Bollywood Story (Udta Teer Aakash Kaushik Remembers Mukul Dev) */}
+          {/* Cover Story: Latest Published Bollywood Story (Tiger Shroff Firing Case 13th Arrest) */}
           <Link
-            href="/udta-teer-aakash-kaushik-remembers-mukul-dev"
+            href="/tiger-shroff-firing-case-13th-arrest-karnal-woman"
             className="feature-card group block"
-            aria-label="Read full cover story: Udta Teer Director Aakash Kaushik Gets Emotional Remembering Mukul Dev"
+            aria-label="Read full cover story: Tiger Shroff Firing Case: Woman Arrested From Karnal, 13 Accused Now in Custody"
           >
             <div className="feature-media relative overflow-hidden">
               <Image
-                src="/images/udta-teer-aakash-kaushik-remembers-mukul-dev.jpg"
-                alt="Udta Teer director Aakash Kaushik with late actor Mukul Dev"
+                src="/images/tiger-shroff-firing-case-13th-arrest-karnal-woman.jpg"
+                alt="Tiger Shroff Firing Case: 13th Arrest Made - Woman Arrested From Karnal"
                 fill
                 priority
                 className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
                 sizes="(max-width: 980px) 100vw, 65vw"
               />
               <div className="noise" />
-              <span className="badge lime feature-tag z-10">
-                🎬 Director Scoop
+              <span className="badge pink feature-tag z-10">
+                🚨 13th Arrest Made
               </span>
             </div>
             <div className="feature-body">
               <h2 className="disp text-white group-hover:text-[var(--lime)] transition-colors">
-                Udta Teer Director Aakash Kaushik Gets Emotional Remembering Mukul Dev
+                Tiger Shroff Firing Case: Woman Arrested From Karnal, 13 Accused Now in Custody
               </h2>
               <p>
-                Udta Teer director Aakash Kaushik opens up about late actor Mukul Dev, his midnight calls and his role as Azhar Maqsood. Read the full story here.
+                Mumbai Crime Branch has arrested a 22-year-old woman from Karnal in the Tiger Shroff firing case. Total arrests are now 13. Here is everything we know so far.
               </p>
               <div className="meta-row mt-3">
-                <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; TRIBUTE</span>
+                <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; CRIME</span>
                 <span className="dot-sep">◆</span>
                 <span>4 MIN READ</span>
                 <span className="dot-sep">◆</span>
@@ -475,7 +485,34 @@ export default function BollywoodView() {
 
           {/* Right Stack: The last 2 blogs uploaded before the latest one */}
           <div className="stack">
-            {/* Card 1: Shah Rukh Khan 61st Birthday Balcony */}
+            {/* Card 1: Udta Teer Director Aakash Kaushik Remembers Mukul Dev */}
+            <Link
+              href="/udta-teer-aakash-kaushik-remembers-mukul-dev"
+              className="card m1 group block"
+            >
+              <div className="card-media relative overflow-hidden">
+                <Image
+                  src="/images/udta-teer-aakash-kaushik-remembers-mukul-dev.jpg"
+                  alt="Udta Teer director Aakash Kaushik with late actor Mukul Dev"
+                  fill
+                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 980px) 100vw, 35vw"
+                />
+                <span className="badge lime z-10 relative">🎬 Director Scoop</span>
+              </div>
+              <div className="card-body">
+                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
+                  Udta Teer Director Aakash Kaushik Gets Emotional Remembering Mukul Dev
+                </h3>
+                <div className="meta-row mt-2">
+                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; TRIBUTE</span>
+                  <span className="dot-sep">◆</span>
+                  <span>4 MIN READ</span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Card 2: Shah Rukh Khan 61st Birthday Balcony */}
             <Link
               href="/shah-rukh-khan-61st-birthday-mannat-balcony"
               className="card m1 group block"
@@ -496,33 +533,6 @@ export default function BollywoodView() {
                 </h3>
                 <div className="meta-row mt-2">
                   <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; CELEB</span>
-                  <span className="dot-sep">◆</span>
-                  <span>3 MIN READ</span>
-                </div>
-              </div>
-            </Link>
-
-            {/* Card 2: King First Song Tu Mil Jaaye */}
-            <Link
-              href="/king-first-song-tu-mil-jaaye-shah-rukh-khan-deepika-padukone"
-              className="card m1 group block"
-            >
-              <div className="card-media relative overflow-hidden">
-                <Image
-                  src="/images/king-first-song-tu-mil-jaaye-shah-rukh-khan-deepika-padukone.jpg"
-                  alt="King First Song Tu Mil Jaaye Out Now - Shah Rukh Khan and Deepika Padukone"
-                  fill
-                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
-                  sizes="(max-width: 980px) 100vw, 35vw"
-                />
-                <span className="badge lime z-10 relative">🎵 Song Out Now</span>
-              </div>
-              <div className="card-body">
-                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
-                  King First Song ‘Tu Mil Jaaye’ Is Out: SRK and Deepika Light Up His 61st Birthday
-                </h3>
-                <div className="meta-row mt-2">
-                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; MUSIC</span>
                   <span className="dot-sep">◆</span>
                   <span>3 MIN READ</span>
                 </div>
