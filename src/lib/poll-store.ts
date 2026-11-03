@@ -23,16 +23,16 @@ const DATA_DIR = path.join(process.cwd(), ".data");
 const POLLS_FILE = path.join(DATA_DIR, "polls.json");
 
 const DEFAULT_POLL: PollState = {
-  id: "king-tu-mil-jaaye-poll-2026",
+  id: "king-tu-mil-jaaye-song-poll",
   question: "King is back with a new track, ‘Tu Mil Jaaye’! 🎶 But has it won your heart? Tell us what you think. Vote now!",
   category: "New Music Track",
   options: [
-    { id: "A", label: "❤️ Loved it! Already on repeat.", votes: 96, percentage: 52 },
-    { id: "B", label: "🔥 It's a chartbuster! King nailed it.", votes: 52, percentage: 28 },
-    { id: "C", label: "🙂 It's good, but not his best.", votes: 24, percentage: 13 },
-    { id: "D", label: "👎 Not really my vibe.", votes: 12, percentage: 7 },
+    { id: "A", label: "❤️ Loved it! Already on repeat.", votes: 0, percentage: 0 },
+    { id: "B", label: "🔥 It's a chartbuster! King nailed it.", votes: 0, percentage: 0 },
+    { id: "C", label: "🙂 It's good, but not his best.", votes: 0, percentage: 0 },
+    { id: "D", label: "👎 Not really my vibe.", votes: 0, percentage: 0 },
   ],
-  totalVotes: 184,
+  totalVotes: 0,
   voterHashes: [],
   updatedAt: new Date().toISOString(),
 };

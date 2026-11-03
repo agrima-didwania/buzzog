@@ -6,6 +6,19 @@ export const metadata: Metadata = {
   description:
     "Bollywood coverage from Buzz Originals — raw, unfiltered, built for the group chat. Red carpets, rumours, airport looks and exclusives.",
   keywords: [
+    "Tusshar Kapoor extortion call",
+    "Tusshar Kapoor threat call",
+    "Lawrence Bishnoi gang",
+    "Harry Boxer",
+    "Tusshar Kapoor Rs 5 crore",
+    "Bollywood extortion news",
+    "Mumbai Crime Branch",
+    "Is Tusshar Kapoor’s threat call fake",
+    "Who is Harry Boxer",
+    "Why do police suspect the Tusshar Kapoor call is fake",
+    "Bishnoi gang Bollywood threats 2026",
+    "Tiger Shroff firing case latest update",
+    "Tusshar Kapoor",
     "Chandan Roy Aakhri Ride",
     "Chandan Roy",
     "Aakhri Ride",
@@ -340,10 +353,10 @@ export const metadata: Metadata = {
     siteName: "Buzz Originals",
     images: [
       {
-        url: "/images/chandan-roy-aakhri-ride-interview.jpg",
+        url: "/images/tusshar-kapoor-extortion-call-bishnoi-gang-fake.jpg",
         width: 1024,
         height: 576,
-        alt: "Chandan Roy on Aakhri Ride: Nine Years in Mumbai & Anurag Kashyap Presentation — Buzz Originals Bollywood",
+        alt: "Tusshar Kapoor Extortion Call: Police Suspect ₹5 Crore Bishnoi Gang Threat Is a Hoax — Buzz Originals Bollywood",
       },
     ],
     type: "website",
@@ -353,7 +366,7 @@ export const metadata: Metadata = {
     title: "Bollywood — Buzz Originals",
     description:
       "Raw, unfiltered Bollywood coverage of red carpets, gossip, airport sightings & exclusives.",
-    images: ["/images/chandan-roy-aakhri-ride-interview.jpg"],
+    images: ["/images/tusshar-kapoor-extortion-call-bishnoi-gang-fake.jpg"],
   },
 };
 
@@ -380,12 +393,18 @@ export default function BollywoodPage() {
         {
           "@type": "ListItem",
           position: 1,
+          name: "Tusshar Kapoor Extortion Call: Police Suspect Hoax",
+          url: "https://www.buzzoriginals.com/tusshar-kapoor-extortion-call-bishnoi-gang-fake",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
           name: "Chandan Roy on Aakhri Ride: Nine Years in Mumbai",
           url: "https://www.buzzoriginals.com/chandan-roy-aakhri-ride-interview",
         },
         {
           "@type": "ListItem",
-          position: 2,
+          position: 3,
           name: "Honey Trehan Slams New CBFC Advisory: Satluj Row",
           url: "https://www.buzzoriginals.com/honey-trehan-slams-new-cbfc-advisory-satluj",
         },

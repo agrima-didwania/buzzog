@@ -6,6 +6,19 @@ export const metadata: Metadata = {
   description:
     "News coverage from Buzz Originals — raw, unfiltered, built for the group chat. Everything breaking across reality TV, Bollywood, movies and OTT — newest first, updated hourly.",
   keywords: [
+    "Tusshar Kapoor extortion call",
+    "Tusshar Kapoor threat call",
+    "Lawrence Bishnoi gang",
+    "Harry Boxer",
+    "Tusshar Kapoor Rs 5 crore",
+    "Bollywood extortion news",
+    "Mumbai Crime Branch",
+    "Is Tusshar Kapoor’s threat call fake",
+    "Who is Harry Boxer",
+    "Why do police suspect the Tusshar Kapoor call is fake",
+    "Bishnoi gang Bollywood threats 2026",
+    "Tiger Shroff firing case latest update",
+    "Tusshar Kapoor",
     "Honey Trehan",
     "CBFC new advisory",
     "CBFC new guidelines",
@@ -146,10 +159,10 @@ export const metadata: Metadata = {
     siteName: "Buzz Originals",
     images: [
       {
-        url: "/images/honey-trehan-slams-new-cbfc-advisory-satluj.jpg",
+        url: "/images/tusshar-kapoor-extortion-call-bishnoi-gang-fake.jpg",
         width: 1024,
         height: 576,
-        alt: "Honey Trehan Slams New CBFC Advisory: Satluj Director Calls Guidelines Dictatorship — Buzz Originals News Desk",
+        alt: "Tusshar Kapoor Extortion Call: Mumbai Police Suspect Rs 5 Crore Threat in Bishnoi Gang Name Is a Hoax — Buzz Originals News Desk",
       },
     ],
     type: "website",
@@ -159,7 +172,7 @@ export const metadata: Metadata = {
     title: "News — Buzz Originals",
     description:
       "Raw, unfiltered entertainment news across reality TV, Bollywood, movies and OTT.",
-    images: ["/images/honey-trehan-slams-new-cbfc-advisory-satluj.jpg"],
+    images: ["/images/tusshar-kapoor-extortion-call-bishnoi-gang-fake.jpg"],
   },
 };
 

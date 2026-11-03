@@ -20,6 +20,16 @@ interface BollywoodArticle {
 
 const bollywoodArticles: BollywoodArticle[] = [
   {
+    id: "tusshar-kapoor-extortion-call-bishnoi-gang-fake",
+    category: "Crime & Underworld",
+    title: "Tusshar Kapoor Gets Rs 5 Crore Extortion Call in Bishnoi Gang’s Name: Police Suspect Hoax",
+    badge: "🚨 ₹5 Cr Threat",
+    badgeType: "pink",
+    image: "/images/tusshar-kapoor-extortion-call-bishnoi-gang-fake.jpg",
+    href: "/tusshar-kapoor-extortion-call-bishnoi-gang-fake",
+    readOrTime: "4 MIN READ",
+  },
+  {
     id: "chandan-roy-aakhri-ride-interview",
     category: "Exclusive Interview",
     title: "Chandan Roy on Aakhri Ride: Nine Years in Mumbai & Why He Said Yes to Anurag Kashyap",
@@ -496,16 +506,16 @@ export default function BollywoodView() {
 
         {/* Lead Section: Latest Bollywood Published Article (Cover Story) + The Last 2 Blogs Uploaded Before It */}
         <section className="lead">
-          {/* Cover Story: Latest Published Bollywood Story (Chandan Roy on Aakhri Ride) */}
+          {/* Cover Story: Latest Published Bollywood Story (Tusshar Kapoor Extortion Threat) */}
           <Link
-            href="/chandan-roy-aakhri-ride-interview"
+            href="/tusshar-kapoor-extortion-call-bishnoi-gang-fake"
             className="feature-card group block"
-            aria-label="Read full cover story: Chandan Roy Says His Mumbai Struggles Helped Him Play a Desperate Cab Driver in Aakhri Ride"
+            aria-label="Read full cover story: Tusshar Kapoor Gets Rs 5 Crore Extortion Call in Bishnoi Gang’s Name, But Police Say It May Be Fake"
           >
             <div className="feature-media relative overflow-hidden">
               <Image
-                src="/images/chandan-roy-aakhri-ride-interview.jpg"
-                alt="Chandan Roy Aakhri Ride: Actor on Mumbai Struggles and Playing a Cab Driver"
+                src="/images/tusshar-kapoor-extortion-call-bishnoi-gang-fake.jpg"
+                alt="Tusshar Kapoor Extortion Call: Police Suspect ₹5 Crore Bishnoi Gang Threat Is a Hoax"
                 fill
                 priority
                 className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
@@ -513,18 +523,18 @@ export default function BollywoodView() {
               />
               <div className="noise" />
               <span className="badge pink feature-tag z-10">
-                ⚡ Exclusive Interview
+                🚨 ₹5 Crore Threat Hoax
               </span>
             </div>
             <div className="feature-body">
               <h2 className="disp text-white group-hover:text-[var(--lime)] transition-colors">
-                Chandan Roy Says His Mumbai Struggles Helped Him Play a Desperate Cab Driver in Aakhri Ride
+                Tusshar Kapoor Gets Rs 5 Crore Extortion Call in Bishnoi Gang’s Name, But Police Say It May Be Fake
               </h2>
               <p>
-                Panchayat actor Chandan Roy talks about his Bihar roots, nine years in Mumbai and why he said yes to Aakhri Ride, presented by Anurag Kashyap.
+                Tusshar Kapoor got a Rs 5 crore extortion call in the Lawrence Bishnoi gang’s name. Mumbai Police say the voice doesn’t match. Read what we know.
               </p>
               <div className="meta-row mt-3">
-                <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; INTERVIEW</span>
+                <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; CRIME</span>
                 <span className="dot-sep">◆</span>
                 <span>4 MIN READ</span>
                 <span className="dot-sep">◆</span>
@@ -535,7 +545,34 @@ export default function BollywoodView() {
 
           {/* Right Stack: The last 2 blogs uploaded before the latest one */}
           <div className="stack">
-            {/* Card 1: Honey Trehan Slams New CBFC Advisory */}
+            {/* Card 1: Chandan Roy on Aakhri Ride */}
+            <Link
+              href="/chandan-roy-aakhri-ride-interview"
+              className="card m1 group block"
+            >
+              <div className="card-media relative overflow-hidden">
+                <Image
+                  src="/images/chandan-roy-aakhri-ride-interview.jpg"
+                  alt="Chandan Roy Aakhri Ride: Actor on Mumbai Struggles and Playing a Cab Driver"
+                  fill
+                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 980px) 100vw, 35vw"
+                />
+                <span className="badge pink z-10 relative">⚡ Exclusive Interview</span>
+              </div>
+              <div className="card-body">
+                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
+                  Chandan Roy Says His Mumbai Struggles Helped Him Play a Desperate Cab Driver in Aakhri Ride
+                </h3>
+                <div className="meta-row mt-2">
+                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; INTERVIEW</span>
+                  <span className="dot-sep">◆</span>
+                  <span>4 MIN READ</span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Card 2: Honey Trehan Slams New CBFC Advisory */}
             <Link
               href="/honey-trehan-slams-new-cbfc-advisory-satluj"
               className="card m1 group block"
@@ -556,33 +593,6 @@ export default function BollywoodView() {
                 </h3>
                 <div className="meta-row mt-2">
                   <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; CENSORSHIP</span>
-                  <span className="dot-sep">◆</span>
-                  <span>4 MIN READ</span>
-                </div>
-              </div>
-            </Link>
-
-            {/* Card 2: Orry & Sara Ali Khan Friendship Fallout */}
-            <Link
-              href="/orry-sara-ali-khan-disappeared-friendship-fallout"
-              className="card m1 group block"
-            >
-              <div className="card-media relative overflow-hidden">
-                <Image
-                  src="/images/orry-sara-ali-khan-disappeared-friendship-fallout.jpg"
-                  alt="Orry &amp; Sara Ali Khan Friendship Over? He Says She Disappeared"
-                  fill
-                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
-                  sizes="(max-width: 980px) 100vw, 35vw"
-                />
-                <span className="badge pink z-10 relative">💔 Friendship Over?</span>
-              </div>
-              <div className="card-body">
-                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
-                  Orry Says Sara Ali Khan “Disappeared” When He Needed Her Most
-                </h3>
-                <div className="meta-row mt-2">
-                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; CELEB FEUD</span>
                   <span className="dot-sep">◆</span>
                   <span>4 MIN READ</span>
                 </div>

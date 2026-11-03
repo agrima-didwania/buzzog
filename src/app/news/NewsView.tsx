@@ -22,6 +22,18 @@ interface NewsArticle {
 // Only verified breaking entertainment news stories (fatwas, obituaries, police complaints, eviction rows, box-office shifts)
 const newsArticles: NewsArticle[] = [
   {
+    id: "tusshar-kapoor-extortion-call-bishnoi-gang-fake",
+    category: "Bollywood",
+    title: "Tusshar Kapoor Gets Rs 5 Crore Extortion Call in Bishnoi Gang’s Name: Police Suspect Hoax",
+    badge: "🚨 ₹5 Cr Threat Hoax",
+    badgeType: "pink",
+    image: "/images/tusshar-kapoor-extortion-call-bishnoi-gang-fake.jpg",
+    href: "/tusshar-kapoor-extortion-call-bishnoi-gang-fake",
+    readOrTime: "4 MIN READ",
+    excerpt:
+      "Tusshar Kapoor got a Rs 5 crore extortion call in the Lawrence Bishnoi gang’s name. Mumbai Police say the voice doesn’t match. Read what we know.",
+  },
+  {
     id: "honey-trehan-slams-new-cbfc-advisory-satluj",
     category: "Bollywood",
     title: "Satluj Director Honey Trehan Slams CBFC’s New Advisory: “Cowardice and Dictatorship”",

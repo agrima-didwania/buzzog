@@ -36,16 +36,16 @@ export default function Home() {
 
   // Community Poll State (real persistence via /api/poll)
   const [poll, setPoll] = useState<PollData>({
-    id: "king-tu-mil-jaaye-poll-2026",
+    id: "king-tu-mil-jaaye-song-poll",
     question: "King is back with a new track, ‘Tu Mil Jaaye’! 🎶 But has it won your heart? Tell us what you think. Vote now!",
     category: "New Music Track",
     options: [
-      { id: "A", label: "❤️ Loved it! Already on repeat.", votes: 96, percentage: 52 },
-      { id: "B", label: "🔥 It's a chartbuster! King nailed it.", votes: 52, percentage: 28 },
-      { id: "C", label: "🙂 It's good, but not his best.", votes: 24, percentage: 13 },
-      { id: "D", label: "👎 Not really my vibe.", votes: 12, percentage: 7 },
+      { id: "A", label: "❤️ Loved it! Already on repeat.", votes: 0, percentage: 0 },
+      { id: "B", label: "🔥 It's a chartbuster! King nailed it.", votes: 0, percentage: 0 },
+      { id: "C", label: "🙂 It's good, but not his best.", votes: 0, percentage: 0 },
+      { id: "D", label: "👎 Not really my vibe.", votes: 0, percentage: 0 },
     ],
-    totalVotes: 184,
+    totalVotes: 0,
   });
   const [pollVoted, setPollVoted] = useState(false);
   const [selectedOption, setSelectedOption] = useState<string | null>(null);
@@ -58,12 +58,12 @@ export default function Home() {
   const [subscribeMessage, setSubscribeMessage] = useState("");
   const [subscribeError, setSubscribeError] = useState("");
 
-  // Check if user has already voted on this device & fetch latest poll data
+  // Check if user has already voted on this device & fetch latest poll data (with live refresh)
   useEffect(() => {
     let isMounted = true;
     const loadPollState = async () => {
       try {
-        const res = await fetch("/api/poll");
+        const res = await fetch("/api/poll", { cache: "no-store" });
         if (res.ok) {
           const data = await res.json();
           if (isMounted && data?.options) {
@@ -76,7 +76,7 @@ export default function Home() {
           }
         }
       } catch {
-        const hasVotedLocal = localStorage.getItem("buzz_poll_voted_king-tu-mil-jaaye-poll-2026");
+        const hasVotedLocal = localStorage.getItem("buzz_poll_voted_king-tu-mil-jaaye-song-poll");
         if (isMounted && hasVotedLocal) {
           setPollVoted(true);
           setSelectedOption(hasVotedLocal);
@@ -85,8 +85,13 @@ export default function Home() {
     };
 
     loadPollState();
+
+    // Auto-refresh poll every 10 seconds so visitors see live real-time vote updates
+    const interval = setInterval(loadPollState, 10000);
+
     return () => {
       isMounted = false;
+      clearInterval(interval);
     };
   }, []);
 
@@ -179,6 +184,20 @@ export default function Home() {
   }
 
   const editorialArticles: EditorialArticle[] = [
+    {
+      id: "tusshar-kapoor-extortion-call-bishnoi-gang-fake",
+      anchorId: "tusshar-extortion-story",
+      href: "/tusshar-kapoor-extortion-call-bishnoi-gang-fake",
+      title: "Tusshar Kapoor Gets Rs 5 Crore Extortion Call in Bishnoi Gang’s Name: Police Suspect Hoax",
+      excerpt: "Tusshar Kapoor got a Rs 5 crore extortion call in the Lawrence Bishnoi gang’s name. Mumbai Police say the voice doesn’t match. Read what we know.",
+      category: "Bollywood",
+      secondaryCategory: "News",
+      displayCategory: "BOLLYWOOD & CRIME",
+      badge: "₹5 Cr Threat Hoax",
+      badgeType: "pink",
+      readTime: "4 MIN READ",
+      image: "/images/tusshar-kapoor-extortion-call-bishnoi-gang-fake.jpg",
+    },
     {
       id: "chandan-roy-aakhri-ride-interview",
       anchorId: "chandan-roy-aakhri-ride-story",
@@ -1010,15 +1029,15 @@ export default function Home() {
         <section className="hero" id="featured">
           {/* 1. Main Featured Story (Commanding Top Story Presentation) */}
           <Link
-            href="/chandan-roy-aakhri-ride-interview"
+            href="/tusshar-kapoor-extortion-call-bishnoi-gang-fake"
             className="feature-card block transition-all hover:border-[var(--lime)] focus-visible:ring-2 focus-visible:ring-[var(--lime)] group"
             style={{ textDecoration: "none", color: "inherit" }}
-            aria-label="Read full article: Chandan Roy Says His Mumbai Struggles Helped Him Play a Desperate Cab Driver in Aakhri Ride"
+            aria-label="Read full article: Tusshar Kapoor Gets Rs 5 Crore Extortion Call in Bishnoi Gang’s Name, But Police Say It May Be Fake"
           >
             <div className="feature-media" style={{ overflow: "hidden", position: "relative" }}>
               <Image
-                src="/images/chandan-roy-aakhri-ride-interview.jpg"
-                alt="Chandan Roy Aakhri Ride — Panchayat actor on Mumbai struggle and Anurag Kashyap short film"
+                src="/images/tusshar-kapoor-extortion-call-bishnoi-gang-fake.jpg"
+                alt="Tusshar Kapoor Extortion Call: Police Suspect Rs 5 Crore Bishnoi Gang Threat Is a Hoax"
                 fill
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 750px"
@@ -1027,28 +1046,28 @@ export default function Home() {
               />
               <div className="noise" style={{ pointerEvents: "none" }}></div>
               <div className="feature-tag flex items-center gap-2">
-                <span className="badge pink">⚡ Exclusive Interview</span>
-                <span className="badge lime">Panchayat Star</span>
-                <span className="badge">Aakhri Ride</span>
+                <span className="badge pink">🚨 Crime Alert</span>
+                <span className="badge lime">₹5 Crore Threat</span>
+                <span className="badge">Police Suspect Hoax</span>
               </div>
             </div>
             <div className="feature-body">
               <div className="flex items-center gap-2 mb-2 font-mono text-xs text-[var(--lime)] font-bold tracking-wider uppercase">
-                <span>★ TOP STORY · CHANDAN ROY ON 9 YEARS IN MUMBAI &amp; AAKHRI RIDE</span>
+                <span>★ TOP STORY · TUSSHAR KAPOOR RECEIVES ₹5 CR BISHNOI GANG EXTORTION CALL; POLICE SUSPECT HOAX</span>
               </div>
               <h1 className="disp" style={{ color: "#fff" }}>
-                Chandan Roy Says His Mumbai Struggles Helped Him Play a Desperate Cab Driver in Aakhri Ride
+                Tusshar Kapoor Gets Rs 5 Crore Extortion Call in Bishnoi Gang’s Name, But Police Say It May Be Fake
               </h1>
               <p>
-                Panchayat actor Chandan Roy talks about his Bihar roots, nine years in Mumbai and why he said yes to Aakhri Ride, presented by Anurag Kashyap.
+                Tusshar Kapoor got a Rs 5 crore extortion call in the Lawrence Bishnoi gang’s name. Mumbai Police say the voice doesn’t match. Read what we know.
               </p>
               <div className="meta-row mt-auto pt-3 border-t border-white/[0.06] flex items-center justify-between">
                 <div className="flex items-center gap-3">
-                  <span>BOLLYWOOD &amp; INTERVIEW</span>
+                  <span>BOLLYWOOD &amp; CRIME</span>
                   <span className="dot-sep">◆</span>
                   <span>4 MIN READ</span>
                   <span className="dot-sep">◆</span>
-                  <span style={{ color: "var(--lime)" }}>EXCLUSIVE</span>
+                  <span style={{ color: "var(--lime)" }}>BREAKING NEWS</span>
                 </div>
                 <span className="text-xs font-mono font-bold text-[var(--lime)] hidden sm:inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform">
                   Read Full Story →
@@ -1067,6 +1086,18 @@ export default function Home() {
               <span className="trend-rank">01</span>
               <div className="trend-text">
                 <Link
+                  href="/tusshar-kapoor-extortion-call-bishnoi-gang-fake"
+                  style={{ color: "inherit" }}
+                >
+                  <h3>Tusshar Kapoor extortion call: Mumbai Police suspect ₹5 Cr threat in Bishnoi gang name is a hoax as voices mismatch</h3>
+                  <span>BOLLYWOOD &amp; CRIME · 1.15M REACTIONS</span>
+                </Link>
+              </div>
+            </div>
+            <div className="trend-item">
+              <span className="trend-rank">02</span>
+              <div className="trend-text">
+                <Link
                   href="/chandan-roy-aakhri-ride-interview"
                   style={{ color: "inherit" }}
                 >
@@ -1076,7 +1107,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">02</span>
+              <span className="trend-rank">03</span>
               <div className="trend-text">
                 <Link
                   href="/honey-trehan-slams-new-cbfc-advisory-satluj"
@@ -1088,7 +1119,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">03</span>
+              <span className="trend-rank">04</span>
               <div className="trend-text">
                 <Link
                   href="/koffee-with-karan-9-kareena-kapoor-saif-ali-khan-teaser"
@@ -1100,7 +1131,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">04</span>
+              <span className="trend-rank">05</span>
               <div className="trend-text">
                 <Link
                   href="/orry-sara-ali-khan-disappeared-friendship-fallout"
@@ -1112,7 +1143,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">05</span>
+              <span className="trend-rank">06</span>
               <div className="trend-text">
                 <Link
                   href="/janhvi-kapoor-keerthy-suresh-deepfake-expert-new-laws"
@@ -1124,7 +1155,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">06</span>
+              <span className="trend-rank">07</span>
               <div className="trend-text">
                 <Link
                   href="/ramayana-advance-booking-73-crore-ranbir-kapoor"
@@ -1343,44 +1374,75 @@ export default function Home() {
                 <span className="badge pink">🗳️ Live Community Poll</span>
                 <h3>{poll.question}</h3>
 
-                {poll.options.map((opt) => {
-                  const isSelected = selectedOption === opt.id;
-                  return (
-                    <button
-                      key={opt.id}
-                      type="button"
-                      className={`poll-opt ${isSelected ? "selected" : ""}`}
-                      onClick={() => handleVote(opt.id)}
-                      disabled={pollVoted || votingLoading}
-                      aria-label={`Vote for ${opt.label}. Currently at ${opt.percentage}%`}
-                    >
-                      <div className="poll-opt-label">
-                        <span>{opt.label}</span>
-                        <span className="pct font-mono font-bold">{opt.percentage}%</span>
-                      </div>
-                      <div className="poll-bar-track">
-                        <div
-                          className="poll-bar-fill"
-                          style={{
-                            width: `${opt.percentage}%`,
-                            background: isSelected ? "var(--lime)" : undefined,
-                          }}
-                        ></div>
-                      </div>
-                    </button>
-                  );
-                })}
-
-                <div className="poll-votes font-mono text-xs text-[var(--muted)] mt-2">
-                  {poll.totalVotes.toLocaleString()} verified community votes recorded
+                <div className="poll-options-list flex flex-col gap-2.5 my-3">
+                  {poll.options.map((opt) => {
+                    const isSelected = selectedOption === opt.id;
+                    const voteCount = opt.votes || 0;
+                    return (
+                      <button
+                        key={opt.id}
+                        type="button"
+                        className={`poll-opt ${isSelected ? "selected" : ""} ${pollVoted ? "voted" : ""}`}
+                        onClick={() => handleVote(opt.id)}
+                        disabled={pollVoted || votingLoading}
+                        aria-label={
+                          pollVoted
+                            ? `${opt.label}: ${voteCount} ${voteCount === 1 ? "vote" : "votes"}`
+                            : `Vote for ${opt.label}`
+                        }
+                      >
+                        <div className="poll-opt-label">
+                          <span>{opt.label}</span>
+                          {pollVoted && (
+                            <span className="pct font-mono font-bold">
+                              {voteCount} {voteCount === 1 ? "vote" : "votes"}
+                            </span>
+                          )}
+                        </div>
+                        {pollVoted && (
+                          <div className="poll-bar-track">
+                            <div
+                              className="poll-bar-fill"
+                              style={{
+                                width: `${
+                                  poll.totalVotes > 0
+                                    ? Math.round((voteCount / poll.totalVotes) * 100)
+                                    : 0
+                                }%`,
+                                background: isSelected ? "var(--lime)" : undefined,
+                              }}
+                            ></div>
+                          </div>
+                        )}
+                      </button>
+                    );
+                  })}
                 </div>
 
-                {pollVoted && (
-                  <div
-                    className="poll-locked-msg text-xs text-[var(--lime)] font-mono font-bold mt-2"
-                    role="status"
-                  >
-                    ✓ Vote recorded — thanks for having your say!
+                {pollVoted ? (
+                  <>
+                    <div className="poll-votes font-mono text-xs text-[var(--muted)] mt-1">
+                      {poll.totalVotes}{" "}
+                      {poll.totalVotes === 1
+                        ? "verified community vote recorded"
+                        : "verified community votes recorded"}
+                    </div>
+                    <div
+                      className="poll-locked-msg text-xs text-[var(--lime)] font-mono font-bold mt-1"
+                      role="status"
+                    >
+                      ✓ Vote recorded — thanks for having your say!
+                    </div>
+                  </>
+                ) : (
+                  <div className="poll-votes font-mono text-xs text-[var(--muted)] mt-1">
+                    {poll.totalVotes > 0
+                      ? `${poll.totalVotes} ${
+                          poll.totalVotes === 1
+                            ? "verified community vote recorded · Tap an option to vote"
+                            : "verified community votes recorded · Tap an option to vote"
+                        }`
+                      : "Tap an option to cast your vote and see live results"}
                   </div>
                 )}
 
