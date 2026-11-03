@@ -6,6 +6,18 @@ export const metadata: Metadata = {
   description:
     "Bollywood coverage from Buzz Originals — raw, unfiltered, built for the group chat. Red carpets, rumours, airport looks and exclusives.",
   keywords: [
+    "Ramayana advance booking",
+    "Ramayana advance booking collection",
+    "Ranbir Kapoor Ramayana",
+    "Ramayana Part One release date",
+    "Ramayana box office prediction",
+    "Ramayana day 1 box office collection",
+    "Ramayana advance booking 73 crore",
+    "Ramayana tickets sold",
+    "Ramayana Hindi 3D advance booking",
+    "Ramayana overseas advance booking",
+    "Ramayana worldwide advance booking",
+    "Ramayana release date 5 November",
     "Tiger Shroff firing case",
     "Tiger Shroff firing case latest update",
     "Tiger Shroff firing case news",
@@ -273,10 +285,10 @@ export const metadata: Metadata = {
     siteName: "Buzz Originals",
     images: [
       {
-        url: "/images/tiger-shroff-firing-case-13th-arrest-karnal-woman.jpg",
+        url: "/images/ramayana-advance-booking-73-crore-ranbir-kapoor.jpg",
         width: 1024,
         height: 576,
-        alt: "Tiger Shroff Firing Case: 13th Arrest Made — Buzz Originals Bollywood",
+        alt: "Ramayana Advance Booking Crosses Rs 73.40 Crore — Buzz Originals Bollywood",
       },
     ],
     type: "website",
@@ -286,7 +298,7 @@ export const metadata: Metadata = {
     title: "Bollywood — Buzz Originals",
     description:
       "Raw, unfiltered Bollywood coverage of red carpets, gossip, airport sightings & exclusives.",
-    images: ["/images/tiger-shroff-firing-case-13th-arrest-karnal-woman.jpg"],
+    images: ["/images/ramayana-advance-booking-73-crore-ranbir-kapoor.jpg"],
   },
 };
 
@@ -313,18 +325,24 @@ export default function BollywoodPage() {
         {
           "@type": "ListItem",
           position: 1,
+          name: "Ramayana Advance Booking: Film Hits Rs 73.40 Crore",
+          url: "https://www.buzzoriginals.com/ramayana-advance-booking-73-crore-ranbir-kapoor",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
           name: "Tiger Shroff Firing Case: 13th Arrest Made",
           url: "https://www.buzzoriginals.com/tiger-shroff-firing-case-13th-arrest-karnal-woman",
         },
         {
           "@type": "ListItem",
-          position: 2,
+          position: 3,
           name: "Udta Teer Director Aakash Kaushik Remembers Mukul Dev",
           url: "https://www.buzzoriginals.com/udta-teer-aakash-kaushik-remembers-mukul-dev",
         },
         {
           "@type": "ListItem",
-          position: 3,
+          position: 4,
           name: "Shah Rukh Khan 61st Birthday: SRK Greets Fans at Mannat",
           url: "https://www.buzzoriginals.com/shah-rukh-khan-61st-birthday-mannat-balcony",
         },

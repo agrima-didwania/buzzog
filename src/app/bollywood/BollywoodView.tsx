@@ -20,6 +20,16 @@ interface BollywoodArticle {
 
 const bollywoodArticles: BollywoodArticle[] = [
   {
+    id: "ramayana-advance-booking-73-crore-ranbir-kapoor",
+    category: "Box Office Record",
+    title: "Ramayana Advance Booking: Ranbir Kapoor’s Film Crosses Rs 73.40 Crore Before Release",
+    badge: "🎟️ ₹73.40 Cr Advance",
+    badgeType: "lime",
+    image: "/images/ramayana-advance-booking-73-crore-ranbir-kapoor.jpg",
+    href: "/ramayana-advance-booking-73-crore-ranbir-kapoor",
+    readOrTime: "4 MIN READ",
+  },
+  {
     id: "tiger-shroff-firing-case-13th-arrest-karnal-woman",
     category: "Crime & Bollywood",
     title: "Tiger Shroff Firing Case: Woman Arrested From Karnal, 13 Accused Now in Custody",
@@ -446,35 +456,35 @@ export default function BollywoodView() {
 
         {/* Lead Section: Latest Bollywood Published Article (Cover Story) + The Last 2 Blogs Uploaded Before It */}
         <section className="lead">
-          {/* Cover Story: Latest Published Bollywood Story (Tiger Shroff Firing Case 13th Arrest) */}
+          {/* Cover Story: Latest Published Bollywood Story (Ramayana Advance Booking 73 Crore) */}
           <Link
-            href="/tiger-shroff-firing-case-13th-arrest-karnal-woman"
+            href="/ramayana-advance-booking-73-crore-ranbir-kapoor"
             className="feature-card group block"
-            aria-label="Read full cover story: Tiger Shroff Firing Case: Woman Arrested From Karnal, 13 Accused Now in Custody"
+            aria-label="Read full cover story: Ramayana Advance Booking: Ranbir Kapoor’s Film Crosses Rs 73.40 Crore Before Release"
           >
             <div className="feature-media relative overflow-hidden">
               <Image
-                src="/images/tiger-shroff-firing-case-13th-arrest-karnal-woman.jpg"
-                alt="Tiger Shroff Firing Case: 13th Arrest Made - Woman Arrested From Karnal"
+                src="/images/ramayana-advance-booking-73-crore-ranbir-kapoor.jpg"
+                alt="Ramayana Advance Booking Crosses Rs 73.40 Crore - Ranbir Kapoor, Sai Pallavi, Ravie Dubey"
                 fill
                 priority
                 className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
                 sizes="(max-width: 980px) 100vw, 65vw"
               />
               <div className="noise" />
-              <span className="badge pink feature-tag z-10">
-                🚨 13th Arrest Made
+              <span className="badge lime feature-tag z-10">
+                🎟️ ₹73.40 Cr Advance
               </span>
             </div>
             <div className="feature-body">
               <h2 className="disp text-white group-hover:text-[var(--lime)] transition-colors">
-                Tiger Shroff Firing Case: Woman Arrested From Karnal, 13 Accused Now in Custody
+                Ramayana Advance Booking: Ranbir Kapoor’s Film Crosses Rs 73.40 Crore Before Release
               </h2>
               <p>
-                Mumbai Crime Branch has arrested a 22-year-old woman from Karnal in the Tiger Shroff firing case. Total arrests are now 13. Here is everything we know so far.
+                Ramayana: Part One has earned Rs 73.40 crore in advance bookings in India. See ticket numbers, Hindi 3D sales, overseas numbers and release date.
               </p>
               <div className="meta-row mt-3">
-                <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; CRIME</span>
+                <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; BOX OFFICE</span>
                 <span className="dot-sep">◆</span>
                 <span>4 MIN READ</span>
                 <span className="dot-sep">◆</span>
@@ -485,7 +495,34 @@ export default function BollywoodView() {
 
           {/* Right Stack: The last 2 blogs uploaded before the latest one */}
           <div className="stack">
-            {/* Card 1: Udta Teer Director Aakash Kaushik Remembers Mukul Dev */}
+            {/* Card 1: Tiger Shroff Firing Case 13th Arrest */}
+            <Link
+              href="/tiger-shroff-firing-case-13th-arrest-karnal-woman"
+              className="card m1 group block"
+            >
+              <div className="card-media relative overflow-hidden">
+                <Image
+                  src="/images/tiger-shroff-firing-case-13th-arrest-karnal-woman.jpg"
+                  alt="Tiger Shroff Firing Case: 13th Arrest Made - Woman Arrested From Karnal"
+                  fill
+                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 980px) 100vw, 35vw"
+                />
+                <span className="badge pink z-10 relative">🚨 13th Arrest Made</span>
+              </div>
+              <div className="card-body">
+                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
+                  Tiger Shroff Firing Case: Woman Arrested From Karnal, 13 Accused Now in Custody
+                </h3>
+                <div className="meta-row mt-2">
+                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; CRIME</span>
+                  <span className="dot-sep">◆</span>
+                  <span>4 MIN READ</span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Card 2: Udta Teer Director Aakash Kaushik Remembers Mukul Dev */}
             <Link
               href="/udta-teer-aakash-kaushik-remembers-mukul-dev"
               className="card m1 group block"
@@ -508,33 +545,6 @@ export default function BollywoodView() {
                   <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; TRIBUTE</span>
                   <span className="dot-sep">◆</span>
                   <span>4 MIN READ</span>
-                </div>
-              </div>
-            </Link>
-
-            {/* Card 2: Shah Rukh Khan 61st Birthday Balcony */}
-            <Link
-              href="/shah-rukh-khan-61st-birthday-mannat-balcony"
-              className="card m1 group block"
-            >
-              <div className="card-media relative overflow-hidden">
-                <Image
-                  src="/images/shah-rukh-khan-61st-birthday-mannat-balcony.jpg"
-                  alt="Shah Rukh Khan 61st Birthday - SRK Greets Fans at Mannat Platform"
-                  fill
-                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
-                  sizes="(max-width: 980px) 100vw, 35vw"
-                />
-                <span className="badge lime z-10 relative">👑 61st Birthday</span>
-              </div>
-              <div className="card-body">
-                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
-                  Shah Rukh Khan Skips Midnight Greeting, Then Appears at Mannat on His 61st Birthday
-                </h3>
-                <div className="meta-row mt-2">
-                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; CELEB</span>
-                  <span className="dot-sep">◆</span>
-                  <span>3 MIN READ</span>
                 </div>
               </div>
             </Link>
