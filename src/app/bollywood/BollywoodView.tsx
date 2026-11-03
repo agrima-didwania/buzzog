@@ -20,6 +20,16 @@ interface BollywoodArticle {
 
 const bollywoodArticles: BollywoodArticle[] = [
   {
+    id: "tu-mil-jaaye-ed-sheeran-shah-rukh-khan-king",
+    category: "Music & Bollywood",
+    title: "Tu Mil Jaaye: How Shah Rukh Khan Got Ed Sheeran on King's First Song",
+    badge: "🔥 Global Collab",
+    badgeType: "pink",
+    image: "/images/tu-mil-jaaye-ed-sheeran-shah-rukh-khan-king.jpg",
+    href: "/tu-mil-jaaye-ed-sheeran-shah-rukh-khan-king",
+    readOrTime: "3 MIN READ",
+  },
+  {
     id: "tusshar-kapoor-extortion-call-bishnoi-gang-fake",
     category: "Crime & Underworld",
     title: "Tusshar Kapoor Gets Rs 5 Crore Extortion Call in Bishnoi Gang’s Name: Police Suspect Hoax",
@@ -506,16 +516,16 @@ export default function BollywoodView() {
 
         {/* Lead Section: Latest Bollywood Published Article (Cover Story) + The Last 2 Blogs Uploaded Before It */}
         <section className="lead">
-          {/* Cover Story: Latest Published Bollywood Story (Tusshar Kapoor Extortion Threat) */}
+          {/* Cover Story: Latest Published Bollywood Story (Tu Mil Jaaye: SRK & Ed Sheeran) */}
           <Link
-            href="/tusshar-kapoor-extortion-call-bishnoi-gang-fake"
+            href="/tu-mil-jaaye-ed-sheeran-shah-rukh-khan-king"
             className="feature-card group block"
-            aria-label="Read full cover story: Tusshar Kapoor Gets Rs 5 Crore Extortion Call in Bishnoi Gang’s Name, But Police Say It May Be Fake"
+            aria-label="Read full cover story: Tu Mil Jaaye: How Shah Rukh Khan Got Ed Sheeran on King's First Song"
           >
             <div className="feature-media relative overflow-hidden">
               <Image
-                src="/images/tusshar-kapoor-extortion-call-bishnoi-gang-fake.jpg"
-                alt="Tusshar Kapoor Extortion Call: Police Suspect ₹5 Crore Bishnoi Gang Threat Is a Hoax"
+                src="/images/tu-mil-jaaye-ed-sheeran-shah-rukh-khan-king.jpg"
+                alt="Tu Mil Jaaye: How Shah Rukh Khan Got Ed Sheeran on King's First Song"
                 fill
                 priority
                 className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
@@ -523,20 +533,20 @@ export default function BollywoodView() {
               />
               <div className="noise" />
               <span className="badge pink feature-tag z-10">
-                🚨 ₹5 Crore Threat Hoax
+                🔥 Global Collab
               </span>
             </div>
             <div className="feature-body">
               <h2 className="disp text-white group-hover:text-[var(--lime)] transition-colors">
-                Tusshar Kapoor Gets Rs 5 Crore Extortion Call in Bishnoi Gang’s Name, But Police Say It May Be Fake
+                Tu Mil Jaaye: How Shah Rukh Khan Got Ed Sheeran on King&apos;s First Song
               </h2>
               <p>
-                Tusshar Kapoor got a Rs 5 crore extortion call in the Lawrence Bishnoi gang’s name. Mumbai Police say the voice doesn’t match. Read what we know.
+                Ed Sheeran shares how Shah Rukh Khan asked him to make a song for King. Read the story behind Tu Mil Jaaye, with Arijit Singh and Deepika Padukone.
               </p>
               <div className="meta-row mt-3">
-                <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; CRIME</span>
+                <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; MUSIC</span>
                 <span className="dot-sep">◆</span>
-                <span>4 MIN READ</span>
+                <span>3 MIN READ</span>
                 <span className="dot-sep">◆</span>
                 <span className="text-[var(--lime)] font-bold">NOV 03</span>
               </div>
@@ -545,7 +555,34 @@ export default function BollywoodView() {
 
           {/* Right Stack: The last 2 blogs uploaded before the latest one */}
           <div className="stack">
-            {/* Card 1: Chandan Roy on Aakhri Ride */}
+            {/* Card 1: Tusshar Kapoor Extortion Call */}
+            <Link
+              href="/tusshar-kapoor-extortion-call-bishnoi-gang-fake"
+              className="card m1 group block"
+            >
+              <div className="card-media relative overflow-hidden">
+                <Image
+                  src="/images/tusshar-kapoor-extortion-call-bishnoi-gang-fake.jpg"
+                  alt="Tusshar Kapoor Extortion Call: Police Suspect ₹5 Crore Bishnoi Gang Threat Is a Hoax"
+                  fill
+                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 980px) 100vw, 35vw"
+                />
+                <span className="badge pink z-10 relative">🚨 ₹5 Cr Threat Hoax</span>
+              </div>
+              <div className="card-body">
+                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
+                  Tusshar Kapoor Gets Rs 5 Crore Extortion Call in Bishnoi Gang’s Name: Police Suspect Hoax
+                </h3>
+                <div className="meta-row mt-2">
+                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; CRIME</span>
+                  <span className="dot-sep">◆</span>
+                  <span>4 MIN READ</span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Card 2: Chandan Roy on Aakhri Ride */}
             <Link
               href="/chandan-roy-aakhri-ride-interview"
               className="card m1 group block"
@@ -566,33 +603,6 @@ export default function BollywoodView() {
                 </h3>
                 <div className="meta-row mt-2">
                   <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; INTERVIEW</span>
-                  <span className="dot-sep">◆</span>
-                  <span>4 MIN READ</span>
-                </div>
-              </div>
-            </Link>
-
-            {/* Card 2: Honey Trehan Slams New CBFC Advisory */}
-            <Link
-              href="/honey-trehan-slams-new-cbfc-advisory-satluj"
-              className="card m1 group block"
-            >
-              <div className="card-media relative overflow-hidden">
-                <Image
-                  src="/images/honey-trehan-slams-new-cbfc-advisory-satluj.jpg"
-                  alt="Honey Trehan Slams New CBFC Advisory: Satluj Director Calls Guidelines Dictatorship"
-                  fill
-                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
-                  sizes="(max-width: 980px) 100vw, 35vw"
-                />
-                <span className="badge pink z-10 relative">⚡ CBFC Advisory Row</span>
-              </div>
-              <div className="card-body">
-                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
-                  Satluj Director Honey Trehan Slams CBFC’s New Advisory: “Cowardice and Dictatorship”
-                </h3>
-                <div className="meta-row mt-2">
-                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; CENSORSHIP</span>
                   <span className="dot-sep">◆</span>
                   <span>4 MIN READ</span>
                 </div>

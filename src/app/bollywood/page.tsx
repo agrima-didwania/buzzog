@@ -353,10 +353,10 @@ export const metadata: Metadata = {
     siteName: "Buzz Originals",
     images: [
       {
-        url: "/images/tusshar-kapoor-extortion-call-bishnoi-gang-fake.jpg",
+        url: "/images/tu-mil-jaaye-ed-sheeran-shah-rukh-khan-king.jpg",
         width: 1024,
         height: 576,
-        alt: "Tusshar Kapoor Extortion Call: Police Suspect ₹5 Crore Bishnoi Gang Threat Is a Hoax — Buzz Originals Bollywood",
+        alt: "Tu Mil Jaaye: How Shah Rukh Khan Got Ed Sheeran on King's First Song — Buzz Originals Bollywood",
       },
     ],
     type: "website",
@@ -366,7 +366,7 @@ export const metadata: Metadata = {
     title: "Bollywood — Buzz Originals",
     description:
       "Raw, unfiltered Bollywood coverage of red carpets, gossip, airport sightings & exclusives.",
-    images: ["/images/tusshar-kapoor-extortion-call-bishnoi-gang-fake.jpg"],
+    images: ["/images/tu-mil-jaaye-ed-sheeran-shah-rukh-khan-king.jpg"],
   },
 };
 
@@ -393,12 +393,18 @@ export default function BollywoodPage() {
         {
           "@type": "ListItem",
           position: 1,
+          name: "Tu Mil Jaaye: How Shah Rukh Khan Got Ed Sheeran on King's First Song",
+          url: "https://www.buzzoriginals.com/tu-mil-jaaye-ed-sheeran-shah-rukh-khan-king",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
           name: "Tusshar Kapoor Extortion Call: Police Suspect Hoax",
           url: "https://www.buzzoriginals.com/tusshar-kapoor-extortion-call-bishnoi-gang-fake",
         },
         {
           "@type": "ListItem",
-          position: 2,
+          position: 3,
           name: "Chandan Roy on Aakhri Ride: Nine Years in Mumbai",
           url: "https://www.buzzoriginals.com/chandan-roy-aakhri-ride-interview",
         },

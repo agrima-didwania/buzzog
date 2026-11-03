@@ -185,6 +185,20 @@ export default function Home() {
 
   const editorialArticles: EditorialArticle[] = [
     {
+      id: "tu-mil-jaaye-ed-sheeran-shah-rukh-khan-king",
+      anchorId: "tu-mil-jaaye-ed-sheeran-king-story",
+      href: "/tu-mil-jaaye-ed-sheeran-shah-rukh-khan-king",
+      title: "Tu Mil Jaaye: How Shah Rukh Khan Got Ed Sheeran on King's First Song",
+      excerpt: "Ed Sheeran shares how Shah Rukh Khan asked him to make a song for King. Read the story behind Tu Mil Jaaye, with Arijit Singh and Deepika Padukone.",
+      category: "Bollywood",
+      secondaryCategory: "Latest",
+      displayCategory: "BOLLYWOOD & MUSIC",
+      badge: "Global Collab",
+      badgeType: "pink",
+      readTime: "3 MIN READ",
+      image: "/images/tu-mil-jaaye-ed-sheeran-shah-rukh-khan-king.jpg",
+    },
+    {
       id: "tusshar-kapoor-extortion-call-bishnoi-gang-fake",
       anchorId: "tusshar-extortion-story",
       href: "/tusshar-kapoor-extortion-call-bishnoi-gang-fake",
@@ -1029,15 +1043,15 @@ export default function Home() {
         <section className="hero" id="featured">
           {/* 1. Main Featured Story (Commanding Top Story Presentation) */}
           <Link
-            href="/tusshar-kapoor-extortion-call-bishnoi-gang-fake"
+            href="/tu-mil-jaaye-ed-sheeran-shah-rukh-khan-king"
             className="feature-card block transition-all hover:border-[var(--lime)] focus-visible:ring-2 focus-visible:ring-[var(--lime)] group"
             style={{ textDecoration: "none", color: "inherit" }}
-            aria-label="Read full article: Tusshar Kapoor Gets Rs 5 Crore Extortion Call in Bishnoi Gang’s Name, But Police Say It May Be Fake"
+            aria-label="Read full article: Tu Mil Jaaye: How Shah Rukh Khan Got Ed Sheeran on King's First Song"
           >
             <div className="feature-media" style={{ overflow: "hidden", position: "relative" }}>
               <Image
-                src="/images/tusshar-kapoor-extortion-call-bishnoi-gang-fake.jpg"
-                alt="Tusshar Kapoor Extortion Call: Police Suspect Rs 5 Crore Bishnoi Gang Threat Is a Hoax"
+                src="/images/tu-mil-jaaye-ed-sheeran-shah-rukh-khan-king.jpg"
+                alt="Tu Mil Jaaye: How Shah Rukh Khan Got Ed Sheeran on King's First Song"
                 fill
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 750px"
@@ -1046,28 +1060,28 @@ export default function Home() {
               />
               <div className="noise" style={{ pointerEvents: "none" }}></div>
               <div className="feature-tag flex items-center gap-2">
-                <span className="badge pink">🚨 Crime Alert</span>
-                <span className="badge lime">₹5 Crore Threat</span>
-                <span className="badge">Police Suspect Hoax</span>
+                <span className="badge pink">🔥 Global Collab</span>
+                <span className="badge lime">King First Song</span>
+                <span className="badge">Ed Sheeran x SRK</span>
               </div>
             </div>
             <div className="feature-body">
               <div className="flex items-center gap-2 mb-2 font-mono text-xs text-[var(--lime)] font-bold tracking-wider uppercase">
-                <span>★ TOP STORY · TUSSHAR KAPOOR RECEIVES ₹5 CR BISHNOI GANG EXTORTION CALL; POLICE SUSPECT HOAX</span>
+                <span>★ TOP STORY · HOW SRK GOT ED SHEERAN FOR KING&apos;S RECORD-BREAKING FIRST SONG &lsquo;TU MIL JAAYE&rsquo;</span>
               </div>
               <h1 className="disp" style={{ color: "#fff" }}>
-                Tusshar Kapoor Gets Rs 5 Crore Extortion Call in Bishnoi Gang’s Name, But Police Say It May Be Fake
+                Tu Mil Jaaye: How Shah Rukh Khan Got Ed Sheeran on King&apos;s First Song
               </h1>
               <p>
-                Tusshar Kapoor got a Rs 5 crore extortion call in the Lawrence Bishnoi gang’s name. Mumbai Police say the voice doesn’t match. Read what we know.
+                Ed Sheeran shares how Shah Rukh Khan asked him to make a song for King. Read the story behind Tu Mil Jaaye, with Arijit Singh and Deepika Padukone.
               </p>
               <div className="meta-row mt-auto pt-3 border-t border-white/[0.06] flex items-center justify-between">
                 <div className="flex items-center gap-3">
-                  <span>BOLLYWOOD &amp; CRIME</span>
+                  <span>BOLLYWOOD &amp; MUSIC</span>
                   <span className="dot-sep">◆</span>
-                  <span>4 MIN READ</span>
+                  <span>3 MIN READ</span>
                   <span className="dot-sep">◆</span>
-                  <span style={{ color: "var(--lime)" }}>BREAKING NEWS</span>
+                  <span style={{ color: "var(--lime)" }}>EXCLUSIVE SCOOP</span>
                 </div>
                 <span className="text-xs font-mono font-bold text-[var(--lime)] hidden sm:inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform">
                   Read Full Story →
@@ -1086,6 +1100,18 @@ export default function Home() {
               <span className="trend-rank">01</span>
               <div className="trend-text">
                 <Link
+                  href="/tu-mil-jaaye-ed-sheeran-shah-rukh-khan-king"
+                  style={{ color: "inherit" }}
+                >
+                  <h3>Tu Mil Jaaye: Ed Sheeran reveals how Shah Rukh Khan asked him to write and record King’s first song overnight</h3>
+                  <span>BOLLYWOOD &amp; MUSIC · 1.48M REACTIONS</span>
+                </Link>
+              </div>
+            </div>
+            <div className="trend-item">
+              <span className="trend-rank">02</span>
+              <div className="trend-text">
+                <Link
                   href="/tusshar-kapoor-extortion-call-bishnoi-gang-fake"
                   style={{ color: "inherit" }}
                 >
@@ -1095,7 +1121,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">02</span>
+              <span className="trend-rank">03</span>
               <div className="trend-text">
                 <Link
                   href="/chandan-roy-aakhri-ride-interview"
@@ -1107,7 +1133,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">03</span>
+              <span className="trend-rank">04</span>
               <div className="trend-text">
                 <Link
                   href="/honey-trehan-slams-new-cbfc-advisory-satluj"
@@ -1119,7 +1145,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">04</span>
+              <span className="trend-rank">05</span>
               <div className="trend-text">
                 <Link
                   href="/koffee-with-karan-9-kareena-kapoor-saif-ali-khan-teaser"
@@ -1131,7 +1157,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">05</span>
+              <span className="trend-rank">06</span>
               <div className="trend-text">
                 <Link
                   href="/orry-sara-ali-khan-disappeared-friendship-fallout"
