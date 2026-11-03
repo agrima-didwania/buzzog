@@ -6,6 +6,19 @@ export const metadata: Metadata = {
   description:
     "Bollywood coverage from Buzz Originals — raw, unfiltered, built for the group chat. Red carpets, rumours, airport looks and exclusives.",
   keywords: [
+    "Mira Rajput Shahid Kapoor gossip",
+    "Great Indian Kapil Show",
+    "Shahid Kapoor Mira Rajput Kapil Sharma Show",
+    "Ishaan Khatter Kapil Sharma Show",
+    "Kapil Sharma Show unseen clip",
+    "Great Indian Kapil Show Season 5",
+    "Great Indian Kapil Show Diwali special",
+    "Mira Rajput Kapil Sharma Show",
+    "Mira Rajput on Shahid Kapoor gossip",
+    "Shahid Kapoor Mira Rajput Ishaan Khatter Netflix episode",
+    "Kapil Sharma Show Shahid Kapoor Shaandaar",
+    "Mira Rajput funny moments Kapil Sharma Show",
+    "Kapil Sharma Show new episode today",
     "Tusshar Kapoor extortion call",
     "Tusshar Kapoor threat call",
     "Lawrence Bishnoi gang",
@@ -353,10 +366,10 @@ export const metadata: Metadata = {
     siteName: "Buzz Originals",
     images: [
       {
-        url: "/images/tu-mil-jaaye-ed-sheeran-shah-rukh-khan-king.jpg",
+        url: "/images/mira-rajput-shahid-kapoor-gossip-kapil-sharma-show.jpg",
         width: 1024,
         height: 576,
-        alt: "Tu Mil Jaaye: How Shah Rukh Khan Got Ed Sheeran on King's First Song — Buzz Originals Bollywood",
+        alt: "Mira Rajput Says Shahid Kapoor Loves Gossip: Unseen Great Indian Kapil Show Clip — Buzz Originals Bollywood",
       },
     ],
     type: "website",
@@ -366,7 +379,7 @@ export const metadata: Metadata = {
     title: "Bollywood — Buzz Originals",
     description:
       "Raw, unfiltered Bollywood coverage of red carpets, gossip, airport sightings & exclusives.",
-    images: ["/images/tu-mil-jaaye-ed-sheeran-shah-rukh-khan-king.jpg"],
+    images: ["/images/mira-rajput-shahid-kapoor-gossip-kapil-sharma-show.jpg"],
   },
 };
 
@@ -393,8 +406,8 @@ export default function BollywoodPage() {
         {
           "@type": "ListItem",
           position: 1,
-          name: "Tu Mil Jaaye: How Shah Rukh Khan Got Ed Sheeran on King's First Song",
-          url: "https://www.buzzoriginals.com/tu-mil-jaaye-ed-sheeran-shah-rukh-khan-king",
+          name: "Mira Rajput Says Shahid Kapoor Loves Gossip",
+          url: "https://www.buzzoriginals.com/mira-rajput-shahid-kapoor-gossip-kapil-sharma-show",
         },
         {
           "@type": "ListItem",

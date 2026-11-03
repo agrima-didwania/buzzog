@@ -185,6 +185,20 @@ export default function Home() {
 
   const editorialArticles: EditorialArticle[] = [
     {
+      id: "mira-rajput-shahid-kapoor-gossip-kapil-sharma-show",
+      anchorId: "mira-rajput-shahid-gossip-story",
+      href: "/mira-rajput-shahid-kapoor-gossip-kapil-sharma-show",
+      title: "Mira Rajput Says Shahid Kapoor Loves Gossip: Funniest Moments From Kapil Sharma’s Unseen Clip",
+      excerpt: "Mira Rajput says Shahid Kapoor “knows everything” about film gossip. Read the funniest moments from the unseen Great Indian Kapil Show segment.",
+      category: "Reality TV Updates",
+      secondaryCategory: "Bollywood",
+      displayCategory: "REALITY TV & BOLLYWOOD",
+      badge: "Gossip King",
+      badgeType: "pink",
+      readTime: "4 MIN READ",
+      image: "/images/mira-rajput-shahid-kapoor-gossip-kapil-sharma-show.jpg",
+    },
+    {
       id: "tu-mil-jaaye-ed-sheeran-shah-rukh-khan-king",
       anchorId: "tu-mil-jaaye-ed-sheeran-king-story",
       href: "/tu-mil-jaaye-ed-sheeran-shah-rukh-khan-king",
@@ -1043,15 +1057,15 @@ export default function Home() {
         <section className="hero" id="featured">
           {/* 1. Main Featured Story (Commanding Top Story Presentation) */}
           <Link
-            href="/tu-mil-jaaye-ed-sheeran-shah-rukh-khan-king"
+            href="/mira-rajput-shahid-kapoor-gossip-kapil-sharma-show"
             className="feature-card block transition-all hover:border-[var(--lime)] focus-visible:ring-2 focus-visible:ring-[var(--lime)] group"
             style={{ textDecoration: "none", color: "inherit" }}
-            aria-label="Read full article: Tu Mil Jaaye: How Shah Rukh Khan Got Ed Sheeran on King's First Song"
+            aria-label="Read full article: Mira Rajput Says Shahid Kapoor Loves Gossip: Funniest Moments From Kapil Sharma’s Unseen Clip"
           >
             <div className="feature-media" style={{ overflow: "hidden", position: "relative" }}>
               <Image
-                src="/images/tu-mil-jaaye-ed-sheeran-shah-rukh-khan-king.jpg"
-                alt="Tu Mil Jaaye: How Shah Rukh Khan Got Ed Sheeran on King's First Song"
+                src="/images/mira-rajput-shahid-kapoor-gossip-kapil-sharma-show.jpg"
+                alt="Mira Rajput Says Shahid Kapoor Loves Gossip: Funniest Moments From Kapil Sharma Unseen Clip"
                 fill
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 750px"
@@ -1060,28 +1074,28 @@ export default function Home() {
               />
               <div className="noise" style={{ pointerEvents: "none" }}></div>
               <div className="feature-tag flex items-center gap-2">
-                <span className="badge pink">🔥 Global Collab</span>
-                <span className="badge lime">King First Song</span>
-                <span className="badge">Ed Sheeran x SRK</span>
+                <span className="badge pink">☕ Gossip King Revealed</span>
+                <span className="badge lime">Kapil Sharma Show</span>
+                <span className="badge">Netflix Unseen Clip</span>
               </div>
             </div>
             <div className="feature-body">
               <div className="flex items-center gap-2 mb-2 font-mono text-xs text-[var(--lime)] font-bold tracking-wider uppercase">
-                <span>★ TOP STORY · HOW SRK GOT ED SHEERAN FOR KING&apos;S RECORD-BREAKING FIRST SONG &lsquo;TU MIL JAAYE&rsquo;</span>
+                <span>★ TOP STORY · MIRA RAJPUT CALLS SHAHID KAPOOR THE “GOSSIP KING” IN UNSEEN KAPIL SHARMA SHOW CLIP</span>
               </div>
               <h1 className="disp" style={{ color: "#fff" }}>
-                Tu Mil Jaaye: How Shah Rukh Khan Got Ed Sheeran on King&apos;s First Song
+                Mira Rajput Says Shahid Kapoor Loves Gossip: Funniest Moments From Kapil Sharma’s Unseen Clip
               </h1>
               <p>
-                Ed Sheeran shares how Shah Rukh Khan asked him to make a song for King. Read the story behind Tu Mil Jaaye, with Arijit Singh and Deepika Padukone.
+                Mira Rajput says Shahid Kapoor “knows everything” about film gossip. Read the funniest moments from the unseen Great Indian Kapil Show segment.
               </p>
               <div className="meta-row mt-auto pt-3 border-t border-white/[0.06] flex items-center justify-between">
                 <div className="flex items-center gap-3">
-                  <span>BOLLYWOOD &amp; MUSIC</span>
+                  <span>REALITY TV &amp; BOLLYWOOD</span>
                   <span className="dot-sep">◆</span>
-                  <span>3 MIN READ</span>
+                  <span>4 MIN READ</span>
                   <span className="dot-sep">◆</span>
-                  <span style={{ color: "var(--lime)" }}>EXCLUSIVE SCOOP</span>
+                  <span style={{ color: "var(--lime)" }}>EXCLUSIVE CLIP</span>
                 </div>
                 <span className="text-xs font-mono font-bold text-[var(--lime)] hidden sm:inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform">
                   Read Full Story →
@@ -1100,6 +1114,18 @@ export default function Home() {
               <span className="trend-rank">01</span>
               <div className="trend-text">
                 <Link
+                  href="/mira-rajput-shahid-kapoor-gossip-kapil-sharma-show"
+                  style={{ color: "inherit" }}
+                >
+                  <h3>Mira Rajput says Shahid Kapoor loves gossip: Funniest moments from The Great Indian Kapil Show unseen bonus clip</h3>
+                  <span>REALITY TV &amp; BOLLYWOOD · 1.52M REACTIONS</span>
+                </Link>
+              </div>
+            </div>
+            <div className="trend-item">
+              <span className="trend-rank">02</span>
+              <div className="trend-text">
+                <Link
                   href="/tu-mil-jaaye-ed-sheeran-shah-rukh-khan-king"
                   style={{ color: "inherit" }}
                 >
@@ -1109,7 +1135,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">02</span>
+              <span className="trend-rank">03</span>
               <div className="trend-text">
                 <Link
                   href="/tusshar-kapoor-extortion-call-bishnoi-gang-fake"
@@ -1121,7 +1147,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">03</span>
+              <span className="trend-rank">04</span>
               <div className="trend-text">
                 <Link
                   href="/chandan-roy-aakhri-ride-interview"
@@ -1133,7 +1159,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">04</span>
+              <span className="trend-rank">05</span>
               <div className="trend-text">
                 <Link
                   href="/honey-trehan-slams-new-cbfc-advisory-satluj"
@@ -1145,7 +1171,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">05</span>
+              <span className="trend-rank">06</span>
               <div className="trend-text">
                 <Link
                   href="/koffee-with-karan-9-kareena-kapoor-saif-ali-khan-teaser"

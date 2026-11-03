@@ -6,6 +6,19 @@ export const metadata: Metadata = {
   description:
     "Eliminations, fights, weekly ration milestones, hot seat stories and dome drama — every Bigg Boss 20, Koffee With Karan, KBC 18 and Splitsvilla moment.",
   keywords: [
+    "Mira Rajput Shahid Kapoor gossip",
+    "Great Indian Kapil Show",
+    "Shahid Kapoor Mira Rajput Kapil Sharma Show",
+    "Ishaan Khatter Kapil Sharma Show",
+    "Kapil Sharma Show unseen clip",
+    "Great Indian Kapil Show Season 5",
+    "Great Indian Kapil Show Diwali special",
+    "Mira Rajput Kapil Sharma Show",
+    "Mira Rajput on Shahid Kapoor gossip",
+    "Shahid Kapoor Mira Rajput Ishaan Khatter Netflix episode",
+    "Kapil Sharma Show Shahid Kapoor Shaandaar",
+    "Mira Rajput funny moments Kapil Sharma Show",
+    "Kapil Sharma Show new episode today",
     "Koffee With Karan 9",
     "Kareena Kapoor Saif Ali Khan Koffee With Karan",
     "Koffee With Karan season 9 episode 4",
@@ -76,10 +89,10 @@ export const metadata: Metadata = {
     siteName: "Buzz Originals",
     images: [
       {
-        url: "/images/koffee-with-karan-9-kareena-kapoor-saif-ali-khan-teaser.jpg",
+        url: "/images/mira-rajput-shahid-kapoor-gossip-kapil-sharma-show.jpg",
         width: 1024,
         height: 576,
-        alt: "Koffee With Karan 9: Kareena Kapoor and Saif Ali Khan Return to the Couch — Buzz Originals Reality Shows",
+        alt: "Mira Rajput Says Shahid Kapoor Loves Gossip: The Great Indian Kapil Show — Buzz Originals Reality Shows",
       },
     ],
     type: "website",
@@ -88,8 +101,8 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Reality Shows — Buzz Originals",
     description:
-      "Raw, unfiltered entertainment coverage of Bigg Boss 20, Koffee With Karan, KBC 18, Splitsvilla & Rise and Fall.",
-    images: ["/images/koffee-with-karan-9-kareena-kapoor-saif-ali-khan-teaser.jpg"],
+      "Raw, unfiltered entertainment coverage of The Great Indian Kapil Show, Bigg Boss 20, Koffee With Karan, KBC 18, Splitsvilla & Rise and Fall.",
+    images: ["/images/mira-rajput-shahid-kapoor-gossip-kapil-sharma-show.jpg"],
   },
 };
 
@@ -116,6 +129,12 @@ export default function RealityShowsPage() {
         {
           "@type": "ListItem",
           position: 1,
+          name: "Mira Rajput Says Shahid Kapoor Loves Gossip",
+          url: "https://www.buzzoriginals.com/mira-rajput-shahid-kapoor-gossip-kapil-sharma-show",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
           name: "Koffee With Karan 9: Kareena Kapoor Calls Herself No. 1, Saif Ali Khan Says He Is “Miscast”",
           url: "https://www.buzzoriginals.com/koffee-with-karan-9-kareena-kapoor-saif-ali-khan-teaser",
         },

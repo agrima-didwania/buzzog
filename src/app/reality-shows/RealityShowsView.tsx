@@ -23,6 +23,19 @@ interface RealityArticle {
 // All verified reality show articles in reverse chronological order
 const realityArticles: RealityArticle[] = [
   {
+    id: "mira-rajput-shahid-kapoor-gossip-kapil-sharma-show",
+    show: "The Great Indian Kapil Show",
+    title: "Mira Rajput Says Shahid Kapoor Loves Gossip: Funniest Moments From Kapil Sharma’s Unseen Clip",
+    excerpt:
+      "Mira Rajput says Shahid Kapoor “knows everything” about film gossip. Read the funniest moments from the unseen Great Indian Kapil Show segment.",
+    badge: "☕ Gossip King",
+    badgeType: "pink",
+    image: "/images/mira-rajput-shahid-kapoor-gossip-kapil-sharma-show.jpg",
+    href: "/mira-rajput-shahid-kapoor-gossip-kapil-sharma-show",
+    readTime: "4 MIN READ",
+    timeAgo: "JUST IN",
+  },
+  {
     id: "koffee-with-karan-9-kareena-saif-teaser",
     show: "Koffee With Karan 9",
     title: "Koffee With Karan 9: Kareena Kapoor Calls Herself No. 1, Saif Ali Khan Says He Is “Miscast”",
@@ -223,16 +236,16 @@ export default function RealityShowsView() {
 
         {/* Lead Section: Latest Reality Published Article (Cover Story) + The Last 2 Blogs Uploaded Before It */}
         <section className="lead">
-          {/* Featured Cover Story: Kareena Kapoor & Saif Ali Khan on Koffee With Karan 9 */}
+          {/* Featured Cover Story: Mira Rajput & Shahid Kapoor on The Great Indian Kapil Show */}
           <Link
-            href="/koffee-with-karan-9-kareena-kapoor-saif-ali-khan-teaser"
+            href="/mira-rajput-shahid-kapoor-gossip-kapil-sharma-show"
             className="feature-card group block"
-            aria-label="Read full cover story: Koffee With Karan 9: Kareena Kapoor Calls Herself No. 1, Saif Ali Khan Says He Is “Miscast”"
+            aria-label="Read full cover story: Mira Rajput Says Shahid Kapoor Loves Gossip: Funniest Moments From Kapil Sharma’s Unseen Clip"
           >
             <div className="feature-media relative overflow-hidden">
               <Image
-                src="/images/koffee-with-karan-9-kareena-kapoor-saif-ali-khan-teaser.jpg"
-                alt="Koffee With Karan 9: Kareena Kapoor and Saif Ali Khan Return to the Couch"
+                src="/images/mira-rajput-shahid-kapoor-gossip-kapil-sharma-show.jpg"
+                alt="Mira Rajput Says Shahid Kapoor Loves Gossip: Funniest Moments From Kapil Sharma Unseen Clip"
                 fill
                 priority
                 className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
@@ -240,32 +253,59 @@ export default function RealityShowsView() {
               />
               <div className="noise" />
               <span className="badge pink feature-tag z-10">
-                ☕ Saifeena Returns
+                ☕ Gossip King Revealed
               </span>
             </div>
             <div className="feature-body">
               <h2 className="disp text-white group-hover:text-[var(--lime)] transition-colors">
-                Koffee With Karan 9: Kareena Kapoor Calls Herself No. 1, Saif Ali Khan Says He Is “Miscast”
+                Mira Rajput Says Shahid Kapoor Loves Gossip: Funniest Moments From Kapil Sharma’s Unseen Clip
               </h2>
               <p>
-                Kareena Kapoor and Saif Ali Khan return to Koffee With Karan 9 after 16 years. See teaser highlights and when to watch episode 4.
+                Mira Rajput says Shahid Kapoor “knows everything” about film gossip. Read the funniest moments from the unseen Great Indian Kapil Show segment.
               </p>
               <div className="meta-row mt-3">
-                <span className="text-[var(--magenta)] font-bold">KOFFEE WITH KARAN 9</span>
+                <span className="text-[var(--magenta)] font-bold">THE GREAT INDIAN KAPIL SHOW</span>
                 <span className="dot-sep">◆</span>
                 <span>4 MIN READ</span>
                 <span className="dot-sep">◆</span>
-                <span className="text-[var(--lime)] font-bold">EPISODE 4 TEASER</span>
+                <span className="text-[var(--lime)] font-bold">UNSEEN CLIP</span>
               </div>
             </div>
           </Link>
 
           {/* Right Stack: The last 2 blogs uploaded before the latest one */}
           <div className="stack">
-            {/* Card 1: Salman Khan Slams ScoutOP */}
+            {/* Card 1: Koffee With Karan 9 Kareena & Saif */}
+            <Link
+              href="/koffee-with-karan-9-kareena-kapoor-saif-ali-khan-teaser"
+              className="card m1 group block"
+            >
+              <div className="card-media relative overflow-hidden">
+                <Image
+                  src="/images/koffee-with-karan-9-kareena-kapoor-saif-ali-khan-teaser.jpg"
+                  alt="Koffee With Karan 9: Kareena Kapoor and Saif Ali Khan Return to the Couch"
+                  fill
+                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 980px) 100vw, 35vw"
+                />
+                <span className="badge pink z-10 relative">☕ Saifeena Returns</span>
+              </div>
+              <div className="card-body">
+                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
+                  Koffee With Karan 9: Kareena Kapoor Calls Herself No. 1, Saif Ali Khan Says He Is “Miscast”
+                </h3>
+                <div className="meta-row mt-2">
+                  <span className="text-[var(--magenta)] font-bold">KWK 9</span>
+                  <span className="dot-sep">◆</span>
+                  <span>4 MIN READ</span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Card 2: Salman Khan Slams ScoutOP */}
             <Link
               href="/bigg-boss-20-salman-khan-slams-scoutop-love-gill"
-              className="card m1 group block"
+              className="card m2 group block"
             >
               <div className="card-media relative overflow-hidden">
                 <Image
@@ -280,33 +320,6 @@ export default function RealityShowsView() {
               <div className="card-body">
                 <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
                   Bigg Boss 20: Salman Khan Slams ScoutOP for Not Standing Up for Love Gill
-                </h3>
-                <div className="meta-row mt-2">
-                  <span className="text-[var(--lime)] font-bold">BIGG BOSS 20</span>
-                  <span className="dot-sep">◆</span>
-                  <span>3 MIN READ</span>
-                </div>
-              </div>
-            </Link>
-
-            {/* Card 2: Bigg Boss 20 Aasif Khan Evicted */}
-            <Link
-              href="/bigg-boss-20-aasif-khan-evicted"
-              className="card m2 group block"
-            >
-              <div className="card-media relative overflow-hidden">
-                <Image
-                  src="/images/bigg-boss-20-aasif-khan-evicted.jpg"
-                  alt="Aasif Khan Evicted Bigg Boss 20 - Scout & Yung DSA Break Down"
-                  fill
-                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
-                  sizes="(max-width: 980px) 100vw, 35vw"
-                />
-                <span className="badge pink z-10 relative">⚡ Eviction Out</span>
-              </div>
-              <div className="card-body">
-                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
-                  Bigg Boss 20: Aasif Khan Evicted, Scout and Yung DSA Cry as He Leaves
                 </h3>
                 <div className="meta-row mt-2">
                   <span className="text-[var(--lime)] font-bold">BIGG BOSS 20</span>

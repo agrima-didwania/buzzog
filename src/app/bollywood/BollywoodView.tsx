@@ -20,6 +20,16 @@ interface BollywoodArticle {
 
 const bollywoodArticles: BollywoodArticle[] = [
   {
+    id: "mira-rajput-shahid-kapoor-gossip-kapil-sharma-show",
+    category: "Reality & Gossip",
+    title: "Mira Rajput Says Shahid Kapoor Loves Gossip: Funniest Moments From Kapil Sharma’s Unseen Clip",
+    badge: "☕ Gossip King",
+    badgeType: "pink",
+    image: "/images/mira-rajput-shahid-kapoor-gossip-kapil-sharma-show.jpg",
+    href: "/mira-rajput-shahid-kapoor-gossip-kapil-sharma-show",
+    readOrTime: "4 MIN READ",
+  },
+  {
     id: "tu-mil-jaaye-ed-sheeran-shah-rukh-khan-king",
     category: "Music & Bollywood",
     title: "Tu Mil Jaaye: How Shah Rukh Khan Got Ed Sheeran on King's First Song",
@@ -516,16 +526,16 @@ export default function BollywoodView() {
 
         {/* Lead Section: Latest Bollywood Published Article (Cover Story) + The Last 2 Blogs Uploaded Before It */}
         <section className="lead">
-          {/* Cover Story: Latest Published Bollywood Story (Tu Mil Jaaye: SRK & Ed Sheeran) */}
+          {/* Cover Story: Latest Published Bollywood Story (Mira Rajput & Shahid Kapoor Gossip) */}
           <Link
-            href="/tu-mil-jaaye-ed-sheeran-shah-rukh-khan-king"
+            href="/mira-rajput-shahid-kapoor-gossip-kapil-sharma-show"
             className="feature-card group block"
-            aria-label="Read full cover story: Tu Mil Jaaye: How Shah Rukh Khan Got Ed Sheeran on King's First Song"
+            aria-label="Read full cover story: Mira Rajput Says Shahid Kapoor Loves Gossip: Funniest Moments From Kapil Sharma’s Unseen Clip"
           >
             <div className="feature-media relative overflow-hidden">
               <Image
-                src="/images/tu-mil-jaaye-ed-sheeran-shah-rukh-khan-king.jpg"
-                alt="Tu Mil Jaaye: How Shah Rukh Khan Got Ed Sheeran on King's First Song"
+                src="/images/mira-rajput-shahid-kapoor-gossip-kapil-sharma-show.jpg"
+                alt="Mira Rajput Says Shahid Kapoor Loves Gossip: Funniest Moments From Kapil Sharma Unseen Clip"
                 fill
                 priority
                 className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
@@ -533,29 +543,56 @@ export default function BollywoodView() {
               />
               <div className="noise" />
               <span className="badge pink feature-tag z-10">
-                🔥 Global Collab
+                ☕ Gossip King Revealed
               </span>
             </div>
             <div className="feature-body">
               <h2 className="disp text-white group-hover:text-[var(--lime)] transition-colors">
-                Tu Mil Jaaye: How Shah Rukh Khan Got Ed Sheeran on King&apos;s First Song
+                Mira Rajput Says Shahid Kapoor Loves Gossip: Funniest Moments From Kapil Sharma’s Unseen Clip
               </h2>
               <p>
-                Ed Sheeran shares how Shah Rukh Khan asked him to make a song for King. Read the story behind Tu Mil Jaaye, with Arijit Singh and Deepika Padukone.
+                Mira Rajput says Shahid Kapoor “knows everything” about film gossip. Read the funniest moments from the unseen Great Indian Kapil Show segment.
               </p>
               <div className="meta-row mt-3">
-                <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; MUSIC</span>
+                <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; GOSSIP</span>
                 <span className="dot-sep">◆</span>
-                <span>3 MIN READ</span>
+                <span>4 MIN READ</span>
                 <span className="dot-sep">◆</span>
-                <span className="text-[var(--lime)] font-bold">NOV 03</span>
+                <span className="text-[var(--lime)] font-bold">NOV 04</span>
               </div>
             </div>
           </Link>
 
           {/* Right Stack: The last 2 blogs uploaded before the latest one */}
           <div className="stack">
-            {/* Card 1: Tusshar Kapoor Extortion Call */}
+            {/* Card 1: Tu Mil Jaaye - SRK & Ed Sheeran */}
+            <Link
+              href="/tu-mil-jaaye-ed-sheeran-shah-rukh-khan-king"
+              className="card m1 group block"
+            >
+              <div className="card-media relative overflow-hidden">
+                <Image
+                  src="/images/tu-mil-jaaye-ed-sheeran-shah-rukh-khan-king.jpg"
+                  alt="Tu Mil Jaaye: How Shah Rukh Khan Got Ed Sheeran on King's First Song"
+                  fill
+                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 980px) 100vw, 35vw"
+                />
+                <span className="badge pink z-10 relative">🔥 Global Collab</span>
+              </div>
+              <div className="card-body">
+                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
+                  Tu Mil Jaaye: How Shah Rukh Khan Got Ed Sheeran on King&apos;s First Song
+                </h3>
+                <div className="meta-row mt-2">
+                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; MUSIC</span>
+                  <span className="dot-sep">◆</span>
+                  <span>3 MIN READ</span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Card 2: Tusshar Kapoor Extortion Call */}
             <Link
               href="/tusshar-kapoor-extortion-call-bishnoi-gang-fake"
               className="card m1 group block"
@@ -576,33 +613,6 @@ export default function BollywoodView() {
                 </h3>
                 <div className="meta-row mt-2">
                   <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; CRIME</span>
-                  <span className="dot-sep">◆</span>
-                  <span>4 MIN READ</span>
-                </div>
-              </div>
-            </Link>
-
-            {/* Card 2: Chandan Roy on Aakhri Ride */}
-            <Link
-              href="/chandan-roy-aakhri-ride-interview"
-              className="card m1 group block"
-            >
-              <div className="card-media relative overflow-hidden">
-                <Image
-                  src="/images/chandan-roy-aakhri-ride-interview.jpg"
-                  alt="Chandan Roy Aakhri Ride: Actor on Mumbai Struggles and Playing a Cab Driver"
-                  fill
-                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
-                  sizes="(max-width: 980px) 100vw, 35vw"
-                />
-                <span className="badge pink z-10 relative">⚡ Exclusive Interview</span>
-              </div>
-              <div className="card-body">
-                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
-                  Chandan Roy Says His Mumbai Struggles Helped Him Play a Desperate Cab Driver in Aakhri Ride
-                </h3>
-                <div className="meta-row mt-2">
-                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; INTERVIEW</span>
                   <span className="dot-sep">◆</span>
                   <span>4 MIN READ</span>
                 </div>
