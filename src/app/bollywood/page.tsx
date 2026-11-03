@@ -6,6 +6,21 @@ export const metadata: Metadata = {
   description:
     "Bollywood coverage from Buzz Originals — raw, unfiltered, built for the group chat. Red carpets, rumours, airport looks and exclusives.",
   keywords: [
+    "Udta Teer",
+    "Mukul Dev",
+    "Aakash Kaushik",
+    "Udta Teer Mukul Dev",
+    "Udta Teer director on Mukul Dev",
+    "Mukul Dev last film",
+    "Mukul Dev Azhar Maqsood",
+    "Ayushmann Khurrana Udta Teer",
+    "Sara Ali Khan Udta Teer",
+    "Udta Teer cast",
+    "Udta Teer box office collection",
+    "Udta Teer release date",
+    "Mukul Dev swan song",
+    "Udta Teer spy comedy",
+    "Udta Teer Operation Sindoor scene",
     "Shah Rukh Khan 61st birthday",
     "SRK birthday 2026",
     "Shah Rukh Khan Mannat balcony",
@@ -242,10 +257,10 @@ export const metadata: Metadata = {
     siteName: "Buzz Originals",
     images: [
       {
-        url: "/images/shah-rukh-khan-61st-birthday-mannat-balcony.jpg",
+        url: "/images/udta-teer-aakash-kaushik-remembers-mukul-dev.jpg",
         width: 1024,
         height: 576,
-        alt: "Shah Rukh Khan 61st Birthday - SRK Greets Fans at Mannat — Buzz Originals Bollywood",
+        alt: "Udta Teer Director Aakash Kaushik Remembers Mukul Dev — Buzz Originals Bollywood",
       },
     ],
     type: "website",
@@ -255,7 +270,7 @@ export const metadata: Metadata = {
     title: "Bollywood — Buzz Originals",
     description:
       "Raw, unfiltered Bollywood coverage of red carpets, gossip, airport sightings & exclusives.",
-    images: ["/images/shah-rukh-khan-61st-birthday-mannat-balcony.jpg"],
+    images: ["/images/udta-teer-aakash-kaushik-remembers-mukul-dev.jpg"],
   },
 };
 
@@ -282,24 +297,30 @@ export default function BollywoodPage() {
         {
           "@type": "ListItem",
           position: 1,
+          name: "Udta Teer Director Aakash Kaushik Remembers Mukul Dev",
+          url: "https://www.buzzoriginals.com/udta-teer-aakash-kaushik-remembers-mukul-dev",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
           name: "Shah Rukh Khan 61st Birthday: SRK Greets Fans at Mannat",
           url: "https://www.buzzoriginals.com/shah-rukh-khan-61st-birthday-mannat-balcony",
         },
         {
           "@type": "ListItem",
-          position: 2,
+          position: 3,
           name: "King First Song ‘Tu Mil Jaaye’ Is Out: SRK and Deepika Light Up His 61st Birthday",
           url: "https://www.buzzoriginals.com/king-first-song-tu-mil-jaaye-shah-rukh-khan-deepika-padukone",
         },
         {
           "@type": "ListItem",
-          position: 3,
+          position: 4,
           name: "Drishyam 3 OTT Release Date: When and Where to Watch",
           url: "https://www.buzzoriginals.com/drishyam-3-ott-release-date-netflix",
         },
         {
           "@type": "ListItem",
-          position: 4,
+          position: 5,
           name: "SRK Skips Mannat Balcony on 61st Birthday, Sends Note",
           url: "https://www.buzzoriginals.com/shah-rukh-khan-61st-birthday-mannat-handwritten-note",
         },

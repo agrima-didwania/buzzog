@@ -20,6 +20,16 @@ interface BollywoodArticle {
 
 const bollywoodArticles: BollywoodArticle[] = [
   {
+    id: "udta-teer-aakash-kaushik-remembers-mukul-dev",
+    category: "Director Tribute",
+    title: "Udta Teer Director Aakash Kaushik Gets Emotional Remembering Mukul Dev",
+    badge: "🎬 Director Scoop",
+    badgeType: "lime",
+    image: "/images/udta-teer-aakash-kaushik-remembers-mukul-dev.jpg",
+    href: "/udta-teer-aakash-kaushik-remembers-mukul-dev",
+    readOrTime: "4 MIN READ",
+  },
+  {
     id: "srk-61st-birthday-mannat-balcony",
     category: "Shah Rukh Khan Birthday",
     title: "Shah Rukh Khan Skips Midnight Greeting, Then Appears at Mannat on His 61st Birthday",
@@ -426,16 +436,16 @@ export default function BollywoodView() {
 
         {/* Lead Section: Latest Bollywood Published Article (Cover Story) + The Last 2 Blogs Uploaded Before It */}
         <section className="lead">
-          {/* Cover Story: Latest Published Bollywood Story (Shah Rukh Khan 61st Birthday Mannat Greeting) */}
+          {/* Cover Story: Latest Published Bollywood Story (Udta Teer Aakash Kaushik Remembers Mukul Dev) */}
           <Link
-            href="/shah-rukh-khan-61st-birthday-mannat-balcony"
+            href="/udta-teer-aakash-kaushik-remembers-mukul-dev"
             className="feature-card group block"
-            aria-label="Read full cover story: Shah Rukh Khan Skips Midnight Greeting, Then Appears at Mannat on His 61st Birthday"
+            aria-label="Read full cover story: Udta Teer Director Aakash Kaushik Gets Emotional Remembering Mukul Dev"
           >
             <div className="feature-media relative overflow-hidden">
               <Image
-                src="/images/shah-rukh-khan-61st-birthday-mannat-balcony.jpg"
-                alt="Shah Rukh Khan 61st Birthday - SRK Greets Fans at Mannat Platform"
+                src="/images/udta-teer-aakash-kaushik-remembers-mukul-dev.jpg"
+                alt="Udta Teer director Aakash Kaushik with late actor Mukul Dev"
                 fill
                 priority
                 className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
@@ -443,29 +453,56 @@ export default function BollywoodView() {
               />
               <div className="noise" />
               <span className="badge lime feature-tag z-10">
-                👑 61st Birthday
+                🎬 Director Scoop
               </span>
             </div>
             <div className="feature-body">
               <h2 className="disp text-white group-hover:text-[var(--lime)] transition-colors">
-                Shah Rukh Khan Skips Midnight Greeting, Then Appears at Mannat on His 61st Birthday
+                Udta Teer Director Aakash Kaushik Gets Emotional Remembering Mukul Dev
               </h2>
               <p>
-                Shah Rukh Khan skipped his midnight Mannat greeting on his 61st birthday, then surprised fans in the evening. Read the note, King song and wishes.
+                Udta Teer director Aakash Kaushik opens up about late actor Mukul Dev, his midnight calls and his role as Azhar Maqsood. Read the full story here.
               </p>
               <div className="meta-row mt-3">
-                <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; CELEB</span>
+                <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; TRIBUTE</span>
                 <span className="dot-sep">◆</span>
-                <span>3 MIN READ</span>
+                <span>4 MIN READ</span>
                 <span className="dot-sep">◆</span>
-                <span className="text-[var(--lime)] font-bold">NOV 02</span>
+                <span className="text-[var(--lime)] font-bold">NOV 03</span>
               </div>
             </div>
           </Link>
 
           {/* Right Stack: The last 2 blogs uploaded before the latest one */}
           <div className="stack">
-            {/* Card 1: King First Song Tu Mil Jaaye */}
+            {/* Card 1: Shah Rukh Khan 61st Birthday Balcony */}
+            <Link
+              href="/shah-rukh-khan-61st-birthday-mannat-balcony"
+              className="card m1 group block"
+            >
+              <div className="card-media relative overflow-hidden">
+                <Image
+                  src="/images/shah-rukh-khan-61st-birthday-mannat-balcony.jpg"
+                  alt="Shah Rukh Khan 61st Birthday - SRK Greets Fans at Mannat Platform"
+                  fill
+                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 980px) 100vw, 35vw"
+                />
+                <span className="badge lime z-10 relative">👑 61st Birthday</span>
+              </div>
+              <div className="card-body">
+                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
+                  Shah Rukh Khan Skips Midnight Greeting, Then Appears at Mannat on His 61st Birthday
+                </h3>
+                <div className="meta-row mt-2">
+                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; CELEB</span>
+                  <span className="dot-sep">◆</span>
+                  <span>3 MIN READ</span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Card 2: King First Song Tu Mil Jaaye */}
             <Link
               href="/king-first-song-tu-mil-jaaye-shah-rukh-khan-deepika-padukone"
               className="card m1 group block"
@@ -486,33 +523,6 @@ export default function BollywoodView() {
                 </h3>
                 <div className="meta-row mt-2">
                   <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; MUSIC</span>
-                  <span className="dot-sep">◆</span>
-                  <span>3 MIN READ</span>
-                </div>
-              </div>
-            </Link>
-
-            {/* Card 2: Drishyam 3 OTT Release Date */}
-            <Link
-              href="/drishyam-3-ott-release-date-netflix"
-              className="card m1 group block"
-            >
-              <div className="card-media relative overflow-hidden">
-                <Image
-                  src="/images/drishyam-3-ott-release-date-netflix.jpg"
-                  alt="Drishyam 3 OTT Release Date: When &amp; Where to Watch on Netflix"
-                  fill
-                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
-                  sizes="(max-width: 980px) 100vw, 35vw"
-                />
-                <span className="badge lime z-10 relative">📺 Netflix OTT</span>
-              </div>
-              <div className="card-body">
-                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
-                  Drishyam 3 OTT Release Date: When Will Ajay Devgn’s Film Come to Netflix?
-                </h3>
-                <div className="meta-row mt-2">
-                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; OTT</span>
                   <span className="dot-sep">◆</span>
                   <span>3 MIN READ</span>
                 </div>
