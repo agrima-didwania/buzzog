@@ -20,6 +20,16 @@ interface BollywoodArticle {
 
 const bollywoodArticles: BollywoodArticle[] = [
   {
+    id: "honey-trehan-slams-new-cbfc-advisory-satluj",
+    category: "Censorship Row",
+    title: "Satluj Director Honey Trehan Slams CBFC’s New Advisory: “Cowardice and Dictatorship”",
+    badge: "⚡ CBFC Advisory Row",
+    badgeType: "pink",
+    image: "/images/honey-trehan-slams-new-cbfc-advisory-satluj.jpg",
+    href: "/honey-trehan-slams-new-cbfc-advisory-satluj",
+    readOrTime: "4 MIN READ",
+  },
+  {
     id: "orry-sara-ali-khan-disappeared-friendship-fallout",
     category: "Celebrity Feud",
     title: "Orry Says Sara Ali Khan “Disappeared” When He Needed Her Most",
@@ -476,16 +486,16 @@ export default function BollywoodView() {
 
         {/* Lead Section: Latest Bollywood Published Article (Cover Story) + The Last 2 Blogs Uploaded Before It */}
         <section className="lead">
-          {/* Cover Story: Latest Published Bollywood Story (Orry & Sara Ali Khan Friendship Fallout) */}
+          {/* Cover Story: Latest Published Bollywood Story (Honey Trehan Slams CBFC Advisory) */}
           <Link
-            href="/orry-sara-ali-khan-disappeared-friendship-fallout"
+            href="/honey-trehan-slams-new-cbfc-advisory-satluj"
             className="feature-card group block"
-            aria-label="Read full cover story: Orry Says Sara Ali Khan “Disappeared” When He Needed Her Most"
+            aria-label="Read full cover story: Satluj Director Honey Trehan Slams CBFC’s New Advisory: “Cowardice and Dictatorship”"
           >
             <div className="feature-media relative overflow-hidden">
               <Image
-                src="/images/orry-sara-ali-khan-disappeared-friendship-fallout.jpg"
-                alt="Orry &amp; Sara Ali Khan Friendship Over? He Says She Disappeared"
+                src="/images/honey-trehan-slams-new-cbfc-advisory-satluj.jpg"
+                alt="Honey Trehan Slams New CBFC Advisory: Satluj Director Calls Guidelines Dictatorship"
                 fill
                 priority
                 className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
@@ -493,18 +503,18 @@ export default function BollywoodView() {
               />
               <div className="noise" />
               <span className="badge pink feature-tag z-10">
-                💔 Friendship Over?
+                ⚡ CBFC Advisory Row
               </span>
             </div>
             <div className="feature-body">
               <h2 className="disp text-white group-hover:text-[var(--lime)] transition-colors">
-                Orry Says Sara Ali Khan “Disappeared” When He Needed Her Most
+                Satluj Director Honey Trehan Slams CBFC’s New Advisory: “Cowardice and Dictatorship”
               </h2>
               <p>
-                Orry says Sara Ali Khan was not there in his worst phase and he never got an apology. Here is what he said on Double Date and how the feud began.
+                Honey Trehan, director of Satluj, has reacted strongly to CBFC’s new advisory for filmmakers. Here’s what the rules say and why he is angry.
               </p>
               <div className="meta-row mt-3">
-                <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; CELEB FEUD</span>
+                <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; CENSORSHIP</span>
                 <span className="dot-sep">◆</span>
                 <span>4 MIN READ</span>
                 <span className="dot-sep">◆</span>
@@ -515,7 +525,34 @@ export default function BollywoodView() {
 
           {/* Right Stack: The last 2 blogs uploaded before the latest one */}
           <div className="stack">
-            {/* Card 1: Janhvi Kapoor and Keerthy Suresh Hit by Deepfakes */}
+            {/* Card 1: Orry & Sara Ali Khan Friendship Fallout */}
+            <Link
+              href="/orry-sara-ali-khan-disappeared-friendship-fallout"
+              className="card m1 group block"
+            >
+              <div className="card-media relative overflow-hidden">
+                <Image
+                  src="/images/orry-sara-ali-khan-disappeared-friendship-fallout.jpg"
+                  alt="Orry &amp; Sara Ali Khan Friendship Over? He Says She Disappeared"
+                  fill
+                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 980px) 100vw, 35vw"
+                />
+                <span className="badge pink z-10 relative">💔 Friendship Over?</span>
+              </div>
+              <div className="card-body">
+                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
+                  Orry Says Sara Ali Khan “Disappeared” When He Needed Her Most
+                </h3>
+                <div className="meta-row mt-2">
+                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; CELEB FEUD</span>
+                  <span className="dot-sep">◆</span>
+                  <span>4 MIN READ</span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Card 2: Janhvi Kapoor and Keerthy Suresh Hit by Deepfakes */}
             <Link
               href="/janhvi-kapoor-keerthy-suresh-deepfake-expert-new-laws"
               className="card m1 group block"
@@ -536,33 +573,6 @@ export default function BollywoodView() {
                 </h3>
                 <div className="meta-row mt-2">
                   <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; CYBER</span>
-                  <span className="dot-sep">◆</span>
-                  <span>4 MIN READ</span>
-                </div>
-              </div>
-            </Link>
-
-            {/* Card 2: Ramayana Advance Booking Crosses Rs 73.40 Crore */}
-            <Link
-              href="/ramayana-advance-booking-73-crore-ranbir-kapoor"
-              className="card m1 group block"
-            >
-              <div className="card-media relative overflow-hidden">
-                <Image
-                  src="/images/ramayana-advance-booking-73-crore-ranbir-kapoor.jpg"
-                  alt="Ramayana Advance Booking Crosses Rs 73.40 Crore - Ranbir Kapoor, Sai Pallavi, Ravie Dubey"
-                  fill
-                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
-                  sizes="(max-width: 980px) 100vw, 35vw"
-                />
-                <span className="badge lime z-10 relative">🎟️ ₹73.40 Cr Advance</span>
-              </div>
-              <div className="card-body">
-                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
-                  Ramayana Advance Booking: Ranbir Kapoor’s Film Crosses Rs 73.40 Crore Before Release
-                </h3>
-                <div className="meta-row mt-2">
-                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; BOX OFFICE</span>
                   <span className="dot-sep">◆</span>
                   <span>4 MIN READ</span>
                 </div>

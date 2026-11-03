@@ -6,6 +6,19 @@ export const metadata: Metadata = {
   description:
     "News coverage from Buzz Originals — raw, unfiltered, built for the group chat. Everything breaking across reality TV, Bollywood, movies and OTT — newest first, updated hourly.",
   keywords: [
+    "Honey Trehan",
+    "CBFC new advisory",
+    "CBFC new guidelines",
+    "Satluj",
+    "Satluj ZEE5",
+    "Diljit Dosanjh",
+    "Punjab 95",
+    "Jaswant Singh Khalra",
+    "CBFC guidelines for filmmakers",
+    "film censorship India",
+    "CBFC new board",
+    "Honey Trehan Instagram story",
+    "Suryaa Delhi High Court",
     "Janhvi Kapoor deepfake",
     "Keerthy Suresh deepfake",
     "Janhvi Kapoor AI video",
@@ -133,10 +146,10 @@ export const metadata: Metadata = {
     siteName: "Buzz Originals",
     images: [
       {
-        url: "/images/janhvi-kapoor-keerthy-suresh-deepfake-expert-new-laws.jpg",
+        url: "/images/honey-trehan-slams-new-cbfc-advisory-satluj.jpg",
         width: 1024,
         height: 576,
-        alt: "Janhvi Kapoor and Keerthy Suresh Hit by Deepfakes: Expert Demands Strict AI Laws — Buzz Originals News Desk",
+        alt: "Honey Trehan Slams New CBFC Advisory: Satluj Director Calls Guidelines Dictatorship — Buzz Originals News Desk",
       },
     ],
     type: "website",
@@ -146,7 +159,7 @@ export const metadata: Metadata = {
     title: "News — Buzz Originals",
     description:
       "Raw, unfiltered entertainment news across reality TV, Bollywood, movies and OTT.",
-    images: ["/images/janhvi-kapoor-keerthy-suresh-deepfake-expert-new-laws.jpg"],
+    images: ["/images/honey-trehan-slams-new-cbfc-advisory-satluj.jpg"],
   },
 };
 

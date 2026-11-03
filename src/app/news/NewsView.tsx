@@ -22,6 +22,18 @@ interface NewsArticle {
 // Only verified breaking entertainment news stories (fatwas, obituaries, police complaints, eviction rows, box-office shifts)
 const newsArticles: NewsArticle[] = [
   {
+    id: "honey-trehan-slams-new-cbfc-advisory-satluj",
+    category: "Bollywood",
+    title: "Satluj Director Honey Trehan Slams CBFC’s New Advisory: “Cowardice and Dictatorship”",
+    badge: "CBFC Advisory Row",
+    badgeType: "pink",
+    image: "/images/honey-trehan-slams-new-cbfc-advisory-satluj.jpg",
+    href: "/honey-trehan-slams-new-cbfc-advisory-satluj",
+    readOrTime: "4 MIN READ",
+    excerpt:
+      "Honey Trehan, director of Satluj, has reacted strongly to CBFC’s new advisory for filmmakers. Here’s what the rules say and why he is angry.",
+  },
+  {
     id: "janhvi-kapoor-keerthy-suresh-deepfake-expert-new-laws",
     category: "Bollywood",
     title: "Janhvi Kapoor and Keerthy Suresh Hit by Deepfakes: Expert Demands Strict AI Laws",

@@ -6,6 +6,19 @@ export const metadata: Metadata = {
   description:
     "Bollywood coverage from Buzz Originals — raw, unfiltered, built for the group chat. Red carpets, rumours, airport looks and exclusives.",
   keywords: [
+    "Honey Trehan",
+    "CBFC new advisory",
+    "CBFC new guidelines",
+    "Satluj",
+    "Satluj ZEE5",
+    "Diljit Dosanjh",
+    "Punjab 95",
+    "Jaswant Singh Khalra",
+    "CBFC guidelines for filmmakers",
+    "film censorship India",
+    "CBFC new board",
+    "Honey Trehan Instagram story",
+    "Suryaa Delhi High Court",
     "Orry Sara Ali Khan",
     "Orry Sara Ali Khan fallout",
     "Orry Sara Ali Khan friendship",
@@ -306,10 +319,10 @@ export const metadata: Metadata = {
     siteName: "Buzz Originals",
     images: [
       {
-        url: "/images/orry-sara-ali-khan-disappeared-friendship-fallout.jpg",
+        url: "/images/honey-trehan-slams-new-cbfc-advisory-satluj.jpg",
         width: 1024,
         height: 576,
-        alt: "Orry Says Sara Ali Khan Disappeared When He Needed Her Most — Buzz Originals Bollywood",
+        alt: "Honey Trehan Slams New CBFC Advisory: Satluj Director Calls Guidelines Dictatorship — Buzz Originals Bollywood",
       },
     ],
     type: "website",
@@ -319,7 +332,7 @@ export const metadata: Metadata = {
     title: "Bollywood — Buzz Originals",
     description:
       "Raw, unfiltered Bollywood coverage of red carpets, gossip, airport sightings & exclusives.",
-    images: ["/images/orry-sara-ali-khan-disappeared-friendship-fallout.jpg"],
+    images: ["/images/honey-trehan-slams-new-cbfc-advisory-satluj.jpg"],
   },
 };
 
@@ -346,18 +359,24 @@ export default function BollywoodPage() {
         {
           "@type": "ListItem",
           position: 1,
+          name: "Honey Trehan Slams New CBFC Advisory: Satluj Row",
+          url: "https://www.buzzoriginals.com/honey-trehan-slams-new-cbfc-advisory-satluj",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
           name: "Orry Says Sara Ali Khan “Disappeared” When He Needed Her Most",
           url: "https://www.buzzoriginals.com/orry-sara-ali-khan-disappeared-friendship-fallout",
         },
         {
           "@type": "ListItem",
-          position: 2,
+          position: 3,
           name: "Janhvi Kapoor Deepfake: Expert Demands Strict AI Laws",
           url: "https://www.buzzoriginals.com/janhvi-kapoor-keerthy-suresh-deepfake-expert-new-laws",
         },
         {
           "@type": "ListItem",
-          position: 3,
+          position: 4,
           name: "Ramayana Advance Booking: Film Hits Rs 73.40 Crore",
           url: "https://www.buzzoriginals.com/ramayana-advance-booking-73-crore-ranbir-kapoor",
         },
