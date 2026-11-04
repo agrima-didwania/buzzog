@@ -1100,7 +1100,7 @@ export default function Home() {
           {/* 1. Main Featured Story (Commanding Top Story Presentation) */}
           <Link
             href="/salman-khan-teri-sexy-beauty-maatrubhumi-song"
-            className="feature-card block transition-all hover:border-[var(--lime)] focus-visible:ring-2 focus-visible:ring-[var(--lime)] group"
+            className="feature-card flex flex-col transition-all hover:border-[var(--lime)] focus-visible:ring-2 focus-visible:ring-[var(--lime)] group"
             style={{ textDecoration: "none", color: "inherit" }}
             aria-label="Read full article: Salman Khan Is Singing Again After 11 Years with “Teri Sexy Beauty”"
           >
@@ -1131,6 +1131,35 @@ export default function Home() {
               <p>
                 Salman Khan sings again after 11 years in Teri Sexy Beauty from Maatrubhumi. Know the song details, fan reactions and release date update.
               </p>
+
+              {/* Editorial Highlights Box */}
+              <div className="feature-highlights">
+                <div className="feature-highlights-header">
+                  <span className="w-2 h-2 rounded-full bg-[var(--lime)] animate-pulse inline-block"></span>
+                  <span>Inside The Track &amp; Film Highlights</span>
+                </div>
+                <ul className="feature-highlights-list">
+                  <li className="feature-highlights-item">
+                    <span className="feature-highlights-bullet">✦</span>
+                    <span>
+                      <strong className="text-white font-medium">Mic Return After 11 Years:</strong> Salman Khan returns to playback singing for the first time since <em>&apos;Main Hoon Hero Tera&apos;</em> (2015) and <em>&apos;Hangover&apos;</em>.
+                    </span>
+                  </li>
+                  <li className="feature-highlights-item">
+                    <span className="feature-highlights-bullet">✦</span>
+                    <span>
+                      <strong className="text-white font-medium">Surprise 5 AM Single:</strong> Composed by Sajid Khan with vocals by Salman &amp; Muskaan, paired alongside Chitrangda Singh in a vibrant dance video.
+                    </span>
+                  </li>
+                  <li className="feature-highlights-item">
+                    <span className="feature-highlights-bullet">✦</span>
+                    <span>
+                      <strong className="text-white font-medium">Patriotic Military Drama:</strong> Directed by Apoorva Lakhia, <em>Maatrubhumi</em> chronicles the 2020 Galwan Valley clash; in cinemas May 8.
+                    </span>
+                  </li>
+                </ul>
+              </div>
+
               <div className="meta-row mt-auto pt-3 border-t border-white/[0.06] flex items-center justify-between">
                 <div className="flex items-center gap-3">
                   <span>BOLLYWOOD &amp; MUSIC</span>
@@ -1233,54 +1262,6 @@ export default function Home() {
                 >
                   <h3>Chandan Roy on Aakhri Ride: Panchayat star opens up on 9 years in Mumbai, Bihar roots &amp; Anurag Kashyap backing</h3>
                   <span>BOLLYWOOD &amp; INTERVIEW · 1.12M REACTIONS</span>
-                </Link>
-              </div>
-            </div>
-            <div className="trend-item">
-              <span className="trend-rank">08</span>
-              <div className="trend-text">
-                <Link
-                  href="/honey-trehan-slams-new-cbfc-advisory-satluj"
-                  style={{ color: "inherit" }}
-                >
-                  <h3>Honey Trehan slams new CBFC advisory as “dictatorship”: Satluj director flags censorship and title tampering</h3>
-                  <span>BOLLYWOOD &amp; NEWS · 1.08M REACTIONS</span>
-                </Link>
-              </div>
-            </div>
-            <div className="trend-item">
-              <span className="trend-rank">09</span>
-              <div className="trend-text">
-                <Link
-                  href="/koffee-with-karan-9-kareena-kapoor-saif-ali-khan-teaser"
-                  style={{ color: "inherit" }}
-                >
-                  <h3>Koffee With Karan 9: Kareena Kapoor declares herself No. 1 actress as Saif jokes he is “miscast” on farewell season</h3>
-                  <span>REALITY TV &amp; KWK · 1.05M REACTIONS</span>
-                </Link>
-              </div>
-            </div>
-            <div className="trend-item">
-              <span className="trend-rank">10</span>
-              <div className="trend-text">
-                <Link
-                  href="/orry-sara-ali-khan-disappeared-friendship-fallout"
-                  style={{ color: "inherit" }}
-                >
-                  <h3>Orry says Sara Ali Khan “disappeared” during his darkest phase: uncovers fallout with Amrita Singh on Double Date</h3>
-                  <span>BOLLYWOOD &amp; GOSSIP · 995K REACTIONS</span>
-                </Link>
-              </div>
-            </div>
-            <div className="trend-item">
-              <span className="trend-rank">10</span>
-              <div className="trend-text">
-                <Link
-                  href="/ramayana-advance-booking-73-crore-ranbir-kapoor"
-                  style={{ color: "inherit" }}
-                >
-                  <h3>Ramayana advance booking crosses ₹73.40 crore in India; Hindi 3D and overseas pre-sales break records</h3>
-                  <span>BOLLYWOOD &amp; BOX OFFICE · 960K REACTIONS</span>
                 </Link>
               </div>
             </div>

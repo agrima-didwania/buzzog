@@ -295,18 +295,17 @@ nav {
 }
 
 .feature-body {
-  padding: 24px 28px 28px;
+  padding: 24px 28px 22px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   flex-grow: 1;
 }
 
 .feature-body h1 {
-  font-size: 36px;
-  line-height: 1.08;
+  font-size: 34px;
+  line-height: 1.12;
   letter-spacing: 0.01em;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
   color: #ffffff;
   transition: color 0.2s ease;
 }
@@ -317,10 +316,58 @@ nav {
 
 .feature-body p {
   color: #a1a1aa;
-  font-size: 15px;
+  font-size: 14.5px;
+  line-height: 1.55;
+  max-width: 660px;
+  margin-bottom: 12px;
+}
+
+.feature-highlights {
+  background: rgba(255, 255, 255, 0.025);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 13px 16px;
+  margin: 4px 0 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.feature-highlights-header {
+  font-family: var(--font-space-mono), monospace;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--lime);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.feature-highlights-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.feature-highlights-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 13.5px;
+  line-height: 1.48;
+  color: #d4d4d8;
+}
+
+.feature-highlights-bullet {
+  color: var(--magenta);
+  font-size: 11px;
   line-height: 1.6;
-  max-width: 600px;
-  margin-bottom: 18px;
+  flex-shrink: 0;
 }
 
 .meta-row {
@@ -366,7 +413,7 @@ nav {
   display: flex;
   gap: 14px;
   align-items: flex-start;
-  padding: 11px 0;
+  padding: 13px 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
   transition: transform 0.18s ease;
 }
@@ -1186,7 +1233,8 @@ select {
   line-height: 1.45;
 }
 
-.article-lead {
+.article-lead,
+.lead-paragraph {
   font-size: 18.5px;
   line-height: 1.65;
   font-weight: 500;
@@ -1196,7 +1244,8 @@ select {
   border-bottom: 1px dashed var(--line);
 }
 
-.article-content h2 {
+.article-content h2,
+.article-body h2 {
   font-family: var(--font-anton), Impact, sans-serif;
   font-size: 26px;
   text-transform: uppercase;
@@ -1208,7 +1257,8 @@ select {
   gap: 12px;
 }
 
-.article-content h2::before {
+.article-content h2::before,
+.article-body h2::before {
   content: "";
   display: inline-block;
   width: 5px;
@@ -1218,7 +1268,8 @@ select {
   flex-shrink: 0;
 }
 
-.article-content h3 {
+.article-content h3,
+.article-body h3 {
   font-family: var(--font-space-grotesk), sans-serif;
   font-size: 20px;
   font-weight: 700;
@@ -1227,14 +1278,16 @@ select {
   margin: 30px 0 14px;
 }
 
-.article-content p {
+.article-content p,
+.article-body p {
   font-size: 16.5px;
   line-height: 1.8;
   color: #d4d4d8;
   margin-bottom: 20px;
 }
 
-.article-content ul {
+.article-content ul,
+.article-body ul {
   list-style: none !important;
   margin: 18px 0 26px;
   padding: 0 !important;
@@ -1243,7 +1296,8 @@ select {
   gap: 12px;
 }
 
-.article-content ul li {
+.article-content ul li,
+.article-body ul li {
   display: block;
   position: relative;
   font-size: 15.5px;
@@ -1255,7 +1309,8 @@ select {
   border: 1px solid var(--line);
 }
 
-.article-content ul li::before {
+.article-content ul li::before,
+.article-body ul li::before {
   content: "◆";
   position: absolute;
   left: 18px;
@@ -1265,12 +1320,14 @@ select {
   line-height: 1.65;
 }
 
-.article-content ul li strong {
+.article-content ul li strong,
+.article-body ul li strong {
   color: #ffffff;
   font-weight: 700;
 }
 
-.article-content ol {
+.article-content ol,
+.article-body ol {
   list-style: none !important;
   counter-reset: article-counter;
   margin: 18px 0 26px;
@@ -1280,7 +1337,8 @@ select {
   gap: 12px;
 }
 
-.article-content ol li {
+.article-content ol li,
+.article-body ol li {
   display: block;
   position: relative;
   counter-increment: article-counter;
@@ -1293,7 +1351,8 @@ select {
   border: 1px solid var(--line);
 }
 
-.article-content ol li::before {
+.article-content ol li::before,
+.article-body ol li::before {
   content: counter(article-counter) ".";
   position: absolute;
   left: 18px;
@@ -1304,9 +1363,21 @@ select {
   line-height: 1.65;
 }
 
-.article-content ol li strong {
+.article-content ol li strong,
+.article-body ol li strong {
   color: #ffffff;
   font-weight: 700;
+}
+
+.article-content blockquote,
+.article-body blockquote {
+  border-left: 4px solid var(--magenta);
+  background: rgba(255, 0, 128, 0.06);
+  padding: 16px 20px;
+  margin: 24px 0;
+  font-style: italic;
+  color: #fff;
+  border-radius: 0 8px 8px 0;
 }
 
 .article-quote-box {

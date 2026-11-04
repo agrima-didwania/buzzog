@@ -257,7 +257,7 @@ export default function SalmanKhanTeriSexyBeautyPage() {
         </div>
 
         {/* Article Body Content */}
-        <article className="article-body">
+        <div className="article-content">
           <p className="lead-paragraph">
             <strong>Salman Khan</strong> has caught Bollywood and his millions of fans by surprise once again. The superstar has stepped behind the microphone to lend his own vocals to <strong>“Teri Sexy Beauty,”</strong> the newly unveiled track from his highly awaited military action-drama <em>Maatrubhumi</em>. The song marks Salman Khan’s first time singing in a feature film soundtrack in 11 years.
           </p>
@@ -406,7 +406,7 @@ export default function SalmanKhanTeriSexyBeautyPage() {
               Stay tuned to Buzz Originals for exclusive music reviews, box office tracking, and verified release date confirmations on Salman Khan’s Maatrubhumi.
             </em>
           </p>
-        </article>
+        </div>
 
         {/* Contextual Read Next Section */}
         <section

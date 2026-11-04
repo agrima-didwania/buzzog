@@ -257,7 +257,7 @@ export default function SaifAliKhanStabbingKWK9Page() {
         </div>
 
         {/* Article Body Content */}
-        <article className="article-body">
+        <div className="article-content">
           <p className="lead-paragraph">
             <strong>Saif Ali Khan and Kareena Kapoor Khan</strong> are back on Karan Johar’s famous couch, and while Koffee With Karan is known for razor-sharp gossip and playful glamour, this time the mood took a deeply serious turn. In Episode 4 of <em>Koffee With Karan Season 9</em>, the power couple spoke candidly for the first time on screen about the harrowing night Saif was stabbed at their Mumbai residence.
           </p>
@@ -436,7 +436,7 @@ export default function SaifAliKhanStabbingKWK9Page() {
               Stay tuned to Buzz Originals for comprehensive post-episode breakdowns, legal updates on the Saif Ali Khan stabbing trial, and exclusive scoops across Bollywood and Indian reality television.
             </em>
           </p>
-        </article>
+        </div>
 
         {/* Contextual Read Next Section */}
         <section
