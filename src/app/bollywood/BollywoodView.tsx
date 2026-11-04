@@ -20,6 +20,16 @@ interface BollywoodArticle {
 
 const bollywoodArticles: BollywoodArticle[] = [
   {
+    id: "ramayana-part-2-postponed-2028-namit-malhotra-trilogy",
+    category: "Release Date Scoop",
+    title: "Ramayana Part 2 Postponed to 2028: Namit Malhotra Confirms, Hints at a Trilogy",
+    badge: "⚡ Big Release Update",
+    badgeType: "pink",
+    image: "/images/ramayana-part-2-postponed-2028-namit-malhotra-trilogy.jpg",
+    href: "/ramayana-part-2-postponed-2028-namit-malhotra-trilogy",
+    readOrTime: "4 MIN READ",
+  },
+  {
     id: "mira-rajput-shahid-kapoor-gossip-kapil-sharma-show",
     category: "Reality & Gossip",
     title: "Mira Rajput Says Shahid Kapoor Loves Gossip: Funniest Moments From Kapil Sharma’s Unseen Clip",
@@ -526,16 +536,16 @@ export default function BollywoodView() {
 
         {/* Lead Section: Latest Bollywood Published Article (Cover Story) + The Last 2 Blogs Uploaded Before It */}
         <section className="lead">
-          {/* Cover Story: Latest Published Bollywood Story (Mira Rajput & Shahid Kapoor Gossip) */}
+          {/* Cover Story: Latest Published Bollywood Story (Ramayana Part 2 Postponed to 2028) */}
           <Link
-            href="/mira-rajput-shahid-kapoor-gossip-kapil-sharma-show"
+            href="/ramayana-part-2-postponed-2028-namit-malhotra-trilogy"
             className="feature-card group block"
-            aria-label="Read full cover story: Mira Rajput Says Shahid Kapoor Loves Gossip: Funniest Moments From Kapil Sharma’s Unseen Clip"
+            aria-label="Read full cover story: Ramayana Part 2 Postponed to 2028: Namit Malhotra Confirms, Hints at a Trilogy"
           >
             <div className="feature-media relative overflow-hidden">
               <Image
-                src="/images/mira-rajput-shahid-kapoor-gossip-kapil-sharma-show.jpg"
-                alt="Mira Rajput Says Shahid Kapoor Loves Gossip: Funniest Moments From Kapil Sharma Unseen Clip"
+                src="/images/ramayana-part-2-postponed-2028-namit-malhotra-trilogy.jpg"
+                alt="Ramayana Part 2 Postponed to 2028: Namit Malhotra Confirms Delay and Hints at Trilogy"
                 fill
                 priority
                 className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
@@ -543,18 +553,18 @@ export default function BollywoodView() {
               />
               <div className="noise" />
               <span className="badge pink feature-tag z-10">
-                ☕ Gossip King Revealed
+                ⚡ Big Release Update
               </span>
             </div>
             <div className="feature-body">
               <h2 className="disp text-white group-hover:text-[var(--lime)] transition-colors">
-                Mira Rajput Says Shahid Kapoor Loves Gossip: Funniest Moments From Kapil Sharma’s Unseen Clip
+                Ramayana Part 2 Postponed to 2028: Namit Malhotra Confirms, Hints at a Trilogy
               </h2>
               <p>
-                Mira Rajput says Shahid Kapoor “knows everything” about film gossip. Read the funniest moments from the unseen Great Indian Kapil Show segment.
+                Ramayana Part 2 will now release in 2028, not 2027. Producer Namit Malhotra explains the delay and hints that the film could become a trilogy.
               </p>
               <div className="meta-row mt-3">
-                <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; GOSSIP</span>
+                <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; CINEMA</span>
                 <span className="dot-sep">◆</span>
                 <span>4 MIN READ</span>
                 <span className="dot-sep">◆</span>
@@ -565,7 +575,34 @@ export default function BollywoodView() {
 
           {/* Right Stack: The last 2 blogs uploaded before the latest one */}
           <div className="stack">
-            {/* Card 1: Tu Mil Jaaye - SRK & Ed Sheeran */}
+            {/* Card 1: Mira Rajput & Shahid Kapoor Gossip */}
+            <Link
+              href="/mira-rajput-shahid-kapoor-gossip-kapil-sharma-show"
+              className="card m1 group block"
+            >
+              <div className="card-media relative overflow-hidden">
+                <Image
+                  src="/images/mira-rajput-shahid-kapoor-gossip-kapil-sharma-show.jpg"
+                  alt="Mira Rajput Says Shahid Kapoor Loves Gossip: Funniest Moments From Kapil Sharma Unseen Clip"
+                  fill
+                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 980px) 100vw, 35vw"
+                />
+                <span className="badge pink z-10 relative">☕ Gossip King</span>
+              </div>
+              <div className="card-body">
+                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
+                  Mira Rajput Says Shahid Kapoor Loves Gossip: Funniest Moments From Kapil Sharma’s Unseen Clip
+                </h3>
+                <div className="meta-row mt-2">
+                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; GOSSIP</span>
+                  <span className="dot-sep">◆</span>
+                  <span>4 MIN READ</span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Card 2: Tu Mil Jaaye - SRK & Ed Sheeran */}
             <Link
               href="/tu-mil-jaaye-ed-sheeran-shah-rukh-khan-king"
               className="card m1 group block"
@@ -588,33 +625,6 @@ export default function BollywoodView() {
                   <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; MUSIC</span>
                   <span className="dot-sep">◆</span>
                   <span>3 MIN READ</span>
-                </div>
-              </div>
-            </Link>
-
-            {/* Card 2: Tusshar Kapoor Extortion Call */}
-            <Link
-              href="/tusshar-kapoor-extortion-call-bishnoi-gang-fake"
-              className="card m1 group block"
-            >
-              <div className="card-media relative overflow-hidden">
-                <Image
-                  src="/images/tusshar-kapoor-extortion-call-bishnoi-gang-fake.jpg"
-                  alt="Tusshar Kapoor Extortion Call: Police Suspect ₹5 Crore Bishnoi Gang Threat Is a Hoax"
-                  fill
-                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
-                  sizes="(max-width: 980px) 100vw, 35vw"
-                />
-                <span className="badge pink z-10 relative">🚨 ₹5 Cr Threat Hoax</span>
-              </div>
-              <div className="card-body">
-                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
-                  Tusshar Kapoor Gets Rs 5 Crore Extortion Call in Bishnoi Gang’s Name: Police Suspect Hoax
-                </h3>
-                <div className="meta-row mt-2">
-                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; CRIME</span>
-                  <span className="dot-sep">◆</span>
-                  <span>4 MIN READ</span>
                 </div>
               </div>
             </Link>

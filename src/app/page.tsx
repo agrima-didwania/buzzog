@@ -185,6 +185,20 @@ export default function Home() {
 
   const editorialArticles: EditorialArticle[] = [
     {
+      id: "ramayana-part-2-postponed-2028-namit-malhotra-trilogy",
+      anchorId: "ramayana-part-2-postponed-story",
+      href: "/ramayana-part-2-postponed-2028-namit-malhotra-trilogy",
+      title: "Ramayana Part 2 Postponed to 2028: Namit Malhotra Confirms, Hints at a Trilogy",
+      excerpt: "Ramayana Part 2 will now release in 2028, not 2027. Producer Namit Malhotra explains the delay and hints that the film could become a trilogy.",
+      category: "Bollywood",
+      secondaryCategory: "Latest",
+      displayCategory: "BOLLYWOOD & CINEMA",
+      badge: "Release Postponed",
+      badgeType: "pink",
+      readTime: "4 MIN READ",
+      image: "/images/ramayana-part-2-postponed-2028-namit-malhotra-trilogy.jpg",
+    },
+    {
       id: "mira-rajput-shahid-kapoor-gossip-kapil-sharma-show",
       anchorId: "mira-rajput-shahid-gossip-story",
       href: "/mira-rajput-shahid-kapoor-gossip-kapil-sharma-show",
@@ -1057,15 +1071,15 @@ export default function Home() {
         <section className="hero" id="featured">
           {/* 1. Main Featured Story (Commanding Top Story Presentation) */}
           <Link
-            href="/mira-rajput-shahid-kapoor-gossip-kapil-sharma-show"
+            href="/ramayana-part-2-postponed-2028-namit-malhotra-trilogy"
             className="feature-card block transition-all hover:border-[var(--lime)] focus-visible:ring-2 focus-visible:ring-[var(--lime)] group"
             style={{ textDecoration: "none", color: "inherit" }}
-            aria-label="Read full article: Mira Rajput Says Shahid Kapoor Loves Gossip: Funniest Moments From Kapil Sharma’s Unseen Clip"
+            aria-label="Read full article: Ramayana Part 2 Postponed to 2028: Namit Malhotra Confirms, Hints at a Trilogy"
           >
             <div className="feature-media" style={{ overflow: "hidden", position: "relative" }}>
               <Image
-                src="/images/mira-rajput-shahid-kapoor-gossip-kapil-sharma-show.jpg"
-                alt="Mira Rajput Says Shahid Kapoor Loves Gossip: Funniest Moments From Kapil Sharma Unseen Clip"
+                src="/images/ramayana-part-2-postponed-2028-namit-malhotra-trilogy.jpg"
+                alt="Ramayana Part 2 Postponed to 2028: Namit Malhotra Confirms Delay and Hints at Trilogy"
                 fill
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 750px"
@@ -1074,28 +1088,28 @@ export default function Home() {
               />
               <div className="noise" style={{ pointerEvents: "none" }}></div>
               <div className="feature-tag flex items-center gap-2">
-                <span className="badge pink">☕ Gossip King Revealed</span>
-                <span className="badge lime">Kapil Sharma Show</span>
-                <span className="badge">Netflix Unseen Clip</span>
+                <span className="badge pink">⚡ Big Release Update</span>
+                <span className="badge lime">Ramayana 2028</span>
+                <span className="badge">Namit Malhotra Exclusive</span>
               </div>
             </div>
             <div className="feature-body">
               <div className="flex items-center gap-2 mb-2 font-mono text-xs text-[var(--lime)] font-bold tracking-wider uppercase">
-                <span>★ TOP STORY · MIRA RAJPUT CALLS SHAHID KAPOOR THE “GOSSIP KING” IN UNSEEN KAPIL SHARMA SHOW CLIP</span>
+                <span>★ TOP STORY · RAMAYANA PART 2 POSTPONED TO 2028: PRODUCER NAMIT MALHOTRA CONFIRMS DELAY AND HINTS AT TRILOGY</span>
               </div>
               <h1 className="disp" style={{ color: "#fff" }}>
-                Mira Rajput Says Shahid Kapoor Loves Gossip: Funniest Moments From Kapil Sharma’s Unseen Clip
+                Ramayana Part 2 Postponed to 2028: Namit Malhotra Confirms, Hints at a Trilogy
               </h1>
               <p>
-                Mira Rajput says Shahid Kapoor “knows everything” about film gossip. Read the funniest moments from the unseen Great Indian Kapil Show segment.
+                Ramayana Part 2 will now release in 2028, not 2027. Producer Namit Malhotra explains the delay and hints that the film could become a trilogy.
               </p>
               <div className="meta-row mt-auto pt-3 border-t border-white/[0.06] flex items-center justify-between">
                 <div className="flex items-center gap-3">
-                  <span>REALITY TV &amp; BOLLYWOOD</span>
+                  <span>BOLLYWOOD &amp; CINEMA</span>
                   <span className="dot-sep">◆</span>
                   <span>4 MIN READ</span>
                   <span className="dot-sep">◆</span>
-                  <span style={{ color: "var(--lime)" }}>EXCLUSIVE CLIP</span>
+                  <span style={{ color: "var(--lime)" }}>CONFIRMED SCOOP</span>
                 </div>
                 <span className="text-xs font-mono font-bold text-[var(--lime)] hidden sm:inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform">
                   Read Full Story →
@@ -1114,6 +1128,18 @@ export default function Home() {
               <span className="trend-rank">01</span>
               <div className="trend-text">
                 <Link
+                  href="/ramayana-part-2-postponed-2028-namit-malhotra-trilogy"
+                  style={{ color: "inherit" }}
+                >
+                  <h3>Ramayana Part 2 postponed to 2028: Producer Namit Malhotra confirms delay and hints at trilogy</h3>
+                  <span>BOLLYWOOD &amp; CINEMA · 1.62M REACTIONS</span>
+                </Link>
+              </div>
+            </div>
+            <div className="trend-item">
+              <span className="trend-rank">02</span>
+              <div className="trend-text">
+                <Link
                   href="/mira-rajput-shahid-kapoor-gossip-kapil-sharma-show"
                   style={{ color: "inherit" }}
                 >
@@ -1123,7 +1149,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">02</span>
+              <span className="trend-rank">03</span>
               <div className="trend-text">
                 <Link
                   href="/tu-mil-jaaye-ed-sheeran-shah-rukh-khan-king"
@@ -1135,7 +1161,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">03</span>
+              <span className="trend-rank">04</span>
               <div className="trend-text">
                 <Link
                   href="/tusshar-kapoor-extortion-call-bishnoi-gang-fake"
@@ -1147,7 +1173,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">04</span>
+              <span className="trend-rank">05</span>
               <div className="trend-text">
                 <Link
                   href="/chandan-roy-aakhri-ride-interview"
@@ -1159,7 +1185,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">05</span>
+              <span className="trend-rank">06</span>
               <div className="trend-text">
                 <Link
                   href="/honey-trehan-slams-new-cbfc-advisory-satluj"
@@ -1171,7 +1197,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">06</span>
+              <span className="trend-rank">07</span>
               <div className="trend-text">
                 <Link
                   href="/koffee-with-karan-9-kareena-kapoor-saif-ali-khan-teaser"
@@ -1183,7 +1209,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">06</span>
+              <span className="trend-rank">08</span>
               <div className="trend-text">
                 <Link
                   href="/orry-sara-ali-khan-disappeared-friendship-fallout"
@@ -1195,7 +1221,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">06</span>
+              <span className="trend-rank">09</span>
               <div className="trend-text">
                 <Link
                   href="/janhvi-kapoor-keerthy-suresh-deepfake-expert-new-laws"
@@ -1207,7 +1233,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">07</span>
+              <span className="trend-rank">10</span>
               <div className="trend-text">
                 <Link
                   href="/ramayana-advance-booking-73-crore-ranbir-kapoor"
@@ -1215,102 +1241,6 @@ export default function Home() {
                 >
                   <h3>Ramayana advance booking crosses ₹73.40 crore in India; Hindi 3D and overseas pre-sales break records</h3>
                   <span>BOLLYWOOD &amp; BOX OFFICE · 960K REACTIONS</span>
-                </Link>
-              </div>
-            </div>
-            <div className="trend-item">
-              <span className="trend-rank">07</span>
-              <div className="trend-text">
-                <Link
-                  href="/robert-downey-jr-pedro-pascal-halloween-costume-swap"
-                  style={{ color: "inherit" }}
-                >
-                  <h3>Robert Downey Jr. and Pedro Pascal swap Marvel costumes for Halloween: Doctor Doom &amp; Mister Fantastic</h3>
-                  <span>MOVIES &amp; MARVEL · 590K REACTIONS</span>
-                </Link>
-              </div>
-            </div>
-            <div className="trend-item">
-              <span className="trend-rank">07</span>
-              <div className="trend-text">
-                <Link
-                  href="/diljit-dosanjh-aura-india-tour-hurdles"
-                  style={{ color: "inherit" }}
-                >
-                  <h3>Diljit Dosanjh breaks silence on Aura India Tour hurdles: “I’m not going anywhere”</h3>
-                  <span>BOLLYWOOD &amp; NEWS · 580K REACTIONS</span>
-                </Link>
-              </div>
-            </div>
-            <div className="trend-item">
-              <span className="trend-rank">08</span>
-              <div className="trend-text">
-                <Link
-                  href="/bhansali-productions-gangubai-post-eetha-trailer-backlash"
-                  style={{ color: "inherit" }}
-                >
-                  <h3>Bhansali Productions trolled for Gangubai Kathiawadi post on Eetha trailer day</h3>
-                  <span>BOLLYWOOD &amp; SOCIAL MEDIA · 570K REACTIONS</span>
-                </Link>
-              </div>
-            </div>
-            <div className="trend-item">
-              <span className="trend-rank">09</span>
-              <div className="trend-text">
-                <Link
-                  href="/maharani-season-5-release-date-january-2027"
-                  style={{ color: "inherit" }}
-                >
-                  <h3>Maharani Season 5 release date: Huma Qureshi’s political drama tentatively set for January 2027</h3>
-                  <span>WEB SERIES &amp; SONYLIV · 560K REACTIONS</span>
-                </Link>
-              </div>
-            </div>
-            <div className="trend-item">
-              <span className="trend-rank">10</span>
-              <div className="trend-text">
-                <Link
-                  href="/honey-singh-nephew-vidit-olak-dies-jalandhar-accident"
-                  style={{ color: "inherit" }}
-                >
-                  <h3>Honey Singh’s nephew Vidit Olak dies in Jalandhar car accident; singer posts emotional note</h3>
-                  <span>NEWS · 550K REACTIONS</span>
-                </Link>
-              </div>
-            </div>
-            <div className="trend-item">
-              <span className="trend-rank">08</span>
-              <div className="trend-text">
-                <Link
-                  href="/ram-gopal-varma-legal-notice-eclatant-films-29-67-crore"
-                  style={{ color: "inherit" }}
-                >
-                  <h3>Ram Gopal Varma gets ₹29.67 crore legal notice from Eclatant Films over 2010 pact</h3>
-                  <span>BOLLYWOOD &amp; NEWS · 535K REACTIONS</span>
-                </Link>
-              </div>
-            </div>
-            <div className="trend-item">
-              <span className="trend-rank">09</span>
-              <div className="trend-text">
-                <Link
-                  href="/himesh-reshammiya-deepika-padukone-irreplaceable-sandeep-reddy-vanga"
-                  style={{ color: "inherit" }}
-                >
-                  <h3>Himesh Reshammiya calls Deepika Padukone “irreplaceable,” picks Sandeep Reddy Vanga</h3>
-                  <span>BOLLYWOOD · 525K REACTIONS</span>
-                </Link>
-              </div>
-            </div>
-            <div className="trend-item">
-              <span className="trend-rank">10</span>
-              <div className="trend-text">
-                <Link
-                  href="/prakash-raj-wife-pony-varma-lost-films-ads"
-                  style={{ color: "inherit" }}
-                >
-                  <h3>Prakash Raj lost films and ad deals for speaking out, reveals wife Pony Varma in new interview</h3>
-                  <span>BOLLYWOOD &amp; NEWS · 510K REACTIONS</span>
                 </Link>
               </div>
             </div>

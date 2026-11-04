@@ -6,6 +6,13 @@ export const metadata: Metadata = {
   description:
     "Bollywood coverage from Buzz Originals — raw, unfiltered, built for the group chat. Red carpets, rumours, airport looks and exclusives.",
   keywords: [
+    "Ramayana Part 2 release date",
+    "Ramayana 2028",
+    "Ramayana trilogy",
+    "Namit Malhotra",
+    "Ranbir Kapoor Ramayana",
+    "Ramayana Part 1 release date",
+    "Ramayana Part 2 postponed",
     "Mira Rajput Shahid Kapoor gossip",
     "Great Indian Kapil Show",
     "Shahid Kapoor Mira Rajput Kapil Sharma Show",
@@ -366,10 +373,10 @@ export const metadata: Metadata = {
     siteName: "Buzz Originals",
     images: [
       {
-        url: "/images/mira-rajput-shahid-kapoor-gossip-kapil-sharma-show.jpg",
+        url: "/images/ramayana-part-2-postponed-2028-namit-malhotra-trilogy.jpg",
         width: 1024,
         height: 576,
-        alt: "Mira Rajput Says Shahid Kapoor Loves Gossip: Unseen Great Indian Kapil Show Clip — Buzz Originals Bollywood",
+        alt: "Ramayana Part 2 Postponed to 2028: Namit Malhotra Confirms Delay and Hints at Trilogy — Buzz Originals Bollywood",
       },
     ],
     type: "website",
@@ -379,7 +386,7 @@ export const metadata: Metadata = {
     title: "Bollywood — Buzz Originals",
     description:
       "Raw, unfiltered Bollywood coverage of red carpets, gossip, airport sightings & exclusives.",
-    images: ["/images/mira-rajput-shahid-kapoor-gossip-kapil-sharma-show.jpg"],
+    images: ["/images/ramayana-part-2-postponed-2028-namit-malhotra-trilogy.jpg"],
   },
 };
 
@@ -406,12 +413,18 @@ export default function BollywoodPage() {
         {
           "@type": "ListItem",
           position: 1,
+          name: "Ramayana Part 2 Postponed to 2028: Namit Malhotra Confirms",
+          url: "https://www.buzzoriginals.com/ramayana-part-2-postponed-2028-namit-malhotra-trilogy",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
           name: "Mira Rajput Says Shahid Kapoor Loves Gossip",
           url: "https://www.buzzoriginals.com/mira-rajput-shahid-kapoor-gossip-kapil-sharma-show",
         },
         {
           "@type": "ListItem",
-          position: 2,
+          position: 3,
           name: "Tusshar Kapoor Extortion Call: Police Suspect Hoax",
           url: "https://www.buzzoriginals.com/tusshar-kapoor-extortion-call-bishnoi-gang-fake",
         },
