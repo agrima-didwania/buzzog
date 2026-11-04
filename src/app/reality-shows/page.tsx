@@ -6,6 +6,16 @@ export const metadata: Metadata = {
   description:
     "Eliminations, fights, weekly ration milestones, hot seat stories and dome drama — every Bigg Boss 20, Koffee With Karan, KBC 18 and Splitsvilla moment.",
   keywords: [
+    "Saif Ali Khan stabbing",
+    "Kareena Kapoor Koffee With Karan",
+    "Koffee With Karan season 9",
+    "Saif Ali Khan Kareena Kapoor",
+    "Koffee With Karan episode 4",
+    "Saif Ali Khan worst night",
+    "Kareena Kapoor Saif stabbing interview",
+    "Saif Ali Khan stabbing case update",
+    "Koffee With Karan 9 Saif Kareena episode",
+    "Kareena Kapoor Ruko ruko",
     "Mira Rajput Shahid Kapoor gossip",
     "Great Indian Kapil Show",
     "Shahid Kapoor Mira Rajput Kapil Sharma Show",
@@ -89,10 +99,10 @@ export const metadata: Metadata = {
     siteName: "Buzz Originals",
     images: [
       {
-        url: "/images/mira-rajput-shahid-kapoor-gossip-kapil-sharma-show.jpg",
+        url: "/images/saif-ali-khan-kareena-kapoor-koffee-with-karan-stabbing-night.jpg",
         width: 1024,
         height: 576,
-        alt: "Mira Rajput Says Shahid Kapoor Loves Gossip: The Great Indian Kapil Show — Buzz Originals Reality Shows",
+        alt: "Saif Ali Khan Stabbing: Kareena Opens Up on KWK 9 — Buzz Originals Reality Shows",
       },
     ],
     type: "website",
@@ -101,8 +111,8 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Reality Shows — Buzz Originals",
     description:
-      "Raw, unfiltered entertainment coverage of The Great Indian Kapil Show, Bigg Boss 20, Koffee With Karan, KBC 18, Splitsvilla & Rise and Fall.",
-    images: ["/images/mira-rajput-shahid-kapoor-gossip-kapil-sharma-show.jpg"],
+      "Raw, unfiltered entertainment coverage of Koffee With Karan, The Great Indian Kapil Show, Bigg Boss 20, KBC 18, Splitsvilla & Rise and Fall.",
+    images: ["/images/saif-ali-khan-kareena-kapoor-koffee-with-karan-stabbing-night.jpg"],
   },
 };
 
@@ -129,12 +139,18 @@ export default function RealityShowsPage() {
         {
           "@type": "ListItem",
           position: 1,
+          name: "Saif Ali Khan Stabbing: Kareena Opens Up on KWK 9",
+          url: "https://www.buzzoriginals.com/saif-ali-khan-kareena-kapoor-koffee-with-karan-stabbing-night",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
           name: "Mira Rajput Says Shahid Kapoor Loves Gossip",
           url: "https://www.buzzoriginals.com/mira-rajput-shahid-kapoor-gossip-kapil-sharma-show",
         },
         {
           "@type": "ListItem",
-          position: 2,
+          position: 3,
           name: "Koffee With Karan 9: Kareena Kapoor Calls Herself No. 1, Saif Ali Khan Says He Is “Miscast”",
           url: "https://www.buzzoriginals.com/koffee-with-karan-9-kareena-kapoor-saif-ali-khan-teaser",
         },

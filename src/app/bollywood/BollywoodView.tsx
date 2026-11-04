@@ -20,6 +20,16 @@ interface BollywoodArticle {
 
 const bollywoodArticles: BollywoodArticle[] = [
   {
+    id: "saif-ali-khan-kareena-kapoor-koffee-with-karan-stabbing-night",
+    category: "KWK 9 Tell-All",
+    title: "Saif Ali Khan Calls Stabbing Night “Worst Night”: Kareena Kapoor’s Emotional Confession on Koffee With Karan",
+    badge: "⚡ KWK 9 Tell-All",
+    badgeType: "pink",
+    image: "/images/saif-ali-khan-kareena-kapoor-koffee-with-karan-stabbing-night.jpg",
+    href: "/saif-ali-khan-kareena-kapoor-koffee-with-karan-stabbing-night",
+    readOrTime: "4 MIN READ",
+  },
+  {
     id: "ramayana-part-2-postponed-2028-namit-malhotra-trilogy",
     category: "Release Date Scoop",
     title: "Ramayana Part 2 Postponed to 2028: Namit Malhotra Confirms, Hints at a Trilogy",
@@ -536,16 +546,16 @@ export default function BollywoodView() {
 
         {/* Lead Section: Latest Bollywood Published Article (Cover Story) + The Last 2 Blogs Uploaded Before It */}
         <section className="lead">
-          {/* Cover Story: Latest Published Bollywood Story (Ramayana Part 2 Postponed to 2028) */}
+          {/* Cover Story: Latest Published Bollywood Story (Saif Ali Khan Stabbing on KWK 9) */}
           <Link
-            href="/ramayana-part-2-postponed-2028-namit-malhotra-trilogy"
+            href="/saif-ali-khan-kareena-kapoor-koffee-with-karan-stabbing-night"
             className="feature-card group block"
-            aria-label="Read full cover story: Ramayana Part 2 Postponed to 2028: Namit Malhotra Confirms, Hints at a Trilogy"
+            aria-label="Read full cover story: Saif Ali Khan Calls Stabbing Night “Worst Night”: Kareena Kapoor’s Emotional Confession on Koffee With Karan"
           >
             <div className="feature-media relative overflow-hidden">
               <Image
-                src="/images/ramayana-part-2-postponed-2028-namit-malhotra-trilogy.jpg"
-                alt="Ramayana Part 2 Postponed to 2028: Namit Malhotra Confirms Delay and Hints at Trilogy"
+                src="/images/saif-ali-khan-kareena-kapoor-koffee-with-karan-stabbing-night.jpg"
+                alt="Saif Ali Khan Stabbing: Kareena Opens Up on KWK 9"
                 fill
                 priority
                 className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
@@ -553,18 +563,18 @@ export default function BollywoodView() {
               />
               <div className="noise" />
               <span className="badge pink feature-tag z-10">
-                ⚡ Big Release Update
+                ⚡ KWK 9 Tell-All
               </span>
             </div>
             <div className="feature-body">
               <h2 className="disp text-white group-hover:text-[var(--lime)] transition-colors">
-                Ramayana Part 2 Postponed to 2028: Namit Malhotra Confirms, Hints at a Trilogy
+                Saif Ali Khan Calls Stabbing Night “Worst Night”: Kareena Kapoor’s Emotional Confession on Koffee With Karan
               </h2>
               <p>
-                Ramayana Part 2 will now release in 2028, not 2027. Producer Namit Malhotra explains the delay and hints that the film could become a trilogy.
+                Saif Ali Khan and Kareena Kapoor talk about the night he was stabbed on Koffee With Karan 9. Read what they said, what happened, and the latest on the case.
               </p>
               <div className="meta-row mt-3">
-                <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; CINEMA</span>
+                <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; REALITY</span>
                 <span className="dot-sep">◆</span>
                 <span>4 MIN READ</span>
                 <span className="dot-sep">◆</span>
@@ -575,7 +585,34 @@ export default function BollywoodView() {
 
           {/* Right Stack: The last 2 blogs uploaded before the latest one */}
           <div className="stack">
-            {/* Card 1: Mira Rajput & Shahid Kapoor Gossip */}
+            {/* Card 1: Ramayana Part 2 Postponed to 2028 */}
+            <Link
+              href="/ramayana-part-2-postponed-2028-namit-malhotra-trilogy"
+              className="card m1 group block"
+            >
+              <div className="card-media relative overflow-hidden">
+                <Image
+                  src="/images/ramayana-part-2-postponed-2028-namit-malhotra-trilogy.jpg"
+                  alt="Ramayana Part 2 Postponed to 2028: Namit Malhotra Confirms Delay and Hints at Trilogy"
+                  fill
+                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 980px) 100vw, 35vw"
+                />
+                <span className="badge pink z-10 relative">⚡ Big Release Update</span>
+              </div>
+              <div className="card-body">
+                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
+                  Ramayana Part 2 Postponed to 2028: Namit Malhotra Confirms, Hints at a Trilogy
+                </h3>
+                <div className="meta-row mt-2">
+                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; CINEMA</span>
+                  <span className="dot-sep">◆</span>
+                  <span>4 MIN READ</span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Card 2: Mira Rajput & Shahid Kapoor Gossip */}
             <Link
               href="/mira-rajput-shahid-kapoor-gossip-kapil-sharma-show"
               className="card m1 group block"
@@ -598,33 +635,6 @@ export default function BollywoodView() {
                   <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; GOSSIP</span>
                   <span className="dot-sep">◆</span>
                   <span>4 MIN READ</span>
-                </div>
-              </div>
-            </Link>
-
-            {/* Card 2: Tu Mil Jaaye - SRK & Ed Sheeran */}
-            <Link
-              href="/tu-mil-jaaye-ed-sheeran-shah-rukh-khan-king"
-              className="card m1 group block"
-            >
-              <div className="card-media relative overflow-hidden">
-                <Image
-                  src="/images/tu-mil-jaaye-ed-sheeran-shah-rukh-khan-king.jpg"
-                  alt="Tu Mil Jaaye: How Shah Rukh Khan Got Ed Sheeran on King's First Song"
-                  fill
-                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
-                  sizes="(max-width: 980px) 100vw, 35vw"
-                />
-                <span className="badge pink z-10 relative">🔥 Global Collab</span>
-              </div>
-              <div className="card-body">
-                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
-                  Tu Mil Jaaye: How Shah Rukh Khan Got Ed Sheeran on King&apos;s First Song
-                </h3>
-                <div className="meta-row mt-2">
-                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; MUSIC</span>
-                  <span className="dot-sep">◆</span>
-                  <span>3 MIN READ</span>
                 </div>
               </div>
             </Link>

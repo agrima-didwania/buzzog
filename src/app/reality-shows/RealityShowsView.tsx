@@ -23,6 +23,19 @@ interface RealityArticle {
 // All verified reality show articles in reverse chronological order
 const realityArticles: RealityArticle[] = [
   {
+    id: "saif-ali-khan-kareena-kapoor-koffee-with-karan-stabbing-night",
+    show: "Koffee With Karan 9",
+    title: "Saif Ali Khan Calls Stabbing Night “Worst Night”: Kareena Kapoor’s Emotional Confession on Koffee With Karan",
+    excerpt:
+      "Saif Ali Khan and Kareena Kapoor talk about the night he was stabbed on Koffee With Karan 9. Read what they said, what happened, and the latest on the case.",
+    badge: "⚡ Stabbing Night Tell-All",
+    badgeType: "pink",
+    image: "/images/saif-ali-khan-kareena-kapoor-koffee-with-karan-stabbing-night.jpg",
+    href: "/saif-ali-khan-kareena-kapoor-koffee-with-karan-stabbing-night",
+    readTime: "4 MIN READ",
+    timeAgo: "JUST IN",
+  },
+  {
     id: "mira-rajput-shahid-kapoor-gossip-kapil-sharma-show",
     show: "The Great Indian Kapil Show",
     title: "Mira Rajput Says Shahid Kapoor Loves Gossip: Funniest Moments From Kapil Sharma’s Unseen Clip",
@@ -236,16 +249,16 @@ export default function RealityShowsView() {
 
         {/* Lead Section: Latest Reality Published Article (Cover Story) + The Last 2 Blogs Uploaded Before It */}
         <section className="lead">
-          {/* Featured Cover Story: Mira Rajput & Shahid Kapoor on The Great Indian Kapil Show */}
+          {/* Featured Cover Story: Saif Ali Khan Stabbing on KWK 9 */}
           <Link
-            href="/mira-rajput-shahid-kapoor-gossip-kapil-sharma-show"
+            href="/saif-ali-khan-kareena-kapoor-koffee-with-karan-stabbing-night"
             className="feature-card group block"
-            aria-label="Read full cover story: Mira Rajput Says Shahid Kapoor Loves Gossip: Funniest Moments From Kapil Sharma’s Unseen Clip"
+            aria-label="Read full cover story: Saif Ali Khan Calls Stabbing Night “Worst Night”: Kareena Kapoor’s Emotional Confession on Koffee With Karan"
           >
             <div className="feature-media relative overflow-hidden">
               <Image
-                src="/images/mira-rajput-shahid-kapoor-gossip-kapil-sharma-show.jpg"
-                alt="Mira Rajput Says Shahid Kapoor Loves Gossip: Funniest Moments From Kapil Sharma Unseen Clip"
+                src="/images/saif-ali-khan-kareena-kapoor-koffee-with-karan-stabbing-night.jpg"
+                alt="Saif Ali Khan Stabbing: Kareena Opens Up on KWK 9"
                 fill
                 priority
                 className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
@@ -253,29 +266,56 @@ export default function RealityShowsView() {
               />
               <div className="noise" />
               <span className="badge pink feature-tag z-10">
-                ☕ Gossip King Revealed
+                ⚡ Stabbing Night Tell-All
               </span>
             </div>
             <div className="feature-body">
               <h2 className="disp text-white group-hover:text-[var(--lime)] transition-colors">
-                Mira Rajput Says Shahid Kapoor Loves Gossip: Funniest Moments From Kapil Sharma’s Unseen Clip
+                Saif Ali Khan Calls Stabbing Night “Worst Night”: Kareena Kapoor’s Emotional Confession on Koffee With Karan
               </h2>
               <p>
-                Mira Rajput says Shahid Kapoor “knows everything” about film gossip. Read the funniest moments from the unseen Great Indian Kapil Show segment.
+                Saif Ali Khan and Kareena Kapoor talk about the night he was stabbed on Koffee With Karan 9. Read what they said, what happened, and the latest on the case.
               </p>
               <div className="meta-row mt-3">
-                <span className="text-[var(--magenta)] font-bold">THE GREAT INDIAN KAPIL SHOW</span>
+                <span className="text-[var(--magenta)] font-bold">KOFFEE WITH KARAN 9</span>
                 <span className="dot-sep">◆</span>
                 <span>4 MIN READ</span>
                 <span className="dot-sep">◆</span>
-                <span className="text-[var(--lime)] font-bold">UNSEEN CLIP</span>
+                <span className="text-[var(--lime)] font-bold">EPISODE 4</span>
               </div>
             </div>
           </Link>
 
           {/* Right Stack: The last 2 blogs uploaded before the latest one */}
           <div className="stack">
-            {/* Card 1: Koffee With Karan 9 Kareena & Saif */}
+            {/* Card 1: Mira Rajput & Shahid Kapoor Gossip */}
+            <Link
+              href="/mira-rajput-shahid-kapoor-gossip-kapil-sharma-show"
+              className="card m1 group block"
+            >
+              <div className="card-media relative overflow-hidden">
+                <Image
+                  src="/images/mira-rajput-shahid-kapoor-gossip-kapil-sharma-show.jpg"
+                  alt="Mira Rajput Says Shahid Kapoor Loves Gossip: Funniest Moments From Kapil Sharma Unseen Clip"
+                  fill
+                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 980px) 100vw, 35vw"
+                />
+                <span className="badge pink z-10 relative">☕ Gossip King</span>
+              </div>
+              <div className="card-body">
+                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
+                  Mira Rajput Says Shahid Kapoor Loves Gossip: Funniest Moments From Kapil Sharma’s Unseen Clip
+                </h3>
+                <div className="meta-row mt-2">
+                  <span className="text-[var(--magenta)] font-bold">THE GREAT INDIAN KAPIL SHOW</span>
+                  <span className="dot-sep">◆</span>
+                  <span>4 MIN READ</span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Card 2: Koffee With Karan 9 Kareena & Saif Teaser */}
             <Link
               href="/koffee-with-karan-9-kareena-kapoor-saif-ali-khan-teaser"
               className="card m1 group block"
@@ -298,33 +338,6 @@ export default function RealityShowsView() {
                   <span className="text-[var(--magenta)] font-bold">KWK 9</span>
                   <span className="dot-sep">◆</span>
                   <span>4 MIN READ</span>
-                </div>
-              </div>
-            </Link>
-
-            {/* Card 2: Salman Khan Slams ScoutOP */}
-            <Link
-              href="/bigg-boss-20-salman-khan-slams-scoutop-love-gill"
-              className="card m2 group block"
-            >
-              <div className="card-media relative overflow-hidden">
-                <Image
-                  src="/images/bigg-boss-20-salman-khan-slams-scoutop-love-gill.jpg"
-                  alt="Salman Slams ScoutOP Over Love Gill - Bigg Boss 20 Weekend Ka Vaar"
-                  fill
-                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
-                  sizes="(max-width: 980px) 100vw, 35vw"
-                />
-                <span className="badge pink z-10 relative">🔥 Salman Slams Scout</span>
-              </div>
-              <div className="card-body">
-                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
-                  Bigg Boss 20: Salman Khan Slams ScoutOP for Not Standing Up for Love Gill
-                </h3>
-                <div className="meta-row mt-2">
-                  <span className="text-[var(--lime)] font-bold">BIGG BOSS 20</span>
-                  <span className="dot-sep">◆</span>
-                  <span>3 MIN READ</span>
                 </div>
               </div>
             </Link>

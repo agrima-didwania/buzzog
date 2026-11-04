@@ -185,6 +185,20 @@ export default function Home() {
 
   const editorialArticles: EditorialArticle[] = [
     {
+      id: "saif-ali-khan-kareena-kapoor-koffee-with-karan-stabbing-night",
+      anchorId: "saif-stabbing-kwk9-story",
+      href: "/saif-ali-khan-kareena-kapoor-koffee-with-karan-stabbing-night",
+      title: "Saif Ali Khan Calls Stabbing Night “Worst Night”: Kareena Kapoor’s Emotional Confession on Koffee With Karan",
+      excerpt: "Saif Ali Khan and Kareena Kapoor talk about the night he was stabbed on Koffee With Karan 9. Read what they said, what happened, and the latest on the case.",
+      category: "Reality TV Updates",
+      secondaryCategory: "Bollywood",
+      displayCategory: "REALITY TV & BOLLYWOOD",
+      badge: "KWK 9 Tell-All",
+      badgeType: "pink",
+      readTime: "4 MIN READ",
+      image: "/images/saif-ali-khan-kareena-kapoor-koffee-with-karan-stabbing-night.jpg",
+    },
+    {
       id: "ramayana-part-2-postponed-2028-namit-malhotra-trilogy",
       anchorId: "ramayana-part-2-postponed-story",
       href: "/ramayana-part-2-postponed-2028-namit-malhotra-trilogy",
@@ -1071,15 +1085,15 @@ export default function Home() {
         <section className="hero" id="featured">
           {/* 1. Main Featured Story (Commanding Top Story Presentation) */}
           <Link
-            href="/ramayana-part-2-postponed-2028-namit-malhotra-trilogy"
+            href="/saif-ali-khan-kareena-kapoor-koffee-with-karan-stabbing-night"
             className="feature-card block transition-all hover:border-[var(--lime)] focus-visible:ring-2 focus-visible:ring-[var(--lime)] group"
             style={{ textDecoration: "none", color: "inherit" }}
-            aria-label="Read full article: Ramayana Part 2 Postponed to 2028: Namit Malhotra Confirms, Hints at a Trilogy"
+            aria-label="Read full article: Saif Ali Khan Calls Stabbing Night “Worst Night”: Kareena Kapoor’s Emotional Confession on Koffee With Karan"
           >
             <div className="feature-media" style={{ overflow: "hidden", position: "relative" }}>
               <Image
-                src="/images/ramayana-part-2-postponed-2028-namit-malhotra-trilogy.jpg"
-                alt="Ramayana Part 2 Postponed to 2028: Namit Malhotra Confirms Delay and Hints at Trilogy"
+                src="/images/saif-ali-khan-kareena-kapoor-koffee-with-karan-stabbing-night.jpg"
+                alt="Saif Ali Khan Stabbing: Kareena Opens Up on KWK 9"
                 fill
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 750px"
@@ -1088,28 +1102,28 @@ export default function Home() {
               />
               <div className="noise" style={{ pointerEvents: "none" }}></div>
               <div className="feature-tag flex items-center gap-2">
-                <span className="badge pink">⚡ Big Release Update</span>
-                <span className="badge lime">Ramayana 2028</span>
-                <span className="badge">Namit Malhotra Exclusive</span>
+                <span className="badge pink">⚡ KWK 9 Tell-All</span>
+                <span className="badge lime">Saifeena Returns</span>
+                <span className="badge">Emotional Confession</span>
               </div>
             </div>
             <div className="feature-body">
               <div className="flex items-center gap-2 mb-2 font-mono text-xs text-[var(--lime)] font-bold tracking-wider uppercase">
-                <span>★ TOP STORY · RAMAYANA PART 2 POSTPONED TO 2028: PRODUCER NAMIT MALHOTRA CONFIRMS DELAY AND HINTS AT TRILOGY</span>
+                <span>★ TOP STORY · SAIF ALI KHAN CALLS STABBING NIGHT “WORST NIGHT” AS KAREENA OPENS UP ON KOFFEE WITH KARAN 9</span>
               </div>
               <h1 className="disp" style={{ color: "#fff" }}>
-                Ramayana Part 2 Postponed to 2028: Namit Malhotra Confirms, Hints at a Trilogy
+                Saif Ali Khan Calls Stabbing Night “Worst Night”: Kareena Kapoor’s Emotional Confession on Koffee With Karan
               </h1>
               <p>
-                Ramayana Part 2 will now release in 2028, not 2027. Producer Namit Malhotra explains the delay and hints that the film could become a trilogy.
+                Saif Ali Khan and Kareena Kapoor talk about the night he was stabbed on Koffee With Karan 9. Read what they said, what happened, and the latest on the case.
               </p>
               <div className="meta-row mt-auto pt-3 border-t border-white/[0.06] flex items-center justify-between">
                 <div className="flex items-center gap-3">
-                  <span>BOLLYWOOD &amp; CINEMA</span>
+                  <span>REALITY TV &amp; BOLLYWOOD</span>
                   <span className="dot-sep">◆</span>
                   <span>4 MIN READ</span>
                   <span className="dot-sep">◆</span>
-                  <span style={{ color: "var(--lime)" }}>CONFIRMED SCOOP</span>
+                  <span style={{ color: "var(--lime)" }}>EMOTIONAL EXCLUSIVE</span>
                 </div>
                 <span className="text-xs font-mono font-bold text-[var(--lime)] hidden sm:inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform">
                   Read Full Story →
@@ -1128,6 +1142,18 @@ export default function Home() {
               <span className="trend-rank">01</span>
               <div className="trend-text">
                 <Link
+                  href="/saif-ali-khan-kareena-kapoor-koffee-with-karan-stabbing-night"
+                  style={{ color: "inherit" }}
+                >
+                  <h3>Saif Ali Khan stabbing night: Kareena Kapoor&apos;s emotional confession on Koffee With Karan 9</h3>
+                  <span>REALITY TV &amp; BOLLYWOOD · 1.75M REACTIONS</span>
+                </Link>
+              </div>
+            </div>
+            <div className="trend-item">
+              <span className="trend-rank">02</span>
+              <div className="trend-text">
+                <Link
                   href="/ramayana-part-2-postponed-2028-namit-malhotra-trilogy"
                   style={{ color: "inherit" }}
                 >
@@ -1137,7 +1163,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">02</span>
+              <span className="trend-rank">03</span>
               <div className="trend-text">
                 <Link
                   href="/mira-rajput-shahid-kapoor-gossip-kapil-sharma-show"
@@ -1149,7 +1175,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">03</span>
+              <span className="trend-rank">04</span>
               <div className="trend-text">
                 <Link
                   href="/tu-mil-jaaye-ed-sheeran-shah-rukh-khan-king"
@@ -1161,7 +1187,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">04</span>
+              <span className="trend-rank">05</span>
               <div className="trend-text">
                 <Link
                   href="/tusshar-kapoor-extortion-call-bishnoi-gang-fake"
@@ -1173,7 +1199,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">05</span>
+              <span className="trend-rank">06</span>
               <div className="trend-text">
                 <Link
                   href="/chandan-roy-aakhri-ride-interview"
@@ -1185,7 +1211,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">06</span>
+              <span className="trend-rank">07</span>
               <div className="trend-text">
                 <Link
                   href="/honey-trehan-slams-new-cbfc-advisory-satluj"
@@ -1197,7 +1223,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">07</span>
+              <span className="trend-rank">08</span>
               <div className="trend-text">
                 <Link
                   href="/koffee-with-karan-9-kareena-kapoor-saif-ali-khan-teaser"
@@ -1209,7 +1235,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">08</span>
+              <span className="trend-rank">09</span>
               <div className="trend-text">
                 <Link
                   href="/orry-sara-ali-khan-disappeared-friendship-fallout"
@@ -1221,7 +1247,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">09</span>
+              <span className="trend-rank">10</span>
               <div className="trend-text">
                 <Link
                   href="/janhvi-kapoor-keerthy-suresh-deepfake-expert-new-laws"

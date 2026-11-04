@@ -6,6 +6,16 @@ export const metadata: Metadata = {
   description:
     "Bollywood coverage from Buzz Originals — raw, unfiltered, built for the group chat. Red carpets, rumours, airport looks and exclusives.",
   keywords: [
+    "Saif Ali Khan stabbing",
+    "Kareena Kapoor Koffee With Karan",
+    "Koffee With Karan season 9",
+    "Saif Ali Khan Kareena Kapoor",
+    "Koffee With Karan episode 4",
+    "Saif Ali Khan worst night",
+    "Kareena Kapoor Saif stabbing interview",
+    "Saif Ali Khan stabbing case update",
+    "Koffee With Karan 9 Saif Kareena episode",
+    "Kareena Kapoor Ruko ruko",
     "Ramayana Part 2 release date",
     "Ramayana 2028",
     "Ramayana trilogy",
@@ -373,10 +383,10 @@ export const metadata: Metadata = {
     siteName: "Buzz Originals",
     images: [
       {
-        url: "/images/ramayana-part-2-postponed-2028-namit-malhotra-trilogy.jpg",
+        url: "/images/saif-ali-khan-kareena-kapoor-koffee-with-karan-stabbing-night.jpg",
         width: 1024,
         height: 576,
-        alt: "Ramayana Part 2 Postponed to 2028: Namit Malhotra Confirms Delay and Hints at Trilogy — Buzz Originals Bollywood",
+        alt: "Saif Ali Khan Stabbing: Kareena Opens Up on KWK 9 — Buzz Originals Bollywood",
       },
     ],
     type: "website",
@@ -386,7 +396,7 @@ export const metadata: Metadata = {
     title: "Bollywood — Buzz Originals",
     description:
       "Raw, unfiltered Bollywood coverage of red carpets, gossip, airport sightings & exclusives.",
-    images: ["/images/ramayana-part-2-postponed-2028-namit-malhotra-trilogy.jpg"],
+    images: ["/images/saif-ali-khan-kareena-kapoor-koffee-with-karan-stabbing-night.jpg"],
   },
 };
 
@@ -413,12 +423,18 @@ export default function BollywoodPage() {
         {
           "@type": "ListItem",
           position: 1,
+          name: "Saif Ali Khan Stabbing: Kareena Opens Up on KWK 9",
+          url: "https://www.buzzoriginals.com/saif-ali-khan-kareena-kapoor-koffee-with-karan-stabbing-night",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
           name: "Ramayana Part 2 Postponed to 2028: Namit Malhotra Confirms",
           url: "https://www.buzzoriginals.com/ramayana-part-2-postponed-2028-namit-malhotra-trilogy",
         },
         {
           "@type": "ListItem",
-          position: 2,
+          position: 3,
           name: "Mira Rajput Says Shahid Kapoor Loves Gossip",
           url: "https://www.buzzoriginals.com/mira-rajput-shahid-kapoor-gossip-kapil-sharma-show",
         },
