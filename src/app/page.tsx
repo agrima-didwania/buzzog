@@ -185,6 +185,20 @@ export default function Home() {
 
   const editorialArticles: EditorialArticle[] = [
     {
+      id: "salman-khan-teri-sexy-beauty-maatrubhumi-song",
+      anchorId: "salman-teri-sexy-beauty-story",
+      href: "/salman-khan-teri-sexy-beauty-maatrubhumi-song",
+      title: "Salman Khan Is Singing Again After 11 Years with “Teri Sexy Beauty”",
+      excerpt: "Salman Khan sings again after 11 years in Teri Sexy Beauty from Maatrubhumi. Know the song details, fan reactions and release date update.",
+      category: "Bollywood",
+      secondaryCategory: "Latest",
+      displayCategory: "BOLLYWOOD & MUSIC",
+      badge: "11 Years Later",
+      badgeType: "pink",
+      readTime: "4 MIN READ",
+      image: "/images/salman-khan-teri-sexy-beauty-maatrubhumi-song.jpg",
+    },
+    {
       id: "saif-ali-khan-kareena-kapoor-koffee-with-karan-stabbing-night",
       anchorId: "saif-stabbing-kwk9-story",
       href: "/saif-ali-khan-kareena-kapoor-koffee-with-karan-stabbing-night",
@@ -1085,15 +1099,15 @@ export default function Home() {
         <section className="hero" id="featured">
           {/* 1. Main Featured Story (Commanding Top Story Presentation) */}
           <Link
-            href="/saif-ali-khan-kareena-kapoor-koffee-with-karan-stabbing-night"
+            href="/salman-khan-teri-sexy-beauty-maatrubhumi-song"
             className="feature-card block transition-all hover:border-[var(--lime)] focus-visible:ring-2 focus-visible:ring-[var(--lime)] group"
             style={{ textDecoration: "none", color: "inherit" }}
-            aria-label="Read full article: Saif Ali Khan Calls Stabbing Night “Worst Night”: Kareena Kapoor’s Emotional Confession on Koffee With Karan"
+            aria-label="Read full article: Salman Khan Is Singing Again After 11 Years with “Teri Sexy Beauty”"
           >
             <div className="feature-media" style={{ overflow: "hidden", position: "relative" }}>
               <Image
-                src="/images/saif-ali-khan-kareena-kapoor-koffee-with-karan-stabbing-night.jpg"
-                alt="Saif Ali Khan Stabbing: Kareena Opens Up on KWK 9"
+                src="/images/salman-khan-teri-sexy-beauty-maatrubhumi-song.jpg"
+                alt="Salman Khan Sings Again After 11 Years in Teri Sexy Beauty from Maatrubhumi"
                 fill
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 750px"
@@ -1102,28 +1116,28 @@ export default function Home() {
               />
               <div className="noise" style={{ pointerEvents: "none" }}></div>
               <div className="feature-tag flex items-center gap-2">
-                <span className="badge pink">⚡ KWK 9 Tell-All</span>
-                <span className="badge lime">Saifeena Returns</span>
-                <span className="badge">Emotional Confession</span>
+                <span className="badge pink">🎵 11 Years Later</span>
+                <span className="badge lime">Salman Khan Sings</span>
+                <span className="badge">Maatrubhumi Song</span>
               </div>
             </div>
             <div className="feature-body">
               <div className="flex items-center gap-2 mb-2 font-mono text-xs text-[var(--lime)] font-bold tracking-wider uppercase">
-                <span>★ TOP STORY · SAIF ALI KHAN CALLS STABBING NIGHT “WORST NIGHT” AS KAREENA OPENS UP ON KOFFEE WITH KARAN 9</span>
+                <span>★ TOP STORY · SALMAN KHAN DROPS SURPRISE 5 AM SINGLE “TERI SEXY BEAUTY” IN MAATRUBHUMI</span>
               </div>
               <h1 className="disp" style={{ color: "#fff" }}>
-                Saif Ali Khan Calls Stabbing Night “Worst Night”: Kareena Kapoor’s Emotional Confession on Koffee With Karan
+                Salman Khan Is Singing Again After 11 Years with “Teri Sexy Beauty”
               </h1>
               <p>
-                Saif Ali Khan and Kareena Kapoor talk about the night he was stabbed on Koffee With Karan 9. Read what they said, what happened, and the latest on the case.
+                Salman Khan sings again after 11 years in Teri Sexy Beauty from Maatrubhumi. Know the song details, fan reactions and release date update.
               </p>
               <div className="meta-row mt-auto pt-3 border-t border-white/[0.06] flex items-center justify-between">
                 <div className="flex items-center gap-3">
-                  <span>REALITY TV &amp; BOLLYWOOD</span>
+                  <span>BOLLYWOOD &amp; MUSIC</span>
                   <span className="dot-sep">◆</span>
                   <span>4 MIN READ</span>
                   <span className="dot-sep">◆</span>
-                  <span style={{ color: "var(--lime)" }}>EMOTIONAL EXCLUSIVE</span>
+                  <span style={{ color: "var(--lime)" }}>SONG OUT NOW</span>
                 </div>
                 <span className="text-xs font-mono font-bold text-[var(--lime)] hidden sm:inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform">
                   Read Full Story →
@@ -1142,6 +1156,18 @@ export default function Home() {
               <span className="trend-rank">01</span>
               <div className="trend-text">
                 <Link
+                  href="/salman-khan-teri-sexy-beauty-maatrubhumi-song"
+                  style={{ color: "inherit" }}
+                >
+                  <h3>Salman Khan sings after 11 years: Drops “Teri Sexy Beauty” from Maatrubhumi in surprise 5 AM release</h3>
+                  <span>BOLLYWOOD &amp; MUSIC · 1.82M REACTIONS</span>
+                </Link>
+              </div>
+            </div>
+            <div className="trend-item">
+              <span className="trend-rank">02</span>
+              <div className="trend-text">
+                <Link
                   href="/saif-ali-khan-kareena-kapoor-koffee-with-karan-stabbing-night"
                   style={{ color: "inherit" }}
                 >
@@ -1151,7 +1177,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">02</span>
+              <span className="trend-rank">03</span>
               <div className="trend-text">
                 <Link
                   href="/ramayana-part-2-postponed-2028-namit-malhotra-trilogy"
@@ -1163,7 +1189,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">03</span>
+              <span className="trend-rank">04</span>
               <div className="trend-text">
                 <Link
                   href="/mira-rajput-shahid-kapoor-gossip-kapil-sharma-show"
@@ -1175,7 +1201,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">04</span>
+              <span className="trend-rank">05</span>
               <div className="trend-text">
                 <Link
                   href="/tu-mil-jaaye-ed-sheeran-shah-rukh-khan-king"
@@ -1187,7 +1213,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">05</span>
+              <span className="trend-rank">06</span>
               <div className="trend-text">
                 <Link
                   href="/tusshar-kapoor-extortion-call-bishnoi-gang-fake"
@@ -1199,7 +1225,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">06</span>
+              <span className="trend-rank">07</span>
               <div className="trend-text">
                 <Link
                   href="/chandan-roy-aakhri-ride-interview"
@@ -1211,7 +1237,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">07</span>
+              <span className="trend-rank">08</span>
               <div className="trend-text">
                 <Link
                   href="/honey-trehan-slams-new-cbfc-advisory-satluj"
@@ -1223,7 +1249,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">08</span>
+              <span className="trend-rank">09</span>
               <div className="trend-text">
                 <Link
                   href="/koffee-with-karan-9-kareena-kapoor-saif-ali-khan-teaser"
@@ -1235,7 +1261,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">09</span>
+              <span className="trend-rank">10</span>
               <div className="trend-text">
                 <Link
                   href="/orry-sara-ali-khan-disappeared-friendship-fallout"
@@ -1243,18 +1269,6 @@ export default function Home() {
                 >
                   <h3>Orry says Sara Ali Khan “disappeared” during his darkest phase: uncovers fallout with Amrita Singh on Double Date</h3>
                   <span>BOLLYWOOD &amp; GOSSIP · 995K REACTIONS</span>
-                </Link>
-              </div>
-            </div>
-            <div className="trend-item">
-              <span className="trend-rank">10</span>
-              <div className="trend-text">
-                <Link
-                  href="/janhvi-kapoor-keerthy-suresh-deepfake-expert-new-laws"
-                  style={{ color: "inherit" }}
-                >
-                  <h3>Janhvi Kapoor and Keerthy Suresh hit by deepfakes: VFX expert demands strict AI labelling laws in India</h3>
-                  <span>BOLLYWOOD &amp; CYBER · 980K REACTIONS</span>
                 </Link>
               </div>
             </div>

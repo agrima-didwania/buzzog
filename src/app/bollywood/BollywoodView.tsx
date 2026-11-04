@@ -20,6 +20,16 @@ interface BollywoodArticle {
 
 const bollywoodArticles: BollywoodArticle[] = [
   {
+    id: "salman-khan-teri-sexy-beauty-maatrubhumi-song",
+    category: "Music Exclusive",
+    title: "Salman Khan Is Singing Again After 11 Years with “Teri Sexy Beauty”",
+    badge: "🎵 11 Years Later",
+    badgeType: "pink",
+    image: "/images/salman-khan-teri-sexy-beauty-maatrubhumi-song.jpg",
+    href: "/salman-khan-teri-sexy-beauty-maatrubhumi-song",
+    readOrTime: "4 MIN READ",
+  },
+  {
     id: "saif-ali-khan-kareena-kapoor-koffee-with-karan-stabbing-night",
     category: "KWK 9 Tell-All",
     title: "Saif Ali Khan Calls Stabbing Night “Worst Night”: Kareena Kapoor’s Emotional Confession on Koffee With Karan",
@@ -546,16 +556,16 @@ export default function BollywoodView() {
 
         {/* Lead Section: Latest Bollywood Published Article (Cover Story) + The Last 2 Blogs Uploaded Before It */}
         <section className="lead">
-          {/* Cover Story: Latest Published Bollywood Story (Saif Ali Khan Stabbing on KWK 9) */}
+          {/* Cover Story: Latest Published Bollywood Story (Salman Khan Sings Teri Sexy Beauty) */}
           <Link
-            href="/saif-ali-khan-kareena-kapoor-koffee-with-karan-stabbing-night"
+            href="/salman-khan-teri-sexy-beauty-maatrubhumi-song"
             className="feature-card group block"
-            aria-label="Read full cover story: Saif Ali Khan Calls Stabbing Night “Worst Night”: Kareena Kapoor’s Emotional Confession on Koffee With Karan"
+            aria-label="Read full cover story: Salman Khan Is Singing Again After 11 Years with “Teri Sexy Beauty”"
           >
             <div className="feature-media relative overflow-hidden">
               <Image
-                src="/images/saif-ali-khan-kareena-kapoor-koffee-with-karan-stabbing-night.jpg"
-                alt="Saif Ali Khan Stabbing: Kareena Opens Up on KWK 9"
+                src="/images/salman-khan-teri-sexy-beauty-maatrubhumi-song.jpg"
+                alt="Salman Khan Sings Again After 11 Years in Teri Sexy Beauty from Maatrubhumi"
                 fill
                 priority
                 className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
@@ -563,18 +573,18 @@ export default function BollywoodView() {
               />
               <div className="noise" />
               <span className="badge pink feature-tag z-10">
-                ⚡ KWK 9 Tell-All
+                🎵 11 Years Later
               </span>
             </div>
             <div className="feature-body">
               <h2 className="disp text-white group-hover:text-[var(--lime)] transition-colors">
-                Saif Ali Khan Calls Stabbing Night “Worst Night”: Kareena Kapoor’s Emotional Confession on Koffee With Karan
+                Salman Khan Is Singing Again After 11 Years with “Teri Sexy Beauty”
               </h2>
               <p>
-                Saif Ali Khan and Kareena Kapoor talk about the night he was stabbed on Koffee With Karan 9. Read what they said, what happened, and the latest on the case.
+                Salman Khan sings again after 11 years in Teri Sexy Beauty from Maatrubhumi. Know the song details, fan reactions and release date update.
               </p>
               <div className="meta-row mt-3">
-                <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; REALITY</span>
+                <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; MUSIC</span>
                 <span className="dot-sep">◆</span>
                 <span>4 MIN READ</span>
                 <span className="dot-sep">◆</span>
@@ -585,7 +595,34 @@ export default function BollywoodView() {
 
           {/* Right Stack: The last 2 blogs uploaded before the latest one */}
           <div className="stack">
-            {/* Card 1: Ramayana Part 2 Postponed to 2028 */}
+            {/* Card 1: Saif Ali Khan Stabbing on KWK 9 */}
+            <Link
+              href="/saif-ali-khan-kareena-kapoor-koffee-with-karan-stabbing-night"
+              className="card m1 group block"
+            >
+              <div className="card-media relative overflow-hidden">
+                <Image
+                  src="/images/saif-ali-khan-kareena-kapoor-koffee-with-karan-stabbing-night.jpg"
+                  alt="Saif Ali Khan Stabbing: Kareena Opens Up on KWK 9"
+                  fill
+                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 980px) 100vw, 35vw"
+                />
+                <span className="badge pink z-10 relative">⚡ KWK 9 Tell-All</span>
+              </div>
+              <div className="card-body">
+                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
+                  Saif Ali Khan Calls Stabbing Night “Worst Night”: Kareena Kapoor’s Emotional Confession on Koffee With Karan
+                </h3>
+                <div className="meta-row mt-2">
+                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; REALITY</span>
+                  <span className="dot-sep">◆</span>
+                  <span>4 MIN READ</span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Card 2: Ramayana Part 2 Postponed to 2028 */}
             <Link
               href="/ramayana-part-2-postponed-2028-namit-malhotra-trilogy"
               className="card m1 group block"
@@ -606,33 +643,6 @@ export default function BollywoodView() {
                 </h3>
                 <div className="meta-row mt-2">
                   <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; CINEMA</span>
-                  <span className="dot-sep">◆</span>
-                  <span>4 MIN READ</span>
-                </div>
-              </div>
-            </Link>
-
-            {/* Card 2: Mira Rajput & Shahid Kapoor Gossip */}
-            <Link
-              href="/mira-rajput-shahid-kapoor-gossip-kapil-sharma-show"
-              className="card m1 group block"
-            >
-              <div className="card-media relative overflow-hidden">
-                <Image
-                  src="/images/mira-rajput-shahid-kapoor-gossip-kapil-sharma-show.jpg"
-                  alt="Mira Rajput Says Shahid Kapoor Loves Gossip: Funniest Moments From Kapil Sharma Unseen Clip"
-                  fill
-                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
-                  sizes="(max-width: 980px) 100vw, 35vw"
-                />
-                <span className="badge pink z-10 relative">☕ Gossip King</span>
-              </div>
-              <div className="card-body">
-                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
-                  Mira Rajput Says Shahid Kapoor Loves Gossip: Funniest Moments From Kapil Sharma’s Unseen Clip
-                </h3>
-                <div className="meta-row mt-2">
-                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; GOSSIP</span>
                   <span className="dot-sep">◆</span>
                   <span>4 MIN READ</span>
                 </div>

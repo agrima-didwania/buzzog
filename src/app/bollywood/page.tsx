@@ -6,6 +6,16 @@ export const metadata: Metadata = {
   description:
     "Bollywood coverage from Buzz Originals — raw, unfiltered, built for the group chat. Red carpets, rumours, airport looks and exclusives.",
   keywords: [
+    "Teri Sexy Beauty",
+    "Salman Khan new song",
+    "Teri Sexy Beauty song",
+    "Maatrubhumi song",
+    "Maatrubhumi release date",
+    "Salman Khan singing after 11 years",
+    "Salman Khan Chitrangda Singh",
+    "Maatrubhumi movie",
+    "Salman Khan Maatrubhumi",
+    "Sajid Khan",
     "Saif Ali Khan stabbing",
     "Kareena Kapoor Koffee With Karan",
     "Koffee With Karan season 9",
@@ -383,10 +393,10 @@ export const metadata: Metadata = {
     siteName: "Buzz Originals",
     images: [
       {
-        url: "/images/saif-ali-khan-kareena-kapoor-koffee-with-karan-stabbing-night.jpg",
+        url: "/images/salman-khan-teri-sexy-beauty-maatrubhumi-song.jpg",
         width: 1024,
         height: 576,
-        alt: "Saif Ali Khan Stabbing: Kareena Opens Up on KWK 9 — Buzz Originals Bollywood",
+        alt: "Teri Sexy Beauty Song: Salman Khan Sings After 11 Years — Buzz Originals Bollywood",
       },
     ],
     type: "website",
@@ -396,7 +406,7 @@ export const metadata: Metadata = {
     title: "Bollywood — Buzz Originals",
     description:
       "Raw, unfiltered Bollywood coverage of red carpets, gossip, airport sightings & exclusives.",
-    images: ["/images/saif-ali-khan-kareena-kapoor-koffee-with-karan-stabbing-night.jpg"],
+    images: ["/images/salman-khan-teri-sexy-beauty-maatrubhumi-song.jpg"],
   },
 };
 
@@ -423,20 +433,20 @@ export default function BollywoodPage() {
         {
           "@type": "ListItem",
           position: 1,
+          name: "Teri Sexy Beauty Song: Salman Khan Sings After 11 Years",
+          url: "https://www.buzzoriginals.com/salman-khan-teri-sexy-beauty-maatrubhumi-song",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
           name: "Saif Ali Khan Stabbing: Kareena Opens Up on KWK 9",
           url: "https://www.buzzoriginals.com/saif-ali-khan-kareena-kapoor-koffee-with-karan-stabbing-night",
         },
         {
           "@type": "ListItem",
-          position: 2,
+          position: 3,
           name: "Ramayana Part 2 Postponed to 2028: Namit Malhotra Confirms",
           url: "https://www.buzzoriginals.com/ramayana-part-2-postponed-2028-namit-malhotra-trilogy",
-        },
-        {
-          "@type": "ListItem",
-          position: 3,
-          name: "Mira Rajput Says Shahid Kapoor Loves Gossip",
-          url: "https://www.buzzoriginals.com/mira-rajput-shahid-kapoor-gossip-kapil-sharma-show",
         },
         {
           "@type": "ListItem",
