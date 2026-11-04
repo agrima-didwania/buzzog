@@ -9,6 +9,9 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ["/api/"],
       },
     ],
-    sitemap: "https://www.buzzoriginals.com/sitemap.xml",
+    sitemap: [
+      "https://www.buzzoriginals.in/sitemap.xml",
+      "https://www.buzzoriginals.com/sitemap.xml",
+    ],
   };
 }

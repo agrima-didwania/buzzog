@@ -40,19 +40,28 @@ const EXCLUDED_DIRS = new Set([
 ]);
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  // Access headers to ensure dynamic evaluation on request
+  // Determine canonical domain dynamically based on incoming request host
+  let baseUrl = "https://www.buzzoriginals.in";
   try {
-    await headers();
-  } catch {}
+    const reqHeaders = await headers();
+    const host = reqHeaders.get("x-forwarded-host") || reqHeaders.get("host") || "";
+    if (host.includes("buzzoriginals.com")) {
+      baseUrl = "https://www.buzzoriginals.com";
+    } else if (host.includes("buzzoriginals.in")) {
+      baseUrl = "https://www.buzzoriginals.in";
+    }
+  } catch {
+    // Fallback to https://www.buzzoriginals.in
+  }
 
-  const baseUrl = "https://www.buzzoriginals.com";
   const articleEntries: MetadataRoute.Sitemap = [];
-
+  const articleDateMap = new Map<string, Date>();
   let latestDate = new Date("2026-10-28T16:45:00Z");
+
+  const appDir = path.join(process.cwd(), "src", "app");
 
   // Dynamic discovery of all published articles in src/app
   try {
-    const appDir = path.join(process.cwd(), "src", "app");
     if (fs.existsSync(appDir)) {
       const entries = fs.readdirSync(appDir, { withFileTypes: true });
 
@@ -71,13 +80,24 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
         try {
           const content = fs.readFileSync(pageFile, "utf8");
-          const modMatch = content.match(/dateModified:\s*["']([^"']+)["']/);
-          const pubMatch = content.match(/publishedTime:\s*["']([^"']+)["']/);
+
+          // Comprehensive date matching for dateModified, modifiedTime, datePublished, publishedTime
+          const modMatch =
+            content.match(/["']?dateModified["']?\s*:\s*["']([^"']+)["']/i) ||
+            content.match(/["']?modifiedTime["']?\s*:\s*["']([^"']+)["']/i);
+          const pubMatch =
+            content.match(/["']?datePublished["']?\s*:\s*["']([^"']+)["']/i) ||
+            content.match(/["']?publishedTime["']?\s*:\s*["']([^"']+)["']/i);
           const rawDate = modMatch?.[1] || pubMatch?.[1];
 
           if (rawDate) {
-            articleModifiedDate = new Date(rawDate);
-          } else {
+            const parsed = new Date(rawDate);
+            if (!isNaN(parsed.getTime())) {
+              articleModifiedDate = parsed;
+            }
+          }
+
+          if (!articleModifiedDate) {
             const stat = fs.statSync(pageFile);
             articleModifiedDate = stat.mtime;
           }
@@ -86,16 +106,22 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
             changeFreq = "weekly";
           }
         } catch {
-          const stat = fs.statSync(pageFile);
-          articleModifiedDate = stat.mtime;
+          try {
+            const stat = fs.statSync(pageFile);
+            articleModifiedDate = stat.mtime;
+          } catch {
+            articleModifiedDate = new Date();
+          }
         }
 
         if (articleModifiedDate && !isNaN(articleModifiedDate.getTime())) {
           if (articleModifiedDate > latestDate) {
             latestDate = articleModifiedDate;
           }
+          articleDateMap.set(entry.name, articleModifiedDate);
         } else {
           articleModifiedDate = new Date();
+          articleDateMap.set(entry.name, articleModifiedDate);
         }
 
         articleEntries.push({
@@ -117,6 +143,39 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     return timeB - timeA;
   });
 
+  // Dynamic helper to resolve the newest lastmod date for category hubs
+  const resolveCategoryDate = (catPath: string, fallbackDateStr?: string): Date => {
+    const catSlug = catPath.replace(/^\//, "");
+    const catDir = path.join(appDir, catSlug);
+    let catLatest: Date | null = null;
+
+    try {
+      if (fs.existsSync(catDir)) {
+        const catFiles = fs.readdirSync(catDir);
+        for (const file of catFiles) {
+          if (!file.endsWith(".tsx")) continue;
+          const filePath = path.join(catDir, file);
+          const content = fs.readFileSync(filePath, "utf8");
+          const matches = content.matchAll(/href:\s*["']\/([a-z0-9-]+)["']/g);
+          for (const match of matches) {
+            const slug = match[1];
+            const d = articleDateMap.get(slug);
+            if (d && (!catLatest || d > catLatest)) {
+              catLatest = d;
+            }
+          }
+        }
+      }
+    } catch {}
+
+    if (catLatest) return catLatest;
+    if (fallbackDateStr) {
+      const parsed = new Date(fallbackDateStr);
+      if (!isNaN(parsed.getTime())) return parsed;
+    }
+    return latestDate;
+  };
+
   const finalSitemap: MetadataRoute.Sitemap = [
     {
       url: `${baseUrl}`,
@@ -131,7 +190,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   if (realityPage) {
     finalSitemap.push({
       url: `${baseUrl}${realityPage.path}`,
-      lastModified: new Date(realityPage.defaultDate || "2026-10-28T17:00:00Z"),
+      lastModified: resolveCategoryDate(realityPage.path, realityPage.defaultDate),
       changeFrequency: realityPage.changeFrequency,
       priority: realityPage.priority,
     });
@@ -140,13 +199,18 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // Add all dynamically discovered articles
   finalSitemap.push(...articleEntries);
 
-  // Add remaining trust and legal pages
+  // Add remaining category, trust and legal pages
   for (const staticPage of STATIC_PAGES) {
     if (staticPage.path === "/reality-shows") continue;
 
+    const isCategory = ["/bollywood", "/movies", "/web-series", "/news"].includes(staticPage.path);
+    const pageDate = isCategory
+      ? resolveCategoryDate(staticPage.path, staticPage.defaultDate)
+      : new Date(staticPage.defaultDate || "2026-10-28T12:00:00Z");
+
     finalSitemap.push({
       url: `${baseUrl}${staticPage.path}`,
-      lastModified: new Date(staticPage.defaultDate || "2026-10-28T12:00:00Z"),
+      lastModified: pageDate,
       changeFrequency: staticPage.changeFrequency,
       priority: staticPage.priority,
     });
