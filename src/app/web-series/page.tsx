@@ -6,6 +6,19 @@ export const metadata: Metadata = {
   description:
     "Web Series coverage from Buzz Originals — raw, unfiltered, built for the group chat. OTT releases, streaming scoops, recaps and verdicts across Prime Video, Netflix, JioHotstar, ZEE5 and SonyLIV.",
   keywords: [
+    "The Royals Season 2",
+    "The Royals 2",
+    "The Royals Season 2 cast",
+    "The Royals Season 2 release date",
+    "The Royals Season 2 shooting",
+    "Ishaan Khatter",
+    "Zeenat Aman",
+    "Sakshi Tanwar",
+    "Sini Shetty",
+    "Bhumi Pednekar The Royals 2",
+    "Nitya Mehra",
+    "Tanuj Chopra",
+    "Netflix India",
     "Maharani Season 5 release date",
     "Maharani 5",
     "Huma Qureshi Rani Bharti",
@@ -47,10 +60,10 @@ export const metadata: Metadata = {
     siteName: "Buzz Originals",
     images: [
       {
-        url: "/images/maharani-season-5-release-date-january-2027.jpg",
-        width: 1024,
-        height: 576,
-        alt: "Maharani Season 5 Release Date: Huma Qureshi’s Political Drama May Return in January 2027 — Buzz Originals Web Series",
+        url: "/images/the-royals-season-2-goes-on-floors.jpg",
+        width: 1200,
+        height: 675,
+        alt: "The Royals Season 2 Goes on Floors: Ishaan Khatter and Zeenat Aman Return — Buzz Originals Web Series",
       },
     ],
     type: "website",
@@ -60,7 +73,7 @@ export const metadata: Metadata = {
     title: "Web Series — Buzz Originals",
     description:
       "Raw, unfiltered Web Series coverage of OTT releases, streaming scoops, recaps and verdicts.",
-    images: ["/images/maharani-season-5-release-date-january-2027.jpg"],
+    images: ["/images/the-royals-season-2-goes-on-floors.jpg"],
   },
 };
 
@@ -87,6 +100,12 @@ export default function WebSeriesPage() {
         {
           "@type": "ListItem",
           position: 1,
+          name: "The Royals Season 2 Goes on Floors: Ishaan Khatter and Zeenat Aman Return",
+          url: "https://www.buzzoriginals.com/the-royals-season-2-goes-on-floors",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
           name: "Maharani Season 5 Release Date: Jan 2027 Expected",
           url: "https://www.buzzoriginals.com/maharani-season-5-release-date-january-2027",
         },

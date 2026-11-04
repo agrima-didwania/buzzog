@@ -22,6 +22,18 @@ interface WebSeriesArticle {
 // All verified web series and OTT articles in reverse chronological order
 const webSeriesArticles: WebSeriesArticle[] = [
   {
+    id: "the-royals-season-2-goes-on-floors",
+    category: "Netflix Original",
+    title: "The Royals Season 2 Goes on Floors: Ishaan Khatter and Zeenat Aman Return",
+    badge: "Season 2 Filming",
+    badgeType: "lime",
+    image: "/images/the-royals-season-2-goes-on-floors.jpg",
+    href: "/the-royals-season-2-goes-on-floors",
+    readOrTime: "4 MIN READ",
+    excerpt:
+      "Good news for Netflix fans! The Royals Season 2 is officially filming across Rajasthan with Ishaan Khatter, Zeenat Aman, Sakshi Tanwar and new cast additions.",
+  },
+  {
     id: "maharani-season-5-release-date",
     category: "SonyLIV Original",
     title: "Maharani Season 5 Release Date: Huma Qureshi’s Political Drama May Return in January 2027",

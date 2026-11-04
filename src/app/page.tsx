@@ -185,6 +185,20 @@ export default function Home() {
 
   const editorialArticles: EditorialArticle[] = [
     {
+      id: "the-royals-season-2-goes-on-floors",
+      anchorId: "the-royals-season-2-story",
+      href: "/the-royals-season-2-goes-on-floors",
+      title: "The Royals Season 2 Goes on Floors: Ishaan Khatter and Zeenat Aman Return",
+      excerpt: "The Royals Season 2 is now filming. See who is returning, who is new, who is directing and what the makers have said.",
+      category: "Latest",
+      secondaryCategory: "Web Series",
+      displayCategory: "WEB SERIES & OTT",
+      badge: "On Floors",
+      badgeType: "lime",
+      readTime: "4 MIN READ",
+      image: "/images/the-royals-season-2-goes-on-floors.jpg",
+    },
+    {
       id: "salman-khan-teri-sexy-beauty-maatrubhumi-song",
       anchorId: "salman-teri-sexy-beauty-story",
       href: "/salman-khan-teri-sexy-beauty-maatrubhumi-song",
@@ -1099,15 +1113,15 @@ export default function Home() {
         <section className="hero" id="featured">
           {/* 1. Main Featured Story (Commanding Top Story Presentation) */}
           <Link
-            href="/salman-khan-teri-sexy-beauty-maatrubhumi-song"
+            href="/the-royals-season-2-goes-on-floors"
             className="feature-card flex flex-col transition-all hover:border-[var(--lime)] focus-visible:ring-2 focus-visible:ring-[var(--lime)] group"
             style={{ textDecoration: "none", color: "inherit" }}
-            aria-label="Read full article: Salman Khan Is Singing Again After 11 Years with “Teri Sexy Beauty”"
+            aria-label="Read full article: The Royals Season 2 Goes on Floors: Ishaan Khatter and Zeenat Aman Return"
           >
             <div className="feature-media" style={{ overflow: "hidden", position: "relative" }}>
               <Image
-                src="/images/salman-khan-teri-sexy-beauty-maatrubhumi-song.jpg"
-                alt="Salman Khan Sings Again After 11 Years in Teri Sexy Beauty from Maatrubhumi"
+                src="/images/the-royals-season-2-goes-on-floors.jpg"
+                alt="The Royals Season 2 Shooting Begins: Ishaan Khatter and Zeenat Aman Return on Netflix"
                 fill
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 750px"
@@ -1116,45 +1130,45 @@ export default function Home() {
               />
               <div className="noise" style={{ pointerEvents: "none" }}></div>
               <div className="feature-tag flex items-center gap-2">
-                <span className="badge pink">🎵 11 Years Later</span>
-                <span className="badge lime">Salman Khan Sings</span>
-                <span className="badge">Maatrubhumi Song</span>
+                <span className="badge lime">👑 Netflix Original</span>
+                <span className="badge pink">Season 2 on Floors</span>
+                <span className="badge">Web Series</span>
               </div>
             </div>
             <div className="feature-body">
               <div className="flex items-center gap-2 mb-2 font-mono text-xs text-[var(--lime)] font-bold tracking-wider uppercase">
-                <span>★ TOP STORY · SALMAN KHAN DROPS SURPRISE 5 AM SINGLE “TERI SEXY BEAUTY” IN MAATRUBHUMI</span>
+                <span>★ TOP STORY · THE ROYALS SEASON 2 BEGINS SHOOTING IN RAJASTHAN WITH ISHAAN KHATTER &amp; ZEENAT AMAN</span>
               </div>
               <h1 className="disp" style={{ color: "#fff" }}>
-                Salman Khan Is Singing Again After 11 Years with “Teri Sexy Beauty”
+                The Royals Season 2 Goes on Floors: Ishaan Khatter and Zeenat Aman Return
               </h1>
               <p>
-                Salman Khan sings again after 11 years in Teri Sexy Beauty from Maatrubhumi. Know the song details, fan reactions and release date update.
+                The Royals Season 2 is now filming across Rajasthan. See who is returning to Morpur, who is new, who is directing, and what makers have confirmed.
               </p>
 
               {/* Editorial Highlights Box */}
               <div className="feature-highlights">
                 <div className="feature-highlights-header">
                   <span className="w-2 h-2 rounded-full bg-[var(--lime)] animate-pulse inline-block"></span>
-                  <span>Inside The Track &amp; Film Highlights</span>
+                  <span>Inside The Royals Season 2 &amp; Production Highlights</span>
                 </div>
                 <ul className="feature-highlights-list">
                   <li className="feature-highlights-item">
                     <span className="feature-highlights-bullet">✦</span>
                     <span>
-                      <strong className="text-white font-medium">Mic Return After 11 Years:</strong> Salman Khan returns to playback singing for the first time since <em>&apos;Main Hoon Hero Tera&apos;</em> (2015) and <em>&apos;Hangover&apos;</em>.
+                      <strong className="text-white font-medium">Royal Morpur Returns:</strong> Cameras roll in Rajasthan from September 18 through December, capturing lavish palace intrigue ahead of a late 2027 release.
                     </span>
                   </li>
                   <li className="feature-highlights-item">
                     <span className="feature-highlights-bullet">✦</span>
                     <span>
-                      <strong className="text-white font-medium">Surprise 5 AM Single:</strong> Composed by Sajid Khan with vocals by Salman &amp; Muskaan, paired alongside Chitrangda Singh in a vibrant dance video.
+                      <strong className="text-white font-medium">Star Cast &amp; New Faces:</strong> Ishaan Khatter, Zeenat Aman, Sakshi Tanwar, and Vihaan Samat reprise key roles alongside reported addition Sini Shetty.
                     </span>
                   </li>
                   <li className="feature-highlights-item">
                     <span className="feature-highlights-bullet">✦</span>
                     <span>
-                      <strong className="text-white font-medium">Patriotic Military Drama:</strong> Directed by Apoorva Lakhia, <em>Maatrubhumi</em> chronicles the 2020 Galwan Valley clash; in cinemas May 8.
+                      <strong className="text-white font-medium">Directorial Duo:</strong> Helmed by Nitya Mehra and Tanuj Chopra, bringing fresh dramatic scale and family chaos to Netflix India.
                     </span>
                   </li>
                 </ul>
@@ -1162,11 +1176,11 @@ export default function Home() {
 
               <div className="meta-row mt-auto pt-3 border-t border-white/[0.06] flex items-center justify-between">
                 <div className="flex items-center gap-3">
-                  <span>BOLLYWOOD &amp; MUSIC</span>
+                  <span>WEB SERIES &amp; OTT</span>
                   <span className="dot-sep">◆</span>
                   <span>4 MIN READ</span>
                   <span className="dot-sep">◆</span>
-                  <span style={{ color: "var(--lime)" }}>SONG OUT NOW</span>
+                  <span style={{ color: "var(--lime)" }}>ON FLOORS NOW</span>
                 </div>
                 <span className="text-xs font-mono font-bold text-[var(--lime)] hidden sm:inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform">
                   Read Full Story →
@@ -1185,6 +1199,18 @@ export default function Home() {
               <span className="trend-rank">01</span>
               <div className="trend-text">
                 <Link
+                  href="/the-royals-season-2-goes-on-floors"
+                  style={{ color: "inherit" }}
+                >
+                  <h3>The Royals Season 2 filming begins: Ishaan Khatter &amp; Zeenat Aman return to Netflix&apos;s Morpur palace drama</h3>
+                  <span>WEB SERIES &amp; NETFLIX · 1.95M REACTIONS</span>
+                </Link>
+              </div>
+            </div>
+            <div className="trend-item">
+              <span className="trend-rank">02</span>
+              <div className="trend-text">
+                <Link
                   href="/salman-khan-teri-sexy-beauty-maatrubhumi-song"
                   style={{ color: "inherit" }}
                 >
@@ -1194,7 +1220,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">02</span>
+              <span className="trend-rank">03</span>
               <div className="trend-text">
                 <Link
                   href="/saif-ali-khan-kareena-kapoor-koffee-with-karan-stabbing-night"
@@ -1206,7 +1232,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">03</span>
+              <span className="trend-rank">04</span>
               <div className="trend-text">
                 <Link
                   href="/ramayana-part-2-postponed-2028-namit-malhotra-trilogy"
@@ -1218,7 +1244,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">04</span>
+              <span className="trend-rank">05</span>
               <div className="trend-text">
                 <Link
                   href="/mira-rajput-shahid-kapoor-gossip-kapil-sharma-show"
@@ -1230,7 +1256,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">05</span>
+              <span className="trend-rank">06</span>
               <div className="trend-text">
                 <Link
                   href="/tu-mil-jaaye-ed-sheeran-shah-rukh-khan-king"
@@ -1242,7 +1268,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">06</span>
+              <span className="trend-rank">07</span>
               <div className="trend-text">
                 <Link
                   href="/tusshar-kapoor-extortion-call-bishnoi-gang-fake"
@@ -1254,7 +1280,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">07</span>
+              <span className="trend-rank">08</span>
               <div className="trend-text">
                 <Link
                   href="/chandan-roy-aakhri-ride-interview"
@@ -1262,6 +1288,30 @@ export default function Home() {
                 >
                   <h3>Chandan Roy on Aakhri Ride: Panchayat star opens up on 9 years in Mumbai, Bihar roots &amp; Anurag Kashyap backing</h3>
                   <span>BOLLYWOOD &amp; INTERVIEW · 1.12M REACTIONS</span>
+                </Link>
+              </div>
+            </div>
+            <div className="trend-item">
+              <span className="trend-rank">09</span>
+              <div className="trend-text">
+                <Link
+                  href="/honey-trehan-slams-new-cbfc-advisory-satluj"
+                  style={{ color: "inherit" }}
+                >
+                  <h3>Honey Trehan slams new CBFC advisory as “dictatorship”: Satluj director flags censorship and title tampering</h3>
+                  <span>BOLLYWOOD &amp; NEWS · 1.08M REACTIONS</span>
+                </Link>
+              </div>
+            </div>
+            <div className="trend-item">
+              <span className="trend-rank">10</span>
+              <div className="trend-text">
+                <Link
+                  href="/koffee-with-karan-9-kareena-kapoor-saif-ali-khan-teaser"
+                  style={{ color: "inherit" }}
+                >
+                  <h3>Koffee With Karan 9: Kareena Kapoor declares herself No. 1 actress as Saif jokes he is “miscast” on farewell season</h3>
+                  <span>REALITY TV &amp; KWK · 1.05M REACTIONS</span>
                 </Link>
               </div>
             </div>
