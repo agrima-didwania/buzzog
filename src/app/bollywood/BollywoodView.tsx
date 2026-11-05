@@ -20,6 +20,16 @@ interface BollywoodArticle {
 
 const bollywoodArticles: BollywoodArticle[] = [
   {
+    id: "shraddha-kapoor-reacts-eetha-trailer-criticism",
+    category: "Trailer Reaction",
+    title: "Shraddha Kapoor Reacts to Eetha Trailer Trolling: “I Can’t Even Handle My WhatsApp”",
+    badge: "⚡ Reacts to Trolls",
+    badgeType: "lime",
+    image: "/images/shraddha-kapoor-reacts-eetha-trailer-criticism.jpg",
+    href: "/shraddha-kapoor-reacts-eetha-trailer-criticism",
+    readOrTime: "3 MIN READ",
+  },
+  {
     id: "salman-khan-teri-sexy-beauty-maatrubhumi-song",
     category: "Music Exclusive",
     title: "Salman Khan Is Singing Again After 11 Years with “Teri Sexy Beauty”",
@@ -556,46 +566,73 @@ export default function BollywoodView() {
 
         {/* Lead Section: Latest Bollywood Published Article (Cover Story) + The Last 2 Blogs Uploaded Before It */}
         <section className="lead">
-          {/* Cover Story: Latest Published Bollywood Story (Salman Khan Sings Teri Sexy Beauty) */}
+          {/* Cover Story: Latest Published Bollywood Story (Shraddha Kapoor Breaks Silence on Eetha Trolling) */}
           <Link
-            href="/salman-khan-teri-sexy-beauty-maatrubhumi-song"
+            href="/shraddha-kapoor-reacts-eetha-trailer-criticism"
             className="feature-card group block"
-            aria-label="Read full cover story: Salman Khan Is Singing Again After 11 Years with “Teri Sexy Beauty”"
+            aria-label="Read full cover story: Shraddha Kapoor Breaks Silence on Eetha Trolling: “I Can’t Even Handle My WhatsApp”"
           >
             <div className="feature-media relative overflow-hidden">
               <Image
-                src="/images/salman-khan-teri-sexy-beauty-maatrubhumi-song.jpg"
-                alt="Salman Khan Sings Again After 11 Years in Teri Sexy Beauty from Maatrubhumi"
+                src="/images/shraddha-kapoor-reacts-eetha-trailer-criticism.jpg"
+                alt="Shraddha Kapoor Reacts to Eetha Trailer Trolling: I Can't Even Handle My WhatsApp"
                 fill
                 priority
                 className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
                 sizes="(max-width: 980px) 100vw, 65vw"
               />
               <div className="noise" />
-              <span className="badge pink feature-tag z-10">
-                🎵 11 Years Later
+              <span className="badge lime feature-tag z-10">
+                ⚡ Reacts to Trolls
               </span>
             </div>
             <div className="feature-body">
               <h2 className="disp text-white group-hover:text-[var(--lime)] transition-colors">
-                Salman Khan Is Singing Again After 11 Years with “Teri Sexy Beauty”
+                Shraddha Kapoor Breaks Silence on Eetha Trolling: “I Can’t Even Handle My WhatsApp”
               </h2>
               <p>
-                Salman Khan sings again after 11 years in Teri Sexy Beauty from Maatrubhumi. Know the song details, fan reactions and release date update.
+                Shraddha Kapoor says she won’t handle online criticism after fans questioned her Marathi accent in the Eetha trailer. Here is what she said.
               </p>
               <div className="meta-row mt-3">
-                <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; MUSIC</span>
+                <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; CINEMA</span>
                 <span className="dot-sep">◆</span>
-                <span>4 MIN READ</span>
+                <span>3 MIN READ</span>
                 <span className="dot-sep">◆</span>
-                <span className="text-[var(--lime)] font-bold">NOV 04</span>
+                <span className="text-[var(--lime)] font-bold">NOV 05</span>
               </div>
             </div>
           </Link>
 
           {/* Right Stack: The last 2 blogs uploaded before the latest one */}
           <div className="stack">
-            {/* Card 1: Saif Ali Khan Stabbing on KWK 9 */}
+            {/* Card 1: Salman Khan Sings Teri Sexy Beauty */}
+            <Link
+              href="/salman-khan-teri-sexy-beauty-maatrubhumi-song"
+              className="card m1 group block"
+            >
+              <div className="card-media relative overflow-hidden">
+                <Image
+                  src="/images/salman-khan-teri-sexy-beauty-maatrubhumi-song.jpg"
+                  alt="Salman Khan Sings Again After 11 Years in Teri Sexy Beauty from Maatrubhumi"
+                  fill
+                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 980px) 100vw, 35vw"
+                />
+                <span className="badge pink z-10 relative">🎵 11 Years Later</span>
+              </div>
+              <div className="card-body">
+                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
+                  Salman Khan Is Singing Again After 11 Years with “Teri Sexy Beauty”
+                </h3>
+                <div className="meta-row mt-2">
+                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; MUSIC</span>
+                  <span className="dot-sep">◆</span>
+                  <span>4 MIN READ</span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Card 2: Saif Ali Khan Stabbing on KWK 9 */}
             <Link
               href="/saif-ali-khan-kareena-kapoor-koffee-with-karan-stabbing-night"
               className="card m1 group block"
@@ -616,33 +653,6 @@ export default function BollywoodView() {
                 </h3>
                 <div className="meta-row mt-2">
                   <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; REALITY</span>
-                  <span className="dot-sep">◆</span>
-                  <span>4 MIN READ</span>
-                </div>
-              </div>
-            </Link>
-
-            {/* Card 2: Ramayana Part 2 Postponed to 2028 */}
-            <Link
-              href="/ramayana-part-2-postponed-2028-namit-malhotra-trilogy"
-              className="card m1 group block"
-            >
-              <div className="card-media relative overflow-hidden">
-                <Image
-                  src="/images/ramayana-part-2-postponed-2028-namit-malhotra-trilogy.jpg"
-                  alt="Ramayana Part 2 Postponed to 2028: Namit Malhotra Confirms Delay and Hints at Trilogy"
-                  fill
-                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
-                  sizes="(max-width: 980px) 100vw, 35vw"
-                />
-                <span className="badge pink z-10 relative">⚡ Big Release Update</span>
-              </div>
-              <div className="card-body">
-                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
-                  Ramayana Part 2 Postponed to 2028: Namit Malhotra Confirms, Hints at a Trilogy
-                </h3>
-                <div className="meta-row mt-2">
-                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; CINEMA</span>
                   <span className="dot-sep">◆</span>
                   <span>4 MIN READ</span>
                 </div>

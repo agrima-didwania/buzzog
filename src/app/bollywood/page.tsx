@@ -6,6 +6,12 @@ export const metadata: Metadata = {
   description:
     "Bollywood coverage from Buzz Originals — raw, unfiltered, built for the group chat. Red carpets, rumours, airport looks and exclusives.",
   keywords: [
+    "Shraddha Kapoor",
+    "Eetha",
+    "Eetha trailer",
+    "Shraddha Kapoor Marathi accent",
+    "Vithabai Narayangaonkar",
+    "Shraddha Kapoor Eetha trolling",
     "Teri Sexy Beauty",
     "Salman Khan new song",
     "Teri Sexy Beauty song",
@@ -393,10 +399,10 @@ export const metadata: Metadata = {
     siteName: "Buzz Originals",
     images: [
       {
-        url: "/images/salman-khan-teri-sexy-beauty-maatrubhumi-song.jpg",
-        width: 1024,
-        height: 576,
-        alt: "Teri Sexy Beauty Song: Salman Khan Sings After 11 Years — Buzz Originals Bollywood",
+        url: "/images/shraddha-kapoor-reacts-eetha-trailer-criticism.jpg",
+        width: 1200,
+        height: 675,
+        alt: "Shraddha Kapoor Reacts to Eetha Trailer Trolling — Buzz Originals Bollywood",
       },
     ],
     type: "website",
@@ -406,7 +412,7 @@ export const metadata: Metadata = {
     title: "Bollywood — Buzz Originals",
     description:
       "Raw, unfiltered Bollywood coverage of red carpets, gossip, airport sightings & exclusives.",
-    images: ["/images/salman-khan-teri-sexy-beauty-maatrubhumi-song.jpg"],
+    images: ["/images/shraddha-kapoor-reacts-eetha-trailer-criticism.jpg"],
   },
 };
 
@@ -433,6 +439,12 @@ export default function BollywoodPage() {
         {
           "@type": "ListItem",
           position: 1,
+          name: "Shraddha Kapoor Reacts to Eetha Trailer Trolling",
+          url: "https://www.buzzoriginals.com/shraddha-kapoor-reacts-eetha-trailer-criticism",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
           name: "Teri Sexy Beauty Song: Salman Khan Sings After 11 Years",
           url: "https://www.buzzoriginals.com/salman-khan-teri-sexy-beauty-maatrubhumi-song",
         },

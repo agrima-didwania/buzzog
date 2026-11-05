@@ -185,6 +185,20 @@ export default function Home() {
 
   const editorialArticles: EditorialArticle[] = [
     {
+      id: "shraddha-kapoor-reacts-eetha-trailer-criticism",
+      anchorId: "shraddha-eetha-trolling-story",
+      href: "/shraddha-kapoor-reacts-eetha-trailer-criticism",
+      title: "Shraddha Kapoor Reacts to Eetha Trailer Trolling: “I Can’t Even Handle My WhatsApp”",
+      excerpt: "Shraddha Kapoor says she won’t handle online criticism after fans questioned her Marathi accent in the Eetha trailer. Here is what she said.",
+      category: "Bollywood",
+      secondaryCategory: "Latest",
+      displayCategory: "BOLLYWOOD & CINEMA",
+      badge: "Reacts to Trolls",
+      badgeType: "lime",
+      readTime: "3 MIN READ",
+      image: "/images/shraddha-kapoor-reacts-eetha-trailer-criticism.jpg",
+    },
+    {
       id: "the-royals-season-2-goes-on-floors",
       anchorId: "the-royals-season-2-story",
       href: "/the-royals-season-2-goes-on-floors",
@@ -1113,15 +1127,15 @@ export default function Home() {
         <section className="hero" id="featured">
           {/* 1. Main Featured Story (Commanding Top Story Presentation) */}
           <Link
-            href="/the-royals-season-2-goes-on-floors"
+            href="/shraddha-kapoor-reacts-eetha-trailer-criticism"
             className="feature-card flex flex-col transition-all hover:border-[var(--lime)] focus-visible:ring-2 focus-visible:ring-[var(--lime)] group"
             style={{ textDecoration: "none", color: "inherit" }}
-            aria-label="Read full article: The Royals Season 2 Goes on Floors: Ishaan Khatter and Zeenat Aman Return"
+            aria-label="Read full article: Shraddha Kapoor Breaks Silence on Eetha Trolling: “I Can’t Even Handle My WhatsApp”"
           >
             <div className="feature-media" style={{ overflow: "hidden", position: "relative" }}>
               <Image
-                src="/images/the-royals-season-2-goes-on-floors.jpg"
-                alt="The Royals Season 2 Shooting Begins: Ishaan Khatter and Zeenat Aman Return on Netflix"
+                src="/images/shraddha-kapoor-reacts-eetha-trailer-criticism.jpg"
+                alt="Shraddha Kapoor Reacts to Eetha Trailer Trolling: I Can't Even Handle My WhatsApp"
                 fill
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 750px"
@@ -1130,45 +1144,45 @@ export default function Home() {
               />
               <div className="noise" style={{ pointerEvents: "none" }}></div>
               <div className="feature-tag flex items-center gap-2">
-                <span className="badge lime">👑 Netflix Original</span>
-                <span className="badge pink">Season 2 on Floors</span>
-                <span className="badge">Web Series</span>
+                <span className="badge lime">⚡ Trolling Response</span>
+                <span className="badge pink">Eetha Trailer</span>
+                <span className="badge">Bollywood Exclusive</span>
               </div>
             </div>
             <div className="feature-body">
               <div className="flex items-center gap-2 mb-2 font-mono text-xs text-[var(--lime)] font-bold tracking-wider uppercase">
-                <span>★ TOP STORY · THE ROYALS SEASON 2 BEGINS SHOOTING IN RAJASTHAN WITH ISHAAN KHATTER &amp; ZEENAT AMAN</span>
+                <span>★ TOP STORY · SHRADDHA KAPOOR ADDRESSES EETHA MARATHI ACCENT TROLLING: “I CAN’T EVEN HANDLE MY WHATSAPP”</span>
               </div>
               <h1 className="disp" style={{ color: "#fff" }}>
-                The Royals Season 2 Goes on Floors: Ishaan Khatter and Zeenat Aman Return
+                Shraddha Kapoor Breaks Silence on Eetha Trolling: “I Can’t Even Handle My WhatsApp”
               </h1>
               <p>
-                The Royals Season 2 is now filming across Rajasthan. See who is returning to Morpur, who is new, who is directing, and what makers have confirmed.
+                Shraddha Kapoor says she won’t handle online criticism after fans questioned her Marathi accent in the Eetha trailer. Here is what she said.
               </p>
 
               {/* Editorial Highlights Box */}
               <div className="feature-highlights">
                 <div className="feature-highlights-header">
                   <span className="w-2 h-2 rounded-full bg-[var(--lime)] animate-pulse inline-block"></span>
-                  <span>Inside The Royals Season 2 &amp; Production Highlights</span>
+                  <span>Inside The Controversy &amp; Film Highlights</span>
                 </div>
                 <ul className="feature-highlights-list">
                   <li className="feature-highlights-item">
                     <span className="feature-highlights-bullet">✦</span>
                     <span>
-                      <strong className="text-white font-medium">Royal Morpur Returns:</strong> Cameras roll in Rajasthan from September 18 through December, capturing lavish palace intrigue ahead of a late 2027 release.
+                      <strong className="text-white font-medium">Trolling Brushed Off:</strong> During an Instagram AMA, Shraddha hilariously revealed she doesn&apos;t handle criticism because she can&apos;t even keep up with her WhatsApp messages.
                     </span>
                   </li>
                   <li className="feature-highlights-item">
                     <span className="feature-highlights-bullet">✦</span>
                     <span>
-                      <strong className="text-white font-medium">Star Cast &amp; New Faces:</strong> Ishaan Khatter, Zeenat Aman, Sakshi Tanwar, and Vihaan Samat reprise key roles alongside reported addition Sini Shetty.
+                      <strong className="text-white font-medium">Ajay-Atul Backing:</strong> Music maestro Ajay Gogavale praised her nuanced &apos;Nauvari&apos; accent and commended her authentic Maharashtrian cultural roots.
                     </span>
                   </li>
                   <li className="feature-highlights-item">
                     <span className="feature-highlights-bullet">✦</span>
                     <span>
-                      <strong className="text-white font-medium">Directorial Duo:</strong> Helmed by Nitya Mehra and Tanuj Chopra, bringing fresh dramatic scale and family chaos to Netflix India.
+                      <strong className="text-white font-medium">Biopic &amp; Clash:</strong> Helmed by Laxman Utekar, <em>Eetha</em> chronicles folk empress Vithabai Narayangaonkar; releases December 4, 2026.
                     </span>
                   </li>
                 </ul>
@@ -1176,11 +1190,11 @@ export default function Home() {
 
               <div className="meta-row mt-auto pt-3 border-t border-white/[0.06] flex items-center justify-between">
                 <div className="flex items-center gap-3">
-                  <span>WEB SERIES &amp; OTT</span>
+                  <span>BOLLYWOOD &amp; CINEMA</span>
                   <span className="dot-sep">◆</span>
-                  <span>4 MIN READ</span>
+                  <span>3 MIN READ</span>
                   <span className="dot-sep">◆</span>
-                  <span style={{ color: "var(--lime)" }}>ON FLOORS NOW</span>
+                  <span style={{ color: "var(--lime)" }}>DECEMBER 4 RELEASE</span>
                 </div>
                 <span className="text-xs font-mono font-bold text-[var(--lime)] hidden sm:inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform">
                   Read Full Story →
@@ -1199,6 +1213,18 @@ export default function Home() {
               <span className="trend-rank">01</span>
               <div className="trend-text">
                 <Link
+                  href="/shraddha-kapoor-reacts-eetha-trailer-criticism"
+                  style={{ color: "inherit" }}
+                >
+                  <h3>Shraddha Kapoor reacts to Eetha trailer trolling: “I can’t even handle my WhatsApp, I only want to work”</h3>
+                  <span>BOLLYWOOD &amp; NEWS · 2.05M REACTIONS</span>
+                </Link>
+              </div>
+            </div>
+            <div className="trend-item">
+              <span className="trend-rank">02</span>
+              <div className="trend-text">
+                <Link
                   href="/the-royals-season-2-goes-on-floors"
                   style={{ color: "inherit" }}
                 >
@@ -1208,7 +1234,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">02</span>
+              <span className="trend-rank">03</span>
               <div className="trend-text">
                 <Link
                   href="/salman-khan-teri-sexy-beauty-maatrubhumi-song"
@@ -1220,7 +1246,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">03</span>
+              <span className="trend-rank">04</span>
               <div className="trend-text">
                 <Link
                   href="/saif-ali-khan-kareena-kapoor-koffee-with-karan-stabbing-night"
@@ -1232,7 +1258,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">04</span>
+              <span className="trend-rank">05</span>
               <div className="trend-text">
                 <Link
                   href="/ramayana-part-2-postponed-2028-namit-malhotra-trilogy"
@@ -1244,7 +1270,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">05</span>
+              <span className="trend-rank">06</span>
               <div className="trend-text">
                 <Link
                   href="/mira-rajput-shahid-kapoor-gossip-kapil-sharma-show"
@@ -1256,7 +1282,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">06</span>
+              <span className="trend-rank">07</span>
               <div className="trend-text">
                 <Link
                   href="/tu-mil-jaaye-ed-sheeran-shah-rukh-khan-king"
@@ -1268,7 +1294,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">07</span>
+              <span className="trend-rank">08</span>
               <div className="trend-text">
                 <Link
                   href="/tusshar-kapoor-extortion-call-bishnoi-gang-fake"
@@ -1280,7 +1306,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">08</span>
+              <span className="trend-rank">09</span>
               <div className="trend-text">
                 <Link
                   href="/chandan-roy-aakhri-ride-interview"
@@ -1292,7 +1318,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">09</span>
+              <span className="trend-rank">10</span>
               <div className="trend-text">
                 <Link
                   href="/honey-trehan-slams-new-cbfc-advisory-satluj"
@@ -1300,18 +1326,6 @@ export default function Home() {
                 >
                   <h3>Honey Trehan slams new CBFC advisory as “dictatorship”: Satluj director flags censorship and title tampering</h3>
                   <span>BOLLYWOOD &amp; NEWS · 1.08M REACTIONS</span>
-                </Link>
-              </div>
-            </div>
-            <div className="trend-item">
-              <span className="trend-rank">10</span>
-              <div className="trend-text">
-                <Link
-                  href="/koffee-with-karan-9-kareena-kapoor-saif-ali-khan-teaser"
-                  style={{ color: "inherit" }}
-                >
-                  <h3>Koffee With Karan 9: Kareena Kapoor declares herself No. 1 actress as Saif jokes he is “miscast” on farewell season</h3>
-                  <span>REALITY TV &amp; KWK · 1.05M REACTIONS</span>
                 </Link>
               </div>
             </div>
