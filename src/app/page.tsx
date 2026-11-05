@@ -185,6 +185,20 @@ export default function Home() {
 
   const editorialArticles: EditorialArticle[] = [
     {
+      id: "dia-mirza-diwali-video-bmc-bombay-high-court",
+      anchorId: "dia-mirza-diwali-video-story",
+      href: "/dia-mirza-diwali-video-bmc-bombay-high-court",
+      title: "Dia Mirza Diwali Video Row: Court Says Put It Back, BMC Still Hasn’t",
+      excerpt: "BMC deleted Dia Mirza’s no-firecracker Diwali video after a political row. The Bombay High Court said put it back. Here’s the full story, in simple words.",
+      category: "Bollywood",
+      secondaryCategory: "News",
+      displayCategory: "BOLLYWOOD & NEWS",
+      badge: "HC Order",
+      badgeType: "lime",
+      readTime: "4 MIN READ",
+      image: "/images/dia-mirza-diwali-video-bmc-bombay-high-court.jpg",
+    },
+    {
       id: "munna-bhai-3-farhad-samji-writing-script",
       anchorId: "munna-bhai-3-script-story",
       href: "/munna-bhai-3-farhad-samji-writing-script",
@@ -1155,15 +1169,15 @@ export default function Home() {
         <section className="hero" id="featured">
           {/* 1. Main Featured Story (Commanding Top Story Presentation) */}
           <Link
-            href="/munna-bhai-3-farhad-samji-writing-script"
+            href="/dia-mirza-diwali-video-bmc-bombay-high-court"
             className="feature-card flex flex-col transition-all hover:border-[var(--lime)] focus-visible:ring-2 focus-visible:ring-[var(--lime)] group"
             style={{ textDecoration: "none", color: "inherit" }}
-            aria-label="Read full article: Munna Bhai 3: Farhad Samji Begins Writing the Script"
+            aria-label="Read full article: Dia Mirza Diwali Video Row: Court Says Put It Back, BMC Still Hasn’t"
           >
             <div className="feature-media" style={{ overflow: "hidden", position: "relative" }}>
               <Image
-                src="/images/munna-bhai-3-farhad-samji-writing-script.jpg"
-                alt="Munna Bhai 3 Update: Farhad Samji Begins Writing Script for Rajkumar Hirani"
+                src="/images/dia-mirza-diwali-video-bmc-bombay-high-court.jpg"
+                alt="Dia Mirza Diwali Video Row: Bombay High Court Orders BMC to Re-Upload Awareness Clip"
                 fill
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 750px"
@@ -1172,45 +1186,45 @@ export default function Home() {
               />
               <div className="noise" style={{ pointerEvents: "none" }}></div>
               <div className="feature-tag flex items-center gap-2">
-                <span className="badge lime">⚡ Script In Motion</span>
-                <span className="badge pink">Munna Bhai 3</span>
-                <span className="badge">Rajkumar Hirani</span>
+                <span className="badge lime">⚡ High Court Order</span>
+                <span className="badge pink">Dia Mirza</span>
+                <span className="badge">BMC Controversy</span>
               </div>
             </div>
             <div className="feature-body">
               <div className="flex items-center gap-2 mb-2 font-mono text-xs text-[var(--lime)] font-bold tracking-wider uppercase">
-                <span>★ TOP STORY · MUNNA BHAI 3 UPDATE: FARHAD SAMJI BEGINS WRITING SCRIPT FOR RAJKUMAR HIRANI</span>
+                <span>★ TOP STORY · DIA MIRZA DIWALI VIDEO ROW: BOMBAY HIGH COURT ORDERS BMC TO RE-UPLOAD AWARENESS CLIP</span>
               </div>
               <h1 className="disp" style={{ color: "#fff" }}>
-                Munna Bhai 3: Farhad Samji Begins Writing the Script
+                Dia Mirza Diwali Video Row: Court Says Put It Back, BMC Still Hasn’t
               </h1>
               <p>
-                Munna Bhai 3 is moving ahead. Farhad Samji is reportedly writing the script for Rajkumar Hirani’s film. Read all the details here.
+                BMC deleted Dia Mirza’s no-firecracker Diwali video after a political row. The Bombay High Court said put it back. Here’s the full story, in simple words.
               </p>
 
               {/* Editorial Highlights Box */}
               <div className="feature-highlights">
                 <div className="feature-highlights-header">
                   <span className="w-2 h-2 rounded-full bg-[var(--lime)] animate-pulse inline-block"></span>
-                  <span>Inside Munna Bhai 3 Pre-Production Highlights</span>
+                  <span>Inside The High Court Ruling &amp; Political Fallout</span>
                 </div>
                 <ul className="feature-highlights-list">
                   <li className="feature-highlights-item">
                     <span className="feature-highlights-bullet">✦</span>
                     <span>
-                      <strong className="text-white font-medium">Scripting Commences:</strong> Variety India reports writer Farhad Samji has been roped in to pen the screenplay for the long-awaited third installment.
+                      <strong className="text-white font-medium">Judicial Reprimand:</strong> Justices Girish Kulkarni and Neela Gokhale slammed the &quot;petty mindset&quot; behind deleting an anti-pollution awareness video over communal objections.
                     </span>
                   </li>
                   <li className="feature-highlights-item">
                     <span className="feature-highlights-bullet">✦</span>
                     <span>
-                      <strong className="text-white font-medium">23-Year Reunion:</strong> Samji reunites with Rajkumar Hirani and Vidhu Vinod Chopra 23 years after writing the hook for “M Bole Toh” in 2003.
+                      <strong className="text-white font-medium">Targeted Removal:</strong> While Madhuri Dixit and Ajinkya Rahane’s campaign clips stayed up, only Dia Mirza’s video was removed after BJP objections.
                     </span>
                   </li>
                   <li className="feature-highlights-item">
                     <span className="feature-highlights-bullet">✦</span>
                     <span>
-                      <strong className="text-white font-medium">Story First:</strong> Hirani has always insisted a sequel will only happen with the right script, having explored ideas alongside a 3 Idiots follow-up.
+                      <strong className="text-white font-medium">Public Health Focus:</strong> The court reiterated that everyone breathes the same air regardless of faith, and road cracker bans apply all year round.
                     </span>
                   </li>
                 </ul>
@@ -1220,9 +1234,9 @@ export default function Home() {
                 <div className="flex items-center gap-3">
                   <span>BOLLYWOOD &amp; NEWS</span>
                   <span className="dot-sep">◆</span>
-                  <span>3 MIN READ</span>
+                  <span>4 MIN READ</span>
                   <span className="dot-sep">◆</span>
-                  <span style={{ color: "var(--lime)" }}>FRANCHISE UPDATE</span>
+                  <span style={{ color: "var(--lime)" }}>MUMBAI LEGAL ROW</span>
                 </div>
                 <span className="text-xs font-mono font-bold text-[var(--lime)] hidden sm:inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform">
                   Read Full Story →
@@ -1241,6 +1255,18 @@ export default function Home() {
               <span className="trend-rank">01</span>
               <div className="trend-text">
                 <Link
+                  href="/dia-mirza-diwali-video-bmc-bombay-high-court"
+                  style={{ color: "inherit" }}
+                >
+                  <h3>Dia Mirza Diwali video row: Bombay High Court orders BMC to re-upload deleted awareness clip</h3>
+                  <span>BOLLYWOOD &amp; NEWS · 2.65M REACTIONS</span>
+                </Link>
+              </div>
+            </div>
+            <div className="trend-item">
+              <span className="trend-rank">02</span>
+              <div className="trend-text">
+                <Link
                   href="/munna-bhai-3-farhad-samji-writing-script"
                   style={{ color: "inherit" }}
                 >
@@ -1250,7 +1276,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">02</span>
+              <span className="trend-rank">03</span>
               <div className="trend-text">
                 <Link
                   href="/karan-johar-ramayana-part-1-review-ranbir-kapoor-yash"
@@ -1262,7 +1288,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">03</span>
+              <span className="trend-rank">04</span>
               <div className="trend-text">
                 <Link
                   href="/shraddha-kapoor-reacts-eetha-trailer-criticism"
@@ -1274,7 +1300,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">04</span>
+              <span className="trend-rank">05</span>
               <div className="trend-text">
                 <Link
                   href="/the-royals-season-2-goes-on-floors"
@@ -1286,7 +1312,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">05</span>
+              <span className="trend-rank">06</span>
               <div className="trend-text">
                 <Link
                   href="/salman-khan-teri-sexy-beauty-maatrubhumi-song"
@@ -1298,7 +1324,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">06</span>
+              <span className="trend-rank">07</span>
               <div className="trend-text">
                 <Link
                   href="/saif-ali-khan-kareena-kapoor-koffee-with-karan-stabbing-night"
@@ -1310,7 +1336,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">07</span>
+              <span className="trend-rank">08</span>
               <div className="trend-text">
                 <Link
                   href="/ramayana-part-2-postponed-2028-namit-malhotra-trilogy"
@@ -1322,7 +1348,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">08</span>
+              <span className="trend-rank">09</span>
               <div className="trend-text">
                 <Link
                   href="/mira-rajput-shahid-kapoor-gossip-kapil-sharma-show"
@@ -1334,7 +1360,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">09</span>
+              <span className="trend-rank">10</span>
               <div className="trend-text">
                 <Link
                   href="/tu-mil-jaaye-ed-sheeran-shah-rukh-khan-king"
@@ -1342,18 +1368,6 @@ export default function Home() {
                 >
                   <h3>Tu Mil Jaaye: Ed Sheeran reveals how Shah Rukh Khan asked him to write and record King’s first song overnight</h3>
                   <span>BOLLYWOOD &amp; MUSIC · 1.48M REACTIONS</span>
-                </Link>
-              </div>
-            </div>
-            <div className="trend-item">
-              <span className="trend-rank">10</span>
-              <div className="trend-text">
-                <Link
-                  href="/tusshar-kapoor-extortion-call-bishnoi-gang-fake"
-                  style={{ color: "inherit" }}
-                >
-                  <h3>Tusshar Kapoor extortion call: Mumbai Police suspect ₹5 Cr threat in Bishnoi gang name is a hoax as voices mismatch</h3>
-                  <span>BOLLYWOOD &amp; CRIME · 1.15M REACTIONS</span>
                 </Link>
               </div>
             </div>

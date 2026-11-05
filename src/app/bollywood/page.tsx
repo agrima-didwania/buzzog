@@ -6,6 +6,18 @@ export const metadata: Metadata = {
   description:
     "Bollywood coverage from Buzz Originals — raw, unfiltered, built for the group chat. Red carpets, rumours, airport looks and exclusives.",
   keywords: [
+    "Dia Mirza Diwali video",
+    "Dia Mirza video row",
+    "BMC Dia Mirza video",
+    "Bombay High Court Dia Mirza",
+    "Dia Mirza firecracker video",
+    "BMC Diwali campaign",
+    "why did BMC remove Dia Mirza’s video",
+    "Bombay High Court order Dia Mirza video",
+    "Dia Mirza Diwali video controversy",
+    "Dia Mirza reaction to video removal",
+    "Ameet Satam Dia Mirza video",
+    "is Dia Mirza video back on BMC page",
     "Munna Bhai 3",
     "Munna Bhai 3 update",
     "Munna Bhai 3 news",
@@ -426,10 +438,10 @@ export const metadata: Metadata = {
     siteName: "Buzz Originals",
     images: [
       {
-        url: "/images/munna-bhai-3-farhad-samji-writing-script.jpg",
+        url: "/images/dia-mirza-diwali-video-bmc-bombay-high-court.jpg",
         width: 1200,
         height: 675,
-        alt: "Munna Bhai 3: Farhad Samji Begins Writing Script for Rajkumar Hirani — Buzz Originals",
+        alt: "Dia Mirza Diwali Video Row: Bombay High Court Orders BMC to Re-Upload — Buzz Originals",
       },
     ],
     type: "website",
@@ -439,7 +451,7 @@ export const metadata: Metadata = {
     title: "Bollywood — Buzz Originals",
     description:
       "Raw, unfiltered Bollywood coverage of red carpets, gossip, airport sightings & exclusives.",
-    images: ["/images/munna-bhai-3-farhad-samji-writing-script.jpg"],
+    images: ["/images/dia-mirza-diwali-video-bmc-bombay-high-court.jpg"],
   },
 };
 
@@ -466,12 +478,18 @@ export default function BollywoodPage() {
         {
           "@type": "ListItem",
           position: 1,
+          name: "Dia Mirza Diwali Video: HC Orders BMC to Re-Upload",
+          url: "https://www.buzzoriginals.com/dia-mirza-diwali-video-bmc-bombay-high-court",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
           name: "Munna Bhai 3 Update: Farhad Samji Begins Writing",
           url: "https://www.buzzoriginals.com/munna-bhai-3-farhad-samji-writing-script",
         },
         {
           "@type": "ListItem",
-          position: 2,
+          position: 3,
           name: "Karan Johar’s Ramayana Part 1 Review: “Miracle”",
           url: "https://www.buzzoriginals.com/karan-johar-ramayana-part-1-review-ranbir-kapoor-yash",
         },

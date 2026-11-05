@@ -20,6 +20,16 @@ interface BollywoodArticle {
 
 const bollywoodArticles: BollywoodArticle[] = [
   {
+    id: "dia-mirza-diwali-video-bmc-bombay-high-court",
+    category: "Legal & Controversy",
+    title: "Dia Mirza Diwali Video Row: Court Says Put It Back, BMC Still Hasn’t",
+    badge: "⚡ High Court Order",
+    badgeType: "lime",
+    image: "/images/dia-mirza-diwali-video-bmc-bombay-high-court.jpg",
+    href: "/dia-mirza-diwali-video-bmc-bombay-high-court",
+    readOrTime: "4 MIN READ",
+  },
+  {
     id: "munna-bhai-3-farhad-samji-writing-script",
     category: "Franchise Update",
     title: "Munna Bhai 3: Farhad Samji Begins Writing the Script",
@@ -586,16 +596,16 @@ export default function BollywoodView() {
 
         {/* Lead Section: Latest Bollywood Published Article (Cover Story) + The Last 2 Blogs Uploaded Before It */}
         <section className="lead">
-          {/* Cover Story: Latest Published Bollywood Story (Munna Bhai 3: Farhad Samji Begins Writing) */}
+          {/* Cover Story: Latest Published Bollywood Story (Dia Mirza Diwali Video Row) */}
           <Link
-            href="/munna-bhai-3-farhad-samji-writing-script"
+            href="/dia-mirza-diwali-video-bmc-bombay-high-court"
             className="feature-card group block"
-            aria-label="Read full cover story: Munna Bhai 3: Farhad Samji Begins Writing the Script"
+            aria-label="Read full cover story: Dia Mirza Diwali Video Row: Court Says Put It Back, BMC Still Hasn’t"
           >
             <div className="feature-media relative overflow-hidden">
               <Image
-                src="/images/munna-bhai-3-farhad-samji-writing-script.jpg"
-                alt="Munna Bhai 3 Update: Farhad Samji Begins Writing Script for Rajkumar Hirani"
+                src="/images/dia-mirza-diwali-video-bmc-bombay-high-court.jpg"
+                alt="Dia Mirza Diwali Video Row: Bombay High Court Orders BMC to Re-Upload Awareness Clip"
                 fill
                 priority
                 className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
@@ -603,20 +613,20 @@ export default function BollywoodView() {
               />
               <div className="noise" />
               <span className="badge lime feature-tag z-10">
-                ⚡ Script Begins
+                ⚡ High Court Order
               </span>
             </div>
             <div className="feature-body">
               <h2 className="disp text-white group-hover:text-[var(--lime)] transition-colors">
-                Munna Bhai 3: Farhad Samji Begins Writing the Script
+                Dia Mirza Diwali Video Row: Court Says Put It Back, BMC Still Hasn’t
               </h2>
               <p>
-                Munna Bhai 3 is moving ahead. Farhad Samji is reportedly writing the script for Rajkumar Hirani’s film. Read all the details here.
+                BMC deleted Dia Mirza’s no-firecracker Diwali video after a political row. The Bombay High Court said put it back. Here’s the full story, in simple words.
               </p>
               <div className="meta-row mt-3">
-                <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; CINEMA</span>
+                <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; NEWS</span>
                 <span className="dot-sep">◆</span>
-                <span>3 MIN READ</span>
+                <span>4 MIN READ</span>
                 <span className="dot-sep">◆</span>
                 <span className="text-[var(--lime)] font-bold">NOV 05</span>
               </div>
@@ -625,7 +635,34 @@ export default function BollywoodView() {
 
           {/* Right Stack: The last 2 blogs uploaded before the latest one */}
           <div className="stack">
-            {/* Card 1: Karan Johar Calls Ramayana Part 1 a Miracle */}
+            {/* Card 1: Munna Bhai 3: Farhad Samji Begins Writing the Script */}
+            <Link
+              href="/munna-bhai-3-farhad-samji-writing-script"
+              className="card m1 group block"
+            >
+              <div className="card-media relative overflow-hidden">
+                <Image
+                  src="/images/munna-bhai-3-farhad-samji-writing-script.jpg"
+                  alt="Munna Bhai 3 Update: Farhad Samji Begins Writing Script for Rajkumar Hirani"
+                  fill
+                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 980px) 100vw, 35vw"
+                />
+                <span className="badge lime z-10 relative">⚡ Script Begins</span>
+              </div>
+              <div className="card-body">
+                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
+                  Munna Bhai 3: Farhad Samji Begins Writing the Script
+                </h3>
+                <div className="meta-row mt-2">
+                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; CINEMA</span>
+                  <span className="dot-sep">◆</span>
+                  <span>3 MIN READ</span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Card 2: Karan Johar Calls Ramayana Part 1 a Miracle */}
             <Link
               href="/karan-johar-ramayana-part-1-review-ranbir-kapoor-yash"
               className="card m1 group block"
@@ -648,33 +685,6 @@ export default function BollywoodView() {
                   <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; CINEMA</span>
                   <span className="dot-sep">◆</span>
                   <span>4 MIN READ</span>
-                </div>
-              </div>
-            </Link>
-
-            {/* Card 2: Shraddha Kapoor Breaks Silence on Eetha Trolling */}
-            <Link
-              href="/shraddha-kapoor-reacts-eetha-trailer-criticism"
-              className="card m1 group block"
-            >
-              <div className="card-media relative overflow-hidden">
-                <Image
-                  src="/images/shraddha-kapoor-reacts-eetha-trailer-criticism.jpg"
-                  alt="Shraddha Kapoor Reacts to Eetha Trailer Trolling: I Can't Even Handle My WhatsApp"
-                  fill
-                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
-                  sizes="(max-width: 980px) 100vw, 35vw"
-                />
-                <span className="badge lime z-10 relative">⚡ Reacts to Trolls</span>
-              </div>
-              <div className="card-body">
-                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
-                  Shraddha Kapoor Breaks Silence on Eetha Trolling: “I Can’t Even Handle My WhatsApp”
-                </h3>
-                <div className="meta-row mt-2">
-                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; CINEMA</span>
-                  <span className="dot-sep">◆</span>
-                  <span>3 MIN READ</span>
                 </div>
               </div>
             </Link>

@@ -6,6 +6,18 @@ export const metadata: Metadata = {
   description:
     "News coverage from Buzz Originals — raw, unfiltered, built for the group chat. Everything breaking across reality TV, Bollywood, movies and OTT — newest first, updated hourly.",
   keywords: [
+    "Dia Mirza Diwali video",
+    "Dia Mirza video row",
+    "BMC Dia Mirza video",
+    "Bombay High Court Dia Mirza",
+    "Dia Mirza firecracker video",
+    "BMC Diwali campaign",
+    "why did BMC remove Dia Mirza’s video",
+    "Bombay High Court order Dia Mirza video",
+    "Dia Mirza Diwali video controversy",
+    "Dia Mirza reaction to video removal",
+    "Ameet Satam Dia Mirza video",
+    "is Dia Mirza video back on BMC page",
     "Munna Bhai 3",
     "Munna Bhai 3 update",
     "Munna Bhai 3 news",
@@ -175,10 +187,10 @@ export const metadata: Metadata = {
     siteName: "Buzz Originals",
     images: [
       {
-        url: "/images/munna-bhai-3-farhad-samji-writing-script.jpg",
+        url: "/images/dia-mirza-diwali-video-bmc-bombay-high-court.jpg",
         width: 1200,
         height: 675,
-        alt: "Munna Bhai 3: Farhad Samji Begins Writing Script for Rajkumar Hirani — Buzz Originals News",
+        alt: "Dia Mirza Diwali Video Row: Bombay High Court Orders BMC to Re-Upload Awareness Clip — Buzz Originals News",
       },
     ],
     type: "website",
@@ -188,7 +200,7 @@ export const metadata: Metadata = {
     title: "News — Buzz Originals",
     description:
       "Raw, unfiltered entertainment news across reality TV, Bollywood, movies and OTT.",
-    images: ["/images/munna-bhai-3-farhad-samji-writing-script.jpg"],
+    images: ["/images/dia-mirza-diwali-video-bmc-bombay-high-court.jpg"],
   },
 };
 

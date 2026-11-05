@@ -22,6 +22,18 @@ interface NewsArticle {
 // Only verified breaking entertainment news stories (fatwas, obituaries, police complaints, eviction rows, box-office shifts)
 const newsArticles: NewsArticle[] = [
   {
+    id: "dia-mirza-diwali-video-bmc-bombay-high-court",
+    category: "Bollywood",
+    title: "Dia Mirza Diwali Video Row: Court Says Put It Back, BMC Still Hasn’t",
+    badge: "⚡ High Court Order",
+    badgeType: "lime",
+    image: "/images/dia-mirza-diwali-video-bmc-bombay-high-court.jpg",
+    href: "/dia-mirza-diwali-video-bmc-bombay-high-court",
+    readOrTime: "4 MIN READ",
+    excerpt:
+      "BMC deleted Dia Mirza’s no-firecracker Diwali video after a political row. The Bombay High Court said put it back. Here’s the full story, in simple words.",
+  },
+  {
     id: "munna-bhai-3-farhad-samji-writing-script",
     category: "Bollywood",
     title: "Munna Bhai 3: Farhad Samji Begins Writing the Script for Rajkumar Hirani",
