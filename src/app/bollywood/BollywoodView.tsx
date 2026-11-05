@@ -20,6 +20,16 @@ interface BollywoodArticle {
 
 const bollywoodArticles: BollywoodArticle[] = [
   {
+    id: "karan-johar-ramayana-part-1-review-ranbir-kapoor-yash",
+    category: "Ramayana Review",
+    title: "Karan Johar Calls Ramayana Part 1 a “Miracle” and Praises Ranbir Kapoor’s Lord Ram",
+    badge: "✨ Industry Review",
+    badgeType: "lime",
+    image: "/images/karan-johar-ramayana-part-1-review-ranbir-kapoor-yash.jpg",
+    href: "/karan-johar-ramayana-part-1-review-ranbir-kapoor-yash",
+    readOrTime: "4 MIN READ",
+  },
+  {
     id: "shraddha-kapoor-reacts-eetha-trailer-criticism",
     category: "Trailer Reaction",
     title: "Shraddha Kapoor Reacts to Eetha Trailer Trolling: “I Can’t Even Handle My WhatsApp”",
@@ -566,16 +576,16 @@ export default function BollywoodView() {
 
         {/* Lead Section: Latest Bollywood Published Article (Cover Story) + The Last 2 Blogs Uploaded Before It */}
         <section className="lead">
-          {/* Cover Story: Latest Published Bollywood Story (Shraddha Kapoor Breaks Silence on Eetha Trolling) */}
+          {/* Cover Story: Latest Published Bollywood Story (Karan Johar Calls Ramayana Part 1 a Miracle) */}
           <Link
-            href="/shraddha-kapoor-reacts-eetha-trailer-criticism"
+            href="/karan-johar-ramayana-part-1-review-ranbir-kapoor-yash"
             className="feature-card group block"
-            aria-label="Read full cover story: Shraddha Kapoor Breaks Silence on Eetha Trolling: “I Can’t Even Handle My WhatsApp”"
+            aria-label="Read full cover story: Karan Johar Calls Ramayana Part 1 a “Miracle” and Praises Ranbir Kapoor’s Lord Ram"
           >
             <div className="feature-media relative overflow-hidden">
               <Image
-                src="/images/shraddha-kapoor-reacts-eetha-trailer-criticism.jpg"
-                alt="Shraddha Kapoor Reacts to Eetha Trailer Trolling: I Can't Even Handle My WhatsApp"
+                src="/images/karan-johar-ramayana-part-1-review-ranbir-kapoor-yash.jpg"
+                alt="Karan Johar Calls Ramayana Part 1 a Miracle and Praises Ranbir Kapoor’s Lord Ram"
                 fill
                 priority
                 className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
@@ -583,20 +593,20 @@ export default function BollywoodView() {
               />
               <div className="noise" />
               <span className="badge lime feature-tag z-10">
-                ⚡ Reacts to Trolls
+                ✨ Industry Review
               </span>
             </div>
             <div className="feature-body">
               <h2 className="disp text-white group-hover:text-[var(--lime)] transition-colors">
-                Shraddha Kapoor Breaks Silence on Eetha Trolling: “I Can’t Even Handle My WhatsApp”
+                Karan Johar Calls Ramayana Part 1 a “Miracle” and Praises Ranbir Kapoor’s Lord Ram
               </h2>
               <p>
-                Shraddha Kapoor says she won’t handle online criticism after fans questioned her Marathi accent in the Eetha trailer. Here is what she said.
+                Karan Johar has shared a long Instagram note on Ramayana Part 1. Here is what he said about Ranbir Kapoor, Sai Pallavi, Yash and Ravie Dubey.
               </p>
               <div className="meta-row mt-3">
                 <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; CINEMA</span>
                 <span className="dot-sep">◆</span>
-                <span>3 MIN READ</span>
+                <span>4 MIN READ</span>
                 <span className="dot-sep">◆</span>
                 <span className="text-[var(--lime)] font-bold">NOV 05</span>
               </div>
@@ -605,7 +615,34 @@ export default function BollywoodView() {
 
           {/* Right Stack: The last 2 blogs uploaded before the latest one */}
           <div className="stack">
-            {/* Card 1: Salman Khan Sings Teri Sexy Beauty */}
+            {/* Card 1: Shraddha Kapoor Breaks Silence on Eetha Trolling */}
+            <Link
+              href="/shraddha-kapoor-reacts-eetha-trailer-criticism"
+              className="card m1 group block"
+            >
+              <div className="card-media relative overflow-hidden">
+                <Image
+                  src="/images/shraddha-kapoor-reacts-eetha-trailer-criticism.jpg"
+                  alt="Shraddha Kapoor Reacts to Eetha Trailer Trolling: I Can't Even Handle My WhatsApp"
+                  fill
+                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 980px) 100vw, 35vw"
+                />
+                <span className="badge lime z-10 relative">⚡ Reacts to Trolls</span>
+              </div>
+              <div className="card-body">
+                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
+                  Shraddha Kapoor Breaks Silence on Eetha Trolling: “I Can’t Even Handle My WhatsApp”
+                </h3>
+                <div className="meta-row mt-2">
+                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; CINEMA</span>
+                  <span className="dot-sep">◆</span>
+                  <span>3 MIN READ</span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Card 2: Salman Khan Sings Teri Sexy Beauty */}
             <Link
               href="/salman-khan-teri-sexy-beauty-maatrubhumi-song"
               className="card m1 group block"
@@ -626,33 +663,6 @@ export default function BollywoodView() {
                 </h3>
                 <div className="meta-row mt-2">
                   <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; MUSIC</span>
-                  <span className="dot-sep">◆</span>
-                  <span>4 MIN READ</span>
-                </div>
-              </div>
-            </Link>
-
-            {/* Card 2: Saif Ali Khan Stabbing on KWK 9 */}
-            <Link
-              href="/saif-ali-khan-kareena-kapoor-koffee-with-karan-stabbing-night"
-              className="card m1 group block"
-            >
-              <div className="card-media relative overflow-hidden">
-                <Image
-                  src="/images/saif-ali-khan-kareena-kapoor-koffee-with-karan-stabbing-night.jpg"
-                  alt="Saif Ali Khan Stabbing: Kareena Opens Up on KWK 9"
-                  fill
-                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
-                  sizes="(max-width: 980px) 100vw, 35vw"
-                />
-                <span className="badge pink z-10 relative">⚡ KWK 9 Tell-All</span>
-              </div>
-              <div className="card-body">
-                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
-                  Saif Ali Khan Calls Stabbing Night “Worst Night”: Kareena Kapoor’s Emotional Confession on Koffee With Karan
-                </h3>
-                <div className="meta-row mt-2">
-                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; REALITY</span>
                   <span className="dot-sep">◆</span>
                   <span>4 MIN READ</span>
                 </div>

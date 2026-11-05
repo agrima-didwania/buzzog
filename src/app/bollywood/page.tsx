@@ -6,6 +6,17 @@ export const metadata: Metadata = {
   description:
     "Bollywood coverage from Buzz Originals — raw, unfiltered, built for the group chat. Red carpets, rumours, airport looks and exclusives.",
   keywords: [
+    "Karan Johar Ramayana Part 1 review",
+    "Ramayana Part 1",
+    "Karan Johar Ramayana",
+    "Ramayana Part 1 review",
+    "Ranbir Kapoor Lord Ram",
+    "Yash Ravana",
+    "Sai Pallavi Sita",
+    "Ramayana Part 1 reaction",
+    "Karan Johar reaction to Ramayana",
+    "What did Karan Johar say about Ramayana",
+    "Karan Johar praises Ranbir Kapoor",
     "Shraddha Kapoor",
     "Eetha",
     "Eetha trailer",
@@ -399,10 +410,10 @@ export const metadata: Metadata = {
     siteName: "Buzz Originals",
     images: [
       {
-        url: "/images/shraddha-kapoor-reacts-eetha-trailer-criticism.jpg",
+        url: "/images/karan-johar-ramayana-part-1-review-ranbir-kapoor-yash.jpg",
         width: 1200,
         height: 675,
-        alt: "Shraddha Kapoor Reacts to Eetha Trailer Trolling — Buzz Originals Bollywood",
+        alt: "Karan Johar Calls Ramayana Part 1 a Miracle — Buzz Originals Bollywood",
       },
     ],
     type: "website",
@@ -412,7 +423,7 @@ export const metadata: Metadata = {
     title: "Bollywood — Buzz Originals",
     description:
       "Raw, unfiltered Bollywood coverage of red carpets, gossip, airport sightings & exclusives.",
-    images: ["/images/shraddha-kapoor-reacts-eetha-trailer-criticism.jpg"],
+    images: ["/images/karan-johar-ramayana-part-1-review-ranbir-kapoor-yash.jpg"],
   },
 };
 
@@ -439,6 +450,12 @@ export default function BollywoodPage() {
         {
           "@type": "ListItem",
           position: 1,
+          name: "Karan Johar’s Ramayana Part 1 Review: “Miracle”",
+          url: "https://www.buzzoriginals.com/karan-johar-ramayana-part-1-review-ranbir-kapoor-yash",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
           name: "Shraddha Kapoor Reacts to Eetha Trailer Trolling",
           url: "https://www.buzzoriginals.com/shraddha-kapoor-reacts-eetha-trailer-criticism",
         },

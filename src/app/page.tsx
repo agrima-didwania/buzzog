@@ -185,6 +185,20 @@ export default function Home() {
 
   const editorialArticles: EditorialArticle[] = [
     {
+      id: "karan-johar-ramayana-part-1-review-ranbir-kapoor-yash",
+      anchorId: "karan-johar-ramayana-review-story",
+      href: "/karan-johar-ramayana-part-1-review-ranbir-kapoor-yash",
+      title: "Karan Johar Calls Ramayana Part 1 a “Miracle” and Praises Ranbir Kapoor’s Lord Ram",
+      excerpt: "Karan Johar has shared a long Instagram note on Ramayana Part 1. Here is what he said about Ranbir Kapoor, Sai Pallavi, Yash and Ravie Dubey.",
+      category: "Bollywood",
+      secondaryCategory: "Latest",
+      displayCategory: "BOLLYWOOD & CINEMA",
+      badge: "Industry Verdict",
+      badgeType: "lime",
+      readTime: "4 MIN READ",
+      image: "/images/karan-johar-ramayana-part-1-review-ranbir-kapoor-yash.jpg",
+    },
+    {
       id: "shraddha-kapoor-reacts-eetha-trailer-criticism",
       anchorId: "shraddha-eetha-trolling-story",
       href: "/shraddha-kapoor-reacts-eetha-trailer-criticism",
@@ -1127,15 +1141,15 @@ export default function Home() {
         <section className="hero" id="featured">
           {/* 1. Main Featured Story (Commanding Top Story Presentation) */}
           <Link
-            href="/shraddha-kapoor-reacts-eetha-trailer-criticism"
+            href="/karan-johar-ramayana-part-1-review-ranbir-kapoor-yash"
             className="feature-card flex flex-col transition-all hover:border-[var(--lime)] focus-visible:ring-2 focus-visible:ring-[var(--lime)] group"
             style={{ textDecoration: "none", color: "inherit" }}
-            aria-label="Read full article: Shraddha Kapoor Breaks Silence on Eetha Trolling: “I Can’t Even Handle My WhatsApp”"
+            aria-label="Read full article: Karan Johar Calls Ramayana Part 1 a “Miracle” and Praises Ranbir Kapoor’s Lord Ram"
           >
             <div className="feature-media" style={{ overflow: "hidden", position: "relative" }}>
               <Image
-                src="/images/shraddha-kapoor-reacts-eetha-trailer-criticism.jpg"
-                alt="Shraddha Kapoor Reacts to Eetha Trailer Trolling: I Can't Even Handle My WhatsApp"
+                src="/images/karan-johar-ramayana-part-1-review-ranbir-kapoor-yash.jpg"
+                alt="Karan Johar Calls Ramayana Part 1 a Miracle and Praises Ranbir Kapoor’s Lord Ram"
                 fill
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 750px"
@@ -1144,45 +1158,45 @@ export default function Home() {
               />
               <div className="noise" style={{ pointerEvents: "none" }}></div>
               <div className="feature-tag flex items-center gap-2">
-                <span className="badge lime">⚡ Trolling Response</span>
-                <span className="badge pink">Eetha Trailer</span>
-                <span className="badge">Bollywood Exclusive</span>
+                <span className="badge lime">✨ Industry Verdict</span>
+                <span className="badge pink">Karan Johar Review</span>
+                <span className="badge">Ramayana Release Day</span>
               </div>
             </div>
             <div className="feature-body">
               <div className="flex items-center gap-2 mb-2 font-mono text-xs text-[var(--lime)] font-bold tracking-wider uppercase">
-                <span>★ TOP STORY · SHRADDHA KAPOOR ADDRESSES EETHA MARATHI ACCENT TROLLING: “I CAN’T EVEN HANDLE MY WHATSAPP”</span>
+                <span>★ TOP STORY · KARAN JOHAR CALLS RAMAYANA PART 1 A “MIRACLE”, PRAISES RANBIR KAPOOR’S MEDITATIVE LORD RAM</span>
               </div>
               <h1 className="disp" style={{ color: "#fff" }}>
-                Shraddha Kapoor Breaks Silence on Eetha Trolling: “I Can’t Even Handle My WhatsApp”
+                Karan Johar Calls Ramayana Part 1 a “Miracle” and Praises Ranbir Kapoor’s Lord Ram
               </h1>
               <p>
-                Shraddha Kapoor says she won’t handle online criticism after fans questioned her Marathi accent in the Eetha trailer. Here is what she said.
+                Karan Johar has shared a long Instagram note on Ramayana Part 1. Here is what he said about Ranbir Kapoor, Sai Pallavi, Yash and Ravie Dubey.
               </p>
 
               {/* Editorial Highlights Box */}
               <div className="feature-highlights">
                 <div className="feature-highlights-header">
                   <span className="w-2 h-2 rounded-full bg-[var(--lime)] animate-pulse inline-block"></span>
-                  <span>Inside The Controversy &amp; Film Highlights</span>
+                  <span>Inside Karan Johar’s Review &amp; Film Verdict</span>
                 </div>
                 <ul className="feature-highlights-list">
                   <li className="feature-highlights-item">
                     <span className="feature-highlights-bullet">✦</span>
                     <span>
-                      <strong className="text-white font-medium">Trolling Brushed Off:</strong> During an Instagram AMA, Shraddha hilariously revealed she doesn&apos;t handle criticism because she can&apos;t even keep up with her WhatsApp messages.
+                      <strong className="text-white font-medium">Cinematic Miracle:</strong> Hailing Nitesh Tiwari &amp; Namit Malhotra for audacity and conviction, Karan called the big-screen adaptation no short of a miracle.
                     </span>
                   </li>
                   <li className="feature-highlights-item">
                     <span className="feature-highlights-bullet">✦</span>
                     <span>
-                      <strong className="text-white font-medium">Ajay-Atul Backing:</strong> Music maestro Ajay Gogavale praised her nuanced &apos;Nauvari&apos; accent and commended her authentic Maharashtrian cultural roots.
+                      <strong className="text-white font-medium">Meditative Lord Ram:</strong> Commending Ranbir Kapoor, he wrote his eyes do all the heavy lifting to embody divine goodness without theatrical bells and whistles.
                     </span>
                   </li>
                   <li className="feature-highlights-item">
                     <span className="feature-highlights-bullet">✦</span>
                     <span>
-                      <strong className="text-white font-medium">Biopic &amp; Clash:</strong> Helmed by Laxman Utekar, <em>Eetha</em> chronicles folk empress Vithabai Narayangaonkar; releases December 4, 2026.
+                      <strong className="text-white font-medium">Ensemble Praises:</strong> Praised Yash’s magnetic Ravana inner-voices sequence, Sai Pallavi’s sublime Sita sacrifice, and Ravie Dubey’s loyal Lakshman.
                     </span>
                   </li>
                 </ul>
@@ -1192,9 +1206,9 @@ export default function Home() {
                 <div className="flex items-center gap-3">
                   <span>BOLLYWOOD &amp; CINEMA</span>
                   <span className="dot-sep">◆</span>
-                  <span>3 MIN READ</span>
+                  <span>4 MIN READ</span>
                   <span className="dot-sep">◆</span>
-                  <span style={{ color: "var(--lime)" }}>DECEMBER 4 RELEASE</span>
+                  <span style={{ color: "var(--lime)" }}>IN CINEMAS NOW</span>
                 </div>
                 <span className="text-xs font-mono font-bold text-[var(--lime)] hidden sm:inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform">
                   Read Full Story →
@@ -1213,6 +1227,18 @@ export default function Home() {
               <span className="trend-rank">01</span>
               <div className="trend-text">
                 <Link
+                  href="/karan-johar-ramayana-part-1-review-ranbir-kapoor-yash"
+                  style={{ color: "inherit" }}
+                >
+                  <h3>Karan Johar calls Ramayana Part 1 a “miracle”: Praises Ranbir Kapoor’s meditative Lord Ram &amp; Yash’s Ravana</h3>
+                  <span>BOLLYWOOD &amp; CINEMA · 2.25M REACTIONS</span>
+                </Link>
+              </div>
+            </div>
+            <div className="trend-item">
+              <span className="trend-rank">02</span>
+              <div className="trend-text">
+                <Link
                   href="/shraddha-kapoor-reacts-eetha-trailer-criticism"
                   style={{ color: "inherit" }}
                 >
@@ -1222,7 +1248,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">02</span>
+              <span className="trend-rank">03</span>
               <div className="trend-text">
                 <Link
                   href="/the-royals-season-2-goes-on-floors"
@@ -1234,7 +1260,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">03</span>
+              <span className="trend-rank">04</span>
               <div className="trend-text">
                 <Link
                   href="/salman-khan-teri-sexy-beauty-maatrubhumi-song"
@@ -1246,7 +1272,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">04</span>
+              <span className="trend-rank">05</span>
               <div className="trend-text">
                 <Link
                   href="/saif-ali-khan-kareena-kapoor-koffee-with-karan-stabbing-night"
@@ -1258,7 +1284,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">05</span>
+              <span className="trend-rank">06</span>
               <div className="trend-text">
                 <Link
                   href="/ramayana-part-2-postponed-2028-namit-malhotra-trilogy"
@@ -1270,7 +1296,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">06</span>
+              <span className="trend-rank">07</span>
               <div className="trend-text">
                 <Link
                   href="/mira-rajput-shahid-kapoor-gossip-kapil-sharma-show"
@@ -1282,7 +1308,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">07</span>
+              <span className="trend-rank">08</span>
               <div className="trend-text">
                 <Link
                   href="/tu-mil-jaaye-ed-sheeran-shah-rukh-khan-king"
@@ -1294,7 +1320,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">08</span>
+              <span className="trend-rank">09</span>
               <div className="trend-text">
                 <Link
                   href="/tusshar-kapoor-extortion-call-bishnoi-gang-fake"
@@ -1306,7 +1332,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">09</span>
+              <span className="trend-rank">10</span>
               <div className="trend-text">
                 <Link
                   href="/chandan-roy-aakhri-ride-interview"
@@ -1314,18 +1340,6 @@ export default function Home() {
                 >
                   <h3>Chandan Roy on Aakhri Ride: Panchayat star opens up on 9 years in Mumbai, Bihar roots &amp; Anurag Kashyap backing</h3>
                   <span>BOLLYWOOD &amp; INTERVIEW · 1.12M REACTIONS</span>
-                </Link>
-              </div>
-            </div>
-            <div className="trend-item">
-              <span className="trend-rank">10</span>
-              <div className="trend-text">
-                <Link
-                  href="/honey-trehan-slams-new-cbfc-advisory-satluj"
-                  style={{ color: "inherit" }}
-                >
-                  <h3>Honey Trehan slams new CBFC advisory as “dictatorship”: Satluj director flags censorship and title tampering</h3>
-                  <span>BOLLYWOOD &amp; NEWS · 1.08M REACTIONS</span>
                 </Link>
               </div>
             </div>
