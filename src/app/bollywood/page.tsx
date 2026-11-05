@@ -6,6 +6,22 @@ export const metadata: Metadata = {
   description:
     "Bollywood coverage from Buzz Originals — raw, unfiltered, built for the group chat. Red carpets, rumours, airport looks and exclusives.",
   keywords: [
+    "Munna Bhai 3",
+    "Munna Bhai 3 update",
+    "Munna Bhai 3 news",
+    "Munna Bhai 3 script",
+    "Munna Bhai 3 release date",
+    "Munna Bhai 3 cast",
+    "Farhad Samji",
+    "Rajkumar Hirani new film",
+    "Sanjay Dutt Munna Bhai 3",
+    "Arshad Warsi Circuit",
+    "Munna Bhai 3 writer",
+    "Is Munna Bhai 3 confirmed",
+    "Who is writing Munna Bhai 3",
+    "When will Munna Bhai 3 release",
+    "Munna Bhai 3 Rajkumar Hirani Farhad Samji",
+    "Munna Bhai 3 latest news today",
     "Karan Johar Ramayana Part 1 review",
     "Ramayana Part 1",
     "Karan Johar Ramayana",
@@ -410,10 +426,10 @@ export const metadata: Metadata = {
     siteName: "Buzz Originals",
     images: [
       {
-        url: "/images/karan-johar-ramayana-part-1-review-ranbir-kapoor-yash.jpg",
+        url: "/images/munna-bhai-3-farhad-samji-writing-script.jpg",
         width: 1200,
         height: 675,
-        alt: "Karan Johar Calls Ramayana Part 1 a Miracle — Buzz Originals Bollywood",
+        alt: "Munna Bhai 3: Farhad Samji Begins Writing Script for Rajkumar Hirani — Buzz Originals",
       },
     ],
     type: "website",
@@ -423,7 +439,7 @@ export const metadata: Metadata = {
     title: "Bollywood — Buzz Originals",
     description:
       "Raw, unfiltered Bollywood coverage of red carpets, gossip, airport sightings & exclusives.",
-    images: ["/images/karan-johar-ramayana-part-1-review-ranbir-kapoor-yash.jpg"],
+    images: ["/images/munna-bhai-3-farhad-samji-writing-script.jpg"],
   },
 };
 
@@ -450,12 +466,18 @@ export default function BollywoodPage() {
         {
           "@type": "ListItem",
           position: 1,
+          name: "Munna Bhai 3 Update: Farhad Samji Begins Writing",
+          url: "https://www.buzzoriginals.com/munna-bhai-3-farhad-samji-writing-script",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
           name: "Karan Johar’s Ramayana Part 1 Review: “Miracle”",
           url: "https://www.buzzoriginals.com/karan-johar-ramayana-part-1-review-ranbir-kapoor-yash",
         },
         {
           "@type": "ListItem",
-          position: 2,
+          position: 3,
           name: "Shraddha Kapoor Reacts to Eetha Trailer Trolling",
           url: "https://www.buzzoriginals.com/shraddha-kapoor-reacts-eetha-trailer-criticism",
         },

@@ -20,6 +20,16 @@ interface BollywoodArticle {
 
 const bollywoodArticles: BollywoodArticle[] = [
   {
+    id: "munna-bhai-3-farhad-samji-writing-script",
+    category: "Franchise Update",
+    title: "Munna Bhai 3: Farhad Samji Begins Writing the Script",
+    badge: "⚡ Script Begins",
+    badgeType: "lime",
+    image: "/images/munna-bhai-3-farhad-samji-writing-script.jpg",
+    href: "/munna-bhai-3-farhad-samji-writing-script",
+    readOrTime: "3 MIN READ",
+  },
+  {
     id: "karan-johar-ramayana-part-1-review-ranbir-kapoor-yash",
     category: "Ramayana Review",
     title: "Karan Johar Calls Ramayana Part 1 a “Miracle” and Praises Ranbir Kapoor’s Lord Ram",
@@ -576,16 +586,16 @@ export default function BollywoodView() {
 
         {/* Lead Section: Latest Bollywood Published Article (Cover Story) + The Last 2 Blogs Uploaded Before It */}
         <section className="lead">
-          {/* Cover Story: Latest Published Bollywood Story (Karan Johar Calls Ramayana Part 1 a Miracle) */}
+          {/* Cover Story: Latest Published Bollywood Story (Munna Bhai 3: Farhad Samji Begins Writing) */}
           <Link
-            href="/karan-johar-ramayana-part-1-review-ranbir-kapoor-yash"
+            href="/munna-bhai-3-farhad-samji-writing-script"
             className="feature-card group block"
-            aria-label="Read full cover story: Karan Johar Calls Ramayana Part 1 a “Miracle” and Praises Ranbir Kapoor’s Lord Ram"
+            aria-label="Read full cover story: Munna Bhai 3: Farhad Samji Begins Writing the Script"
           >
             <div className="feature-media relative overflow-hidden">
               <Image
-                src="/images/karan-johar-ramayana-part-1-review-ranbir-kapoor-yash.jpg"
-                alt="Karan Johar Calls Ramayana Part 1 a Miracle and Praises Ranbir Kapoor’s Lord Ram"
+                src="/images/munna-bhai-3-farhad-samji-writing-script.jpg"
+                alt="Munna Bhai 3 Update: Farhad Samji Begins Writing Script for Rajkumar Hirani"
                 fill
                 priority
                 className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
@@ -593,20 +603,20 @@ export default function BollywoodView() {
               />
               <div className="noise" />
               <span className="badge lime feature-tag z-10">
-                ✨ Industry Review
+                ⚡ Script Begins
               </span>
             </div>
             <div className="feature-body">
               <h2 className="disp text-white group-hover:text-[var(--lime)] transition-colors">
-                Karan Johar Calls Ramayana Part 1 a “Miracle” and Praises Ranbir Kapoor’s Lord Ram
+                Munna Bhai 3: Farhad Samji Begins Writing the Script
               </h2>
               <p>
-                Karan Johar has shared a long Instagram note on Ramayana Part 1. Here is what he said about Ranbir Kapoor, Sai Pallavi, Yash and Ravie Dubey.
+                Munna Bhai 3 is moving ahead. Farhad Samji is reportedly writing the script for Rajkumar Hirani’s film. Read all the details here.
               </p>
               <div className="meta-row mt-3">
                 <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; CINEMA</span>
                 <span className="dot-sep">◆</span>
-                <span>4 MIN READ</span>
+                <span>3 MIN READ</span>
                 <span className="dot-sep">◆</span>
                 <span className="text-[var(--lime)] font-bold">NOV 05</span>
               </div>
@@ -615,7 +625,34 @@ export default function BollywoodView() {
 
           {/* Right Stack: The last 2 blogs uploaded before the latest one */}
           <div className="stack">
-            {/* Card 1: Shraddha Kapoor Breaks Silence on Eetha Trolling */}
+            {/* Card 1: Karan Johar Calls Ramayana Part 1 a Miracle */}
+            <Link
+              href="/karan-johar-ramayana-part-1-review-ranbir-kapoor-yash"
+              className="card m1 group block"
+            >
+              <div className="card-media relative overflow-hidden">
+                <Image
+                  src="/images/karan-johar-ramayana-part-1-review-ranbir-kapoor-yash.jpg"
+                  alt="Karan Johar Calls Ramayana Part 1 a Miracle and Praises Ranbir Kapoor’s Lord Ram"
+                  fill
+                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 980px) 100vw, 35vw"
+                />
+                <span className="badge lime z-10 relative">✨ Industry Review</span>
+              </div>
+              <div className="card-body">
+                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
+                  Karan Johar Calls Ramayana Part 1 a “Miracle” and Praises Ranbir Kapoor’s Lord Ram
+                </h3>
+                <div className="meta-row mt-2">
+                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; CINEMA</span>
+                  <span className="dot-sep">◆</span>
+                  <span>4 MIN READ</span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Card 2: Shraddha Kapoor Breaks Silence on Eetha Trolling */}
             <Link
               href="/shraddha-kapoor-reacts-eetha-trailer-criticism"
               className="card m1 group block"
@@ -638,33 +675,6 @@ export default function BollywoodView() {
                   <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; CINEMA</span>
                   <span className="dot-sep">◆</span>
                   <span>3 MIN READ</span>
-                </div>
-              </div>
-            </Link>
-
-            {/* Card 2: Salman Khan Sings Teri Sexy Beauty */}
-            <Link
-              href="/salman-khan-teri-sexy-beauty-maatrubhumi-song"
-              className="card m1 group block"
-            >
-              <div className="card-media relative overflow-hidden">
-                <Image
-                  src="/images/salman-khan-teri-sexy-beauty-maatrubhumi-song.jpg"
-                  alt="Salman Khan Sings Again After 11 Years in Teri Sexy Beauty from Maatrubhumi"
-                  fill
-                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
-                  sizes="(max-width: 980px) 100vw, 35vw"
-                />
-                <span className="badge pink z-10 relative">🎵 11 Years Later</span>
-              </div>
-              <div className="card-body">
-                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
-                  Salman Khan Is Singing Again After 11 Years with “Teri Sexy Beauty”
-                </h3>
-                <div className="meta-row mt-2">
-                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; MUSIC</span>
-                  <span className="dot-sep">◆</span>
-                  <span>4 MIN READ</span>
                 </div>
               </div>
             </Link>

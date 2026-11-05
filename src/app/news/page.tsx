@@ -6,6 +6,22 @@ export const metadata: Metadata = {
   description:
     "News coverage from Buzz Originals — raw, unfiltered, built for the group chat. Everything breaking across reality TV, Bollywood, movies and OTT — newest first, updated hourly.",
   keywords: [
+    "Munna Bhai 3",
+    "Munna Bhai 3 update",
+    "Munna Bhai 3 news",
+    "Munna Bhai 3 script",
+    "Munna Bhai 3 release date",
+    "Munna Bhai 3 cast",
+    "Farhad Samji",
+    "Rajkumar Hirani new film",
+    "Sanjay Dutt Munna Bhai 3",
+    "Arshad Warsi Circuit",
+    "Munna Bhai 3 writer",
+    "Is Munna Bhai 3 confirmed",
+    "Who is writing Munna Bhai 3",
+    "When will Munna Bhai 3 release",
+    "Munna Bhai 3 Rajkumar Hirani Farhad Samji",
+    "Munna Bhai 3 latest news today",
     "Tusshar Kapoor extortion call",
     "Tusshar Kapoor threat call",
     "Lawrence Bishnoi gang",
@@ -159,10 +175,10 @@ export const metadata: Metadata = {
     siteName: "Buzz Originals",
     images: [
       {
-        url: "/images/tusshar-kapoor-extortion-call-bishnoi-gang-fake.jpg",
-        width: 1024,
-        height: 576,
-        alt: "Tusshar Kapoor Extortion Call: Mumbai Police Suspect Rs 5 Crore Threat in Bishnoi Gang Name Is a Hoax — Buzz Originals News Desk",
+        url: "/images/munna-bhai-3-farhad-samji-writing-script.jpg",
+        width: 1200,
+        height: 675,
+        alt: "Munna Bhai 3: Farhad Samji Begins Writing Script for Rajkumar Hirani — Buzz Originals News",
       },
     ],
     type: "website",
@@ -172,7 +188,7 @@ export const metadata: Metadata = {
     title: "News — Buzz Originals",
     description:
       "Raw, unfiltered entertainment news across reality TV, Bollywood, movies and OTT.",
-    images: ["/images/tusshar-kapoor-extortion-call-bishnoi-gang-fake.jpg"],
+    images: ["/images/munna-bhai-3-farhad-samji-writing-script.jpg"],
   },
 };
 

@@ -22,6 +22,18 @@ interface NewsArticle {
 // Only verified breaking entertainment news stories (fatwas, obituaries, police complaints, eviction rows, box-office shifts)
 const newsArticles: NewsArticle[] = [
   {
+    id: "munna-bhai-3-farhad-samji-writing-script",
+    category: "Bollywood",
+    title: "Munna Bhai 3: Farhad Samji Begins Writing the Script for Rajkumar Hirani",
+    badge: "⚡ Script In Motion",
+    badgeType: "lime",
+    image: "/images/munna-bhai-3-farhad-samji-writing-script.jpg",
+    href: "/munna-bhai-3-farhad-samji-writing-script",
+    readOrTime: "3 MIN READ",
+    excerpt:
+      "Munna Bhai 3 is moving ahead. Farhad Samji is reportedly writing the script for Rajkumar Hirani’s film. Read all the details here.",
+  },
+  {
     id: "tusshar-kapoor-extortion-call-bishnoi-gang-fake",
     category: "Bollywood",
     title: "Tusshar Kapoor Gets Rs 5 Crore Extortion Call in Bishnoi Gang’s Name: Police Suspect Hoax",
