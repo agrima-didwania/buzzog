@@ -20,6 +20,16 @@ interface MovieArticle {
 
 const movieArticles: MovieArticle[] = [
   {
+    id: "sai-pallavi-sita-fight-scene-ramayana-controversy",
+    category: "Mythological Epic",
+    title: "Sai Pallavi’s Sita Fight Scene in Ramayana Divides the Internet",
+    badge: "⚡ Viral Debate",
+    badgeType: "lime",
+    image: "/images/sai-pallavi-sita-fight-scene-ramayana-controversy.jpg",
+    href: "/sai-pallavi-sita-fight-scene-ramayana-controversy",
+    readOrTime: "4 MIN READ",
+  },
+  {
     id: "king-first-song-tu-mil-jaaye",
     category: "Action & Music",
     title: "King First Song ‘Tu Mil Jaaye’ Is Out: SRK and Deepika Light Up His 61st Birthday",
@@ -216,16 +226,16 @@ export default function MoviesView() {
 
         {/* Lead Section: Latest Movie Published Article (Cover Story) + The Last 2 Blogs Uploaded Before It */}
         <section className="lead">
-          {/* Featured Card: Robert Downey Jr. and Pedro Pascal Swap Marvel Roles */}
+          {/* Featured Card: Sai Pallavi Sita Fight Scene in Ramayana */}
           <Link
-            href="/robert-downey-jr-pedro-pascal-halloween-costume-swap"
+            href="/sai-pallavi-sita-fight-scene-ramayana-controversy"
             className="feature-card group block"
-            aria-label="Read full article: Robert Downey Jr. and Pedro Pascal Swap Marvel Roles for Halloween"
+            aria-label="Read full article: Sai Pallavi’s Sita Fight Scene in Ramayana Divides the Internet"
           >
             <div className="feature-media relative overflow-hidden">
               <Image
-                src="/images/robert-downey-jr-pedro-pascal-halloween-costume-swap.jpg"
-                alt="Robert Downey Jr. and Pedro Pascal Swap Marvel Costumes for Halloween"
+                src="/images/sai-pallavi-sita-fight-scene-ramayana-controversy.jpg"
+                alt="Sai Pallavi Sita Fight Scene in Ramayana Sparks Debate"
                 fill
                 priority
                 className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
@@ -233,29 +243,56 @@ export default function MoviesView() {
               />
               <div className="noise" />
               <span className="badge lime feature-tag z-10">
-                🎃 Marvel Costume Swap
+                ⚡ Viral Debate
               </span>
             </div>
             <div className="feature-body">
               <h2 className="disp text-white group-hover:text-[var(--lime)] transition-colors">
-                Robert Downey Jr. and Pedro Pascal Swap Marvel Roles for Halloween
+                Sai Pallavi’s Sita Fight Scene in Ramayana Divides the Internet
               </h2>
               <p>
-                Robert Downey Jr. dressed as Mister Fantastic and Pedro Pascal as Doctor Doom for Halloween. See what happened, fan reactions, and when Avengers: Doomsday hits theatres.
+                Sita fights demons in Ramayana: Rise of a Legend and fans are divided. See what scriptures say and what Nitesh Tiwari explained.
               </p>
               <div className="meta-row mt-3">
-                <span className="text-[var(--lime)] font-bold">MOVIES &amp; MARVEL</span>
+                <span className="text-[var(--lime)] font-bold">MOVIES &amp; RAMAYANA</span>
                 <span className="dot-sep">·</span>
-                <span>3 MIN READ</span>
+                <span>4 MIN READ</span>
                 <span className="dot-sep">·</span>
-                <span className="text-[var(--magenta)] font-bold">OCT 31 VIRAL</span>
+                <span className="text-[var(--magenta)] font-bold">IN THEATRES NOW</span>
               </div>
             </div>
           </Link>
 
           {/* Right Stack: The last 2 movie blogs uploaded before this one */}
           <div className="stack">
-            {/* Card 1: IIFA 2026 Winners */}
+            {/* Card 1: Robert Downey Jr. and Pedro Pascal */}
+            <Link
+              href="/robert-downey-jr-pedro-pascal-halloween-costume-swap"
+              className="card m1 group block"
+            >
+              <div className="card-media relative overflow-hidden">
+                <Image
+                  src="/images/robert-downey-jr-pedro-pascal-halloween-costume-swap.jpg"
+                  alt="Robert Downey Jr. and Pedro Pascal Swap Marvel Costumes for Halloween"
+                  fill
+                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 980px) 100vw, 35vw"
+                />
+                <span className="badge lime z-10 relative">🎃 Marvel Swap</span>
+              </div>
+              <div className="card-body">
+                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
+                  Robert Downey Jr. and Pedro Pascal Swap Marvel Roles for Halloween
+                </h3>
+                <div className="meta-row mt-2">
+                  <span className="text-[var(--lime)] font-bold">MOVIES &amp; MARVEL</span>
+                  <span className="dot-sep">◆</span>
+                  <span>3 MIN READ</span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Card 2: IIFA 2026 Winners */}
             <Link
               href="/iifa-2026-winners-list"
               className="card m1 group block"

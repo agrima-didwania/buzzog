@@ -6,6 +6,15 @@ export const metadata: Metadata = {
   description:
     "Bollywood coverage from Buzz Originals — raw, unfiltered, built for the group chat. Red carpets, rumours, airport looks and exclusives.",
   keywords: [
+    "Sai Pallavi Sita fight scene",
+    "Ramayana controversy",
+    "Ramayana Rise of a Legend",
+    "Nitesh Tiwari Ramayana",
+    "Adbhuta Ramayana",
+    "Sai Pallavi warrior Sita",
+    "Sita fights demons Ramayana",
+    "Khara Dushana battle Sita",
+    "Valmiki Ramayana vs Adbhuta Ramayana",
     "Dia Mirza Diwali video",
     "Dia Mirza video row",
     "BMC Dia Mirza video",
@@ -438,10 +447,10 @@ export const metadata: Metadata = {
     siteName: "Buzz Originals",
     images: [
       {
-        url: "/images/dia-mirza-diwali-video-bmc-bombay-high-court.jpg",
+        url: "/images/sai-pallavi-sita-fight-scene-ramayana-controversy.jpg",
         width: 1200,
         height: 675,
-        alt: "Dia Mirza Diwali Video Row: Bombay High Court Orders BMC to Re-Upload — Buzz Originals",
+        alt: "Sai Pallavi Sita Fight Scene in Ramayana Sparks Debate — Buzz Originals",
       },
     ],
     type: "website",
@@ -451,7 +460,7 @@ export const metadata: Metadata = {
     title: "Bollywood — Buzz Originals",
     description:
       "Raw, unfiltered Bollywood coverage of red carpets, gossip, airport sightings & exclusives.",
-    images: ["/images/dia-mirza-diwali-video-bmc-bombay-high-court.jpg"],
+    images: ["/images/sai-pallavi-sita-fight-scene-ramayana-controversy.jpg"],
   },
 };
 
@@ -478,12 +487,18 @@ export default function BollywoodPage() {
         {
           "@type": "ListItem",
           position: 1,
+          name: "Sai Pallavi Sita Fight Scene in Ramayana Sparks Debate",
+          url: "https://www.buzzoriginals.com/sai-pallavi-sita-fight-scene-ramayana-controversy",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
           name: "Dia Mirza Diwali Video: HC Orders BMC to Re-Upload",
           url: "https://www.buzzoriginals.com/dia-mirza-diwali-video-bmc-bombay-high-court",
         },
         {
           "@type": "ListItem",
-          position: 2,
+          position: 3,
           name: "Munna Bhai 3 Update: Farhad Samji Begins Writing",
           url: "https://www.buzzoriginals.com/munna-bhai-3-farhad-samji-writing-script",
         },

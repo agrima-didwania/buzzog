@@ -20,6 +20,16 @@ interface BollywoodArticle {
 
 const bollywoodArticles: BollywoodArticle[] = [
   {
+    id: "sai-pallavi-sita-fight-scene-ramayana-controversy",
+    category: "Ramayana Debate",
+    title: "Sai Pallavi’s Sita Fight Scene in Ramayana Divides the Internet",
+    badge: "⚡ Viral Debate",
+    badgeType: "lime",
+    image: "/images/sai-pallavi-sita-fight-scene-ramayana-controversy.jpg",
+    href: "/sai-pallavi-sita-fight-scene-ramayana-controversy",
+    readOrTime: "4 MIN READ",
+  },
+  {
     id: "dia-mirza-diwali-video-bmc-bombay-high-court",
     category: "Legal & Controversy",
     title: "Dia Mirza Diwali Video Row: Court Says Put It Back, BMC Still Hasn’t",
@@ -596,16 +606,16 @@ export default function BollywoodView() {
 
         {/* Lead Section: Latest Bollywood Published Article (Cover Story) + The Last 2 Blogs Uploaded Before It */}
         <section className="lead">
-          {/* Cover Story: Latest Published Bollywood Story (Dia Mirza Diwali Video Row) */}
+          {/* Cover Story: Latest Published Bollywood Story (Sai Pallavi Sita Fight Scene in Ramayana) */}
           <Link
-            href="/dia-mirza-diwali-video-bmc-bombay-high-court"
+            href="/sai-pallavi-sita-fight-scene-ramayana-controversy"
             className="feature-card group block"
-            aria-label="Read full cover story: Dia Mirza Diwali Video Row: Court Says Put It Back, BMC Still Hasn’t"
+            aria-label="Read full cover story: Sai Pallavi’s Sita Fight Scene in Ramayana Divides the Internet"
           >
             <div className="feature-media relative overflow-hidden">
               <Image
-                src="/images/dia-mirza-diwali-video-bmc-bombay-high-court.jpg"
-                alt="Dia Mirza Diwali Video Row: Bombay High Court Orders BMC to Re-Upload Awareness Clip"
+                src="/images/sai-pallavi-sita-fight-scene-ramayana-controversy.jpg"
+                alt="Sai Pallavi Sita Fight Scene in Ramayana Sparks Debate"
                 fill
                 priority
                 className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
@@ -613,18 +623,18 @@ export default function BollywoodView() {
               />
               <div className="noise" />
               <span className="badge lime feature-tag z-10">
-                ⚡ High Court Order
+                ⚡ Viral Debate
               </span>
             </div>
             <div className="feature-body">
               <h2 className="disp text-white group-hover:text-[var(--lime)] transition-colors">
-                Dia Mirza Diwali Video Row: Court Says Put It Back, BMC Still Hasn’t
+                Sai Pallavi’s Sita Fight Scene in Ramayana Divides the Internet
               </h2>
               <p>
-                BMC deleted Dia Mirza’s no-firecracker Diwali video after a political row. The Bombay High Court said put it back. Here’s the full story, in simple words.
+                Sita fights demons in Ramayana: Rise of a Legend and fans are divided. See what scriptures say and what Nitesh Tiwari explained.
               </p>
               <div className="meta-row mt-3">
-                <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; NEWS</span>
+                <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; MOVIES</span>
                 <span className="dot-sep">◆</span>
                 <span>4 MIN READ</span>
                 <span className="dot-sep">◆</span>
@@ -635,7 +645,34 @@ export default function BollywoodView() {
 
           {/* Right Stack: The last 2 blogs uploaded before the latest one */}
           <div className="stack">
-            {/* Card 1: Munna Bhai 3: Farhad Samji Begins Writing the Script */}
+            {/* Card 1: Dia Mirza Diwali Video Row */}
+            <Link
+              href="/dia-mirza-diwali-video-bmc-bombay-high-court"
+              className="card m1 group block"
+            >
+              <div className="card-media relative overflow-hidden">
+                <Image
+                  src="/images/dia-mirza-diwali-video-bmc-bombay-high-court.jpg"
+                  alt="Dia Mirza Diwali Video Row: Bombay High Court Orders BMC to Re-Upload Awareness Clip"
+                  fill
+                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 980px) 100vw, 35vw"
+                />
+                <span className="badge lime z-10 relative">⚡ High Court Order</span>
+              </div>
+              <div className="card-body">
+                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
+                  Dia Mirza Diwali Video Row: Court Says Put It Back, BMC Still Hasn’t
+                </h3>
+                <div className="meta-row mt-2">
+                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; NEWS</span>
+                  <span className="dot-sep">◆</span>
+                  <span>4 MIN READ</span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Card 2: Munna Bhai 3: Farhad Samji Begins Writing the Script */}
             <Link
               href="/munna-bhai-3-farhad-samji-writing-script"
               className="card m1 group block"

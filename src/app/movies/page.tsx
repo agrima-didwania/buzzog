@@ -6,6 +6,14 @@ export const metadata: Metadata = {
   description:
     "Movies coverage from Buzz Originals — raw, unfiltered, built for the group chat. Box office numbers, trailer breakdowns, clashes and spoiler-free verdicts.",
   keywords: [
+    "Sai Pallavi Sita fight scene",
+    "Ramayana controversy",
+    "Ramayana Rise of a Legend",
+    "Nitesh Tiwari Ramayana",
+    "Adbhuta Ramayana",
+    "Sai Pallavi warrior Sita",
+    "Sita fights demons Ramayana",
+    "Khara Dushana battle Sita",
     "King first song",
     "Tu Mil Jaaye",
     "Tu Mil Jaaye song",
@@ -95,10 +103,10 @@ export const metadata: Metadata = {
     siteName: "Buzz Originals",
     images: [
       {
-        url: "/images/robert-downey-jr-pedro-pascal-halloween-costume-swap.jpg",
-        width: 1024,
-        height: 576,
-        alt: "Robert Downey Jr. and Pedro Pascal Swap Marvel Costumes for Halloween — Buzz Originals Movies",
+        url: "/images/sai-pallavi-sita-fight-scene-ramayana-controversy.jpg",
+        width: 1200,
+        height: 675,
+        alt: "Sai Pallavi Sita Fight Scene in Ramayana Sparks Debate — Buzz Originals Movies",
       },
     ],
     type: "website",
@@ -108,7 +116,7 @@ export const metadata: Metadata = {
     title: "Movies — Buzz Originals",
     description:
       "Raw, unfiltered movie coverage: box office clashes, trailer breakdowns & spoiler-free verdicts.",
-    images: ["/images/robert-downey-jr-pedro-pascal-halloween-costume-swap.jpg"],
+    images: ["/images/sai-pallavi-sita-fight-scene-ramayana-controversy.jpg"],
   },
 };
 
@@ -135,18 +143,24 @@ export default function MoviesPage() {
         {
           "@type": "ListItem",
           position: 1,
+          name: "Sai Pallavi Sita Fight Scene in Ramayana Sparks Debate",
+          url: "https://www.buzzoriginals.com/sai-pallavi-sita-fight-scene-ramayana-controversy",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
           name: "King First Song ‘Tu Mil Jaaye’ Is Out: SRK and Deepika Light Up His 61st Birthday",
           url: "https://www.buzzoriginals.com/king-first-song-tu-mil-jaaye-shah-rukh-khan-deepika-padukone",
         },
         {
           "@type": "ListItem",
-          position: 2,
+          position: 3,
           name: "Robert Downey Jr. and Pedro Pascal Swap Marvel Costumes for Halloween",
           url: "https://www.buzzoriginals.com/robert-downey-jr-pedro-pascal-halloween-costume-swap",
         },
         {
           "@type": "ListItem",
-          position: 2,
+          position: 4,
           name: "IIFA 2026 Winners List: Dhurandhar Wins 12 Awards",
           url: "https://www.buzzoriginals.com/iifa-2026-winners-list",
         },

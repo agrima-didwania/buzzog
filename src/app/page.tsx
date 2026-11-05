@@ -185,6 +185,20 @@ export default function Home() {
 
   const editorialArticles: EditorialArticle[] = [
     {
+      id: "sai-pallavi-sita-fight-scene-ramayana-controversy",
+      anchorId: "sai-pallavi-sita-fight-scene-story",
+      href: "/sai-pallavi-sita-fight-scene-ramayana-controversy",
+      title: "Sai Pallavi’s Sita Fight Scene in Ramayana Divides the Internet",
+      excerpt: "Sita fights demons in Ramayana: Rise of a Legend and fans are divided. See what scriptures say and what Nitesh Tiwari explained.",
+      category: "Bollywood",
+      secondaryCategory: "Movies",
+      displayCategory: "BOLLYWOOD & MOVIES",
+      badge: "Viral Debate",
+      badgeType: "lime",
+      readTime: "4 MIN READ",
+      image: "/images/sai-pallavi-sita-fight-scene-ramayana-controversy.jpg",
+    },
+    {
       id: "dia-mirza-diwali-video-bmc-bombay-high-court",
       anchorId: "dia-mirza-diwali-video-story",
       href: "/dia-mirza-diwali-video-bmc-bombay-high-court",
@@ -1169,15 +1183,15 @@ export default function Home() {
         <section className="hero" id="featured">
           {/* 1. Main Featured Story (Commanding Top Story Presentation) */}
           <Link
-            href="/dia-mirza-diwali-video-bmc-bombay-high-court"
+            href="/sai-pallavi-sita-fight-scene-ramayana-controversy"
             className="feature-card flex flex-col transition-all hover:border-[var(--lime)] focus-visible:ring-2 focus-visible:ring-[var(--lime)] group"
             style={{ textDecoration: "none", color: "inherit" }}
-            aria-label="Read full article: Dia Mirza Diwali Video Row: Court Says Put It Back, BMC Still Hasn’t"
+            aria-label="Read full article: Sai Pallavi’s Sita Fight Scene in Ramayana Divides the Internet"
           >
             <div className="feature-media" style={{ overflow: "hidden", position: "relative" }}>
               <Image
-                src="/images/dia-mirza-diwali-video-bmc-bombay-high-court.jpg"
-                alt="Dia Mirza Diwali Video Row: Bombay High Court Orders BMC to Re-Upload Awareness Clip"
+                src="/images/sai-pallavi-sita-fight-scene-ramayana-controversy.jpg"
+                alt="Sai Pallavi Sita Fight Scene in Ramayana Sparks Debate — Fans Divided over Warrior Sita"
                 fill
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 750px"
@@ -1186,45 +1200,45 @@ export default function Home() {
               />
               <div className="noise" style={{ pointerEvents: "none" }}></div>
               <div className="feature-tag flex items-center gap-2">
-                <span className="badge lime">⚡ High Court Order</span>
-                <span className="badge pink">Dia Mirza</span>
-                <span className="badge">BMC Controversy</span>
+                <span className="badge lime">⚡ Viral Debate</span>
+                <span className="badge pink">Ramayana Controversy</span>
+                <span className="badge">Sai Pallavi</span>
               </div>
             </div>
             <div className="feature-body">
               <div className="flex items-center gap-2 mb-2 font-mono text-xs text-[var(--lime)] font-bold tracking-wider uppercase">
-                <span>★ TOP STORY · DIA MIRZA DIWALI VIDEO ROW: BOMBAY HIGH COURT ORDERS BMC TO RE-UPLOAD AWARENESS CLIP</span>
+                <span>★ TOP STORY · SAI PALLAVI&apos;S SITA FIGHT SCENE IN RAMAYANA SPARKS DEBATE ACROSS SOCIAL MEDIA</span>
               </div>
               <h1 className="disp" style={{ color: "#fff" }}>
-                Dia Mirza Diwali Video Row: Court Says Put It Back, BMC Still Hasn’t
+                Sai Pallavi’s Sita Fight Scene in Ramayana Divides the Internet
               </h1>
               <p>
-                BMC deleted Dia Mirza’s no-firecracker Diwali video after a political row. The Bombay High Court said put it back. Here’s the full story, in simple words.
+                Sita fights demons in Ramayana: Rise of a Legend and fans are divided. See what scriptures say and what Nitesh Tiwari explained.
               </p>
 
               {/* Editorial Highlights Box */}
               <div className="feature-highlights">
                 <div className="feature-highlights-header">
                   <span className="w-2 h-2 rounded-full bg-[var(--lime)] animate-pulse inline-block"></span>
-                  <span>Inside The High Court Ruling &amp; Political Fallout</span>
+                  <span>Inside The Forest Battle Controversy &amp; Vedic Scriptures</span>
                 </div>
                 <ul className="feature-highlights-list">
                   <li className="feature-highlights-item">
                     <span className="feature-highlights-bullet">✦</span>
                     <span>
-                      <strong className="text-white font-medium">Judicial Reprimand:</strong> Justices Girish Kulkarni and Neela Gokhale slammed the &quot;petty mindset&quot; behind deleting an anti-pollution awareness video over communal objections.
+                      <strong className="text-white font-medium">Forest Battle Controversy:</strong> Viewers divided as Sai Pallavi’s Sita takes up arms to fight Khara and Dushana&apos;s demon army alongside Lord Ram.
                     </span>
                   </li>
                   <li className="feature-highlights-item">
                     <span className="feature-highlights-bullet">✦</span>
                     <span>
-                      <strong className="text-white font-medium">Targeted Removal:</strong> While Madhuri Dixit and Ajinkya Rahane’s campaign clips stayed up, only Dia Mirza’s video was removed after BJP objections.
+                      <strong className="text-white font-medium">Scripture Debate:</strong> Traditionalists cite Valmiki&apos;s Aranyakanda where Ram fought alone, while defenders point to Sita&apos;s warrior form in the Adbhuta Ramayana.
                     </span>
                   </li>
                   <li className="feature-highlights-item">
                     <span className="feature-highlights-bullet">✦</span>
                     <span>
-                      <strong className="text-white font-medium">Public Health Focus:</strong> The court reiterated that everyone breathes the same air regardless of faith, and road cracker bans apply all year round.
+                      <strong className="text-white font-medium">Nitesh Tiwari&apos;s Vision:</strong> Director explains borrowing Sita&apos;s warrior dimension from Shakta texts adds empowerment and agency to her character.
                     </span>
                   </li>
                 </ul>
@@ -1232,11 +1246,11 @@ export default function Home() {
 
               <div className="meta-row mt-auto pt-3 border-t border-white/[0.06] flex items-center justify-between">
                 <div className="flex items-center gap-3">
-                  <span>BOLLYWOOD &amp; NEWS</span>
+                  <span>BOLLYWOOD &amp; MOVIES</span>
                   <span className="dot-sep">◆</span>
                   <span>4 MIN READ</span>
                   <span className="dot-sep">◆</span>
-                  <span style={{ color: "var(--lime)" }}>MUMBAI LEGAL ROW</span>
+                  <span style={{ color: "var(--lime)" }}>IN THEATRES NOW</span>
                 </div>
                 <span className="text-xs font-mono font-bold text-[var(--lime)] hidden sm:inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform">
                   Read Full Story →
@@ -1255,6 +1269,18 @@ export default function Home() {
               <span className="trend-rank">01</span>
               <div className="trend-text">
                 <Link
+                  href="/sai-pallavi-sita-fight-scene-ramayana-controversy"
+                  style={{ color: "inherit" }}
+                >
+                  <h3>Sai Pallavi Sita fight scene in Ramayana sparks debate: Fans divided over warrior avatar</h3>
+                  <span>BOLLYWOOD &amp; MOVIES · 2.85M REACTIONS</span>
+                </Link>
+              </div>
+            </div>
+            <div className="trend-item">
+              <span className="trend-rank">02</span>
+              <div className="trend-text">
+                <Link
                   href="/dia-mirza-diwali-video-bmc-bombay-high-court"
                   style={{ color: "inherit" }}
                 >
@@ -1264,7 +1290,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">02</span>
+              <span className="trend-rank">03</span>
               <div className="trend-text">
                 <Link
                   href="/munna-bhai-3-farhad-samji-writing-script"
@@ -1276,7 +1302,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">03</span>
+              <span className="trend-rank">04</span>
               <div className="trend-text">
                 <Link
                   href="/karan-johar-ramayana-part-1-review-ranbir-kapoor-yash"
@@ -1288,7 +1314,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">04</span>
+              <span className="trend-rank">05</span>
               <div className="trend-text">
                 <Link
                   href="/shraddha-kapoor-reacts-eetha-trailer-criticism"
@@ -1300,7 +1326,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">05</span>
+              <span className="trend-rank">06</span>
               <div className="trend-text">
                 <Link
                   href="/the-royals-season-2-goes-on-floors"
@@ -1312,7 +1338,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">06</span>
+              <span className="trend-rank">07</span>
               <div className="trend-text">
                 <Link
                   href="/salman-khan-teri-sexy-beauty-maatrubhumi-song"
@@ -1324,7 +1350,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">07</span>
+              <span className="trend-rank">08</span>
               <div className="trend-text">
                 <Link
                   href="/saif-ali-khan-kareena-kapoor-koffee-with-karan-stabbing-night"
@@ -1336,7 +1362,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">08</span>
+              <span className="trend-rank">09</span>
               <div className="trend-text">
                 <Link
                   href="/ramayana-part-2-postponed-2028-namit-malhotra-trilogy"
@@ -1348,7 +1374,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">09</span>
+              <span className="trend-rank">10</span>
               <div className="trend-text">
                 <Link
                   href="/mira-rajput-shahid-kapoor-gossip-kapil-sharma-show"
@@ -1356,18 +1382,6 @@ export default function Home() {
                 >
                   <h3>Mira Rajput says Shahid Kapoor loves gossip: Funniest moments from The Great Indian Kapil Show unseen bonus clip</h3>
                   <span>REALITY TV &amp; BOLLYWOOD · 1.52M REACTIONS</span>
-                </Link>
-              </div>
-            </div>
-            <div className="trend-item">
-              <span className="trend-rank">10</span>
-              <div className="trend-text">
-                <Link
-                  href="/tu-mil-jaaye-ed-sheeran-shah-rukh-khan-king"
-                  style={{ color: "inherit" }}
-                >
-                  <h3>Tu Mil Jaaye: Ed Sheeran reveals how Shah Rukh Khan asked him to write and record King’s first song overnight</h3>
-                  <span>BOLLYWOOD &amp; MUSIC · 1.48M REACTIONS</span>
                 </Link>
               </div>
             </div>
