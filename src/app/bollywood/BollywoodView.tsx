@@ -20,6 +20,16 @@ interface BollywoodArticle {
 
 const bollywoodArticles: BollywoodArticle[] = [
   {
+    id: "maatrubhumi-trailer-release-date-salman-khan",
+    category: "Trailer & CBFC",
+    title: "Maatrubhumi Trailer Gets CBFC Nod: Salman Khan Fans, Get Ready",
+    badge: "⚡ CBFC Cleared",
+    badgeType: "lime",
+    image: "/images/maatrubhumi-trailer-release-date-salman-khan.jpg",
+    href: "/maatrubhumi-trailer-release-date-salman-khan",
+    readOrTime: "4 MIN READ",
+  },
+  {
     id: "sai-pallavi-sita-fight-scene-ramayana-controversy",
     category: "Ramayana Debate",
     title: "Sai Pallavi’s Sita Fight Scene in Ramayana Divides the Internet",
@@ -606,16 +616,16 @@ export default function BollywoodView() {
 
         {/* Lead Section: Latest Bollywood Published Article (Cover Story) + The Last 2 Blogs Uploaded Before It */}
         <section className="lead">
-          {/* Cover Story: Latest Published Bollywood Story (Sai Pallavi Sita Fight Scene in Ramayana) */}
+          {/* Cover Story: Latest Published Bollywood Story (Maatrubhumi Trailer Cleared by CBFC) */}
           <Link
-            href="/sai-pallavi-sita-fight-scene-ramayana-controversy"
+            href="/maatrubhumi-trailer-release-date-salman-khan"
             className="feature-card group block"
-            aria-label="Read full cover story: Sai Pallavi’s Sita Fight Scene in Ramayana Divides the Internet"
+            aria-label="Read full cover story: Maatrubhumi Trailer Gets CBFC Nod: Salman Khan Fans, Get Ready"
           >
             <div className="feature-media relative overflow-hidden">
               <Image
-                src="/images/sai-pallavi-sita-fight-scene-ramayana-controversy.jpg"
-                alt="Sai Pallavi Sita Fight Scene in Ramayana Sparks Debate"
+                src="/images/maatrubhumi-trailer-release-date-salman-khan.jpg"
+                alt="Maatrubhumi Trailer Cleared by CBFC — Salman Khan Release Date Update"
                 fill
                 priority
                 className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
@@ -623,15 +633,15 @@ export default function BollywoodView() {
               />
               <div className="noise" />
               <span className="badge lime feature-tag z-10">
-                ⚡ Viral Debate
+                ⚡ CBFC Cleared
               </span>
             </div>
             <div className="feature-body">
               <h2 className="disp text-white group-hover:text-[var(--lime)] transition-colors">
-                Sai Pallavi’s Sita Fight Scene in Ramayana Divides the Internet
+                Maatrubhumi Trailer Gets CBFC Nod: Salman Khan Fans, Get Ready
               </h2>
               <p>
-                Sita fights demons in Ramayana: Rise of a Legend and fans are divided. See what scriptures say and what Nitesh Tiwari explained.
+                Salman Khan’s war drama trailer cleared with U/A 16+ rating and 4m 43s runtime. Expected Nov 6 release as theatrical date buzz shifts to late November.
               </p>
               <div className="meta-row mt-3">
                 <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; MOVIES</span>
@@ -643,9 +653,36 @@ export default function BollywoodView() {
             </div>
           </Link>
 
-          {/* Right Stack: The last 2 blogs uploaded before the latest one */}
+          {/* Right Stack: The last 2-3 blogs uploaded before the latest one */}
           <div className="stack">
-            {/* Card 1: Dia Mirza Diwali Video Row */}
+            {/* Card 1: Sai Pallavi Sita Fight Scene */}
+            <Link
+              href="/sai-pallavi-sita-fight-scene-ramayana-controversy"
+              className="card m1 group block"
+            >
+              <div className="card-media relative overflow-hidden">
+                <Image
+                  src="/images/sai-pallavi-sita-fight-scene-ramayana-controversy.jpg"
+                  alt="Sai Pallavi Sita Fight Scene in Ramayana Sparks Debate"
+                  fill
+                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 980px) 100vw, 35vw"
+                />
+                <span className="badge lime z-10 relative">⚡ Viral Debate</span>
+              </div>
+              <div className="card-body">
+                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
+                  Sai Pallavi’s Sita Fight Scene in Ramayana Divides the Internet
+                </h3>
+                <div className="meta-row mt-2">
+                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; MOVIES</span>
+                  <span className="dot-sep">◆</span>
+                  <span>4 MIN READ</span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Card 2: Dia Mirza Diwali Video Row */}
             <Link
               href="/dia-mirza-diwali-video-bmc-bombay-high-court"
               className="card m1 group block"
@@ -672,7 +709,7 @@ export default function BollywoodView() {
               </div>
             </Link>
 
-            {/* Card 2: Munna Bhai 3: Farhad Samji Begins Writing the Script */}
+            {/* Card 3: Munna Bhai 3: Farhad Samji Begins Writing the Script */}
             <Link
               href="/munna-bhai-3-farhad-samji-writing-script"
               className="card m1 group block"
@@ -695,33 +732,6 @@ export default function BollywoodView() {
                   <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; CINEMA</span>
                   <span className="dot-sep">◆</span>
                   <span>3 MIN READ</span>
-                </div>
-              </div>
-            </Link>
-
-            {/* Card 2: Karan Johar Calls Ramayana Part 1 a Miracle */}
-            <Link
-              href="/karan-johar-ramayana-part-1-review-ranbir-kapoor-yash"
-              className="card m1 group block"
-            >
-              <div className="card-media relative overflow-hidden">
-                <Image
-                  src="/images/karan-johar-ramayana-part-1-review-ranbir-kapoor-yash.jpg"
-                  alt="Karan Johar Calls Ramayana Part 1 a Miracle and Praises Ranbir Kapoor’s Lord Ram"
-                  fill
-                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
-                  sizes="(max-width: 980px) 100vw, 35vw"
-                />
-                <span className="badge lime z-10 relative">✨ Industry Review</span>
-              </div>
-              <div className="card-body">
-                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
-                  Karan Johar Calls Ramayana Part 1 a “Miracle” and Praises Ranbir Kapoor’s Lord Ram
-                </h3>
-                <div className="meta-row mt-2">
-                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; CINEMA</span>
-                  <span className="dot-sep">◆</span>
-                  <span>4 MIN READ</span>
                 </div>
               </div>
             </Link>

@@ -185,6 +185,20 @@ export default function Home() {
 
   const editorialArticles: EditorialArticle[] = [
     {
+      id: "maatrubhumi-trailer-release-date-salman-khan",
+      anchorId: "maatrubhumi-trailer-cbfc-story",
+      href: "/maatrubhumi-trailer-release-date-salman-khan",
+      title: "Maatrubhumi Trailer Gets CBFC Nod: Salman Khan Fans, Get Ready",
+      excerpt: "Salman Khan’s Maatrubhumi trailer is cleared by CBFC and may release on Nov 6. Check runtime, certificate and release date buzz.",
+      category: "Bollywood",
+      secondaryCategory: "Movies",
+      displayCategory: "BOLLYWOOD & MOVIES",
+      badge: "CBFC Cleared",
+      badgeType: "lime",
+      readTime: "4 MIN READ",
+      image: "/images/maatrubhumi-trailer-release-date-salman-khan.jpg",
+    },
+    {
       id: "sai-pallavi-sita-fight-scene-ramayana-controversy",
       anchorId: "sai-pallavi-sita-fight-scene-story",
       href: "/sai-pallavi-sita-fight-scene-ramayana-controversy",
@@ -1183,15 +1197,15 @@ export default function Home() {
         <section className="hero" id="featured">
           {/* 1. Main Featured Story (Commanding Top Story Presentation) */}
           <Link
-            href="/sai-pallavi-sita-fight-scene-ramayana-controversy"
+            href="/maatrubhumi-trailer-release-date-salman-khan"
             className="feature-card flex flex-col transition-all hover:border-[var(--lime)] focus-visible:ring-2 focus-visible:ring-[var(--lime)] group"
             style={{ textDecoration: "none", color: "inherit" }}
-            aria-label="Read full article: Sai Pallavi’s Sita Fight Scene in Ramayana Divides the Internet"
+            aria-label="Read full article: Maatrubhumi Trailer Gets CBFC Nod: Salman Khan Fans, Get Ready"
           >
             <div className="feature-media" style={{ overflow: "hidden", position: "relative" }}>
               <Image
-                src="/images/sai-pallavi-sita-fight-scene-ramayana-controversy.jpg"
-                alt="Sai Pallavi Sita Fight Scene in Ramayana Sparks Debate — Fans Divided over Warrior Sita"
+                src="/images/maatrubhumi-trailer-release-date-salman-khan.jpg"
+                alt="Maatrubhumi Trailer Cleared by CBFC — Salman Khan Release Date Update"
                 fill
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 750px"
@@ -1200,45 +1214,45 @@ export default function Home() {
               />
               <div className="noise" style={{ pointerEvents: "none" }}></div>
               <div className="feature-tag flex items-center gap-2">
-                <span className="badge lime">⚡ Viral Debate</span>
-                <span className="badge pink">Ramayana Controversy</span>
-                <span className="badge">Sai Pallavi</span>
+                <span className="badge lime">⚡ CBFC Cleared</span>
+                <span className="badge pink">Trailer Update</span>
+                <span className="badge">Salman Khan</span>
               </div>
             </div>
             <div className="feature-body">
               <div className="flex items-center gap-2 mb-2 font-mono text-xs text-[var(--lime)] font-bold tracking-wider uppercase">
-                <span>★ TOP STORY · SAI PALLAVI&apos;S SITA FIGHT SCENE IN RAMAYANA SPARKS DEBATE ACROSS SOCIAL MEDIA</span>
+                <span>★ TOP STORY · SALMAN KHAN&apos;S MAATRUBHUMI TRAILER CLEARED BY CBFC WITH U/A 16+ RATING</span>
               </div>
               <h1 className="disp" style={{ color: "#fff" }}>
-                Sai Pallavi’s Sita Fight Scene in Ramayana Divides the Internet
+                Maatrubhumi Trailer Gets CBFC Nod: Salman Khan Fans, Get Ready
               </h1>
               <p>
-                Sita fights demons in Ramayana: Rise of a Legend and fans are divided. See what scriptures say and what Nitesh Tiwari explained.
+                Salman Khan’s Maatrubhumi trailer is cleared by CBFC and may release on Nov 6. Check runtime, certificate and release date buzz.
               </p>
 
               {/* Editorial Highlights Box */}
               <div className="feature-highlights">
                 <div className="feature-highlights-header">
                   <span className="w-2 h-2 rounded-full bg-[var(--lime)] animate-pulse inline-block"></span>
-                  <span>Inside The Forest Battle Controversy &amp; Vedic Scriptures</span>
+                  <span>Inside The CBFC Censor Report &amp; Theatrical Release Windows</span>
                 </div>
                 <ul className="feature-highlights-list">
                   <li className="feature-highlights-item">
                     <span className="feature-highlights-bullet">✦</span>
                     <span>
-                      <strong className="text-white font-medium">Forest Battle Controversy:</strong> Viewers divided as Sai Pallavi’s Sita takes up arms to fight Khara and Dushana&apos;s demon army alongside Lord Ram.
+                      <strong className="text-white font-medium">U/A 16+ Certification:</strong> The trailer was officially cleared on Nov 4 with an expansive runtime of 4 minutes and 43 seconds, placing it among Bollywood’s longest promos.
                     </span>
                   </li>
                   <li className="feature-highlights-item">
                     <span className="feature-highlights-bullet">✦</span>
                     <span>
-                      <strong className="text-white font-medium">Scripture Debate:</strong> Traditionalists cite Valmiki&apos;s Aranyakanda where Ram fought alone, while defenders point to Sita&apos;s warrior form in the Adbhuta Ramayana.
+                      <strong className="text-white font-medium">Expected Digital Drop:</strong> Trade buzz suggests the video asset will go live on Friday, November 6 across Salman Khan Films and Jio Studios handles.
                     </span>
                   </li>
                   <li className="feature-highlights-item">
                     <span className="feature-highlights-bullet">✦</span>
                     <span>
-                      <strong className="text-white font-medium">Nitesh Tiwari&apos;s Vision:</strong> Director explains borrowing Sita&apos;s warrior dimension from Shakta texts adds empowerment and agency to her character.
+                      <strong className="text-white font-medium">Release Date Target:</strong> While the trailer is cleared, the pending feature film certificate moves the targeted theatrical release window to November 20 or December 11.
                     </span>
                   </li>
                 </ul>
@@ -1250,7 +1264,7 @@ export default function Home() {
                   <span className="dot-sep">◆</span>
                   <span>4 MIN READ</span>
                   <span className="dot-sep">◆</span>
-                  <span style={{ color: "var(--lime)" }}>IN THEATRES NOW</span>
+                  <span style={{ color: "var(--lime)" }}>TRAILER CLEARED</span>
                 </div>
                 <span className="text-xs font-mono font-bold text-[var(--lime)] hidden sm:inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform">
                   Read Full Story →
@@ -1269,6 +1283,18 @@ export default function Home() {
               <span className="trend-rank">01</span>
               <div className="trend-text">
                 <Link
+                  href="/maatrubhumi-trailer-release-date-salman-khan"
+                  style={{ color: "inherit" }}
+                >
+                  <h3>Maatrubhumi trailer cleared by CBFC: Salman Khan’s Galwan war drama trailer runs 4m 43s with U/A 16+ rating</h3>
+                  <span>BOLLYWOOD &amp; MOVIES · 2.95M REACTIONS</span>
+                </Link>
+              </div>
+            </div>
+            <div className="trend-item">
+              <span className="trend-rank">02</span>
+              <div className="trend-text">
+                <Link
                   href="/sai-pallavi-sita-fight-scene-ramayana-controversy"
                   style={{ color: "inherit" }}
                 >
@@ -1278,7 +1304,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">02</span>
+              <span className="trend-rank">03</span>
               <div className="trend-text">
                 <Link
                   href="/dia-mirza-diwali-video-bmc-bombay-high-court"
@@ -1290,7 +1316,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">03</span>
+              <span className="trend-rank">04</span>
               <div className="trend-text">
                 <Link
                   href="/munna-bhai-3-farhad-samji-writing-script"
@@ -1302,7 +1328,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">04</span>
+              <span className="trend-rank">05</span>
               <div className="trend-text">
                 <Link
                   href="/karan-johar-ramayana-part-1-review-ranbir-kapoor-yash"
@@ -1314,7 +1340,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">05</span>
+              <span className="trend-rank">06</span>
               <div className="trend-text">
                 <Link
                   href="/shraddha-kapoor-reacts-eetha-trailer-criticism"
@@ -1326,7 +1352,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">06</span>
+              <span className="trend-rank">07</span>
               <div className="trend-text">
                 <Link
                   href="/the-royals-season-2-goes-on-floors"
@@ -1338,7 +1364,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">07</span>
+              <span className="trend-rank">08</span>
               <div className="trend-text">
                 <Link
                   href="/salman-khan-teri-sexy-beauty-maatrubhumi-song"
@@ -1350,7 +1376,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">08</span>
+              <span className="trend-rank">09</span>
               <div className="trend-text">
                 <Link
                   href="/saif-ali-khan-kareena-kapoor-koffee-with-karan-stabbing-night"
@@ -1362,7 +1388,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">09</span>
+              <span className="trend-rank">10</span>
               <div className="trend-text">
                 <Link
                   href="/ramayana-part-2-postponed-2028-namit-malhotra-trilogy"
@@ -1370,18 +1396,6 @@ export default function Home() {
                 >
                   <h3>Ramayana Part 2 postponed to 2028: Producer Namit Malhotra confirms delay and hints at trilogy</h3>
                   <span>BOLLYWOOD &amp; CINEMA · 1.62M REACTIONS</span>
-                </Link>
-              </div>
-            </div>
-            <div className="trend-item">
-              <span className="trend-rank">10</span>
-              <div className="trend-text">
-                <Link
-                  href="/mira-rajput-shahid-kapoor-gossip-kapil-sharma-show"
-                  style={{ color: "inherit" }}
-                >
-                  <h3>Mira Rajput says Shahid Kapoor loves gossip: Funniest moments from The Great Indian Kapil Show unseen bonus clip</h3>
-                  <span>REALITY TV &amp; BOLLYWOOD · 1.52M REACTIONS</span>
                 </Link>
               </div>
             </div>

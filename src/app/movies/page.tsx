@@ -6,6 +6,18 @@ export const metadata: Metadata = {
   description:
     "Movies coverage from Buzz Originals — raw, unfiltered, built for the group chat. Box office numbers, trailer breakdowns, clashes and spoiler-free verdicts.",
   keywords: [
+    "Maatrubhumi trailer",
+    "Maatrubhumi release date",
+    "Salman Khan new movie",
+    "Maatrubhumi CBFC",
+    "Maatrubhumi trailer release date",
+    "Salman Khan Maatrubhumi",
+    "Battle of Galwan",
+    "Maatrubhumi cast",
+    "Maatrubhumi trailer runtime",
+    "Salman Khan Chitrangda Singh",
+    "when will Maatrubhumi trailer release",
+    "Maatrubhumi trailer U/A 16+ certificate",
     "Sai Pallavi Sita fight scene",
     "Ramayana controversy",
     "Ramayana Rise of a Legend",
@@ -103,10 +115,10 @@ export const metadata: Metadata = {
     siteName: "Buzz Originals",
     images: [
       {
-        url: "/images/sai-pallavi-sita-fight-scene-ramayana-controversy.jpg",
+        url: "/images/maatrubhumi-trailer-release-date-salman-khan.jpg",
         width: 1200,
         height: 675,
-        alt: "Sai Pallavi Sita Fight Scene in Ramayana Sparks Debate — Buzz Originals Movies",
+        alt: "Maatrubhumi Trailer Cleared by CBFC — Salman Khan Release Date Update",
       },
     ],
     type: "website",
@@ -116,7 +128,7 @@ export const metadata: Metadata = {
     title: "Movies — Buzz Originals",
     description:
       "Raw, unfiltered movie coverage: box office clashes, trailer breakdowns & spoiler-free verdicts.",
-    images: ["/images/sai-pallavi-sita-fight-scene-ramayana-controversy.jpg"],
+    images: ["/images/maatrubhumi-trailer-release-date-salman-khan.jpg"],
   },
 };
 
@@ -143,24 +155,30 @@ export default function MoviesPage() {
         {
           "@type": "ListItem",
           position: 1,
+          name: "Maatrubhumi Trailer Gets CBFC Nod: Release Date Update",
+          url: "https://www.buzzoriginals.com/maatrubhumi-trailer-release-date-salman-khan",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
           name: "Sai Pallavi Sita Fight Scene in Ramayana Sparks Debate",
           url: "https://www.buzzoriginals.com/sai-pallavi-sita-fight-scene-ramayana-controversy",
         },
         {
           "@type": "ListItem",
-          position: 2,
+          position: 3,
           name: "King First Song ‘Tu Mil Jaaye’ Is Out: SRK and Deepika Light Up His 61st Birthday",
           url: "https://www.buzzoriginals.com/king-first-song-tu-mil-jaaye-shah-rukh-khan-deepika-padukone",
         },
         {
           "@type": "ListItem",
-          position: 3,
+          position: 4,
           name: "Robert Downey Jr. and Pedro Pascal Swap Marvel Costumes for Halloween",
           url: "https://www.buzzoriginals.com/robert-downey-jr-pedro-pascal-halloween-costume-swap",
         },
         {
           "@type": "ListItem",
-          position: 4,
+          position: 5,
           name: "IIFA 2026 Winners List: Dhurandhar Wins 12 Awards",
           url: "https://www.buzzoriginals.com/iifa-2026-winners-list",
         },

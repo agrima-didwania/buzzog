@@ -20,6 +20,16 @@ interface MovieArticle {
 
 const movieArticles: MovieArticle[] = [
   {
+    id: "maatrubhumi-trailer-release-date-salman-khan",
+    category: "War Drama",
+    title: "Maatrubhumi Trailer Gets CBFC Nod: Salman Khan Fans, Get Ready",
+    badge: "⚡ CBFC Cleared",
+    badgeType: "lime",
+    image: "/images/maatrubhumi-trailer-release-date-salman-khan.jpg",
+    href: "/maatrubhumi-trailer-release-date-salman-khan",
+    readOrTime: "4 MIN READ",
+  },
+  {
     id: "sai-pallavi-sita-fight-scene-ramayana-controversy",
     category: "Mythological Epic",
     title: "Sai Pallavi’s Sita Fight Scene in Ramayana Divides the Internet",
@@ -226,16 +236,16 @@ export default function MoviesView() {
 
         {/* Lead Section: Latest Movie Published Article (Cover Story) + The Last 2 Blogs Uploaded Before It */}
         <section className="lead">
-          {/* Featured Card: Sai Pallavi Sita Fight Scene in Ramayana */}
+          {/* Featured Card: Maatrubhumi Trailer Cleared by CBFC */}
           <Link
-            href="/sai-pallavi-sita-fight-scene-ramayana-controversy"
+            href="/maatrubhumi-trailer-release-date-salman-khan"
             className="feature-card group block"
-            aria-label="Read full article: Sai Pallavi’s Sita Fight Scene in Ramayana Divides the Internet"
+            aria-label="Read full article: Maatrubhumi Trailer Gets CBFC Nod: Salman Khan Fans, Get Ready"
           >
             <div className="feature-media relative overflow-hidden">
               <Image
-                src="/images/sai-pallavi-sita-fight-scene-ramayana-controversy.jpg"
-                alt="Sai Pallavi Sita Fight Scene in Ramayana Sparks Debate"
+                src="/images/maatrubhumi-trailer-release-date-salman-khan.jpg"
+                alt="Maatrubhumi Trailer Cleared by CBFC — Salman Khan Release Date Update"
                 fill
                 priority
                 className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
@@ -243,29 +253,56 @@ export default function MoviesView() {
               />
               <div className="noise" />
               <span className="badge lime feature-tag z-10">
-                ⚡ Viral Debate
+                ⚡ CBFC Cleared
               </span>
             </div>
             <div className="feature-body">
               <h2 className="disp text-white group-hover:text-[var(--lime)] transition-colors">
-                Sai Pallavi’s Sita Fight Scene in Ramayana Divides the Internet
+                Maatrubhumi Trailer Gets CBFC Nod: Salman Khan Fans, Get Ready
               </h2>
               <p>
-                Sita fights demons in Ramayana: Rise of a Legend and fans are divided. See what scriptures say and what Nitesh Tiwari explained.
+                Salman Khan’s war drama trailer cleared with U/A 16+ rating and 4m 43s runtime. Expected Nov 6 release as theatrical date buzz shifts to late November.
               </p>
               <div className="meta-row mt-3">
-                <span className="text-[var(--lime)] font-bold">MOVIES &amp; RAMAYANA</span>
+                <span className="text-[var(--lime)] font-bold">MOVIES &amp; WAR DRAMA</span>
                 <span className="dot-sep">·</span>
                 <span>4 MIN READ</span>
                 <span className="dot-sep">·</span>
-                <span className="text-[var(--magenta)] font-bold">IN THEATRES NOW</span>
+                <span className="text-[var(--magenta)] font-bold">TRAILER CLEARED</span>
               </div>
             </div>
           </Link>
 
-          {/* Right Stack: The last 2 movie blogs uploaded before this one */}
+          {/* Right Stack: The last 2-3 movie blogs uploaded before this one */}
           <div className="stack">
-            {/* Card 1: Robert Downey Jr. and Pedro Pascal */}
+            {/* Card 1: Sai Pallavi Sita Fight Scene in Ramayana */}
+            <Link
+              href="/sai-pallavi-sita-fight-scene-ramayana-controversy"
+              className="card m1 group block"
+            >
+              <div className="card-media relative overflow-hidden">
+                <Image
+                  src="/images/sai-pallavi-sita-fight-scene-ramayana-controversy.jpg"
+                  alt="Sai Pallavi Sita Fight Scene in Ramayana Sparks Debate"
+                  fill
+                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 980px) 100vw, 35vw"
+                />
+                <span className="badge lime z-10 relative">⚡ Viral Debate</span>
+              </div>
+              <div className="card-body">
+                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
+                  Sai Pallavi’s Sita Fight Scene in Ramayana Divides the Internet
+                </h3>
+                <div className="meta-row mt-2">
+                  <span className="text-[var(--lime)] font-bold">MOVIES &amp; RAMAYANA</span>
+                  <span className="dot-sep">◆</span>
+                  <span>4 MIN READ</span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Card 2: Robert Downey Jr. and Pedro Pascal */}
             <Link
               href="/robert-downey-jr-pedro-pascal-halloween-costume-swap"
               className="card m1 group block"
@@ -292,7 +329,7 @@ export default function MoviesView() {
               </div>
             </Link>
 
-            {/* Card 2: IIFA 2026 Winners */}
+            {/* Card 3: IIFA 2026 Winners */}
             <Link
               href="/iifa-2026-winners-list"
               className="card m1 group block"
