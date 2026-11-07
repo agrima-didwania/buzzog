@@ -6,6 +6,17 @@ export const metadata: Metadata = {
   description:
     "Bollywood coverage from Buzz Originals — raw, unfiltered, built for the group chat. Red carpets, rumours, airport looks and exclusives.",
   keywords: [
+    "Farah Khan YouTube channel",
+    "Farah Khan Dilip",
+    "Farah Khan Neha Dhupia podcast",
+    "Farah Khan Bollywood insecurity",
+    "Farah Khan latest news",
+    "Farah Khan vlog",
+    "Farah Khan interview",
+    "why did Farah Khan start YouTube",
+    "Farah Khan YouTube channel subscribers",
+    "Farah Khan cook Dilip",
+    "Farah Khan Main Hoon Na",
     "Maatrubhumi trailer",
     "Maatrubhumi release date",
     "Salman Khan new movie",
@@ -459,10 +470,10 @@ export const metadata: Metadata = {
     siteName: "Buzz Originals",
     images: [
       {
-        url: "/images/maatrubhumi-trailer-release-date-salman-khan.jpg",
+        url: "/images/farah-khan-bollywood-insecure-youtube-channel-dilip.jpg",
         width: 1200,
         height: 675,
-        alt: "Maatrubhumi Trailer Cleared by CBFC — Salman Khan Release Date Update",
+        alt: "Farah Khan on Bollywood Insecurity & Her YouTube Channel with Cook Dilip — Buzz Originals",
       },
     ],
     type: "website",
@@ -472,7 +483,7 @@ export const metadata: Metadata = {
     title: "Bollywood — Buzz Originals",
     description:
       "Raw, unfiltered Bollywood coverage of red carpets, gossip, airport sightings & exclusives.",
-    images: ["/images/maatrubhumi-trailer-release-date-salman-khan.jpg"],
+    images: ["/images/farah-khan-bollywood-insecure-youtube-channel-dilip.jpg"],
   },
 };
 
@@ -499,30 +510,36 @@ export default function BollywoodPage() {
         {
           "@type": "ListItem",
           position: 1,
+          name: "Farah Khan on Bollywood Insecurity & Her YouTube Channel",
+          url: "https://www.buzzoriginals.com/farah-khan-bollywood-insecure-youtube-channel-dilip",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
           name: "Maatrubhumi Trailer Gets CBFC Nod: Release Date Update",
           url: "https://www.buzzoriginals.com/maatrubhumi-trailer-release-date-salman-khan",
         },
         {
           "@type": "ListItem",
-          position: 2,
+          position: 3,
           name: "Sai Pallavi Sita Fight Scene in Ramayana Sparks Debate",
           url: "https://www.buzzoriginals.com/sai-pallavi-sita-fight-scene-ramayana-controversy",
         },
         {
           "@type": "ListItem",
-          position: 3,
+          position: 4,
           name: "Dia Mirza Diwali Video: HC Orders BMC to Re-Upload",
           url: "https://www.buzzoriginals.com/dia-mirza-diwali-video-bmc-bombay-high-court",
         },
         {
           "@type": "ListItem",
-          position: 4,
+          position: 5,
           name: "Munna Bhai 3 Update: Farhad Samji Begins Writing",
           url: "https://www.buzzoriginals.com/munna-bhai-3-farhad-samji-writing-script",
         },
         {
           "@type": "ListItem",
-          position: 5,
+          position: 6,
           name: "Karan Johar’s Ramayana Part 1 Review: “Miracle”",
           url: "https://www.buzzoriginals.com/karan-johar-ramayana-part-1-review-ranbir-kapoor-yash",
         },

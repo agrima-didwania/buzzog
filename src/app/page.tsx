@@ -185,6 +185,20 @@ export default function Home() {
 
   const editorialArticles: EditorialArticle[] = [
     {
+      id: "farah-khan-bollywood-insecure-youtube-channel-dilip",
+      anchorId: "farah-khan-youtube-story",
+      href: "/farah-khan-bollywood-insecure-youtube-channel-dilip",
+      title: "Farah Khan Says Bollywood Makes People Insecure, Reveals Why She Started Her YouTube Channel",
+      excerpt: "Farah Khan opens up about insecurity in Bollywood and why she started her YouTube channel with cook Dilip. Read what she told Neha Dhupia and Angad Bedi.",
+      category: "Bollywood",
+      secondaryCategory: "News",
+      displayCategory: "BOLLYWOOD & DIGITAL",
+      badge: "Candid Interview",
+      badgeType: "lime",
+      readTime: "4 MIN READ",
+      image: "/images/farah-khan-bollywood-insecure-youtube-channel-dilip.jpg",
+    },
+    {
       id: "rise-and-fall-2-winner-shehzad-poonawalla",
       anchorId: "rise-and-fall-2-winner-story",
       href: "/rise-and-fall-2-winner-shehzad-poonawalla",
@@ -1211,15 +1225,15 @@ export default function Home() {
         <section className="hero" id="featured">
           {/* 1. Main Featured Story (Commanding Top Story Presentation) */}
           <Link
-            href="/rise-and-fall-2-winner-shehzad-poonawalla"
+            href="/farah-khan-bollywood-insecure-youtube-channel-dilip"
             className="feature-card flex flex-col transition-all hover:border-[var(--lime)] focus-visible:ring-2 focus-visible:ring-[var(--lime)] group"
             style={{ textDecoration: "none", color: "inherit" }}
-            aria-label="Read full article: Rise and Fall 2 Winner: Shehzad Poonawalla Lifts the Trophy, Priyanka Chahar Choudhary Misses Out"
+            aria-label="Read full article: Farah Khan Says Bollywood Makes People Insecure, Reveals Why She Started Her YouTube Channel"
           >
             <div className="feature-media" style={{ overflow: "hidden", position: "relative" }}>
               <Image
-                src="/images/rise-and-fall-2-winner-shehzad-poonawalla.jpg"
-                alt="Rise and Fall 2 Winner: Shehzad Poonawalla Lifts Trophy with Virender Sehwag, Priyanka Chahar Choudhary & Gautam Gulati"
+                src="/images/farah-khan-bollywood-insecure-youtube-channel-dilip.jpg"
+                alt="Farah Khan and cook Dilip talking about Bollywood insecurity and their viral YouTube channel"
                 fill
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 750px"
@@ -1228,45 +1242,45 @@ export default function Home() {
               />
               <div className="noise" style={{ pointerEvents: "none" }}></div>
               <div className="feature-tag flex items-center gap-2">
-                <span className="badge lime">⚡ Grand Finale Winner</span>
-                <span className="badge pink">Rise and Fall Season 2</span>
-                <span className="badge">Shehzad Poonawalla</span>
+                <span className="badge lime">⚡ Candid Tell-All</span>
+                <span className="badge pink">YouTube Milestone</span>
+                <span className="badge">Farah Khan &amp; Dilip</span>
               </div>
             </div>
             <div className="feature-body">
               <div className="flex items-center gap-2 mb-2 font-mono text-xs text-[var(--lime)] font-bold tracking-wider uppercase">
-                <span>★ TOP STORY · SHEHZAD POONAWALLA WINS RISE AND FALL SEASON 2, LIFTS TROPHY AND ₹35 LAKH CASH PRIZE</span>
+                <span>★ TOP STORY · FARAH KHAN TALKS BOLLYWOOD INSECURITY, COOK DILIP &amp; HER UNPLANNED 3M YOUTUBE CHANNEL</span>
               </div>
               <h1 className="disp" style={{ color: "#fff" }}>
-                Rise and Fall 2 Winner: Shehzad Poonawalla Lifts the Trophy, Priyanka Chahar Choudhary Misses Out
+                Farah Khan Says Bollywood Makes People Insecure, Reveals Why She Started Her YouTube Channel
               </h1>
               <p>
-                Shehzad Poonawalla is the Rise and Fall 2 winner! Priyanka Chahar Choudhary is first runner-up, Gautam Gulati is third. Read the finale details and prize money.
+                Farah Khan opens up about insecurity in Bollywood and why she started her YouTube channel with cook Dilip. Read what she told Neha Dhupia and Angad Bedi.
               </p>
 
               {/* Editorial Highlights Box */}
               <div className="feature-highlights">
                 <div className="feature-highlights-header">
                   <span className="w-2 h-2 rounded-full bg-[var(--lime)] animate-pulse inline-block"></span>
-                  <span>Inside The Grand Finale Showdown &amp; Philanthropic Victory</span>
+                  <span>Inside Farah Khan&apos;s Candid Revelations &amp; YouTube Phenomenon</span>
                 </div>
                 <ul className="feature-highlights-list">
                   <li className="feature-highlights-item">
                     <span className="feature-highlights-bullet">✦</span>
                     <span>
-                      <strong className="text-white font-medium">Tie-Breaker Triumph:</strong> Following a deadlocked Top 3 jury vote, eliminated contestants cast the deciding ballots to crown Shehzad over Priyanka and Gautam.
+                      <strong className="text-white font-medium">Unplanned Venture:</strong> Started her YouTube channel in April 2024 to curb restlessness after finishing a script, never imagining it would grow into a 3M-subscriber giant.
                     </span>
                   </li>
                   <li className="feature-highlights-item">
                     <span className="feature-highlights-bullet">✦</span>
                     <span>
-                      <strong className="text-white font-medium">Noble Prize Pledge:</strong> Shehzad took home ₹35 lakh and immediately pledged 100% of the purse toward flood relief efforts in Bihar and Assam.
+                      <strong className="text-white font-medium">Industry Comparison:</strong> Candidly admitted Bollywood makes people constantly insecure and revealed why she detached from film competition after turning 50.
                     </span>
                   </li>
                   <li className="feature-highlights-item">
                     <span className="feature-highlights-bullet">✦</span>
                     <span>
-                      <strong className="text-white font-medium">Star-Studded Finale:</strong> Hosted by Virender Sehwag on MX Player and Prime Video, featuring Harsh Gujral and ex-contestant reunions.
+                      <strong className="text-white font-medium">Cook Dilip&apos;s Stardom:</strong> Shared how Dilip became an overnight internet celebrity, starring in ads with Shah Rukh Khan and clearing old debts.
                     </span>
                   </li>
                 </ul>
@@ -1274,11 +1288,11 @@ export default function Home() {
 
               <div className="meta-row mt-auto pt-3 border-t border-white/[0.06] flex items-center justify-between">
                 <div className="flex items-center gap-3">
-                  <span>REALITY SHOWS &amp; FINALE</span>
+                  <span>BOLLYWOOD &amp; DIGITAL</span>
                   <span className="dot-sep">◆</span>
                   <span>4 MIN READ</span>
                   <span className="dot-sep">◆</span>
-                  <span style={{ color: "var(--lime)" }}>TROPHY LIFTED</span>
+                  <span style={{ color: "var(--lime)" }}>CANDID INTERVIEW</span>
                 </div>
                 <span className="text-xs font-mono font-bold text-[var(--lime)] hidden sm:inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform">
                   Read Full Story →
@@ -1297,6 +1311,18 @@ export default function Home() {
               <span className="trend-rank">01</span>
               <div className="trend-text">
                 <Link
+                  href="/farah-khan-bollywood-insecure-youtube-channel-dilip"
+                  style={{ color: "inherit" }}
+                >
+                  <h3>Farah Khan says Bollywood makes people insecure: Opens up on YouTube channel with cook Dilip &amp; crossing 3M subs</h3>
+                  <span>BOLLYWOOD &amp; DIGITAL · 3.25M REACTIONS</span>
+                </Link>
+              </div>
+            </div>
+            <div className="trend-item">
+              <span className="trend-rank">02</span>
+              <div className="trend-text">
+                <Link
                   href="/rise-and-fall-2-winner-shehzad-poonawalla"
                   style={{ color: "inherit" }}
                 >
@@ -1306,7 +1332,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">02</span>
+              <span className="trend-rank">03</span>
               <div className="trend-text">
                 <Link
                   href="/maatrubhumi-trailer-release-date-salman-khan"
@@ -1318,7 +1344,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">03</span>
+              <span className="trend-rank">04</span>
               <div className="trend-text">
                 <Link
                   href="/sai-pallavi-sita-fight-scene-ramayana-controversy"
@@ -1330,7 +1356,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">04</span>
+              <span className="trend-rank">05</span>
               <div className="trend-text">
                 <Link
                   href="/dia-mirza-diwali-video-bmc-bombay-high-court"
@@ -1342,7 +1368,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">05</span>
+              <span className="trend-rank">06</span>
               <div className="trend-text">
                 <Link
                   href="/munna-bhai-3-farhad-samji-writing-script"
@@ -1354,7 +1380,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">06</span>
+              <span className="trend-rank">07</span>
               <div className="trend-text">
                 <Link
                   href="/karan-johar-ramayana-part-1-review-ranbir-kapoor-yash"
@@ -1366,7 +1392,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">07</span>
+              <span className="trend-rank">08</span>
               <div className="trend-text">
                 <Link
                   href="/shraddha-kapoor-reacts-eetha-trailer-criticism"
@@ -1378,7 +1404,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">08</span>
+              <span className="trend-rank">09</span>
               <div className="trend-text">
                 <Link
                   href="/the-royals-season-2-goes-on-floors"
@@ -1390,7 +1416,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">09</span>
+              <span className="trend-rank">10</span>
               <div className="trend-text">
                 <Link
                   href="/salman-khan-teri-sexy-beauty-maatrubhumi-song"
@@ -1398,18 +1424,6 @@ export default function Home() {
                 >
                   <h3>Salman Khan sings after 11 years: Drops “Teri Sexy Beauty” from Maatrubhumi in surprise 5 AM release</h3>
                   <span>BOLLYWOOD &amp; MUSIC · 1.82M REACTIONS</span>
-                </Link>
-              </div>
-            </div>
-            <div className="trend-item">
-              <span className="trend-rank">10</span>
-              <div className="trend-text">
-                <Link
-                  href="/saif-ali-khan-kareena-kapoor-koffee-with-karan-stabbing-night"
-                  style={{ color: "inherit" }}
-                >
-                  <h3>Saif Ali Khan stabbing night: Kareena Kapoor&apos;s emotional confession on Koffee With Karan 9</h3>
-                  <span>REALITY TV &amp; BOLLYWOOD · 1.75M REACTIONS</span>
                 </Link>
               </div>
             </div>

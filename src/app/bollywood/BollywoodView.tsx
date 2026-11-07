@@ -20,6 +20,16 @@ interface BollywoodArticle {
 
 const bollywoodArticles: BollywoodArticle[] = [
   {
+    id: "farah-khan-bollywood-insecure-youtube-channel-dilip",
+    category: "Podcast & Digital",
+    title: "Farah Khan Says Bollywood Makes People Insecure, Reveals Why She Started Her YouTube Channel",
+    badge: "⚡ Candid Tell-All",
+    badgeType: "lime",
+    image: "/images/farah-khan-bollywood-insecure-youtube-channel-dilip.jpg",
+    href: "/farah-khan-bollywood-insecure-youtube-channel-dilip",
+    readOrTime: "4 MIN READ",
+  },
+  {
     id: "maatrubhumi-trailer-release-date-salman-khan",
     category: "Trailer & CBFC",
     title: "Maatrubhumi Trailer Gets CBFC Nod: Salman Khan Fans, Get Ready",
@@ -616,16 +626,16 @@ export default function BollywoodView() {
 
         {/* Lead Section: Latest Bollywood Published Article (Cover Story) + The Last 2 Blogs Uploaded Before It */}
         <section className="lead">
-          {/* Cover Story: Latest Published Bollywood Story (Maatrubhumi Trailer Cleared by CBFC) */}
+          {/* Cover Story: Latest Published Bollywood Story (Farah Khan on YouTube & Insecurity) */}
           <Link
-            href="/maatrubhumi-trailer-release-date-salman-khan"
+            href="/farah-khan-bollywood-insecure-youtube-channel-dilip"
             className="feature-card group block"
-            aria-label="Read full cover story: Maatrubhumi Trailer Gets CBFC Nod: Salman Khan Fans, Get Ready"
+            aria-label="Read full cover story: Farah Khan Says Bollywood Makes People Insecure, Reveals Why She Started Her YouTube Channel"
           >
             <div className="feature-media relative overflow-hidden">
               <Image
-                src="/images/maatrubhumi-trailer-release-date-salman-khan.jpg"
-                alt="Maatrubhumi Trailer Cleared by CBFC — Salman Khan Release Date Update"
+                src="/images/farah-khan-bollywood-insecure-youtube-channel-dilip.jpg"
+                alt="Farah Khan on Bollywood Insecurity & Her YouTube Channel with Cook Dilip"
                 fill
                 priority
                 className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
@@ -633,29 +643,56 @@ export default function BollywoodView() {
               />
               <div className="noise" />
               <span className="badge lime feature-tag z-10">
-                ⚡ CBFC Cleared
+                ⚡ Candid Tell-All
               </span>
             </div>
             <div className="feature-body">
               <h2 className="disp text-white group-hover:text-[var(--lime)] transition-colors">
-                Maatrubhumi Trailer Gets CBFC Nod: Salman Khan Fans, Get Ready
+                Farah Khan Says Bollywood Makes People Insecure, Reveals Why She Started Her YouTube Channel
               </h2>
               <p>
-                Salman Khan’s war drama trailer cleared with U/A 16+ rating and 4m 43s runtime. Expected Nov 6 release as theatrical date buzz shifts to late November.
+                Farah Khan opens up on toxic film comparisons, finding peace after 50, and how her channel with cook Dilip unexpectedly became a 3-million-subscriber empire.
               </p>
               <div className="meta-row mt-3">
-                <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; MOVIES</span>
+                <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; DIGITAL</span>
                 <span className="dot-sep">◆</span>
                 <span>4 MIN READ</span>
                 <span className="dot-sep">◆</span>
-                <span className="text-[var(--lime)] font-bold">NOV 05</span>
+                <span className="text-[var(--lime)] font-bold">NOV 07</span>
               </div>
             </div>
           </Link>
 
           {/* Right Stack: The last 2-3 blogs uploaded before the latest one */}
           <div className="stack">
-            {/* Card 1: Sai Pallavi Sita Fight Scene */}
+            {/* Card 1: Maatrubhumi Trailer Cleared by CBFC */}
+            <Link
+              href="/maatrubhumi-trailer-release-date-salman-khan"
+              className="card m1 group block"
+            >
+              <div className="card-media relative overflow-hidden">
+                <Image
+                  src="/images/maatrubhumi-trailer-release-date-salman-khan.jpg"
+                  alt="Maatrubhumi Trailer Cleared by CBFC — Salman Khan Release Date Update"
+                  fill
+                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 980px) 100vw, 35vw"
+                />
+                <span className="badge lime z-10 relative">⚡ CBFC Cleared</span>
+              </div>
+              <div className="card-body">
+                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
+                  Maatrubhumi Trailer Gets CBFC Nod: Salman Khan Fans, Get Ready
+                </h3>
+                <div className="meta-row mt-2">
+                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; MOVIES</span>
+                  <span className="dot-sep">◆</span>
+                  <span>4 MIN READ</span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Card 2: Sai Pallavi Sita Fight Scene */}
             <Link
               href="/sai-pallavi-sita-fight-scene-ramayana-controversy"
               className="card m1 group block"
@@ -682,7 +719,7 @@ export default function BollywoodView() {
               </div>
             </Link>
 
-            {/* Card 2: Dia Mirza Diwali Video Row */}
+            {/* Card 3: Dia Mirza Diwali Video Row */}
             <Link
               href="/dia-mirza-diwali-video-bmc-bombay-high-court"
               className="card m1 group block"
@@ -705,33 +742,6 @@ export default function BollywoodView() {
                   <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; NEWS</span>
                   <span className="dot-sep">◆</span>
                   <span>4 MIN READ</span>
-                </div>
-              </div>
-            </Link>
-
-            {/* Card 3: Munna Bhai 3: Farhad Samji Begins Writing the Script */}
-            <Link
-              href="/munna-bhai-3-farhad-samji-writing-script"
-              className="card m1 group block"
-            >
-              <div className="card-media relative overflow-hidden">
-                <Image
-                  src="/images/munna-bhai-3-farhad-samji-writing-script.jpg"
-                  alt="Munna Bhai 3 Update: Farhad Samji Begins Writing Script for Rajkumar Hirani"
-                  fill
-                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
-                  sizes="(max-width: 980px) 100vw, 35vw"
-                />
-                <span className="badge lime z-10 relative">⚡ Script Begins</span>
-              </div>
-              <div className="card-body">
-                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
-                  Munna Bhai 3: Farhad Samji Begins Writing the Script
-                </h3>
-                <div className="meta-row mt-2">
-                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; CINEMA</span>
-                  <span className="dot-sep">◆</span>
-                  <span>3 MIN READ</span>
                 </div>
               </div>
             </Link>
