@@ -6,6 +6,17 @@ export const metadata: Metadata = {
   description:
     "Bollywood coverage from Buzz Originals — raw, unfiltered, built for the group chat. Red carpets, rumours, airport looks and exclusives.",
   keywords: [
+    "Ranbir Kapoor directorial debut",
+    "Ranbir Kapoor last decade as an actor",
+    "Ranbir Kapoor director",
+    "Ranbir Kapoor retirement",
+    "Ranbir Kapoor first film as director",
+    "Ranbir Kapoor Sai Pallavi interview",
+    "Is Ranbir Kapoor retiring from acting",
+    "When will Ranbir Kapoor direct his first film",
+    "What kind of film will Ranbir Kapoor direct",
+    "Ranbir Kapoor BBC Asian Network interview",
+    "Ranbir Kapoor upcoming movies after Ramayana",
     "Farah Khan YouTube channel",
     "Farah Khan Dilip",
     "Farah Khan Neha Dhupia podcast",
@@ -470,10 +481,10 @@ export const metadata: Metadata = {
     siteName: "Buzz Originals",
     images: [
       {
-        url: "/images/farah-khan-bollywood-insecure-youtube-channel-dilip.jpg",
+        url: "/images/ranbir-kapoor-directorial-debut-last-decade-as-actor.jpg",
         width: 1200,
         height: 675,
-        alt: "Farah Khan on Bollywood Insecurity & Her YouTube Channel with Cook Dilip — Buzz Originals",
+        alt: "Ranbir Kapoor Directorial Debut Plans: 2-3 Years Away — Buzz Originals",
       },
     ],
     type: "website",
@@ -483,7 +494,7 @@ export const metadata: Metadata = {
     title: "Bollywood — Buzz Originals",
     description:
       "Raw, unfiltered Bollywood coverage of red carpets, gossip, airport sightings & exclusives.",
-    images: ["/images/farah-khan-bollywood-insecure-youtube-channel-dilip.jpg"],
+    images: ["/images/ranbir-kapoor-directorial-debut-last-decade-as-actor.jpg"],
   },
 };
 
@@ -510,6 +521,12 @@ export default function BollywoodPage() {
         {
           "@type": "ListItem",
           position: 1,
+          name: "Ranbir Kapoor Directorial Debut Plans: 2-3 Years Away",
+          url: "https://www.buzzoriginals.com/ranbir-kapoor-directorial-debut-last-decade-as-actor",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
           name: "Farah Khan on Bollywood Insecurity & Her YouTube Channel",
           url: "https://www.buzzoriginals.com/farah-khan-bollywood-insecure-youtube-channel-dilip",
         },

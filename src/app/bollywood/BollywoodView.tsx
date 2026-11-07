@@ -20,6 +20,16 @@ interface BollywoodArticle {
 
 const bollywoodArticles: BollywoodArticle[] = [
   {
+    id: "ranbir-kapoor-directorial-debut-last-decade-as-actor",
+    category: "Directorial Debut",
+    title: "Ranbir Kapoor Directorial Debut Plans: 2-3 Years Away and What He Meant by “Last Decade as an Actor”",
+    badge: "⚡ Exclusive Interview",
+    badgeType: "lime",
+    image: "/images/ranbir-kapoor-directorial-debut-last-decade-as-actor.jpg",
+    href: "/ranbir-kapoor-directorial-debut-last-decade-as-actor",
+    readOrTime: "4 MIN READ",
+  },
+  {
     id: "farah-khan-bollywood-insecure-youtube-channel-dilip",
     category: "Podcast & Digital",
     title: "Farah Khan Says Bollywood Makes People Insecure, Reveals Why She Started Her YouTube Channel",
@@ -626,16 +636,16 @@ export default function BollywoodView() {
 
         {/* Lead Section: Latest Bollywood Published Article (Cover Story) + The Last 2 Blogs Uploaded Before It */}
         <section className="lead">
-          {/* Cover Story: Latest Published Bollywood Story (Farah Khan on YouTube & Insecurity) */}
+          {/* Cover Story: Latest Published Bollywood Story (Ranbir Kapoor Directorial Debut Plans) */}
           <Link
-            href="/farah-khan-bollywood-insecure-youtube-channel-dilip"
+            href="/ranbir-kapoor-directorial-debut-last-decade-as-actor"
             className="feature-card group block"
-            aria-label="Read full cover story: Farah Khan Says Bollywood Makes People Insecure, Reveals Why She Started Her YouTube Channel"
+            aria-label="Read full cover story: Ranbir Kapoor Directorial Debut Plans: 2-3 Years Away and What He Meant by Last Decade as an Actor"
           >
             <div className="feature-media relative overflow-hidden">
               <Image
-                src="/images/farah-khan-bollywood-insecure-youtube-channel-dilip.jpg"
-                alt="Farah Khan on Bollywood Insecurity & Her YouTube Channel with Cook Dilip"
+                src="/images/ranbir-kapoor-directorial-debut-last-decade-as-actor.jpg"
+                alt="Ranbir Kapoor Directorial Debut Plans: 2-3 Years Away and What He Meant by Last Decade as an Actor"
                 fill
                 priority
                 className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
@@ -643,18 +653,18 @@ export default function BollywoodView() {
               />
               <div className="noise" />
               <span className="badge lime feature-tag z-10">
-                ⚡ Candid Tell-All
+                ⚡ Exclusive Interview
               </span>
             </div>
             <div className="feature-body">
               <h2 className="disp text-white group-hover:text-[var(--lime)] transition-colors">
-                Farah Khan Says Bollywood Makes People Insecure, Reveals Why She Started Her YouTube Channel
+                Ranbir Kapoor Directorial Debut Plans: 2-3 Years Away
               </h2>
               <p>
-                Farah Khan opens up on toxic film comparisons, finding peace after 50, and how her channel with cook Dilip unexpectedly became a 3-million-subscriber empire.
+                Ranbir Kapoor plans to direct his first film in 2-3 years. Here’s what he really meant by “last decade as an actor” and the kind of film he wants to make.
               </p>
               <div className="meta-row mt-3">
-                <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; DIGITAL</span>
+                <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; CINEMA</span>
                 <span className="dot-sep">◆</span>
                 <span>4 MIN READ</span>
                 <span className="dot-sep">◆</span>
@@ -665,7 +675,34 @@ export default function BollywoodView() {
 
           {/* Right Stack: The last 2-3 blogs uploaded before the latest one */}
           <div className="stack">
-            {/* Card 1: Maatrubhumi Trailer Cleared by CBFC */}
+            {/* Card 1: Farah Khan on Bollywood Insecurity & Her YouTube Channel */}
+            <Link
+              href="/farah-khan-bollywood-insecure-youtube-channel-dilip"
+              className="card m1 group block"
+            >
+              <div className="card-media relative overflow-hidden">
+                <Image
+                  src="/images/farah-khan-bollywood-insecure-youtube-channel-dilip.jpg"
+                  alt="Farah Khan on Bollywood Insecurity & Her YouTube Channel with Cook Dilip"
+                  fill
+                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 980px) 100vw, 35vw"
+                />
+                <span className="badge lime z-10 relative">⚡ Candid Tell-All</span>
+              </div>
+              <div className="card-body">
+                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
+                  Farah Khan Says Bollywood Makes People Insecure, Reveals Why She Started Her YouTube Channel
+                </h3>
+                <div className="meta-row mt-2">
+                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; DIGITAL</span>
+                  <span className="dot-sep">◆</span>
+                  <span>4 MIN READ</span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Card 2: Maatrubhumi Trailer Cleared by CBFC */}
             <Link
               href="/maatrubhumi-trailer-release-date-salman-khan"
               className="card m1 group block"
@@ -692,7 +729,7 @@ export default function BollywoodView() {
               </div>
             </Link>
 
-            {/* Card 2: Sai Pallavi Sita Fight Scene */}
+            {/* Card 3: Sai Pallavi Sita Fight Scene */}
             <Link
               href="/sai-pallavi-sita-fight-scene-ramayana-controversy"
               className="card m1 group block"
@@ -713,33 +750,6 @@ export default function BollywoodView() {
                 </h3>
                 <div className="meta-row mt-2">
                   <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; MOVIES</span>
-                  <span className="dot-sep">◆</span>
-                  <span>4 MIN READ</span>
-                </div>
-              </div>
-            </Link>
-
-            {/* Card 3: Dia Mirza Diwali Video Row */}
-            <Link
-              href="/dia-mirza-diwali-video-bmc-bombay-high-court"
-              className="card m1 group block"
-            >
-              <div className="card-media relative overflow-hidden">
-                <Image
-                  src="/images/dia-mirza-diwali-video-bmc-bombay-high-court.jpg"
-                  alt="Dia Mirza Diwali Video Row: Bombay High Court Orders BMC to Re-Upload Awareness Clip"
-                  fill
-                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
-                  sizes="(max-width: 980px) 100vw, 35vw"
-                />
-                <span className="badge lime z-10 relative">⚡ High Court Order</span>
-              </div>
-              <div className="card-body">
-                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
-                  Dia Mirza Diwali Video Row: Court Says Put It Back, BMC Still Hasn’t
-                </h3>
-                <div className="meta-row mt-2">
-                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; NEWS</span>
                   <span className="dot-sep">◆</span>
                   <span>4 MIN READ</span>
                 </div>

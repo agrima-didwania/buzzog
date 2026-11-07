@@ -185,6 +185,20 @@ export default function Home() {
 
   const editorialArticles: EditorialArticle[] = [
     {
+      id: "ranbir-kapoor-directorial-debut-last-decade-as-actor",
+      anchorId: "ranbir-directorial-debut-story",
+      href: "/ranbir-kapoor-directorial-debut-last-decade-as-actor",
+      title: "Ranbir Kapoor Directorial Debut Plans: 2-3 Years Away",
+      excerpt: "Ranbir Kapoor plans to direct his first film in 2-3 years. Here’s what he really meant by “last decade as an actor” and the kind of film he wants to make.",
+      category: "Bollywood",
+      secondaryCategory: "News",
+      displayCategory: "BOLLYWOOD & CINEMA",
+      badge: "Exclusive Scoop",
+      badgeType: "lime",
+      readTime: "4 MIN READ",
+      image: "/images/ranbir-kapoor-directorial-debut-last-decade-as-actor.jpg",
+    },
+    {
       id: "farah-khan-bollywood-insecure-youtube-channel-dilip",
       anchorId: "farah-khan-youtube-story",
       href: "/farah-khan-bollywood-insecure-youtube-channel-dilip",
@@ -1225,15 +1239,15 @@ export default function Home() {
         <section className="hero" id="featured">
           {/* 1. Main Featured Story (Commanding Top Story Presentation) */}
           <Link
-            href="/farah-khan-bollywood-insecure-youtube-channel-dilip"
+            href="/ranbir-kapoor-directorial-debut-last-decade-as-actor"
             className="feature-card flex flex-col transition-all hover:border-[var(--lime)] focus-visible:ring-2 focus-visible:ring-[var(--lime)] group"
             style={{ textDecoration: "none", color: "inherit" }}
-            aria-label="Read full article: Farah Khan Says Bollywood Makes People Insecure, Reveals Why She Started Her YouTube Channel"
+            aria-label="Read full article: Ranbir Kapoor Directorial Debut Plans: 2-3 Years Away and What He Meant by Last Decade as an Actor"
           >
             <div className="feature-media" style={{ overflow: "hidden", position: "relative" }}>
               <Image
-                src="/images/farah-khan-bollywood-insecure-youtube-channel-dilip.jpg"
-                alt="Farah Khan and cook Dilip talking about Bollywood insecurity and their viral YouTube channel"
+                src="/images/ranbir-kapoor-directorial-debut-last-decade-as-actor.jpg"
+                alt="Ranbir Kapoor Directorial Debut Plans: 2-3 Years Away and What He Meant by Last Decade as an Actor"
                 fill
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 750px"
@@ -1242,45 +1256,45 @@ export default function Home() {
               />
               <div className="noise" style={{ pointerEvents: "none" }}></div>
               <div className="feature-tag flex items-center gap-2">
-                <span className="badge lime">⚡ Candid Tell-All</span>
-                <span className="badge pink">YouTube Milestone</span>
-                <span className="badge">Farah Khan &amp; Dilip</span>
+                <span className="badge lime">⚡ Career Milestone</span>
+                <span className="badge pink">Directorial Debut</span>
+                <span className="badge">Ranbir Kapoor</span>
               </div>
             </div>
             <div className="feature-body">
               <div className="flex items-center gap-2 mb-2 font-mono text-xs text-[var(--lime)] font-bold tracking-wider uppercase">
-                <span>★ TOP STORY · FARAH KHAN TALKS BOLLYWOOD INSECURITY, COOK DILIP &amp; HER UNPLANNED 3M YOUTUBE CHANNEL</span>
+                <span>★ TOP STORY · RANBIR KAPOOR CONFIRMS DIRECTORIAL DEBUT IN 2-3 YEARS &amp; CLARIFIES “LAST DECADE AS AN ACTOR”</span>
               </div>
               <h1 className="disp" style={{ color: "#fff" }}>
-                Farah Khan Says Bollywood Makes People Insecure, Reveals Why She Started Her YouTube Channel
+                Ranbir Kapoor Directorial Debut Plans: 2-3 Years Away
               </h1>
               <p>
-                Farah Khan opens up about insecurity in Bollywood and why she started her YouTube channel with cook Dilip. Read what she told Neha Dhupia and Angad Bedi.
+                Ranbir Kapoor plans to direct his first film in 2-3 years. Here’s what he really meant by “last decade as an actor” and the kind of film he wants to make.
               </p>
 
               {/* Editorial Highlights Box */}
               <div className="feature-highlights">
                 <div className="feature-highlights-header">
                   <span className="w-2 h-2 rounded-full bg-[var(--lime)] animate-pulse inline-block"></span>
-                  <span>Inside Farah Khan&apos;s Candid Revelations &amp; YouTube Phenomenon</span>
+                  <span>Inside Ranbir Kapoor&apos;s Directorial Vision &amp; Career Roadmap</span>
                 </div>
                 <ul className="feature-highlights-list">
                   <li className="feature-highlights-item">
                     <span className="feature-highlights-bullet">✦</span>
                     <span>
-                      <strong className="text-white font-medium">Unplanned Venture:</strong> Started her YouTube channel in April 2024 to curb restlessness after finishing a script, never imagining it would grow into a 3M-subscriber giant.
+                      <strong className="text-white font-medium">Directorial Debut in 2-3 Years:</strong> Started writing a script a few months back; aims to step behind the camera without starring in the film.
                     </span>
                   </li>
                   <li className="feature-highlights-item">
                     <span className="feature-highlights-bullet">✦</span>
                     <span>
-                      <strong className="text-white font-medium">Industry Comparison:</strong> Candidly admitted Bollywood makes people constantly insecure and revealed why she detached from film competition after turning 50.
+                      <strong className="text-white font-medium">What “Last Decade as Actor” Means:</strong> Clarified he isn&apos;t retiring from acting, but referring to the physical prime needed for physically demanding roles like Lord Rama.
                     </span>
                   </li>
                   <li className="feature-highlights-item">
                     <span className="feature-highlights-bullet">✦</span>
                     <span>
-                      <strong className="text-white font-medium">Cook Dilip&apos;s Stardom:</strong> Shared how Dilip became an overnight internet celebrity, starring in ads with Shah Rukh Khan and clearing old debts.
+                      <strong className="text-white font-medium">Warm Heartfelt Storytelling:</strong> Inspired by Frank Capra&apos;s <em>It&apos;s a Wonderful Life</em> and Rajkumar Hirani, aiming for a warm, family-oriented drama.
                     </span>
                   </li>
                 </ul>
@@ -1288,11 +1302,11 @@ export default function Home() {
 
               <div className="meta-row mt-auto pt-3 border-t border-white/[0.06] flex items-center justify-between">
                 <div className="flex items-center gap-3">
-                  <span>BOLLYWOOD &amp; DIGITAL</span>
+                  <span>BOLLYWOOD &amp; CINEMA</span>
                   <span className="dot-sep">◆</span>
                   <span>4 MIN READ</span>
                   <span className="dot-sep">◆</span>
-                  <span style={{ color: "var(--lime)" }}>CANDID INTERVIEW</span>
+                  <span style={{ color: "var(--lime)" }}>EXCLUSIVE INTERVIEW</span>
                 </div>
                 <span className="text-xs font-mono font-bold text-[var(--lime)] hidden sm:inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform">
                   Read Full Story →
@@ -1311,6 +1325,18 @@ export default function Home() {
               <span className="trend-rank">01</span>
               <div className="trend-text">
                 <Link
+                  href="/ranbir-kapoor-directorial-debut-last-decade-as-actor"
+                  style={{ color: "inherit" }}
+                >
+                  <h3>Ranbir Kapoor directorial debut plans: 2-3 years away, clarifies “last decade as an actor” in BBC interview</h3>
+                  <span>BOLLYWOOD &amp; CINEMA · 3.40M REACTIONS</span>
+                </Link>
+              </div>
+            </div>
+            <div className="trend-item">
+              <span className="trend-rank">02</span>
+              <div className="trend-text">
+                <Link
                   href="/farah-khan-bollywood-insecure-youtube-channel-dilip"
                   style={{ color: "inherit" }}
                 >
@@ -1320,7 +1346,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">02</span>
+              <span className="trend-rank">03</span>
               <div className="trend-text">
                 <Link
                   href="/rise-and-fall-2-winner-shehzad-poonawalla"
@@ -1332,7 +1358,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">03</span>
+              <span className="trend-rank">04</span>
               <div className="trend-text">
                 <Link
                   href="/maatrubhumi-trailer-release-date-salman-khan"
@@ -1344,7 +1370,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">04</span>
+              <span className="trend-rank">05</span>
               <div className="trend-text">
                 <Link
                   href="/sai-pallavi-sita-fight-scene-ramayana-controversy"
@@ -1356,7 +1382,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">05</span>
+              <span className="trend-rank">06</span>
               <div className="trend-text">
                 <Link
                   href="/dia-mirza-diwali-video-bmc-bombay-high-court"
@@ -1368,7 +1394,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">06</span>
+              <span className="trend-rank">07</span>
               <div className="trend-text">
                 <Link
                   href="/munna-bhai-3-farhad-samji-writing-script"
@@ -1380,7 +1406,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">07</span>
+              <span className="trend-rank">08</span>
               <div className="trend-text">
                 <Link
                   href="/karan-johar-ramayana-part-1-review-ranbir-kapoor-yash"
@@ -1392,7 +1418,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">08</span>
+              <span className="trend-rank">09</span>
               <div className="trend-text">
                 <Link
                   href="/shraddha-kapoor-reacts-eetha-trailer-criticism"
@@ -1404,7 +1430,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">09</span>
+              <span className="trend-rank">10</span>
               <div className="trend-text">
                 <Link
                   href="/the-royals-season-2-goes-on-floors"
@@ -1412,18 +1438,6 @@ export default function Home() {
                 >
                   <h3>The Royals Season 2 filming begins: Ishaan Khatter &amp; Zeenat Aman return to Netflix&apos;s Morpur palace drama</h3>
                   <span>WEB SERIES &amp; NETFLIX · 1.95M REACTIONS</span>
-                </Link>
-              </div>
-            </div>
-            <div className="trend-item">
-              <span className="trend-rank">10</span>
-              <div className="trend-text">
-                <Link
-                  href="/salman-khan-teri-sexy-beauty-maatrubhumi-song"
-                  style={{ color: "inherit" }}
-                >
-                  <h3>Salman Khan sings after 11 years: Drops “Teri Sexy Beauty” from Maatrubhumi in surprise 5 AM release</h3>
-                  <span>BOLLYWOOD &amp; MUSIC · 1.82M REACTIONS</span>
                 </Link>
               </div>
             </div>
