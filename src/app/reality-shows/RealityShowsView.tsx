@@ -23,6 +23,19 @@ interface RealityArticle {
 // All verified reality show articles in reverse chronological order
 const realityArticles: RealityArticle[] = [
   {
+    id: "rise-and-fall-2-winner-shehzad-poonawalla",
+    show: "Rise and Fall",
+    title: "Rise and Fall 2 Winner: Shehzad Poonawalla Lifts the Trophy, Priyanka Chahar Choudhary Misses Out",
+    excerpt:
+      "Shehzad Poonawalla is the Rise and Fall 2 winner! Priyanka Chahar Choudhary is first runner-up, Gautam Gulati is third. Read the finale details and prize money.",
+    badge: "⚡ Grand Finale Winner",
+    badgeType: "lime",
+    image: "/images/rise-and-fall-2-winner-shehzad-poonawalla.jpg",
+    href: "/rise-and-fall-2-winner-shehzad-poonawalla",
+    readTime: "4 MIN READ",
+    timeAgo: "JUST IN",
+  },
+  {
     id: "saif-ali-khan-kareena-kapoor-koffee-with-karan-stabbing-night",
     show: "Koffee With Karan 9",
     title: "Saif Ali Khan Calls Stabbing Night “Worst Night”: Kareena Kapoor’s Emotional Confession on Koffee With Karan",
@@ -249,46 +262,73 @@ export default function RealityShowsView() {
 
         {/* Lead Section: Latest Reality Published Article (Cover Story) + The Last 2 Blogs Uploaded Before It */}
         <section className="lead">
-          {/* Featured Cover Story: Saif Ali Khan Stabbing on KWK 9 */}
+          {/* Featured Cover Story: Shehzad Poonawalla Wins Rise and Fall 2 */}
           <Link
-            href="/saif-ali-khan-kareena-kapoor-koffee-with-karan-stabbing-night"
+            href="/rise-and-fall-2-winner-shehzad-poonawalla"
             className="feature-card group block"
-            aria-label="Read full cover story: Saif Ali Khan Calls Stabbing Night “Worst Night”: Kareena Kapoor’s Emotional Confession on Koffee With Karan"
+            aria-label="Read full cover story: Rise and Fall 2 Winner: Shehzad Poonawalla Lifts the Trophy, Priyanka Chahar Choudhary Misses Out"
           >
             <div className="feature-media relative overflow-hidden">
               <Image
-                src="/images/saif-ali-khan-kareena-kapoor-koffee-with-karan-stabbing-night.jpg"
-                alt="Saif Ali Khan Stabbing: Kareena Opens Up on KWK 9"
+                src="/images/rise-and-fall-2-winner-shehzad-poonawalla.jpg"
+                alt="Rise and Fall 2 Winner: Shehzad Poonawalla Lifts Trophy"
                 fill
                 priority
                 className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
                 sizes="(max-width: 980px) 100vw, 65vw"
               />
               <div className="noise" />
-              <span className="badge pink feature-tag z-10">
-                ⚡ Stabbing Night Tell-All
+              <span className="badge lime feature-tag z-10">
+                ⚡ Grand Finale Winner
               </span>
             </div>
             <div className="feature-body">
               <h2 className="disp text-white group-hover:text-[var(--lime)] transition-colors">
-                Saif Ali Khan Calls Stabbing Night “Worst Night”: Kareena Kapoor’s Emotional Confession on Koffee With Karan
+                Rise and Fall 2 Winner: Shehzad Poonawalla Lifts the Trophy, Priyanka Chahar Choudhary Misses Out
               </h2>
               <p>
-                Saif Ali Khan and Kareena Kapoor talk about the night he was stabbed on Koffee With Karan 9. Read what they said, what happened, and the latest on the case.
+                Shehzad Poonawalla wins Rise and Fall 2 after tie-breaking vote! Takes home ₹35 lakh and pledges entire prize to flood relief in Bihar and Assam.
               </p>
               <div className="meta-row mt-3">
-                <span className="text-[var(--magenta)] font-bold">KOFFEE WITH KARAN 9</span>
+                <span className="text-[var(--magenta)] font-bold">RISE AND FALL 2</span>
                 <span className="dot-sep">◆</span>
                 <span>4 MIN READ</span>
                 <span className="dot-sep">◆</span>
-                <span className="text-[var(--lime)] font-bold">EPISODE 4</span>
+                <span className="text-[var(--lime)] font-bold">GRAND FINALE</span>
               </div>
             </div>
           </Link>
 
-          {/* Right Stack: The last 2 blogs uploaded before the latest one */}
+          {/* Right Stack: The last 2-3 blogs uploaded before the latest one */}
           <div className="stack">
-            {/* Card 1: Mira Rajput & Shahid Kapoor Gossip */}
+            {/* Card 1: Saif Ali Khan Stabbing Night on KWK 9 */}
+            <Link
+              href="/saif-ali-khan-kareena-kapoor-koffee-with-karan-stabbing-night"
+              className="card m1 group block"
+            >
+              <div className="card-media relative overflow-hidden">
+                <Image
+                  src="/images/saif-ali-khan-kareena-kapoor-koffee-with-karan-stabbing-night.jpg"
+                  alt="Saif Ali Khan Stabbing: Kareena Opens Up on KWK 9"
+                  fill
+                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 980px) 100vw, 35vw"
+                />
+                <span className="badge pink z-10 relative">⚡ KWK 9 Tell-All</span>
+              </div>
+              <div className="card-body">
+                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
+                  Saif Ali Khan Calls Stabbing Night “Worst Night”: Kareena Kapoor’s Emotional Confession
+                </h3>
+                <div className="meta-row mt-2">
+                  <span className="text-[var(--magenta)] font-bold">KOFFEE WITH KARAN 9</span>
+                  <span className="dot-sep">◆</span>
+                  <span>4 MIN READ</span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Card 2: Mira Rajput & Shahid Kapoor Gossip */}
             <Link
               href="/mira-rajput-shahid-kapoor-gossip-kapil-sharma-show"
               className="card m1 group block"
@@ -315,7 +355,7 @@ export default function RealityShowsView() {
               </div>
             </Link>
 
-            {/* Card 2: Koffee With Karan 9 Kareena & Saif Teaser */}
+            {/* Card 3: Koffee With Karan 9 Kareena & Saif Teaser */}
             <Link
               href="/koffee-with-karan-9-kareena-kapoor-saif-ali-khan-teaser"
               className="card m1 group block"

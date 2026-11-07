@@ -185,6 +185,20 @@ export default function Home() {
 
   const editorialArticles: EditorialArticle[] = [
     {
+      id: "rise-and-fall-2-winner-shehzad-poonawalla",
+      anchorId: "rise-and-fall-2-winner-story",
+      href: "/rise-and-fall-2-winner-shehzad-poonawalla",
+      title: "Rise and Fall 2 Winner: Shehzad Poonawalla Lifts the Trophy, Priyanka Chahar Choudhary Misses Out",
+      excerpt: "Shehzad Poonawalla is the Rise and Fall 2 winner! Priyanka Chahar Choudhary is first runner-up, Gautam Gulati is third. Read the finale details and prize money.",
+      category: "Reality TV Updates",
+      secondaryCategory: "News",
+      displayCategory: "REALITY SHOWS & FINALE",
+      badge: "Winner Declared",
+      badgeType: "lime",
+      readTime: "4 MIN READ",
+      image: "/images/rise-and-fall-2-winner-shehzad-poonawalla.jpg",
+    },
+    {
       id: "maatrubhumi-trailer-release-date-salman-khan",
       anchorId: "maatrubhumi-trailer-cbfc-story",
       href: "/maatrubhumi-trailer-release-date-salman-khan",
@@ -1197,15 +1211,15 @@ export default function Home() {
         <section className="hero" id="featured">
           {/* 1. Main Featured Story (Commanding Top Story Presentation) */}
           <Link
-            href="/maatrubhumi-trailer-release-date-salman-khan"
+            href="/rise-and-fall-2-winner-shehzad-poonawalla"
             className="feature-card flex flex-col transition-all hover:border-[var(--lime)] focus-visible:ring-2 focus-visible:ring-[var(--lime)] group"
             style={{ textDecoration: "none", color: "inherit" }}
-            aria-label="Read full article: Maatrubhumi Trailer Gets CBFC Nod: Salman Khan Fans, Get Ready"
+            aria-label="Read full article: Rise and Fall 2 Winner: Shehzad Poonawalla Lifts the Trophy, Priyanka Chahar Choudhary Misses Out"
           >
             <div className="feature-media" style={{ overflow: "hidden", position: "relative" }}>
               <Image
-                src="/images/maatrubhumi-trailer-release-date-salman-khan.jpg"
-                alt="Maatrubhumi Trailer Cleared by CBFC — Salman Khan Release Date Update"
+                src="/images/rise-and-fall-2-winner-shehzad-poonawalla.jpg"
+                alt="Rise and Fall 2 Winner: Shehzad Poonawalla Lifts Trophy with Virender Sehwag, Priyanka Chahar Choudhary & Gautam Gulati"
                 fill
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 750px"
@@ -1214,45 +1228,45 @@ export default function Home() {
               />
               <div className="noise" style={{ pointerEvents: "none" }}></div>
               <div className="feature-tag flex items-center gap-2">
-                <span className="badge lime">⚡ CBFC Cleared</span>
-                <span className="badge pink">Trailer Update</span>
-                <span className="badge">Salman Khan</span>
+                <span className="badge lime">⚡ Grand Finale Winner</span>
+                <span className="badge pink">Rise and Fall Season 2</span>
+                <span className="badge">Shehzad Poonawalla</span>
               </div>
             </div>
             <div className="feature-body">
               <div className="flex items-center gap-2 mb-2 font-mono text-xs text-[var(--lime)] font-bold tracking-wider uppercase">
-                <span>★ TOP STORY · SALMAN KHAN&apos;S MAATRUBHUMI TRAILER CLEARED BY CBFC WITH U/A 16+ RATING</span>
+                <span>★ TOP STORY · SHEHZAD POONAWALLA WINS RISE AND FALL SEASON 2, LIFTS TROPHY AND ₹35 LAKH CASH PRIZE</span>
               </div>
               <h1 className="disp" style={{ color: "#fff" }}>
-                Maatrubhumi Trailer Gets CBFC Nod: Salman Khan Fans, Get Ready
+                Rise and Fall 2 Winner: Shehzad Poonawalla Lifts the Trophy, Priyanka Chahar Choudhary Misses Out
               </h1>
               <p>
-                Salman Khan’s Maatrubhumi trailer is cleared by CBFC and may release on Nov 6. Check runtime, certificate and release date buzz.
+                Shehzad Poonawalla is the Rise and Fall 2 winner! Priyanka Chahar Choudhary is first runner-up, Gautam Gulati is third. Read the finale details and prize money.
               </p>
 
               {/* Editorial Highlights Box */}
               <div className="feature-highlights">
                 <div className="feature-highlights-header">
                   <span className="w-2 h-2 rounded-full bg-[var(--lime)] animate-pulse inline-block"></span>
-                  <span>Inside The CBFC Censor Report &amp; Theatrical Release Windows</span>
+                  <span>Inside The Grand Finale Showdown &amp; Philanthropic Victory</span>
                 </div>
                 <ul className="feature-highlights-list">
                   <li className="feature-highlights-item">
                     <span className="feature-highlights-bullet">✦</span>
                     <span>
-                      <strong className="text-white font-medium">U/A 16+ Certification:</strong> The trailer was officially cleared on Nov 4 with an expansive runtime of 4 minutes and 43 seconds, placing it among Bollywood’s longest promos.
+                      <strong className="text-white font-medium">Tie-Breaker Triumph:</strong> Following a deadlocked Top 3 jury vote, eliminated contestants cast the deciding ballots to crown Shehzad over Priyanka and Gautam.
                     </span>
                   </li>
                   <li className="feature-highlights-item">
                     <span className="feature-highlights-bullet">✦</span>
                     <span>
-                      <strong className="text-white font-medium">Expected Digital Drop:</strong> Trade buzz suggests the video asset will go live on Friday, November 6 across Salman Khan Films and Jio Studios handles.
+                      <strong className="text-white font-medium">Noble Prize Pledge:</strong> Shehzad took home ₹35 lakh and immediately pledged 100% of the purse toward flood relief efforts in Bihar and Assam.
                     </span>
                   </li>
                   <li className="feature-highlights-item">
                     <span className="feature-highlights-bullet">✦</span>
                     <span>
-                      <strong className="text-white font-medium">Release Date Target:</strong> While the trailer is cleared, the pending feature film certificate moves the targeted theatrical release window to November 20 or December 11.
+                      <strong className="text-white font-medium">Star-Studded Finale:</strong> Hosted by Virender Sehwag on MX Player and Prime Video, featuring Harsh Gujral and ex-contestant reunions.
                     </span>
                   </li>
                 </ul>
@@ -1260,11 +1274,11 @@ export default function Home() {
 
               <div className="meta-row mt-auto pt-3 border-t border-white/[0.06] flex items-center justify-between">
                 <div className="flex items-center gap-3">
-                  <span>BOLLYWOOD &amp; MOVIES</span>
+                  <span>REALITY SHOWS &amp; FINALE</span>
                   <span className="dot-sep">◆</span>
                   <span>4 MIN READ</span>
                   <span className="dot-sep">◆</span>
-                  <span style={{ color: "var(--lime)" }}>TRAILER CLEARED</span>
+                  <span style={{ color: "var(--lime)" }}>TROPHY LIFTED</span>
                 </div>
                 <span className="text-xs font-mono font-bold text-[var(--lime)] hidden sm:inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform">
                   Read Full Story →
@@ -1283,6 +1297,18 @@ export default function Home() {
               <span className="trend-rank">01</span>
               <div className="trend-text">
                 <Link
+                  href="/rise-and-fall-2-winner-shehzad-poonawalla"
+                  style={{ color: "inherit" }}
+                >
+                  <h3>Rise and Fall 2 winner: Shehzad Poonawalla lifts trophy, Priyanka Chahar Choudhary misses out in tense finale</h3>
+                  <span>REALITY SHOWS &amp; FINALE · 3.10M REACTIONS</span>
+                </Link>
+              </div>
+            </div>
+            <div className="trend-item">
+              <span className="trend-rank">02</span>
+              <div className="trend-text">
+                <Link
                   href="/maatrubhumi-trailer-release-date-salman-khan"
                   style={{ color: "inherit" }}
                 >
@@ -1292,7 +1318,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">02</span>
+              <span className="trend-rank">03</span>
               <div className="trend-text">
                 <Link
                   href="/sai-pallavi-sita-fight-scene-ramayana-controversy"
@@ -1304,7 +1330,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">03</span>
+              <span className="trend-rank">04</span>
               <div className="trend-text">
                 <Link
                   href="/dia-mirza-diwali-video-bmc-bombay-high-court"
@@ -1316,7 +1342,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">04</span>
+              <span className="trend-rank">05</span>
               <div className="trend-text">
                 <Link
                   href="/munna-bhai-3-farhad-samji-writing-script"
@@ -1328,7 +1354,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">05</span>
+              <span className="trend-rank">06</span>
               <div className="trend-text">
                 <Link
                   href="/karan-johar-ramayana-part-1-review-ranbir-kapoor-yash"
@@ -1340,7 +1366,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">06</span>
+              <span className="trend-rank">07</span>
               <div className="trend-text">
                 <Link
                   href="/shraddha-kapoor-reacts-eetha-trailer-criticism"
@@ -1352,7 +1378,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">07</span>
+              <span className="trend-rank">08</span>
               <div className="trend-text">
                 <Link
                   href="/the-royals-season-2-goes-on-floors"
@@ -1364,7 +1390,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">08</span>
+              <span className="trend-rank">09</span>
               <div className="trend-text">
                 <Link
                   href="/salman-khan-teri-sexy-beauty-maatrubhumi-song"
@@ -1376,7 +1402,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">09</span>
+              <span className="trend-rank">10</span>
               <div className="trend-text">
                 <Link
                   href="/saif-ali-khan-kareena-kapoor-koffee-with-karan-stabbing-night"
@@ -1384,18 +1410,6 @@ export default function Home() {
                 >
                   <h3>Saif Ali Khan stabbing night: Kareena Kapoor&apos;s emotional confession on Koffee With Karan 9</h3>
                   <span>REALITY TV &amp; BOLLYWOOD · 1.75M REACTIONS</span>
-                </Link>
-              </div>
-            </div>
-            <div className="trend-item">
-              <span className="trend-rank">10</span>
-              <div className="trend-text">
-                <Link
-                  href="/ramayana-part-2-postponed-2028-namit-malhotra-trilogy"
-                  style={{ color: "inherit" }}
-                >
-                  <h3>Ramayana Part 2 postponed to 2028: Producer Namit Malhotra confirms delay and hints at trilogy</h3>
-                  <span>BOLLYWOOD &amp; CINEMA · 1.62M REACTIONS</span>
                 </Link>
               </div>
             </div>

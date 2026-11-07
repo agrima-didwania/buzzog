@@ -11,7 +11,7 @@ interface StaticPageConfig {
 }
 
 const STATIC_PAGES: StaticPageConfig[] = [
-  { path: "/reality-shows", priority: 0.95, changeFrequency: "daily", defaultDate: "2026-11-04T07:45:00Z" },
+  { path: "/reality-shows", priority: 0.95, changeFrequency: "daily", defaultDate: "2026-11-07T08:00:00Z" },
   { path: "/bollywood", priority: 0.95, changeFrequency: "daily", defaultDate: "2026-11-05T10:20:00Z" },
   { path: "/movies", priority: 0.95, changeFrequency: "daily", defaultDate: "2026-11-05T10:20:00Z" },
   { path: "/web-series", priority: 0.95, changeFrequency: "daily", defaultDate: "2026-11-04T09:30:00Z" },

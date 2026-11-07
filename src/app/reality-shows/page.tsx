@@ -6,6 +6,16 @@ export const metadata: Metadata = {
   description:
     "Eliminations, fights, weekly ration milestones, hot seat stories and dome drama — every Bigg Boss 20, Koffee With Karan, KBC 18 and Splitsvilla moment.",
   keywords: [
+    "Rise and Fall 2 winner",
+    "Shehzad Poonawalla Rise and Fall 2",
+    "Rise and Fall season 2 winner",
+    "Rise and Fall 2 grand finale",
+    "Rise and Fall 2 prize money",
+    "Rise and Fall 2 final result",
+    "Rise and Fall 2 top 6",
+    "Priyanka Chahar Choudhary Rise and Fall 2",
+    "Gautam Gulati Rise and Fall 2",
+    "Virender Sehwag Rise and Fall 2",
     "Saif Ali Khan stabbing",
     "Kareena Kapoor Koffee With Karan",
     "Koffee With Karan season 9",
@@ -99,10 +109,10 @@ export const metadata: Metadata = {
     siteName: "Buzz Originals",
     images: [
       {
-        url: "/images/saif-ali-khan-kareena-kapoor-koffee-with-karan-stabbing-night.jpg",
-        width: 1024,
-        height: 576,
-        alt: "Saif Ali Khan Stabbing: Kareena Opens Up on KWK 9 — Buzz Originals Reality Shows",
+        url: "/images/rise-and-fall-2-winner-shehzad-poonawalla.jpg",
+        width: 1200,
+        height: 675,
+        alt: "Rise and Fall 2 Winner: Shehzad Poonawalla Lifts Trophy — Buzz Originals Reality Shows",
       },
     ],
     type: "website",
@@ -112,7 +122,7 @@ export const metadata: Metadata = {
     title: "Reality Shows — Buzz Originals",
     description:
       "Raw, unfiltered entertainment coverage of Koffee With Karan, The Great Indian Kapil Show, Bigg Boss 20, KBC 18, Splitsvilla & Rise and Fall.",
-    images: ["/images/saif-ali-khan-kareena-kapoor-koffee-with-karan-stabbing-night.jpg"],
+    images: ["/images/rise-and-fall-2-winner-shehzad-poonawalla.jpg"],
   },
 };
 
@@ -139,30 +149,36 @@ export default function RealityShowsPage() {
         {
           "@type": "ListItem",
           position: 1,
+          name: "Rise and Fall 2 Winner: Shehzad Poonawalla Wins ₹35 Lakh",
+          url: "https://www.buzzoriginals.com/rise-and-fall-2-winner-shehzad-poonawalla",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
           name: "Saif Ali Khan Stabbing: Kareena Opens Up on KWK 9",
           url: "https://www.buzzoriginals.com/saif-ali-khan-kareena-kapoor-koffee-with-karan-stabbing-night",
         },
         {
           "@type": "ListItem",
-          position: 2,
+          position: 3,
           name: "Mira Rajput Says Shahid Kapoor Loves Gossip",
           url: "https://www.buzzoriginals.com/mira-rajput-shahid-kapoor-gossip-kapil-sharma-show",
         },
         {
           "@type": "ListItem",
-          position: 3,
+          position: 4,
           name: "Koffee With Karan 9: Kareena Kapoor Calls Herself No. 1, Saif Ali Khan Says He Is “Miscast”",
           url: "https://www.buzzoriginals.com/koffee-with-karan-9-kareena-kapoor-saif-ali-khan-teaser",
         },
         {
           "@type": "ListItem",
-          position: 2,
+          position: 5,
           name: "Bigg Boss 20: Salman Khan Slams ScoutOP for Not Standing Up for Love Gill",
           url: "https://www.buzzoriginals.com/bigg-boss-20-salman-khan-slams-scoutop-love-gill",
         },
         {
           "@type": "ListItem",
-          position: 3,
+          position: 6,
           name: "Bigg Boss 20: Aasif Khan Evicted, Scout and Yung DSA Cry as He Leaves",
           url: "https://www.buzzoriginals.com/bigg-boss-20-aasif-khan-evicted",
         },
