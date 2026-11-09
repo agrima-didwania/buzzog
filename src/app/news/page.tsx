@@ -6,6 +6,15 @@ export const metadata: Metadata = {
   description:
     "News coverage from Buzz Originals — raw, unfiltered, built for the group chat. Everything breaking across reality TV, Bollywood, movies and OTT — newest first, updated hourly.",
   keywords: [
+    "Farah Khan fire video",
+    "Farah Khan house fire",
+    "Farah Khan fake news",
+    "Farah Khan Instagram story",
+    "Farah Khan clickbait",
+    "Farah Khan Mumbai home",
+    "Did Farah Khan’s house catch fire",
+    "Where does Farah Khan live",
+    "Farah Khan fire video fact check",
     "Dia Mirza Diwali video",
     "Dia Mirza video row",
     "BMC Dia Mirza video",
@@ -187,10 +196,10 @@ export const metadata: Metadata = {
     siteName: "Buzz Originals",
     images: [
       {
-        url: "/images/dia-mirza-diwali-video-bmc-bombay-high-court.jpg",
+        url: "/images/farah-khan-fake-fire-video-clickbait.jpg",
         width: 1200,
         height: 675,
-        alt: "Dia Mirza Diwali Video Row: Bombay High Court Orders BMC to Re-Upload Awareness Clip — Buzz Originals News",
+        alt: "Farah Khan Reacts to Fake Fire Videos: Clickbait Can’t Be Everything — Buzz Originals News",
       },
     ],
     type: "website",
@@ -200,7 +209,7 @@ export const metadata: Metadata = {
     title: "News — Buzz Originals",
     description:
       "Raw, unfiltered entertainment news across reality TV, Bollywood, movies and OTT.",
-    images: ["/images/dia-mirza-diwali-video-bmc-bombay-high-court.jpg"],
+    images: ["/images/farah-khan-fake-fire-video-clickbait.jpg"],
   },
 };
 

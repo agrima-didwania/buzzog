@@ -20,6 +20,16 @@ interface BollywoodArticle {
 
 const bollywoodArticles: BollywoodArticle[] = [
   {
+    id: "farah-khan-fake-fire-video-clickbait",
+    category: "Fact Check & News",
+    title: "Farah Khan Reacts to Fake Fire Videos: “Clickbait Can’t Be Everything”",
+    badge: "⚡ Fact Check",
+    badgeType: "lime",
+    image: "/images/farah-khan-fake-fire-video-clickbait.jpg",
+    href: "/farah-khan-fake-fire-video-clickbait",
+    readOrTime: "3 MIN READ",
+  },
+  {
     id: "ranbir-kapoor-directorial-debut-last-decade-as-actor",
     category: "Directorial Debut",
     title: "Ranbir Kapoor Directorial Debut Plans: 2-3 Years Away and What He Meant by “Last Decade as an Actor”",
@@ -636,16 +646,16 @@ export default function BollywoodView() {
 
         {/* Lead Section: Latest Bollywood Published Article (Cover Story) + The Last 2 Blogs Uploaded Before It */}
         <section className="lead">
-          {/* Cover Story: Latest Published Bollywood Story (Ranbir Kapoor Directorial Debut Plans) */}
+          {/* Cover Story: Latest Published Bollywood Story (Farah Khan Fake House Fire Video Fact Check) */}
           <Link
-            href="/ranbir-kapoor-directorial-debut-last-decade-as-actor"
+            href="/farah-khan-fake-fire-video-clickbait"
             className="feature-card group block"
-            aria-label="Read full cover story: Ranbir Kapoor Directorial Debut Plans: 2-3 Years Away and What He Meant by Last Decade as an Actor"
+            aria-label="Read full cover story: Farah Khan Reacts to Fake House Fire Videos"
           >
             <div className="feature-media relative overflow-hidden">
               <Image
-                src="/images/ranbir-kapoor-directorial-debut-last-decade-as-actor.jpg"
-                alt="Ranbir Kapoor Directorial Debut Plans: 2-3 Years Away and What He Meant by Last Decade as an Actor"
+                src="/images/farah-khan-fake-fire-video-clickbait.jpg"
+                alt="Farah Khan Reacts to Fake Fire Videos: Clickbait Can’t Be Everything"
                 fill
                 priority
                 className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
@@ -653,29 +663,56 @@ export default function BollywoodView() {
               />
               <div className="noise" />
               <span className="badge lime feature-tag z-10">
-                ⚡ Exclusive Interview
+                ⚡ Fact Check Alert
               </span>
             </div>
             <div className="feature-body">
               <h2 className="disp text-white group-hover:text-[var(--lime)] transition-colors">
-                Ranbir Kapoor Directorial Debut Plans: 2-3 Years Away
+                Farah Khan Reacts to Fake House Fire Videos
               </h2>
               <p>
-                Ranbir Kapoor plans to direct his first film in 2-3 years. Here’s what he really meant by “last decade as an actor” and the kind of film he wants to make.
+                Farah Khan has reacted to viral videos that claimed her Mumbai home caught fire. She says the building in the video is under construction. Here is the full story.
               </p>
               <div className="meta-row mt-3">
-                <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; CINEMA</span>
+                <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; NEWS</span>
                 <span className="dot-sep">◆</span>
-                <span>4 MIN READ</span>
+                <span>3 MIN READ</span>
                 <span className="dot-sep">◆</span>
-                <span className="text-[var(--lime)] font-bold">NOV 07</span>
+                <span className="text-[var(--lime)] font-bold">NOV 09</span>
               </div>
             </div>
           </Link>
 
           {/* Right Stack: The last 2-3 blogs uploaded before the latest one */}
           <div className="stack">
-            {/* Card 1: Farah Khan on Bollywood Insecurity & Her YouTube Channel */}
+            {/* Card 1: Ranbir Kapoor Directorial Debut Plans */}
+            <Link
+              href="/ranbir-kapoor-directorial-debut-last-decade-as-actor"
+              className="card m1 group block"
+            >
+              <div className="card-media relative overflow-hidden">
+                <Image
+                  src="/images/ranbir-kapoor-directorial-debut-last-decade-as-actor.jpg"
+                  alt="Ranbir Kapoor Directorial Debut Plans: 2-3 Years Away and What He Meant by Last Decade as an Actor"
+                  fill
+                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 980px) 100vw, 35vw"
+                />
+                <span className="badge lime z-10 relative">⚡ Exclusive Interview</span>
+              </div>
+              <div className="card-body">
+                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
+                  Ranbir Kapoor Directorial Debut Plans: 2-3 Years Away
+                </h3>
+                <div className="meta-row mt-2">
+                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; CINEMA</span>
+                  <span className="dot-sep">◆</span>
+                  <span>4 MIN READ</span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Card 2: Farah Khan on Bollywood Insecurity & Her YouTube Channel */}
             <Link
               href="/farah-khan-bollywood-insecure-youtube-channel-dilip"
               className="card m1 group block"
@@ -702,7 +739,7 @@ export default function BollywoodView() {
               </div>
             </Link>
 
-            {/* Card 2: Maatrubhumi Trailer Cleared by CBFC */}
+            {/* Card 3: Maatrubhumi Trailer Cleared by CBFC */}
             <Link
               href="/maatrubhumi-trailer-release-date-salman-khan"
               className="card m1 group block"
@@ -720,33 +757,6 @@ export default function BollywoodView() {
               <div className="card-body">
                 <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
                   Maatrubhumi Trailer Gets CBFC Nod: Salman Khan Fans, Get Ready
-                </h3>
-                <div className="meta-row mt-2">
-                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; MOVIES</span>
-                  <span className="dot-sep">◆</span>
-                  <span>4 MIN READ</span>
-                </div>
-              </div>
-            </Link>
-
-            {/* Card 3: Sai Pallavi Sita Fight Scene */}
-            <Link
-              href="/sai-pallavi-sita-fight-scene-ramayana-controversy"
-              className="card m1 group block"
-            >
-              <div className="card-media relative overflow-hidden">
-                <Image
-                  src="/images/sai-pallavi-sita-fight-scene-ramayana-controversy.jpg"
-                  alt="Sai Pallavi Sita Fight Scene in Ramayana Sparks Debate"
-                  fill
-                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
-                  sizes="(max-width: 980px) 100vw, 35vw"
-                />
-                <span className="badge lime z-10 relative">⚡ Viral Debate</span>
-              </div>
-              <div className="card-body">
-                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
-                  Sai Pallavi’s Sita Fight Scene in Ramayana Divides the Internet
                 </h3>
                 <div className="meta-row mt-2">
                   <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; MOVIES</span>

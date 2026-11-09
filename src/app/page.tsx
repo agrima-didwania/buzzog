@@ -185,6 +185,20 @@ export default function Home() {
 
   const editorialArticles: EditorialArticle[] = [
     {
+      id: "farah-khan-fake-fire-video-clickbait",
+      anchorId: "farah-khan-fire-video-story",
+      href: "/farah-khan-fake-fire-video-clickbait",
+      title: "Farah Khan Reacts to Fake House Fire Videos: “Clickbait Can’t Be Everything”",
+      excerpt: "Farah Khan has reacted to viral videos that claimed her Mumbai home caught fire. She says the building in the video is under construction. Here is the full story.",
+      category: "Bollywood",
+      secondaryCategory: "News",
+      displayCategory: "BOLLYWOOD & FACT CHECK",
+      badge: "Fact Check",
+      badgeType: "lime",
+      readTime: "3 MIN READ",
+      image: "/images/farah-khan-fake-fire-video-clickbait.jpg",
+    },
+    {
       id: "ranbir-kapoor-directorial-debut-last-decade-as-actor",
       anchorId: "ranbir-directorial-debut-story",
       href: "/ranbir-kapoor-directorial-debut-last-decade-as-actor",
@@ -1239,15 +1253,15 @@ export default function Home() {
         <section className="hero" id="featured">
           {/* 1. Main Featured Story (Commanding Top Story Presentation) */}
           <Link
-            href="/ranbir-kapoor-directorial-debut-last-decade-as-actor"
+            href="/farah-khan-fake-fire-video-clickbait"
             className="feature-card flex flex-col transition-all hover:border-[var(--lime)] focus-visible:ring-2 focus-visible:ring-[var(--lime)] group"
             style={{ textDecoration: "none", color: "inherit" }}
-            aria-label="Read full article: Ranbir Kapoor Directorial Debut Plans: 2-3 Years Away and What He Meant by Last Decade as an Actor"
+            aria-label="Read full article: Farah Khan Reacts to Fake House Fire Videos: Clickbait Can’t Be Everything"
           >
             <div className="feature-media" style={{ overflow: "hidden", position: "relative" }}>
               <Image
-                src="/images/ranbir-kapoor-directorial-debut-last-decade-as-actor.jpg"
-                alt="Ranbir Kapoor Directorial Debut Plans: 2-3 Years Away and What He Meant by Last Decade as an Actor"
+                src="/images/farah-khan-fake-fire-video-clickbait.jpg"
+                alt="Farah Khan Reacts to Fake Fire Videos: Clickbait Can’t Be Everything"
                 fill
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 750px"
@@ -1256,45 +1270,45 @@ export default function Home() {
               />
               <div className="noise" style={{ pointerEvents: "none" }}></div>
               <div className="feature-tag flex items-center gap-2">
-                <span className="badge lime">⚡ Career Milestone</span>
-                <span className="badge pink">Directorial Debut</span>
-                <span className="badge">Ranbir Kapoor</span>
+                <span className="badge lime">⚡ Fact Check Alert</span>
+                <span className="badge pink">Fake News Debunked</span>
+                <span className="badge">Farah Khan</span>
               </div>
             </div>
             <div className="feature-body">
               <div className="flex items-center gap-2 mb-2 font-mono text-xs text-[var(--lime)] font-bold tracking-wider uppercase">
-                <span>★ TOP STORY · RANBIR KAPOOR CONFIRMS DIRECTORIAL DEBUT IN 2-3 YEARS &amp; CLARIFIES “LAST DECADE AS AN ACTOR”</span>
+                <span>★ TOP STORY · FARAH KHAN SLAMS SENSATIONAL CLICKBAIT AFTER VIRAL FIRE VIDEOS FALSELY CLAIM HER MUMBAI HOME WAS ABLAZE</span>
               </div>
               <h1 className="disp" style={{ color: "#fff" }}>
-                Ranbir Kapoor Directorial Debut Plans: 2-3 Years Away
+                Farah Khan Reacts to Fake Fire Videos: “Clickbait Can’t Be Everything”
               </h1>
               <p>
-                Ranbir Kapoor plans to direct his first film in 2-3 years. Here’s what he really meant by “last decade as an actor” and the kind of film he wants to make.
+                Farah Khan has reacted to viral videos that claimed her Mumbai home caught fire. She says the building in the video is under construction. Here is the full story.
               </p>
 
               {/* Editorial Highlights Box */}
               <div className="feature-highlights">
                 <div className="feature-highlights-header">
                   <span className="w-2 h-2 rounded-full bg-[var(--lime)] animate-pulse inline-block"></span>
-                  <span>Inside Ranbir Kapoor&apos;s Directorial Vision &amp; Career Roadmap</span>
+                  <span>Inside Farah Khan&apos;s Fiery Rebuke &amp; Fact Check</span>
                 </div>
                 <ul className="feature-highlights-list">
                   <li className="feature-highlights-item">
                     <span className="feature-highlights-bullet">✦</span>
                     <span>
-                      <strong className="text-white font-medium">Directorial Debut in 2-3 Years:</strong> Started writing a script a few months back; aims to step behind the camera without starring in the film.
+                      <strong className="text-white font-medium">Viral Misinformation:</strong> Misleading social media pages circulated clips of a burning high-rise falsely alleging it was Farah Khan&apos;s apartment.
                     </span>
                   </li>
                   <li className="feature-highlights-item">
                     <span className="feature-highlights-bullet">✦</span>
                     <span>
-                      <strong className="text-white font-medium">What “Last Decade as Actor” Means:</strong> Clarified he isn&apos;t retiring from acting, but referring to the physical prime needed for physically demanding roles like Lord Rama.
+                      <strong className="text-white font-medium">Stern Instagram Rebuke:</strong> Farah publicly called out portals: <em>“Online portals plss BE RESPONSIBLE!! This is an under construction building!! Clickbait can&apos;t be everything!”</em>
                     </span>
                   </li>
                   <li className="feature-highlights-item">
                     <span className="feature-highlights-bullet">✦</span>
                     <span>
-                      <strong className="text-white font-medium">Warm Heartfelt Storytelling:</strong> Inspired by Frank Capra&apos;s <em>It&apos;s a Wonderful Life</em> and Rajkumar Hirani, aiming for a warm, family-oriented drama.
+                      <strong className="text-white font-medium">The Reality:</strong> Minor fire confined to external scaffolding and safety netting at an unoccupied construction site; Farah&apos;s Lokhandwala residence was completely unaffected.
                     </span>
                   </li>
                 </ul>
@@ -1302,11 +1316,11 @@ export default function Home() {
 
               <div className="meta-row mt-auto pt-3 border-t border-white/[0.06] flex items-center justify-between">
                 <div className="flex items-center gap-3">
-                  <span>BOLLYWOOD &amp; CINEMA</span>
+                  <span>BOLLYWOOD &amp; NEWS</span>
                   <span className="dot-sep">◆</span>
-                  <span>4 MIN READ</span>
+                  <span>3 MIN READ</span>
                   <span className="dot-sep">◆</span>
-                  <span style={{ color: "var(--lime)" }}>EXCLUSIVE INTERVIEW</span>
+                  <span style={{ color: "var(--lime)" }}>FACT CHECK VERIFIED</span>
                 </div>
                 <span className="text-xs font-mono font-bold text-[var(--lime)] hidden sm:inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform">
                   Read Full Story →
@@ -1325,6 +1339,18 @@ export default function Home() {
               <span className="trend-rank">01</span>
               <div className="trend-text">
                 <Link
+                  href="/farah-khan-fake-fire-video-clickbait"
+                  style={{ color: "inherit" }}
+                >
+                  <h3>Farah Khan reacts to fake house fire videos: Slams clickbait portals, clarifies building was under construction</h3>
+                  <span>BOLLYWOOD &amp; NEWS · 3.55M REACTIONS</span>
+                </Link>
+              </div>
+            </div>
+            <div className="trend-item">
+              <span className="trend-rank">02</span>
+              <div className="trend-text">
+                <Link
                   href="/ranbir-kapoor-directorial-debut-last-decade-as-actor"
                   style={{ color: "inherit" }}
                 >
@@ -1334,7 +1360,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">02</span>
+              <span className="trend-rank">03</span>
               <div className="trend-text">
                 <Link
                   href="/farah-khan-bollywood-insecure-youtube-channel-dilip"
@@ -1346,7 +1372,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">03</span>
+              <span className="trend-rank">04</span>
               <div className="trend-text">
                 <Link
                   href="/rise-and-fall-2-winner-shehzad-poonawalla"
@@ -1358,7 +1384,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">04</span>
+              <span className="trend-rank">05</span>
               <div className="trend-text">
                 <Link
                   href="/maatrubhumi-trailer-release-date-salman-khan"
@@ -1370,7 +1396,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">05</span>
+              <span className="trend-rank">06</span>
               <div className="trend-text">
                 <Link
                   href="/sai-pallavi-sita-fight-scene-ramayana-controversy"
@@ -1382,7 +1408,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">06</span>
+              <span className="trend-rank">07</span>
               <div className="trend-text">
                 <Link
                   href="/dia-mirza-diwali-video-bmc-bombay-high-court"
@@ -1394,7 +1420,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">07</span>
+              <span className="trend-rank">08</span>
               <div className="trend-text">
                 <Link
                   href="/munna-bhai-3-farhad-samji-writing-script"
@@ -1406,7 +1432,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">08</span>
+              <span className="trend-rank">09</span>
               <div className="trend-text">
                 <Link
                   href="/karan-johar-ramayana-part-1-review-ranbir-kapoor-yash"
@@ -1418,7 +1444,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">09</span>
+              <span className="trend-rank">10</span>
               <div className="trend-text">
                 <Link
                   href="/shraddha-kapoor-reacts-eetha-trailer-criticism"
@@ -1426,18 +1452,6 @@ export default function Home() {
                 >
                   <h3>Shraddha Kapoor reacts to Eetha trailer trolling: “I can’t even handle my WhatsApp, I only want to work”</h3>
                   <span>BOLLYWOOD &amp; NEWS · 2.05M REACTIONS</span>
-                </Link>
-              </div>
-            </div>
-            <div className="trend-item">
-              <span className="trend-rank">10</span>
-              <div className="trend-text">
-                <Link
-                  href="/the-royals-season-2-goes-on-floors"
-                  style={{ color: "inherit" }}
-                >
-                  <h3>The Royals Season 2 filming begins: Ishaan Khatter &amp; Zeenat Aman return to Netflix&apos;s Morpur palace drama</h3>
-                  <span>WEB SERIES &amp; NETFLIX · 1.95M REACTIONS</span>
                 </Link>
               </div>
             </div>

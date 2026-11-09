@@ -6,6 +6,16 @@ export const metadata: Metadata = {
   description:
     "Bollywood coverage from Buzz Originals — raw, unfiltered, built for the group chat. Red carpets, rumours, airport looks and exclusives.",
   keywords: [
+    "Farah Khan fire video",
+    "Farah Khan house fire",
+    "Farah Khan fake news",
+    "Farah Khan Instagram story",
+    "Farah Khan clickbait",
+    "Farah Khan Mumbai home",
+    "Did Farah Khan’s house catch fire",
+    "Where does Farah Khan live",
+    "Farah Khan fire video fact check",
+    "Farah Khan Oberoi Sky Heights",
     "Ranbir Kapoor directorial debut",
     "Ranbir Kapoor last decade as an actor",
     "Ranbir Kapoor director",
@@ -481,10 +491,10 @@ export const metadata: Metadata = {
     siteName: "Buzz Originals",
     images: [
       {
-        url: "/images/ranbir-kapoor-directorial-debut-last-decade-as-actor.jpg",
+        url: "/images/farah-khan-fake-fire-video-clickbait.jpg",
         width: 1200,
         height: 675,
-        alt: "Ranbir Kapoor Directorial Debut Plans: 2-3 Years Away — Buzz Originals",
+        alt: "Farah Khan Reacts to Fake House Fire Videos — Buzz Originals",
       },
     ],
     type: "website",
@@ -494,7 +504,7 @@ export const metadata: Metadata = {
     title: "Bollywood — Buzz Originals",
     description:
       "Raw, unfiltered Bollywood coverage of red carpets, gossip, airport sightings & exclusives.",
-    images: ["/images/ranbir-kapoor-directorial-debut-last-decade-as-actor.jpg"],
+    images: ["/images/farah-khan-fake-fire-video-clickbait.jpg"],
   },
 };
 
@@ -521,6 +531,12 @@ export default function BollywoodPage() {
         {
           "@type": "ListItem",
           position: 1,
+          name: "Farah Khan Reacts to Fake House Fire Videos",
+          url: "https://www.buzzoriginals.com/farah-khan-fake-fire-video-clickbait",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
           name: "Ranbir Kapoor Directorial Debut Plans: 2-3 Years Away",
           url: "https://www.buzzoriginals.com/ranbir-kapoor-directorial-debut-last-decade-as-actor",
         },

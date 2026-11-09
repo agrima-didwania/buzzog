@@ -22,6 +22,18 @@ interface NewsArticle {
 // Only verified breaking entertainment news stories (fatwas, obituaries, police complaints, eviction rows, box-office shifts)
 const newsArticles: NewsArticle[] = [
   {
+    id: "farah-khan-fake-fire-video-clickbait",
+    category: "Bollywood",
+    title: "Farah Khan Reacts to Fake House Fire Videos: “Clickbait Can’t Be Everything”",
+    badge: "⚡ Fact Check",
+    badgeType: "lime",
+    image: "/images/farah-khan-fake-fire-video-clickbait.jpg",
+    href: "/farah-khan-fake-fire-video-clickbait",
+    readOrTime: "3 MIN READ",
+    excerpt:
+      "Farah Khan has reacted to viral videos that claimed her Mumbai home caught fire. She says the building in the video is under construction. Here is the full story.",
+  },
+  {
     id: "dia-mirza-diwali-video-bmc-bombay-high-court",
     category: "Bollywood",
     title: "Dia Mirza Diwali Video Row: Court Says Put It Back, BMC Still Hasn’t",
