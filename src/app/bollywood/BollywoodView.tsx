@@ -20,6 +20,16 @@ interface BollywoodArticle {
 
 const bollywoodArticles: BollywoodArticle[] = [
   {
+    id: "diljit-dosanjh-aura-india-tour-chandigarh-kolkata-dates",
+    category: "Tour & Concerts",
+    title: "Diljit Dosanjh Adds Chandigarh and Kolkata Shows to Aura India Tour 2026",
+    badge: "⚡ Tour Exclusive",
+    badgeType: "lime",
+    image: "/images/diljit-dosanjh-aura-india-tour-chandigarh-kolkata-dates.jpg",
+    href: "/diljit-dosanjh-aura-india-tour-chandigarh-kolkata-dates",
+    readOrTime: "4 MIN READ",
+  },
+  {
     id: "karan-johar-kareena-kapoor-diwali-pout-pic",
     category: "Festive & Style",
     title: "Karan Johar Calls Kareena Kapoor the 'Pout Queen' in a Fun Diwali Photo",
@@ -656,16 +666,16 @@ export default function BollywoodView() {
 
         {/* Lead Section: Latest Bollywood Published Article (Cover Story) + The Last 2 Blogs Uploaded Before It */}
         <section className="lead">
-          {/* Cover Story: Latest Published Bollywood Story (Karan Johar Calls Kareena Kapoor Pout Queen in Diwali Pic) */}
+          {/* Cover Story: Latest Published Bollywood Story (Diljit Dosanjh Adds Chandigarh and Kolkata Shows) */}
           <Link
-            href="/karan-johar-kareena-kapoor-diwali-pout-pic"
+            href="/diljit-dosanjh-aura-india-tour-chandigarh-kolkata-dates"
             className="feature-card group block"
-            aria-label="Read full cover story: Karan Johar Calls Kareena Kapoor the 'Pout Queen' in a Fun Diwali Photo"
+            aria-label="Read full cover story: Diljit Dosanjh Adds Chandigarh and Kolkata Shows to Aura India Tour 2026"
           >
             <div className="feature-media relative overflow-hidden">
               <Image
-                src="/images/karan-johar-kareena-kapoor-diwali-pout-pic.jpg"
-                alt="Karan Johar Calls Kareena Kapoor the 'Pout Queen' in Diwali Pic"
+                src="/images/diljit-dosanjh-aura-india-tour-chandigarh-kolkata-dates.jpg"
+                alt="Diljit Dosanjh Adds Chandigarh and Kolkata Shows to Aura India Tour 2026"
                 fill
                 priority
                 className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
@@ -673,20 +683,20 @@ export default function BollywoodView() {
               />
               <div className="noise" />
               <span className="badge lime feature-tag z-10">
-                ⚡ Festive Exclusive
+                ⚡ Tour Exclusive
               </span>
             </div>
             <div className="feature-body">
               <h2 className="disp text-white group-hover:text-[var(--lime)] transition-colors">
-                Karan Johar Calls Kareena Kapoor the &apos;Pout Queen&apos; in a Fun Diwali Photo
+                Diljit Dosanjh Adds Chandigarh and Kolkata Shows to Aura India Tour 2026
               </h2>
               <p>
-                Karan Johar shared a Diwali photo with Kareena Kapoor and said it was &quot;The yearly pout pose pic.&quot; See the pic details, fan love, and Kareena&apos;s King update.
+                Diljit Dosanjh&apos;s Aura India Tour now includes Chandigarh on December 12 and Kolkata on December 19. See the full 2026 schedule, venues and ticket sale dates.
               </p>
               <div className="meta-row mt-3">
-                <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; FESTIVE</span>
+                <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; CONCERTS</span>
                 <span className="dot-sep">◆</span>
-                <span>3 MIN READ</span>
+                <span>4 MIN READ</span>
                 <span className="dot-sep">◆</span>
                 <span className="text-[var(--lime)] font-bold">NOV 09</span>
               </div>
@@ -695,7 +705,34 @@ export default function BollywoodView() {
 
           {/* Right Stack: The last 2-3 blogs uploaded before the latest one */}
           <div className="stack">
-            {/* Card 1: Farah Khan Reacts to Fake House Fire Videos */}
+            {/* Card 1: Karan Johar Calls Kareena Kapoor Pout Queen */}
+            <Link
+              href="/karan-johar-kareena-kapoor-diwali-pout-pic"
+              className="card m1 group block"
+            >
+              <div className="card-media relative overflow-hidden">
+                <Image
+                  src="/images/karan-johar-kareena-kapoor-diwali-pout-pic.jpg"
+                  alt="Karan Johar Calls Kareena Kapoor the 'Pout Queen' in Diwali Pic"
+                  fill
+                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 980px) 100vw, 35vw"
+                />
+                <span className="badge lime z-10 relative">⚡ Festive Exclusive</span>
+              </div>
+              <div className="card-body">
+                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
+                  Karan Johar Calls Kareena Kapoor Pout Queen in Diwali Pic
+                </h3>
+                <div className="meta-row mt-2">
+                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; FESTIVE</span>
+                  <span className="dot-sep">◆</span>
+                  <span>3 MIN READ</span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Card 2: Farah Khan Reacts to Fake House Fire Videos */}
             <Link
               href="/farah-khan-fake-fire-video-clickbait"
               className="card m1 group block"
@@ -722,7 +759,7 @@ export default function BollywoodView() {
               </div>
             </Link>
 
-            {/* Card 2: Ranbir Kapoor Directorial Debut Plans */}
+            {/* Card 3: Ranbir Kapoor Directorial Debut Plans */}
             <Link
               href="/ranbir-kapoor-directorial-debut-last-decade-as-actor"
               className="card m1 group block"
@@ -743,33 +780,6 @@ export default function BollywoodView() {
                 </h3>
                 <div className="meta-row mt-2">
                   <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; CINEMA</span>
-                  <span className="dot-sep">◆</span>
-                  <span>4 MIN READ</span>
-                </div>
-              </div>
-            </Link>
-
-            {/* Card 3: Farah Khan on Bollywood Insecurity & Her YouTube Channel */}
-            <Link
-              href="/farah-khan-bollywood-insecure-youtube-channel-dilip"
-              className="card m1 group block"
-            >
-              <div className="card-media relative overflow-hidden">
-                <Image
-                  src="/images/farah-khan-bollywood-insecure-youtube-channel-dilip.jpg"
-                  alt="Farah Khan on Bollywood Insecurity & Her YouTube Channel with Cook Dilip"
-                  fill
-                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
-                  sizes="(max-width: 980px) 100vw, 35vw"
-                />
-                <span className="badge lime z-10 relative">⚡ Candid Tell-All</span>
-              </div>
-              <div className="card-body">
-                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
-                  Farah Khan Says Bollywood Makes People Insecure, Reveals Why She Started Her YouTube Channel
-                </h3>
-                <div className="meta-row mt-2">
-                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; DIGITAL</span>
                   <span className="dot-sep">◆</span>
                   <span>4 MIN READ</span>
                 </div>

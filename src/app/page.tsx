@@ -185,6 +185,20 @@ export default function Home() {
 
   const editorialArticles: EditorialArticle[] = [
     {
+      id: "diljit-dosanjh-aura-india-tour-chandigarh-kolkata-dates",
+      anchorId: "diljit-tour-dates-story",
+      href: "/diljit-dosanjh-aura-india-tour-chandigarh-kolkata-dates",
+      title: "Diljit Dosanjh Adds Chandigarh and Kolkata Shows to Aura India Tour 2026",
+      excerpt: "Diljit Dosanjh's Aura India Tour now includes Chandigarh on December 12 and Kolkata on December 19. See the full 2026 schedule, venues and ticket sale dates.",
+      category: "Bollywood",
+      secondaryCategory: "Latest",
+      displayCategory: "BOLLYWOOD & CONCERTS",
+      badge: "Tour Dates",
+      badgeType: "lime",
+      readTime: "4 MIN READ",
+      image: "/images/diljit-dosanjh-aura-india-tour-chandigarh-kolkata-dates.jpg",
+    },
+    {
       id: "karan-johar-kareena-kapoor-diwali-pout-pic",
       anchorId: "karan-kareena-pout-story",
       href: "/karan-johar-kareena-kapoor-diwali-pout-pic",
@@ -1267,15 +1281,15 @@ export default function Home() {
         <section className="hero" id="featured">
           {/* 1. Main Featured Story (Commanding Top Story Presentation) */}
           <Link
-            href="/karan-johar-kareena-kapoor-diwali-pout-pic"
+            href="/diljit-dosanjh-aura-india-tour-chandigarh-kolkata-dates"
             className="feature-card flex flex-col transition-all hover:border-[var(--lime)] focus-visible:ring-2 focus-visible:ring-[var(--lime)] group"
             style={{ textDecoration: "none", color: "inherit" }}
-            aria-label="Read full article: Karan Johar Calls Kareena Kapoor Pout Queen in Diwali Pic"
+            aria-label="Read full article: Diljit Dosanjh Adds Chandigarh and Kolkata Shows to Aura India Tour 2026"
           >
             <div className="feature-media" style={{ overflow: "hidden", position: "relative" }}>
               <Image
-                src="/images/karan-johar-kareena-kapoor-diwali-pout-pic.jpg"
-                alt="Karan Johar Calls Kareena Kapoor the 'Pout Queen' in Diwali Pic"
+                src="/images/diljit-dosanjh-aura-india-tour-chandigarh-kolkata-dates.jpg"
+                alt="Diljit Dosanjh Adds Chandigarh and Kolkata Shows to Aura India Tour 2026"
                 fill
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 750px"
@@ -1284,45 +1298,45 @@ export default function Home() {
               />
               <div className="noise" style={{ pointerEvents: "none" }}></div>
               <div className="feature-tag flex items-center gap-2">
-                <span className="badge lime">⚡ Festive Exclusive</span>
-                <span className="badge pink">Diwali Pout</span>
-                <span className="badge">Kareena Kapoor Khan</span>
+                <span className="badge lime">⚡ Tour Exclusive</span>
+                <span className="badge pink">Concert Update</span>
+                <span className="badge">Diljit Dosanjh</span>
               </div>
             </div>
             <div className="feature-body">
               <div className="flex items-center gap-2 mb-2 font-mono text-xs text-[var(--lime)] font-bold tracking-wider uppercase">
-                <span>★ TOP STORY · KARAN JOHAR REUNITES WITH KAREENA KAPOOR KHAN FOR THEIR ICONIC ANNUAL FESTIVE POUT PHOTO</span>
+                <span>★ TOP STORY · DILJIT DOSANJH OFFICIALLY ADDS CHANDIGARH AND KOLKATA SHOWS TO AURA INDIA TOUR 2026</span>
               </div>
               <h1 className="disp" style={{ color: "#fff" }}>
-                Karan Johar Calls Kareena Kapoor the &apos;Pout Queen&apos; in a Fun Diwali Photo
+                Diljit Dosanjh Adds Chandigarh and Kolkata Shows to Aura India Tour 2026
               </h1>
               <p>
-                Karan Johar shared a Diwali photo with Kareena Kapoor and said it was &quot;The yearly pout pose pic.&quot; See the pic details, fan love, and Kareena&apos;s King update.
+                Diljit Dosanjh&apos;s Aura India Tour now includes Chandigarh on December 12 and Kolkata on December 19. See the full 2026 schedule, venues and ticket sale dates.
               </p>
 
               {/* Editorial Highlights Box */}
               <div className="feature-highlights">
                 <div className="feature-highlights-header">
                   <span className="w-2 h-2 rounded-full bg-[var(--lime)] animate-pulse inline-block"></span>
-                  <span>Inside Karan &amp; Kareena&apos;s Diwali Tradition &amp; King Movie Buzz</span>
+                  <span>Inside Diljit&apos;s Extended Aura India Tour &amp; Ticket Rollout</span>
                 </div>
                 <ul className="feature-highlights-list">
                   <li className="feature-highlights-item">
                     <span className="feature-highlights-bullet">✦</span>
                     <span>
-                      <strong className="text-white font-medium">Annual Diwali Tradition:</strong> Karan posted their customary selfie with the caption: <em>“The yearly pout pose pic,”</em> celebrating decades of friendship.
+                      <strong className="text-white font-medium">New Stadium Stops:</strong> Chandigarh on December 12 at New PCA Stadium, Mullanpur; Kolkata on December 19 at Vivekananda Yuba Bharati Krirangan (Salt Lake Stadium).
                     </span>
                   </li>
                   <li className="feature-highlights-item">
                     <span className="feature-highlights-bullet">✦</span>
                     <span>
-                      <strong className="text-white font-medium">Festive Couture:</strong> Kareena stunned in a silver kaftan and an artisanal pearl turban headpiece, while Karan went with classic black and gold.
+                      <strong className="text-white font-medium">Ticket Booking Windows:</strong> Pre-sale opens November 10 at 12:00 PM (Noon); General sale goes live November 12 at 3:00 PM exclusively on BookMyShow.
                     </span>
                   </li>
                   <li className="feature-highlights-item">
                     <span className="feature-highlights-bullet">✦</span>
                     <span>
-                      <strong className="text-white font-medium">King &apos;Daddy Cool&apos; Track:</strong> Follows Kareena’s viral birthday message for Shah Rukh Khan teasing their special dance number in <em>King</em>, releasing December 24, 2026.
+                      <strong className="text-white font-medium">Tour Defiance:</strong> Diljit responds to song restrictions and hurdles: <em>“Anyone can say anything, but I will meet you in Indore on 15th November.”</em>
                     </span>
                   </li>
                 </ul>
@@ -1330,11 +1344,11 @@ export default function Home() {
 
               <div className="meta-row mt-auto pt-3 border-t border-white/[0.06] flex items-center justify-between">
                 <div className="flex items-center gap-3">
-                  <span>BOLLYWOOD &amp; FESTIVE</span>
+                  <span>BOLLYWOOD &amp; CONCERTS</span>
                   <span className="dot-sep">◆</span>
-                  <span>3 MIN READ</span>
+                  <span>4 MIN READ</span>
                   <span className="dot-sep">◆</span>
-                  <span style={{ color: "var(--lime)" }}>FESTIVE EXCLUSIVE</span>
+                  <span style={{ color: "var(--lime)" }}>TOUR EXCLUSIVE</span>
                 </div>
                 <span className="text-xs font-mono font-bold text-[var(--lime)] hidden sm:inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform">
                   Read Full Story →
@@ -1353,6 +1367,18 @@ export default function Home() {
               <span className="trend-rank">01</span>
               <div className="trend-text">
                 <Link
+                  href="/diljit-dosanjh-aura-india-tour-chandigarh-kolkata-dates"
+                  style={{ color: "inherit" }}
+                >
+                  <h3>Diljit Dosanjh adds Chandigarh &amp; Kolkata shows to Aura India Tour: Full schedule, venues &amp; ticket sale dates</h3>
+                  <span>BOLLYWOOD &amp; CONCERTS · 3.80M REACTIONS</span>
+                </Link>
+              </div>
+            </div>
+            <div className="trend-item">
+              <span className="trend-rank">02</span>
+              <div className="trend-text">
+                <Link
                   href="/karan-johar-kareena-kapoor-diwali-pout-pic"
                   style={{ color: "inherit" }}
                 >
@@ -1362,7 +1388,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">02</span>
+              <span className="trend-rank">03</span>
               <div className="trend-text">
                 <Link
                   href="/farah-khan-fake-fire-video-clickbait"
@@ -1374,7 +1400,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">03</span>
+              <span className="trend-rank">04</span>
               <div className="trend-text">
                 <Link
                   href="/ranbir-kapoor-directorial-debut-last-decade-as-actor"
@@ -1386,7 +1412,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">04</span>
+              <span className="trend-rank">05</span>
               <div className="trend-text">
                 <Link
                   href="/farah-khan-bollywood-insecure-youtube-channel-dilip"
@@ -1398,7 +1424,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">05</span>
+              <span className="trend-rank">06</span>
               <div className="trend-text">
                 <Link
                   href="/rise-and-fall-2-winner-shehzad-poonawalla"
@@ -1410,7 +1436,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">06</span>
+              <span className="trend-rank">07</span>
               <div className="trend-text">
                 <Link
                   href="/maatrubhumi-trailer-release-date-salman-khan"
@@ -1422,7 +1448,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">07</span>
+              <span className="trend-rank">08</span>
               <div className="trend-text">
                 <Link
                   href="/sai-pallavi-sita-fight-scene-ramayana-controversy"
@@ -1434,7 +1460,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">08</span>
+              <span className="trend-rank">09</span>
               <div className="trend-text">
                 <Link
                   href="/dia-mirza-diwali-video-bmc-bombay-high-court"
@@ -1446,7 +1472,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">09</span>
+              <span className="trend-rank">10</span>
               <div className="trend-text">
                 <Link
                   href="/munna-bhai-3-farhad-samji-writing-script"
@@ -1454,18 +1480,6 @@ export default function Home() {
                 >
                   <h3>Munna Bhai 3 update: Farhad Samji begins writing the script for Rajkumar Hirani</h3>
                   <span>BOLLYWOOD &amp; NEWS · 2.45M REACTIONS</span>
-                </Link>
-              </div>
-            </div>
-            <div className="trend-item">
-              <span className="trend-rank">10</span>
-              <div className="trend-text">
-                <Link
-                  href="/karan-johar-ramayana-part-1-review-ranbir-kapoor-yash"
-                  style={{ color: "inherit" }}
-                >
-                  <h3>Karan Johar calls Ramayana Part 1 a “miracle”: Praises Ranbir Kapoor’s meditative Lord Ram &amp; Yash’s Ravana</h3>
-                  <span>BOLLYWOOD &amp; CINEMA · 2.25M REACTIONS</span>
                 </Link>
               </div>
             </div>

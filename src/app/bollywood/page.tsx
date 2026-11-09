@@ -6,6 +6,16 @@ export const metadata: Metadata = {
   description:
     "Bollywood coverage from Buzz Originals — raw, unfiltered, built for the group chat. Red carpets, rumours, airport looks and exclusives.",
   keywords: [
+    "Diljit Dosanjh Aura India Tour",
+    "Diljit Dosanjh concert Kolkata",
+    "Diljit Dosanjh Chandigarh concert date",
+    "Aura India Tour 2026 schedule",
+    "Diljit Dosanjh ticket booking",
+    "Diljit Dosanjh",
+    "New PCA Stadium Mullanpur Chandigarh",
+    "Salt Lake Stadium Kolkata Diljit concert",
+    "Diljit Dosanjh Indore concert controversy",
+    "BookMyShow Live Diljit tour",
     "Karan Johar Kareena Kapoor Diwali pic",
     "Kareena Kapoor pout",
     "Kareena Kapoor Diwali 2026",
@@ -497,10 +507,10 @@ export const metadata: Metadata = {
     siteName: "Buzz Originals",
     images: [
       {
-        url: "/images/karan-johar-kareena-kapoor-diwali-pout-pic.jpg",
+        url: "/images/diljit-dosanjh-aura-india-tour-chandigarh-kolkata-dates.jpg",
         width: 1200,
         height: 675,
-        alt: "Karan Johar Calls Kareena Kapoor the 'Pout Queen' in Diwali Pic — Buzz Originals",
+        alt: "Diljit Dosanjh Adds Chandigarh and Kolkata Shows to Aura India Tour 2026 — Buzz Originals",
       },
     ],
     type: "website",
@@ -510,7 +520,7 @@ export const metadata: Metadata = {
     title: "Bollywood — Buzz Originals",
     description:
       "Raw, unfiltered Bollywood coverage of red carpets, gossip, airport sightings & exclusives.",
-    images: ["/images/karan-johar-kareena-kapoor-diwali-pout-pic.jpg"],
+    images: ["/images/diljit-dosanjh-aura-india-tour-chandigarh-kolkata-dates.jpg"],
   },
 };
 
@@ -537,36 +547,42 @@ export default function BollywoodPage() {
         {
           "@type": "ListItem",
           position: 1,
+          name: "Diljit Dosanjh Aura India Tour: Chandigarh and Kolkata Dates",
+          url: "https://www.buzzoriginals.com/diljit-dosanjh-aura-india-tour-chandigarh-kolkata-dates",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
           name: "Karan Johar Calls Kareena Kapoor Pout Queen in Diwali Pic",
           url: "https://www.buzzoriginals.com/karan-johar-kareena-kapoor-diwali-pout-pic",
         },
         {
           "@type": "ListItem",
-          position: 2,
+          position: 3,
           name: "Farah Khan Reacts to Fake House Fire Videos",
           url: "https://www.buzzoriginals.com/farah-khan-fake-fire-video-clickbait",
         },
         {
           "@type": "ListItem",
-          position: 2,
+          position: 4,
           name: "Ranbir Kapoor Directorial Debut Plans: 2-3 Years Away",
           url: "https://www.buzzoriginals.com/ranbir-kapoor-directorial-debut-last-decade-as-actor",
         },
         {
           "@type": "ListItem",
-          position: 2,
+          position: 5,
           name: "Farah Khan on Bollywood Insecurity & Her YouTube Channel",
           url: "https://www.buzzoriginals.com/farah-khan-bollywood-insecure-youtube-channel-dilip",
         },
         {
           "@type": "ListItem",
-          position: 2,
+          position: 6,
           name: "Maatrubhumi Trailer Gets CBFC Nod: Release Date Update",
           url: "https://www.buzzoriginals.com/maatrubhumi-trailer-release-date-salman-khan",
         },
         {
           "@type": "ListItem",
-          position: 3,
+          position: 7,
           name: "Sai Pallavi Sita Fight Scene in Ramayana Sparks Debate",
           url: "https://www.buzzoriginals.com/sai-pallavi-sita-fight-scene-ramayana-controversy",
         },
