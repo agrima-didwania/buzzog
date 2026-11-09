@@ -6,6 +6,12 @@ export const metadata: Metadata = {
   description:
     "Bollywood coverage from Buzz Originals — raw, unfiltered, built for the group chat. Red carpets, rumours, airport looks and exclusives.",
   keywords: [
+    "Karan Johar Kareena Kapoor Diwali pic",
+    "Kareena Kapoor pout",
+    "Kareena Kapoor Diwali 2026",
+    "Karan Johar Diwali party",
+    "Kareena Kapoor King Shah Rukh Khan",
+    "Daddy Cool song",
     "Farah Khan fire video",
     "Farah Khan house fire",
     "Farah Khan fake news",
@@ -491,10 +497,10 @@ export const metadata: Metadata = {
     siteName: "Buzz Originals",
     images: [
       {
-        url: "/images/farah-khan-fake-fire-video-clickbait.jpg",
+        url: "/images/karan-johar-kareena-kapoor-diwali-pout-pic.jpg",
         width: 1200,
         height: 675,
-        alt: "Farah Khan Reacts to Fake House Fire Videos — Buzz Originals",
+        alt: "Karan Johar Calls Kareena Kapoor the 'Pout Queen' in Diwali Pic — Buzz Originals",
       },
     ],
     type: "website",
@@ -504,7 +510,7 @@ export const metadata: Metadata = {
     title: "Bollywood — Buzz Originals",
     description:
       "Raw, unfiltered Bollywood coverage of red carpets, gossip, airport sightings & exclusives.",
-    images: ["/images/farah-khan-fake-fire-video-clickbait.jpg"],
+    images: ["/images/karan-johar-kareena-kapoor-diwali-pout-pic.jpg"],
   },
 };
 
@@ -531,6 +537,12 @@ export default function BollywoodPage() {
         {
           "@type": "ListItem",
           position: 1,
+          name: "Karan Johar Calls Kareena Kapoor Pout Queen in Diwali Pic",
+          url: "https://www.buzzoriginals.com/karan-johar-kareena-kapoor-diwali-pout-pic",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
           name: "Farah Khan Reacts to Fake House Fire Videos",
           url: "https://www.buzzoriginals.com/farah-khan-fake-fire-video-clickbait",
         },

@@ -20,6 +20,16 @@ interface BollywoodArticle {
 
 const bollywoodArticles: BollywoodArticle[] = [
   {
+    id: "karan-johar-kareena-kapoor-diwali-pout-pic",
+    category: "Festive & Style",
+    title: "Karan Johar Calls Kareena Kapoor the 'Pout Queen' in a Fun Diwali Photo",
+    badge: "⚡ Festive Exclusive",
+    badgeType: "lime",
+    image: "/images/karan-johar-kareena-kapoor-diwali-pout-pic.jpg",
+    href: "/karan-johar-kareena-kapoor-diwali-pout-pic",
+    readOrTime: "3 MIN READ",
+  },
+  {
     id: "farah-khan-fake-fire-video-clickbait",
     category: "Fact Check & News",
     title: "Farah Khan Reacts to Fake Fire Videos: “Clickbait Can’t Be Everything”",
@@ -646,16 +656,16 @@ export default function BollywoodView() {
 
         {/* Lead Section: Latest Bollywood Published Article (Cover Story) + The Last 2 Blogs Uploaded Before It */}
         <section className="lead">
-          {/* Cover Story: Latest Published Bollywood Story (Farah Khan Fake House Fire Video Fact Check) */}
+          {/* Cover Story: Latest Published Bollywood Story (Karan Johar Calls Kareena Kapoor Pout Queen in Diwali Pic) */}
           <Link
-            href="/farah-khan-fake-fire-video-clickbait"
+            href="/karan-johar-kareena-kapoor-diwali-pout-pic"
             className="feature-card group block"
-            aria-label="Read full cover story: Farah Khan Reacts to Fake House Fire Videos"
+            aria-label="Read full cover story: Karan Johar Calls Kareena Kapoor the 'Pout Queen' in a Fun Diwali Photo"
           >
             <div className="feature-media relative overflow-hidden">
               <Image
-                src="/images/farah-khan-fake-fire-video-clickbait.jpg"
-                alt="Farah Khan Reacts to Fake Fire Videos: Clickbait Can’t Be Everything"
+                src="/images/karan-johar-kareena-kapoor-diwali-pout-pic.jpg"
+                alt="Karan Johar Calls Kareena Kapoor the 'Pout Queen' in Diwali Pic"
                 fill
                 priority
                 className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
@@ -663,18 +673,18 @@ export default function BollywoodView() {
               />
               <div className="noise" />
               <span className="badge lime feature-tag z-10">
-                ⚡ Fact Check Alert
+                ⚡ Festive Exclusive
               </span>
             </div>
             <div className="feature-body">
               <h2 className="disp text-white group-hover:text-[var(--lime)] transition-colors">
-                Farah Khan Reacts to Fake House Fire Videos
+                Karan Johar Calls Kareena Kapoor the &apos;Pout Queen&apos; in a Fun Diwali Photo
               </h2>
               <p>
-                Farah Khan has reacted to viral videos that claimed her Mumbai home caught fire. She says the building in the video is under construction. Here is the full story.
+                Karan Johar shared a Diwali photo with Kareena Kapoor and said it was &quot;The yearly pout pose pic.&quot; See the pic details, fan love, and Kareena&apos;s King update.
               </p>
               <div className="meta-row mt-3">
-                <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; NEWS</span>
+                <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; FESTIVE</span>
                 <span className="dot-sep">◆</span>
                 <span>3 MIN READ</span>
                 <span className="dot-sep">◆</span>
@@ -685,7 +695,34 @@ export default function BollywoodView() {
 
           {/* Right Stack: The last 2-3 blogs uploaded before the latest one */}
           <div className="stack">
-            {/* Card 1: Ranbir Kapoor Directorial Debut Plans */}
+            {/* Card 1: Farah Khan Reacts to Fake House Fire Videos */}
+            <Link
+              href="/farah-khan-fake-fire-video-clickbait"
+              className="card m1 group block"
+            >
+              <div className="card-media relative overflow-hidden">
+                <Image
+                  src="/images/farah-khan-fake-fire-video-clickbait.jpg"
+                  alt="Farah Khan Reacts to Fake Fire Videos: Clickbait Can’t Be Everything"
+                  fill
+                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 980px) 100vw, 35vw"
+                />
+                <span className="badge lime z-10 relative">⚡ Fact Check Alert</span>
+              </div>
+              <div className="card-body">
+                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
+                  Farah Khan Reacts to Fake House Fire Videos
+                </h3>
+                <div className="meta-row mt-2">
+                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; NEWS</span>
+                  <span className="dot-sep">◆</span>
+                  <span>3 MIN READ</span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Card 2: Ranbir Kapoor Directorial Debut Plans */}
             <Link
               href="/ranbir-kapoor-directorial-debut-last-decade-as-actor"
               className="card m1 group block"
@@ -712,7 +749,7 @@ export default function BollywoodView() {
               </div>
             </Link>
 
-            {/* Card 2: Farah Khan on Bollywood Insecurity & Her YouTube Channel */}
+            {/* Card 3: Farah Khan on Bollywood Insecurity & Her YouTube Channel */}
             <Link
               href="/farah-khan-bollywood-insecure-youtube-channel-dilip"
               className="card m1 group block"
@@ -733,33 +770,6 @@ export default function BollywoodView() {
                 </h3>
                 <div className="meta-row mt-2">
                   <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; DIGITAL</span>
-                  <span className="dot-sep">◆</span>
-                  <span>4 MIN READ</span>
-                </div>
-              </div>
-            </Link>
-
-            {/* Card 3: Maatrubhumi Trailer Cleared by CBFC */}
-            <Link
-              href="/maatrubhumi-trailer-release-date-salman-khan"
-              className="card m1 group block"
-            >
-              <div className="card-media relative overflow-hidden">
-                <Image
-                  src="/images/maatrubhumi-trailer-release-date-salman-khan.jpg"
-                  alt="Maatrubhumi Trailer Cleared by CBFC — Salman Khan Release Date Update"
-                  fill
-                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
-                  sizes="(max-width: 980px) 100vw, 35vw"
-                />
-                <span className="badge lime z-10 relative">⚡ CBFC Cleared</span>
-              </div>
-              <div className="card-body">
-                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
-                  Maatrubhumi Trailer Gets CBFC Nod: Salman Khan Fans, Get Ready
-                </h3>
-                <div className="meta-row mt-2">
-                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; MOVIES</span>
                   <span className="dot-sep">◆</span>
                   <span>4 MIN READ</span>
                 </div>

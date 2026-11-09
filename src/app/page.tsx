@@ -185,6 +185,20 @@ export default function Home() {
 
   const editorialArticles: EditorialArticle[] = [
     {
+      id: "karan-johar-kareena-kapoor-diwali-pout-pic",
+      anchorId: "karan-kareena-pout-story",
+      href: "/karan-johar-kareena-kapoor-diwali-pout-pic",
+      title: "Karan Johar Calls Kareena Kapoor the 'Pout Queen' in a Fun Diwali Photo",
+      excerpt: "Karan Johar shared a Diwali photo with Kareena Kapoor and said it was \"The yearly pout pose pic.\" See the pic details, fan love, and Kareena's King update.",
+      category: "Bollywood",
+      secondaryCategory: "Latest",
+      displayCategory: "BOLLYWOOD & FESTIVE",
+      badge: "Festive Buzz",
+      badgeType: "lime",
+      readTime: "3 MIN READ",
+      image: "/images/karan-johar-kareena-kapoor-diwali-pout-pic.jpg",
+    },
+    {
       id: "farah-khan-fake-fire-video-clickbait",
       anchorId: "farah-khan-fire-video-story",
       href: "/farah-khan-fake-fire-video-clickbait",
@@ -1253,15 +1267,15 @@ export default function Home() {
         <section className="hero" id="featured">
           {/* 1. Main Featured Story (Commanding Top Story Presentation) */}
           <Link
-            href="/farah-khan-fake-fire-video-clickbait"
+            href="/karan-johar-kareena-kapoor-diwali-pout-pic"
             className="feature-card flex flex-col transition-all hover:border-[var(--lime)] focus-visible:ring-2 focus-visible:ring-[var(--lime)] group"
             style={{ textDecoration: "none", color: "inherit" }}
-            aria-label="Read full article: Farah Khan Reacts to Fake House Fire Videos: Clickbait Can’t Be Everything"
+            aria-label="Read full article: Karan Johar Calls Kareena Kapoor Pout Queen in Diwali Pic"
           >
             <div className="feature-media" style={{ overflow: "hidden", position: "relative" }}>
               <Image
-                src="/images/farah-khan-fake-fire-video-clickbait.jpg"
-                alt="Farah Khan Reacts to Fake Fire Videos: Clickbait Can’t Be Everything"
+                src="/images/karan-johar-kareena-kapoor-diwali-pout-pic.jpg"
+                alt="Karan Johar Calls Kareena Kapoor the 'Pout Queen' in Diwali Pic"
                 fill
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 750px"
@@ -1270,45 +1284,45 @@ export default function Home() {
               />
               <div className="noise" style={{ pointerEvents: "none" }}></div>
               <div className="feature-tag flex items-center gap-2">
-                <span className="badge lime">⚡ Fact Check Alert</span>
-                <span className="badge pink">Fake News Debunked</span>
-                <span className="badge">Farah Khan</span>
+                <span className="badge lime">⚡ Festive Exclusive</span>
+                <span className="badge pink">Diwali Pout</span>
+                <span className="badge">Kareena Kapoor Khan</span>
               </div>
             </div>
             <div className="feature-body">
               <div className="flex items-center gap-2 mb-2 font-mono text-xs text-[var(--lime)] font-bold tracking-wider uppercase">
-                <span>★ TOP STORY · FARAH KHAN SLAMS SENSATIONAL CLICKBAIT AFTER VIRAL FIRE VIDEOS FALSELY CLAIM HER MUMBAI HOME WAS ABLAZE</span>
+                <span>★ TOP STORY · KARAN JOHAR REUNITES WITH KAREENA KAPOOR KHAN FOR THEIR ICONIC ANNUAL FESTIVE POUT PHOTO</span>
               </div>
               <h1 className="disp" style={{ color: "#fff" }}>
-                Farah Khan Reacts to Fake Fire Videos: “Clickbait Can’t Be Everything”
+                Karan Johar Calls Kareena Kapoor the &apos;Pout Queen&apos; in a Fun Diwali Photo
               </h1>
               <p>
-                Farah Khan has reacted to viral videos that claimed her Mumbai home caught fire. She says the building in the video is under construction. Here is the full story.
+                Karan Johar shared a Diwali photo with Kareena Kapoor and said it was &quot;The yearly pout pose pic.&quot; See the pic details, fan love, and Kareena&apos;s King update.
               </p>
 
               {/* Editorial Highlights Box */}
               <div className="feature-highlights">
                 <div className="feature-highlights-header">
                   <span className="w-2 h-2 rounded-full bg-[var(--lime)] animate-pulse inline-block"></span>
-                  <span>Inside Farah Khan&apos;s Fiery Rebuke &amp; Fact Check</span>
+                  <span>Inside Karan &amp; Kareena&apos;s Diwali Tradition &amp; King Movie Buzz</span>
                 </div>
                 <ul className="feature-highlights-list">
                   <li className="feature-highlights-item">
                     <span className="feature-highlights-bullet">✦</span>
                     <span>
-                      <strong className="text-white font-medium">Viral Misinformation:</strong> Misleading social media pages circulated clips of a burning high-rise falsely alleging it was Farah Khan&apos;s apartment.
+                      <strong className="text-white font-medium">Annual Diwali Tradition:</strong> Karan posted their customary selfie with the caption: <em>“The yearly pout pose pic,”</em> celebrating decades of friendship.
                     </span>
                   </li>
                   <li className="feature-highlights-item">
                     <span className="feature-highlights-bullet">✦</span>
                     <span>
-                      <strong className="text-white font-medium">Stern Instagram Rebuke:</strong> Farah publicly called out portals: <em>“Online portals plss BE RESPONSIBLE!! This is an under construction building!! Clickbait can&apos;t be everything!”</em>
+                      <strong className="text-white font-medium">Festive Couture:</strong> Kareena stunned in a silver kaftan and an artisanal pearl turban headpiece, while Karan went with classic black and gold.
                     </span>
                   </li>
                   <li className="feature-highlights-item">
                     <span className="feature-highlights-bullet">✦</span>
                     <span>
-                      <strong className="text-white font-medium">The Reality:</strong> Minor fire confined to external scaffolding and safety netting at an unoccupied construction site; Farah&apos;s Lokhandwala residence was completely unaffected.
+                      <strong className="text-white font-medium">King &apos;Daddy Cool&apos; Track:</strong> Follows Kareena’s viral birthday message for Shah Rukh Khan teasing their special dance number in <em>King</em>, releasing December 24, 2026.
                     </span>
                   </li>
                 </ul>
@@ -1316,11 +1330,11 @@ export default function Home() {
 
               <div className="meta-row mt-auto pt-3 border-t border-white/[0.06] flex items-center justify-between">
                 <div className="flex items-center gap-3">
-                  <span>BOLLYWOOD &amp; NEWS</span>
+                  <span>BOLLYWOOD &amp; FESTIVE</span>
                   <span className="dot-sep">◆</span>
                   <span>3 MIN READ</span>
                   <span className="dot-sep">◆</span>
-                  <span style={{ color: "var(--lime)" }}>FACT CHECK VERIFIED</span>
+                  <span style={{ color: "var(--lime)" }}>FESTIVE EXCLUSIVE</span>
                 </div>
                 <span className="text-xs font-mono font-bold text-[var(--lime)] hidden sm:inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform">
                   Read Full Story →
@@ -1339,6 +1353,18 @@ export default function Home() {
               <span className="trend-rank">01</span>
               <div className="trend-text">
                 <Link
+                  href="/karan-johar-kareena-kapoor-diwali-pout-pic"
+                  style={{ color: "inherit" }}
+                >
+                  <h3>Karan Johar calls Kareena Kapoor pout queen in Diwali pic: “The yearly pout pose” &amp; King reunion buzz</h3>
+                  <span>BOLLYWOOD &amp; FESTIVE · 3.65M REACTIONS</span>
+                </Link>
+              </div>
+            </div>
+            <div className="trend-item">
+              <span className="trend-rank">02</span>
+              <div className="trend-text">
+                <Link
                   href="/farah-khan-fake-fire-video-clickbait"
                   style={{ color: "inherit" }}
                 >
@@ -1348,7 +1374,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">02</span>
+              <span className="trend-rank">03</span>
               <div className="trend-text">
                 <Link
                   href="/ranbir-kapoor-directorial-debut-last-decade-as-actor"
@@ -1360,7 +1386,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">03</span>
+              <span className="trend-rank">04</span>
               <div className="trend-text">
                 <Link
                   href="/farah-khan-bollywood-insecure-youtube-channel-dilip"
@@ -1372,7 +1398,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">04</span>
+              <span className="trend-rank">05</span>
               <div className="trend-text">
                 <Link
                   href="/rise-and-fall-2-winner-shehzad-poonawalla"
@@ -1384,7 +1410,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">05</span>
+              <span className="trend-rank">06</span>
               <div className="trend-text">
                 <Link
                   href="/maatrubhumi-trailer-release-date-salman-khan"
@@ -1396,7 +1422,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">06</span>
+              <span className="trend-rank">07</span>
               <div className="trend-text">
                 <Link
                   href="/sai-pallavi-sita-fight-scene-ramayana-controversy"
@@ -1408,7 +1434,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">07</span>
+              <span className="trend-rank">08</span>
               <div className="trend-text">
                 <Link
                   href="/dia-mirza-diwali-video-bmc-bombay-high-court"
@@ -1420,7 +1446,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">08</span>
+              <span className="trend-rank">09</span>
               <div className="trend-text">
                 <Link
                   href="/munna-bhai-3-farhad-samji-writing-script"
@@ -1432,7 +1458,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">09</span>
+              <span className="trend-rank">10</span>
               <div className="trend-text">
                 <Link
                   href="/karan-johar-ramayana-part-1-review-ranbir-kapoor-yash"
@@ -1440,18 +1466,6 @@ export default function Home() {
                 >
                   <h3>Karan Johar calls Ramayana Part 1 a “miracle”: Praises Ranbir Kapoor’s meditative Lord Ram &amp; Yash’s Ravana</h3>
                   <span>BOLLYWOOD &amp; CINEMA · 2.25M REACTIONS</span>
-                </Link>
-              </div>
-            </div>
-            <div className="trend-item">
-              <span className="trend-rank">10</span>
-              <div className="trend-text">
-                <Link
-                  href="/shraddha-kapoor-reacts-eetha-trailer-criticism"
-                  style={{ color: "inherit" }}
-                >
-                  <h3>Shraddha Kapoor reacts to Eetha trailer trolling: “I can’t even handle my WhatsApp, I only want to work”</h3>
-                  <span>BOLLYWOOD &amp; NEWS · 2.05M REACTIONS</span>
                 </Link>
               </div>
             </div>
