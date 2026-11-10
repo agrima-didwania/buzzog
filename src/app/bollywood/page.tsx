@@ -6,6 +6,18 @@ export const metadata: Metadata = {
   description:
     "Bollywood coverage from Buzz Originals — raw, unfiltered, built for the group chat. Red carpets, rumours, airport looks and exclusives.",
   keywords: [
+    "Ananya Panday Aarav Bhatia",
+    "Ananya Panday My Heart post",
+    "Aarav Bhatia Akshay Kumar son",
+    "Ananya Panday Diwali 2026",
+    "Manish Malhotra Diwali party 2026",
+    "Ananya Panday Shava Shava lehenga",
+    "Are Ananya Panday and Aarav Bhatia dating",
+    "Who is Aarav Bhatia",
+    "Ananya Panday My Heart caption meaning",
+    "Ananya Panday Rani Mukerji K3G look",
+    "Ananya Panday Karan Johar Diwali puja",
+    "Akshay Kumar son Aarav Bhatia photo",
     "Amyra Dastur Farah Khan",
     "Amyra Dastur Titanic",
     "Farah Khan Titanic comment",
@@ -520,10 +532,10 @@ export const metadata: Metadata = {
     siteName: "Buzz Originals",
     images: [
       {
-        url: "/images/amyra-dastur-farah-khan-titanic-kung-fu-yoga.jpg",
+        url: "/images/ananya-panday-aarav-bhatia-my-heart-post.jpg",
         width: 1200,
         height: 675,
-        alt: "Amyra Dastur Reveals Farah Khan’s “Titanic” Remark — Buzz Originals",
+        alt: "Ananya Panday’s “My Heart” Post With Aarav Bhatia Goes Viral — Buzz Originals",
       },
     ],
     type: "website",
@@ -533,7 +545,7 @@ export const metadata: Metadata = {
     title: "Bollywood — Buzz Originals",
     description:
       "Raw, unfiltered Bollywood coverage of red carpets, gossip, airport sightings & exclusives.",
-    images: ["/images/amyra-dastur-farah-khan-titanic-kung-fu-yoga.jpg"],
+    images: ["/images/ananya-panday-aarav-bhatia-my-heart-post.jpg"],
   },
 };
 
@@ -560,12 +572,18 @@ export default function BollywoodPage() {
         {
           "@type": "ListItem",
           position: 1,
+          name: "Ananya Panday’s “My Heart” Post With Aarav Bhatia Goes Viral",
+          url: "https://www.buzzoriginals.com/ananya-panday-aarav-bhatia-my-heart-post",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
           name: "Amyra Dastur Reveals Farah Khan’s “Titanic” Remark",
           url: "https://www.buzzoriginals.com/amyra-dastur-farah-khan-titanic-kung-fu-yoga",
         },
         {
           "@type": "ListItem",
-          position: 2,
+          position: 3,
           name: "Yash’s Ravana Costume in Ramayana Weighed Up to 33 kg",
           url: "https://www.buzzoriginals.com/yash-ravana-costume-weight-ramayana",
         },

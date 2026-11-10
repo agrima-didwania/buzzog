@@ -20,6 +20,16 @@ interface BollywoodArticle {
 
 const bollywoodArticles: BollywoodArticle[] = [
   {
+    id: "ananya-panday-aarav-bhatia-my-heart-post",
+    category: "Viral Scoop & Dating",
+    title: "Ananya Panday’s “My Heart” Post With Aarav Bhatia Goes Viral",
+    badge: "⚡ Viral Scoop",
+    badgeType: "lime",
+    image: "/images/ananya-panday-aarav-bhatia-my-heart-post.jpg",
+    href: "/ananya-panday-aarav-bhatia-my-heart-post",
+    readOrTime: "3 MIN READ",
+  },
+  {
     id: "amyra-dastur-farah-khan-titanic-kung-fu-yoga",
     category: "Candid Scoop & OTT",
     title: "Amyra Dastur Says Farah Khan’s “Titanic” Comment Almost Made Her Cry",
@@ -686,16 +696,16 @@ export default function BollywoodView() {
 
         {/* Lead Section: Latest Bollywood Published Article (Cover Story) + The Last 2 Blogs Uploaded Before It */}
         <section className="lead">
-          {/* Cover Story: Latest Published Bollywood Story (Amyra Dastur on Farah Khan's Titanic Remark) */}
+          {/* Cover Story: Latest Published Bollywood Story (Ananya Panday's "My Heart" Post With Aarav Bhatia) */}
           <Link
-            href="/amyra-dastur-farah-khan-titanic-kung-fu-yoga"
+            href="/ananya-panday-aarav-bhatia-my-heart-post"
             className="feature-card group block"
-            aria-label="Read full cover story: Amyra Dastur Says Farah Khan’s “Titanic” Comment Almost Made Her Cry"
+            aria-label="Read full cover story: Ananya Panday’s “My Heart” Post With Aarav Bhatia Goes Viral"
           >
             <div className="feature-media relative overflow-hidden">
               <Image
-                src="/images/amyra-dastur-farah-khan-titanic-kung-fu-yoga.jpg"
-                alt="Amyra Dastur Reveals Farah Khan’s “Titanic” Remark"
+                src="/images/ananya-panday-aarav-bhatia-my-heart-post.jpg"
+                alt="Ananya Panday’s “My Heart” Post With Aarav Bhatia Goes Viral"
                 fill
                 priority
                 className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
@@ -703,18 +713,18 @@ export default function BollywoodView() {
               />
               <div className="noise" />
               <span className="badge lime feature-tag z-10">
-                ⚡ Candid Scoop
+                ⚡ Viral Scoop
               </span>
             </div>
             <div className="feature-body">
               <h2 className="disp text-white group-hover:text-[var(--lime)] transition-colors">
-                Amyra Dastur Says Farah Khan’s “Titanic” Comment Almost Made Her Cry
+                Ananya Panday’s “My Heart” Post With Aarav Bhatia Goes Viral
               </h2>
               <p>
-                Amyra Dastur shared how Farah Khan’s joke on the Kung Fu Yoga set almost made her cry. Read what Farah said and her Boman Irani story.
+                Ananya Panday shared a photo with Aarav Bhatia from Manish Malhotra’s Diwali party with the caption “My heart.” Here is what we know.
               </p>
               <div className="meta-row mt-3">
-                <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; OTT</span>
+                <span className="text-[var(--magenta)] font-bold">BOLLYWOOD BUZZ</span>
                 <span className="dot-sep">◆</span>
                 <span>3 MIN READ</span>
                 <span className="dot-sep">◆</span>
@@ -725,7 +735,34 @@ export default function BollywoodView() {
 
           {/* Right Stack: The last 2-3 blogs uploaded before the latest one */}
           <div className="stack">
-            {/* Card 1: Yash's Ravana Costume in Ramayana */}
+            {/* Card 1: Amyra Dastur on Farah Khan's Titanic Remark */}
+            <Link
+              href="/amyra-dastur-farah-khan-titanic-kung-fu-yoga"
+              className="card m1 group block"
+            >
+              <div className="card-media relative overflow-hidden">
+                <Image
+                  src="/images/amyra-dastur-farah-khan-titanic-kung-fu-yoga.jpg"
+                  alt="Amyra Dastur Says Farah Khan’s “Titanic” Comment Almost Made Her Cry"
+                  fill
+                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 980px) 100vw, 35vw"
+                />
+                <span className="badge lime z-10 relative">⚡ Candid Scoop</span>
+              </div>
+              <div className="card-body">
+                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
+                  Amyra Dastur Says Farah Khan’s “Titanic” Comment Almost Made Her Cry
+                </h3>
+                <div className="meta-row mt-2">
+                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; OTT</span>
+                  <span className="dot-sep">◆</span>
+                  <span>3 MIN READ</span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Card 2: Yash's Ravana Costume in Ramayana */}
             <Link
               href="/yash-ravana-costume-weight-ramayana"
               className="card m1 group block"
@@ -752,7 +789,7 @@ export default function BollywoodView() {
               </div>
             </Link>
 
-            {/* Card 2: Diljit Dosanjh Adds Chandigarh and Kolkata Shows */}
+            {/* Card 3: Diljit Dosanjh Adds Chandigarh and Kolkata Shows */}
             <Link
               href="/diljit-dosanjh-aura-india-tour-chandigarh-kolkata-dates"
               className="card m1 group block"

@@ -185,6 +185,20 @@ export default function Home() {
 
   const editorialArticles: EditorialArticle[] = [
     {
+      id: "ananya-panday-aarav-bhatia-my-heart-post",
+      anchorId: "ananya-aarav-my-heart-story",
+      href: "/ananya-panday-aarav-bhatia-my-heart-post",
+      title: "Ananya Panday’s “My Heart” Post With Aarav Bhatia Goes Viral",
+      excerpt: "Ananya Panday shared a photo with Aarav Bhatia from Manish Malhotra’s Diwali party with the caption “My heart.” Here is what we know.",
+      category: "Bollywood",
+      secondaryCategory: "Latest",
+      displayCategory: "BOLLYWOOD BUZZ",
+      badge: "Viral Scoop",
+      badgeType: "lime",
+      readTime: "3 MIN READ",
+      image: "/images/ananya-panday-aarav-bhatia-my-heart-post.jpg",
+    },
+    {
       id: "amyra-dastur-farah-khan-titanic-kung-fu-yoga",
       anchorId: "amyra-farah-titanic-story",
       href: "/amyra-dastur-farah-khan-titanic-kung-fu-yoga",
@@ -1309,15 +1323,15 @@ export default function Home() {
         <section className="hero" id="featured">
           {/* 1. Main Featured Story (Commanding Top Story Presentation) */}
           <Link
-            href="/amyra-dastur-farah-khan-titanic-kung-fu-yoga"
+            href="/ananya-panday-aarav-bhatia-my-heart-post"
             className="feature-card flex flex-col transition-all hover:border-[var(--lime)] focus-visible:ring-2 focus-visible:ring-[var(--lime)] group"
             style={{ textDecoration: "none", color: "inherit" }}
-            aria-label="Read full article: Amyra Dastur Reveals Farah Khan’s “Titanic” Remark"
+            aria-label="Read full article: Ananya Panday’s “My Heart” Post With Aarav Bhatia Goes Viral"
           >
             <div className="feature-media" style={{ overflow: "hidden", position: "relative" }}>
               <Image
-                src="/images/amyra-dastur-farah-khan-titanic-kung-fu-yoga.jpg"
-                alt="Amyra Dastur Reveals Farah Khan’s “Titanic” Remark"
+                src="/images/ananya-panday-aarav-bhatia-my-heart-post.jpg"
+                alt="Ananya Panday’s “My Heart” Post With Aarav Bhatia Goes Viral"
                 fill
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 750px"
@@ -1326,45 +1340,46 @@ export default function Home() {
               />
               <div className="noise" style={{ pointerEvents: "none" }}></div>
               <div className="feature-tag flex items-center gap-2">
-                <span className="badge lime">⚡ Candid Scoop</span>
-                <span className="badge pink">Farah Khan Vlog</span>
-                <span className="badge">Amyra Dastur</span>
+                <span className="badge lime">⚡ Viral Scoop</span>
+                <span className="badge pink">Diwali 2026</span>
+                <span className="badge">Ananya Panday</span>
+                <span className="badge">Aarav Bhatia</span>
               </div>
             </div>
             <div className="feature-body">
               <div className="flex items-center gap-2 mb-2 font-mono text-xs text-[var(--lime)] font-bold tracking-wider uppercase">
-                <span>★ TOP STORY · AMYRA DASTUR REVEALS FARAH KHAN&apos;S UNFILTERED &quot;TITANIC&quot; JOKE ON KUNG FU YOGA SET</span>
+                <span>★ TOP STORY · ANANYA PANDAY SHARES “MY HEART” SNAPSHOT WITH AARAV BHATIA AT MANISH MALHOTRA DIWALI BASH</span>
               </div>
               <h1 className="disp" style={{ color: "#fff" }}>
-                Amyra Dastur Says Farah Khan’s “Titanic” Comment Almost Made Her Cry
+                Ananya Panday’s “My Heart” Post With Aarav Bhatia Goes Viral
               </h1>
               <p>
-                Amyra Dastur shared how Farah Khan’s joke on the Kung Fu Yoga set almost made her cry. Read what Farah said and her Boman Irani story.
+                Ananya Panday shared a photo with Aarav Bhatia from Manish Malhotra’s Diwali party with the caption “My heart.” Here is what we know.
               </p>
 
               {/* Editorial Highlights Box */}
               <div className="feature-highlights">
                 <div className="feature-highlights-header">
                   <span className="w-2 h-2 rounded-full bg-[var(--lime)] animate-pulse inline-block"></span>
-                  <span>Inside Farah Khan&apos;s Rehearsal Banter &amp; Amyra&apos;s Reaction</span>
+                  <span>Inside The Manish Malhotra Diwali Party &amp; Romance Buzz</span>
                 </div>
                 <ul className="feature-highlights-list">
                   <li className="feature-highlights-item">
                     <span className="feature-highlights-bullet">✦</span>
                     <span>
-                      <strong className="text-white font-medium">The Savage Joke:</strong> Farah congratulated Amyra on the <em>Kung Fu Yoga</em> set and quipped: <em>“You are going to be my Titanic and ruin my career!”</em>
+                      <strong className="text-white font-medium">The “My Heart” Caption:</strong> Ananya shared a cozy picture with Akshay Kumar and Twinkle Khanna’s son Aarav Bhatia captioned simply: <em>“My heart ❤️”</em>.
                     </span>
                   </li>
                   <li className="feature-highlights-item">
                     <span className="feature-highlights-bullet">✦</span>
                     <span>
-                      <strong className="text-white font-medium">Near Breakdown:</strong> Anxious and unfamiliar with Farah&apos;s dry wit, Amyra almost cried until Geeta Kapur stepped in to calm her down.
+                      <strong className="text-white font-medium">Recreating Rani Mukerji’s K3G Look:</strong> Ananya wore a shimmering silver lehenga by Manish Malhotra paying homage to Rani Mukerji in <em>“Shava Shava”</em> from <em>Kabhi Khushi Kabhie Gham</em>.
                     </span>
                   </li>
                   <li className="feature-highlights-item">
                     <span className="feature-highlights-bullet">✦</span>
                     <span>
-                      <strong className="text-white font-medium">Boman Irani Coma Story:</strong> Farah recalled screaming at Boman on <em>Happy New Year</em> because his intense Method acting made her think he was in a coma.
+                      <strong className="text-white font-medium">Star-Studded Guestlist:</strong> Attendees included Aishwarya Rai Bachchan, Kareena Kapoor Khan, Janhvi Kapoor, Suhana Khan, and Nita Ambani.
                     </span>
                   </li>
                 </ul>
@@ -1372,11 +1387,11 @@ export default function Home() {
 
               <div className="meta-row mt-auto pt-3 border-t border-white/[0.06] flex items-center justify-between">
                 <div className="flex items-center gap-3">
-                  <span>BOLLYWOOD &amp; OTT</span>
+                  <span>BOLLYWOOD BUZZ</span>
                   <span className="dot-sep">◆</span>
                   <span>3 MIN READ</span>
                   <span className="dot-sep">◆</span>
-                  <span style={{ color: "var(--lime)" }}>CANDID SCOOP</span>
+                  <span style={{ color: "var(--lime)" }}>VIRAL SCOOP</span>
                 </div>
                 <span className="text-xs font-mono font-bold text-[var(--lime)] hidden sm:inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform">
                   Read Full Story →
@@ -1395,6 +1410,18 @@ export default function Home() {
               <span className="trend-rank">01</span>
               <div className="trend-text">
                 <Link
+                  href="/ananya-panday-aarav-bhatia-my-heart-post"
+                  style={{ color: "inherit" }}
+                >
+                  <h3>Ananya Panday’s “My Heart” post with Aarav Bhatia goes viral: Manish Malhotra Diwali party &amp; K3G lehenga look</h3>
+                  <span>BOLLYWOOD BUZZ · 4.20M REACTIONS</span>
+                </Link>
+              </div>
+            </div>
+            <div className="trend-item">
+              <span className="trend-rank">02</span>
+              <div className="trend-text">
+                <Link
                   href="/amyra-dastur-farah-khan-titanic-kung-fu-yoga"
                   style={{ color: "inherit" }}
                 >
@@ -1404,7 +1431,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">02</span>
+              <span className="trend-rank">03</span>
               <div className="trend-text">
                 <Link
                   href="/yash-ravana-costume-weight-ramayana"
@@ -1416,7 +1443,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">03</span>
+              <span className="trend-rank">04</span>
               <div className="trend-text">
                 <Link
                   href="/diljit-dosanjh-aura-india-tour-chandigarh-kolkata-dates"
@@ -1428,7 +1455,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">04</span>
+              <span className="trend-rank">05</span>
               <div className="trend-text">
                 <Link
                   href="/karan-johar-kareena-kapoor-diwali-pout-pic"
@@ -1440,7 +1467,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">05</span>
+              <span className="trend-rank">06</span>
               <div className="trend-text">
                 <Link
                   href="/farah-khan-fake-fire-video-clickbait"
@@ -1452,7 +1479,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">06</span>
+              <span className="trend-rank">07</span>
               <div className="trend-text">
                 <Link
                   href="/ranbir-kapoor-directorial-debut-last-decade-as-actor"
@@ -1464,7 +1491,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">07</span>
+              <span className="trend-rank">08</span>
               <div className="trend-text">
                 <Link
                   href="/farah-khan-bollywood-insecure-youtube-channel-dilip"
@@ -1476,7 +1503,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">08</span>
+              <span className="trend-rank">09</span>
               <div className="trend-text">
                 <Link
                   href="/rise-and-fall-2-winner-shehzad-poonawalla"
@@ -1488,7 +1515,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">09</span>
+              <span className="trend-rank">10</span>
               <div className="trend-text">
                 <Link
                   href="/maatrubhumi-trailer-release-date-salman-khan"
@@ -1496,18 +1523,6 @@ export default function Home() {
                 >
                   <h3>Maatrubhumi trailer cleared by CBFC: Salman Khan’s Galwan war drama trailer runs 4m 43s with U/A 16+ rating</h3>
                   <span>BOLLYWOOD &amp; MOVIES · 2.95M REACTIONS</span>
-                </Link>
-              </div>
-            </div>
-            <div className="trend-item">
-              <span className="trend-rank">10</span>
-              <div className="trend-text">
-                <Link
-                  href="/sai-pallavi-sita-fight-scene-ramayana-controversy"
-                  style={{ color: "inherit" }}
-                >
-                  <h3>Sai Pallavi Sita fight scene in Ramayana sparks debate: Fans divided over warrior avatar</h3>
-                  <span>BOLLYWOOD &amp; MOVIES · 2.85M REACTIONS</span>
                 </Link>
               </div>
             </div>
