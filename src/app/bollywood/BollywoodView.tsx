@@ -20,6 +20,16 @@ interface BollywoodArticle {
 
 const bollywoodArticles: BollywoodArticle[] = [
   {
+    id: "amyra-dastur-farah-khan-titanic-kung-fu-yoga",
+    category: "Candid Scoop & OTT",
+    title: "Amyra Dastur Says Farah Khan’s “Titanic” Comment Almost Made Her Cry",
+    badge: "⚡ Candid Scoop",
+    badgeType: "lime",
+    image: "/images/amyra-dastur-farah-khan-titanic-kung-fu-yoga.jpg",
+    href: "/amyra-dastur-farah-khan-titanic-kung-fu-yoga",
+    readOrTime: "3 MIN READ",
+  },
+  {
     id: "yash-ravana-costume-weight-ramayana",
     category: "Costume & Epics",
     title: "Yash’s Ravana Costume in Ramayana Weighed Up to 33 kg",
@@ -676,16 +686,16 @@ export default function BollywoodView() {
 
         {/* Lead Section: Latest Bollywood Published Article (Cover Story) + The Last 2 Blogs Uploaded Before It */}
         <section className="lead">
-          {/* Cover Story: Latest Published Bollywood Story (Yash's Ravana Costume Weight in Ramayana) */}
+          {/* Cover Story: Latest Published Bollywood Story (Amyra Dastur on Farah Khan's Titanic Remark) */}
           <Link
-            href="/yash-ravana-costume-weight-ramayana"
+            href="/amyra-dastur-farah-khan-titanic-kung-fu-yoga"
             className="feature-card group block"
-            aria-label="Read full cover story: Yash’s Ravana Costume in Ramayana Weighed Up to 33 kg"
+            aria-label="Read full cover story: Amyra Dastur Says Farah Khan’s “Titanic” Comment Almost Made Her Cry"
           >
             <div className="feature-media relative overflow-hidden">
               <Image
-                src="/images/yash-ravana-costume-weight-ramayana.jpg"
-                alt="Yash’s Ravana Costume in Ramayana Weighed Up to 33 kg"
+                src="/images/amyra-dastur-farah-khan-titanic-kung-fu-yoga.jpg"
+                alt="Amyra Dastur Reveals Farah Khan’s “Titanic” Remark"
                 fill
                 priority
                 className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
@@ -693,18 +703,18 @@ export default function BollywoodView() {
               />
               <div className="noise" />
               <span className="badge lime feature-tag z-10">
-                ⚡ Costume Reveal
+                ⚡ Candid Scoop
               </span>
             </div>
             <div className="feature-body">
               <h2 className="disp text-white group-hover:text-[var(--lime)] transition-colors">
-                Yash’s Ravana Costume in Ramayana Weighed Up to 33 kg
+                Amyra Dastur Says Farah Khan’s “Titanic” Comment Almost Made Her Cry
               </h2>
               <p>
-                Costume designer Saniya Sardhariya reveals Yash’s Ravana looks in Ramayana weighed up to 33 kg, and his crown alone was 1.8 kg. Read the full details.
+                Amyra Dastur shared how Farah Khan’s joke on the Kung Fu Yoga set almost made her cry. Read what Farah said and her Boman Irani story.
               </p>
               <div className="meta-row mt-3">
-                <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; EPICS</span>
+                <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; OTT</span>
                 <span className="dot-sep">◆</span>
                 <span>3 MIN READ</span>
                 <span className="dot-sep">◆</span>
@@ -715,7 +725,34 @@ export default function BollywoodView() {
 
           {/* Right Stack: The last 2-3 blogs uploaded before the latest one */}
           <div className="stack">
-            {/* Card 1: Diljit Dosanjh Adds Chandigarh and Kolkata Shows */}
+            {/* Card 1: Yash's Ravana Costume in Ramayana */}
+            <Link
+              href="/yash-ravana-costume-weight-ramayana"
+              className="card m1 group block"
+            >
+              <div className="card-media relative overflow-hidden">
+                <Image
+                  src="/images/yash-ravana-costume-weight-ramayana.jpg"
+                  alt="Yash’s Ravana Costume in Ramayana Weighed Up to 33 kg"
+                  fill
+                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 980px) 100vw, 35vw"
+                />
+                <span className="badge lime z-10 relative">⚡ Costume Reveal</span>
+              </div>
+              <div className="card-body">
+                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
+                  Yash’s Ravana Costume in Ramayana Weighed Up to 33 kg
+                </h3>
+                <div className="meta-row mt-2">
+                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; EPICS</span>
+                  <span className="dot-sep">◆</span>
+                  <span>3 MIN READ</span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Card 2: Diljit Dosanjh Adds Chandigarh and Kolkata Shows */}
             <Link
               href="/diljit-dosanjh-aura-india-tour-chandigarh-kolkata-dates"
               className="card m1 group block"
@@ -742,7 +779,7 @@ export default function BollywoodView() {
               </div>
             </Link>
 
-            {/* Card 2: Karan Johar Calls Kareena Kapoor Pout Queen */}
+            {/* Card 3: Karan Johar Calls Kareena Kapoor Pout Queen */}
             <Link
               href="/karan-johar-kareena-kapoor-diwali-pout-pic"
               className="card m1 group block"
@@ -763,33 +800,6 @@ export default function BollywoodView() {
                 </h3>
                 <div className="meta-row mt-2">
                   <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; FESTIVE</span>
-                  <span className="dot-sep">◆</span>
-                  <span>3 MIN READ</span>
-                </div>
-              </div>
-            </Link>
-
-            {/* Card 3: Farah Khan Reacts to Fake House Fire Videos */}
-            <Link
-              href="/farah-khan-fake-fire-video-clickbait"
-              className="card m1 group block"
-            >
-              <div className="card-media relative overflow-hidden">
-                <Image
-                  src="/images/farah-khan-fake-fire-video-clickbait.jpg"
-                  alt="Farah Khan Reacts to Fake Fire Videos: Clickbait Can’t Be Everything"
-                  fill
-                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
-                  sizes="(max-width: 980px) 100vw, 35vw"
-                />
-                <span className="badge lime z-10 relative">⚡ Fact Check Alert</span>
-              </div>
-              <div className="card-body">
-                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
-                  Farah Khan Reacts to Fake House Fire Videos
-                </h3>
-                <div className="meta-row mt-2">
-                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; NEWS</span>
                   <span className="dot-sep">◆</span>
                   <span>3 MIN READ</span>
                 </div>

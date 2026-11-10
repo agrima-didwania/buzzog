@@ -6,6 +6,12 @@ export const metadata: Metadata = {
   description:
     "Bollywood coverage from Buzz Originals — raw, unfiltered, built for the group chat. Red carpets, rumours, airport looks and exclusives.",
   keywords: [
+    "Amyra Dastur Farah Khan",
+    "Amyra Dastur Titanic",
+    "Farah Khan Titanic comment",
+    "Amyra Dastur Kung Fu Yoga",
+    "Farah Khan vlog Amyra Dastur",
+    "Farah Khan Boman Irani Happy New Year",
     "Yash Ravana costume",
     "Ramayana Yash look",
     "Saniya Sardhariya",
@@ -514,10 +520,10 @@ export const metadata: Metadata = {
     siteName: "Buzz Originals",
     images: [
       {
-        url: "/images/yash-ravana-costume-weight-ramayana.jpg",
+        url: "/images/amyra-dastur-farah-khan-titanic-kung-fu-yoga.jpg",
         width: 1200,
         height: 675,
-        alt: "Yash’s Ravana Costume in Ramayana Weighed Up to 33 kg — Buzz Originals",
+        alt: "Amyra Dastur Reveals Farah Khan’s “Titanic” Remark — Buzz Originals",
       },
     ],
     type: "website",
@@ -527,7 +533,7 @@ export const metadata: Metadata = {
     title: "Bollywood — Buzz Originals",
     description:
       "Raw, unfiltered Bollywood coverage of red carpets, gossip, airport sightings & exclusives.",
-    images: ["/images/yash-ravana-costume-weight-ramayana.jpg"],
+    images: ["/images/amyra-dastur-farah-khan-titanic-kung-fu-yoga.jpg"],
   },
 };
 
@@ -554,18 +560,24 @@ export default function BollywoodPage() {
         {
           "@type": "ListItem",
           position: 1,
+          name: "Amyra Dastur Reveals Farah Khan’s “Titanic” Remark",
+          url: "https://www.buzzoriginals.com/amyra-dastur-farah-khan-titanic-kung-fu-yoga",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
           name: "Yash’s Ravana Costume in Ramayana Weighed Up to 33 kg",
           url: "https://www.buzzoriginals.com/yash-ravana-costume-weight-ramayana",
         },
         {
           "@type": "ListItem",
-          position: 2,
+          position: 3,
           name: "Diljit Dosanjh Aura India Tour: Chandigarh and Kolkata Dates",
           url: "https://www.buzzoriginals.com/diljit-dosanjh-aura-india-tour-chandigarh-kolkata-dates",
         },
         {
           "@type": "ListItem",
-          position: 3,
+          position: 4,
           name: "Karan Johar Calls Kareena Kapoor Pout Queen in Diwali Pic",
           url: "https://www.buzzoriginals.com/karan-johar-kareena-kapoor-diwali-pout-pic",
         },

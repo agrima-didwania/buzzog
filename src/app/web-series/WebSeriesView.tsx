@@ -22,6 +22,18 @@ interface WebSeriesArticle {
 // All verified web series and OTT articles in reverse chronological order
 const webSeriesArticles: WebSeriesArticle[] = [
   {
+    id: "amyra-dastur-farah-khan-titanic-kung-fu-yoga",
+    category: "OTT & Vlogs",
+    title: "Amyra Dastur Says Farah Khan’s “Titanic” Comment Almost Made Her Cry",
+    badge: "⚡ Candid Scoop",
+    badgeType: "lime",
+    image: "/images/amyra-dastur-farah-khan-titanic-kung-fu-yoga.jpg",
+    href: "/amyra-dastur-farah-khan-titanic-kung-fu-yoga",
+    readOrTime: "3 MIN READ",
+    excerpt:
+      "Amyra Dastur reveals how Farah Khan's savage 'Titanic' remark on the Kung Fu Yoga set terrified her, plus Farah's hilarious Boman Irani coma story on Happy New Year.",
+  },
+  {
     id: "the-royals-season-2-goes-on-floors",
     category: "Netflix Original",
     title: "The Royals Season 2 Goes on Floors: Ishaan Khatter and Zeenat Aman Return",

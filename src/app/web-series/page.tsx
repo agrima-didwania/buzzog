@@ -6,6 +6,10 @@ export const metadata: Metadata = {
   description:
     "Web Series coverage from Buzz Originals — raw, unfiltered, built for the group chat. OTT releases, streaming scoops, recaps and verdicts across Prime Video, Netflix, JioHotstar, ZEE5 and SonyLIV.",
   keywords: [
+    "Amyra Dastur Farah Khan",
+    "Amyra Dastur Titanic",
+    "Farah Khan vlog Amyra Dastur",
+    "Chumbak Netflix series Amyra Dastur",
     "The Royals Season 2",
     "The Royals 2",
     "The Royals Season 2 cast",
@@ -60,10 +64,10 @@ export const metadata: Metadata = {
     siteName: "Buzz Originals",
     images: [
       {
-        url: "/images/the-royals-season-2-goes-on-floors.jpg",
+        url: "/images/amyra-dastur-farah-khan-titanic-kung-fu-yoga.jpg",
         width: 1200,
         height: 675,
-        alt: "The Royals Season 2 Goes on Floors: Ishaan Khatter and Zeenat Aman Return — Buzz Originals Web Series",
+        alt: "Amyra Dastur Reveals Farah Khan’s “Titanic” Remark — Buzz Originals Web Series",
       },
     ],
     type: "website",
@@ -73,7 +77,7 @@ export const metadata: Metadata = {
     title: "Web Series — Buzz Originals",
     description:
       "Raw, unfiltered Web Series coverage of OTT releases, streaming scoops, recaps and verdicts.",
-    images: ["/images/the-royals-season-2-goes-on-floors.jpg"],
+    images: ["/images/amyra-dastur-farah-khan-titanic-kung-fu-yoga.jpg"],
   },
 };
 
@@ -100,12 +104,18 @@ export default function WebSeriesPage() {
         {
           "@type": "ListItem",
           position: 1,
+          name: "Amyra Dastur Reveals Farah Khan’s “Titanic” Remark",
+          url: "https://www.buzzoriginals.com/amyra-dastur-farah-khan-titanic-kung-fu-yoga",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
           name: "The Royals Season 2 Goes on Floors: Ishaan Khatter and Zeenat Aman Return",
           url: "https://www.buzzoriginals.com/the-royals-season-2-goes-on-floors",
         },
         {
           "@type": "ListItem",
-          position: 2,
+          position: 3,
           name: "Maharani Season 5 Release Date: Jan 2027 Expected",
           url: "https://www.buzzoriginals.com/maharani-season-5-release-date-january-2027",
         },
