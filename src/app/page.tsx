@@ -185,6 +185,20 @@ export default function Home() {
 
   const editorialArticles: EditorialArticle[] = [
     {
+      id: "yash-ravana-costume-weight-ramayana",
+      anchorId: "yash-ravana-costume-story",
+      href: "/yash-ravana-costume-weight-ramayana",
+      title: "Yash’s Ravana Costume in Ramayana Weighed Up to 33 kg",
+      excerpt: "Costume designer Saniya Sardhariya reveals Yash’s Ravana looks in Ramayana weighed up to 33 kg, and his crown alone was 1.8 kg. Read the full details.",
+      category: "Bollywood",
+      secondaryCategory: "Latest",
+      displayCategory: "BOLLYWOOD & EPICS",
+      badge: "Costume Scoop",
+      badgeType: "lime",
+      readTime: "3 MIN READ",
+      image: "/images/yash-ravana-costume-weight-ramayana.jpg",
+    },
+    {
       id: "diljit-dosanjh-aura-india-tour-chandigarh-kolkata-dates",
       anchorId: "diljit-tour-dates-story",
       href: "/diljit-dosanjh-aura-india-tour-chandigarh-kolkata-dates",
@@ -1281,15 +1295,15 @@ export default function Home() {
         <section className="hero" id="featured">
           {/* 1. Main Featured Story (Commanding Top Story Presentation) */}
           <Link
-            href="/diljit-dosanjh-aura-india-tour-chandigarh-kolkata-dates"
+            href="/yash-ravana-costume-weight-ramayana"
             className="feature-card flex flex-col transition-all hover:border-[var(--lime)] focus-visible:ring-2 focus-visible:ring-[var(--lime)] group"
             style={{ textDecoration: "none", color: "inherit" }}
-            aria-label="Read full article: Diljit Dosanjh Adds Chandigarh and Kolkata Shows to Aura India Tour 2026"
+            aria-label="Read full article: Yash’s Ravana Costume in Ramayana Weighed Up to 33 kg"
           >
             <div className="feature-media" style={{ overflow: "hidden", position: "relative" }}>
               <Image
-                src="/images/diljit-dosanjh-aura-india-tour-chandigarh-kolkata-dates.jpg"
-                alt="Diljit Dosanjh Adds Chandigarh and Kolkata Shows to Aura India Tour 2026"
+                src="/images/yash-ravana-costume-weight-ramayana.jpg"
+                alt="Yash’s Ravana Costume in Ramayana Weighed Up to 33 kg"
                 fill
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 750px"
@@ -1298,45 +1312,45 @@ export default function Home() {
               />
               <div className="noise" style={{ pointerEvents: "none" }}></div>
               <div className="feature-tag flex items-center gap-2">
-                <span className="badge lime">⚡ Tour Exclusive</span>
-                <span className="badge pink">Concert Update</span>
-                <span className="badge">Diljit Dosanjh</span>
+                <span className="badge lime">⚡ Costume Reveal</span>
+                <span className="badge pink">Ramayana 2026</span>
+                <span className="badge">Yash as Ravana</span>
               </div>
             </div>
             <div className="feature-body">
               <div className="flex items-center gap-2 mb-2 font-mono text-xs text-[var(--lime)] font-bold tracking-wider uppercase">
-                <span>★ TOP STORY · DILJIT DOSANJH OFFICIALLY ADDS CHANDIGARH AND KOLKATA SHOWS TO AURA INDIA TOUR 2026</span>
+                <span>★ TOP STORY · SANIYA SARDHARIYA REVEALS YASH&apos;S MONUMENTAL 33 KG COSTUMES &amp; 1.8 KG CROWN IN RAMAYANA</span>
               </div>
               <h1 className="disp" style={{ color: "#fff" }}>
-                Diljit Dosanjh Adds Chandigarh and Kolkata Shows to Aura India Tour 2026
+                Yash’s Ravana Costume in Ramayana Weighed Up to 33 kg
               </h1>
               <p>
-                Diljit Dosanjh&apos;s Aura India Tour now includes Chandigarh on December 12 and Kolkata on December 19. See the full 2026 schedule, venues and ticket sale dates.
+                Costume designer Saniya Sardhariya reveals Yash’s Ravana looks in Ramayana weighed up to 33 kg, and his crown alone was 1.8 kg. Read the full details.
               </p>
 
               {/* Editorial Highlights Box */}
               <div className="feature-highlights">
                 <div className="feature-highlights-header">
                   <span className="w-2 h-2 rounded-full bg-[var(--lime)] animate-pulse inline-block"></span>
-                  <span>Inside Diljit&apos;s Extended Aura India Tour &amp; Ticket Rollout</span>
+                  <span>Inside Yash&apos;s Ravana Transformation &amp; Costume Engineering</span>
                 </div>
                 <ul className="feature-highlights-list">
                   <li className="feature-highlights-item">
                     <span className="feature-highlights-bullet">✦</span>
                     <span>
-                      <strong className="text-white font-medium">New Stadium Stops:</strong> Chandigarh on December 12 at New PCA Stadium, Mullanpur; Kolkata on December 19 at Vivekananda Yuba Bharati Krirangan (Salt Lake Stadium).
+                      <strong className="text-white font-medium">Monumental Weight:</strong> Most looks weighed 16–20 kg, while three royal outfits (Lanka look, royal wedding, and Surpanakha&apos;s wedding) hit 30–33 kg.
                     </span>
                   </li>
                   <li className="feature-highlights-item">
                     <span className="feature-highlights-bullet">✦</span>
                     <span>
-                      <strong className="text-white font-medium">Ticket Booking Windows:</strong> Pre-sale opens November 10 at 12:00 PM (Noon); General sale goes live November 12 at 3:00 PM exclusively on BookMyShow.
+                      <strong className="text-white font-medium">The 1.8 kg Crown:</strong> Engineered through multiple 3D mockups to make it as light as physically possible while preserving majestic spires.
                     </span>
                   </li>
                   <li className="feature-highlights-item">
                     <span className="feature-highlights-bullet">✦</span>
                     <span>
-                      <strong className="text-white font-medium">Tour Defiance:</strong> Diljit responds to song restrictions and hurdles: <em>“Anyone can say anything, but I will meet you in Indore on 15th November.”</em>
+                      <strong className="text-white font-medium">Actor&apos;s Resilience:</strong> 6–7 kg of pure heritage jewellery by House of Amrapali; Yash maintained high energy and joked with crew on set.
                     </span>
                   </li>
                 </ul>
@@ -1344,11 +1358,11 @@ export default function Home() {
 
               <div className="meta-row mt-auto pt-3 border-t border-white/[0.06] flex items-center justify-between">
                 <div className="flex items-center gap-3">
-                  <span>BOLLYWOOD &amp; CONCERTS</span>
+                  <span>BOLLYWOOD &amp; EPICS</span>
                   <span className="dot-sep">◆</span>
-                  <span>4 MIN READ</span>
+                  <span>3 MIN READ</span>
                   <span className="dot-sep">◆</span>
-                  <span style={{ color: "var(--lime)" }}>TOUR EXCLUSIVE</span>
+                  <span style={{ color: "var(--lime)" }}>COSTUME REVEAL</span>
                 </div>
                 <span className="text-xs font-mono font-bold text-[var(--lime)] hidden sm:inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform">
                   Read Full Story →
@@ -1367,6 +1381,18 @@ export default function Home() {
               <span className="trend-rank">01</span>
               <div className="trend-text">
                 <Link
+                  href="/yash-ravana-costume-weight-ramayana"
+                  style={{ color: "inherit" }}
+                >
+                  <h3>Yash’s Ravana costume in Ramayana weighed up to 33 kg: Designer reveals 1.8 kg crown &amp; 7 kg Amrapali jewellery</h3>
+                  <span>BOLLYWOOD &amp; EPICS · 3.90M REACTIONS</span>
+                </Link>
+              </div>
+            </div>
+            <div className="trend-item">
+              <span className="trend-rank">02</span>
+              <div className="trend-text">
+                <Link
                   href="/diljit-dosanjh-aura-india-tour-chandigarh-kolkata-dates"
                   style={{ color: "inherit" }}
                 >
@@ -1376,7 +1402,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">02</span>
+              <span className="trend-rank">03</span>
               <div className="trend-text">
                 <Link
                   href="/karan-johar-kareena-kapoor-diwali-pout-pic"
@@ -1388,7 +1414,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">03</span>
+              <span className="trend-rank">04</span>
               <div className="trend-text">
                 <Link
                   href="/farah-khan-fake-fire-video-clickbait"
@@ -1400,7 +1426,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">04</span>
+              <span className="trend-rank">05</span>
               <div className="trend-text">
                 <Link
                   href="/ranbir-kapoor-directorial-debut-last-decade-as-actor"
@@ -1412,7 +1438,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">05</span>
+              <span className="trend-rank">06</span>
               <div className="trend-text">
                 <Link
                   href="/farah-khan-bollywood-insecure-youtube-channel-dilip"
@@ -1424,7 +1450,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">06</span>
+              <span className="trend-rank">07</span>
               <div className="trend-text">
                 <Link
                   href="/rise-and-fall-2-winner-shehzad-poonawalla"
@@ -1436,7 +1462,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">07</span>
+              <span className="trend-rank">08</span>
               <div className="trend-text">
                 <Link
                   href="/maatrubhumi-trailer-release-date-salman-khan"
@@ -1448,7 +1474,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">08</span>
+              <span className="trend-rank">09</span>
               <div className="trend-text">
                 <Link
                   href="/sai-pallavi-sita-fight-scene-ramayana-controversy"
@@ -1460,7 +1486,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">09</span>
+              <span className="trend-rank">10</span>
               <div className="trend-text">
                 <Link
                   href="/dia-mirza-diwali-video-bmc-bombay-high-court"
@@ -1468,18 +1494,6 @@ export default function Home() {
                 >
                   <h3>Dia Mirza Diwali video row: Bombay High Court orders BMC to re-upload deleted awareness clip</h3>
                   <span>BOLLYWOOD &amp; NEWS · 2.65M REACTIONS</span>
-                </Link>
-              </div>
-            </div>
-            <div className="trend-item">
-              <span className="trend-rank">10</span>
-              <div className="trend-text">
-                <Link
-                  href="/munna-bhai-3-farhad-samji-writing-script"
-                  style={{ color: "inherit" }}
-                >
-                  <h3>Munna Bhai 3 update: Farhad Samji begins writing the script for Rajkumar Hirani</h3>
-                  <span>BOLLYWOOD &amp; NEWS · 2.45M REACTIONS</span>
                 </Link>
               </div>
             </div>

@@ -6,6 +6,13 @@ export const metadata: Metadata = {
   description:
     "Bollywood coverage from Buzz Originals — raw, unfiltered, built for the group chat. Red carpets, rumours, airport looks and exclusives.",
   keywords: [
+    "Yash Ravana costume",
+    "Ramayana Yash look",
+    "Saniya Sardhariya",
+    "Ravana crown weight",
+    "Ramayana Nitesh Tiwari",
+    "Ranbir Kapoor",
+    "Yash",
     "Diljit Dosanjh Aura India Tour",
     "Diljit Dosanjh concert Kolkata",
     "Diljit Dosanjh Chandigarh concert date",
@@ -507,10 +514,10 @@ export const metadata: Metadata = {
     siteName: "Buzz Originals",
     images: [
       {
-        url: "/images/diljit-dosanjh-aura-india-tour-chandigarh-kolkata-dates.jpg",
+        url: "/images/yash-ravana-costume-weight-ramayana.jpg",
         width: 1200,
         height: 675,
-        alt: "Diljit Dosanjh Adds Chandigarh and Kolkata Shows to Aura India Tour 2026 — Buzz Originals",
+        alt: "Yash’s Ravana Costume in Ramayana Weighed Up to 33 kg — Buzz Originals",
       },
     ],
     type: "website",
@@ -520,7 +527,7 @@ export const metadata: Metadata = {
     title: "Bollywood — Buzz Originals",
     description:
       "Raw, unfiltered Bollywood coverage of red carpets, gossip, airport sightings & exclusives.",
-    images: ["/images/diljit-dosanjh-aura-india-tour-chandigarh-kolkata-dates.jpg"],
+    images: ["/images/yash-ravana-costume-weight-ramayana.jpg"],
   },
 };
 
@@ -547,42 +554,48 @@ export default function BollywoodPage() {
         {
           "@type": "ListItem",
           position: 1,
+          name: "Yash’s Ravana Costume in Ramayana Weighed Up to 33 kg",
+          url: "https://www.buzzoriginals.com/yash-ravana-costume-weight-ramayana",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
           name: "Diljit Dosanjh Aura India Tour: Chandigarh and Kolkata Dates",
           url: "https://www.buzzoriginals.com/diljit-dosanjh-aura-india-tour-chandigarh-kolkata-dates",
         },
         {
           "@type": "ListItem",
-          position: 2,
+          position: 3,
           name: "Karan Johar Calls Kareena Kapoor Pout Queen in Diwali Pic",
           url: "https://www.buzzoriginals.com/karan-johar-kareena-kapoor-diwali-pout-pic",
         },
         {
           "@type": "ListItem",
-          position: 3,
+          position: 4,
           name: "Farah Khan Reacts to Fake House Fire Videos",
           url: "https://www.buzzoriginals.com/farah-khan-fake-fire-video-clickbait",
         },
         {
           "@type": "ListItem",
-          position: 4,
+          position: 5,
           name: "Ranbir Kapoor Directorial Debut Plans: 2-3 Years Away",
           url: "https://www.buzzoriginals.com/ranbir-kapoor-directorial-debut-last-decade-as-actor",
         },
         {
           "@type": "ListItem",
-          position: 5,
+          position: 6,
           name: "Farah Khan on Bollywood Insecurity & Her YouTube Channel",
           url: "https://www.buzzoriginals.com/farah-khan-bollywood-insecure-youtube-channel-dilip",
         },
         {
           "@type": "ListItem",
-          position: 6,
+          position: 7,
           name: "Maatrubhumi Trailer Gets CBFC Nod: Release Date Update",
           url: "https://www.buzzoriginals.com/maatrubhumi-trailer-release-date-salman-khan",
         },
         {
           "@type": "ListItem",
-          position: 7,
+          position: 8,
           name: "Sai Pallavi Sita Fight Scene in Ramayana Sparks Debate",
           url: "https://www.buzzoriginals.com/sai-pallavi-sita-fight-scene-ramayana-controversy",
         },

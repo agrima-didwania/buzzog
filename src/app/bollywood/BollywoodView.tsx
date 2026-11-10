@@ -20,6 +20,16 @@ interface BollywoodArticle {
 
 const bollywoodArticles: BollywoodArticle[] = [
   {
+    id: "yash-ravana-costume-weight-ramayana",
+    category: "Costume & Epics",
+    title: "Yash’s Ravana Costume in Ramayana Weighed Up to 33 kg",
+    badge: "⚡ Costume Reveal",
+    badgeType: "lime",
+    image: "/images/yash-ravana-costume-weight-ramayana.jpg",
+    href: "/yash-ravana-costume-weight-ramayana",
+    readOrTime: "3 MIN READ",
+  },
+  {
     id: "diljit-dosanjh-aura-india-tour-chandigarh-kolkata-dates",
     category: "Tour & Concerts",
     title: "Diljit Dosanjh Adds Chandigarh and Kolkata Shows to Aura India Tour 2026",
@@ -666,16 +676,16 @@ export default function BollywoodView() {
 
         {/* Lead Section: Latest Bollywood Published Article (Cover Story) + The Last 2 Blogs Uploaded Before It */}
         <section className="lead">
-          {/* Cover Story: Latest Published Bollywood Story (Diljit Dosanjh Adds Chandigarh and Kolkata Shows) */}
+          {/* Cover Story: Latest Published Bollywood Story (Yash's Ravana Costume Weight in Ramayana) */}
           <Link
-            href="/diljit-dosanjh-aura-india-tour-chandigarh-kolkata-dates"
+            href="/yash-ravana-costume-weight-ramayana"
             className="feature-card group block"
-            aria-label="Read full cover story: Diljit Dosanjh Adds Chandigarh and Kolkata Shows to Aura India Tour 2026"
+            aria-label="Read full cover story: Yash’s Ravana Costume in Ramayana Weighed Up to 33 kg"
           >
             <div className="feature-media relative overflow-hidden">
               <Image
-                src="/images/diljit-dosanjh-aura-india-tour-chandigarh-kolkata-dates.jpg"
-                alt="Diljit Dosanjh Adds Chandigarh and Kolkata Shows to Aura India Tour 2026"
+                src="/images/yash-ravana-costume-weight-ramayana.jpg"
+                alt="Yash’s Ravana Costume in Ramayana Weighed Up to 33 kg"
                 fill
                 priority
                 className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
@@ -683,29 +693,56 @@ export default function BollywoodView() {
               />
               <div className="noise" />
               <span className="badge lime feature-tag z-10">
-                ⚡ Tour Exclusive
+                ⚡ Costume Reveal
               </span>
             </div>
             <div className="feature-body">
               <h2 className="disp text-white group-hover:text-[var(--lime)] transition-colors">
-                Diljit Dosanjh Adds Chandigarh and Kolkata Shows to Aura India Tour 2026
+                Yash’s Ravana Costume in Ramayana Weighed Up to 33 kg
               </h2>
               <p>
-                Diljit Dosanjh&apos;s Aura India Tour now includes Chandigarh on December 12 and Kolkata on December 19. See the full 2026 schedule, venues and ticket sale dates.
+                Costume designer Saniya Sardhariya reveals Yash’s Ravana looks in Ramayana weighed up to 33 kg, and his crown alone was 1.8 kg. Read the full details.
               </p>
               <div className="meta-row mt-3">
-                <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; CONCERTS</span>
+                <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; EPICS</span>
                 <span className="dot-sep">◆</span>
-                <span>4 MIN READ</span>
+                <span>3 MIN READ</span>
                 <span className="dot-sep">◆</span>
-                <span className="text-[var(--lime)] font-bold">NOV 09</span>
+                <span className="text-[var(--lime)] font-bold">NOV 10</span>
               </div>
             </div>
           </Link>
 
           {/* Right Stack: The last 2-3 blogs uploaded before the latest one */}
           <div className="stack">
-            {/* Card 1: Karan Johar Calls Kareena Kapoor Pout Queen */}
+            {/* Card 1: Diljit Dosanjh Adds Chandigarh and Kolkata Shows */}
+            <Link
+              href="/diljit-dosanjh-aura-india-tour-chandigarh-kolkata-dates"
+              className="card m1 group block"
+            >
+              <div className="card-media relative overflow-hidden">
+                <Image
+                  src="/images/diljit-dosanjh-aura-india-tour-chandigarh-kolkata-dates.jpg"
+                  alt="Diljit Dosanjh Adds Chandigarh and Kolkata Shows to Aura India Tour 2026"
+                  fill
+                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 980px) 100vw, 35vw"
+                />
+                <span className="badge lime z-10 relative">⚡ Tour Exclusive</span>
+              </div>
+              <div className="card-body">
+                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
+                  Diljit Dosanjh Adds Chandigarh and Kolkata Shows
+                </h3>
+                <div className="meta-row mt-2">
+                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; CONCERTS</span>
+                  <span className="dot-sep">◆</span>
+                  <span>4 MIN READ</span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Card 2: Karan Johar Calls Kareena Kapoor Pout Queen */}
             <Link
               href="/karan-johar-kareena-kapoor-diwali-pout-pic"
               className="card m1 group block"
@@ -732,7 +769,7 @@ export default function BollywoodView() {
               </div>
             </Link>
 
-            {/* Card 2: Farah Khan Reacts to Fake House Fire Videos */}
+            {/* Card 3: Farah Khan Reacts to Fake House Fire Videos */}
             <Link
               href="/farah-khan-fake-fire-video-clickbait"
               className="card m1 group block"
@@ -755,33 +792,6 @@ export default function BollywoodView() {
                   <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; NEWS</span>
                   <span className="dot-sep">◆</span>
                   <span>3 MIN READ</span>
-                </div>
-              </div>
-            </Link>
-
-            {/* Card 3: Ranbir Kapoor Directorial Debut Plans */}
-            <Link
-              href="/ranbir-kapoor-directorial-debut-last-decade-as-actor"
-              className="card m1 group block"
-            >
-              <div className="card-media relative overflow-hidden">
-                <Image
-                  src="/images/ranbir-kapoor-directorial-debut-last-decade-as-actor.jpg"
-                  alt="Ranbir Kapoor Directorial Debut Plans: 2-3 Years Away and What He Meant by Last Decade as an Actor"
-                  fill
-                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
-                  sizes="(max-width: 980px) 100vw, 35vw"
-                />
-                <span className="badge lime z-10 relative">⚡ Exclusive Interview</span>
-              </div>
-              <div className="card-body">
-                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
-                  Ranbir Kapoor Directorial Debut Plans: 2-3 Years Away
-                </h3>
-                <div className="meta-row mt-2">
-                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; CINEMA</span>
-                  <span className="dot-sep">◆</span>
-                  <span>4 MIN READ</span>
                 </div>
               </div>
             </Link>
