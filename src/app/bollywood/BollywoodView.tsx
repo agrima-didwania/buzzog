@@ -20,6 +20,16 @@ interface BollywoodArticle {
 
 const bollywoodArticles: BollywoodArticle[] = [
   {
+    id: "student-of-the-year-after-dark-reema-maya-class-comparison",
+    category: "Thriller & Mystery",
+    title: "Student of the Year After Dark vs Class: Reema Maya Reacts",
+    badge: "⚡ Exclusive Interview",
+    badgeType: "lime",
+    image: "/images/student-of-the-year-after-dark-reema-maya-class-comparison.jpg",
+    href: "/student-of-the-year-after-dark-reema-maya-class-comparison",
+    readOrTime: "3 MIN READ",
+  },
+  {
     id: "ananya-panday-aarav-bhatia-my-heart-post",
     category: "Viral Scoop & Dating",
     title: "Ananya Panday’s “My Heart” Post With Aarav Bhatia Goes Viral",
@@ -696,16 +706,16 @@ export default function BollywoodView() {
 
         {/* Lead Section: Latest Bollywood Published Article (Cover Story) + The Last 2 Blogs Uploaded Before It */}
         <section className="lead">
-          {/* Cover Story: Latest Published Bollywood Story (Ananya Panday's "My Heart" Post With Aarav Bhatia) */}
+          {/* Cover Story: Latest Published Bollywood Story (Student of the Year: After Dark vs Class) */}
           <Link
-            href="/ananya-panday-aarav-bhatia-my-heart-post"
+            href="/student-of-the-year-after-dark-reema-maya-class-comparison"
             className="feature-card group block"
-            aria-label="Read full cover story: Ananya Panday’s “My Heart” Post With Aarav Bhatia Goes Viral"
+            aria-label="Read full cover story: Student of the Year After Dark vs Class: Reema Maya Reacts"
           >
             <div className="feature-media relative overflow-hidden">
               <Image
-                src="/images/ananya-panday-aarav-bhatia-my-heart-post.jpg"
-                alt="Ananya Panday’s “My Heart” Post With Aarav Bhatia Goes Viral"
+                src="/images/student-of-the-year-after-dark-reema-maya-class-comparison.jpg"
+                alt="Student of the Year After Dark vs Class: Reema Maya Reacts"
                 fill
                 priority
                 className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
@@ -713,29 +723,56 @@ export default function BollywoodView() {
               />
               <div className="noise" />
               <span className="badge lime feature-tag z-10">
-                ⚡ Viral Scoop
+                ⚡ Exclusive Interview
               </span>
             </div>
             <div className="feature-body">
               <h2 className="disp text-white group-hover:text-[var(--lime)] transition-colors">
-                Ananya Panday’s “My Heart” Post With Aarav Bhatia Goes Viral
+                Student of the Year After Dark vs Class: Reema Maya Reacts
               </h2>
               <p>
-                Ananya Panday shared a photo with Aarav Bhatia from Manish Malhotra’s Diwali party with the caption “My heart.” Here is what we know.
+                Reema Maya says Student of the Year: After Dark is a fresh take on the young-adult murder mystery genre, not a copy of Netflix’s Class. Here’s what she said.
               </p>
               <div className="meta-row mt-3">
-                <span className="text-[var(--magenta)] font-bold">BOLLYWOOD BUZZ</span>
+                <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; OTT</span>
                 <span className="dot-sep">◆</span>
                 <span>3 MIN READ</span>
                 <span className="dot-sep">◆</span>
-                <span className="text-[var(--lime)] font-bold">NOV 10</span>
+                <span className="text-[var(--lime)] font-bold">NOV 13</span>
               </div>
             </div>
           </Link>
 
           {/* Right Stack: The last 2-3 blogs uploaded before the latest one */}
           <div className="stack">
-            {/* Card 1: Amyra Dastur on Farah Khan's Titanic Remark */}
+            {/* Card 1: Ananya Panday's "My Heart" Post With Aarav Bhatia */}
+            <Link
+              href="/ananya-panday-aarav-bhatia-my-heart-post"
+              className="card m1 group block"
+            >
+              <div className="card-media relative overflow-hidden">
+                <Image
+                  src="/images/ananya-panday-aarav-bhatia-my-heart-post.jpg"
+                  alt="Ananya Panday’s “My Heart” Post With Aarav Bhatia Goes Viral"
+                  fill
+                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 980px) 100vw, 35vw"
+                />
+                <span className="badge lime z-10 relative">⚡ Viral Scoop</span>
+              </div>
+              <div className="card-body">
+                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
+                  Ananya Panday’s “My Heart” Post With Aarav Bhatia Goes Viral
+                </h3>
+                <div className="meta-row mt-2">
+                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD BUZZ</span>
+                  <span className="dot-sep">◆</span>
+                  <span>3 MIN READ</span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Card 2: Amyra Dastur on Farah Khan's Titanic Remark */}
             <Link
               href="/amyra-dastur-farah-khan-titanic-kung-fu-yoga"
               className="card m1 group block"
@@ -762,7 +799,7 @@ export default function BollywoodView() {
               </div>
             </Link>
 
-            {/* Card 2: Yash's Ravana Costume in Ramayana */}
+            {/* Card 3: Yash's Ravana Costume in Ramayana */}
             <Link
               href="/yash-ravana-costume-weight-ramayana"
               className="card m1 group block"
@@ -785,33 +822,6 @@ export default function BollywoodView() {
                   <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; EPICS</span>
                   <span className="dot-sep">◆</span>
                   <span>3 MIN READ</span>
-                </div>
-              </div>
-            </Link>
-
-            {/* Card 3: Diljit Dosanjh Adds Chandigarh and Kolkata Shows */}
-            <Link
-              href="/diljit-dosanjh-aura-india-tour-chandigarh-kolkata-dates"
-              className="card m1 group block"
-            >
-              <div className="card-media relative overflow-hidden">
-                <Image
-                  src="/images/diljit-dosanjh-aura-india-tour-chandigarh-kolkata-dates.jpg"
-                  alt="Diljit Dosanjh Adds Chandigarh and Kolkata Shows to Aura India Tour 2026"
-                  fill
-                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
-                  sizes="(max-width: 980px) 100vw, 35vw"
-                />
-                <span className="badge lime z-10 relative">⚡ Tour Exclusive</span>
-              </div>
-              <div className="card-body">
-                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
-                  Diljit Dosanjh Adds Chandigarh and Kolkata Shows
-                </h3>
-                <div className="meta-row mt-2">
-                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; CONCERTS</span>
-                  <span className="dot-sep">◆</span>
-                  <span>4 MIN READ</span>
                 </div>
               </div>
             </Link>

@@ -22,6 +22,18 @@ interface WebSeriesArticle {
 // All verified web series and OTT articles in reverse chronological order
 const webSeriesArticles: WebSeriesArticle[] = [
   {
+    id: "student-of-the-year-after-dark-reema-maya-class-comparison",
+    category: "JioHotstar Original",
+    title: "Student of the Year After Dark vs Class: Reema Maya Reacts",
+    badge: "Exclusive Interview",
+    badgeType: "lime",
+    image: "/images/student-of-the-year-after-dark-reema-maya-class-comparison.jpg",
+    href: "/student-of-the-year-after-dark-reema-maya-class-comparison",
+    readOrTime: "3 MIN READ",
+    excerpt:
+      "Reema Maya says Student of the Year: After Dark is a fresh take on the young-adult murder mystery genre, not a copy of Netflix’s Class. Here’s what she said.",
+  },
+  {
     id: "amyra-dastur-farah-khan-titanic-kung-fu-yoga",
     category: "OTT & Vlogs",
     title: "Amyra Dastur Says Farah Khan’s “Titanic” Comment Almost Made Her Cry",

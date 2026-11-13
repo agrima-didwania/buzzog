@@ -6,6 +6,17 @@ export const metadata: Metadata = {
   description:
     "Web Series coverage from Buzz Originals — raw, unfiltered, built for the group chat. OTT releases, streaming scoops, recaps and verdicts across Prime Video, Netflix, JioHotstar, ZEE5 and SonyLIV.",
   keywords: [
+    "Student of the Year After Dark",
+    "Reema Maya",
+    "Student of the Year After Dark vs Class",
+    "Shanaya Kapoor web series",
+    "Karan Johar web series",
+    "Student of the Year After Dark JioHotstar",
+    "Student of the Year After Dark release date",
+    "Student of the Year After Dark cast",
+    "Is Student of the Year After Dark copied from Class",
+    "Student of the Year After Dark story",
+    "Reema Maya reacts to Class comparison",
     "Amyra Dastur Farah Khan",
     "Amyra Dastur Titanic",
     "Farah Khan vlog Amyra Dastur",
@@ -64,10 +75,10 @@ export const metadata: Metadata = {
     siteName: "Buzz Originals",
     images: [
       {
-        url: "/images/amyra-dastur-farah-khan-titanic-kung-fu-yoga.jpg",
+        url: "/images/student-of-the-year-after-dark-reema-maya-class-comparison.jpg",
         width: 1200,
         height: 675,
-        alt: "Amyra Dastur Reveals Farah Khan’s “Titanic” Remark — Buzz Originals Web Series",
+        alt: "Student of the Year After Dark vs Class: Reema Maya Reacts — Buzz Originals Web Series",
       },
     ],
     type: "website",
@@ -77,7 +88,7 @@ export const metadata: Metadata = {
     title: "Web Series — Buzz Originals",
     description:
       "Raw, unfiltered Web Series coverage of OTT releases, streaming scoops, recaps and verdicts.",
-    images: ["/images/amyra-dastur-farah-khan-titanic-kung-fu-yoga.jpg"],
+    images: ["/images/student-of-the-year-after-dark-reema-maya-class-comparison.jpg"],
   },
 };
 
@@ -104,6 +115,12 @@ export default function WebSeriesPage() {
         {
           "@type": "ListItem",
           position: 1,
+          name: "Student of the Year After Dark vs Class: Reema Maya Reacts",
+          url: "https://www.buzzoriginals.com/student-of-the-year-after-dark-reema-maya-class-comparison",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
           name: "Amyra Dastur Reveals Farah Khan’s “Titanic” Remark",
           url: "https://www.buzzoriginals.com/amyra-dastur-farah-khan-titanic-kung-fu-yoga",
         },

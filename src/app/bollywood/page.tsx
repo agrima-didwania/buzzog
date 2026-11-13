@@ -6,6 +6,17 @@ export const metadata: Metadata = {
   description:
     "Bollywood coverage from Buzz Originals — raw, unfiltered, built for the group chat. Red carpets, rumours, airport looks and exclusives.",
   keywords: [
+    "Student of the Year After Dark",
+    "Reema Maya",
+    "Student of the Year After Dark vs Class",
+    "Shanaya Kapoor web series",
+    "Karan Johar web series",
+    "Student of the Year After Dark JioHotstar",
+    "Student of the Year After Dark release date",
+    "Student of the Year After Dark cast",
+    "Is Student of the Year After Dark copied from Class",
+    "Student of the Year After Dark story",
+    "Reema Maya reacts to Class comparison",
     "Ananya Panday Aarav Bhatia",
     "Ananya Panday My Heart post",
     "Aarav Bhatia Akshay Kumar son",
@@ -532,10 +543,10 @@ export const metadata: Metadata = {
     siteName: "Buzz Originals",
     images: [
       {
-        url: "/images/ananya-panday-aarav-bhatia-my-heart-post.jpg",
+        url: "/images/student-of-the-year-after-dark-reema-maya-class-comparison.jpg",
         width: 1200,
         height: 675,
-        alt: "Ananya Panday’s “My Heart” Post With Aarav Bhatia Goes Viral — Buzz Originals",
+        alt: "Student of the Year After Dark vs Class: Reema Maya Reacts — Buzz Originals",
       },
     ],
     type: "website",
@@ -545,7 +556,7 @@ export const metadata: Metadata = {
     title: "Bollywood — Buzz Originals",
     description:
       "Raw, unfiltered Bollywood coverage of red carpets, gossip, airport sightings & exclusives.",
-    images: ["/images/ananya-panday-aarav-bhatia-my-heart-post.jpg"],
+    images: ["/images/student-of-the-year-after-dark-reema-maya-class-comparison.jpg"],
   },
 };
 
@@ -572,12 +583,18 @@ export default function BollywoodPage() {
         {
           "@type": "ListItem",
           position: 1,
+          name: "Student of the Year After Dark vs Class: Reema Maya Reacts",
+          url: "https://www.buzzoriginals.com/student-of-the-year-after-dark-reema-maya-class-comparison",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
           name: "Ananya Panday’s “My Heart” Post With Aarav Bhatia Goes Viral",
           url: "https://www.buzzoriginals.com/ananya-panday-aarav-bhatia-my-heart-post",
         },
         {
           "@type": "ListItem",
-          position: 2,
+          position: 3,
           name: "Amyra Dastur Reveals Farah Khan’s “Titanic” Remark",
           url: "https://www.buzzoriginals.com/amyra-dastur-farah-khan-titanic-kung-fu-yoga",
         },
