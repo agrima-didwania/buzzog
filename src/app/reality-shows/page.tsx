@@ -6,6 +6,19 @@ export const metadata: Metadata = {
   description:
     "Eliminations, fights, weekly ration milestones, hot seat stories and dome drama — every Bigg Boss 20, Koffee With Karan, KBC 18 and Splitsvilla moment.",
   keywords: [
+    "Pyaar Ka Pressure Cooker",
+    "Shilpa Shetty new show",
+    "Shilpa Shetty reality show",
+    "Pyaar Ka Pressure Cooker Colors",
+    "Pyaar Ka Pressure Cooker JioHotstar",
+    "Pyaar Ka Pressure Cooker release date",
+    "relationship reality show India",
+    "Jodo Ya Todo",
+    "Clarity Ki Seeti",
+    "Bigg Boss time slot",
+    "Colors TV new show",
+    "situationship",
+    "new reality shows 2026",
     "Rise and Fall 2 winner",
     "Shehzad Poonawalla Rise and Fall 2",
     "Rise and Fall season 2 winner",
@@ -109,10 +122,10 @@ export const metadata: Metadata = {
     siteName: "Buzz Originals",
     images: [
       {
-        url: "/images/rise-and-fall-2-winner-shehzad-poonawalla.jpg",
+        url: "/images/shilpa-shetty-host-pyaar-ka-pressure-cooker.jpg",
         width: 1200,
         height: 675,
-        alt: "Rise and Fall 2 Winner: Shehzad Poonawalla Lifts Trophy — Buzz Originals Reality Shows",
+        alt: "Shilpa Shetty to Host Pyaar Ka Pressure Cooker Colors TV — Buzz Originals Reality Shows",
       },
     ],
     type: "website",
@@ -122,7 +135,7 @@ export const metadata: Metadata = {
     title: "Reality Shows — Buzz Originals",
     description:
       "Raw, unfiltered entertainment coverage of Koffee With Karan, The Great Indian Kapil Show, Bigg Boss 20, KBC 18, Splitsvilla & Rise and Fall.",
-    images: ["/images/rise-and-fall-2-winner-shehzad-poonawalla.jpg"],
+    images: ["/images/shilpa-shetty-host-pyaar-ka-pressure-cooker.jpg"],
   },
 };
 
@@ -149,12 +162,18 @@ export default function RealityShowsPage() {
         {
           "@type": "ListItem",
           position: 1,
+          name: "Shilpa Shetty to Host Pyaar Ka Pressure Cooker, a New Relationship Reality Show",
+          url: "https://www.buzzoriginals.com/shilpa-shetty-host-pyaar-ka-pressure-cooker",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
           name: "Rise and Fall 2 Winner: Shehzad Poonawalla Wins ₹35 Lakh",
           url: "https://www.buzzoriginals.com/rise-and-fall-2-winner-shehzad-poonawalla",
         },
         {
           "@type": "ListItem",
-          position: 2,
+          position: 3,
           name: "Saif Ali Khan Stabbing: Kareena Opens Up on KWK 9",
           url: "https://www.buzzoriginals.com/saif-ali-khan-kareena-kapoor-koffee-with-karan-stabbing-night",
         },

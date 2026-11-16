@@ -185,6 +185,20 @@ export default function Home() {
 
   const editorialArticles: EditorialArticle[] = [
     {
+      id: "shilpa-shetty-host-pyaar-ka-pressure-cooker",
+      anchorId: "shilpa-shetty-pressure-cooker-story",
+      href: "/shilpa-shetty-host-pyaar-ka-pressure-cooker",
+      title: "Shilpa Shetty to Host Pyaar Ka Pressure Cooker, a New Relationship Reality Show",
+      excerpt: "Shilpa Shetty will host Pyaar Ka Pressure Cooker, a new relationship reality show on Colors and JioHotstar. Here is what we know so far.",
+      category: "Reality TV Updates",
+      secondaryCategory: "Latest",
+      displayCategory: "REALITY SHOWS & OTT",
+      badge: "New Reality Show",
+      badgeType: "lime",
+      readTime: "3 MIN READ",
+      image: "/images/shilpa-shetty-host-pyaar-ka-pressure-cooker.jpg",
+    },
+    {
       id: "student-of-the-year-after-dark-review",
       anchorId: "soty-after-dark-review-story",
       href: "/student-of-the-year-after-dark-review",
@@ -1435,15 +1449,15 @@ export default function Home() {
         <section className="hero" id="featured">
           {/* 1. Main Featured Story (Commanding Top Story Presentation) */}
           <Link
-            href="/student-of-the-year-after-dark-review"
+            href="/shilpa-shetty-host-pyaar-ka-pressure-cooker"
             className="feature-card flex flex-col transition-all hover:border-[var(--lime)] focus-visible:ring-2 focus-visible:ring-[var(--lime)] group"
             style={{ textDecoration: "none", color: "inherit" }}
-            aria-label="Read full article: Student of the Year: After Dark Review – Shanaya Kapoor’s Dark Campus Thriller Gets Mixed Reactions"
+            aria-label="Read full article: Shilpa Shetty to Host Pyaar Ka Pressure Cooker, a New Relationship Reality Show"
           >
             <div className="feature-media" style={{ overflow: "hidden", position: "relative" }}>
               <Image
-                src="/images/student-of-the-year-after-dark-review.jpg"
-                alt="Student of the Year After Dark Review Shanaya Kapoor JioHotstar"
+                src="/images/shilpa-shetty-host-pyaar-ka-pressure-cooker.jpg"
+                alt="Shilpa Shetty to Host Pyaar Ka Pressure Cooker Colors JioHotstar"
                 fill
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 750px"
@@ -1452,46 +1466,46 @@ export default function Home() {
               />
               <div className="noise" style={{ pointerEvents: "none" }}></div>
               <div className="feature-tag flex items-center gap-2">
-                <span className="badge lime">⚡ OTT SERIES REVIEW</span>
-                <span className="badge pink">3 / 5 Stars</span>
-                <span className="badge">Shanaya Kapoor</span>
-                <span className="badge">JioHotstar</span>
+                <span className="badge lime">⚡ REALITY TV EXCLUSIVE</span>
+                <span className="badge pink">Colors &amp; JioHotstar</span>
+                <span className="badge">Shilpa Shetty</span>
+                <span className="badge">Relationship Drama</span>
               </div>
             </div>
             <div className="feature-body">
               <div className="flex items-center gap-2 mb-2 font-mono text-xs text-[var(--lime)] font-bold tracking-wider uppercase">
-                <span>★ TOP STORY · STUDENT OF THE YEAR: AFTER DARK REVIEW</span>
+                <span>★ TOP STORY · PYAAR KA PRESSURE COOKER</span>
               </div>
               <h1 className="disp" style={{ color: "#fff" }}>
-                Student of the Year: After Dark Review – Shanaya Kapoor’s Dark Campus Thriller Gets Mixed Reactions
+                Shilpa Shetty to Host Pyaar Ka Pressure Cooker, a New Relationship Reality Show
               </h1>
               <p>
-                Student of the Year: After Dark review on JioHotstar. See ratings from NDTV, India TV and more, plus story, cast and Shanaya Kapoor’s double role.
+                Shilpa Shetty will host Pyaar Ka Pressure Cooker, a new relationship reality show on Colors and JioHotstar. Here is what we know so far.
               </p>
 
               {/* Editorial Highlights Box */}
               <div className="feature-highlights">
                 <div className="feature-highlights-header">
                   <span className="w-2 h-2 rounded-full bg-[var(--lime)] animate-pulse inline-block"></span>
-                  <span>Inside SOTY: After Dark — Dual Roles, Mystery Verdict &amp; Critical Consensus</span>
+                  <span>Inside Pyaar Ka Pressure Cooker — Format, Host Return &amp; Bigg Boss Time Slot Scoop</span>
                 </div>
                 <ul className="feature-highlights-list">
                   <li className="feature-highlights-item">
                     <span className="feature-highlights-bullet">✦</span>
                     <span>
-                      <strong className="text-white font-medium">Shanaya’s Double Role Praised:</strong> Critics widely laud her restraint playing estranged identical twins Aayesha and Aditi in a stripped-down avatar.
+                      <strong className="text-white font-medium">Shilpa Shetty Returns as Host:</strong> From her historic Big Brother win to Bigg Boss 2, Shilpa returns to helm a high-stakes unscripted relationship series.
                     </span>
                   </li>
                   <li className="feature-highlights-item">
                     <span className="feature-highlights-bullet">✦</span>
                     <span>
-                      <strong className="text-white font-medium">Polarized Critic Ratings:</strong> Scores span from NDTV’s critical 2.5/5 to India.com’s glowing 4/5, settling at an aggregate 3.0 out of 5 stars.
+                      <strong className="text-white font-medium">Unique “Jodo Ya Todo” Format:</strong> Real-life couples facing trust and commitment dilemmas put their love on the line with unfiltered challenges.
                     </span>
                   </li>
                   <li className="feature-highlights-item">
                     <span className="feature-highlights-bullet">✦</span>
                     <span>
-                      <strong className="text-white font-medium">Dark Campus Noir:</strong> Reema Maya steers Karan Johar’s franchise away from glam parties into a shadowy whodunit at St. Teresa’s.
+                      <strong className="text-white font-medium">Taking Bigg Boss Time Slot:</strong> Slated to air on Colors and stream on JioHotstar after Bigg Boss concludes its season.
                     </span>
                   </li>
                 </ul>
@@ -1499,14 +1513,14 @@ export default function Home() {
 
               <div className="meta-row mt-auto pt-3 border-t border-white/[0.06] flex items-center justify-between">
                 <div className="flex items-center gap-3">
-                  <span>WEB SERIES &amp; BOLLYWOOD</span>
+                  <span>REALITY SHOWS &amp; OTT</span>
                   <span className="dot-sep">◆</span>
-                  <span>5 MIN READ</span>
+                  <span>3 MIN READ</span>
                   <span className="dot-sep">◆</span>
-                  <span style={{ color: "var(--lime)" }}>STREAMING REVIEW</span>
+                  <span style={{ color: "var(--lime)" }}>REALITY EXCLUSIVE</span>
                 </div>
                 <span className="text-xs font-mono font-bold text-[var(--lime)] hidden sm:inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform">
-                  Read Full Review →
+                  Read Full Story →
                 </span>
               </div>
             </div>
@@ -1522,6 +1536,18 @@ export default function Home() {
               <span className="trend-rank">01</span>
               <div className="trend-text">
                 <Link
+                  href="/shilpa-shetty-host-pyaar-ka-pressure-cooker"
+                  style={{ color: "inherit" }}
+                >
+                  <h3>Shilpa Shetty to host Pyaar Ka Pressure Cooker on Colors: New relationship reality show &amp; Bigg Boss slot scoop</h3>
+                  <span>REALITY SHOWS</span>
+                </Link>
+              </div>
+            </div>
+            <div className="trend-item">
+              <span className="trend-rank">02</span>
+              <div className="trend-text">
+                <Link
                   href="/student-of-the-year-after-dark-review"
                   style={{ color: "inherit" }}
                 >
@@ -1531,7 +1557,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">02</span>
+              <span className="trend-rank">03</span>
               <div className="trend-text">
                 <Link
                   href="/amitabh-bachchan-jalsa-property-dispute"
@@ -1543,7 +1569,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">03</span>
+              <span className="trend-rank">04</span>
               <div className="trend-text">
                 <Link
                   href="/panchayat-season-5-not-releasing-2026"
@@ -1555,7 +1581,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">04</span>
+              <span className="trend-rank">05</span>
               <div className="trend-text">
                 <Link
                   href="/sunny-deol-suryaa-ant-se-aarambh-tak-postponed-2027"
@@ -1567,7 +1593,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">05</span>
+              <span className="trend-rank">06</span>
               <div className="trend-text">
                 <Link
                   href="/sharad-kapoor-hollywood-film-offer"
@@ -1579,7 +1605,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">06</span>
+              <span className="trend-rank">07</span>
               <div className="trend-text">
                 <Link
                   href="/diljit-dosanjh-indore-concert-kisi-ke-baap-ka-hindustan-thodi-hai"
@@ -1591,7 +1617,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">07</span>
+              <span className="trend-rank">08</span>
               <div className="trend-text">
                 <Link
                   href="/soni-razdan-100-cigarettes-gumrah-alia-bhatt"
@@ -1603,7 +1629,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">08</span>
+              <span className="trend-rank">09</span>
               <div className="trend-text">
                 <Link
                   href="/student-of-the-year-after-dark-reema-maya-class-comparison"
@@ -1615,7 +1641,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">09</span>
+              <span className="trend-rank">10</span>
               <div className="trend-text">
                 <Link
                   href="/ananya-panday-aarav-bhatia-my-heart-post"
@@ -1623,18 +1649,6 @@ export default function Home() {
                 >
                   <h3>Ananya Panday’s “My Heart” post with Aarav Bhatia goes viral: Manish Malhotra Diwali party &amp; K3G lehenga look</h3>
                   <span>BOLLYWOOD BUZZ</span>
-                </Link>
-              </div>
-            </div>
-            <div className="trend-item">
-              <span className="trend-rank">10</span>
-              <div className="trend-text">
-                <Link
-                  href="/amyra-dastur-farah-khan-titanic-kung-fu-yoga"
-                  style={{ color: "inherit" }}
-                >
-                  <h3>Amyra Dastur reveals Farah Khan’s “Titanic” remark on Kung Fu Yoga set: Almost made her cry &amp; Boman Irani story</h3>
-                  <span>BOLLYWOOD &amp; OTT</span>
                 </Link>
               </div>
             </div>

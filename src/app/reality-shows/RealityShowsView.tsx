@@ -23,6 +23,19 @@ interface RealityArticle {
 // All verified reality show articles in reverse chronological order
 const realityArticles: RealityArticle[] = [
   {
+    id: "shilpa-shetty-host-pyaar-ka-pressure-cooker",
+    show: "Pyaar Ka Pressure Cooker",
+    title: "Shilpa Shetty to Host Pyaar Ka Pressure Cooker, a New Relationship Reality Show",
+    excerpt:
+      "Shilpa Shetty is coming back to TV with a new reality show on Colors and JioHotstar: Pyaar Ka Pressure Cooker, featuring couples, parents, and relationship reality checks.",
+    badge: "⚡ New Show Announced",
+    badgeType: "lime",
+    image: "/images/shilpa-shetty-host-pyaar-ka-pressure-cooker.jpg",
+    href: "/shilpa-shetty-host-pyaar-ka-pressure-cooker",
+    readTime: "3 MIN READ",
+    timeAgo: "JUST IN",
+  },
+  {
     id: "rise-and-fall-2-winner-shehzad-poonawalla",
     show: "Rise and Fall",
     title: "Rise and Fall 2 Winner: Shehzad Poonawalla Lifts the Trophy, Priyanka Chahar Choudhary Misses Out",
@@ -260,18 +273,18 @@ export default function RealityShowsView() {
           </div>
         </section>
 
-        {/* Lead Section: Latest Reality Published Article (Cover Story) + The Last 2 Blogs Uploaded Before It */}
+        {/* Lead Section: Latest Reality Published Article (Cover Story) + The Last 2-3 Blogs Uploaded Before It */}
         <section className="lead">
-          {/* Featured Cover Story: Shehzad Poonawalla Wins Rise and Fall 2 */}
+          {/* Featured Cover Story: Shilpa Shetty to Host Pyaar Ka Pressure Cooker */}
           <Link
-            href="/rise-and-fall-2-winner-shehzad-poonawalla"
+            href="/shilpa-shetty-host-pyaar-ka-pressure-cooker"
             className="feature-card group block"
-            aria-label="Read full cover story: Rise and Fall 2 Winner: Shehzad Poonawalla Lifts the Trophy, Priyanka Chahar Choudhary Misses Out"
+            aria-label="Read full cover story: Shilpa Shetty to Host Pyaar Ka Pressure Cooker, a New Relationship Reality Show"
           >
             <div className="feature-media relative overflow-hidden">
               <Image
-                src="/images/rise-and-fall-2-winner-shehzad-poonawalla.jpg"
-                alt="Rise and Fall 2 Winner: Shehzad Poonawalla Lifts Trophy"
+                src="/images/shilpa-shetty-host-pyaar-ka-pressure-cooker.jpg"
+                alt="Shilpa Shetty to Host Pyaar Ka Pressure Cooker Colors TV JioHotstar"
                 fill
                 priority
                 className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
@@ -279,29 +292,56 @@ export default function RealityShowsView() {
               />
               <div className="noise" />
               <span className="badge lime feature-tag z-10">
-                ⚡ Grand Finale Winner
+                ⚡ New Show Announced
               </span>
             </div>
             <div className="feature-body">
               <h2 className="disp text-white group-hover:text-[var(--lime)] transition-colors">
-                Rise and Fall 2 Winner: Shehzad Poonawalla Lifts the Trophy, Priyanka Chahar Choudhary Misses Out
+                Shilpa Shetty to Host Pyaar Ka Pressure Cooker, a New Relationship Reality Show
               </h2>
               <p>
-                Shehzad Poonawalla wins Rise and Fall 2 after tie-breaking vote! Takes home ₹35 lakh and pledges entire prize to flood relief in Bihar and Assam.
+                Shilpa Shetty returns to TV with Colors’ Pyaar Ka Pressure Cooker, diving into situationships and modern love with parents delivering unfiltered reality checks.
               </p>
               <div className="meta-row mt-3">
-                <span className="text-[var(--magenta)] font-bold">RISE AND FALL 2</span>
+                <span className="text-[var(--magenta)] font-bold">COLORS &amp; JIOHOTSTAR</span>
                 <span className="dot-sep">◆</span>
-                <span>4 MIN READ</span>
+                <span>3 MIN READ</span>
                 <span className="dot-sep">◆</span>
-                <span className="text-[var(--lime)] font-bold">GRAND FINALE</span>
+                <span className="text-[var(--lime)] font-bold">JUST IN</span>
               </div>
             </div>
           </Link>
 
           {/* Right Stack: The last 2-3 blogs uploaded before the latest one */}
           <div className="stack">
-            {/* Card 1: Saif Ali Khan Stabbing Night on KWK 9 */}
+            {/* Card 1: Shehzad Poonawalla Wins Rise and Fall 2 */}
+            <Link
+              href="/rise-and-fall-2-winner-shehzad-poonawalla"
+              className="card m1 group block"
+            >
+              <div className="card-media relative overflow-hidden">
+                <Image
+                  src="/images/rise-and-fall-2-winner-shehzad-poonawalla.jpg"
+                  alt="Rise and Fall 2 Winner: Shehzad Poonawalla Lifts Trophy"
+                  fill
+                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 980px) 100vw, 35vw"
+                />
+                <span className="badge lime z-10 relative">⚡ Finale Winner</span>
+              </div>
+              <div className="card-body">
+                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
+                  Rise and Fall 2 Winner: Shehzad Poonawalla Lifts the Trophy
+                </h3>
+                <div className="meta-row mt-2">
+                  <span className="text-[var(--magenta)] font-bold">RISE AND FALL 2</span>
+                  <span className="dot-sep">◆</span>
+                  <span>4 MIN READ</span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Card 2: Saif Ali Khan Stabbing Night on KWK 9 */}
             <Link
               href="/saif-ali-khan-kareena-kapoor-koffee-with-karan-stabbing-night"
               className="card m1 group block"
@@ -318,7 +358,7 @@ export default function RealityShowsView() {
               </div>
               <div className="card-body">
                 <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
-                  Saif Ali Khan Calls Stabbing Night “Worst Night”: Kareena Kapoor’s Emotional Confession
+                  Saif Ali Khan Calls Stabbing Night “Worst Night”: Kareena Confession
                 </h3>
                 <div className="meta-row mt-2">
                   <span className="text-[var(--magenta)] font-bold">KOFFEE WITH KARAN 9</span>
@@ -328,7 +368,7 @@ export default function RealityShowsView() {
               </div>
             </Link>
 
-            {/* Card 2: Mira Rajput & Shahid Kapoor Gossip */}
+            {/* Card 3: Mira Rajput & Shahid Kapoor Gossip */}
             <Link
               href="/mira-rajput-shahid-kapoor-gossip-kapil-sharma-show"
               className="card m1 group block"
@@ -336,7 +376,7 @@ export default function RealityShowsView() {
               <div className="card-media relative overflow-hidden">
                 <Image
                   src="/images/mira-rajput-shahid-kapoor-gossip-kapil-sharma-show.jpg"
-                  alt="Mira Rajput Says Shahid Kapoor Loves Gossip: Funniest Moments From Kapil Sharma Unseen Clip"
+                  alt="Mira Rajput Says Shahid Kapoor Loves Gossip"
                   fill
                   className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
                   sizes="(max-width: 980px) 100vw, 35vw"
@@ -345,37 +385,10 @@ export default function RealityShowsView() {
               </div>
               <div className="card-body">
                 <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
-                  Mira Rajput Says Shahid Kapoor Loves Gossip: Funniest Moments From Kapil Sharma’s Unseen Clip
+                  Mira Rajput Says Shahid Kapoor Loves Gossip: Kapil Sharma Clip
                 </h3>
                 <div className="meta-row mt-2">
-                  <span className="text-[var(--magenta)] font-bold">THE GREAT INDIAN KAPIL SHOW</span>
-                  <span className="dot-sep">◆</span>
-                  <span>4 MIN READ</span>
-                </div>
-              </div>
-            </Link>
-
-            {/* Card 3: Koffee With Karan 9 Kareena & Saif Teaser */}
-            <Link
-              href="/koffee-with-karan-9-kareena-kapoor-saif-ali-khan-teaser"
-              className="card m1 group block"
-            >
-              <div className="card-media relative overflow-hidden">
-                <Image
-                  src="/images/koffee-with-karan-9-kareena-kapoor-saif-ali-khan-teaser.jpg"
-                  alt="Koffee With Karan 9: Kareena Kapoor and Saif Ali Khan Return to the Couch"
-                  fill
-                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
-                  sizes="(max-width: 980px) 100vw, 35vw"
-                />
-                <span className="badge pink z-10 relative">☕ Saifeena Returns</span>
-              </div>
-              <div className="card-body">
-                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
-                  Koffee With Karan 9: Kareena Kapoor Calls Herself No. 1, Saif Ali Khan Says He Is “Miscast”
-                </h3>
-                <div className="meta-row mt-2">
-                  <span className="text-[var(--magenta)] font-bold">KWK 9</span>
+                  <span className="text-[var(--magenta)] font-bold">KAPIL SHARMA SHOW</span>
                   <span className="dot-sep">◆</span>
                   <span>4 MIN READ</span>
                 </div>
