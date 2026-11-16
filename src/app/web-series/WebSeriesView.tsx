@@ -22,6 +22,18 @@ interface WebSeriesArticle {
 // All verified web series and OTT articles in reverse chronological order
 const webSeriesArticles: WebSeriesArticle[] = [
   {
+    id: "student-of-the-year-after-dark-review",
+    category: "JioHotstar Original",
+    title: "Student of the Year: After Dark Review – Shanaya Kapoor’s Dark Campus Thriller Gets Mixed Reactions",
+    badge: "⚡ 3 / 5 Stars",
+    badgeType: "lime",
+    image: "/images/student-of-the-year-after-dark-review.jpg",
+    href: "/student-of-the-year-after-dark-review",
+    readOrTime: "5 MIN READ",
+    excerpt:
+      "Student of the Year: After Dark review on JioHotstar. See ratings from NDTV, India TV and more, plus story, cast and Shanaya Kapoor’s double role.",
+  },
+  {
     id: "panchayat-season-5-not-releasing-2026",
     category: "Prime Video Original",
     title: "Panchayat Season 5 Will Not Release in 2026, Says Prime Video",

@@ -6,6 +6,18 @@ export const metadata: Metadata = {
   description:
     "Web Series coverage from Buzz Originals — raw, unfiltered, built for the group chat. OTT releases, streaming scoops, recaps and verdicts across Prime Video, Netflix, JioHotstar, ZEE5 and SonyLIV.",
   keywords: [
+    "Student of the Year After Dark review",
+    "Shanaya Kapoor web series",
+    "Student of the Year After Dark cast",
+    "Student of the Year After Dark JioHotstar",
+    "Student of the Year After Dark rating",
+    "SOTY After Dark",
+    "Student of the Year After Dark story explained",
+    "Is Student of the Year After Dark worth watching",
+    "Student of the Year After Dark release date",
+    "Student of the Year After Dark episodes",
+    "Shanaya Kapoor double role web series",
+    "Student of the Year After Dark critics review",
     "Panchayat Season 5",
     "Panchayat Season 5 release date",
     "Panchayat Season 5 delay",
@@ -85,10 +97,10 @@ export const metadata: Metadata = {
     siteName: "Buzz Originals",
     images: [
       {
-        url: "/images/panchayat-season-5-not-releasing-2026.jpg",
+        url: "/images/student-of-the-year-after-dark-review.jpg",
         width: 1200,
         height: 675,
-        alt: "Panchayat Season 5 Will Not Release in 2026, Says Prime Video — Buzz Originals Web Series",
+        alt: "Student of the Year After Dark Review Shanaya Kapoor JioHotstar — Buzz Originals Web Series",
       },
     ],
     type: "website",
@@ -98,7 +110,7 @@ export const metadata: Metadata = {
     title: "Web Series — Buzz Originals",
     description:
       "Raw, unfiltered Web Series coverage of OTT releases, streaming scoops, recaps and verdicts.",
-    images: ["/images/panchayat-season-5-not-releasing-2026.jpg"],
+    images: ["/images/student-of-the-year-after-dark-review.jpg"],
   },
 };
 
@@ -125,12 +137,18 @@ export default function WebSeriesPage() {
         {
           "@type": "ListItem",
           position: 1,
+          name: "Student of the Year: After Dark Review – Shanaya Kapoor’s Dark Campus Thriller Gets Mixed Reactions",
+          url: "https://www.buzzoriginals.com/student-of-the-year-after-dark-review",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
           name: "Panchayat Season 5 Will Not Release in 2026, Says Prime Video",
           url: "https://www.buzzoriginals.com/panchayat-season-5-not-releasing-2026",
         },
         {
           "@type": "ListItem",
-          position: 2,
+          position: 3,
           name: "Student of the Year After Dark vs Class: Reema Maya Reacts",
           url: "https://www.buzzoriginals.com/student-of-the-year-after-dark-reema-maya-class-comparison",
         },

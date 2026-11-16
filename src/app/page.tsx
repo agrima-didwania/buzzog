@@ -185,6 +185,20 @@ export default function Home() {
 
   const editorialArticles: EditorialArticle[] = [
     {
+      id: "student-of-the-year-after-dark-review",
+      anchorId: "soty-after-dark-review-story",
+      href: "/student-of-the-year-after-dark-review",
+      title: "Student of the Year: After Dark Review – Shanaya Kapoor’s Dark Campus Thriller Gets Mixed Reactions",
+      excerpt: "Student of the Year: After Dark review on JioHotstar. See ratings from NDTV, India TV and more, plus story, cast and Shanaya Kapoor’s double role.",
+      category: "Web Series",
+      secondaryCategory: "Bollywood",
+      displayCategory: "WEB SERIES & OTT",
+      badge: "Series Review",
+      badgeType: "lime",
+      readTime: "5 MIN READ",
+      image: "/images/student-of-the-year-after-dark-review.jpg",
+    },
+    {
       id: "amitabh-bachchan-jalsa-property-dispute",
       anchorId: "jalsa-property-dispute-story",
       href: "/amitabh-bachchan-jalsa-property-dispute",
@@ -1421,15 +1435,15 @@ export default function Home() {
         <section className="hero" id="featured">
           {/* 1. Main Featured Story (Commanding Top Story Presentation) */}
           <Link
-            href="/amitabh-bachchan-jalsa-property-dispute"
+            href="/student-of-the-year-after-dark-review"
             className="feature-card flex flex-col transition-all hover:border-[var(--lime)] focus-visible:ring-2 focus-visible:ring-[var(--lime)] group"
             style={{ textDecoration: "none", color: "inherit" }}
-            aria-label="Read full article: Amitabh Bachchan’s Jalsa Property Dispute: What Is Going On?"
+            aria-label="Read full article: Student of the Year: After Dark Review – Shanaya Kapoor’s Dark Campus Thriller Gets Mixed Reactions"
           >
             <div className="feature-media" style={{ overflow: "hidden", position: "relative" }}>
               <Image
-                src="/images/amitabh-bachchan-jalsa-property-dispute.jpg"
-                alt="Amitabh Bachchan Jalsa Property Dispute Ramola Bachchan Challenges Deed"
+                src="/images/student-of-the-year-after-dark-review.jpg"
+                alt="Student of the Year After Dark Review Shanaya Kapoor JioHotstar"
                 fill
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 750px"
@@ -1438,46 +1452,46 @@ export default function Home() {
               />
               <div className="noise" style={{ pointerEvents: "none" }}></div>
               <div className="feature-tag flex items-center gap-2">
-                <span className="badge lime">⚡ PROPERTY DISPUTE</span>
-                <span className="badge pink">Amitabh Bachchan</span>
-                <span className="badge">Jalsa</span>
-                <span className="badge">Ramola Bachchan</span>
+                <span className="badge lime">⚡ OTT SERIES REVIEW</span>
+                <span className="badge pink">3 / 5 Stars</span>
+                <span className="badge">Shanaya Kapoor</span>
+                <span className="badge">JioHotstar</span>
               </div>
             </div>
             <div className="feature-body">
               <div className="flex items-center gap-2 mb-2 font-mono text-xs text-[var(--lime)] font-bold tracking-wider uppercase">
-                <span>★ TOP STORY · AMITABH BACHCHAN’S JALSA PROPERTY DISPUTE</span>
+                <span>★ TOP STORY · STUDENT OF THE YEAR: AFTER DARK REVIEW</span>
               </div>
               <h1 className="disp" style={{ color: "#fff" }}>
-                Amitabh Bachchan’s Jalsa Property Dispute: What Is Going On?
+                Student of the Year: After Dark Review – Shanaya Kapoor’s Dark Campus Thriller Gets Mixed Reactions
               </h1>
               <p>
-                Amitabh Bachchan’s Jalsa bungalow is in a family property dispute. Read what Ramola Bachchan claims, what the officials said, and how Jalsa got its name.
+                Student of the Year: After Dark review on JioHotstar. See ratings from NDTV, India TV and more, plus story, cast and Shanaya Kapoor’s double role.
               </p>
 
               {/* Editorial Highlights Box */}
               <div className="feature-highlights">
                 <div className="feature-highlights-header">
                   <span className="w-2 h-2 rounded-full bg-[var(--lime)] animate-pulse inline-block"></span>
-                  <span>Inside The Jalsa Dispute: Property Cards, 1993 Gift Deed &amp; Mumbai Hearings</span>
+                  <span>Inside SOTY: After Dark — Dual Roles, Mystery Verdict &amp; Critical Consensus</span>
                 </div>
                 <ul className="feature-highlights-list">
                   <li className="feature-highlights-item">
                     <span className="feature-highlights-bullet">✦</span>
                     <span>
-                      <strong className="text-white font-medium">Record Mismatch:</strong> Society records list Jaya Bachchan while the Maharashtra state Property Card registers Ramola Bachchan.
+                      <strong className="text-white font-medium">Shanaya’s Double Role Praised:</strong> Critics widely laud her restraint playing estranged identical twins Aayesha and Aditi in a stripped-down avatar.
                     </span>
                   </li>
                   <li className="feature-highlights-item">
                     <span className="feature-highlights-bullet">✦</span>
                     <span>
-                      <strong className="text-white font-medium">1993 Deed Challenged:</strong> Ramola claims the transfer was made without her consent or witness signatures on plain paper, registered in 2006.
+                      <strong className="text-white font-medium">Polarized Critic Ratings:</strong> Scores span from NDTV’s critical 2.5/5 to India.com’s glowing 4/5, settling at an aggregate 3.0 out of 5 stars.
                     </span>
                   </li>
                   <li className="feature-highlights-item">
                     <span className="feature-highlights-bullet">✦</span>
                     <span>
-                      <strong className="text-white font-medium">Official Hearing:</strong> Deputy Registrar Faiyaz Mulani confirmed a formal complaint was received and proceedings are underway.
+                      <strong className="text-white font-medium">Dark Campus Noir:</strong> Reema Maya steers Karan Johar’s franchise away from glam parties into a shadowy whodunit at St. Teresa’s.
                     </span>
                   </li>
                 </ul>
@@ -1485,14 +1499,14 @@ export default function Home() {
 
               <div className="meta-row mt-auto pt-3 border-t border-white/[0.06] flex items-center justify-between">
                 <div className="flex items-center gap-3">
-                  <span>BOLLYWOOD &amp; NEWS</span>
+                  <span>WEB SERIES &amp; BOLLYWOOD</span>
                   <span className="dot-sep">◆</span>
-                  <span>4 MIN READ</span>
+                  <span>5 MIN READ</span>
                   <span className="dot-sep">◆</span>
-                  <span style={{ color: "var(--lime)" }}>EXCLUSIVE SCOOP</span>
+                  <span style={{ color: "var(--lime)" }}>STREAMING REVIEW</span>
                 </div>
                 <span className="text-xs font-mono font-bold text-[var(--lime)] hidden sm:inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform">
-                  Read Full Story →
+                  Read Full Review →
                 </span>
               </div>
             </div>
@@ -1508,6 +1522,18 @@ export default function Home() {
               <span className="trend-rank">01</span>
               <div className="trend-text">
                 <Link
+                  href="/student-of-the-year-after-dark-review"
+                  style={{ color: "inherit" }}
+                >
+                  <h3>Student of the Year After Dark review: Shanaya Kapoor’s dark campus thriller gets mixed reactions: Worth watching?</h3>
+                  <span>WEB SERIES &amp; OTT</span>
+                </Link>
+              </div>
+            </div>
+            <div className="trend-item">
+              <span className="trend-rank">02</span>
+              <div className="trend-text">
+                <Link
                   href="/amitabh-bachchan-jalsa-property-dispute"
                   style={{ color: "inherit" }}
                 >
@@ -1517,7 +1543,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">02</span>
+              <span className="trend-rank">03</span>
               <div className="trend-text">
                 <Link
                   href="/panchayat-season-5-not-releasing-2026"
@@ -1529,7 +1555,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">03</span>
+              <span className="trend-rank">04</span>
               <div className="trend-text">
                 <Link
                   href="/sunny-deol-suryaa-ant-se-aarambh-tak-postponed-2027"
@@ -1541,7 +1567,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">04</span>
+              <span className="trend-rank">05</span>
               <div className="trend-text">
                 <Link
                   href="/sharad-kapoor-hollywood-film-offer"
@@ -1553,7 +1579,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">05</span>
+              <span className="trend-rank">06</span>
               <div className="trend-text">
                 <Link
                   href="/diljit-dosanjh-indore-concert-kisi-ke-baap-ka-hindustan-thodi-hai"
@@ -1565,7 +1591,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">06</span>
+              <span className="trend-rank">07</span>
               <div className="trend-text">
                 <Link
                   href="/soni-razdan-100-cigarettes-gumrah-alia-bhatt"
@@ -1577,7 +1603,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">07</span>
+              <span className="trend-rank">08</span>
               <div className="trend-text">
                 <Link
                   href="/student-of-the-year-after-dark-reema-maya-class-comparison"
@@ -1589,7 +1615,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">08</span>
+              <span className="trend-rank">09</span>
               <div className="trend-text">
                 <Link
                   href="/ananya-panday-aarav-bhatia-my-heart-post"
@@ -1601,7 +1627,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">09</span>
+              <span className="trend-rank">10</span>
               <div className="trend-text">
                 <Link
                   href="/amyra-dastur-farah-khan-titanic-kung-fu-yoga"
@@ -1609,18 +1635,6 @@ export default function Home() {
                 >
                   <h3>Amyra Dastur reveals Farah Khan’s “Titanic” remark on Kung Fu Yoga set: Almost made her cry &amp; Boman Irani story</h3>
                   <span>BOLLYWOOD &amp; OTT</span>
-                </Link>
-              </div>
-            </div>
-            <div className="trend-item">
-              <span className="trend-rank">10</span>
-              <div className="trend-text">
-                <Link
-                  href="/yash-ravana-costume-weight-ramayana"
-                  style={{ color: "inherit" }}
-                >
-                  <h3>Yash’s Ravana costume in Ramayana weighed up to 33 kg: Designer reveals 1.8 kg crown &amp; 7 kg Amrapali jewellery</h3>
-                  <span>BOLLYWOOD &amp; EPICS</span>
                 </Link>
               </div>
             </div>

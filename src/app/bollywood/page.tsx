@@ -6,6 +6,12 @@ export const metadata: Metadata = {
   description:
     "Bollywood coverage from Buzz Originals — raw, unfiltered, built for the group chat. Red carpets, rumours, airport looks and exclusives.",
   keywords: [
+    "Student of the Year After Dark review",
+    "Shanaya Kapoor web series",
+    "Student of the Year After Dark cast",
+    "Student of the Year After Dark JioHotstar",
+    "Student of the Year After Dark rating",
+    "SOTY After Dark",
     "Jalsa property dispute",
     "Amitabh Bachchan Jalsa",
     "Ramola Bachchan",

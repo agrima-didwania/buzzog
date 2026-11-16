@@ -20,6 +20,16 @@ interface BollywoodArticle {
 
 const bollywoodArticles: BollywoodArticle[] = [
   {
+    id: "student-of-the-year-after-dark-review",
+    category: "Series Review",
+    title: "Student of the Year: After Dark Review – Shanaya Kapoor’s Dark Campus Thriller Gets Mixed Reactions",
+    badge: "⚡ 3 / 5 Stars",
+    badgeType: "lime",
+    image: "/images/student-of-the-year-after-dark-review.jpg",
+    href: "/student-of-the-year-after-dark-review",
+    readOrTime: "5 MIN READ",
+  },
+  {
     id: "amitabh-bachchan-jalsa-property-dispute",
     category: "Property Dispute",
     title: "Amitabh Bachchan’s Jalsa Property Dispute: What Is Going On?",
@@ -795,7 +805,34 @@ export default function BollywoodView() {
 
           {/* Right Stack: The last 2-3 blogs uploaded before the latest one */}
           <div className="stack">
-            {/* Card 1: Sunny Deol’s Suryaa Postponed to 2027 */}
+            {/* Card 1: Student of the Year After Dark Review */}
+            <Link
+              href="/student-of-the-year-after-dark-review"
+              className="card m1 group block"
+            >
+              <div className="card-media relative overflow-hidden">
+                <Image
+                  src="/images/student-of-the-year-after-dark-review.jpg"
+                  alt="Student of the Year After Dark Review Shanaya Kapoor JioHotstar"
+                  fill
+                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 980px) 100vw, 35vw"
+                />
+                <span className="badge lime z-10 relative">⚡ 3 / 5 STARS</span>
+              </div>
+              <div className="card-body">
+                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
+                  Student of the Year: After Dark Review – Shanaya Kapoor’s Dark Campus Thriller
+                </h3>
+                <div className="meta-row mt-2">
+                  <span className="text-[var(--magenta)] font-bold">SERIES REVIEW</span>
+                  <span className="dot-sep">◆</span>
+                  <span>5 MIN READ</span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Card 2: Sunny Deol’s Suryaa Postponed to 2027 */}
             <Link
               href="/sunny-deol-suryaa-ant-se-aarambh-tak-postponed-2027"
               className="card m1 group block"
@@ -822,7 +859,7 @@ export default function BollywoodView() {
               </div>
             </Link>
 
-            {/* Card 2: Sharad Kapoor Gets a Hollywood Film Offer */}
+            {/* Card 3: Sharad Kapoor Gets a Hollywood Film Offer */}
             <Link
               href="/sharad-kapoor-hollywood-film-offer"
               className="card m1 group block"
@@ -845,33 +882,6 @@ export default function BollywoodView() {
                   <span className="text-[var(--magenta)] font-bold">BOLLYWOOD COMEBACK</span>
                   <span className="dot-sep">◆</span>
                   <span>3 MIN READ</span>
-                </div>
-              </div>
-            </Link>
-
-            {/* Card 3: Diljit Dosanjh Indore Concert */}
-            <Link
-              href="/diljit-dosanjh-indore-concert-kisi-ke-baap-ka-hindustan-thodi-hai"
-              className="card m1 group block"
-            >
-              <div className="card-media relative overflow-hidden">
-                <Image
-                  src="/images/diljit-dosanjh-indore-concert-kisi-ke-baap-ka-hindustan-thodi-hai.jpg"
-                  alt="Diljit Dosanjh Recites Kisi Ke Baap Ka Hindustan Thodi Hai at Indore Concert"
-                  fill
-                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
-                  sizes="(max-width: 980px) 100vw, 35vw"
-                />
-                <span className="badge lime z-10 relative">⚡ LIVE UPDATE</span>
-              </div>
-              <div className="card-body">
-                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
-                  Diljit Dosanjh Recites “Kisi Ke Baap Ka Hindustan Thodi Hai” at Indore Concert After Song Ban and Bomb Threats
-                </h3>
-                <div className="meta-row mt-2">
-                  <span className="text-[var(--magenta)] font-bold">LIVE CONCERT SCOOP</span>
-                  <span className="dot-sep">◆</span>
-                  <span>4 MIN READ</span>
                 </div>
               </div>
             </Link>
