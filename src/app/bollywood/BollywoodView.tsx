@@ -20,6 +20,16 @@ interface BollywoodArticle {
 
 const bollywoodArticles: BollywoodArticle[] = [
   {
+    id: "diljit-dosanjh-indore-concert-kisi-ke-baap-ka-hindustan-thodi-hai",
+    category: "Concert & Controversy",
+    title: "Diljit Dosanjh Recites “Kisi Ke Baap Ka Hindustan Thodi Hai” at Indore Concert After Song Ban and Bomb Threats",
+    badge: "⚡ Live Update",
+    badgeType: "lime",
+    image: "/images/diljit-dosanjh-indore-concert-kisi-ke-baap-ka-hindustan-thodi-hai.jpg",
+    href: "/diljit-dosanjh-indore-concert-kisi-ke-baap-ka-hindustan-thodi-hai",
+    readOrTime: "4 MIN READ",
+  },
+  {
     id: "soni-razdan-100-cigarettes-gumrah-alia-bhatt",
     category: "Throwback & Scoop",
     title: "Soni Razdan Smoked 100 Cigarettes in a Day on Gumrah Set, Not Knowing She Was Pregnant With Alia Bhatt",
@@ -716,16 +726,16 @@ export default function BollywoodView() {
 
         {/* Lead Section: Latest Bollywood Published Article (Cover Story) + The Last 2 Blogs Uploaded Before It */}
         <section className="lead">
-          {/* Cover Story: Latest Published Bollywood Story (Soni Razdan Smoked 100 Cigarettes on Gumrah Set) */}
+          {/* Cover Story: Latest Published Bollywood Story (Diljit Dosanjh Recites Kisi Ke Baap Ka Hindustan Thodi Hai at Indore Concert) */}
           <Link
-            href="/soni-razdan-100-cigarettes-gumrah-alia-bhatt"
+            href="/diljit-dosanjh-indore-concert-kisi-ke-baap-ka-hindustan-thodi-hai"
             className="feature-card group block"
-            aria-label="Read full cover story: Soni Razdan Smoked 100 Cigarettes in a Day on Gumrah Set, Not Knowing She Was Pregnant With Alia Bhatt"
+            aria-label="Read full cover story: Diljit Dosanjh Recites “Kisi Ke Baap Ka Hindustan Thodi Hai” at Indore Concert After Song Ban and Bomb Threats"
           >
             <div className="feature-media relative overflow-hidden">
               <Image
-                src="/images/soni-razdan-100-cigarettes-gumrah-alia-bhatt.jpg"
-                alt="Soni Razdan Smoked 100 Cigarettes Pregnant With Alia"
+                src="/images/diljit-dosanjh-indore-concert-kisi-ke-baap-ka-hindustan-thodi-hai.jpg"
+                alt="Diljit Dosanjh Recites Kisi Ke Baap Ka Hindustan Thodi Hai at Indore Concert"
                 fill
                 priority
                 className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
@@ -733,20 +743,20 @@ export default function BollywoodView() {
               />
               <div className="noise" />
               <span className="badge lime feature-tag z-10">
-                ⚡ Candid Throwback
+                ⚡ LIVE UPDATE
               </span>
             </div>
             <div className="feature-body">
               <h2 className="disp text-white group-hover:text-[var(--lime)] transition-colors">
-                Soni Razdan Smoked 100 Cigarettes in a Day on Gumrah Set, Not Knowing She Was Pregnant With Alia Bhatt
+                Diljit Dosanjh Recites “Kisi Ke Baap Ka Hindustan Thodi Hai” at Indore Concert After Song Ban and Bomb Threats
               </h2>
               <p>
-                Soni Razdan says she smoked 100 cigarettes on the Gumrah set without knowing she was pregnant with Alia Bhatt. Read her full story.
+                Diljit Dosanjh performed in Indore despite a 4-song ban and hoax bomb threats. Read what he said and the Rahat Indori couplet he recited.
               </p>
               <div className="meta-row mt-3">
-                <span className="text-[var(--magenta)] font-bold">BOLLYWOOD THROWBACK</span>
+                <span className="text-[var(--magenta)] font-bold">LIVE CONCERT SCOOP</span>
                 <span className="dot-sep">◆</span>
-                <span>3 MIN READ</span>
+                <span>4 MIN READ</span>
                 <span className="dot-sep">◆</span>
                 <span className="text-[var(--lime)] font-bold">NOV 16</span>
               </div>
@@ -755,7 +765,34 @@ export default function BollywoodView() {
 
           {/* Right Stack: The last 2-3 blogs uploaded before the latest one */}
           <div className="stack">
-            {/* Card 1: Student of the Year After Dark vs Class */}
+            {/* Card 1: Soni Razdan Smoked 100 Cigarettes in a Day on Gumrah Set */}
+            <Link
+              href="/soni-razdan-100-cigarettes-gumrah-alia-bhatt"
+              className="card m1 group block"
+            >
+              <div className="card-media relative overflow-hidden">
+                <Image
+                  src="/images/soni-razdan-100-cigarettes-gumrah-alia-bhatt.jpg"
+                  alt="Soni Razdan Smoked 100 Cigarettes Pregnant With Alia"
+                  fill
+                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 980px) 100vw, 35vw"
+                />
+                <span className="badge lime z-10 relative">⚡ Candid Throwback</span>
+              </div>
+              <div className="card-body">
+                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
+                  Soni Razdan Smoked 100 Cigarettes in a Day on Gumrah Set, Not Knowing She Was Pregnant With Alia Bhatt
+                </h3>
+                <div className="meta-row mt-2">
+                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD THROWBACK</span>
+                  <span className="dot-sep">◆</span>
+                  <span>3 MIN READ</span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Card 2: Student of the Year After Dark vs Class */}
             <Link
               href="/student-of-the-year-after-dark-reema-maya-class-comparison"
               className="card m1 group block"
@@ -782,7 +819,7 @@ export default function BollywoodView() {
               </div>
             </Link>
 
-            {/* Card 2: Ananya Panday's "My Heart" Post With Aarav Bhatia */}
+            {/* Card 3: Ananya Panday's "My Heart" Post With Aarav Bhatia */}
             <Link
               href="/ananya-panday-aarav-bhatia-my-heart-post"
               className="card m1 group block"
@@ -803,33 +840,6 @@ export default function BollywoodView() {
                 </h3>
                 <div className="meta-row mt-2">
                   <span className="text-[var(--magenta)] font-bold">BOLLYWOOD BUZZ</span>
-                  <span className="dot-sep">◆</span>
-                  <span>3 MIN READ</span>
-                </div>
-              </div>
-            </Link>
-
-            {/* Card 3: Amyra Dastur on Farah Khan's Titanic Remark */}
-            <Link
-              href="/amyra-dastur-farah-khan-titanic-kung-fu-yoga"
-              className="card m1 group block"
-            >
-              <div className="card-media relative overflow-hidden">
-                <Image
-                  src="/images/amyra-dastur-farah-khan-titanic-kung-fu-yoga.jpg"
-                  alt="Amyra Dastur Says Farah Khan’s “Titanic” Comment Almost Made Her Cry"
-                  fill
-                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
-                  sizes="(max-width: 980px) 100vw, 35vw"
-                />
-                <span className="badge lime z-10 relative">⚡ Candid Scoop</span>
-              </div>
-              <div className="card-body">
-                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
-                  Amyra Dastur Says Farah Khan’s “Titanic” Comment Almost Made Her Cry
-                </h3>
-                <div className="meta-row mt-2">
-                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; OTT</span>
                   <span className="dot-sep">◆</span>
                   <span>3 MIN READ</span>
                 </div>

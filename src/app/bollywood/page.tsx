@@ -6,6 +6,16 @@ export const metadata: Metadata = {
   description:
     "Bollywood coverage from Buzz Originals — raw, unfiltered, built for the group chat. Red carpets, rumours, airport looks and exclusives.",
   keywords: [
+    "Diljit Dosanjh Indore concert",
+    "Diljit Dosanjh Aura India Tour 2026",
+    "Diljit Dosanjh Rahat Indori couplet",
+    "Kisi ke baap ka Hindustan thodi hai",
+    "Diljit Dosanjh banned songs Indore",
+    "Diljit Dosanjh bomb threat Indore",
+    "Which songs are banned at Diljit’s Indore concert",
+    "Who wrote Kisi ke baap ka Hindustan thodi hai",
+    "Diljit Dosanjh Ahmedabad concert date",
+    "Diljit Dosanjh Aura India Tour dates and cities",
     "Soni Razdan Gumrah",
     "Soni Razdan 100 cigarettes",
     "Soni Razdan pregnant with Alia Bhatt",
@@ -555,10 +565,10 @@ export const metadata: Metadata = {
     siteName: "Buzz Originals",
     images: [
       {
-        url: "/images/soni-razdan-100-cigarettes-gumrah-alia-bhatt.jpg",
+        url: "/images/diljit-dosanjh-indore-concert-kisi-ke-baap-ka-hindustan-thodi-hai.jpg",
         width: 1200,
         height: 675,
-        alt: "Soni Razdan Smoked 100 Cigarettes in a Day on Gumrah Set, Not Knowing She Was Pregnant With Alia Bhatt — Buzz Originals",
+        alt: "Diljit Dosanjh Recites “Kisi Ke Baap Ka Hindustan Thodi Hai” at Indore Concert After Song Ban and Bomb Threats — Buzz Originals",
       },
     ],
     type: "website",
@@ -568,7 +578,7 @@ export const metadata: Metadata = {
     title: "Bollywood — Buzz Originals",
     description:
       "Raw, unfiltered Bollywood coverage of red carpets, gossip, airport sightings & exclusives.",
-    images: ["/images/soni-razdan-100-cigarettes-gumrah-alia-bhatt.jpg"],
+    images: ["/images/diljit-dosanjh-indore-concert-kisi-ke-baap-ka-hindustan-thodi-hai.jpg"],
   },
 };
 
@@ -595,6 +605,12 @@ export default function BollywoodPage() {
         {
           "@type": "ListItem",
           position: 1,
+          name: "Diljit Dosanjh Recites “Kisi Ke Baap Ka Hindustan Thodi Hai” at Indore Concert After Song Ban and Bomb Threats",
+          url: "https://www.buzzoriginals.com/diljit-dosanjh-indore-concert-kisi-ke-baap-ka-hindustan-thodi-hai",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
           name: "Soni Razdan Smoked 100 Cigarettes in a Day on Gumrah Set, Not Knowing She Was Pregnant With Alia Bhatt",
           url: "https://www.buzzoriginals.com/soni-razdan-100-cigarettes-gumrah-alia-bhatt",
         },
