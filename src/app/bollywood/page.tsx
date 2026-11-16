@@ -6,6 +6,18 @@ export const metadata: Metadata = {
   description:
     "Bollywood coverage from Buzz Originals — raw, unfiltered, built for the group chat. Red carpets, rumours, airport looks and exclusives.",
   keywords: [
+    "Soni Razdan Gumrah",
+    "Soni Razdan 100 cigarettes",
+    "Soni Razdan pregnant with Alia Bhatt",
+    "Alia Bhatt mother Soni Razdan",
+    "Gumrah movie 1993",
+    "Soni Razdan interview SCREEN",
+    "Soni Razdan pregnancy shooting",
+    "Bollywood actress working while pregnant",
+    "did Soni Razdan smoke 100 cigarettes in Gumrah",
+    "was Soni Razdan pregnant with Alia during Gumrah",
+    "Soni Razdan Gumrah smoking scene",
+    "Alia Bhatt birth date and mother’s film",
     "Student of the Year After Dark",
     "Reema Maya",
     "Student of the Year After Dark vs Class",
@@ -543,10 +555,10 @@ export const metadata: Metadata = {
     siteName: "Buzz Originals",
     images: [
       {
-        url: "/images/student-of-the-year-after-dark-reema-maya-class-comparison.jpg",
+        url: "/images/soni-razdan-100-cigarettes-gumrah-alia-bhatt.jpg",
         width: 1200,
         height: 675,
-        alt: "Student of the Year After Dark vs Class: Reema Maya Reacts — Buzz Originals",
+        alt: "Soni Razdan Smoked 100 Cigarettes in a Day on Gumrah Set, Not Knowing She Was Pregnant With Alia Bhatt — Buzz Originals",
       },
     ],
     type: "website",
@@ -556,7 +568,7 @@ export const metadata: Metadata = {
     title: "Bollywood — Buzz Originals",
     description:
       "Raw, unfiltered Bollywood coverage of red carpets, gossip, airport sightings & exclusives.",
-    images: ["/images/student-of-the-year-after-dark-reema-maya-class-comparison.jpg"],
+    images: ["/images/soni-razdan-100-cigarettes-gumrah-alia-bhatt.jpg"],
   },
 };
 
@@ -583,12 +595,18 @@ export default function BollywoodPage() {
         {
           "@type": "ListItem",
           position: 1,
+          name: "Soni Razdan Smoked 100 Cigarettes in a Day on Gumrah Set, Not Knowing She Was Pregnant With Alia Bhatt",
+          url: "https://www.buzzoriginals.com/soni-razdan-100-cigarettes-gumrah-alia-bhatt",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
           name: "Student of the Year After Dark vs Class: Reema Maya Reacts",
           url: "https://www.buzzoriginals.com/student-of-the-year-after-dark-reema-maya-class-comparison",
         },
         {
           "@type": "ListItem",
-          position: 2,
+          position: 3,
           name: "Ananya Panday’s “My Heart” Post With Aarav Bhatia Goes Viral",
           url: "https://www.buzzoriginals.com/ananya-panday-aarav-bhatia-my-heart-post",
         },

@@ -185,6 +185,20 @@ export default function Home() {
 
   const editorialArticles: EditorialArticle[] = [
     {
+      id: "soni-razdan-100-cigarettes-gumrah-alia-bhatt",
+      anchorId: "soni-razdan-gumrah-story",
+      href: "/soni-razdan-100-cigarettes-gumrah-alia-bhatt",
+      title: "Soni Razdan Smoked 100 Cigarettes in a Day on Gumrah Set, Not Knowing She Was Pregnant With Alia Bhatt",
+      excerpt: "Soni Razdan says she smoked 100 cigarettes on the Gumrah set without knowing she was pregnant with Alia Bhatt. Read her full story.",
+      category: "Bollywood",
+      secondaryCategory: "Latest",
+      displayCategory: "BOLLYWOOD THROWBACK",
+      badge: "Candid Throwback",
+      badgeType: "lime",
+      readTime: "3 MIN READ",
+      image: "/images/soni-razdan-100-cigarettes-gumrah-alia-bhatt.jpg",
+    },
+    {
       id: "student-of-the-year-after-dark-reema-maya-class-comparison",
       anchorId: "soty-after-dark-class-story",
       href: "/student-of-the-year-after-dark-reema-maya-class-comparison",
@@ -1337,15 +1351,15 @@ export default function Home() {
         <section className="hero" id="featured">
           {/* 1. Main Featured Story (Commanding Top Story Presentation) */}
           <Link
-            href="/student-of-the-year-after-dark-reema-maya-class-comparison"
+            href="/soni-razdan-100-cigarettes-gumrah-alia-bhatt"
             className="feature-card flex flex-col transition-all hover:border-[var(--lime)] focus-visible:ring-2 focus-visible:ring-[var(--lime)] group"
             style={{ textDecoration: "none", color: "inherit" }}
-            aria-label="Read full article: Student of the Year After Dark vs Class: Reema Maya Reacts"
+            aria-label="Read full article: Soni Razdan Smoked 100 Cigarettes Pregnant With Alia"
           >
             <div className="feature-media" style={{ overflow: "hidden", position: "relative" }}>
               <Image
-                src="/images/student-of-the-year-after-dark-reema-maya-class-comparison.jpg"
-                alt="Student of the Year After Dark vs Class: Reema Maya Reacts"
+                src="/images/soni-razdan-100-cigarettes-gumrah-alia-bhatt.jpg"
+                alt="Soni Razdan Smoked 100 Cigarettes Pregnant With Alia"
                 fill
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 750px"
@@ -1354,46 +1368,46 @@ export default function Home() {
               />
               <div className="noise" style={{ pointerEvents: "none" }}></div>
               <div className="feature-tag flex items-center gap-2">
-                <span className="badge lime">⚡ Exclusive Interview</span>
-                <span className="badge pink">SOTY: After Dark</span>
-                <span className="badge">Reema Maya</span>
-                <span className="badge">JioHotstar</span>
+                <span className="badge lime">⚡ Candid Throwback</span>
+                <span className="badge pink">Gumrah (1993)</span>
+                <span className="badge">Soni Razdan</span>
+                <span className="badge">Alia Bhatt</span>
               </div>
             </div>
             <div className="feature-body">
               <div className="flex items-center gap-2 mb-2 font-mono text-xs text-[var(--lime)] font-bold tracking-wider uppercase">
-                <span>★ TOP STORY · REEMA MAYA RESPONDS TO SOTY: AFTER DARK VS CLASS COMPARISONS &amp; REVEALS KARAN JOHAR&apos;S REACTION</span>
+                <span>★ TOP STORY · SONI RAZDAN OPENS UP ON SMOKING 100 CIGARETTES ON GUMRAH SET WHILE PREGNANT WITH ALIA BHATT</span>
               </div>
               <h1 className="disp" style={{ color: "#fff" }}>
-                Student of the Year After Dark vs Class: Reema Maya Reacts
+                Soni Razdan Smoked 100 Cigarettes in a Day on Gumrah Set, Not Knowing She Was Pregnant With Alia Bhatt
               </h1>
               <p>
-                Reema Maya says Student of the Year: After Dark is a fresh take on the young-adult murder mystery genre, not a copy of Netflix’s Class. Here’s what she said.
+                Soni Razdan says she smoked 100 cigarettes on the Gumrah set without knowing she was pregnant with Alia Bhatt. Read her full story.
               </p>
 
               {/* Editorial Highlights Box */}
               <div className="feature-highlights">
                 <div className="feature-highlights-header">
                   <span className="w-2 h-2 rounded-full bg-[var(--lime)] animate-pulse inline-block"></span>
-                  <span>Inside The SOTY: After Dark Murder Mystery &amp; Reema Maya&apos;s Vision</span>
+                  <span>Inside The 1993 Gumrah Shoot &amp; Working Motherhood In 90s Bollywood</span>
                 </div>
                 <ul className="feature-highlights-list">
                   <li className="feature-highlights-item">
                     <span className="feature-highlights-bullet">✦</span>
                     <span>
-                      <strong className="text-white font-medium">Genre Expectations vs Copying:</strong> Reema Maya clarifies that YA murder mysteries inherently feature elite schools, teens, and murder: <em>“That is the expectation of the genre.”</em>
+                      <strong className="text-white font-medium">100 Cigarettes in One Day:</strong> Multiple retakes for a prison scene in Mahesh Bhatt’s <em>Gumrah</em> forced non-smoker Soni to smoke nearly 100 cigarettes without knowing she was expecting Alia.
                     </span>
                   </li>
                   <li className="feature-highlights-item">
                     <span className="feature-highlights-bullet">✦</span>
                     <span>
-                      <strong className="text-white font-medium">Praise for Ashim Ahluwalia:</strong> Reema called Netflix&apos;s <em>Class</em> a “wonderful show” while establishing her reboot&apos;s distinct grit, angst, and heart.
+                      <strong className="text-white font-medium">Shock &amp; Relief:</strong> Soni admitted having “no clue Alia was inside me” and was terrified when she learned of the pregnancy, though Alia was born healthy.
                     </span>
                   </li>
                   <li className="feature-highlights-item">
                     <span className="feature-highlights-bullet">✦</span>
                     <span>
-                      <strong className="text-white font-medium">Karan Johar’s Zero Pushback:</strong> KJo backed the dark twist completely, telling Reema to <em>“just push it and have fun.”</em>
+                      <strong className="text-white font-medium">Hiding Motherhood:</strong> Soni revealed female actors in the 1990s had to hide marriages and children from producers out of fear of losing work.
                     </span>
                   </li>
                 </ul>
@@ -1401,11 +1415,11 @@ export default function Home() {
 
               <div className="meta-row mt-auto pt-3 border-t border-white/[0.06] flex items-center justify-between">
                 <div className="flex items-center gap-3">
-                  <span>BOLLYWOOD &amp; OTT</span>
+                  <span>BOLLYWOOD THROWBACK</span>
                   <span className="dot-sep">◆</span>
                   <span>3 MIN READ</span>
                   <span className="dot-sep">◆</span>
-                  <span style={{ color: "var(--lime)" }}>EXCLUSIVE INTERVIEW</span>
+                  <span style={{ color: "var(--lime)" }}>CANDID SCOOP</span>
                 </div>
                 <span className="text-xs font-mono font-bold text-[var(--lime)] hidden sm:inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform">
                   Read Full Story →
@@ -1424,6 +1438,18 @@ export default function Home() {
               <span className="trend-rank">01</span>
               <div className="trend-text">
                 <Link
+                  href="/soni-razdan-100-cigarettes-gumrah-alia-bhatt"
+                  style={{ color: "inherit" }}
+                >
+                  <h3>Soni Razdan smoked 100 cigarettes on Gumrah set without knowing she was pregnant with Alia Bhatt: SCREEN interview</h3>
+                  <span>BOLLYWOOD THROWBACK · 4.45M REACTIONS</span>
+                </Link>
+              </div>
+            </div>
+            <div className="trend-item">
+              <span className="trend-rank">02</span>
+              <div className="trend-text">
+                <Link
                   href="/student-of-the-year-after-dark-reema-maya-class-comparison"
                   style={{ color: "inherit" }}
                 >
@@ -1433,7 +1459,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">02</span>
+              <span className="trend-rank">03</span>
               <div className="trend-text">
                 <Link
                   href="/ananya-panday-aarav-bhatia-my-heart-post"
@@ -1445,7 +1471,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">03</span>
+              <span className="trend-rank">04</span>
               <div className="trend-text">
                 <Link
                   href="/amyra-dastur-farah-khan-titanic-kung-fu-yoga"
@@ -1457,7 +1483,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">04</span>
+              <span className="trend-rank">05</span>
               <div className="trend-text">
                 <Link
                   href="/yash-ravana-costume-weight-ramayana"
@@ -1469,7 +1495,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">05</span>
+              <span className="trend-rank">06</span>
               <div className="trend-text">
                 <Link
                   href="/diljit-dosanjh-aura-india-tour-chandigarh-kolkata-dates"
@@ -1481,7 +1507,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">06</span>
+              <span className="trend-rank">07</span>
               <div className="trend-text">
                 <Link
                   href="/karan-johar-kareena-kapoor-diwali-pout-pic"
@@ -1493,7 +1519,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">07</span>
+              <span className="trend-rank">08</span>
               <div className="trend-text">
                 <Link
                   href="/farah-khan-fake-fire-video-clickbait"
@@ -1505,7 +1531,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">08</span>
+              <span className="trend-rank">09</span>
               <div className="trend-text">
                 <Link
                   href="/ranbir-kapoor-directorial-debut-last-decade-as-actor"
@@ -1517,7 +1543,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">09</span>
+              <span className="trend-rank">10</span>
               <div className="trend-text">
                 <Link
                   href="/farah-khan-bollywood-insecure-youtube-channel-dilip"
@@ -1525,18 +1551,6 @@ export default function Home() {
                 >
                   <h3>Farah Khan says Bollywood makes people insecure: Opens up on YouTube channel with cook Dilip &amp; crossing 3M subs</h3>
                   <span>BOLLYWOOD &amp; DIGITAL · 3.25M REACTIONS</span>
-                </Link>
-              </div>
-            </div>
-            <div className="trend-item">
-              <span className="trend-rank">10</span>
-              <div className="trend-text">
-                <Link
-                  href="/rise-and-fall-2-winner-shehzad-poonawalla"
-                  style={{ color: "inherit" }}
-                >
-                  <h3>Rise and Fall 2 winner: Shehzad Poonawalla lifts trophy, Priyanka Chahar Choudhary misses out in tense finale</h3>
-                  <span>REALITY SHOWS &amp; FINALE · 3.10M REACTIONS</span>
                 </Link>
               </div>
             </div>

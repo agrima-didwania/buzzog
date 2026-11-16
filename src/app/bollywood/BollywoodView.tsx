@@ -20,6 +20,16 @@ interface BollywoodArticle {
 
 const bollywoodArticles: BollywoodArticle[] = [
   {
+    id: "soni-razdan-100-cigarettes-gumrah-alia-bhatt",
+    category: "Throwback & Scoop",
+    title: "Soni Razdan Smoked 100 Cigarettes in a Day on Gumrah Set, Not Knowing She Was Pregnant With Alia Bhatt",
+    badge: "⚡ Candid Throwback",
+    badgeType: "lime",
+    image: "/images/soni-razdan-100-cigarettes-gumrah-alia-bhatt.jpg",
+    href: "/soni-razdan-100-cigarettes-gumrah-alia-bhatt",
+    readOrTime: "3 MIN READ",
+  },
+  {
     id: "student-of-the-year-after-dark-reema-maya-class-comparison",
     category: "Thriller & Mystery",
     title: "Student of the Year After Dark vs Class: Reema Maya Reacts",
@@ -706,16 +716,16 @@ export default function BollywoodView() {
 
         {/* Lead Section: Latest Bollywood Published Article (Cover Story) + The Last 2 Blogs Uploaded Before It */}
         <section className="lead">
-          {/* Cover Story: Latest Published Bollywood Story (Student of the Year: After Dark vs Class) */}
+          {/* Cover Story: Latest Published Bollywood Story (Soni Razdan Smoked 100 Cigarettes on Gumrah Set) */}
           <Link
-            href="/student-of-the-year-after-dark-reema-maya-class-comparison"
+            href="/soni-razdan-100-cigarettes-gumrah-alia-bhatt"
             className="feature-card group block"
-            aria-label="Read full cover story: Student of the Year After Dark vs Class: Reema Maya Reacts"
+            aria-label="Read full cover story: Soni Razdan Smoked 100 Cigarettes in a Day on Gumrah Set, Not Knowing She Was Pregnant With Alia Bhatt"
           >
             <div className="feature-media relative overflow-hidden">
               <Image
-                src="/images/student-of-the-year-after-dark-reema-maya-class-comparison.jpg"
-                alt="Student of the Year After Dark vs Class: Reema Maya Reacts"
+                src="/images/soni-razdan-100-cigarettes-gumrah-alia-bhatt.jpg"
+                alt="Soni Razdan Smoked 100 Cigarettes Pregnant With Alia"
                 fill
                 priority
                 className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
@@ -723,29 +733,56 @@ export default function BollywoodView() {
               />
               <div className="noise" />
               <span className="badge lime feature-tag z-10">
-                ⚡ Exclusive Interview
+                ⚡ Candid Throwback
               </span>
             </div>
             <div className="feature-body">
               <h2 className="disp text-white group-hover:text-[var(--lime)] transition-colors">
-                Student of the Year After Dark vs Class: Reema Maya Reacts
+                Soni Razdan Smoked 100 Cigarettes in a Day on Gumrah Set, Not Knowing She Was Pregnant With Alia Bhatt
               </h2>
               <p>
-                Reema Maya says Student of the Year: After Dark is a fresh take on the young-adult murder mystery genre, not a copy of Netflix’s Class. Here’s what she said.
+                Soni Razdan says she smoked 100 cigarettes on the Gumrah set without knowing she was pregnant with Alia Bhatt. Read her full story.
               </p>
               <div className="meta-row mt-3">
-                <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; OTT</span>
+                <span className="text-[var(--magenta)] font-bold">BOLLYWOOD THROWBACK</span>
                 <span className="dot-sep">◆</span>
                 <span>3 MIN READ</span>
                 <span className="dot-sep">◆</span>
-                <span className="text-[var(--lime)] font-bold">NOV 13</span>
+                <span className="text-[var(--lime)] font-bold">NOV 16</span>
               </div>
             </div>
           </Link>
 
           {/* Right Stack: The last 2-3 blogs uploaded before the latest one */}
           <div className="stack">
-            {/* Card 1: Ananya Panday's "My Heart" Post With Aarav Bhatia */}
+            {/* Card 1: Student of the Year After Dark vs Class */}
+            <Link
+              href="/student-of-the-year-after-dark-reema-maya-class-comparison"
+              className="card m1 group block"
+            >
+              <div className="card-media relative overflow-hidden">
+                <Image
+                  src="/images/student-of-the-year-after-dark-reema-maya-class-comparison.jpg"
+                  alt="Student of the Year After Dark vs Class: Reema Maya Reacts"
+                  fill
+                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 980px) 100vw, 35vw"
+                />
+                <span className="badge lime z-10 relative">⚡ Exclusive Interview</span>
+              </div>
+              <div className="card-body">
+                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
+                  Student of the Year After Dark vs Class: Reema Maya Reacts
+                </h3>
+                <div className="meta-row mt-2">
+                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; OTT</span>
+                  <span className="dot-sep">◆</span>
+                  <span>3 MIN READ</span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Card 2: Ananya Panday's "My Heart" Post With Aarav Bhatia */}
             <Link
               href="/ananya-panday-aarav-bhatia-my-heart-post"
               className="card m1 group block"
@@ -772,7 +809,7 @@ export default function BollywoodView() {
               </div>
             </Link>
 
-            {/* Card 2: Amyra Dastur on Farah Khan's Titanic Remark */}
+            {/* Card 3: Amyra Dastur on Farah Khan's Titanic Remark */}
             <Link
               href="/amyra-dastur-farah-khan-titanic-kung-fu-yoga"
               className="card m1 group block"
@@ -793,60 +830,6 @@ export default function BollywoodView() {
                 </h3>
                 <div className="meta-row mt-2">
                   <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; OTT</span>
-                  <span className="dot-sep">◆</span>
-                  <span>3 MIN READ</span>
-                </div>
-              </div>
-            </Link>
-
-            {/* Card 3: Yash's Ravana Costume in Ramayana */}
-            <Link
-              href="/yash-ravana-costume-weight-ramayana"
-              className="card m1 group block"
-            >
-              <div className="card-media relative overflow-hidden">
-                <Image
-                  src="/images/yash-ravana-costume-weight-ramayana.jpg"
-                  alt="Yash’s Ravana Costume in Ramayana Weighed Up to 33 kg"
-                  fill
-                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
-                  sizes="(max-width: 980px) 100vw, 35vw"
-                />
-                <span className="badge lime z-10 relative">⚡ Costume Reveal</span>
-              </div>
-              <div className="card-body">
-                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
-                  Yash’s Ravana Costume in Ramayana Weighed Up to 33 kg
-                </h3>
-                <div className="meta-row mt-2">
-                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; EPICS</span>
-                  <span className="dot-sep">◆</span>
-                  <span>3 MIN READ</span>
-                </div>
-              </div>
-            </Link>
-
-            {/* Card 3: Karan Johar Calls Kareena Kapoor Pout Queen */}
-            <Link
-              href="/karan-johar-kareena-kapoor-diwali-pout-pic"
-              className="card m1 group block"
-            >
-              <div className="card-media relative overflow-hidden">
-                <Image
-                  src="/images/karan-johar-kareena-kapoor-diwali-pout-pic.jpg"
-                  alt="Karan Johar Calls Kareena Kapoor the 'Pout Queen' in Diwali Pic"
-                  fill
-                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
-                  sizes="(max-width: 980px) 100vw, 35vw"
-                />
-                <span className="badge lime z-10 relative">⚡ Festive Exclusive</span>
-              </div>
-              <div className="card-body">
-                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
-                  Karan Johar Calls Kareena Kapoor Pout Queen in Diwali Pic
-                </h3>
-                <div className="meta-row mt-2">
-                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; FESTIVE</span>
                   <span className="dot-sep">◆</span>
                   <span>3 MIN READ</span>
                 </div>
