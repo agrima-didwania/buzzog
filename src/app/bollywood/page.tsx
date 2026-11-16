@@ -6,6 +6,12 @@ export const metadata: Metadata = {
   description:
     "Bollywood coverage from Buzz Originals — raw, unfiltered, built for the group chat. Red carpets, rumours, airport looks and exclusives.",
   keywords: [
+    "Suryaa Ant Se Aarambh Tak postponed",
+    "Sunny Deol new movie",
+    "Suryaa release date",
+    "IMA objection",
+    "Suryaa CBFC",
+    "Sunny Deol 2026 releases",
     "Sharad Kapoor Hollywood film",
     "Sharad Kapoor viral video",
     "Sharad Kapoor Josh",
@@ -570,10 +576,10 @@ export const metadata: Metadata = {
     siteName: "Buzz Originals",
     images: [
       {
-        url: "/images/sharad-kapoor-hollywood-film-offer.jpg",
+        url: "/images/sunny-deol-suryaa-ant-se-aarambh-tak-postponed-2027.jpg",
         width: 1200,
         height: 675,
-        alt: "Sharad Kapoor Gets a Hollywood Film Offer After His Viral Video Asking for Work — Buzz Originals",
+        alt: "Sunny Deol’s Suryaa: Ant Se Aarambh Tak Postponed to 2027 After IMA Objection — Buzz Originals",
       },
     ],
     type: "website",
@@ -583,7 +589,7 @@ export const metadata: Metadata = {
     title: "Bollywood — Buzz Originals",
     description:
       "Raw, unfiltered Bollywood coverage of red carpets, gossip, airport sightings & exclusives.",
-    images: ["/images/sharad-kapoor-hollywood-film-offer.jpg"],
+    images: ["/images/sunny-deol-suryaa-ant-se-aarambh-tak-postponed-2027.jpg"],
   },
 };
 
@@ -610,12 +616,18 @@ export default function BollywoodPage() {
         {
           "@type": "ListItem",
           position: 1,
+          name: "Sunny Deol’s Suryaa: Ant Se Aarambh Tak Postponed to 2027 After IMA Objection",
+          url: "https://www.buzzoriginals.com/sunny-deol-suryaa-ant-se-aarambh-tak-postponed-2027",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
           name: "Sharad Kapoor Gets a Hollywood Film Offer After His Viral Video Asking for Work",
           url: "https://www.buzzoriginals.com/sharad-kapoor-hollywood-film-offer",
         },
         {
           "@type": "ListItem",
-          position: 2,
+          position: 3,
           name: "Diljit Dosanjh Recites “Kisi Ke Baap Ka Hindustan Thodi Hai” at Indore Concert After Song Ban and Bomb Threats",
           url: "https://www.buzzoriginals.com/diljit-dosanjh-indore-concert-kisi-ke-baap-ka-hindustan-thodi-hai",
         },

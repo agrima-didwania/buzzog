@@ -185,6 +185,20 @@ export default function Home() {
 
   const editorialArticles: EditorialArticle[] = [
     {
+      id: "sunny-deol-suryaa-ant-se-aarambh-tak-postponed-2027",
+      anchorId: "sunny-deol-suryaa-postponed-story",
+      href: "/sunny-deol-suryaa-ant-se-aarambh-tak-postponed-2027",
+      title: "Sunny Deol’s Suryaa: Ant Se Aarambh Tak Postponed to 2027 After IMA Objection",
+      excerpt: "Sunny Deol’s Suryaa: Ant Se Aarambh Tak will not release on November 20. Here is why the film is postponed to 2027 and what happens next.",
+      category: "Bollywood",
+      secondaryCategory: "Latest",
+      displayCategory: "BOLLYWOOD NEWS",
+      badge: "Breaking Delay",
+      badgeType: "lime",
+      readTime: "4 MIN READ",
+      image: "/images/sunny-deol-suryaa-ant-se-aarambh-tak-postponed-2027.jpg",
+    },
+    {
       id: "sharad-kapoor-hollywood-film-offer",
       anchorId: "sharad-kapoor-hollywood-story",
       href: "/sharad-kapoor-hollywood-film-offer",
@@ -1379,15 +1393,15 @@ export default function Home() {
         <section className="hero" id="featured">
           {/* 1. Main Featured Story (Commanding Top Story Presentation) */}
           <Link
-            href="/sharad-kapoor-hollywood-film-offer"
+            href="/sunny-deol-suryaa-ant-se-aarambh-tak-postponed-2027"
             className="feature-card flex flex-col transition-all hover:border-[var(--lime)] focus-visible:ring-2 focus-visible:ring-[var(--lime)] group"
             style={{ textDecoration: "none", color: "inherit" }}
-            aria-label="Read full article: Sharad Kapoor Gets a Hollywood Film Offer After His Viral Video Asking for Work"
+            aria-label="Read full article: Sunny Deol’s Suryaa: Ant Se Aarambh Tak Postponed to 2027 After IMA Objection"
           >
             <div className="feature-media" style={{ overflow: "hidden", position: "relative" }}>
               <Image
-                src="/images/sharad-kapoor-hollywood-film-offer.jpg"
-                alt="Sharad Kapoor Gets a Hollywood Film Offer After His Viral Video Asking for Work"
+                src="/images/sunny-deol-suryaa-ant-se-aarambh-tak-postponed-2027.jpg"
+                alt="Sunny Deol Suryaa Ant Se Aarambh Tak Postponed to 2027"
                 fill
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 750px"
@@ -1396,46 +1410,46 @@ export default function Home() {
               />
               <div className="noise" style={{ pointerEvents: "none" }}></div>
               <div className="feature-tag flex items-center gap-2">
-                <span className="badge lime">⚡ EXCLUSIVE SCOOP</span>
-                <span className="badge pink">Hollywood Debut</span>
-                <span className="badge">Sharad Kapoor</span>
-                <span className="badge">Josh Actor</span>
+                <span className="badge lime">⚡ BREAKING DELAY</span>
+                <span className="badge pink">Suryaa (2027)</span>
+                <span className="badge">Sunny Deol</span>
+                <span className="badge">IMA Objection</span>
               </div>
             </div>
             <div className="feature-body">
               <div className="flex items-center gap-2 mb-2 font-mono text-xs text-[var(--lime)] font-bold tracking-wider uppercase">
-                <span>★ TOP STORY · SHARAD KAPOOR GETS HOLLYWOOD FILM OFFER AFTER VIRAL VIDEO ASKING FOR WORK</span>
+                <span>★ TOP STORY · SUNNY DEOL’S SURYAA POSTPONED TO 2027 AFTER IMA COMPLAINT OVER TEASER</span>
               </div>
               <h1 className="disp" style={{ color: "#fff" }}>
-                Sharad Kapoor Gets a Hollywood Film Offer After His Viral Video Asking for Work
+                Sunny Deol’s Suryaa: Ant Se Aarambh Tak Postponed to 2027 After IMA Objection
               </h1>
               <p>
-                Josh actor Sharad Kapoor says he has a Hollywood film offer, shooting starts in January. Here is what he said about his viral video, his health and his comeback.
+                Sunny Deol’s Suryaa: Ant Se Aarambh Tak will not release on November 20. Here is why the film is postponed to 2027 and what happens next.
               </p>
 
               {/* Editorial Highlights Box */}
               <div className="feature-highlights">
                 <div className="feature-highlights-header">
                   <span className="w-2 h-2 rounded-full bg-[var(--lime)] animate-pulse inline-block"></span>
-                  <span>Inside Sharad Kapoor’s Hollywood Debut, Health Struggles &amp; Industry Solidarity</span>
+                  <span>Inside The Postponement: IMA Complaint, Censor Timeline &amp; Sunny Deol’s 2026 Slate</span>
                 </div>
                 <ul className="feature-highlights-list">
                   <li className="feature-highlights-item">
                     <span className="feature-highlights-bullet">✦</span>
                     <span>
-                      <strong className="text-white font-medium">Hollywood Project in January:</strong> Sharad revealed he has been offered an international feature film with filming beginning in January, while confirming he remains dedicated to Bollywood.
+                      <strong className="text-white font-medium">Theatrical Bow Delayed:</strong> The action thriller has vacated its November 20, 2026 release date, with makers eyeing early 2027 (tentatively January 15) to resolve regulatory queries.
                     </span>
                   </li>
                   <li className="feature-highlights-item">
                     <span className="feature-highlights-bullet">✦</span>
                     <span>
-                      <strong className="text-white font-medium">Clarifying The Viral Video:</strong> The actor explained his plea was for acting work after 7 years in New York, not monetary charity, emphasizing that Bollywood is his family.
+                      <strong className="text-white font-medium">IMA Representation:</strong> The Indian Medical Association wrote to I&amp;B Minister Ashwini Vaishnaw alleging the teaser shows doctors in a negative light and incites hostility against healthcare workers.
                     </span>
                   </li>
                   <li className="feature-highlights-item">
                     <span className="feature-highlights-bullet">✦</span>
                     <span>
-                      <strong className="text-white font-medium">Overcoming Adversity:</strong> After battling severe depression and a football injury in Barcelona, Sharad is on 2-month bed rest before moving into a Madh Island bungalow with his 4 dogs.
+                      <strong className="text-white font-medium">Clearances First:</strong> Producers chose to secure comprehensive ministerial nods and CBFC certification before locking a new date, avoiding a heavily crowded December box office.
                     </span>
                   </li>
                 </ul>
@@ -1443,11 +1457,11 @@ export default function Home() {
 
               <div className="meta-row mt-auto pt-3 border-t border-white/[0.06] flex items-center justify-between">
                 <div className="flex items-center gap-3">
-                  <span>BOLLYWOOD COMEBACK</span>
+                  <span>BOLLYWOOD NEWS</span>
                   <span className="dot-sep">◆</span>
-                  <span>3 MIN READ</span>
+                  <span>4 MIN READ</span>
                   <span className="dot-sep">◆</span>
-                  <span style={{ color: "var(--lime)" }}>EXCLUSIVE SCOOP</span>
+                  <span style={{ color: "var(--lime)" }}>BREAKING SCOOP</span>
                 </div>
                 <span className="text-xs font-mono font-bold text-[var(--lime)] hidden sm:inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform">
                   Read Full Story →
@@ -1466,6 +1480,18 @@ export default function Home() {
               <span className="trend-rank">01</span>
               <div className="trend-text">
                 <Link
+                  href="/sunny-deol-suryaa-ant-se-aarambh-tak-postponed-2027"
+                  style={{ color: "inherit" }}
+                >
+                  <h3>Sunny Deol’s Suryaa: Ant Se Aarambh Tak postponed to 2027 after IMA objection over teaser: Full scoop</h3>
+                  <span>BOLLYWOOD NEWS · 4.68M REACTIONS</span>
+                </Link>
+              </div>
+            </div>
+            <div className="trend-item">
+              <span className="trend-rank">02</span>
+              <div className="trend-text">
+                <Link
                   href="/sharad-kapoor-hollywood-film-offer"
                   style={{ color: "inherit" }}
                 >
@@ -1475,7 +1501,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">02</span>
+              <span className="trend-rank">03</span>
               <div className="trend-text">
                 <Link
                   href="/diljit-dosanjh-indore-concert-kisi-ke-baap-ka-hindustan-thodi-hai"
@@ -1487,7 +1513,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">03</span>
+              <span className="trend-rank">04</span>
               <div className="trend-text">
                 <Link
                   href="/soni-razdan-100-cigarettes-gumrah-alia-bhatt"
@@ -1499,7 +1525,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">04</span>
+              <span className="trend-rank">05</span>
               <div className="trend-text">
                 <Link
                   href="/student-of-the-year-after-dark-reema-maya-class-comparison"
@@ -1511,7 +1537,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">05</span>
+              <span className="trend-rank">06</span>
               <div className="trend-text">
                 <Link
                   href="/ananya-panday-aarav-bhatia-my-heart-post"
@@ -1523,7 +1549,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">06</span>
+              <span className="trend-rank">07</span>
               <div className="trend-text">
                 <Link
                   href="/amyra-dastur-farah-khan-titanic-kung-fu-yoga"
@@ -1535,7 +1561,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">07</span>
+              <span className="trend-rank">08</span>
               <div className="trend-text">
                 <Link
                   href="/yash-ravana-costume-weight-ramayana"
@@ -1547,7 +1573,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">08</span>
+              <span className="trend-rank">09</span>
               <div className="trend-text">
                 <Link
                   href="/diljit-dosanjh-aura-india-tour-chandigarh-kolkata-dates"
@@ -1559,7 +1585,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">09</span>
+              <span className="trend-rank">10</span>
               <div className="trend-text">
                 <Link
                   href="/karan-johar-kareena-kapoor-diwali-pout-pic"
@@ -1567,18 +1593,6 @@ export default function Home() {
                 >
                   <h3>Karan Johar calls Kareena Kapoor pout queen in Diwali pic: “The yearly pout pose” &amp; King reunion buzz</h3>
                   <span>BOLLYWOOD &amp; FESTIVE · 3.65M REACTIONS</span>
-                </Link>
-              </div>
-            </div>
-            <div className="trend-item">
-              <span className="trend-rank">10</span>
-              <div className="trend-text">
-                <Link
-                  href="/farah-khan-fake-fire-video-clickbait"
-                  style={{ color: "inherit" }}
-                >
-                  <h3>Farah Khan reacts to fake house fire videos: Slams clickbait portals, clarifies building was under construction</h3>
-                  <span>BOLLYWOOD &amp; NEWS · 3.55M REACTIONS</span>
                 </Link>
               </div>
             </div>
