@@ -20,6 +20,16 @@ interface BollywoodArticle {
 
 const bollywoodArticles: BollywoodArticle[] = [
   {
+    id: "sharad-kapoor-hollywood-film-offer",
+    category: "Comeback & Scoop",
+    title: "Sharad Kapoor Gets a Hollywood Film Offer After His Viral Video Asking for Work",
+    badge: "⚡ Exclusive Scoop",
+    badgeType: "lime",
+    image: "/images/sharad-kapoor-hollywood-film-offer.jpg",
+    href: "/sharad-kapoor-hollywood-film-offer",
+    readOrTime: "3 MIN READ",
+  },
+  {
     id: "diljit-dosanjh-indore-concert-kisi-ke-baap-ka-hindustan-thodi-hai",
     category: "Concert & Controversy",
     title: "Diljit Dosanjh Recites “Kisi Ke Baap Ka Hindustan Thodi Hai” at Indore Concert After Song Ban and Bomb Threats",
@@ -726,16 +736,16 @@ export default function BollywoodView() {
 
         {/* Lead Section: Latest Bollywood Published Article (Cover Story) + The Last 2 Blogs Uploaded Before It */}
         <section className="lead">
-          {/* Cover Story: Latest Published Bollywood Story (Diljit Dosanjh Recites Kisi Ke Baap Ka Hindustan Thodi Hai at Indore Concert) */}
+          {/* Cover Story: Latest Published Bollywood Story (Sharad Kapoor Gets a Hollywood Film Offer After His Viral Video Asking for Work) */}
           <Link
-            href="/diljit-dosanjh-indore-concert-kisi-ke-baap-ka-hindustan-thodi-hai"
+            href="/sharad-kapoor-hollywood-film-offer"
             className="feature-card group block"
-            aria-label="Read full cover story: Diljit Dosanjh Recites “Kisi Ke Baap Ka Hindustan Thodi Hai” at Indore Concert After Song Ban and Bomb Threats"
+            aria-label="Read full cover story: Sharad Kapoor Gets a Hollywood Film Offer After His Viral Video Asking for Work"
           >
             <div className="feature-media relative overflow-hidden">
               <Image
-                src="/images/diljit-dosanjh-indore-concert-kisi-ke-baap-ka-hindustan-thodi-hai.jpg"
-                alt="Diljit Dosanjh Recites Kisi Ke Baap Ka Hindustan Thodi Hai at Indore Concert"
+                src="/images/sharad-kapoor-hollywood-film-offer.jpg"
+                alt="Sharad Kapoor Gets a Hollywood Film Offer After His Viral Video Asking for Work"
                 fill
                 priority
                 className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
@@ -743,20 +753,20 @@ export default function BollywoodView() {
               />
               <div className="noise" />
               <span className="badge lime feature-tag z-10">
-                ⚡ LIVE UPDATE
+                ⚡ EXCLUSIVE SCOOP
               </span>
             </div>
             <div className="feature-body">
               <h2 className="disp text-white group-hover:text-[var(--lime)] transition-colors">
-                Diljit Dosanjh Recites “Kisi Ke Baap Ka Hindustan Thodi Hai” at Indore Concert After Song Ban and Bomb Threats
+                Sharad Kapoor Gets a Hollywood Film Offer After His Viral Video Asking for Work
               </h2>
               <p>
-                Diljit Dosanjh performed in Indore despite a 4-song ban and hoax bomb threats. Read what he said and the Rahat Indori couplet he recited.
+                Josh actor Sharad Kapoor says he has a Hollywood film offer, shooting starts in January. Here is what he said about his viral video, his health and his comeback.
               </p>
               <div className="meta-row mt-3">
-                <span className="text-[var(--magenta)] font-bold">LIVE CONCERT SCOOP</span>
+                <span className="text-[var(--magenta)] font-bold">BOLLYWOOD COMEBACK</span>
                 <span className="dot-sep">◆</span>
-                <span>4 MIN READ</span>
+                <span>3 MIN READ</span>
                 <span className="dot-sep">◆</span>
                 <span className="text-[var(--lime)] font-bold">NOV 16</span>
               </div>
@@ -765,7 +775,34 @@ export default function BollywoodView() {
 
           {/* Right Stack: The last 2-3 blogs uploaded before the latest one */}
           <div className="stack">
-            {/* Card 1: Soni Razdan Smoked 100 Cigarettes in a Day on Gumrah Set */}
+            {/* Card 1: Diljit Dosanjh Indore Concert */}
+            <Link
+              href="/diljit-dosanjh-indore-concert-kisi-ke-baap-ka-hindustan-thodi-hai"
+              className="card m1 group block"
+            >
+              <div className="card-media relative overflow-hidden">
+                <Image
+                  src="/images/diljit-dosanjh-indore-concert-kisi-ke-baap-ka-hindustan-thodi-hai.jpg"
+                  alt="Diljit Dosanjh Recites Kisi Ke Baap Ka Hindustan Thodi Hai at Indore Concert"
+                  fill
+                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 980px) 100vw, 35vw"
+                />
+                <span className="badge lime z-10 relative">⚡ LIVE UPDATE</span>
+              </div>
+              <div className="card-body">
+                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
+                  Diljit Dosanjh Recites “Kisi Ke Baap Ka Hindustan Thodi Hai” at Indore Concert After Song Ban and Bomb Threats
+                </h3>
+                <div className="meta-row mt-2">
+                  <span className="text-[var(--magenta)] font-bold">LIVE CONCERT SCOOP</span>
+                  <span className="dot-sep">◆</span>
+                  <span>4 MIN READ</span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Card 2: Soni Razdan Smoked 100 Cigarettes in a Day on Gumrah Set */}
             <Link
               href="/soni-razdan-100-cigarettes-gumrah-alia-bhatt"
               className="card m1 group block"
@@ -792,7 +829,7 @@ export default function BollywoodView() {
               </div>
             </Link>
 
-            {/* Card 2: Student of the Year After Dark vs Class */}
+            {/* Card 3: Student of the Year After Dark vs Class */}
             <Link
               href="/student-of-the-year-after-dark-reema-maya-class-comparison"
               className="card m1 group block"
@@ -813,33 +850,6 @@ export default function BollywoodView() {
                 </h3>
                 <div className="meta-row mt-2">
                   <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; OTT</span>
-                  <span className="dot-sep">◆</span>
-                  <span>3 MIN READ</span>
-                </div>
-              </div>
-            </Link>
-
-            {/* Card 3: Ananya Panday's "My Heart" Post With Aarav Bhatia */}
-            <Link
-              href="/ananya-panday-aarav-bhatia-my-heart-post"
-              className="card m1 group block"
-            >
-              <div className="card-media relative overflow-hidden">
-                <Image
-                  src="/images/ananya-panday-aarav-bhatia-my-heart-post.jpg"
-                  alt="Ananya Panday’s “My Heart” Post With Aarav Bhatia Goes Viral"
-                  fill
-                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
-                  sizes="(max-width: 980px) 100vw, 35vw"
-                />
-                <span className="badge lime z-10 relative">⚡ Viral Scoop</span>
-              </div>
-              <div className="card-body">
-                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
-                  Ananya Panday’s “My Heart” Post With Aarav Bhatia Goes Viral
-                </h3>
-                <div className="meta-row mt-2">
-                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD BUZZ</span>
                   <span className="dot-sep">◆</span>
                   <span>3 MIN READ</span>
                 </div>

@@ -6,6 +6,11 @@ export const metadata: Metadata = {
   description:
     "Bollywood coverage from Buzz Originals — raw, unfiltered, built for the group chat. Red carpets, rumours, airport looks and exclusives.",
   keywords: [
+    "Sharad Kapoor Hollywood film",
+    "Sharad Kapoor viral video",
+    "Sharad Kapoor Josh",
+    "Sharad Kapoor appeal for work",
+    "Sharad Kapoor news",
     "Diljit Dosanjh Indore concert",
     "Diljit Dosanjh Aura India Tour 2026",
     "Diljit Dosanjh Rahat Indori couplet",
@@ -565,10 +570,10 @@ export const metadata: Metadata = {
     siteName: "Buzz Originals",
     images: [
       {
-        url: "/images/diljit-dosanjh-indore-concert-kisi-ke-baap-ka-hindustan-thodi-hai.jpg",
+        url: "/images/sharad-kapoor-hollywood-film-offer.jpg",
         width: 1200,
         height: 675,
-        alt: "Diljit Dosanjh Recites “Kisi Ke Baap Ka Hindustan Thodi Hai” at Indore Concert After Song Ban and Bomb Threats — Buzz Originals",
+        alt: "Sharad Kapoor Gets a Hollywood Film Offer After His Viral Video Asking for Work — Buzz Originals",
       },
     ],
     type: "website",
@@ -578,7 +583,7 @@ export const metadata: Metadata = {
     title: "Bollywood — Buzz Originals",
     description:
       "Raw, unfiltered Bollywood coverage of red carpets, gossip, airport sightings & exclusives.",
-    images: ["/images/diljit-dosanjh-indore-concert-kisi-ke-baap-ka-hindustan-thodi-hai.jpg"],
+    images: ["/images/sharad-kapoor-hollywood-film-offer.jpg"],
   },
 };
 
@@ -605,6 +610,12 @@ export default function BollywoodPage() {
         {
           "@type": "ListItem",
           position: 1,
+          name: "Sharad Kapoor Gets a Hollywood Film Offer After His Viral Video Asking for Work",
+          url: "https://www.buzzoriginals.com/sharad-kapoor-hollywood-film-offer",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
           name: "Diljit Dosanjh Recites “Kisi Ke Baap Ka Hindustan Thodi Hai” at Indore Concert After Song Ban and Bomb Threats",
           url: "https://www.buzzoriginals.com/diljit-dosanjh-indore-concert-kisi-ke-baap-ka-hindustan-thodi-hai",
         },
