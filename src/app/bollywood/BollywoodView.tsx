@@ -20,6 +20,16 @@ interface BollywoodArticle {
 
 const bollywoodArticles: BollywoodArticle[] = [
   {
+    id: "amitabh-bachchan-jalsa-property-dispute",
+    category: "Property Dispute",
+    title: "Amitabh Bachchan’s Jalsa Property Dispute: What Is Going On?",
+    badge: "⚡ Property Dispute",
+    badgeType: "lime",
+    image: "/images/amitabh-bachchan-jalsa-property-dispute.jpg",
+    href: "/amitabh-bachchan-jalsa-property-dispute",
+    readOrTime: "4 MIN READ",
+  },
+  {
     id: "sunny-deol-suryaa-ant-se-aarambh-tak-postponed-2027",
     category: "Release & Delay",
     title: "Sunny Deol’s Suryaa: Ant Se Aarambh Tak Postponed to 2027 After IMA Objection",
@@ -744,18 +754,18 @@ export default function BollywoodView() {
           </div>
         </section>
 
-        {/* Lead Section: Latest Bollywood Published Article (Cover Story) + The Last 2 Blogs Uploaded Before It */}
+        {/* Lead Section: Latest Bollywood Published Article (Cover Story) + The Last 2-3 Blogs Uploaded Before It */}
         <section className="lead">
-          {/* Cover Story: Latest Published Bollywood Story (Sunny Deol’s Suryaa: Ant Se Aarambh Tak Postponed to 2027) */}
+          {/* Cover Story: Latest Published Bollywood Story (Amitabh Bachchan’s Jalsa Property Dispute) */}
           <Link
-            href="/sunny-deol-suryaa-ant-se-aarambh-tak-postponed-2027"
+            href="/amitabh-bachchan-jalsa-property-dispute"
             className="feature-card group block"
-            aria-label="Read full cover story: Sunny Deol’s Suryaa: Ant Se Aarambh Tak Postponed to 2027 After IMA Objection"
+            aria-label="Read full cover story: Amitabh Bachchan’s Jalsa Property Dispute: What Is Going On?"
           >
             <div className="feature-media relative overflow-hidden">
               <Image
-                src="/images/sunny-deol-suryaa-ant-se-aarambh-tak-postponed-2027.jpg"
-                alt="Sunny Deol Suryaa Ant Se Aarambh Tak Postponed to 2027"
+                src="/images/amitabh-bachchan-jalsa-property-dispute.jpg"
+                alt="Amitabh Bachchan Jalsa Property Dispute Ramola Bachchan Challenges Deed"
                 fill
                 priority
                 className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
@@ -763,15 +773,15 @@ export default function BollywoodView() {
               />
               <div className="noise" />
               <span className="badge lime feature-tag z-10">
-                ⚡ BREAKING DELAY
+                ⚡ PROPERTY DISPUTE
               </span>
             </div>
             <div className="feature-body">
               <h2 className="disp text-white group-hover:text-[var(--lime)] transition-colors">
-                Sunny Deol’s Suryaa: Ant Se Aarambh Tak Postponed to 2027 After IMA Objection
+                Amitabh Bachchan’s Jalsa Property Dispute: What Is Going On?
               </h2>
               <p>
-                Sunny Deol’s Suryaa: Ant Se Aarambh Tak will not release on November 20. Here is why the film is postponed to 2027 and what happens next.
+                Amitabh Bachchan’s Jalsa bungalow is in a family property dispute. Read what Ramola Bachchan claims, what the officials said, and how Jalsa got its name.
               </p>
               <div className="meta-row mt-3">
                 <span className="text-[var(--magenta)] font-bold">BOLLYWOOD NEWS</span>
@@ -785,7 +795,34 @@ export default function BollywoodView() {
 
           {/* Right Stack: The last 2-3 blogs uploaded before the latest one */}
           <div className="stack">
-            {/* Card 1: Sharad Kapoor Gets a Hollywood Film Offer */}
+            {/* Card 1: Sunny Deol’s Suryaa Postponed to 2027 */}
+            <Link
+              href="/sunny-deol-suryaa-ant-se-aarambh-tak-postponed-2027"
+              className="card m1 group block"
+            >
+              <div className="card-media relative overflow-hidden">
+                <Image
+                  src="/images/sunny-deol-suryaa-ant-se-aarambh-tak-postponed-2027.jpg"
+                  alt="Sunny Deol’s Suryaa: Ant Se Aarambh Tak Postponed to 2027 After IMA Objection"
+                  fill
+                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 980px) 100vw, 35vw"
+                />
+                <span className="badge lime z-10 relative">⚡ BREAKING DELAY</span>
+              </div>
+              <div className="card-body">
+                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
+                  Sunny Deol’s Suryaa: Ant Se Aarambh Tak Postponed to 2027 After IMA Objection
+                </h3>
+                <div className="meta-row mt-2">
+                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD NEWS</span>
+                  <span className="dot-sep">◆</span>
+                  <span>4 MIN READ</span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Card 2: Sharad Kapoor Gets a Hollywood Film Offer */}
             <Link
               href="/sharad-kapoor-hollywood-film-offer"
               className="card m1 group block"
@@ -812,7 +849,7 @@ export default function BollywoodView() {
               </div>
             </Link>
 
-            {/* Card 2: Diljit Dosanjh Indore Concert */}
+            {/* Card 3: Diljit Dosanjh Indore Concert */}
             <Link
               href="/diljit-dosanjh-indore-concert-kisi-ke-baap-ka-hindustan-thodi-hai"
               className="card m1 group block"
@@ -835,33 +872,6 @@ export default function BollywoodView() {
                   <span className="text-[var(--magenta)] font-bold">LIVE CONCERT SCOOP</span>
                   <span className="dot-sep">◆</span>
                   <span>4 MIN READ</span>
-                </div>
-              </div>
-            </Link>
-
-            {/* Card 3: Soni Razdan Smoked 100 Cigarettes in a Day on Gumrah Set */}
-            <Link
-              href="/soni-razdan-100-cigarettes-gumrah-alia-bhatt"
-              className="card m1 group block"
-            >
-              <div className="card-media relative overflow-hidden">
-                <Image
-                  src="/images/soni-razdan-100-cigarettes-gumrah-alia-bhatt.jpg"
-                  alt="Soni Razdan Smoked 100 Cigarettes Pregnant With Alia"
-                  fill
-                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
-                  sizes="(max-width: 980px) 100vw, 35vw"
-                />
-                <span className="badge lime z-10 relative">⚡ Candid Throwback</span>
-              </div>
-              <div className="card-body">
-                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
-                  Soni Razdan Smoked 100 Cigarettes in a Day on Gumrah Set, Not Knowing She Was Pregnant With Alia Bhatt
-                </h3>
-                <div className="meta-row mt-2">
-                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD THROWBACK</span>
-                  <span className="dot-sep">◆</span>
-                  <span>3 MIN READ</span>
                 </div>
               </div>
             </Link>

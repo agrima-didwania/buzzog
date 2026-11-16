@@ -6,6 +6,21 @@ export const metadata: Metadata = {
   description:
     "Bollywood coverage from Buzz Originals — raw, unfiltered, built for the group chat. Red carpets, rumours, airport looks and exclusives.",
   keywords: [
+    "Jalsa property dispute",
+    "Amitabh Bachchan Jalsa",
+    "Ramola Bachchan",
+    "Jalsa bungalow ownership",
+    "Jalsa gift deed 1993",
+    "Bachchan family property dispute",
+    "Jaya Bachchan Jalsa",
+    "who owns Jalsa",
+    "who is Ramola Bachchan",
+    "Jalsa earlier name Mansa",
+    "Jalsa bungalow price",
+    "Amitabh Bachchan",
+    "Jalsa",
+    "Jaya Bachchan",
+    "Bachchan family",
     "Suryaa Ant Se Aarambh Tak postponed",
     "Sunny Deol new movie",
     "Suryaa release date",
@@ -576,10 +591,10 @@ export const metadata: Metadata = {
     siteName: "Buzz Originals",
     images: [
       {
-        url: "/images/sunny-deol-suryaa-ant-se-aarambh-tak-postponed-2027.jpg",
+        url: "/images/amitabh-bachchan-jalsa-property-dispute.jpg",
         width: 1200,
         height: 675,
-        alt: "Sunny Deol’s Suryaa: Ant Se Aarambh Tak Postponed to 2027 After IMA Objection — Buzz Originals",
+        alt: "Amitabh Bachchan Jalsa Property Dispute Ramola Bachchan Challenges Deed — Buzz Originals",
       },
     ],
     type: "website",
@@ -589,7 +604,7 @@ export const metadata: Metadata = {
     title: "Bollywood — Buzz Originals",
     description:
       "Raw, unfiltered Bollywood coverage of red carpets, gossip, airport sightings & exclusives.",
-    images: ["/images/sunny-deol-suryaa-ant-se-aarambh-tak-postponed-2027.jpg"],
+    images: ["/images/amitabh-bachchan-jalsa-property-dispute.jpg"],
   },
 };
 
@@ -616,12 +631,18 @@ export default function BollywoodPage() {
         {
           "@type": "ListItem",
           position: 1,
+          name: "Amitabh Bachchan’s Jalsa Property Dispute: What Is Going On?",
+          url: "https://www.buzzoriginals.com/amitabh-bachchan-jalsa-property-dispute",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
           name: "Sunny Deol’s Suryaa: Ant Se Aarambh Tak Postponed to 2027 After IMA Objection",
           url: "https://www.buzzoriginals.com/sunny-deol-suryaa-ant-se-aarambh-tak-postponed-2027",
         },
         {
           "@type": "ListItem",
-          position: 2,
+          position: 3,
           name: "Sharad Kapoor Gets a Hollywood Film Offer After His Viral Video Asking for Work",
           url: "https://www.buzzoriginals.com/sharad-kapoor-hollywood-film-offer",
         },

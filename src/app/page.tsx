@@ -185,6 +185,20 @@ export default function Home() {
 
   const editorialArticles: EditorialArticle[] = [
     {
+      id: "amitabh-bachchan-jalsa-property-dispute",
+      anchorId: "jalsa-property-dispute-story",
+      href: "/amitabh-bachchan-jalsa-property-dispute",
+      title: "Amitabh Bachchan’s Jalsa Property Dispute: What Is Going On?",
+      excerpt: "Amitabh Bachchan’s Jalsa bungalow is in a family property dispute. Read what Ramola Bachchan claims, what the officials said, and how Jalsa got its name.",
+      category: "Bollywood",
+      secondaryCategory: "News",
+      displayCategory: "BOLLYWOOD NEWS",
+      badge: "Property Dispute",
+      badgeType: "lime",
+      readTime: "4 MIN READ",
+      image: "/images/amitabh-bachchan-jalsa-property-dispute.jpg",
+    },
+    {
       id: "panchayat-season-5-not-releasing-2026",
       anchorId: "panchayat-5-delay-story",
       href: "/panchayat-season-5-not-releasing-2026",
@@ -1407,15 +1421,15 @@ export default function Home() {
         <section className="hero" id="featured">
           {/* 1. Main Featured Story (Commanding Top Story Presentation) */}
           <Link
-            href="/panchayat-season-5-not-releasing-2026"
+            href="/amitabh-bachchan-jalsa-property-dispute"
             className="feature-card flex flex-col transition-all hover:border-[var(--lime)] focus-visible:ring-2 focus-visible:ring-[var(--lime)] group"
             style={{ textDecoration: "none", color: "inherit" }}
-            aria-label="Read full article: Panchayat Season 5 Will Not Release in 2026, Says Prime Video"
+            aria-label="Read full article: Amitabh Bachchan’s Jalsa Property Dispute: What Is Going On?"
           >
             <div className="feature-media" style={{ overflow: "hidden", position: "relative" }}>
               <Image
-                src="/images/panchayat-season-5-not-releasing-2026.jpg"
-                alt="Panchayat Season 5 Will Not Release in 2026, Says Prime Video"
+                src="/images/amitabh-bachchan-jalsa-property-dispute.jpg"
+                alt="Amitabh Bachchan Jalsa Property Dispute Ramola Bachchan Challenges Deed"
                 fill
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 750px"
@@ -1424,46 +1438,46 @@ export default function Home() {
               />
               <div className="noise" style={{ pointerEvents: "none" }}></div>
               <div className="feature-tag flex items-center gap-2">
-                <span className="badge lime">⚡ STREAMING UPDATE</span>
-                <span className="badge pink">Panchayat 5</span>
-                <span className="badge">Prime Video</span>
-                <span className="badge">Phulera News</span>
+                <span className="badge lime">⚡ PROPERTY DISPUTE</span>
+                <span className="badge pink">Amitabh Bachchan</span>
+                <span className="badge">Jalsa</span>
+                <span className="badge">Ramola Bachchan</span>
               </div>
             </div>
             <div className="feature-body">
               <div className="flex items-center gap-2 mb-2 font-mono text-xs text-[var(--lime)] font-bold tracking-wider uppercase">
-                <span>★ TOP STORY · PANCHAYAT SEASON 5 WILL NOT RELEASE IN 2026, SAYS PRIME VIDEO</span>
+                <span>★ TOP STORY · AMITABH BACHCHAN’S JALSA PROPERTY DISPUTE</span>
               </div>
               <h1 className="disp" style={{ color: "#fff" }}>
-                Panchayat Season 5 Will Not Release in 2026, Says Prime Video
+                Amitabh Bachchan’s Jalsa Property Dispute: What Is Going On?
               </h1>
               <p>
-                Prime Video says Panchayat Season 5 will not release in 2026. Here is what the post said, what happened in Season 4, and what we know so far.
+                Amitabh Bachchan’s Jalsa bungalow is in a family property dispute. Read what Ramola Bachchan claims, what the officials said, and how Jalsa got its name.
               </p>
 
               {/* Editorial Highlights Box */}
               <div className="feature-highlights">
                 <div className="feature-highlights-header">
                   <span className="w-2 h-2 rounded-full bg-[var(--lime)] animate-pulse inline-block"></span>
-                  <span>Inside The Phulera Delay: Prime Video’s Post, Banrakas In Power &amp; Season 5 Plot</span>
+                  <span>Inside The Jalsa Dispute: Property Cards, 1993 Gift Deed &amp; Mumbai Hearings</span>
                 </div>
                 <ul className="feature-highlights-list">
                   <li className="feature-highlights-item">
                     <span className="feature-highlights-bullet">✦</span>
                     <span>
-                      <strong className="text-white font-medium">No 2026 Return:</strong> Prime Video officially revealed that Panchayat Season 5 will skip 2026, putting an end to speculation of a surprise late-year premiere.
+                      <strong className="text-white font-medium">Record Mismatch:</strong> Society records list Jaya Bachchan while the Maharashtra state Property Card registers Ramola Bachchan.
                     </span>
                   </li>
                   <li className="feature-highlights-item">
                     <span className="feature-highlights-bullet">✦</span>
                     <span>
-                      <strong className="text-white font-medium">Witty Announcement:</strong> The streamer shared an image reading “Panchayat Season 5 Iss Saal Nahi Aayega” with the caption: “Batate hue khed hai, Panchayat ka agla season qaid hai.”
+                      <strong className="text-white font-medium">1993 Deed Challenged:</strong> Ramola claims the transfer was made without her consent or witness signatures on plain paper, registered in 2006.
                     </span>
                   </li>
                   <li className="feature-highlights-item">
                     <span className="feature-highlights-bullet">✦</span>
                     <span>
-                      <strong className="text-white font-medium">Filming Fully Underway:</strong> The series is not cancelled—shooting commenced on April 3, 2026 in Mahodiya, picking up after Kranti Devi and Banrakas won the village election.
+                      <strong className="text-white font-medium">Official Hearing:</strong> Deputy Registrar Faiyaz Mulani confirmed a formal complaint was received and proceedings are underway.
                     </span>
                   </li>
                 </ul>
@@ -1471,11 +1485,11 @@ export default function Home() {
 
               <div className="meta-row mt-auto pt-3 border-t border-white/[0.06] flex items-center justify-between">
                 <div className="flex items-center gap-3">
-                  <span>WEB SERIES &amp; OTT</span>
+                  <span>BOLLYWOOD &amp; NEWS</span>
                   <span className="dot-sep">◆</span>
-                  <span>3 MIN READ</span>
+                  <span>4 MIN READ</span>
                   <span className="dot-sep">◆</span>
-                  <span style={{ color: "var(--lime)" }}>STREAMING SCOOP</span>
+                  <span style={{ color: "var(--lime)" }}>EXCLUSIVE SCOOP</span>
                 </div>
                 <span className="text-xs font-mono font-bold text-[var(--lime)] hidden sm:inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform">
                   Read Full Story →
@@ -1494,11 +1508,11 @@ export default function Home() {
               <span className="trend-rank">01</span>
               <div className="trend-text">
                 <Link
-                  href="/panchayat-season-5-not-releasing-2026"
+                  href="/amitabh-bachchan-jalsa-property-dispute"
                   style={{ color: "inherit" }}
                 >
-                  <h3>Panchayat Season 5 will not release in 2026, Prime Video confirms: Phulera delay &amp; Season 4 recap</h3>
-                  <span>WEB SERIES &amp; OTT · 4.75M REACTIONS</span>
+                  <h3>Jalsa property dispute: Ramola Bachchan challenges 1993 deed to Amitabh’s iconic bungalow: Full details</h3>
+                  <span>BOLLYWOOD &amp; NEWS</span>
                 </Link>
               </div>
             </div>
@@ -1506,11 +1520,11 @@ export default function Home() {
               <span className="trend-rank">02</span>
               <div className="trend-text">
                 <Link
-                  href="/sunny-deol-suryaa-ant-se-aarambh-tak-postponed-2027"
+                  href="/panchayat-season-5-not-releasing-2026"
                   style={{ color: "inherit" }}
                 >
-                  <h3>Sunny Deol’s Suryaa: Ant Se Aarambh Tak postponed to 2027 after IMA objection over teaser: Full scoop</h3>
-                  <span>BOLLYWOOD NEWS · 4.68M REACTIONS</span>
+                  <h3>Panchayat Season 5 will not release in 2026, Prime Video confirms: Phulera delay &amp; Season 4 recap</h3>
+                  <span>WEB SERIES &amp; OTT</span>
                 </Link>
               </div>
             </div>
@@ -1518,11 +1532,11 @@ export default function Home() {
               <span className="trend-rank">03</span>
               <div className="trend-text">
                 <Link
-                  href="/sharad-kapoor-hollywood-film-offer"
+                  href="/sunny-deol-suryaa-ant-se-aarambh-tak-postponed-2027"
                   style={{ color: "inherit" }}
                 >
-                  <h3>Sharad Kapoor gets Hollywood film offer after viral video asking for work: Shoot starts in January</h3>
-                  <span>BOLLYWOOD COMEBACK · 4.60M REACTIONS</span>
+                  <h3>Sunny Deol’s Suryaa: Ant Se Aarambh Tak postponed to 2027 after IMA objection over teaser: Full scoop</h3>
+                  <span>BOLLYWOOD NEWS</span>
                 </Link>
               </div>
             </div>
@@ -1530,11 +1544,11 @@ export default function Home() {
               <span className="trend-rank">04</span>
               <div className="trend-text">
                 <Link
-                  href="/diljit-dosanjh-indore-concert-kisi-ke-baap-ka-hindustan-thodi-hai"
+                  href="/sharad-kapoor-hollywood-film-offer"
                   style={{ color: "inherit" }}
                 >
-                  <h3>Diljit Dosanjh recites “Kisi ke baap ka hindustan thodi hai” at Indore concert after 4-song ban &amp; bomb threats: Live scoop</h3>
-                  <span>BOLLYWOOD &amp; CONCERTS · 4.52M REACTIONS</span>
+                  <h3>Sharad Kapoor gets Hollywood film offer after viral video asking for work: Shoot starts in January</h3>
+                  <span>BOLLYWOOD COMEBACK</span>
                 </Link>
               </div>
             </div>
@@ -1542,11 +1556,11 @@ export default function Home() {
               <span className="trend-rank">05</span>
               <div className="trend-text">
                 <Link
-                  href="/soni-razdan-100-cigarettes-gumrah-alia-bhatt"
+                  href="/diljit-dosanjh-indore-concert-kisi-ke-baap-ka-hindustan-thodi-hai"
                   style={{ color: "inherit" }}
                 >
-                  <h3>Soni Razdan smoked 100 cigarettes on Gumrah set without knowing she was pregnant with Alia Bhatt: SCREEN interview</h3>
-                  <span>BOLLYWOOD THROWBACK · 4.45M REACTIONS</span>
+                  <h3>Diljit Dosanjh recites “Kisi ke baap ka hindustan thodi hai” at Indore concert after 4-song ban &amp; bomb threats: Live scoop</h3>
+                  <span>BOLLYWOOD &amp; CONCERTS</span>
                 </Link>
               </div>
             </div>
@@ -1554,11 +1568,11 @@ export default function Home() {
               <span className="trend-rank">06</span>
               <div className="trend-text">
                 <Link
-                  href="/student-of-the-year-after-dark-reema-maya-class-comparison"
+                  href="/soni-razdan-100-cigarettes-gumrah-alia-bhatt"
                   style={{ color: "inherit" }}
                 >
-                  <h3>Student of the Year After Dark vs Class: Reema Maya reacts to copy claims &amp; Karan Johar&apos;s dark reboot support</h3>
-                  <span>BOLLYWOOD &amp; OTT · 4.35M REACTIONS</span>
+                  <h3>Soni Razdan smoked 100 cigarettes on Gumrah set without knowing she was pregnant with Alia Bhatt: SCREEN interview</h3>
+                  <span>BOLLYWOOD THROWBACK</span>
                 </Link>
               </div>
             </div>
@@ -1566,11 +1580,11 @@ export default function Home() {
               <span className="trend-rank">07</span>
               <div className="trend-text">
                 <Link
-                  href="/ananya-panday-aarav-bhatia-my-heart-post"
+                  href="/student-of-the-year-after-dark-reema-maya-class-comparison"
                   style={{ color: "inherit" }}
                 >
-                  <h3>Ananya Panday’s “My Heart” post with Aarav Bhatia goes viral: Manish Malhotra Diwali party &amp; K3G lehenga look</h3>
-                  <span>BOLLYWOOD BUZZ · 4.20M REACTIONS</span>
+                  <h3>Student of the Year After Dark vs Class: Reema Maya reacts to copy claims &amp; Karan Johar&apos;s dark reboot support</h3>
+                  <span>BOLLYWOOD &amp; OTT</span>
                 </Link>
               </div>
             </div>
@@ -1578,11 +1592,11 @@ export default function Home() {
               <span className="trend-rank">08</span>
               <div className="trend-text">
                 <Link
-                  href="/amyra-dastur-farah-khan-titanic-kung-fu-yoga"
+                  href="/ananya-panday-aarav-bhatia-my-heart-post"
                   style={{ color: "inherit" }}
                 >
-                  <h3>Amyra Dastur reveals Farah Khan’s “Titanic” remark on Kung Fu Yoga set: Almost made her cry &amp; Boman Irani story</h3>
-                  <span>BOLLYWOOD &amp; OTT · 4.05M REACTIONS</span>
+                  <h3>Ananya Panday’s “My Heart” post with Aarav Bhatia goes viral: Manish Malhotra Diwali party &amp; K3G lehenga look</h3>
+                  <span>BOLLYWOOD BUZZ</span>
                 </Link>
               </div>
             </div>
@@ -1590,11 +1604,11 @@ export default function Home() {
               <span className="trend-rank">09</span>
               <div className="trend-text">
                 <Link
-                  href="/yash-ravana-costume-weight-ramayana"
+                  href="/amyra-dastur-farah-khan-titanic-kung-fu-yoga"
                   style={{ color: "inherit" }}
                 >
-                  <h3>Yash’s Ravana costume in Ramayana weighed up to 33 kg: Designer reveals 1.8 kg crown &amp; 7 kg Amrapali jewellery</h3>
-                  <span>BOLLYWOOD &amp; EPICS · 3.90M REACTIONS</span>
+                  <h3>Amyra Dastur reveals Farah Khan’s “Titanic” remark on Kung Fu Yoga set: Almost made her cry &amp; Boman Irani story</h3>
+                  <span>BOLLYWOOD &amp; OTT</span>
                 </Link>
               </div>
             </div>
@@ -1602,11 +1616,11 @@ export default function Home() {
               <span className="trend-rank">10</span>
               <div className="trend-text">
                 <Link
-                  href="/diljit-dosanjh-aura-india-tour-chandigarh-kolkata-dates"
+                  href="/yash-ravana-costume-weight-ramayana"
                   style={{ color: "inherit" }}
                 >
-                  <h3>Diljit Dosanjh adds Chandigarh &amp; Kolkata shows to Aura India Tour: Full schedule, venues &amp; ticket sale dates</h3>
-                  <span>BOLLYWOOD &amp; CONCERTS · 3.80M REACTIONS</span>
+                  <h3>Yash’s Ravana costume in Ramayana weighed up to 33 kg: Designer reveals 1.8 kg crown &amp; 7 kg Amrapali jewellery</h3>
+                  <span>BOLLYWOOD &amp; EPICS</span>
                 </Link>
               </div>
             </div>

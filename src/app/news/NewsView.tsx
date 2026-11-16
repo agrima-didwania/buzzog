@@ -22,6 +22,18 @@ interface NewsArticle {
 // Only verified breaking entertainment news stories (fatwas, obituaries, police complaints, eviction rows, box-office shifts)
 const newsArticles: NewsArticle[] = [
   {
+    id: "amitabh-bachchan-jalsa-property-dispute",
+    category: "Bollywood",
+    title: "Amitabh Bachchan’s Jalsa Property Dispute: What Is Going On?",
+    badge: "⚡ Property Dispute",
+    badgeType: "lime",
+    image: "/images/amitabh-bachchan-jalsa-property-dispute.jpg",
+    href: "/amitabh-bachchan-jalsa-property-dispute",
+    readOrTime: "4 MIN READ",
+    excerpt:
+      "Amitabh Bachchan’s Jalsa bungalow is in a family property dispute. Read what Ramola Bachchan claims, what the officials said, and how Jalsa got its name.",
+  },
+  {
     id: "farah-khan-fake-fire-video-clickbait",
     category: "Bollywood",
     title: "Farah Khan Reacts to Fake House Fire Videos: “Clickbait Can’t Be Everything”",

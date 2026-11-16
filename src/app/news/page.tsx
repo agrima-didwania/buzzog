@@ -6,6 +6,17 @@ export const metadata: Metadata = {
   description:
     "News coverage from Buzz Originals — raw, unfiltered, built for the group chat. Everything breaking across reality TV, Bollywood, movies and OTT — newest first, updated hourly.",
   keywords: [
+    "Jalsa property dispute",
+    "Amitabh Bachchan Jalsa",
+    "Ramola Bachchan",
+    "Jalsa bungalow ownership",
+    "Jalsa gift deed 1993",
+    "Bachchan family property dispute",
+    "Jaya Bachchan Jalsa",
+    "who owns Jalsa",
+    "who is Ramola Bachchan",
+    "Jalsa earlier name Mansa",
+    "Jalsa bungalow price",
     "Farah Khan fire video",
     "Farah Khan house fire",
     "Farah Khan fake news",
@@ -196,10 +207,10 @@ export const metadata: Metadata = {
     siteName: "Buzz Originals",
     images: [
       {
-        url: "/images/farah-khan-fake-fire-video-clickbait.jpg",
+        url: "/images/amitabh-bachchan-jalsa-property-dispute.jpg",
         width: 1200,
         height: 675,
-        alt: "Farah Khan Reacts to Fake Fire Videos: Clickbait Can’t Be Everything — Buzz Originals News",
+        alt: "Amitabh Bachchan Jalsa Property Dispute Ramola Bachchan Challenges Deed — Buzz Originals News",
       },
     ],
     type: "website",
@@ -209,7 +220,7 @@ export const metadata: Metadata = {
     title: "News — Buzz Originals",
     description:
       "Raw, unfiltered entertainment news across reality TV, Bollywood, movies and OTT.",
-    images: ["/images/farah-khan-fake-fire-video-clickbait.jpg"],
+    images: ["/images/amitabh-bachchan-jalsa-property-dispute.jpg"],
   },
 };
 
