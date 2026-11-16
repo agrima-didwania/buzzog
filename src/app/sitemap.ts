@@ -14,7 +14,7 @@ const STATIC_PAGES: StaticPageConfig[] = [
   { path: "/reality-shows", priority: 0.95, changeFrequency: "daily", defaultDate: "2026-11-07T08:00:00Z" },
   { path: "/bollywood", priority: 0.95, changeFrequency: "daily", defaultDate: "2026-11-16T06:50:00Z" },
   { path: "/movies", priority: 0.95, changeFrequency: "daily", defaultDate: "2026-11-05T10:20:00Z" },
-  { path: "/web-series", priority: 0.95, changeFrequency: "daily", defaultDate: "2026-11-13T05:58:00Z" },
+  { path: "/web-series", priority: 0.95, changeFrequency: "daily", defaultDate: "2026-11-16T07:10:00Z" },
   { path: "/news", priority: 0.95, changeFrequency: "daily", defaultDate: "2026-11-09T17:20:00Z" },
   { path: "/about", priority: 0.7, changeFrequency: "monthly", defaultDate: "2026-10-28T12:00:00Z" },
   { path: "/contact", priority: 0.7, changeFrequency: "monthly", defaultDate: "2026-10-28T12:00:00Z" },

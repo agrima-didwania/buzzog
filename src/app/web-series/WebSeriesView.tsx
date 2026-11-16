@@ -22,6 +22,18 @@ interface WebSeriesArticle {
 // All verified web series and OTT articles in reverse chronological order
 const webSeriesArticles: WebSeriesArticle[] = [
   {
+    id: "panchayat-season-5-not-releasing-2026",
+    category: "Prime Video Original",
+    title: "Panchayat Season 5 Will Not Release in 2026, Says Prime Video",
+    badge: "Streaming Update",
+    badgeType: "lime",
+    image: "/images/panchayat-season-5-not-releasing-2026.jpg",
+    href: "/panchayat-season-5-not-releasing-2026",
+    readOrTime: "3 MIN READ",
+    excerpt:
+      "Prime Video says Panchayat Season 5 will not release in 2026. Here is what the post said, what happened in Season 4, and what we know so far.",
+  },
+  {
     id: "student-of-the-year-after-dark-reema-maya-class-comparison",
     category: "JioHotstar Original",
     title: "Student of the Year After Dark vs Class: Reema Maya Reacts",

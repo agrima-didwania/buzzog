@@ -185,6 +185,20 @@ export default function Home() {
 
   const editorialArticles: EditorialArticle[] = [
     {
+      id: "panchayat-season-5-not-releasing-2026",
+      anchorId: "panchayat-5-delay-story",
+      href: "/panchayat-season-5-not-releasing-2026",
+      title: "Panchayat Season 5 Will Not Release in 2026, Says Prime Video",
+      excerpt: "Prime Video says Panchayat Season 5 will not release in 2026. Here is what the post said, what happened in Season 4, and what we know so far.",
+      category: "Web Series",
+      secondaryCategory: "Latest",
+      displayCategory: "WEB SERIES & OTT",
+      badge: "Streaming Update",
+      badgeType: "lime",
+      readTime: "3 MIN READ",
+      image: "/images/panchayat-season-5-not-releasing-2026.jpg",
+    },
+    {
       id: "sunny-deol-suryaa-ant-se-aarambh-tak-postponed-2027",
       anchorId: "sunny-deol-suryaa-postponed-story",
       href: "/sunny-deol-suryaa-ant-se-aarambh-tak-postponed-2027",
@@ -1393,15 +1407,15 @@ export default function Home() {
         <section className="hero" id="featured">
           {/* 1. Main Featured Story (Commanding Top Story Presentation) */}
           <Link
-            href="/sunny-deol-suryaa-ant-se-aarambh-tak-postponed-2027"
+            href="/panchayat-season-5-not-releasing-2026"
             className="feature-card flex flex-col transition-all hover:border-[var(--lime)] focus-visible:ring-2 focus-visible:ring-[var(--lime)] group"
             style={{ textDecoration: "none", color: "inherit" }}
-            aria-label="Read full article: Sunny Deol’s Suryaa: Ant Se Aarambh Tak Postponed to 2027 After IMA Objection"
+            aria-label="Read full article: Panchayat Season 5 Will Not Release in 2026, Says Prime Video"
           >
             <div className="feature-media" style={{ overflow: "hidden", position: "relative" }}>
               <Image
-                src="/images/sunny-deol-suryaa-ant-se-aarambh-tak-postponed-2027.jpg"
-                alt="Sunny Deol Suryaa Ant Se Aarambh Tak Postponed to 2027"
+                src="/images/panchayat-season-5-not-releasing-2026.jpg"
+                alt="Panchayat Season 5 Will Not Release in 2026, Says Prime Video"
                 fill
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 750px"
@@ -1410,46 +1424,46 @@ export default function Home() {
               />
               <div className="noise" style={{ pointerEvents: "none" }}></div>
               <div className="feature-tag flex items-center gap-2">
-                <span className="badge lime">⚡ BREAKING DELAY</span>
-                <span className="badge pink">Suryaa (2027)</span>
-                <span className="badge">Sunny Deol</span>
-                <span className="badge">IMA Objection</span>
+                <span className="badge lime">⚡ STREAMING UPDATE</span>
+                <span className="badge pink">Panchayat 5</span>
+                <span className="badge">Prime Video</span>
+                <span className="badge">Phulera News</span>
               </div>
             </div>
             <div className="feature-body">
               <div className="flex items-center gap-2 mb-2 font-mono text-xs text-[var(--lime)] font-bold tracking-wider uppercase">
-                <span>★ TOP STORY · SUNNY DEOL’S SURYAA POSTPONED TO 2027 AFTER IMA COMPLAINT OVER TEASER</span>
+                <span>★ TOP STORY · PANCHAYAT SEASON 5 WILL NOT RELEASE IN 2026, SAYS PRIME VIDEO</span>
               </div>
               <h1 className="disp" style={{ color: "#fff" }}>
-                Sunny Deol’s Suryaa: Ant Se Aarambh Tak Postponed to 2027 After IMA Objection
+                Panchayat Season 5 Will Not Release in 2026, Says Prime Video
               </h1>
               <p>
-                Sunny Deol’s Suryaa: Ant Se Aarambh Tak will not release on November 20. Here is why the film is postponed to 2027 and what happens next.
+                Prime Video says Panchayat Season 5 will not release in 2026. Here is what the post said, what happened in Season 4, and what we know so far.
               </p>
 
               {/* Editorial Highlights Box */}
               <div className="feature-highlights">
                 <div className="feature-highlights-header">
                   <span className="w-2 h-2 rounded-full bg-[var(--lime)] animate-pulse inline-block"></span>
-                  <span>Inside The Postponement: IMA Complaint, Censor Timeline &amp; Sunny Deol’s 2026 Slate</span>
+                  <span>Inside The Phulera Delay: Prime Video’s Post, Banrakas In Power &amp; Season 5 Plot</span>
                 </div>
                 <ul className="feature-highlights-list">
                   <li className="feature-highlights-item">
                     <span className="feature-highlights-bullet">✦</span>
                     <span>
-                      <strong className="text-white font-medium">Theatrical Bow Delayed:</strong> The action thriller has vacated its November 20, 2026 release date, with makers eyeing early 2027 (tentatively January 15) to resolve regulatory queries.
+                      <strong className="text-white font-medium">No 2026 Return:</strong> Prime Video officially revealed that Panchayat Season 5 will skip 2026, putting an end to speculation of a surprise late-year premiere.
                     </span>
                   </li>
                   <li className="feature-highlights-item">
                     <span className="feature-highlights-bullet">✦</span>
                     <span>
-                      <strong className="text-white font-medium">IMA Representation:</strong> The Indian Medical Association wrote to I&amp;B Minister Ashwini Vaishnaw alleging the teaser shows doctors in a negative light and incites hostility against healthcare workers.
+                      <strong className="text-white font-medium">Witty Announcement:</strong> The streamer shared an image reading “Panchayat Season 5 Iss Saal Nahi Aayega” with the caption: “Batate hue khed hai, Panchayat ka agla season qaid hai.”
                     </span>
                   </li>
                   <li className="feature-highlights-item">
                     <span className="feature-highlights-bullet">✦</span>
                     <span>
-                      <strong className="text-white font-medium">Clearances First:</strong> Producers chose to secure comprehensive ministerial nods and CBFC certification before locking a new date, avoiding a heavily crowded December box office.
+                      <strong className="text-white font-medium">Filming Fully Underway:</strong> The series is not cancelled—shooting commenced on April 3, 2026 in Mahodiya, picking up after Kranti Devi and Banrakas won the village election.
                     </span>
                   </li>
                 </ul>
@@ -1457,11 +1471,11 @@ export default function Home() {
 
               <div className="meta-row mt-auto pt-3 border-t border-white/[0.06] flex items-center justify-between">
                 <div className="flex items-center gap-3">
-                  <span>BOLLYWOOD NEWS</span>
+                  <span>WEB SERIES &amp; OTT</span>
                   <span className="dot-sep">◆</span>
-                  <span>4 MIN READ</span>
+                  <span>3 MIN READ</span>
                   <span className="dot-sep">◆</span>
-                  <span style={{ color: "var(--lime)" }}>BREAKING SCOOP</span>
+                  <span style={{ color: "var(--lime)" }}>STREAMING SCOOP</span>
                 </div>
                 <span className="text-xs font-mono font-bold text-[var(--lime)] hidden sm:inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform">
                   Read Full Story →
@@ -1480,6 +1494,18 @@ export default function Home() {
               <span className="trend-rank">01</span>
               <div className="trend-text">
                 <Link
+                  href="/panchayat-season-5-not-releasing-2026"
+                  style={{ color: "inherit" }}
+                >
+                  <h3>Panchayat Season 5 will not release in 2026, Prime Video confirms: Phulera delay &amp; Season 4 recap</h3>
+                  <span>WEB SERIES &amp; OTT · 4.75M REACTIONS</span>
+                </Link>
+              </div>
+            </div>
+            <div className="trend-item">
+              <span className="trend-rank">02</span>
+              <div className="trend-text">
+                <Link
                   href="/sunny-deol-suryaa-ant-se-aarambh-tak-postponed-2027"
                   style={{ color: "inherit" }}
                 >
@@ -1489,7 +1515,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">02</span>
+              <span className="trend-rank">03</span>
               <div className="trend-text">
                 <Link
                   href="/sharad-kapoor-hollywood-film-offer"
@@ -1501,7 +1527,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">03</span>
+              <span className="trend-rank">04</span>
               <div className="trend-text">
                 <Link
                   href="/diljit-dosanjh-indore-concert-kisi-ke-baap-ka-hindustan-thodi-hai"
@@ -1513,7 +1539,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">04</span>
+              <span className="trend-rank">05</span>
               <div className="trend-text">
                 <Link
                   href="/soni-razdan-100-cigarettes-gumrah-alia-bhatt"
@@ -1525,7 +1551,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">05</span>
+              <span className="trend-rank">06</span>
               <div className="trend-text">
                 <Link
                   href="/student-of-the-year-after-dark-reema-maya-class-comparison"
@@ -1537,7 +1563,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">06</span>
+              <span className="trend-rank">07</span>
               <div className="trend-text">
                 <Link
                   href="/ananya-panday-aarav-bhatia-my-heart-post"
@@ -1549,7 +1575,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">07</span>
+              <span className="trend-rank">08</span>
               <div className="trend-text">
                 <Link
                   href="/amyra-dastur-farah-khan-titanic-kung-fu-yoga"
@@ -1561,7 +1587,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">08</span>
+              <span className="trend-rank">09</span>
               <div className="trend-text">
                 <Link
                   href="/yash-ravana-costume-weight-ramayana"
@@ -1573,7 +1599,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">09</span>
+              <span className="trend-rank">10</span>
               <div className="trend-text">
                 <Link
                   href="/diljit-dosanjh-aura-india-tour-chandigarh-kolkata-dates"
@@ -1581,18 +1607,6 @@ export default function Home() {
                 >
                   <h3>Diljit Dosanjh adds Chandigarh &amp; Kolkata shows to Aura India Tour: Full schedule, venues &amp; ticket sale dates</h3>
                   <span>BOLLYWOOD &amp; CONCERTS · 3.80M REACTIONS</span>
-                </Link>
-              </div>
-            </div>
-            <div className="trend-item">
-              <span className="trend-rank">10</span>
-              <div className="trend-text">
-                <Link
-                  href="/karan-johar-kareena-kapoor-diwali-pout-pic"
-                  style={{ color: "inherit" }}
-                >
-                  <h3>Karan Johar calls Kareena Kapoor pout queen in Diwali pic: “The yearly pout pose” &amp; King reunion buzz</h3>
-                  <span>BOLLYWOOD &amp; FESTIVE · 3.65M REACTIONS</span>
                 </Link>
               </div>
             </div>

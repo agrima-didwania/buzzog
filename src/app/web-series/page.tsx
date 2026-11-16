@@ -6,6 +6,16 @@ export const metadata: Metadata = {
   description:
     "Web Series coverage from Buzz Originals — raw, unfiltered, built for the group chat. OTT releases, streaming scoops, recaps and verdicts across Prime Video, Netflix, JioHotstar, ZEE5 and SonyLIV.",
   keywords: [
+    "Panchayat Season 5",
+    "Panchayat Season 5 release date",
+    "Panchayat Season 5 delay",
+    "Panchayat 5 not releasing in 2026",
+    "Panchayat Season 5 Prime Video",
+    "Panchayat Season 5 update",
+    "When will Panchayat Season 5 release",
+    "Is Panchayat Season 5 cancelled",
+    "Panchayat Season 5 kab aayega",
+    "Panchayat Season 5 iss saal nahi aayega",
     "Student of the Year After Dark",
     "Reema Maya",
     "Student of the Year After Dark vs Class",
@@ -75,10 +85,10 @@ export const metadata: Metadata = {
     siteName: "Buzz Originals",
     images: [
       {
-        url: "/images/student-of-the-year-after-dark-reema-maya-class-comparison.jpg",
+        url: "/images/panchayat-season-5-not-releasing-2026.jpg",
         width: 1200,
         height: 675,
-        alt: "Student of the Year After Dark vs Class: Reema Maya Reacts — Buzz Originals Web Series",
+        alt: "Panchayat Season 5 Will Not Release in 2026, Says Prime Video — Buzz Originals Web Series",
       },
     ],
     type: "website",
@@ -88,7 +98,7 @@ export const metadata: Metadata = {
     title: "Web Series — Buzz Originals",
     description:
       "Raw, unfiltered Web Series coverage of OTT releases, streaming scoops, recaps and verdicts.",
-    images: ["/images/student-of-the-year-after-dark-reema-maya-class-comparison.jpg"],
+    images: ["/images/panchayat-season-5-not-releasing-2026.jpg"],
   },
 };
 
@@ -115,6 +125,12 @@ export default function WebSeriesPage() {
         {
           "@type": "ListItem",
           position: 1,
+          name: "Panchayat Season 5 Will Not Release in 2026, Says Prime Video",
+          url: "https://www.buzzoriginals.com/panchayat-season-5-not-releasing-2026",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
           name: "Student of the Year After Dark vs Class: Reema Maya Reacts",
           url: "https://www.buzzoriginals.com/student-of-the-year-after-dark-reema-maya-class-comparison",
         },
