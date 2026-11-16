@@ -185,6 +185,20 @@ export default function Home() {
 
   const editorialArticles: EditorialArticle[] = [
     {
+      id: "yogesh-rawat-justin-dcruz-roadies-rebirth-pi",
+      anchorId: "yogesh-rawat-roadies-story",
+      href: "/yogesh-rawat-justin-dcruz-roadies-rebirth-pi",
+      title: "Yogesh Rawat Takes a Dig at Justin D’Cruz After Roadies Rebirth PI Round",
+      excerpt: "Yogesh Rawat reacts to Justin D’Cruz mentioning his name in the Roadies Rebirth PI round. Read what he said in his Instagram video.",
+      category: "Reality TV Updates",
+      secondaryCategory: "Latest",
+      displayCategory: "REALITY TV & MTV ROADIES",
+      badge: "Roadies Feud",
+      badgeType: "lime",
+      readTime: "3 MIN READ",
+      image: "/images/yogesh-rawat-justin-dcruz-roadies-rebirth-pi.jpg",
+    },
+    {
       id: "shilpa-shetty-host-pyaar-ka-pressure-cooker",
       anchorId: "shilpa-shetty-pressure-cooker-story",
       href: "/shilpa-shetty-host-pyaar-ka-pressure-cooker",
@@ -1449,15 +1463,15 @@ export default function Home() {
         <section className="hero" id="featured">
           {/* 1. Main Featured Story (Commanding Top Story Presentation) */}
           <Link
-            href="/shilpa-shetty-host-pyaar-ka-pressure-cooker"
+            href="/yogesh-rawat-justin-dcruz-roadies-rebirth-pi"
             className="feature-card flex flex-col transition-all hover:border-[var(--lime)] focus-visible:ring-2 focus-visible:ring-[var(--lime)] group"
             style={{ textDecoration: "none", color: "inherit" }}
-            aria-label="Read full article: Shilpa Shetty to Host Pyaar Ka Pressure Cooker, a New Relationship Reality Show"
+            aria-label="Read full article: Yogesh Rawat Takes a Dig at Justin D’Cruz After Roadies Rebirth PI Round"
           >
             <div className="feature-media" style={{ overflow: "hidden", position: "relative" }}>
               <Image
-                src="/images/shilpa-shetty-host-pyaar-ka-pressure-cooker.jpg"
-                alt="Shilpa Shetty to Host Pyaar Ka Pressure Cooker Colors JioHotstar"
+                src="/images/yogesh-rawat-justin-dcruz-roadies-rebirth-pi.jpg"
+                alt="Yogesh Rawat Takes a Dig at Justin D’Cruz After Roadies Rebirth PI Round"
                 fill
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 750px"
@@ -1467,45 +1481,45 @@ export default function Home() {
               <div className="noise" style={{ pointerEvents: "none" }}></div>
               <div className="feature-tag flex items-center gap-2">
                 <span className="badge lime">⚡ REALITY TV EXCLUSIVE</span>
-                <span className="badge pink">Colors &amp; JioHotstar</span>
-                <span className="badge">Shilpa Shetty</span>
-                <span className="badge">Relationship Drama</span>
+                <span className="badge pink">Roadies Rebirth</span>
+                <span className="badge">Yogesh Rawat</span>
+                <span className="badge">Justin D’Cruz</span>
               </div>
             </div>
             <div className="feature-body">
               <div className="flex items-center gap-2 mb-2 font-mono text-xs text-[var(--lime)] font-bold tracking-wider uppercase">
-                <span>★ TOP STORY · PYAAR KA PRESSURE COOKER</span>
+                <span>★ TOP STORY · ROADIES REBIRTH CONTROVERSY</span>
               </div>
               <h1 className="disp" style={{ color: "#fff" }}>
-                Shilpa Shetty to Host Pyaar Ka Pressure Cooker, a New Relationship Reality Show
+                Yogesh Rawat Takes a Dig at Justin D’Cruz After Roadies Rebirth PI Round
               </h1>
               <p>
-                Shilpa Shetty will host Pyaar Ka Pressure Cooker, a new relationship reality show on Colors and JioHotstar. Here is what we know so far.
+                Yogesh Rawat reacts to Justin D’Cruz mentioning his name in the Roadies Rebirth PI round. Read what he said in his Instagram video.
               </p>
 
               {/* Editorial Highlights Box */}
               <div className="feature-highlights">
                 <div className="feature-highlights-header">
                   <span className="w-2 h-2 rounded-full bg-[var(--lime)] animate-pulse inline-block"></span>
-                  <span>Inside Pyaar Ka Pressure Cooker — Format, Host Return &amp; Bigg Boss Time Slot Scoop</span>
+                  <span>Inside Roadies Rebirth Audition Drama — Yogesh’s Fiery Response &amp; The Broadcast Clue</span>
                 </div>
                 <ul className="feature-highlights-list">
                   <li className="feature-highlights-item">
                     <span className="feature-highlights-bullet">✦</span>
                     <span>
-                      <strong className="text-white font-medium">Shilpa Shetty Returns as Host:</strong> From her historic Big Brother win to Bigg Boss 2, Shilpa returns to helm a high-stakes unscripted relationship series.
+                      <strong className="text-white font-medium">Justin Dropped Yogesh’s Name:</strong> Justin reportedly spent a big portion of his PI audition round focusing on Yogesh Rawat instead of himself.
                     </span>
                   </li>
                   <li className="feature-highlights-item">
                     <span className="feature-highlights-bullet">✦</span>
                     <span>
-                      <strong className="text-white font-medium">Unique “Jodo Ya Todo” Format:</strong> Real-life couples facing trust and commitment dilemmas put their love on the line with unfiltered challenges.
+                      <strong className="text-white font-medium">“Souls Have Turned Black”:</strong> Yogesh called out contestants burning with jealousy, declaring his name and legacy on Roadies remain immortal.
                     </span>
                   </li>
                   <li className="feature-highlights-item">
                     <span className="feature-highlights-bullet">✦</span>
                     <span>
-                      <strong className="text-white font-medium">Taking Bigg Boss Time Slot:</strong> Slated to air on Colors and stream on JioHotstar after Bigg Boss concludes its season.
+                      <strong className="text-white font-medium">Cryptic Broadcast Clue:</strong> Fans connected his “kaali rooh” remark to an earlier black cat emoji dropped on his Instagram broadcast channel.
                     </span>
                   </li>
                 </ul>
@@ -1513,7 +1527,7 @@ export default function Home() {
 
               <div className="meta-row mt-auto pt-3 border-t border-white/[0.06] flex items-center justify-between">
                 <div className="flex items-center gap-3">
-                  <span>REALITY SHOWS &amp; OTT</span>
+                  <span>REALITY SHOWS &amp; MTV ROADIES</span>
                   <span className="dot-sep">◆</span>
                   <span>3 MIN READ</span>
                   <span className="dot-sep">◆</span>
@@ -1536,6 +1550,18 @@ export default function Home() {
               <span className="trend-rank">01</span>
               <div className="trend-text">
                 <Link
+                  href="/yogesh-rawat-justin-dcruz-roadies-rebirth-pi"
+                  style={{ color: "inherit" }}
+                >
+                  <h3>Yogesh Rawat takes a dig at Justin D’Cruz after Roadies Rebirth PI round: “Baaki jalte raho” &amp; broadcast cat emoji clue</h3>
+                  <span>REALITY SHOWS</span>
+                </Link>
+              </div>
+            </div>
+            <div className="trend-item">
+              <span className="trend-rank">02</span>
+              <div className="trend-text">
+                <Link
                   href="/shilpa-shetty-host-pyaar-ka-pressure-cooker"
                   style={{ color: "inherit" }}
                 >
@@ -1545,7 +1571,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">02</span>
+              <span className="trend-rank">03</span>
               <div className="trend-text">
                 <Link
                   href="/student-of-the-year-after-dark-review"
@@ -1557,7 +1583,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">03</span>
+              <span className="trend-rank">04</span>
               <div className="trend-text">
                 <Link
                   href="/amitabh-bachchan-jalsa-property-dispute"
@@ -1569,7 +1595,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">04</span>
+              <span className="trend-rank">05</span>
               <div className="trend-text">
                 <Link
                   href="/panchayat-season-5-not-releasing-2026"
@@ -1581,7 +1607,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">05</span>
+              <span className="trend-rank">06</span>
               <div className="trend-text">
                 <Link
                   href="/sunny-deol-suryaa-ant-se-aarambh-tak-postponed-2027"
@@ -1593,7 +1619,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">06</span>
+              <span className="trend-rank">07</span>
               <div className="trend-text">
                 <Link
                   href="/sharad-kapoor-hollywood-film-offer"
@@ -1605,7 +1631,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">07</span>
+              <span className="trend-rank">08</span>
               <div className="trend-text">
                 <Link
                   href="/diljit-dosanjh-indore-concert-kisi-ke-baap-ka-hindustan-thodi-hai"
@@ -1617,7 +1643,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">08</span>
+              <span className="trend-rank">09</span>
               <div className="trend-text">
                 <Link
                   href="/soni-razdan-100-cigarettes-gumrah-alia-bhatt"
@@ -1629,7 +1655,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">09</span>
+              <span className="trend-rank">10</span>
               <div className="trend-text">
                 <Link
                   href="/student-of-the-year-after-dark-reema-maya-class-comparison"
@@ -1637,18 +1663,6 @@ export default function Home() {
                 >
                   <h3>Student of the Year After Dark vs Class: Reema Maya reacts to copy claims &amp; Karan Johar&apos;s dark reboot support</h3>
                   <span>BOLLYWOOD &amp; OTT</span>
-                </Link>
-              </div>
-            </div>
-            <div className="trend-item">
-              <span className="trend-rank">10</span>
-              <div className="trend-text">
-                <Link
-                  href="/ananya-panday-aarav-bhatia-my-heart-post"
-                  style={{ color: "inherit" }}
-                >
-                  <h3>Ananya Panday’s “My Heart” post with Aarav Bhatia goes viral: Manish Malhotra Diwali party &amp; K3G lehenga look</h3>
-                  <span>BOLLYWOOD BUZZ</span>
                 </Link>
               </div>
             </div>

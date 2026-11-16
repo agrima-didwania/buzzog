@@ -23,6 +23,19 @@ interface RealityArticle {
 // All verified reality show articles in reverse chronological order
 const realityArticles: RealityArticle[] = [
   {
+    id: "yogesh-rawat-justin-dcruz-roadies-rebirth-pi",
+    show: "Roadies Rebirth",
+    title: "Yogesh Rawat Takes a Dig at Justin D’Cruz After Roadies Rebirth PI Round",
+    excerpt:
+      "Yogesh Rawat reacts to Justin D’Cruz mentioning his name in the Roadies Rebirth PI round. Read what he said in his Instagram video.",
+    badge: "⚡ Roadies Controversy",
+    badgeType: "lime",
+    image: "/images/yogesh-rawat-justin-dcruz-roadies-rebirth-pi.jpg",
+    href: "/yogesh-rawat-justin-dcruz-roadies-rebirth-pi",
+    readTime: "3 MIN READ",
+    timeAgo: "JUST IN",
+  },
+  {
     id: "shilpa-shetty-host-pyaar-ka-pressure-cooker",
     show: "Pyaar Ka Pressure Cooker",
     title: "Shilpa Shetty to Host Pyaar Ka Pressure Cooker, a New Relationship Reality Show",
@@ -275,16 +288,16 @@ export default function RealityShowsView() {
 
         {/* Lead Section: Latest Reality Published Article (Cover Story) + The Last 2-3 Blogs Uploaded Before It */}
         <section className="lead">
-          {/* Featured Cover Story: Shilpa Shetty to Host Pyaar Ka Pressure Cooker */}
+          {/* Featured Cover Story: Yogesh Rawat Takes a Dig at Justin D’Cruz */}
           <Link
-            href="/shilpa-shetty-host-pyaar-ka-pressure-cooker"
+            href="/yogesh-rawat-justin-dcruz-roadies-rebirth-pi"
             className="feature-card group block"
-            aria-label="Read full cover story: Shilpa Shetty to Host Pyaar Ka Pressure Cooker, a New Relationship Reality Show"
+            aria-label="Read full cover story: Yogesh Rawat Takes a Dig at Justin D’Cruz After Roadies Rebirth PI Round"
           >
             <div className="feature-media relative overflow-hidden">
               <Image
-                src="/images/shilpa-shetty-host-pyaar-ka-pressure-cooker.jpg"
-                alt="Shilpa Shetty to Host Pyaar Ka Pressure Cooker Colors TV JioHotstar"
+                src="/images/yogesh-rawat-justin-dcruz-roadies-rebirth-pi.jpg"
+                alt="Yogesh Rawat Takes a Dig at Justin D’Cruz After Roadies Rebirth PI Round"
                 fill
                 priority
                 className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
@@ -292,18 +305,18 @@ export default function RealityShowsView() {
               />
               <div className="noise" />
               <span className="badge lime feature-tag z-10">
-                ⚡ New Show Announced
+                ⚡ Roadies Controversy
               </span>
             </div>
             <div className="feature-body">
               <h2 className="disp text-white group-hover:text-[var(--lime)] transition-colors">
-                Shilpa Shetty to Host Pyaar Ka Pressure Cooker, a New Relationship Reality Show
+                Yogesh Rawat Takes a Dig at Justin D’Cruz After Roadies Rebirth PI Round
               </h2>
               <p>
-                Shilpa Shetty returns to TV with Colors’ Pyaar Ka Pressure Cooker, diving into situationships and modern love with parents delivering unfiltered reality checks.
+                Yogesh Rawat fires back at Justin D’Cruz for dropping his name during Roadies Rebirth PI round: “Baaki jal-jal ke apne PI mein bhi mera naam likhe.”
               </p>
               <div className="meta-row mt-3">
-                <span className="text-[var(--magenta)] font-bold">COLORS &amp; JIOHOTSTAR</span>
+                <span className="text-[var(--magenta)] font-bold">MTV ROADIES REBIRTH</span>
                 <span className="dot-sep">◆</span>
                 <span>3 MIN READ</span>
                 <span className="dot-sep">◆</span>
@@ -314,7 +327,34 @@ export default function RealityShowsView() {
 
           {/* Right Stack: The last 2-3 blogs uploaded before the latest one */}
           <div className="stack">
-            {/* Card 1: Shehzad Poonawalla Wins Rise and Fall 2 */}
+            {/* Card 1: Shilpa Shetty to Host Pyaar Ka Pressure Cooker */}
+            <Link
+              href="/shilpa-shetty-host-pyaar-ka-pressure-cooker"
+              className="card m1 group block"
+            >
+              <div className="card-media relative overflow-hidden">
+                <Image
+                  src="/images/shilpa-shetty-host-pyaar-ka-pressure-cooker.jpg"
+                  alt="Shilpa Shetty to Host Pyaar Ka Pressure Cooker Colors TV"
+                  fill
+                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 980px) 100vw, 35vw"
+                />
+                <span className="badge lime z-10 relative">⚡ New Reality Show</span>
+              </div>
+              <div className="card-body">
+                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
+                  Shilpa Shetty to Host Pyaar Ka Pressure Cooker on Colors
+                </h3>
+                <div className="meta-row mt-2">
+                  <span className="text-[var(--magenta)] font-bold">COLORS &amp; JIOHOTSTAR</span>
+                  <span className="dot-sep">◆</span>
+                  <span>3 MIN READ</span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Card 2: Shehzad Poonawalla Wins Rise and Fall 2 */}
             <Link
               href="/rise-and-fall-2-winner-shehzad-poonawalla"
               className="card m1 group block"
@@ -341,7 +381,7 @@ export default function RealityShowsView() {
               </div>
             </Link>
 
-            {/* Card 2: Saif Ali Khan Stabbing Night on KWK 9 */}
+            {/* Card 3: Saif Ali Khan Stabbing Night on KWK 9 */}
             <Link
               href="/saif-ali-khan-kareena-kapoor-koffee-with-karan-stabbing-night"
               className="card m1 group block"
@@ -362,33 +402,6 @@ export default function RealityShowsView() {
                 </h3>
                 <div className="meta-row mt-2">
                   <span className="text-[var(--magenta)] font-bold">KOFFEE WITH KARAN 9</span>
-                  <span className="dot-sep">◆</span>
-                  <span>4 MIN READ</span>
-                </div>
-              </div>
-            </Link>
-
-            {/* Card 3: Mira Rajput & Shahid Kapoor Gossip */}
-            <Link
-              href="/mira-rajput-shahid-kapoor-gossip-kapil-sharma-show"
-              className="card m1 group block"
-            >
-              <div className="card-media relative overflow-hidden">
-                <Image
-                  src="/images/mira-rajput-shahid-kapoor-gossip-kapil-sharma-show.jpg"
-                  alt="Mira Rajput Says Shahid Kapoor Loves Gossip"
-                  fill
-                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
-                  sizes="(max-width: 980px) 100vw, 35vw"
-                />
-                <span className="badge pink z-10 relative">☕ Gossip King</span>
-              </div>
-              <div className="card-body">
-                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
-                  Mira Rajput Says Shahid Kapoor Loves Gossip: Kapil Sharma Clip
-                </h3>
-                <div className="meta-row mt-2">
-                  <span className="text-[var(--magenta)] font-bold">KAPIL SHARMA SHOW</span>
                   <span className="dot-sep">◆</span>
                   <span>4 MIN READ</span>
                 </div>

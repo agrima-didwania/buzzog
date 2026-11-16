@@ -6,6 +6,12 @@ export const metadata: Metadata = {
   description:
     "Eliminations, fights, weekly ration milestones, hot seat stories and dome drama — every Bigg Boss 20, Koffee With Karan, KBC 18 and Splitsvilla moment.",
   keywords: [
+    "Yogesh Rawat Justin D’Cruz",
+    "Roadies Rebirth",
+    "Roadies Rebirth PI round",
+    "Yogesh Rawat Instagram video",
+    "Justin D’Cruz Roadies Rebirth",
+    "MTV Roadies Rebirth latest news",
     "Pyaar Ka Pressure Cooker",
     "Shilpa Shetty new show",
     "Shilpa Shetty reality show",
@@ -122,10 +128,10 @@ export const metadata: Metadata = {
     siteName: "Buzz Originals",
     images: [
       {
-        url: "/images/shilpa-shetty-host-pyaar-ka-pressure-cooker.jpg",
+        url: "/images/yogesh-rawat-justin-dcruz-roadies-rebirth-pi.jpg",
         width: 1200,
         height: 675,
-        alt: "Shilpa Shetty to Host Pyaar Ka Pressure Cooker Colors TV — Buzz Originals Reality Shows",
+        alt: "Yogesh Rawat Takes a Dig at Justin D’Cruz After Roadies Rebirth PI Round — Buzz Originals Reality Shows",
       },
     ],
     type: "website",
@@ -134,8 +140,8 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Reality Shows — Buzz Originals",
     description:
-      "Raw, unfiltered entertainment coverage of Koffee With Karan, The Great Indian Kapil Show, Bigg Boss 20, KBC 18, Splitsvilla & Rise and Fall.",
-    images: ["/images/shilpa-shetty-host-pyaar-ka-pressure-cooker.jpg"],
+      "Raw, unfiltered entertainment coverage of Roadies Rebirth, Pyaar Ka Pressure Cooker, Koffee With Karan, Bigg Boss 20, Splitsvilla & Rise and Fall.",
+    images: ["/images/yogesh-rawat-justin-dcruz-roadies-rebirth-pi.jpg"],
   },
 };
 
@@ -162,12 +168,18 @@ export default function RealityShowsPage() {
         {
           "@type": "ListItem",
           position: 1,
+          name: "Yogesh Rawat Takes a Dig at Justin D’Cruz After Roadies Rebirth PI Round",
+          url: "https://www.buzzoriginals.com/yogesh-rawat-justin-dcruz-roadies-rebirth-pi",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
           name: "Shilpa Shetty to Host Pyaar Ka Pressure Cooker, a New Relationship Reality Show",
           url: "https://www.buzzoriginals.com/shilpa-shetty-host-pyaar-ka-pressure-cooker",
         },
         {
           "@type": "ListItem",
-          position: 2,
+          position: 3,
           name: "Rise and Fall 2 Winner: Shehzad Poonawalla Wins ₹35 Lakh",
           url: "https://www.buzzoriginals.com/rise-and-fall-2-winner-shehzad-poonawalla",
         },
