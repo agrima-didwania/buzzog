@@ -6,6 +6,16 @@ export const metadata: Metadata = {
   description:
     "Bollywood coverage from Buzz Originals — raw, unfiltered, built for the group chat. Red carpets, rumours, airport looks and exclusives.",
   keywords: [
+    "The Vvaan 2",
+    "The Vvaan 2 announcement",
+    "The Vvaan sequel",
+    "Sidharth Malhotra new film",
+    "Tamannaah Bhatia The Vvaan",
+    "Ektaa Kapoor sequel",
+    "World of Vvaan",
+    "The Vvaan 2 release date",
+    "The Vvaan 2 cast",
+    "Balaji Motion Pictures TVF",
     "Diljit Dosanjh hits back at Indore song ban",
     "Diljit Dosanjh Indore concert",
     "Diljit Dosanjh song ban",
@@ -596,27 +606,27 @@ export const metadata: Metadata = {
     canonical: "/bollywood",
   },
   openGraph: {
-    title: "Bollywood — Buzz Originals | Red Carpets, Gossip & Exclusives",
+    title: "The Vvaan 2 Announced: Ektaa Kapoor Reveals Sequel on Chhath | Buzz Originals",
     description:
-      "Red carpets, rumours, airport looks and exclusives — raw, unfiltered Bollywood coverage built for the group chat.",
+      "Ektaa Kapoor has announced The Vvaan 2 on Chhath. Know what the video shows, the World of Vvaan plan, and what is still unknown about the cast and release.",
     url: "https://www.buzzoriginals.com/bollywood",
     siteName: "Buzz Originals",
     images: [
       {
-        url: "/images/diljit-dosanjh-indore-concert-song-ban-rahat-indori.jpg",
-        width: 1200,
-        height: 675,
-        alt: "Diljit Dosanjh Answers Indore Song Ban With Rahat Indori Famous Lines — Buzz Originals",
+        url: "/images/the-vvaan-2-announced-ektaa-kapoor-chhath.jpg",
+        width: 1024,
+        height: 576,
+        alt: "The Vvaan 2 Announced Ektaa Kapoor Reveals Sequel on Chhath — Buzz Originals",
       },
     ],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Bollywood — Buzz Originals",
+    title: "The Vvaan 2 Announced: Ektaa Kapoor Reveals Sequel on Chhath",
     description:
-      "Raw, unfiltered Bollywood coverage of red carpets, gossip, concert controversies & exclusives.",
-    images: ["/images/diljit-dosanjh-indore-concert-song-ban-rahat-indori.jpg"],
+      "Ektaa Kapoor has announced The Vvaan 2 on Chhath. Know what the video shows, the World of Vvaan plan, and what is still unknown about the cast and release.",
+    images: ["/images/the-vvaan-2-announced-ektaa-kapoor-chhath.jpg"],
   },
 };
 
@@ -643,12 +653,18 @@ export default function BollywoodPage() {
         {
           "@type": "ListItem",
           position: 1,
+          name: "The Vvaan 2 Is Official: Ektaa Kapoor Announces Sequel on Chhath",
+          url: "https://www.buzzoriginals.com/the-vvaan-2-announced-ektaa-kapoor-chhath",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
           name: "Diljit Dosanjh Answers Indore Song Ban With Rahat Indori’s Famous Lines",
           url: "https://www.buzzoriginals.com/diljit-dosanjh-indore-concert-song-ban-rahat-indori",
         },
         {
           "@type": "ListItem",
-          position: 2,
+          position: 3,
           name: "Amitabh Bachchan’s Jalsa Property Dispute: What Is Going On?",
           url: "https://www.buzzoriginals.com/amitabh-bachchan-jalsa-property-dispute",
         },

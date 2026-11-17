@@ -20,6 +20,16 @@ interface BollywoodArticle {
 
 const bollywoodArticles: BollywoodArticle[] = [
   {
+    id: "the-vvaan-2-announced-ektaa-kapoor-chhath",
+    category: "Sequel & Universe",
+    title: "The Vvaan 2 Is Official: Ektaa Kapoor Announces Sequel on Chhath",
+    badge: "⚡ Sequel Announced",
+    badgeType: "lime",
+    image: "/images/the-vvaan-2-announced-ektaa-kapoor-chhath.jpg",
+    href: "/the-vvaan-2-announced-ektaa-kapoor-chhath",
+    readOrTime: "3 MIN READ",
+  },
+  {
     id: "diljit-dosanjh-indore-concert-song-ban-rahat-indori",
     category: "Concerts & Ban",
     title: "Diljit Dosanjh Answers Indore Song Ban With Rahat Indori’s Famous Lines",
@@ -776,16 +786,16 @@ export default function BollywoodView() {
 
         {/* Lead Section: Latest Bollywood Published Article (Cover Story) + The Last 2-3 Blogs Uploaded Before It */}
         <section className="lead">
-          {/* Cover Story: Latest Published Bollywood Story (Diljit Dosanjh Answers Indore Song Ban) */}
+          {/* Cover Story: Latest Published Bollywood Story (The Vvaan 2 Is Official) */}
           <Link
-            href="/diljit-dosanjh-indore-concert-song-ban-rahat-indori"
+            href="/the-vvaan-2-announced-ektaa-kapoor-chhath"
             className="feature-card group block"
-            aria-label="Read full cover story: Diljit Dosanjh Answers Indore Song Ban With Rahat Indori’s Famous Lines"
+            aria-label="Read full cover story: The Vvaan 2 Is Official: Ektaa Kapoor Announces Sequel on Chhath"
           >
             <div className="feature-media relative overflow-hidden">
               <Image
-                src="/images/diljit-dosanjh-indore-concert-song-ban-rahat-indori.jpg"
-                alt="Diljit Dosanjh Answers Indore Song Ban With Rahat Indori Famous Lines"
+                src="/images/the-vvaan-2-announced-ektaa-kapoor-chhath.jpg"
+                alt="The Vvaan 2 Is Official: Ektaa Kapoor Announces Sequel on Chhath"
                 fill
                 priority
                 className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
@@ -793,20 +803,20 @@ export default function BollywoodView() {
               />
               <div className="noise" />
               <span className="badge lime feature-tag z-10">
-                ⚡ RAHAT INDORI REPLY
+                ⚡ SEQUEL ANNOUNCED
               </span>
             </div>
             <div className="feature-body">
               <h2 className="disp text-white group-hover:text-[var(--lime)] transition-colors">
-                Diljit Dosanjh Answers Indore Song Ban With Rahat Indori’s Famous Lines
+                The Vvaan 2 Is Official: Ektaa Kapoor Announces Sequel on Chhath
               </h2>
               <p>
-                Diljit Dosanjh was told not to sing four songs at his Indore concert. His reply on stage, a famous Rahat Indori couplet, is going viral. Here is the full story.
+                Producer Ektaa R Kapoor has announced The Vvaan 2 on Chhath Puja. Discover what the video shows, the World of Vvaan plans, and what lies ahead.
               </p>
               <div className="meta-row mt-3">
-                <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; CONCERTS</span>
+                <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; SEQUELS</span>
                 <span className="dot-sep">◆</span>
-                <span>4 MIN READ</span>
+                <span>3 MIN READ</span>
                 <span className="dot-sep">◆</span>
                 <span className="text-[var(--lime)] font-bold">JUST IN</span>
               </div>
@@ -815,7 +825,34 @@ export default function BollywoodView() {
 
           {/* Right Stack: The last 2-3 blogs uploaded before the latest one */}
           <div className="stack">
-            {/* Card 1: Amitabh Bachchan Jalsa Property Dispute */}
+            {/* Card 1: Diljit Dosanjh Answers Indore Song Ban */}
+            <Link
+              href="/diljit-dosanjh-indore-concert-song-ban-rahat-indori"
+              className="card m1 group block"
+            >
+              <div className="card-media relative overflow-hidden">
+                <Image
+                  src="/images/diljit-dosanjh-indore-concert-song-ban-rahat-indori.jpg"
+                  alt="Diljit Dosanjh Answers Indore Song Ban With Rahat Indori Famous Lines"
+                  fill
+                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 980px) 100vw, 35vw"
+                />
+                <span className="badge lime z-10 relative">⚡ RAHAT INDORI REPLY</span>
+              </div>
+              <div className="card-body">
+                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
+                  Diljit Dosanjh Answers Indore Song Ban With Rahat Indori’s Lines
+                </h3>
+                <div className="meta-row mt-2">
+                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; CONCERTS</span>
+                  <span className="dot-sep">◆</span>
+                  <span>4 MIN READ</span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Card 2: Amitabh Bachchan Jalsa Property Dispute */}
             <Link
               href="/amitabh-bachchan-jalsa-property-dispute"
               className="card m1 group block"
@@ -842,7 +879,7 @@ export default function BollywoodView() {
               </div>
             </Link>
 
-            {/* Card 2: Student of the Year After Dark Review */}
+            {/* Card 3: Student of the Year After Dark Review */}
             <Link
               href="/student-of-the-year-after-dark-review"
               className="card m1 group block"
@@ -859,39 +896,12 @@ export default function BollywoodView() {
               </div>
               <div className="card-body">
                 <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
-                  Student of the Year: After Dark Review – Shanaya Kapoor’s Dark Campus Thriller
+                  Student of the Year: After Dark Review – Shanaya Kapoor’s Thriller
                 </h3>
                 <div className="meta-row mt-2">
                   <span className="text-[var(--magenta)] font-bold">SERIES REVIEW</span>
                   <span className="dot-sep">◆</span>
                   <span>5 MIN READ</span>
-                </div>
-              </div>
-            </Link>
-
-            {/* Card 3: Sunny Deol’s Suryaa Postponed to 2027 */}
-            <Link
-              href="/sunny-deol-suryaa-ant-se-aarambh-tak-postponed-2027"
-              className="card m1 group block"
-            >
-              <div className="card-media relative overflow-hidden">
-                <Image
-                  src="/images/sunny-deol-suryaa-ant-se-aarambh-tak-postponed-2027.jpg"
-                  alt="Sunny Deol’s Suryaa: Ant Se Aarambh Tak Postponed to 2027 After IMA Objection"
-                  fill
-                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
-                  sizes="(max-width: 980px) 100vw, 35vw"
-                />
-                <span className="badge lime z-10 relative">⚡ BREAKING DELAY</span>
-              </div>
-              <div className="card-body">
-                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
-                  Sunny Deol’s Suryaa: Ant Se Aarambh Tak Postponed to 2027 After IMA Objection
-                </h3>
-                <div className="meta-row mt-2">
-                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD NEWS</span>
-                  <span className="dot-sep">◆</span>
-                  <span>4 MIN READ</span>
                 </div>
               </div>
             </Link>
