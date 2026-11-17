@@ -6,6 +6,17 @@ export const metadata: Metadata = {
   description:
     "Eliminations, fights, weekly ration milestones, hot seat stories and dome drama — every Bigg Boss 20, Koffee With Karan, KBC 18 and Splitsvilla moment.",
   keywords: [
+    "Raghu Ram Roadies return",
+    "Raghu Ram Roadies",
+    "Raghu Ram returns to Roadies",
+    "Roadies Rebirth",
+    "Roadies Rebirth Raghu Ram",
+    "Roadies season 21",
+    "Roadies Rebirth gang leaders",
+    "Roadies OGs vs NewGs",
+    "Rannvijay Singha Roadies",
+    "Raghu Ram comeback",
+    "MTV Roadies 2026",
     "Eisha Singh unfollows Avinash Mishra",
     "Avinash Mishra Eisha Singh breakup",
     "Avinash Mishra Eisha Singh relationship",
@@ -134,10 +145,10 @@ export const metadata: Metadata = {
     siteName: "Buzz Originals",
     images: [
       {
-        url: "/images/eisha-singh-unfollows-avinash-mishra.jpg",
+        url: "/images/raghu-ram-returns-roadies-rebirth-12-years.jpg",
         width: 1200,
         height: 675,
-        alt: "Eisha Singh Unfollows Avinash Mishra on Instagram Are Avisha Really Over — Buzz Originals Reality Shows",
+        alt: "Raghu Ram Returns to Roadies Rebirth After 12 Years — Buzz Originals Reality Shows",
       },
     ],
     type: "website",
@@ -146,8 +157,8 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Reality Shows — Buzz Originals",
     description:
-      "Raw, unfiltered entertainment coverage of Eisha Singh and Avinash Mishra, Roadies Rebirth, Pyaar Ka Pressure Cooker, Bigg Boss 20 & Rise and Fall.",
-    images: ["/images/eisha-singh-unfollows-avinash-mishra.jpg"],
+      "Raw, unfiltered entertainment coverage of Raghu Ram Roadies Rebirth comeback, Eisha Singh and Avinash Mishra, Roadies Rebirth, Pyaar Ka Pressure Cooker & Bigg Boss.",
+    images: ["/images/raghu-ram-returns-roadies-rebirth-12-years.jpg"],
   },
 };
 
@@ -174,12 +185,18 @@ export default function RealityShowsPage() {
         {
           "@type": "ListItem",
           position: 1,
+          name: "Raghu Ram Returns to Roadies After 12 Years With a Warning: “Be Careful What You Wish For”",
+          url: "https://www.buzzoriginals.com/raghu-ram-returns-roadies-rebirth-12-years",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
           name: "Eisha Singh Unfollows Avinash Mishra on Instagram: Are Avisha Really Over?",
           url: "https://www.buzzoriginals.com/eisha-singh-unfollows-avinash-mishra",
         },
         {
           "@type": "ListItem",
-          position: 2,
+          position: 3,
           name: "Yogesh Rawat Takes a Dig at Justin D’Cruz After Roadies Rebirth PI Round",
           url: "https://www.buzzoriginals.com/yogesh-rawat-justin-dcruz-roadies-rebirth-pi",
         },

@@ -185,6 +185,20 @@ export default function Home() {
 
   const editorialArticles: EditorialArticle[] = [
     {
+      id: "raghu-ram-returns-roadies-rebirth-12-years",
+      anchorId: "raghu-ram-roadies-story",
+      href: "/raghu-ram-returns-roadies-rebirth-12-years",
+      title: "Raghu Ram Returns to Roadies After 12 Years With a Warning: “Be Careful What You Wish For”",
+      excerpt: "Raghu Ram is back on Roadies after 12 years. Read his “be careful what you wish for” message, the OGs vs NewGs teams and what to expect.",
+      category: "Reality TV Updates",
+      secondaryCategory: "Latest",
+      displayCategory: "REALITY TV & ROADIES REBIRTH",
+      badge: "12-Yr Comeback",
+      badgeType: "pink",
+      readTime: "4 MIN READ",
+      image: "/images/raghu-ram-returns-roadies-rebirth-12-years.jpg",
+    },
+    {
       id: "eisha-singh-unfollows-avinash-mishra",
       anchorId: "eisha-avinash-unfollow-story",
       href: "/eisha-singh-unfollows-avinash-mishra",
@@ -1491,15 +1505,15 @@ export default function Home() {
         <section className="hero" id="featured">
           {/* 1. Main Featured Story (Commanding Top Story Presentation) */}
           <Link
-            href="/eisha-singh-unfollows-avinash-mishra"
+            href="/raghu-ram-returns-roadies-rebirth-12-years"
             className="feature-card flex flex-col transition-all hover:border-[var(--lime)] focus-visible:ring-2 focus-visible:ring-[var(--lime)] group"
             style={{ textDecoration: "none", color: "inherit" }}
-            aria-label="Read full article: Eisha Singh Unfollows Avinash Mishra on Instagram: Are Avisha Really Over?"
+            aria-label="Read full article: Raghu Ram Returns to Roadies After 12 Years With a Warning: “Be Careful What You Wish For”"
           >
             <div className="feature-media" style={{ overflow: "hidden", position: "relative" }}>
               <Image
-                src="/images/eisha-singh-unfollows-avinash-mishra.jpg"
-                alt="Eisha Singh Unfollows Avinash Mishra on Instagram Are Avisha Really Over"
+                src="/images/raghu-ram-returns-roadies-rebirth-12-years.jpg"
+                alt="Raghu Ram Returns to Roadies Rebirth After 12 Years"
                 fill
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 750px"
@@ -1508,46 +1522,46 @@ export default function Home() {
               />
               <div className="noise" style={{ pointerEvents: "none" }}></div>
               <div className="feature-tag flex items-center gap-2">
-                <span className="badge lime">⚡ VIRAL FALLOUT</span>
-                <span className="badge pink">Bigg Boss 18 &amp; KKK 15</span>
-                <span className="badge">Avisha</span>
-                <span className="badge">Instagram Unfollow</span>
+                <span className="badge lime">⚡ ROADIES COMEBACK</span>
+                <span className="badge pink">12-Yr Hiatus Over</span>
+                <span className="badge">Raghu Ram</span>
+                <span className="badge">Roadies Rebirth</span>
               </div>
             </div>
             <div className="feature-body">
               <div className="flex items-center gap-2 mb-2 font-mono text-xs text-[var(--lime)] font-bold tracking-wider uppercase">
-                <span>★ TOP STORY · REALITY TV &amp; BIGG BOSS 18</span>
+                <span>★ TOP STORY · MTV ROADIES REBIRTH</span>
               </div>
               <h1 className="disp" style={{ color: "#fff" }}>
-                Eisha Singh Unfollows Avinash Mishra on Instagram: Are Avisha Really Over?
+                Raghu Ram Returns to Roadies After 12 Years With a Warning: “Be Careful What You Wish For”
               </h1>
               <p>
-                Eisha Singh has reportedly unfollowed Avinash Mishra on Instagram after their viral “I love you” moment. Here is what we know so far.
+                Raghu Ram is back on Roadies after 12 years. Read his “be careful what you wish for” message, the OGs vs NewGs teams and what to expect.
               </p>
 
               {/* Editorial Highlights Box */}
               <div className="feature-highlights">
                 <div className="feature-highlights-header">
                   <span className="w-2 h-2 rounded-full bg-[var(--lime)] animate-pulse inline-block"></span>
-                  <span>Inside the Avisha Drama — The Unfollow, The Viral Video &amp; Rekha Singh’s Cryptic Story</span>
+                  <span>Inside Raghu Ram’s Return — The Warning, 3rd Decade Shakeup &amp; Format Details</span>
                 </div>
                 <ul className="feature-highlights-list">
                   <li className="feature-highlights-item">
                     <span className="feature-highlights-bullet">✦</span>
                     <span>
-                      <strong className="text-white font-medium">The Instagram Check:</strong> Fans noticed Eisha is no longer following Avinash, while Avinash still follows her back.
+                      <strong className="text-white font-medium">Raghu&apos;s Stern Warning:</strong> <em>“Be careful what you wish for! Rebirth means the return of a forgotten fear. Their journey through this rebirth is going to be nothing short of hell.”</em>
                     </span>
                   </li>
                   <li className="feature-highlights-item">
                     <span className="feature-highlights-bullet">✦</span>
                     <span>
-                      <strong className="text-white font-medium">Days After the “I Love You Baby” Video:</strong> The unfollow came right after Avinash’s viral video from a friend’s party where he said “I love you baby” to Eisha.
+                      <strong className="text-white font-medium">Third Decade Evolution:</strong> Returning to disrupt the comfort zones and shake up the format as Roadies enters its third decade.
                     </span>
                   </li>
                   <li className="feature-highlights-item">
                     <span className="feature-highlights-bullet">✦</span>
                     <span>
-                      <strong className="text-white font-medium">Rekha Singh’s Cryptic Post:</strong> Eisha’s mother shared a Hindi quote about keeping the right company and standing alone rather than with the wrong crowd.
+                      <strong className="text-white font-medium">Host &amp; Six Gang Leaders:</strong> Rannvijay Singha hosts with OGs (Nikhil Chinappa, Neha Dhupia, Prince Narula) vs NewGs (Abhishek Malhan, Bani J, Baseer Ali).
                     </span>
                   </li>
                 </ul>
@@ -1557,9 +1571,9 @@ export default function Home() {
                 <div className="flex items-center gap-3">
                   <span>REALITY SHOWS</span>
                   <span className="dot-sep">◆</span>
-                  <span>3 MIN READ</span>
+                  <span>4 MIN READ</span>
                   <span className="dot-sep">◆</span>
-                  <span style={{ color: "var(--lime)" }}>VIRAL GOSSIP</span>
+                  <span style={{ color: "var(--lime)" }}>EXCLUSIVE COMEBACK</span>
                 </div>
                 <span className="text-xs font-mono font-bold text-[var(--lime)] hidden sm:inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform">
                   Read Full Story →
@@ -1578,6 +1592,18 @@ export default function Home() {
               <span className="trend-rank">01</span>
               <div className="trend-text">
                 <Link
+                  href="/raghu-ram-returns-roadies-rebirth-12-years"
+                  style={{ color: "inherit" }}
+                >
+                  <h3>Raghu Ram returns to Roadies after 12 years with a warning: “Be careful what you wish for!” in Roadies Rebirth</h3>
+                  <span>REALITY SHOWS</span>
+                </Link>
+              </div>
+            </div>
+            <div className="trend-item">
+              <span className="trend-rank">02</span>
+              <div className="trend-text">
+                <Link
                   href="/eisha-singh-unfollows-avinash-mishra"
                   style={{ color: "inherit" }}
                 >
@@ -1587,7 +1613,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">02</span>
+              <span className="trend-rank">03</span>
               <div className="trend-text">
                 <Link
                   href="/diljit-dosanjh-indore-concert-song-ban-rahat-indori"
@@ -1599,7 +1625,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">03</span>
+              <span className="trend-rank">04</span>
               <div className="trend-text">
                 <Link
                   href="/yogesh-rawat-justin-dcruz-roadies-rebirth-pi"
@@ -1611,7 +1637,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">04</span>
+              <span className="trend-rank">05</span>
               <div className="trend-text">
                 <Link
                   href="/shilpa-shetty-host-pyaar-ka-pressure-cooker"
@@ -1623,7 +1649,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">05</span>
+              <span className="trend-rank">06</span>
               <div className="trend-text">
                 <Link
                   href="/student-of-the-year-after-dark-review"
@@ -1635,7 +1661,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">06</span>
+              <span className="trend-rank">07</span>
               <div className="trend-text">
                 <Link
                   href="/amitabh-bachchan-jalsa-property-dispute"
@@ -1647,7 +1673,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">07</span>
+              <span className="trend-rank">08</span>
               <div className="trend-text">
                 <Link
                   href="/panchayat-season-5-not-releasing-2026"
@@ -1659,7 +1685,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">08</span>
+              <span className="trend-rank">09</span>
               <div className="trend-text">
                 <Link
                   href="/sunny-deol-suryaa-ant-se-aarambh-tak-postponed-2027"
@@ -1671,7 +1697,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">09</span>
+              <span className="trend-rank">10</span>
               <div className="trend-text">
                 <Link
                   href="/sharad-kapoor-hollywood-film-offer"
@@ -1679,18 +1705,6 @@ export default function Home() {
                 >
                   <h3>Sharad Kapoor gets Hollywood film offer after viral video asking for work: Shoot starts in January</h3>
                   <span>BOLLYWOOD COMEBACK</span>
-                </Link>
-              </div>
-            </div>
-            <div className="trend-item">
-              <span className="trend-rank">10</span>
-              <div className="trend-text">
-                <Link
-                  href="/soni-razdan-100-cigarettes-gumrah-alia-bhatt"
-                  style={{ color: "inherit" }}
-                >
-                  <h3>Soni Razdan smoked 100 cigarettes on Gumrah set without knowing she was pregnant with Alia Bhatt: SCREEN interview</h3>
-                  <span>BOLLYWOOD THROWBACK</span>
                 </Link>
               </div>
             </div>

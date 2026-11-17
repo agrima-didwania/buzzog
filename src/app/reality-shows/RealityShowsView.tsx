@@ -23,6 +23,19 @@ interface RealityArticle {
 // All verified reality show articles in reverse chronological order
 const realityArticles: RealityArticle[] = [
   {
+    id: "raghu-ram-returns-roadies-rebirth-12-years",
+    show: "Roadies Rebirth",
+    title: "Raghu Ram Returns to Roadies After 12 Years With a Warning: “Be Careful What You Wish For”",
+    excerpt:
+      "Raghu Ram is back on Roadies after 12 years. Read his “be careful what you wish for” message, the OGs vs NewGs teams and what to expect.",
+    badge: "⚡ Roadies Comeback",
+    badgeType: "pink",
+    image: "/images/raghu-ram-returns-roadies-rebirth-12-years.jpg",
+    href: "/raghu-ram-returns-roadies-rebirth-12-years",
+    readTime: "4 MIN READ",
+    timeAgo: "JUST IN",
+  },
+  {
     id: "eisha-singh-unfollows-avinash-mishra",
     show: "Bigg Boss 18 & KKK 15",
     title: "Eisha Singh Unfollows Avinash Mishra on Instagram: Are Avisha Really Over?",
@@ -301,16 +314,16 @@ export default function RealityShowsView() {
 
         {/* Lead Section: Latest Reality Published Article (Cover Story) + The Last 2-3 Blogs Uploaded Before It */}
         <section className="lead">
-          {/* Featured Cover Story: Eisha Singh Unfollows Avinash Mishra */}
+          {/* Featured Cover Story: Raghu Ram Returns to Roadies Rebirth After 12 Years */}
           <Link
-            href="/eisha-singh-unfollows-avinash-mishra"
+            href="/raghu-ram-returns-roadies-rebirth-12-years"
             className="feature-card group block"
-            aria-label="Read full cover story: Eisha Singh Unfollows Avinash Mishra on Instagram: Are Avisha Really Over?"
+            aria-label="Read full cover story: Raghu Ram Returns to Roadies After 12 Years With a Warning: “Be Careful What You Wish For”"
           >
             <div className="feature-media relative overflow-hidden">
               <Image
-                src="/images/eisha-singh-unfollows-avinash-mishra.jpg"
-                alt="Eisha Singh Unfollows Avinash Mishra on Instagram Are Avisha Really Over"
+                src="/images/raghu-ram-returns-roadies-rebirth-12-years.jpg"
+                alt="Raghu Ram Returns to Roadies Rebirth After 12 Years"
                 fill
                 priority
                 className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
@@ -318,20 +331,20 @@ export default function RealityShowsView() {
               />
               <div className="noise" />
               <span className="badge pink feature-tag z-10">
-                ⚡ AVISHA FALLOUT
+                ⚡ ROADIES COMEBACK
               </span>
             </div>
             <div className="feature-body">
               <h2 className="disp text-white group-hover:text-[var(--lime)] transition-colors">
-                Eisha Singh Unfollows Avinash Mishra on Instagram: Are Avisha Really Over?
+                Raghu Ram Returns to Roadies After 12 Years With a Warning: “Be Careful What You Wish For”
               </h2>
               <p>
-                Eisha Singh has reportedly unfollowed Avinash Mishra on Instagram after their viral “I love you” moment. Here is what we know so far.
+                Raghu Ram is back on Roadies after 12 years. Read his “be careful what you wish for” message, the OGs vs NewGs teams and what to expect.
               </p>
               <div className="meta-row mt-3">
-                <span className="text-[var(--magenta)] font-bold">BIGG BOSS 18 &amp; KKK 15</span>
+                <span className="text-[var(--magenta)] font-bold">MTV ROADIES REBIRTH</span>
                 <span className="dot-sep">◆</span>
-                <span>3 MIN READ</span>
+                <span>4 MIN READ</span>
                 <span className="dot-sep">◆</span>
                 <span className="text-[var(--lime)] font-bold">JUST IN</span>
               </div>
@@ -340,7 +353,34 @@ export default function RealityShowsView() {
 
           {/* Right Stack: The last 2-3 blogs uploaded before the latest one */}
           <div className="stack">
-            {/* Card 1: Yogesh Rawat Roadies Rebirth PI */}
+            {/* Card 1: Eisha Singh Unfollows Avinash Mishra */}
+            <Link
+              href="/eisha-singh-unfollows-avinash-mishra"
+              className="card m1 group block"
+            >
+              <div className="card-media relative overflow-hidden">
+                <Image
+                  src="/images/eisha-singh-unfollows-avinash-mishra.jpg"
+                  alt="Eisha Singh Unfollows Avinash Mishra on Instagram Are Avisha Really Over"
+                  fill
+                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 980px) 100vw, 35vw"
+                />
+                <span className="badge pink z-10 relative">⚡ Avisha Fallout</span>
+              </div>
+              <div className="card-body">
+                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
+                  Eisha Singh Unfollows Avinash Mishra on Instagram: Are Avisha Really Over?
+                </h3>
+                <div className="meta-row mt-2">
+                  <span className="text-[var(--magenta)] font-bold">BIGG BOSS 18 &amp; KKK 15</span>
+                  <span className="dot-sep">◆</span>
+                  <span>3 MIN READ</span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Card 2: Yogesh Rawat Roadies Rebirth PI */}
             <Link
               href="/yogesh-rawat-justin-dcruz-roadies-rebirth-pi"
               className="card m1 group block"
@@ -367,7 +407,7 @@ export default function RealityShowsView() {
               </div>
             </Link>
 
-            {/* Card 2: Shilpa Shetty to Host Pyaar Ka Pressure Cooker */}
+            {/* Card 3: Shilpa Shetty to Host Pyaar Ka Pressure Cooker */}
             <Link
               href="/shilpa-shetty-host-pyaar-ka-pressure-cooker"
               className="card m1 group block"
@@ -390,33 +430,6 @@ export default function RealityShowsView() {
                   <span className="text-[var(--magenta)] font-bold">COLORS &amp; JIOHOTSTAR</span>
                   <span className="dot-sep">◆</span>
                   <span>3 MIN READ</span>
-                </div>
-              </div>
-            </Link>
-
-            {/* Card 3: Shehzad Poonawalla Wins Rise and Fall 2 */}
-            <Link
-              href="/rise-and-fall-2-winner-shehzad-poonawalla"
-              className="card m1 group block"
-            >
-              <div className="card-media relative overflow-hidden">
-                <Image
-                  src="/images/rise-and-fall-2-winner-shehzad-poonawalla.jpg"
-                  alt="Rise and Fall 2 Winner: Shehzad Poonawalla Lifts Trophy"
-                  fill
-                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
-                  sizes="(max-width: 980px) 100vw, 35vw"
-                />
-                <span className="badge lime z-10 relative">⚡ Finale Winner</span>
-              </div>
-              <div className="card-body">
-                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
-                  Rise and Fall 2 Winner: Shehzad Poonawalla Lifts the Trophy
-                </h3>
-                <div className="meta-row mt-2">
-                  <span className="text-[var(--magenta)] font-bold">RISE AND FALL 2</span>
-                  <span className="dot-sep">◆</span>
-                  <span>4 MIN READ</span>
                 </div>
               </div>
             </Link>
