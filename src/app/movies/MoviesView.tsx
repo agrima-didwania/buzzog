@@ -171,9 +171,9 @@ const movieArticles: MovieArticle[] = [
   },
   {
     id: "godzilla-minus-zero-skips-diwali",
-    category: "Box Office Clash",
-    title: "Godzilla Minus Zero India Release Delayed Over Ramayana IMAX Battle",
-    badge: "Box Office",
+    category: "IMAX Release Date",
+    title: "Godzilla Minus Zero Finally Has an India Release Date: November 20, IMAX Confirmed",
+    badge: "⚡ IMAX Date Out",
     badgeType: "lime",
     image: "/images/godzilla-minus-zero-india-release-delayed-ramayana.jpg",
     href: "/godzilla-minus-zero-india-release-delayed-ramayana",
