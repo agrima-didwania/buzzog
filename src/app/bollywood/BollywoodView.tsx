@@ -20,6 +20,16 @@ interface BollywoodArticle {
 
 const bollywoodArticles: BollywoodArticle[] = [
   {
+    id: "diljit-dosanjh-indore-concert-song-ban-rahat-indori",
+    category: "Concerts & Ban",
+    title: "Diljit Dosanjh Answers Indore Song Ban With Rahat Indori’s Famous Lines",
+    badge: "⚡ Rahat Indori Reply",
+    badgeType: "lime",
+    image: "/images/diljit-dosanjh-indore-concert-song-ban-rahat-indori.jpg",
+    href: "/diljit-dosanjh-indore-concert-song-ban-rahat-indori",
+    readOrTime: "4 MIN READ",
+  },
+  {
     id: "student-of-the-year-after-dark-review",
     category: "Series Review",
     title: "Student of the Year: After Dark Review – Shanaya Kapoor’s Dark Campus Thriller Gets Mixed Reactions",
@@ -766,16 +776,16 @@ export default function BollywoodView() {
 
         {/* Lead Section: Latest Bollywood Published Article (Cover Story) + The Last 2-3 Blogs Uploaded Before It */}
         <section className="lead">
-          {/* Cover Story: Latest Published Bollywood Story (Amitabh Bachchan’s Jalsa Property Dispute) */}
+          {/* Cover Story: Latest Published Bollywood Story (Diljit Dosanjh Answers Indore Song Ban) */}
           <Link
-            href="/amitabh-bachchan-jalsa-property-dispute"
+            href="/diljit-dosanjh-indore-concert-song-ban-rahat-indori"
             className="feature-card group block"
-            aria-label="Read full cover story: Amitabh Bachchan’s Jalsa Property Dispute: What Is Going On?"
+            aria-label="Read full cover story: Diljit Dosanjh Answers Indore Song Ban With Rahat Indori’s Famous Lines"
           >
             <div className="feature-media relative overflow-hidden">
               <Image
-                src="/images/amitabh-bachchan-jalsa-property-dispute.jpg"
-                alt="Amitabh Bachchan Jalsa Property Dispute Ramola Bachchan Challenges Deed"
+                src="/images/diljit-dosanjh-indore-concert-song-ban-rahat-indori.jpg"
+                alt="Diljit Dosanjh Answers Indore Song Ban With Rahat Indori Famous Lines"
                 fill
                 priority
                 className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
@@ -783,29 +793,56 @@ export default function BollywoodView() {
               />
               <div className="noise" />
               <span className="badge lime feature-tag z-10">
-                ⚡ PROPERTY DISPUTE
+                ⚡ RAHAT INDORI REPLY
               </span>
             </div>
             <div className="feature-body">
               <h2 className="disp text-white group-hover:text-[var(--lime)] transition-colors">
-                Amitabh Bachchan’s Jalsa Property Dispute: What Is Going On?
+                Diljit Dosanjh Answers Indore Song Ban With Rahat Indori’s Famous Lines
               </h2>
               <p>
-                Amitabh Bachchan’s Jalsa bungalow is in a family property dispute. Read what Ramola Bachchan claims, what the officials said, and how Jalsa got its name.
+                Diljit Dosanjh was told not to sing four songs at his Indore concert. His reply on stage, a famous Rahat Indori couplet, is going viral. Here is the full story.
               </p>
               <div className="meta-row mt-3">
-                <span className="text-[var(--magenta)] font-bold">BOLLYWOOD NEWS</span>
+                <span className="text-[var(--magenta)] font-bold">BOLLYWOOD &amp; CONCERTS</span>
                 <span className="dot-sep">◆</span>
                 <span>4 MIN READ</span>
                 <span className="dot-sep">◆</span>
-                <span className="text-[var(--lime)] font-bold">NOV 16</span>
+                <span className="text-[var(--lime)] font-bold">JUST IN</span>
               </div>
             </div>
           </Link>
 
           {/* Right Stack: The last 2-3 blogs uploaded before the latest one */}
           <div className="stack">
-            {/* Card 1: Student of the Year After Dark Review */}
+            {/* Card 1: Amitabh Bachchan Jalsa Property Dispute */}
+            <Link
+              href="/amitabh-bachchan-jalsa-property-dispute"
+              className="card m1 group block"
+            >
+              <div className="card-media relative overflow-hidden">
+                <Image
+                  src="/images/amitabh-bachchan-jalsa-property-dispute.jpg"
+                  alt="Amitabh Bachchan Jalsa Property Dispute Ramola Bachchan Challenges Deed"
+                  fill
+                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 980px) 100vw, 35vw"
+                />
+                <span className="badge lime z-10 relative">⚡ PROPERTY DISPUTE</span>
+              </div>
+              <div className="card-body">
+                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
+                  Amitabh Bachchan’s Jalsa Property Dispute: What Is Going On?
+                </h3>
+                <div className="meta-row mt-2">
+                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD NEWS</span>
+                  <span className="dot-sep">◆</span>
+                  <span>4 MIN READ</span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Card 2: Student of the Year After Dark Review */}
             <Link
               href="/student-of-the-year-after-dark-review"
               className="card m1 group block"
@@ -832,7 +869,7 @@ export default function BollywoodView() {
               </div>
             </Link>
 
-            {/* Card 2: Sunny Deol’s Suryaa Postponed to 2027 */}
+            {/* Card 3: Sunny Deol’s Suryaa Postponed to 2027 */}
             <Link
               href="/sunny-deol-suryaa-ant-se-aarambh-tak-postponed-2027"
               className="card m1 group block"
@@ -855,33 +892,6 @@ export default function BollywoodView() {
                   <span className="text-[var(--magenta)] font-bold">BOLLYWOOD NEWS</span>
                   <span className="dot-sep">◆</span>
                   <span>4 MIN READ</span>
-                </div>
-              </div>
-            </Link>
-
-            {/* Card 3: Sharad Kapoor Gets a Hollywood Film Offer */}
-            <Link
-              href="/sharad-kapoor-hollywood-film-offer"
-              className="card m1 group block"
-            >
-              <div className="card-media relative overflow-hidden">
-                <Image
-                  src="/images/sharad-kapoor-hollywood-film-offer.jpg"
-                  alt="Sharad Kapoor Gets a Hollywood Film Offer After His Viral Video Asking for Work"
-                  fill
-                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
-                  sizes="(max-width: 980px) 100vw, 35vw"
-                />
-                <span className="badge lime z-10 relative">⚡ EXCLUSIVE SCOOP</span>
-              </div>
-              <div className="card-body">
-                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
-                  Sharad Kapoor Gets a Hollywood Film Offer After His Viral Video Asking for Work
-                </h3>
-                <div className="meta-row mt-2">
-                  <span className="text-[var(--magenta)] font-bold">BOLLYWOOD COMEBACK</span>
-                  <span className="dot-sep">◆</span>
-                  <span>3 MIN READ</span>
                 </div>
               </div>
             </Link>

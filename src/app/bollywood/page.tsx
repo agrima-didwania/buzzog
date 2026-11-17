@@ -6,6 +6,12 @@ export const metadata: Metadata = {
   description:
     "Bollywood coverage from Buzz Originals — raw, unfiltered, built for the group chat. Red carpets, rumours, airport looks and exclusives.",
   keywords: [
+    "Diljit Dosanjh hits back at Indore song ban",
+    "Diljit Dosanjh Indore concert",
+    "Diljit Dosanjh song ban",
+    "Rahat Indori couplet",
+    "Aura India Tour 2026",
+    "Kisi Ke Baap Ka Hindustan Thodi Hai",
     "Student of the Year After Dark review",
     "Shanaya Kapoor web series",
     "Student of the Year After Dark cast",
@@ -597,10 +603,10 @@ export const metadata: Metadata = {
     siteName: "Buzz Originals",
     images: [
       {
-        url: "/images/amitabh-bachchan-jalsa-property-dispute.jpg",
+        url: "/images/diljit-dosanjh-indore-concert-song-ban-rahat-indori.jpg",
         width: 1200,
         height: 675,
-        alt: "Amitabh Bachchan Jalsa Property Dispute Ramola Bachchan Challenges Deed — Buzz Originals",
+        alt: "Diljit Dosanjh Answers Indore Song Ban With Rahat Indori Famous Lines — Buzz Originals",
       },
     ],
     type: "website",
@@ -609,8 +615,8 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Bollywood — Buzz Originals",
     description:
-      "Raw, unfiltered Bollywood coverage of red carpets, gossip, airport sightings & exclusives.",
-    images: ["/images/amitabh-bachchan-jalsa-property-dispute.jpg"],
+      "Raw, unfiltered Bollywood coverage of red carpets, gossip, concert controversies & exclusives.",
+    images: ["/images/diljit-dosanjh-indore-concert-song-ban-rahat-indori.jpg"],
   },
 };
 
@@ -637,12 +643,18 @@ export default function BollywoodPage() {
         {
           "@type": "ListItem",
           position: 1,
+          name: "Diljit Dosanjh Answers Indore Song Ban With Rahat Indori’s Famous Lines",
+          url: "https://www.buzzoriginals.com/diljit-dosanjh-indore-concert-song-ban-rahat-indori",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
           name: "Amitabh Bachchan’s Jalsa Property Dispute: What Is Going On?",
           url: "https://www.buzzoriginals.com/amitabh-bachchan-jalsa-property-dispute",
         },
         {
           "@type": "ListItem",
-          position: 2,
+          position: 3,
           name: "Sunny Deol’s Suryaa: Ant Se Aarambh Tak Postponed to 2027 After IMA Objection",
           url: "https://www.buzzoriginals.com/sunny-deol-suryaa-ant-se-aarambh-tak-postponed-2027",
         },

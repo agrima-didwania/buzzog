@@ -185,6 +185,20 @@ export default function Home() {
 
   const editorialArticles: EditorialArticle[] = [
     {
+      id: "diljit-dosanjh-indore-concert-song-ban-rahat-indori",
+      anchorId: "diljit-indore-song-ban-story",
+      href: "/diljit-dosanjh-indore-concert-song-ban-rahat-indori",
+      title: "Diljit Dosanjh Answers Indore Song Ban With Rahat Indori’s Famous Lines",
+      excerpt: "Diljit Dosanjh was told not to sing four songs at his Indore concert. His reply on stage, a famous Rahat Indori couplet, is going viral. Here is the full story.",
+      category: "Bollywood",
+      secondaryCategory: "Latest",
+      displayCategory: "BOLLYWOOD & CONCERTS",
+      badge: "Song Ban Reply",
+      badgeType: "lime",
+      readTime: "4 MIN READ",
+      image: "/images/diljit-dosanjh-indore-concert-song-ban-rahat-indori.jpg",
+    },
+    {
       id: "yogesh-rawat-justin-dcruz-roadies-rebirth-pi",
       anchorId: "yogesh-rawat-roadies-story",
       href: "/yogesh-rawat-justin-dcruz-roadies-rebirth-pi",
@@ -1463,15 +1477,15 @@ export default function Home() {
         <section className="hero" id="featured">
           {/* 1. Main Featured Story (Commanding Top Story Presentation) */}
           <Link
-            href="/yogesh-rawat-justin-dcruz-roadies-rebirth-pi"
+            href="/diljit-dosanjh-indore-concert-song-ban-rahat-indori"
             className="feature-card flex flex-col transition-all hover:border-[var(--lime)] focus-visible:ring-2 focus-visible:ring-[var(--lime)] group"
             style={{ textDecoration: "none", color: "inherit" }}
-            aria-label="Read full article: Yogesh Rawat Takes a Dig at Justin D’Cruz After Roadies Rebirth PI Round"
+            aria-label="Read full article: Diljit Dosanjh Answers Indore Song Ban With Rahat Indori’s Famous Lines"
           >
             <div className="feature-media" style={{ overflow: "hidden", position: "relative" }}>
               <Image
-                src="/images/yogesh-rawat-justin-dcruz-roadies-rebirth-pi.jpg"
-                alt="Yogesh Rawat Takes a Dig at Justin D’Cruz After Roadies Rebirth PI Round"
+                src="/images/diljit-dosanjh-indore-concert-song-ban-rahat-indori.jpg"
+                alt="Diljit Dosanjh Answers Indore Song Ban With Rahat Indori Famous Lines"
                 fill
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 750px"
@@ -1480,46 +1494,46 @@ export default function Home() {
               />
               <div className="noise" style={{ pointerEvents: "none" }}></div>
               <div className="feature-tag flex items-center gap-2">
-                <span className="badge lime">⚡ REALITY TV EXCLUSIVE</span>
-                <span className="badge pink">Roadies Rebirth</span>
-                <span className="badge">Yogesh Rawat</span>
-                <span className="badge">Justin D’Cruz</span>
+                <span className="badge lime">⚡ LIVE CONCERT SCOOP</span>
+                <span className="badge pink">Aura India Tour</span>
+                <span className="badge">Diljit Dosanjh</span>
+                <span className="badge">Rahat Indori Couplet</span>
               </div>
             </div>
             <div className="feature-body">
               <div className="flex items-center gap-2 mb-2 font-mono text-xs text-[var(--lime)] font-bold tracking-wider uppercase">
-                <span>★ TOP STORY · ROADIES REBIRTH CONTROVERSY</span>
+                <span>★ TOP STORY · DILJIT DOSANJH INDORE CONCERT</span>
               </div>
               <h1 className="disp" style={{ color: "#fff" }}>
-                Yogesh Rawat Takes a Dig at Justin D’Cruz After Roadies Rebirth PI Round
+                Diljit Dosanjh Answers Indore Song Ban With Rahat Indori’s Famous Lines
               </h1>
               <p>
-                Yogesh Rawat reacts to Justin D’Cruz mentioning his name in the Roadies Rebirth PI round. Read what he said in his Instagram video.
+                Diljit Dosanjh was told not to sing four songs at his Indore concert. His reply on stage, a famous Rahat Indori couplet, is going viral. Here is the full story.
               </p>
 
               {/* Editorial Highlights Box */}
               <div className="feature-highlights">
                 <div className="feature-highlights-header">
                   <span className="w-2 h-2 rounded-full bg-[var(--lime)] animate-pulse inline-block"></span>
-                  <span>Inside Roadies Rebirth Audition Drama — Yogesh’s Fiery Response &amp; The Broadcast Clue</span>
+                  <span>Inside Diljit&apos;s Indore Concert — The 4-Song Ban, Rahat Indori Reply &amp; Tour Status</span>
                 </div>
                 <ul className="feature-highlights-list">
                   <li className="feature-highlights-item">
                     <span className="feature-highlights-bullet">✦</span>
                     <span>
-                      <strong className="text-white font-medium">Justin Dropped Yogesh’s Name:</strong> Justin reportedly spent a big portion of his PI audition round focusing on Yogesh Rawat instead of himself.
+                      <strong className="text-white font-medium">Stage Reply to Notice:</strong> Diljit called out restrictions mid-show before reciting <em>“Kisi ke baap ka Hindustan thodi hai”</em> to massive cheers.
                     </span>
                   </li>
                   <li className="feature-highlights-item">
                     <span className="feature-highlights-bullet">✦</span>
                     <span>
-                      <strong className="text-white font-medium">“Souls Have Turned Black”:</strong> Yogesh called out contestants burning with jealousy, declaring his name and legacy on Roadies remain immortal.
+                      <strong className="text-white font-medium">Which Songs Were Curbed:</strong> Notice restricted <em>Patiala Peg</em>, <em>5 Taara</em>, <em>Case</em>, and <em>Jatt Fire Karda</em> citing intoxicants and minors.
                     </span>
                   </li>
                   <li className="feature-highlights-item">
                     <span className="feature-highlights-bullet">✦</span>
                     <span>
-                      <strong className="text-white font-medium">Cryptic Broadcast Clue:</strong> Fans connected his “kaali rooh” remark to an earlier black cat emoji dropped on his Instagram broadcast channel.
+                      <strong className="text-white font-medium">Mahakal Chant &amp; Poha Promise:</strong> Started the concert with chants of <em>Jai Shri Mahakal</em> and enjoyed authentic Indori poha post-show.
                     </span>
                   </li>
                 </ul>
@@ -1527,11 +1541,11 @@ export default function Home() {
 
               <div className="meta-row mt-auto pt-3 border-t border-white/[0.06] flex items-center justify-between">
                 <div className="flex items-center gap-3">
-                  <span>REALITY SHOWS &amp; MTV ROADIES</span>
+                  <span>BOLLYWOOD &amp; CONCERTS</span>
                   <span className="dot-sep">◆</span>
-                  <span>3 MIN READ</span>
+                  <span>4 MIN READ</span>
                   <span className="dot-sep">◆</span>
-                  <span style={{ color: "var(--lime)" }}>REALITY EXCLUSIVE</span>
+                  <span style={{ color: "var(--lime)" }}>LIVE SCOOP</span>
                 </div>
                 <span className="text-xs font-mono font-bold text-[var(--lime)] hidden sm:inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform">
                   Read Full Story →
@@ -1550,6 +1564,18 @@ export default function Home() {
               <span className="trend-rank">01</span>
               <div className="trend-text">
                 <Link
+                  href="/diljit-dosanjh-indore-concert-song-ban-rahat-indori"
+                  style={{ color: "inherit" }}
+                >
+                  <h3>Diljit Dosanjh answers Indore song ban on stage with Rahat Indori couplet: “Kisi ke baap ka Hindustan thodi hai”</h3>
+                  <span>BOLLYWOOD &amp; CONCERTS</span>
+                </Link>
+              </div>
+            </div>
+            <div className="trend-item">
+              <span className="trend-rank">02</span>
+              <div className="trend-text">
+                <Link
                   href="/yogesh-rawat-justin-dcruz-roadies-rebirth-pi"
                   style={{ color: "inherit" }}
                 >
@@ -1559,7 +1585,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">02</span>
+              <span className="trend-rank">03</span>
               <div className="trend-text">
                 <Link
                   href="/shilpa-shetty-host-pyaar-ka-pressure-cooker"
@@ -1571,7 +1597,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">03</span>
+              <span className="trend-rank">04</span>
               <div className="trend-text">
                 <Link
                   href="/student-of-the-year-after-dark-review"
@@ -1583,7 +1609,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">04</span>
+              <span className="trend-rank">05</span>
               <div className="trend-text">
                 <Link
                   href="/amitabh-bachchan-jalsa-property-dispute"
@@ -1595,7 +1621,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">05</span>
+              <span className="trend-rank">06</span>
               <div className="trend-text">
                 <Link
                   href="/panchayat-season-5-not-releasing-2026"
@@ -1607,7 +1633,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">06</span>
+              <span className="trend-rank">07</span>
               <div className="trend-text">
                 <Link
                   href="/sunny-deol-suryaa-ant-se-aarambh-tak-postponed-2027"
@@ -1619,7 +1645,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">07</span>
+              <span className="trend-rank">08</span>
               <div className="trend-text">
                 <Link
                   href="/sharad-kapoor-hollywood-film-offer"
@@ -1627,18 +1653,6 @@ export default function Home() {
                 >
                   <h3>Sharad Kapoor gets Hollywood film offer after viral video asking for work: Shoot starts in January</h3>
                   <span>BOLLYWOOD COMEBACK</span>
-                </Link>
-              </div>
-            </div>
-            <div className="trend-item">
-              <span className="trend-rank">08</span>
-              <div className="trend-text">
-                <Link
-                  href="/diljit-dosanjh-indore-concert-kisi-ke-baap-ka-hindustan-thodi-hai"
-                  style={{ color: "inherit" }}
-                >
-                  <h3>Diljit Dosanjh recites “Kisi ke baap ka hindustan thodi hai” at Indore concert after 4-song ban &amp; bomb threats: Live scoop</h3>
-                  <span>BOLLYWOOD &amp; CONCERTS</span>
                 </Link>
               </div>
             </div>
