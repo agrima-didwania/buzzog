@@ -185,6 +185,20 @@ export default function Home() {
 
   const editorialArticles: EditorialArticle[] = [
     {
+      id: "eisha-singh-unfollows-avinash-mishra",
+      anchorId: "eisha-avinash-unfollow-story",
+      href: "/eisha-singh-unfollows-avinash-mishra",
+      title: "Eisha Singh Unfollows Avinash Mishra on Instagram: Are Avisha Really Over?",
+      excerpt: "Eisha Singh has reportedly unfollowed Avinash Mishra on Instagram after their viral “I love you” moment. Here is what we know so far.",
+      category: "Reality TV Updates",
+      secondaryCategory: "Latest",
+      displayCategory: "REALITY TV & BIGG BOSS",
+      badge: "Avisha Fallout",
+      badgeType: "pink",
+      readTime: "3 MIN READ",
+      image: "/images/eisha-singh-unfollows-avinash-mishra.jpg",
+    },
+    {
       id: "diljit-dosanjh-indore-concert-song-ban-rahat-indori",
       anchorId: "diljit-indore-song-ban-story",
       href: "/diljit-dosanjh-indore-concert-song-ban-rahat-indori",
@@ -1477,15 +1491,15 @@ export default function Home() {
         <section className="hero" id="featured">
           {/* 1. Main Featured Story (Commanding Top Story Presentation) */}
           <Link
-            href="/diljit-dosanjh-indore-concert-song-ban-rahat-indori"
+            href="/eisha-singh-unfollows-avinash-mishra"
             className="feature-card flex flex-col transition-all hover:border-[var(--lime)] focus-visible:ring-2 focus-visible:ring-[var(--lime)] group"
             style={{ textDecoration: "none", color: "inherit" }}
-            aria-label="Read full article: Diljit Dosanjh Answers Indore Song Ban With Rahat Indori’s Famous Lines"
+            aria-label="Read full article: Eisha Singh Unfollows Avinash Mishra on Instagram: Are Avisha Really Over?"
           >
             <div className="feature-media" style={{ overflow: "hidden", position: "relative" }}>
               <Image
-                src="/images/diljit-dosanjh-indore-concert-song-ban-rahat-indori.jpg"
-                alt="Diljit Dosanjh Answers Indore Song Ban With Rahat Indori Famous Lines"
+                src="/images/eisha-singh-unfollows-avinash-mishra.jpg"
+                alt="Eisha Singh Unfollows Avinash Mishra on Instagram Are Avisha Really Over"
                 fill
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 750px"
@@ -1494,46 +1508,46 @@ export default function Home() {
               />
               <div className="noise" style={{ pointerEvents: "none" }}></div>
               <div className="feature-tag flex items-center gap-2">
-                <span className="badge lime">⚡ LIVE CONCERT SCOOP</span>
-                <span className="badge pink">Aura India Tour</span>
-                <span className="badge">Diljit Dosanjh</span>
-                <span className="badge">Rahat Indori Couplet</span>
+                <span className="badge lime">⚡ VIRAL FALLOUT</span>
+                <span className="badge pink">Bigg Boss 18 &amp; KKK 15</span>
+                <span className="badge">Avisha</span>
+                <span className="badge">Instagram Unfollow</span>
               </div>
             </div>
             <div className="feature-body">
               <div className="flex items-center gap-2 mb-2 font-mono text-xs text-[var(--lime)] font-bold tracking-wider uppercase">
-                <span>★ TOP STORY · DILJIT DOSANJH INDORE CONCERT</span>
+                <span>★ TOP STORY · REALITY TV &amp; BIGG BOSS 18</span>
               </div>
               <h1 className="disp" style={{ color: "#fff" }}>
-                Diljit Dosanjh Answers Indore Song Ban With Rahat Indori’s Famous Lines
+                Eisha Singh Unfollows Avinash Mishra on Instagram: Are Avisha Really Over?
               </h1>
               <p>
-                Diljit Dosanjh was told not to sing four songs at his Indore concert. His reply on stage, a famous Rahat Indori couplet, is going viral. Here is the full story.
+                Eisha Singh has reportedly unfollowed Avinash Mishra on Instagram after their viral “I love you” moment. Here is what we know so far.
               </p>
 
               {/* Editorial Highlights Box */}
               <div className="feature-highlights">
                 <div className="feature-highlights-header">
                   <span className="w-2 h-2 rounded-full bg-[var(--lime)] animate-pulse inline-block"></span>
-                  <span>Inside Diljit&apos;s Indore Concert — The 4-Song Ban, Rahat Indori Reply &amp; Tour Status</span>
+                  <span>Inside the Avisha Drama — The Unfollow, The Viral Video &amp; Rekha Singh’s Cryptic Story</span>
                 </div>
                 <ul className="feature-highlights-list">
                   <li className="feature-highlights-item">
                     <span className="feature-highlights-bullet">✦</span>
                     <span>
-                      <strong className="text-white font-medium">Stage Reply to Notice:</strong> Diljit called out restrictions mid-show before reciting <em>“Kisi ke baap ka Hindustan thodi hai”</em> to massive cheers.
+                      <strong className="text-white font-medium">The Instagram Check:</strong> Fans noticed Eisha is no longer following Avinash, while Avinash still follows her back.
                     </span>
                   </li>
                   <li className="feature-highlights-item">
                     <span className="feature-highlights-bullet">✦</span>
                     <span>
-                      <strong className="text-white font-medium">Which Songs Were Curbed:</strong> Notice restricted <em>Patiala Peg</em>, <em>5 Taara</em>, <em>Case</em>, and <em>Jatt Fire Karda</em> citing intoxicants and minors.
+                      <strong className="text-white font-medium">Days After the “I Love You Baby” Video:</strong> The unfollow came right after Avinash’s viral video from a friend’s party where he said “I love you baby” to Eisha.
                     </span>
                   </li>
                   <li className="feature-highlights-item">
                     <span className="feature-highlights-bullet">✦</span>
                     <span>
-                      <strong className="text-white font-medium">Mahakal Chant &amp; Poha Promise:</strong> Started the concert with chants of <em>Jai Shri Mahakal</em> and enjoyed authentic Indori poha post-show.
+                      <strong className="text-white font-medium">Rekha Singh’s Cryptic Post:</strong> Eisha’s mother shared a Hindi quote about keeping the right company and standing alone rather than with the wrong crowd.
                     </span>
                   </li>
                 </ul>
@@ -1541,11 +1555,11 @@ export default function Home() {
 
               <div className="meta-row mt-auto pt-3 border-t border-white/[0.06] flex items-center justify-between">
                 <div className="flex items-center gap-3">
-                  <span>BOLLYWOOD &amp; CONCERTS</span>
+                  <span>REALITY SHOWS</span>
                   <span className="dot-sep">◆</span>
-                  <span>4 MIN READ</span>
+                  <span>3 MIN READ</span>
                   <span className="dot-sep">◆</span>
-                  <span style={{ color: "var(--lime)" }}>LIVE SCOOP</span>
+                  <span style={{ color: "var(--lime)" }}>VIRAL GOSSIP</span>
                 </div>
                 <span className="text-xs font-mono font-bold text-[var(--lime)] hidden sm:inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform">
                   Read Full Story →
@@ -1564,6 +1578,18 @@ export default function Home() {
               <span className="trend-rank">01</span>
               <div className="trend-text">
                 <Link
+                  href="/eisha-singh-unfollows-avinash-mishra"
+                  style={{ color: "inherit" }}
+                >
+                  <h3>Eisha Singh unfollows Avinash Mishra on Instagram: Are Avisha really over after viral “I love you” video?</h3>
+                  <span>REALITY SHOWS</span>
+                </Link>
+              </div>
+            </div>
+            <div className="trend-item">
+              <span className="trend-rank">02</span>
+              <div className="trend-text">
+                <Link
                   href="/diljit-dosanjh-indore-concert-song-ban-rahat-indori"
                   style={{ color: "inherit" }}
                 >
@@ -1573,7 +1599,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">02</span>
+              <span className="trend-rank">03</span>
               <div className="trend-text">
                 <Link
                   href="/yogesh-rawat-justin-dcruz-roadies-rebirth-pi"
@@ -1585,7 +1611,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">03</span>
+              <span className="trend-rank">04</span>
               <div className="trend-text">
                 <Link
                   href="/shilpa-shetty-host-pyaar-ka-pressure-cooker"
@@ -1597,7 +1623,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">04</span>
+              <span className="trend-rank">05</span>
               <div className="trend-text">
                 <Link
                   href="/student-of-the-year-after-dark-review"
@@ -1609,7 +1635,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">05</span>
+              <span className="trend-rank">06</span>
               <div className="trend-text">
                 <Link
                   href="/amitabh-bachchan-jalsa-property-dispute"
@@ -1621,7 +1647,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">06</span>
+              <span className="trend-rank">07</span>
               <div className="trend-text">
                 <Link
                   href="/panchayat-season-5-not-releasing-2026"
@@ -1633,7 +1659,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">07</span>
+              <span className="trend-rank">08</span>
               <div className="trend-text">
                 <Link
                   href="/sunny-deol-suryaa-ant-se-aarambh-tak-postponed-2027"
@@ -1645,7 +1671,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">08</span>
+              <span className="trend-rank">09</span>
               <div className="trend-text">
                 <Link
                   href="/sharad-kapoor-hollywood-film-offer"
@@ -1657,7 +1683,7 @@ export default function Home() {
               </div>
             </div>
             <div className="trend-item">
-              <span className="trend-rank">09</span>
+              <span className="trend-rank">10</span>
               <div className="trend-text">
                 <Link
                   href="/soni-razdan-100-cigarettes-gumrah-alia-bhatt"
@@ -1665,18 +1691,6 @@ export default function Home() {
                 >
                   <h3>Soni Razdan smoked 100 cigarettes on Gumrah set without knowing she was pregnant with Alia Bhatt: SCREEN interview</h3>
                   <span>BOLLYWOOD THROWBACK</span>
-                </Link>
-              </div>
-            </div>
-            <div className="trend-item">
-              <span className="trend-rank">10</span>
-              <div className="trend-text">
-                <Link
-                  href="/student-of-the-year-after-dark-reema-maya-class-comparison"
-                  style={{ color: "inherit" }}
-                >
-                  <h3>Student of the Year After Dark vs Class: Reema Maya reacts to copy claims &amp; Karan Johar&apos;s dark reboot support</h3>
-                  <span>BOLLYWOOD &amp; OTT</span>
                 </Link>
               </div>
             </div>

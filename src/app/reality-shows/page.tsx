@@ -6,6 +6,12 @@ export const metadata: Metadata = {
   description:
     "Eliminations, fights, weekly ration milestones, hot seat stories and dome drama — every Bigg Boss 20, Koffee With Karan, KBC 18 and Splitsvilla moment.",
   keywords: [
+    "Eisha Singh unfollows Avinash Mishra",
+    "Avinash Mishra Eisha Singh breakup",
+    "Avinash Mishra Eisha Singh relationship",
+    "Avinash Mishra I love you baby video",
+    "Khatron Ke Khiladi 15 winner Avinash Mishra",
+    "Avisha",
     "Yogesh Rawat Justin D’Cruz",
     "Roadies Rebirth",
     "Roadies Rebirth PI round",
@@ -128,10 +134,10 @@ export const metadata: Metadata = {
     siteName: "Buzz Originals",
     images: [
       {
-        url: "/images/yogesh-rawat-justin-dcruz-roadies-rebirth-pi.jpg",
+        url: "/images/eisha-singh-unfollows-avinash-mishra.jpg",
         width: 1200,
         height: 675,
-        alt: "Yogesh Rawat Takes a Dig at Justin D’Cruz After Roadies Rebirth PI Round — Buzz Originals Reality Shows",
+        alt: "Eisha Singh Unfollows Avinash Mishra on Instagram Are Avisha Really Over — Buzz Originals Reality Shows",
       },
     ],
     type: "website",
@@ -140,8 +146,8 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Reality Shows — Buzz Originals",
     description:
-      "Raw, unfiltered entertainment coverage of Roadies Rebirth, Pyaar Ka Pressure Cooker, Koffee With Karan, Bigg Boss 20, Splitsvilla & Rise and Fall.",
-    images: ["/images/yogesh-rawat-justin-dcruz-roadies-rebirth-pi.jpg"],
+      "Raw, unfiltered entertainment coverage of Eisha Singh and Avinash Mishra, Roadies Rebirth, Pyaar Ka Pressure Cooker, Bigg Boss 20 & Rise and Fall.",
+    images: ["/images/eisha-singh-unfollows-avinash-mishra.jpg"],
   },
 };
 
@@ -168,14 +174,14 @@ export default function RealityShowsPage() {
         {
           "@type": "ListItem",
           position: 1,
-          name: "Yogesh Rawat Takes a Dig at Justin D’Cruz After Roadies Rebirth PI Round",
-          url: "https://www.buzzoriginals.com/yogesh-rawat-justin-dcruz-roadies-rebirth-pi",
+          name: "Eisha Singh Unfollows Avinash Mishra on Instagram: Are Avisha Really Over?",
+          url: "https://www.buzzoriginals.com/eisha-singh-unfollows-avinash-mishra",
         },
         {
           "@type": "ListItem",
           position: 2,
-          name: "Shilpa Shetty to Host Pyaar Ka Pressure Cooker, a New Relationship Reality Show",
-          url: "https://www.buzzoriginals.com/shilpa-shetty-host-pyaar-ka-pressure-cooker",
+          name: "Yogesh Rawat Takes a Dig at Justin D’Cruz After Roadies Rebirth PI Round",
+          url: "https://www.buzzoriginals.com/yogesh-rawat-justin-dcruz-roadies-rebirth-pi",
         },
         {
           "@type": "ListItem",

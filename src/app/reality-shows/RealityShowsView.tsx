@@ -23,6 +23,19 @@ interface RealityArticle {
 // All verified reality show articles in reverse chronological order
 const realityArticles: RealityArticle[] = [
   {
+    id: "eisha-singh-unfollows-avinash-mishra",
+    show: "Bigg Boss 18 & KKK 15",
+    title: "Eisha Singh Unfollows Avinash Mishra on Instagram: Are Avisha Really Over?",
+    excerpt:
+      "Eisha Singh has reportedly unfollowed Avinash Mishra on Instagram after their viral “I love you” moment. Here is what we know so far.",
+    badge: "⚡ Avisha Fallout",
+    badgeType: "pink",
+    image: "/images/eisha-singh-unfollows-avinash-mishra.jpg",
+    href: "/eisha-singh-unfollows-avinash-mishra",
+    readTime: "3 MIN READ",
+    timeAgo: "JUST IN",
+  },
+  {
     id: "yogesh-rawat-justin-dcruz-roadies-rebirth-pi",
     show: "Roadies Rebirth",
     title: "Yogesh Rawat Takes a Dig at Justin D’Cruz After Roadies Rebirth PI Round",
@@ -288,35 +301,35 @@ export default function RealityShowsView() {
 
         {/* Lead Section: Latest Reality Published Article (Cover Story) + The Last 2-3 Blogs Uploaded Before It */}
         <section className="lead">
-          {/* Featured Cover Story: Yogesh Rawat Takes a Dig at Justin D’Cruz */}
+          {/* Featured Cover Story: Eisha Singh Unfollows Avinash Mishra */}
           <Link
-            href="/yogesh-rawat-justin-dcruz-roadies-rebirth-pi"
+            href="/eisha-singh-unfollows-avinash-mishra"
             className="feature-card group block"
-            aria-label="Read full cover story: Yogesh Rawat Takes a Dig at Justin D’Cruz After Roadies Rebirth PI Round"
+            aria-label="Read full cover story: Eisha Singh Unfollows Avinash Mishra on Instagram: Are Avisha Really Over?"
           >
             <div className="feature-media relative overflow-hidden">
               <Image
-                src="/images/yogesh-rawat-justin-dcruz-roadies-rebirth-pi.jpg"
-                alt="Yogesh Rawat Takes a Dig at Justin D’Cruz After Roadies Rebirth PI Round"
+                src="/images/eisha-singh-unfollows-avinash-mishra.jpg"
+                alt="Eisha Singh Unfollows Avinash Mishra on Instagram Are Avisha Really Over"
                 fill
                 priority
                 className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
                 sizes="(max-width: 980px) 100vw, 65vw"
               />
               <div className="noise" />
-              <span className="badge lime feature-tag z-10">
-                ⚡ Roadies Controversy
+              <span className="badge pink feature-tag z-10">
+                ⚡ AVISHA FALLOUT
               </span>
             </div>
             <div className="feature-body">
               <h2 className="disp text-white group-hover:text-[var(--lime)] transition-colors">
-                Yogesh Rawat Takes a Dig at Justin D’Cruz After Roadies Rebirth PI Round
+                Eisha Singh Unfollows Avinash Mishra on Instagram: Are Avisha Really Over?
               </h2>
               <p>
-                Yogesh Rawat fires back at Justin D’Cruz for dropping his name during Roadies Rebirth PI round: “Baaki jal-jal ke apne PI mein bhi mera naam likhe.”
+                Eisha Singh has reportedly unfollowed Avinash Mishra on Instagram after their viral “I love you” moment. Here is what we know so far.
               </p>
               <div className="meta-row mt-3">
-                <span className="text-[var(--magenta)] font-bold">MTV ROADIES REBIRTH</span>
+                <span className="text-[var(--magenta)] font-bold">BIGG BOSS 18 &amp; KKK 15</span>
                 <span className="dot-sep">◆</span>
                 <span>3 MIN READ</span>
                 <span className="dot-sep">◆</span>
@@ -327,7 +340,34 @@ export default function RealityShowsView() {
 
           {/* Right Stack: The last 2-3 blogs uploaded before the latest one */}
           <div className="stack">
-            {/* Card 1: Shilpa Shetty to Host Pyaar Ka Pressure Cooker */}
+            {/* Card 1: Yogesh Rawat Roadies Rebirth PI */}
+            <Link
+              href="/yogesh-rawat-justin-dcruz-roadies-rebirth-pi"
+              className="card m1 group block"
+            >
+              <div className="card-media relative overflow-hidden">
+                <Image
+                  src="/images/yogesh-rawat-justin-dcruz-roadies-rebirth-pi.jpg"
+                  alt="Yogesh Rawat Takes a Dig at Justin D’Cruz After Roadies Rebirth PI Round"
+                  fill
+                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 980px) 100vw, 35vw"
+                />
+                <span className="badge lime z-10 relative">⚡ Roadies Controversy</span>
+              </div>
+              <div className="card-body">
+                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
+                  Yogesh Rawat Takes a Dig at Justin D’Cruz After Roadies Rebirth PI
+                </h3>
+                <div className="meta-row mt-2">
+                  <span className="text-[var(--magenta)] font-bold">MTV ROADIES REBIRTH</span>
+                  <span className="dot-sep">◆</span>
+                  <span>3 MIN READ</span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Card 2: Shilpa Shetty to Host Pyaar Ka Pressure Cooker */}
             <Link
               href="/shilpa-shetty-host-pyaar-ka-pressure-cooker"
               className="card m1 group block"
@@ -354,7 +394,7 @@ export default function RealityShowsView() {
               </div>
             </Link>
 
-            {/* Card 2: Shehzad Poonawalla Wins Rise and Fall 2 */}
+            {/* Card 3: Shehzad Poonawalla Wins Rise and Fall 2 */}
             <Link
               href="/rise-and-fall-2-winner-shehzad-poonawalla"
               className="card m1 group block"
@@ -375,33 +415,6 @@ export default function RealityShowsView() {
                 </h3>
                 <div className="meta-row mt-2">
                   <span className="text-[var(--magenta)] font-bold">RISE AND FALL 2</span>
-                  <span className="dot-sep">◆</span>
-                  <span>4 MIN READ</span>
-                </div>
-              </div>
-            </Link>
-
-            {/* Card 3: Saif Ali Khan Stabbing Night on KWK 9 */}
-            <Link
-              href="/saif-ali-khan-kareena-kapoor-koffee-with-karan-stabbing-night"
-              className="card m1 group block"
-            >
-              <div className="card-media relative overflow-hidden">
-                <Image
-                  src="/images/saif-ali-khan-kareena-kapoor-koffee-with-karan-stabbing-night.jpg"
-                  alt="Saif Ali Khan Stabbing: Kareena Opens Up on KWK 9"
-                  fill
-                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
-                  sizes="(max-width: 980px) 100vw, 35vw"
-                />
-                <span className="badge pink z-10 relative">⚡ KWK 9 Tell-All</span>
-              </div>
-              <div className="card-body">
-                <h3 className="group-hover:text-[var(--lime)] transition-colors font-bold text-white text-[16px] leading-snug">
-                  Saif Ali Khan Calls Stabbing Night “Worst Night”: Kareena Confession
-                </h3>
-                <div className="meta-row mt-2">
-                  <span className="text-[var(--magenta)] font-bold">KOFFEE WITH KARAN 9</span>
                   <span className="dot-sep">◆</span>
                   <span>4 MIN READ</span>
                 </div>
